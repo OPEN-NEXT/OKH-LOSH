@@ -47,4 +47,4 @@ We are aiming to build the (real) Internet of Things – the Internet of Open Ha
 
 # Want to contribute?
 
-'til we have a proper conribution guide just send me a 5quick message via [telegram](https://t.me/moedn) :)
+'til we have a proper conribution guide just send me a quick message via [telegram](https://t.me/moedn) :)
