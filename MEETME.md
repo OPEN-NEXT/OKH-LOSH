@@ -32,7 +32,7 @@ forgot to invite: Emilio (sorry, Emilio)
 - standards are the backbone of this structure
   - technical documentation: DIN SPEC 3105 & [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)
   - metadata: Open Know-How manifest v1.0 (+v2.0 (or hard fork) see below ↓)
-    - first draft for metadata (and its structure) of OSH (here)[xxx]
+    - first draft for metadata (and its structure) of OSH [here](OSH%20metadata.md)
     - will be pitched to Open Know-How working group
 - we will make use of
   - guidelines & standard modules for onthologies (thanks @Julieta! 🎉)
