@@ -6,6 +6,7 @@ Squashed Meeting Minutes
 # 30-04-2020 – little kickoff
 
 **Attendees:**
+
 - Julieta
 - Robin
 - Erik
@@ -14,6 +15,7 @@ Squashed Meeting Minutes
 forgot to invite: Emilio (sorry, Emilio)
 
 **Notes:**
+
 - first draft for DB structure
   - various specified DBs with own onthologies, compatible with each other so that queries across different DBs can be performed
   - DB for OSH-Modules (target for v1.0 of this wikibase instance)
@@ -26,7 +28,7 @@ forgot to invite: Emilio (sorry, Emilio)
   - DB for standard parts (optional target for v1.0)
   - ideas for further DBs:
     - manufacturers (to enable decentralised production of OSH as manufacturer metadata can be mapped over OSH metadata (tolerances, dimensions, material etc.))
-    - funding programmes (matchmaking between funders and cool projects)
+    - funding programes (matchmaking between funders and cool projects)
     - scientific publications (e.g. in  cooperation with Journal of Open Hardware)
     - connection to Wikidata (to connect technical documentation with _real_ data :) )
 - standards are the backbone of this structure
@@ -39,6 +41,7 @@ forgot to invite: Emilio (sorry, Emilio)
   - [wbstack.com](wbstack.com) in order to test our onthology approaches
 
 **ToDo:**
+
 - @Moe sends a short project description and mail addresses of the working group to @Julieta, so…
 - @Julieta can ask Christina ([wbstack.com](wbstack.com)) for accounts on [wbstack.com](wbstack.com) and…
 - @Julieta connects us/@Moe to a group of smart people who designed guidelines & standard modules for onthologies

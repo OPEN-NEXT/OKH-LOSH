@@ -4,11 +4,11 @@ OSHI
 
 # Intro
 
-## tl;dr:
+## tl;dr
 
 connecting open source hardware modules in a graph database – the ICT infrastructure for community-based innovation and circular economy
 
-## long:
+## long
 
 Some very special advantages of open source technologies only come to effect when we start to connect them. Especially hardware. 
 
@@ -28,7 +28,7 @@ For version 1.0 we will focus on hardware only. Ideas for later, compatible data
 
 Standards are the backbone for this approach.
 
-## short & crisp:
+## short & crisp
 
 We are aiming to build the (real) Internet of Things – the Internet of Open Hardware.
 
@@ -47,4 +47,5 @@ We are aiming to build the (real) Internet of Things – the Internet of Open Ha
 
 # Want to contribute?
 
-'til we have a proper conribution guide just send me a quick message via [telegram](https://t.me/moedn) :)
+'til we have a proper conribution guide,
+just send me a quick message via [telegram](https://t.me/moedn) :)
