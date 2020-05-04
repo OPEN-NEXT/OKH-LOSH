@@ -30,7 +30,7 @@ This first draft:
 - version
     - of hardware design
     - of documentation
-- link to [OKH-ASM](#osh-assembly-okh-asm) (manifest file for assemblies)
+- link to [OKH-OSH](#piece-of-osh-okh-osh) (manifest file for assemblies)
 - link to LICENSE.md
 - link to README.md
 - link to CONTRIBUTING.md
