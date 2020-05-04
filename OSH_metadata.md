@@ -7,6 +7,7 @@ As documentation is technology-specific, reasonable metadata may be as well.
 
 This first draft:
 - assumes that metadata must be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
+- organises metadata in a modular approach;
 - allows different levels of compliance:
   - **Level 1: Connecting to [the OSHI](README.md)**\
   …by providing
