@@ -11,7 +11,7 @@ and hence enable meaningful connections between OSH modules.
 
 - = assembly of components with clear input, output and interfaces 
   - (and thus can be used independently from the rest of the original machine as far as required inputs and interfaces are respected);
-- metadata for modules shall represent its functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
+- metadata shall represent its functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
 
 **Metadata:**
 
@@ -47,7 +47,26 @@ and hence enable meaningful connections between OSH modules.
 
 ## OSH assembly (OKH-ASM)
 
+**Intro:**
+
+- = assembly of components
+- metadata shall enable reproduction, operation and maintenance
+
+**Metadata:**
+
+- name or working title
+- version
+    - of hardware design
+    - of documentation
+
 ## OSH component (OKH-COM)
+
+**Intro:**
+
+- = undevided, self-designed piece of hardware to be manufactured
+- metadata shall enable reproduction, operation and maintenance
+
+**Metadata:**
 
 - name or working title
 - version
