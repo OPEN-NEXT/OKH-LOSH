@@ -33,6 +33,7 @@ This first draft:
   - **Note:** In case the author(s) prefer level-1-compliance, OKH-OSH can be substituted by a link to the documentation release.
 - link to LICENSE.md
 - link to README.md
+- link to certificate (OSHWA, DIN SPEC 3105)
 - link to CONTRIBUTING.md
 - functional description (e.g. what functions it is supposed to deliver, what is the problem it solves, for whom etc.)
     - → use guidelines for naming convention e.g. [as for inventions](https://www.wipo.int/export/sites/www/standards/en/pdf/03-15-01.pdf)
