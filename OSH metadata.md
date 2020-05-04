@@ -8,10 +8,10 @@ As documentation is technology-specific, reasonable metadata may be as well.
 This first draft:
 - assumes that metadata must be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
 - allows different levels of compliance:
-  - Level 1: Connecting to the OSHI\
+  - **Level 1: Connecting to [the OSHI](README.md)**\
   …by providing
     - [OKH-MOD](#osh-module-okh-mod)
-  - Level 2: Enabling decentralised production\
+  - **Level 2: Enabling decentralised production**\
   …by providing
     - [OKH-MOD](#osh-module-okh-mod)
     - [OKH-OSH](#piece-of-osh-okh-osh)
