@@ -5,7 +5,7 @@ As documentation is technology-specific, reasonable metadata may be as well.
 This first draft assumes that metadata must be technology-specific in order to give a meaningful representation
 and hence enable meaningful connections between OSH modules.
 
-# OSH Module
+# OSH Module (OKH-MOD)
 
 **Intro:**
 
@@ -19,9 +19,10 @@ and hence enable meaningful connections between OSH modules.
 - version
     - of hardware design
     - of documentation
-- link to manifest file (for assemblies)
-- authors
-- license
+- link to [OKH-ASM](#osh-assembly-okh-asm) (manifest file for assemblies)
+- link to LICENSE.md
+- link to README.md
+- link to CONTRIBUTING.md
 - functional description (e.g. what functions it is supposed to deliver, what is the problem it solves, for whom etc.)
     - → use guidelines for naming convention e.g. [as for inventions](https://www.wipo.int/export/sites/www/standards/en/pdf/03-15-01.pdf)
 - applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))
@@ -44,9 +45,9 @@ and hence enable meaningful connections between OSH modules.
 | 3    | gear box     | 1     | OSH Module     | link to manifest file (for modules)      |
 | 4    | Raspberry Pi | 1     | purchased part | unambiguous reference (not standardised) |
 
-## OSH components
+## OSH assembly (OKH-ASM)
 
-
+## OSH component (OKH-COM)
 
 - name or working title
 - version
