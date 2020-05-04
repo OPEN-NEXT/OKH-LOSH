@@ -20,6 +20,9 @@ These are questions one should be able to pose to the database.
     - Patreon/PayPal/GoFundMe?
 - - Who's using this product?
 
+- credits for developers, reviewers etc.
+- matching reviewers & contributors via TsDC-ID
+
 ## product/documentation
 
 - this thing can be bought here
