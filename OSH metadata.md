@@ -47,7 +47,7 @@ This first draft:
 
 ## simplified BoM
 
-= for documentation purposes; easy to read, crawl and use (maybe call **meta-BoM**?)
+= for documentation purposes; easy to read, crawl and use *(maybe call **meta-BoM**?)*
 
 | Pos. | Name         | Units | Type            | Reference                                 |
 |------|--------------|-------|-----------------|-------------------------------------------|
