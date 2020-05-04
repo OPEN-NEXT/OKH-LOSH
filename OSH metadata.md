@@ -38,12 +38,12 @@ and hence enable meaningful connections between OSH modules.
 
 = for documentation purposes; easy to read, crawl and use (maybe call **meta-BoM**?)
 
-| Pos. | Name         | Units | Type           | Reference                                |
-|------|--------------|-------|----------------|------------------------------------------|
-| 1    | casing       | 2     | OSH Component  | link to manifest file (for components)   |
-| 2    | screw        | 4     | standard part  | standard designation                     |
-| 3    | gear box     | 1     | OSH Module     | link to manifest file (for modules)      |
-| 4    | Raspberry Pi | 1     | purchased part | unambiguous reference (not standardised) |
+| Pos. | Name         | Units | Type           | Reference                                 |
+|------|--------------|-------|----------------|-------------------------------------------|
+| 1    | casing       | 2     | OSH Component  | link to [OKH-COM](#osh-component-okh-com) |
+| 2    | screw        | 4     | standard part  | standard designation                      |
+| 3    | gear box     | 1     | OSH Module     | link to [OKH-MOD](#osh-module-okh-mod)    |
+| 4    | Raspberry Pi | 1     | purchased part | unambiguous reference (not standardised)  |
 
 ## OSH assembly (OKH-ASM)
 
