@@ -37,6 +37,7 @@ This first draft:
 - functional description (e.g. what functions it is supposed to deliver, what is the problem it solves, for whom etc.)
     - → use guidelines for naming convention e.g. [as for inventions](https://www.wipo.int/export/sites/www/standards/en/pdf/03-15-01.pdf)
     - description of input, output and interfaces
+  - standards used in design
 - (link to) functional metadata ← _very_ technology-specific! not to be standardised here
   - dimensions
   - material
