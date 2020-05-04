@@ -94,3 +94,16 @@ Some examples:\
         - source (→ script gets file format)
         - export (PDF)
 - links to additional files (e.g. manufacturing instructions, justification of technical design)
+
+## PCB (OKH-ASM-PCB)
+
+- *name or working title*
+- *version*
+  - *of hardware design*
+  - *of documentation*
+- *applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))*
+- links to design files
+  - bill of materials
+  - circuit diagram
+  - PCB overlay diagram
+  - gerber file
