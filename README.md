@@ -18,7 +18,7 @@ Just as developer can re-use design files to avoid reinventing the wheel, they c
 
 **We want to organise open source hardware in a graph database.**
 
-There's a [longlist](Wikibase%20Q's.md) of interesting information that could be derived from such a database (also regarding compatibility between OSH modules).
+There's a [longlist](Wikibase_Qs.md) of interesting information that could be derived from such a database (also regarding compatibility between OSH modules).
 
 For version 1.0 we will focus on hardware only. Ideas for later, compatible databases are:
 - standard parts
