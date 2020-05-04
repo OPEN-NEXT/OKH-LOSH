@@ -14,7 +14,7 @@ This first draft:
   - Level 2: Enabling decentralised production\
   …by providing
     - [OKH-MOD](#osh-module-okh-mod)
-    - OKH-OSH
+    - [OKH-OSH](#piece-of-osh-okh-osh)
 
 # OSH Module (OKH-MOD)
 
@@ -37,7 +37,7 @@ This first draft:
 - functional description (e.g. what functions it is supposed to deliver, what is the problem it solves, for whom etc.)
     - → use guidelines for naming convention e.g. [as for inventions](https://www.wipo.int/export/sites/www/standards/en/pdf/03-15-01.pdf)
     - description of input, output and interfaces
-- link to [standardised BoM](#standardised-bom)
+- link to [simplified BoM](#simplified-bom)
 - (link to) functional metadata ← _very_ technology-specific! not to be standardised here
   - dimensions
   - material
@@ -45,7 +45,7 @@ This first draft:
   - RPM
   - …
 
-## standardised BoM
+## simplified BoM
 
 = for documentation purposes; easy to read, crawl and use (maybe call **meta-BoM**?)
 
