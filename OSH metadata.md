@@ -23,21 +23,20 @@ This first draft:
 - = assembly of components (and subassemblies) with clear input, output and interfaces 
   - (and thus can be used independently from the rest of the original machine as far as required inputs and interfaces are respected);
 - metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
+- this file is the main reference for OSH modules (**not** [OKH-OSH](#piece-of-osh-okh-osh) (manifest file for assemblies))
 
 **Metadata:**
 
 - name or working title
-- version
-    - of hardware design
-    - of documentation
-- link to [OKH-OSH](#piece-of-osh-okh-osh) (manifest file for assemblies)
+- version of documentation release (mentioning the version of the hardware design)
+- link to [OKH-OSH](#piece-of-osh-okh-osh) (manifest file for components & assemblies)
+  - **Note:** In case the author(s) prefer level-1-compliance, OKH-OSH can be substituted by a link to the documentation release.
 - link to LICENSE.md
 - link to README.md
 - link to CONTRIBUTING.md
 - functional description (e.g. what functions it is supposed to deliver, what is the problem it solves, for whom etc.)
     - → use guidelines for naming convention e.g. [as for inventions](https://www.wipo.int/export/sites/www/standards/en/pdf/03-15-01.pdf)
     - description of input, output and interfaces
-- link to [simplified BoM](#simplified-bom)
 - (link to) functional metadata ← _very_ technology-specific! not to be standardised here
   - dimensions
   - material
@@ -45,9 +44,14 @@ This first draft:
   - RPM
   - …
 
-## simplified BoM
+# simplified BoM
 
-= for documentation purposes; easy to read, crawl and use *(maybe call **meta-BoM**?)*
+**Intro:**
+
+- = for documentation purposes; easy to read, crawl and use
+- to be used whenever a BoM is required in the technology-specific block of [OKH-OSH](#piece-of-osh-okh-osh)
+
+EXAMPLE:
 
 | Pos. | Name         | Units | Type            | Reference                                 |
 |------|--------------|-------|-----------------|-------------------------------------------|
@@ -56,8 +60,6 @@ This first draft:
 | 3    | gear box     | 1     | OSH Module      | link to [OKH-MOD](#osh-module-okh-mod)    |
 | 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)  |
 | 5    | bracket      | 2     | OSH Subassembly | link to [OKH-OSH](#piece-of-osh-okh-osh)  |
-
-**Note:** In case the author(s) prefer level-1-compliance, OKH-OSH can be omitted.
 
 # Piece of OSH (OKH-OSH)
 
@@ -69,9 +71,7 @@ This first draft:
 **Metadata:**
 
 - name or working title
-- version
-  - of hardware design
-  - of documentation
+- version of documentation release (mentioning the version of the hardware design)
 - applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))
 - links to files required by TsDC\
 = technology-specific block
@@ -103,7 +103,7 @@ Some examples:\
   - *of documentation*
 - *applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))*
 - links to design files
-  - bill of materials
+  - [simplified BoM](#simplified-bom)
   - circuit diagram
   - PCB overlay diagram
   - gerber file
