@@ -9,9 +9,9 @@ and hence enable meaningful connections between OSH modules.
 
 **Intro:**
 
-- = assembly of components with clear input, output and interfaces 
+- = assembly of components (and subassemblies) with clear input, output and interfaces 
   - (and thus can be used independently from the rest of the original machine as far as required inputs and interfaces are respected);
-- metadata shall represent its functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
+- metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
 
 **Metadata:**
 
