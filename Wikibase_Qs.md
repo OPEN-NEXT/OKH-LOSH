@@ -1,4 +1,30 @@
-# Questions regarding…
+# Hot / shortlist (v1.0)
+
+## use cases / features
+
+- Linked Open Hardware
+  - portable metadata → OSH can be published on various platforms (and is synced via wikibase)
+  - map of usage, hence compatibility between OSH Modules (this module is also included here and there)
+  - don't reinvent the wheel, see what others have used in a similar case
+  - reduce (electronic) waste; circular economy
+    - represent OSH & proprietary HW by reasonable metadata; see connections, assess compatibility
+- link to other DBs
+  - wikidata
+  - Journal of Open Hardware
+  - …
+- Find OSH in a specific field
+  - e.g. search for corona-related projects
+    - add optional field in metadata: related topics/tags
+    - (? maybe not reasonable →) design specific searches (e.g. corona also includes the tags ventilators, face shields etc.)
+- get TsDC
+- filter for 'real' OSH
+- filter for standards/certification
+- filter for file formats
+  - which (costly) licenses are required?
+  - what does it cost me to enter?
+    (so comparing the required with the existent licenses on my side)
+
+# Question Pool / longlist
 
 These are questions one should be able to pose to the database.
 
@@ -97,7 +123,7 @@ These are questions one should be able to pose to the database.
   technology-specific documentation guidelines;\
   licensing guidelines)
 
-# Problems to solve
+## Problems to solve
 
 - reusage of designs
 - indirect: reusage of sub-assemblies via modular machine design
