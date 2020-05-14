@@ -97,6 +97,10 @@ Some examples:\
         - source (→ script gets file format)
         - export (PDF)
 - links to additional files (e.g. manufacturing instructions, justification of technical design)
+- optional fields:
+  - tolerance class (according to ISO XXX)
+  - surface finish (according to ISO XXX)
+  - material
 
 ## PCB (OKH-ASM-PCB)
 
