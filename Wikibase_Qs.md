@@ -76,6 +76,7 @@ These are questions one should be able to pose to the database.
 ### standard parts library
 
 - references
+  - including identical obsolete standards (as for screws)
 - properties
 - where to get them
 
