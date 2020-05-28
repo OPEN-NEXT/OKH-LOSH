@@ -2,6 +2,12 @@
 
 ## use cases / features
 
+in short:
+- for developers: facilitate re-use of design
+- for users (& developers): increase discoverability of OSH
+- for the future: be compatible & extendable
+
+to be shortened:
 - Linked Open Hardware
   - portable metadata → OSH can be published on various platforms (and is synced via wikibase)
   - map of usage, hence compatibility between OSH Modules (this module is also included here and there)
