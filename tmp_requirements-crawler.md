@@ -9,6 +9,7 @@
 - …and copies them to a publicly accessible location (git repo, area on [oho.wiki](en.oho.wiki) etc.)
 
 - a script checks links within these metadata files for availability on a regular basis (error 404)
+- creates issues for things missing
 
 # formal requirements
 
