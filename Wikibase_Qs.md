@@ -4,7 +4,12 @@
 
 in short:
 - for developers: facilitate re-use of design
-- for users (& developers): increase discoverability of OSH
+- for users (& developers): 
+  - increase discoverability of OSH
+  - replace manual packaging; metadata shall enable a download button for:
+    - production files (export only)
+    - developer files (sources only)
+    - complete clone (export + sources)
 - for the future: be compatible & extendable
 
 to be shortened:
