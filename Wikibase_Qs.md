@@ -7,6 +7,7 @@ in short:
 - for users (& developers): 
   - increase discoverability of OSH
   - replace manual packaging; metadata shall enable a download button for:
+      - resource to check: https://github.com/kanzure/skdb (**apt-get for hardware**)
     - production files (export only)
     - developer files (sources only)
     - complete clone (export + sources)
@@ -27,6 +28,7 @@ to be shortened:
   - e.g. search for corona-related projects
     - add optional field in metadata: related topics/tags
     - (? maybe not reasonable →) design specific searches (e.g. corona also includes the tags ventilators, face shields etc.)
+- OSHWA-compliant license?
 - get TsDC
 - filter for 'real' OSH
 - filter for standards/certification
