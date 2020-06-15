@@ -17,7 +17,9 @@ This first draft:
     - [OKH-MOD](#osh-module-okh-mod)
     - [OKH-OSH](#piece-of-osh-okh-osh)
 
-# OSH Module (OKH-MOD)
+# Details 
+
+## OSH Module (OKH-MOD)
 
 **Intro:**
 
@@ -47,7 +49,7 @@ This first draft:
   - RPM
   - …
 
-# simplified BoM
+## simplified BoM
 
 **Intro:**
 
@@ -64,7 +66,7 @@ EXAMPLE:
 | 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)  |
 | 5    | bracket      | 2     | OSH Subassembly | link to [OKH-OSH](#piece-of-osh-okh-osh)  |
 
-# Piece of OSH (OKH-OSH)
+## Piece of OSH (OKH-OSH)
 
 **Intro:**
 
@@ -82,7 +84,7 @@ EXAMPLE:
 Some examples:\
 (unaltered metadata are *italic*)
 
-## mechanical component (OKH-MEC)
+### mechanical component (OKH-MEC)
 
 - *name or working title*
 - *version*
@@ -102,7 +104,7 @@ Some examples:\
   - surface finish (according to ISO XXX)
   - material
 
-## PCB (OKH-ASM-PCB)
+### PCB (OKH-ASM-PCB)
 
 - *name or working title*
 - *version*
@@ -114,3 +116,6 @@ Some examples:\
   - circuit diagram
   - PCB overlay diagram
   - gerber file
+
+# derived ontology
+
