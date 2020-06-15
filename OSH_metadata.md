@@ -117,5 +117,31 @@ Some examples:\
   - PCB overlay diagram
   - gerber file
 
-# derived ontology
+# annotated template
 
+Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
+
+OSH Module
+- short name: osh
+- type: class
+- slots
+  - name or working title [text]
+  - version of hardware design [text]
+  - version of documentation release [text]
+  - functional description [text] 
+    - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+    - description of input, output and interfaces **(← cross out?)**
+  - link to [simplified BoM](#simplified-bom) [link]
+  - link to LICENSE.md [link]
+  - link to README.md [link]
+  - (optional) link to certificate (OSHWA, DIN SPEC 3105) [link]
+  - (optional) link to CONTRIBUTING.md [link]
+  - (optional) standards used in design [list]
+  - (optional) list of functional metadata **(← _very_ technology-specific! not to be standardised here)** [list]
+    - dimensions
+    - material
+    - weight
+    - RPM
+    - …
+
+**COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
