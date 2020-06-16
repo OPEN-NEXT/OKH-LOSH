@@ -26,12 +26,16 @@ This first draft:
 **File location convention:** To be clarified
 - saving all files in the root level may create a mess
 - saving files in the same level as the corresponding hardware design file may not be possible in all cases as repositories are sometimes a mess
-- suggestion: saving all files in a "OKH" folder in the root level
-- alternative: squash everything into one huge TTL ← _very_ hard to mantain for large assemblies, I guess
+- suggestion 1: saving all files in a "OKH" folder in the root level
+- suggestion 2: squash everything into one huge TTL ← _very_ hard to mantain for large assemblies, I guess
+- suggestion 3: OSH-Module file is named "OKH" and placed in the root folder; name the files however you like and store them wherever this fits your needs – as they are linked, this shouldn't affect anything
+    - we suggest you name files after the type of the corresponding hardware position number in the BoM (e.g. OKH-POSH-MEC-5-1.TTL) and place them in the root folder of the corresponding (sub-)assembly or component
 
 **Naming convention:** To be clarified
 - should be as easy & fast as possible; "okh-thingname.yml" as suggested in [OKHv1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) isn't convenient in practice
 - however, when saving all files in one root-level folder those files should carry some kind of human-readable identifier in their name
+- copy of suggestion 3: OSH-Module file is named "OKH" and placed in the root folder; name the files however you like and store them wherever this fits your needs – as they are linked, this shouldn't affect anything
+    - we suggest you name files after the type of the corresponding hardware position number in the BoM (e.g. OKH-POSH-MEC-5-1.TTL) and place them in the root folder of the corresponding (sub-)assembly or component
 
 # annotated template
 
@@ -67,6 +71,10 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
     - weight
     - RPM
     - …
+- applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md) [List]
+- links to files required by TsDC\
+= technology-specific block
+
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
@@ -86,13 +94,17 @@ EXAMPLE:
 
 **This section is OUTDATED; simplified BoMs now may include subassemblies via appropriate pos. numbers which makes linking to ASM-specific metadata files obsolete**
 
-| Pos. | Name         | Units | Type            | Reference                                 |
-|------|--------------|-------|-----------------|-------------------------------------------|
-| 1    | casing       | 2     | OSH Component   | link to [OKH-OSH](#piece-of-osh-okh-osh)  |
-| 2    | screw        | 4     | standard part   | standard designation                      |
-| 3    | gear box     | 1     | OSH Module      | link to [OKH-MOD](#osh-module-okh-mod)    |
-| 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)  |
-| 5    | bracket      | 2     | OSH Subassembly | link to [OKH-OSH](#piece-of-osh-okh-osh)  |
+| Pos. | Name         | Units | Type            | Reference                                                   |
+|------|--------------|-------|-----------------|-------------------------------------------------------------|
+| 1    | casing       | 2     | OSH Component   | link to [OKH-OSH](#piece-of-osh-okh-osh)                    |
+| 2    | screw        | 4     | standard part   | standard designation                                        |
+| 3    | gear box     | 1     | OSH Module      | link to [OSH-Module](#osh-module)                           |
+| 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)                    |
+| 5    | holder       | 1     | OSH Subassembly | link to [OKH-OSH](#piece-of-osh-okh-osh)                    |
+| 5.1  | bracket      | 2     | OSH Component   |                                                             |
+| 5.2  | screw        | 2     | standard part   |                                                             |
+| 5.3  | arm          | 2     | OSH Component   |                                                             |
+| 6    | controller   | 1     | OSH Module      | link to link to [OSH-Module](#osh-module) #pcb-posh-asm-pcb |
 
 ## Piece of OSH (POSH)
 
@@ -101,7 +113,6 @@ EXAMPLE:
 - = component or assembly of components
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
-- _this_ metadata has a technology-specific section
 
 **Metadata:**
 
@@ -117,9 +128,10 @@ EXAMPLE:
 Some examples:\
 (unaltered metadata are *italic*)
 
+# Examples
 **The following section is OUTDATED; but shouldn't be too wrong anyway**
 
-### mechanical component (OKH-MEC)
+## mechanical component (POSH-MEC)
 
 - *name or working title*
 - *version*
@@ -139,7 +151,7 @@ Some examples:\
   - surface finish (according to ISO XXX)
   - material
 
-### PCB (OKH-ASM-PCB)
+## PCB (POSH-ASM-PCB)
 
 - *name or working title*
 - *version*
