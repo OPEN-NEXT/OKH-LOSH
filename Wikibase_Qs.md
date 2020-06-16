@@ -44,6 +44,21 @@ to be shortened:
 - Which software is required to modify the technical documetation of this OSH Module/POSH?
 - Has this OSH Module been certfied in any way? Is it using specific standards?
 
+## practical examples
+
+### design reuse vs. COVID-19
+
+I am a manufacturer and want to build ventilators for the local hospital. So I'm checking for related OSH projects that 
+- have a complete technical documentation 
+- are using specific standards
+- have a CE certification
+- don't create too much subsequent costs (e.g. for software when modifying the design).
+
+In case I'm not happy with any of the results I may choose to design my own open source ventilator, recycling some of the designs, I found, I'll ask myself/the Wikibase instance:
+- Which modules/components have been used in various modules?
+- Which modules/components are available matching my software requirements? (e.g. specific CAD software) 
+- How many parts (self-designed, standard, proprietary, total) are involved in a specific OSH Module?
+
 # Question Pool / longlist
 
 These are questions one should be able to pose to the database.
