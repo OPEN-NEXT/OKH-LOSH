@@ -1,6 +1,6 @@
 # Hot / shortlist (v1.0)
 
-## use cases / features
+## use cases / features (unsorted)
 
 in short:
 - for developers: facilitate re-use of design
@@ -36,6 +36,13 @@ to be shortened:
   - which (costly) licenses are required?
   - what does it cost me to enter?
     (so comparing the required with the existent licenses on my side)
+
+## derived competency questions (unsorted)
+
+- Is or has this OSH Module been used in other OSH Modules? If yes, which?
+- Which OSH Modules fulfill are part of this function category x?
+- Which software is required to modify the technical documetation of this OSH Module/POSH?
+- Has this OSH Module been certfied in any way? Is it using specific standards?
 
 # Question Pool / longlist
 
