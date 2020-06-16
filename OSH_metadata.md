@@ -6,16 +6,18 @@ Representative metadata for OSH
 As documentation is technology-specific, reasonable metadata may be as well. 
 
 This first draft:
-- assumes that metadata must be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
+- assumes that metadata _must_ be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
 - organises metadata in a modular approach;
 - allows different levels of compliance:
   - **Level 1: Connecting to [the OSHI](README.md)**\
   …by providing
-    - [OKH-MOD](#osh-module-okh-mod)
+    - [OKH-MOD](#osh-module)
+    - **Note:** `link to simplified BoM` will be just substituted by a link to the documentation release then.
   - **Level 2: Enabling decentralised production**\
   …by providing
-    - [OKH-MOD](#osh-module-okh-mod)
-    - [OKH-OSH](#piece-of-osh-okh-osh)
+    - [OKH-MOD](#osh-module)
+    - [simplified BoM](#simplified-bom)
+    - OKH-OSH
 
 # Details 
 
@@ -32,7 +34,7 @@ This first draft:
 
 - name or working title
 - version of documentation release (mentioning the version of the hardware design)
-- link to [OKH-OSH](#piece-of-osh-okh-osh) (manifest file for components & assemblies)
+- link to [OSH-Module](#piece-of-osh-okh-osh) (manifest file for components & assemblies)
   - **Note:** In case the author(s) prefer level-1-compliance, OKH-OSH can be substituted by a link to the documentation release.
 - link to LICENSE.md
 - link to README.md
@@ -121,23 +123,21 @@ Some examples:\
 
 Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
-OSH Module
-- short name: osh
+## OSH-Module
 - type: class
-- slots
-  - name or working title [text]
-  - version of hardware design [text]
-  - version of documentation release [text]
-  - functional description [text] 
+- slots [data type]
+  - name or working title [String]
+  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)] 
+  - functional description [String] 
     - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - description of input, output and interfaces **(← cross out?)**
-  - link to [simplified BoM](#simplified-bom) [link]
-  - link to LICENSE.md [link]
-  - link to README.md [link]
-  - (optional) link to certificate (OSHWA, DIN SPEC 3105) [link]
-  - (optional) link to CONTRIBUTING.md [link]
-  - (optional) standards used in design [list]
-  - (optional) list of functional metadata **(← _very_ technology-specific! not to be standardised here)** [list]
+  - link to [simplified BoM](#simplified-bom) [URL]
+  - link to LICENSE.md [URL]
+  - link to README.md [URL]
+  - (optional) link to certificate (OSHWA, DIN SPEC 3105) [URL]
+  - (optional) link to CONTRIBUTING.md [URL]
+  - (optional) standards used in the design [[list](https://www.wikidata.org/wiki/Q27948)]
+  - (optional) list of functional metadata **(← _very_ technology-specific! not to be standardised here)** [[list](https://www.wikidata.org/wiki/Q27948)]
     - dimensions
     - material
     - weight
