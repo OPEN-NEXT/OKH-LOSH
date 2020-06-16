@@ -27,7 +27,7 @@ This first draft:
 
 **Naming convention:**  To be clarified (see [this issue](https://github.com/OPEN-NEXT/OSHI/issues/5))
 
-# annotated template
+# Details
 
 Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
