@@ -50,7 +50,8 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 - type: class
 - slots [data type]
   - name or working title [String]
-  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)] 
+  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+    - = unambiguous reference of the version of the hardware design and the version of the documentation
   - functional description [String] 
     - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - description of input, output and interfaces **(← cross out?)**
@@ -104,14 +105,19 @@ EXAMPLE:
 
 **Metadata:**
 
-- name or working title
-- version of documentation release (mentioning the version of the hardware design)
-- applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))
+- type: subclass of [OSH-Module](#osh-module)
+- slots [data type]
+  - name or working title [String]
+  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+    - = unambiguous reference of the version of the hardware design and the version of the documentation
+- applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md) [List]
 - links to files required by TsDC\
 = technology-specific block
 
 Some examples:\
 (unaltered metadata are *italic*)
+
+**The following section is OUTDATED; but shouldn't be too wrong anyway**
 
 ### mechanical component (OKH-MEC)
 
