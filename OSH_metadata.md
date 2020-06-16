@@ -14,7 +14,7 @@ This first draft:
   - [OSH-Module](#osh-module)
     - **Note:** `link to simplified BoM` will be just substituted by a link to the documentation release then.
   - **Level 2: Enabling decentralised production**\
-  …a piece of hardware is then (in L2 compliance) represented by\
+  …a piece of hardware is then (in L2 compliance) represented by
     - [OSH-Module](#osh-module)\
     which links to
     - [simplified BoM](#simplified-bom-sbom)\
