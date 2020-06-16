@@ -33,6 +33,37 @@ Standards are the backbone for this approach.
 
 We are aiming to build the (real) Internet of Things – the Internet of Open Hardware.
 
+# Scope
+
+## tl;dr Q&A
+
+**What is the domain that the ontology will cover?**
+
+Now: Open Source Hardware\
+In the future: standard parts, software, manufacturers, tools, funding opportunities,…
+
+**What are use cases of the ontology?**
+
+- find the OSH that solves your problem (→ **linking OSH modules with functional categories**)
+  - filter for license, certificate, functional categories, file formats…
+  - e.g. search for corona-related projects
+- …or fits into _your_ OSH (→ **linking OSH modules, facilitate design reuse**)
+- map of usage, hence compatibility between OSH Modules (_this_ module is also included _that_ assembly and thus seemingly works in this environment)
+  - this is BTW not limited to OSH; proprietary hardware can be linked as well; this may help reduding (electronic) waste or finding appropriate wear parts
+- provide portable metadata: OSH can be published on various platforms
+- facilitate packaging: standardised metadata shall enable a "download button" for:
+    - production files (export only)
+    - developer files (sources only)
+    - complete clone (export + sources)
+- custom/future use cases are enabled by linking to other data/knowledge bases such as
+  - Wikidata
+  - Journal of Open Hardware
+
+**Who will use and maintain the ontology?**
+
+1. all the awesome communities that provide the ontology modules we are using; namingly everything that Wikidata uses
+2. us; the few things built on top of the ontologies in 1. are to be maintained by us
+
 # Technical details
 
 - backend: wikibase
