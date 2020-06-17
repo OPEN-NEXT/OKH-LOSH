@@ -3,6 +3,24 @@ Squashed Meeting Minutes
 
 …of the OSHI working group
 
+# xx-06-2020 – first metadata draft
+
+**Attendees:**
+
+- Julieta
+- Robin
+- Erik
+- Moe (minutes)
+
+**Notes:**
+
+- which data format? ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
+- file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
+- Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?
+- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
+- cooperation Wikimedia Deutschland
+  - create initial test data set
+
 # 30-04-2020 – little kickoff
 
 **Attendees:**
