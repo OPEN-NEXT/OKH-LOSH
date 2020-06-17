@@ -52,6 +52,11 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
   - link to [sBoM](#simplified-bom-sbom) [URL]
   - link to LICENSE.md [URL]
   - link to README.md [URL]
+  - development status [String]
+    - development
+    - prototype
+    - certified
+    - in production
   - (optional) link to certificate (OSHWA, DIN SPEC 3105) [URL]
   - (optional) link to CONTRIBUTING.md [URL]
   - (optional, multiple) standards used in the design [String]
