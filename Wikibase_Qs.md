@@ -39,6 +39,8 @@ to be shortened:
 
 ### considered user stories from OPEN!NEXT (T3.1)
 
+**direct** = covered by the current scope
+**indirect** = supported by the current scope &/ on the agenda for future scopes
 
 
 ## derived competency questions (unsorted)
