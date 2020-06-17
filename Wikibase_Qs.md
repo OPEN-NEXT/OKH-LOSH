@@ -37,13 +37,18 @@ to be shortened:
   - what does it cost me to enter?
     (so comparing the required with the existent licenses on my side)
 
-**connected user stories from OPEN!NEXT (T3.1):**\
+### considered user stories from OPEN!NEXT (T3.1)
+
 
 
 ## derived competency questions (unsorted)
 
 - Is or has this OSH Module been used in other OSH Modules? If yes, which?
 - Which OSH Modules fulfill are part of this function category x?
+- Are there variants/version of or similar OSH Modules like OSH Module X?
+  - to be translated into:\
+  "How 'identical' are two different OSH Modules?" (← focus on self-designed parts rather than standard components) &\
+  "Show me the versions of this OSHM/POSH"
 - Which software is required to modify the technical documetation of this OSH Module/POSH?
 - Has this OSH Module been certfied in any way? Is it using specific standards?
 
