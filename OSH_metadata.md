@@ -140,6 +140,7 @@ EXAMPLE:
   - tolerance class (according to ISO XXX)
   - surface finish (according to ISO XXX)
   - material
+  - manufacturing technology (machining, additive, forming, casting,…)
 
 ## mechanically joined assembly (POSH-ASM-MEC)
 
