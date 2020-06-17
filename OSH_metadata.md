@@ -48,11 +48,14 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
     - = unambiguous reference of the version of the hardware design and the version of the documentation
   - functional description [String] 
     - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-    - description of input, output and interfaces **(← cross out?)**
+    - optional: description of input, output and interfaces
+  - function category [xxx]
+    - preferably use existing DBs like wikibase
   - link to [sBoM](#simplified-bom-sbom) [URL]
   - link to LICENSE.md [URL]
   - link to README.md [URL]
-  - development status [String]
+  - development status [xxx]
+    - preferably use defined designations like:
     - development
     - prototype
     - certified
