@@ -136,7 +136,8 @@ EXAMPLE:
         - source (→ script gets file format)
         - export (PDF)
 - links to additional files (e.g. manufacturing instructions, justification of technical design)
-- optional fields:
+- for production:
+  - outer dimensions (dimension+shape+measures e.g. mm-ø20x100 for a cylindric thing)
   - tolerance class (according to ISO XXX)
   - surface finish (according to ISO XXX)
   - material
