@@ -37,6 +37,9 @@ to be shortened:
   - what does it cost me to enter?
     (so comparing the required with the existent licenses on my side)
 
+**connected user stories from OPEN!NEXT (T3.1):**\
+
+
 ## derived competency questions (unsorted)
 
 - Is or has this OSH Module been used in other OSH Modules? If yes, which?
