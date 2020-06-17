@@ -20,6 +20,7 @@ Squashed Meeting Minutes
 - Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?
 - How does referencing to other DBs work? as e.g. for function categories defined in Wikidata?
 - Can we trace different versions of OSH with the given metadata? (e.g. crawling URL indicates whether or not OSH is a variant or different version of already existing OSH)
+- In a query, can we get the file format from a file link?
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
 - cooperation Wikimedia Deutschland
   - create initial test data set
