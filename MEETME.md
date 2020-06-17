@@ -18,6 +18,7 @@ Squashed Meeting Minutes
 - which data format? ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
 - file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
 - Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?
+- How does referencing to other DBs work? as e.g. for function categories defined in Wikidata?
 - Can we trace different versions of OSH with the given metadata? (e.g. crawling URL indicates whether or not OSH is a variant or different version of already existing OSH)
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
 - cooperation Wikimedia Deutschland
