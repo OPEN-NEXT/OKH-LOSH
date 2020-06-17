@@ -8,6 +8,7 @@ Squashed Meeting Minutes
 **Attendees:**
 
 - Julieta
+- Emilio
 - Robin
 - Erik
 - Moe (minutes)
