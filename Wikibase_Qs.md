@@ -51,6 +51,7 @@ to be shortened:
   "Show me the versions of this OSHM/POSH"
 - Which software is required to modify the technical documetation of this OSH Module/POSH?
 - Has this OSH Module been certfied in any way? Is it using specific standards?
+- What's the development status of a given OSH Module?
 
 ## practical examples
 
