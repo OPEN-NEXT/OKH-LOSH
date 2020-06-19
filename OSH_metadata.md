@@ -1,11 +1,11 @@
-Representative metadata for OSH
-=
+# Representative metadata for OSH
 
-# Intro
+## Intro
 
-As documentation is technology-specific, reasonable metadata may be as well. 
+As documentation is technology-specific, reasonable metadata may be as well.
 
 This first draft:
+
 - assumes that metadata _must_ be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
 - organises metadata in a modular approach;
 - allows different levels of compliance:
@@ -27,15 +27,15 @@ This first draft:
 
 **Naming convention:**  To be clarified (see [this issue](https://github.com/OPEN-NEXT/OSHI/issues/5))
 
-# Details
+## Details
 
 Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
-## OSH-Module
+### OSH-Module
 
 **Intro:**
 
-- = assembly of components (and subassemblies) with clear input, output and interfaces 
+- = assembly of components (and subassemblies) with clear input, output and interfaces
   - (and thus can be used independently from the rest of the original machine as far as required inputs and interfaces are respected);
 - metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
 
@@ -46,7 +46,7 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
   - name or working title [String]
   - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
     - = unambiguous reference of the version of the hardware design and the version of the documentation
-  - functional description [String] 
+  - functional description [String]
     - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - optional: description of input, output and interfaces
   - function category [xxx]
@@ -73,10 +73,9 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 - links to files required by TsDC\
 = technology-specific block
 
-
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
-## simplified BoM (sBoM)
+### simplified BoM (sBoM)
 
 **Intro:**
 
@@ -90,7 +89,7 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
 EXAMPLE:
 
-**This section is OUTDATED; simplified BoMs now may include subassemblies via appropriate pos. numbers which makes linking to ASM-specific metadata files obsolete**
+[**This section is OUTDATED; simplified BoMs now may include subassemblies via appropriate pos. numbers which makes linking to ASM-specific metadata files obsolete**]
 
 | Pos. | Name         | Units | Type            | Reference                                                                           |
 |------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
@@ -104,7 +103,7 @@ EXAMPLE:
 | 5.3  | arm          | 2     | OSH Component   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
 | 6    | controller   | 1     | OSH Module      | link to link to [OSH-Module](#osh-module), similar to [this](#pcb-posh-asm-pcb) one |
 
-## Piece of OSH (POSH)
+### Piece of OSH (POSH)
 
 **Intro:**
 
@@ -123,13 +122,13 @@ EXAMPLE:
 - links to files required by TsDC\
 = technology-specific block
 
-# Examples
-**The following section is OUTDATED; but shouldn't be too wrong anyway**
+## Examples
+
+[**The following section is OUTDATED; but shouldn't be too wrong anyway**]
 
 (unaltered metadata are *italic*)
 
-
-## mechanical component (POSH-MEC)
+### mechanical component (POSH-MEC)
 
 - *name or working title*
 - *version*
@@ -137,12 +136,12 @@ EXAMPLE:
   - *of documentation*
 - *applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))*
 - links to design files
-    - 3D model
-        - source (→ script gets file format)
-        - export (STD)
-    - 2D drawing
-        - source (→ script gets file format)
-        - export (PDF)
+  - 3D model
+    - source (→ script gets file format)
+    - export (STD)
+  - 2D drawing
+    - source (→ script gets file format)
+    - export (PDF)
 - links to additional files (e.g. manufacturing instructions, justification of technical design)
 - for production:
   - outer dimensions (dimension+shape+measures e.g. mm-ø20x100 for a cylindric thing)
@@ -151,11 +150,11 @@ EXAMPLE:
   - material
   - manufacturing technology (machining, additive, forming, casting,…)
 
-## mechanically joined assembly (POSH-ASM-MEC)
+### mechanically joined assembly (POSH-ASM-MEC)
 
 xxx
 
-## PCB (POSH-ASM-PCB)
+### PCB (POSH-ASM-PCB)
 
 - *name or working title*
 - *version*
