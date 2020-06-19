@@ -78,6 +78,15 @@ In case I'm not happy with any of the results I may choose to design my own open
 
 ## Question Pool / longlist
 
+### future scopes
+
+- library of standards & standard parts
+  - unambiguous referencing (even for outdated standards)
+  - find standards in your field of technology; specific use case for newcomers in a certain field (e.g. research institutes), discussed in a meeting between HSU Hamburg & DIN (COVID-19 crisis response)
+- library of manufacturers
+  - enable a 'buy button' for OSH Modules
+  - Open Know-Where (part of the Open Know-How network) is working on a metadata standard for manufacturers, tools and stock items (materials etc.)
+
 These are questions one should be able to pose to the database.
 
 ### project/team/contributors
