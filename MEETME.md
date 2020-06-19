@@ -1,9 +1,8 @@
-Squashed Meeting Minutes
--
+# Squashed Meeting Minutes
 
 …of the OSHI working group
 
-# xx-06-2020 – first metadata draft
+## xx-06-2020 – first metadata draft
 
 **Attendees:**
 
@@ -25,7 +24,7 @@ Squashed Meeting Minutes
 - cooperation Wikimedia Deutschland
   - create initial test data set
 
-# 30-04-2020 – little kickoff
+## 30-04-2020 – little kickoff
 
 **Attendees:**
 
