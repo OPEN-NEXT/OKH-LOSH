@@ -43,6 +43,7 @@ to be shortened:
 **indirect** = supported by the current scope &/ on the agenda for future scopes
 
 | **Number** | **Group name** | **Perspective** | **User story** | **Aim** | **Purpose** | **Additional considerations** | T3.3. impact | comment |
+|---|---|---|---|---|---|---|---|---|---|
 | U1/5 | Community management | Project owner | Curation of community content | Effective community collaboration | To ensure the users are not overwhelmed with irrelevant data |     | direct |     |
 | U3/1 | Documentation | Product owner &/ Community | Definition of functionalities | Knowledge distribution | So that skilled and non-skilled community can understand and work with it. This supports reuse of knowledge |     | direct |     |
 | U3/4 | Documentation | Community | Documentation of Safety standards used/followed | Complete documentation | Improve safety |     | direct |     |
