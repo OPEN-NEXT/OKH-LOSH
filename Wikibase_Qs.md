@@ -42,10 +42,6 @@ to be shortened:
 **direct** = covered by the current scope
 **indirect** = supported by the current scope &/ on the agenda for future scopes
 
-  body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small } a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em; } a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em; } comment { display:none; } 
-
-|     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Number** | **Group name** | **Perspective** | **User story** | **Aim** | **Purpose** | **Additional considerations** | T3.3. impact | comment |
 | U1/5 | Community management | Project owner | Curation of community content | Effective community collaboration | To ensure the users are not overwhelmed with irrelevant data |     | direct |     |
 | U3/1 | Documentation | Product owner &/ Community | Definition of functionalities | Knowledge distribution | So that skilled and non-skilled community can understand and work with it. This supports reuse of knowledge |     | direct |     |
