@@ -147,7 +147,7 @@ These are questions one should be able to pose to the database.
 
 #### engineering extras
 
-- library of boundary condition (e.g. forces due to snow loads, 	load cycles for cranes)
+- library of boundary condition (e.g. forces due to snow loads, load cycles for cranes)
 - emission tables (e.g. max. values for electronics in this country)
 - conditions DB for product certification
   - e.g. use of these standards for medical devices in the EU
