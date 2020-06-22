@@ -4,7 +4,7 @@
 
 ## xx-06-2020 – first metadata draft
 
-**Attendees:**
+**Invitees:**
 
 - Julieta
 - Emilio
