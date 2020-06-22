@@ -14,7 +14,21 @@ The following list will be clustered by topics or function categories people may
 
 ## The list
 
+sources:
+
+- <https://github.com/PubInv/covid19-vent-list#evaluation-of-known-projects>
+
 ### COVID-19-related
+
+#### Ventilators
+
+- [AmboVent](https://github.com/AmboVent-1690-108/AmboVent)
+- [ApolloBVM](https://docs.google.com/document/d/1-DRXnVkJOlDCmvTzh-DgWDxeLSrZTiBYyH0ypzv8tNA/edit)
+- [DIY-Beatmungsgerät](https://github.com/DIY-Beatmungsgerat/diy-beatmungsgeraet)
+  - refers to [OpenLung](https://gitlab.com/open-source-ventilator/ventilator/OpenLung)
+- [Low-Cost Open Source Ventilator or PAPR](https://github.com/jcl5m1/ventilator)
+- [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
+- [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
 
 ### lab equipment
 
