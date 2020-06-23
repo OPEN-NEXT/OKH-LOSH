@@ -46,6 +46,7 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
   - name or working title [String]
   - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
     - = unambiguous reference of the version of the hardware design and the version of the documentation
+    - e.g. a manually given version number or a commit hash
   - function [String]
     - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - optional: description of input, output and interfaces
