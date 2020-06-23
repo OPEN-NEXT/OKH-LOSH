@@ -35,7 +35,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 TBC:
 
 - sBoM is no longer input but an optional of the OSHI
-  - relation between OSHMs and POSHs can be easily shown with an extra field 'part of'
+  - relation between OSHMs and POSHs can be easily shown with an extra field 'consists-of' (OSHMs point to POSHs/other OSHMs; = toplevel points to lowlevel)
 - for better readability, the following section may start with "properties" describing all slots, followed by OSHM, POSH etc. just containing the slot names
 --->
 
