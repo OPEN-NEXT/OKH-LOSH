@@ -51,9 +51,9 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
     - optional: description of input, output and interfaces
   - function category [xxx]
     - preferably use existing DBs like wikibase
-  - link to [sBoM](#simplified-bom-sbom) [URL]
-  - link to LICENSE.md [URL]
-  - link to README.md [URL]
+  - [sBoM](#simplified-bom-sbom) [URL]
+  - LICENSE.md [URL]
+  - README.md [URL]
   - development status [xxx]
     - preferably use defined designations like:
     - development
