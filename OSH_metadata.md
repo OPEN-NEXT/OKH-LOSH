@@ -118,7 +118,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 **Intro:**
 
 - = component or assembly of components
-- metadata shall enable decentralised production, modification, oper  ation and maintenance
+- metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
 
 **Metadata:**
