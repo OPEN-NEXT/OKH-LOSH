@@ -60,7 +60,8 @@ TBC:
     - optional: description of input, output and interfaces
   - function category [xxx]
     - preferably use existing DBs like wikibase
-  - [sBoM](#simplified-bom-sbom) [URL]
+  - (multiple) consists-of [URL]
+    - links to metadata files of POSHS and other OSHMs this OSHM consists of
   - LICENSE.md [URL]
   - README.md [URL]
   - development status [xxx]
