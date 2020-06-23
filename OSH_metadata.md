@@ -44,10 +44,10 @@ Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 - type: class
 - slots [data type]
   - name or working title [String]
-  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
     - = unambiguous reference of the version of the hardware design and the version of the documentation
-  - functional description [String]
-    - e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+  - function [String]
+    - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - optional: description of input, output and interfaces
   - function category [xxx]
     - preferably use existing DBs like wikibase
