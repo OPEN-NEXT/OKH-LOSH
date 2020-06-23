@@ -31,15 +31,61 @@ This first draft:
 
 Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
-<!---
-TBC:
+### Classes & Slots
 
-- sBoM is no longer input but an optional of the OSHI
-  - relation between OSHMs and POSHs can be easily shown with an extra field 'consists-of' (OSHMs point to POSHs/other OSHMs; = toplevel points to lowlevel)
-- for better readability, the following section may start with "properties" describing all slots, followed by OSHM, POSH etc. just containing the slot names
---->
+#### Classes
 
-### OSH-Module
+- OSHM [class]
+  - [OSH Module](#osh-module)
+- POSH [class]
+  - [Piece of Open Source Hardware](#piece-of-osh-posh)
+- POSH+(TsDC-ID) [subclass]
+
+#### Slots/Properties [data type]
+
+- name [String]
+  - working title
+- version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - = unambiguous reference of the version of the hardware design and the version of the documentation
+  - e.g. a manually given version number or a commit hash
+- function [String]
+  - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+  - optional: description of input, output and interfaces
+- function-category [String]
+  - preferably use existing DBs like wikidata
+  - can be multiple
+- (multiple) consists-of [URL]
+  - links to metadata files of POSHS and other OSHMs this OSHM consists of
+- license [URL]
+  - link to LICENSE.md or legal code of the license
+- readme [URL]
+  - link to README.md or general description
+- status [String]
+  - development status, preferably use defined designations like:
+    - development
+    - prototype
+    - certified
+    - in production
+- (optional) certificate [URL]
+  - link to certificate (OSHWA, DIN SPEC 3105)
+- (optional) contributing [URL]
+  - link to CONTRIBUTING.md
+- (optional, multiple) standards [String]
+  - standards used in the _design_ (not DIN SPEC 3105-1)
+- (optional, multiple) functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
+  - dimensions
+  - material
+  - weight
+  - RPM
+  - …
+- (multiple) TsDC [String]
+- applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+- [links to files required by TsDC] [URL]\
+= technology-specific block
+
+### Required Metadata
+
+#### OSH Module (OSHM)
 
 **Intro:**
 
@@ -49,49 +95,25 @@ TBC:
 
 **Metadata:**
 
-- type: class
-- slots [data type]
-  - name or working title [String]
-  - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-    - = unambiguous reference of the version of the hardware design and the version of the documentation
-    - e.g. a manually given version number or a commit hash
-  - function [String]
-    - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-    - optional: description of input, output and interfaces
-  - function-category [xxx]
-    - preferably use existing DBs like wikibase
-  - (multiple) consists-of [URL]
-    - links to metadata files of POSHS and other OSHMs this OSHM consists of
-  - license [URL]
-    - link to LICENSE.md or legal code of the license
-  - readme [URL]
-    - link to README.md or general description
-  - status [String]
-    - development status, preferably use defined designations like:
-      - development
-      - prototype
-      - certified
-      - in production
-  - (optional) certificate [URL]
-    - link to certificate (OSHWA, DIN SPEC 3105)
-  - (optional) contributing [URL]
-    - link to CONTRIBUTING.md
-  - (optional, multiple) standards [String]
-    - standards used in the _design_ (not DIN SPEC 3105-1)
-  - (optional, multiple) functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
-    - dimensions
-    - material
-    - weight
-    - RPM
-    - …
-- (multiple) TsDC [String]
-  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+- name
+- version
+- function
+- function-category
+- consists-of (multiple)
+- license
+- readme
+- status
+- certificate (optional)
+- contributing (optional)
+- standards (optional, multiple)
+- functional-metadata (optional, multiple)
+- TsDC (multiple)
 - [links to files required by TsDC]\
 = technology-specific block
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
-### Piece of OSH (POSH)
+#### Piece of OSH (POSH)
 
 **Intro:**
 
@@ -101,13 +123,10 @@ TBC:
 
 **Metadata:**
 
-- type: subclass of [OSH-Module](#osh-module)
-- slots [data type]
-  - name or working title [String]
-  - documentation release [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-    - = unambiguous reference of the version of the hardware design and the version of the documentation
-- (multiple) applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md) [String]
-- links to files required by TsDC\
+- name
+- version
+- TsDC (multiple)
+- [links to files required by TsDC]\
 = technology-specific block
 
 ## Examples
