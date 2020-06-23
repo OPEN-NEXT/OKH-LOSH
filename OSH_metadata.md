@@ -77,7 +77,7 @@ TBC:
   - (optional) contributing [URL]
     - link to CONTRIBUTING.md
   - (optional, multiple) standards [String]
-    - standards used in the design
+    - standards used in the _design_ (not DIN SPEC 3105-1)
   - (optional, multiple) functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
     - dimensions
     - material
