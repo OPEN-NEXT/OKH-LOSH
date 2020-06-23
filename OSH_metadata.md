@@ -31,6 +31,14 @@ This first draft:
 
 Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
+<!---
+TBC:
+
+- sBoM is no longer input but an optional of the OSHI
+  - relation between OSHMs and POSHs can be easily shown with an extra field 'part of'
+- for better readability, the following section may start with "properties" describing all slots, followed by OSHM, POSH etc. just containing the slot names
+--->
+
 ### OSH-Module
 
 **Intro:**
