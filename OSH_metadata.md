@@ -54,7 +54,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - function-category [String]
   - preferably use existing DBs like wikidata
   - can be multiple
-- (multiple) consists-of [URL]
+- consists-of [URL]
   - links to metadata files of POSHS and other OSHMs this OSHM consists of
 - license [URL]
   - link to LICENSE.md or legal code of the license
@@ -66,22 +66,32 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - prototype
     - certified
     - in production
-- (optional) certificate [URL]
+- certificate [URL]
   - link to certificate (OSHWA, DIN SPEC 3105)
-- (optional) contributing [URL]
+- contributing [URL]
   - link to CONTRIBUTING.md
-- (optional, multiple) standards [String]
+- standards [String]
   - standards used in the _design_ (not DIN SPEC 3105-1)
-- (optional, multiple) functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
+- functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
   - dimensions
   - material
   - weight
   - RPM
   - …
-- (multiple) TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
 - [links to files required by TsDC] [URL]\
 = technology-specific block
+
+<!---
+add
+- source [URL]
+  - link to CAD file &/ drawing
+- export
+  - link to STP &/ PDF
+
+↑ replace by TsDC-specific source/export?
+--->
 
 ### Required Metadata
 
