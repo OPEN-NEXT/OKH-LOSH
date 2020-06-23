@@ -29,7 +29,7 @@ This first draft:
 
 ## Details
 
-Basis: [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
+Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
 ### OSH-Module
 
