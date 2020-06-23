@@ -78,8 +78,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - weight
   - RPM
   - …
-- (multiple) TsDC [String]
-- applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+- (multiple) TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
 - [links to files required by TsDC] [URL]\
 = technology-specific block
 
