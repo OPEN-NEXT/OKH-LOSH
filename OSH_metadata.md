@@ -58,29 +58,35 @@ TBC:
   - function [String]
     - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     - optional: description of input, output and interfaces
-  - function category [xxx]
+  - function-category [xxx]
     - preferably use existing DBs like wikibase
   - (multiple) consists-of [URL]
     - links to metadata files of POSHS and other OSHMs this OSHM consists of
-  - LICENSE.md [URL]
-  - README.md [URL]
-  - development status [xxx]
-    - preferably use defined designations like:
-    - development
-    - prototype
-    - certified
-    - in production
-  - (optional) link to certificate (OSHWA, DIN SPEC 3105) [URL]
-  - (optional) link to CONTRIBUTING.md [URL]
-  - (optional, multiple) standards used in the design [String]
-  - (optional, multiple) functional metadata **(← _very_ technology-specific! not to be standardised here)** [String]
+  - license [URL]
+    - link to LICENSE.md or legal code of the license
+  - readme [URL]
+    - link to README.md or general description
+  - status [String]
+    - development status, preferably use defined designations like:
+      - development
+      - prototype
+      - certified
+      - in production
+  - (optional) certificate [URL]
+    - link to certificate (OSHWA, DIN SPEC 3105)
+  - (optional) contributing [URL]
+    - link to CONTRIBUTING.md
+  - (optional, multiple) standards [String]
+    - standards used in the design
+  - (optional, multiple) functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
     - dimensions
     - material
     - weight
     - RPM
     - …
-- (multiple) applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md) [String]
-- links to files required by TsDC\
+- (multiple) TsDC [String]
+  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+- [links to files required by TsDC]\
 = technology-specific block
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
