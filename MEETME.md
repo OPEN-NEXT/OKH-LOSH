@@ -2,30 +2,47 @@
 
 …of the OSHI working group
 
-## xx-06-2020 – first metadata draft
+## xx-07-2020 – first metadata draft
 
 **Invitees:**
 
 - Julieta
 - Emilio
-- Robin
 - Erik
+- Sonika
+- Robin
+- Moe (minutes)
+
+**Agenda:**
+
+- decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
+- decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
+- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
+
+## 25-06-2020 – first metadata draft
+
+**Attendees:**
+
+- Robin
 - Moe (minutes)
 
 **Notes:**
 
-- which data format? ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
-- file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
-- Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?
+- ~~Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?~~
+  - → will be checked by Moe in the cooperation with Wikimedia Deutschland
 - ~~How does referencing to other DBs work? as e.g. for function categories defined in Wikidata?~~
-  - answered by Wikimedia in a previous meeting
+  - → answered by Wikimedia in a previous meeting
   - we'll squash all the data into one Wikibase instance; this makes life a lot easier; maintenance of different ontology modules or subdatasets is still possible
   - anyway, wikibase offers special features to query other wikibase instances, even to combine different instances into one query; forgot the specific term; the wikimedia community can provide details :)
 - Can we trace different versions of OSH with the given metadata? (e.g. crawling URL indicates whether or not OSH is a variant or different version of already existing OSH)
+  - ✓ yes, yey
 - In a query, can we get the file format from a file link?
+  - ✓ yes, yey
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
-- cooperation Wikimedia Deutschland
+- ✓ yes, yey
+- cooperation with Wikimedia Deutschland
   - create initial test data set
+    - 50…150 items (instances) by the end of CW 27
 
 ## 30-04-2020 – little kickoff
 

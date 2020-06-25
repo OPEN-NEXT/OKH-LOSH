@@ -23,9 +23,35 @@ This first draft:
     - [POSHs](#piece-of-osh-posh) design files\
     which link to design files
 
-**File location convention:** To be clarified (see [this issue](https://github.com/OPEN-NEXT/OSHI/issues/5))
+## Meta-requirements
 
-**Naming convention:**  To be clarified (see [this issue](https://github.com/OPEN-NEXT/OSHI/issues/5))
+### Location and Naming Convention
+
+The file name:
+
+1. must contain `OKH`
+   1. this is sufficient for our crawler to identify it, 
+   2. however you may add whatever you like in this name (e.g. as required in the [OKH Manifest Specification v1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) `OKH-thingname`)
+2. must start with a dot, → so e.g. `.okh.yml`
+   - …so files don't get changed unintentionally they will be hidden on Linux-based systems so the local folder looks neater and it's easier for the crawler to identify these files
+
+The metadata file describing the whole OSH Module **must be placed in the root directory**; all metadata files for sub-modules or components may be placed in the corresponding folder so that they would be in the root directory if the module would be cloned into a individual repository.\
+However as files are unambiguously referenced in the OSHM file you can place them wherever you like.
+
+### File Formats
+
+To connect your OSH to the OSHI, your metadata must be stored in one of the following formats:
+
+- YAML
+- TOML
+- JSON
+- TXT
+
+Please use the linked templates to enter your data.
+
+Background:\
+The crawler will take this metadata as basic input, add additional information to it (e.g. from the Gitlab API) and build a TTL file with all that information which is then integrated in Wikibase. 
+You see, it doesn't really matter in which file format you'll save your metadata as long as the crawler is able to interpret it.
 
 ## Details
 
