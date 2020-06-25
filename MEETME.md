@@ -17,7 +17,10 @@
 - which data format? ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
 - file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
 - Where exactly is new, own vocabulary ontology necessary and where can I just use workarounds & templates for data input?
-- How does referencing to other DBs work? as e.g. for function categories defined in Wikidata?
+- ~~How does referencing to other DBs work? as e.g. for function categories defined in Wikidata?~~
+  - answered by Wikimedia in a previous meeting
+  - we'll squash all the data into one Wikibase instance; this makes life a lot easier; maintenance of different ontology modules or subdatasets is still possible
+  - anyway, wikibase offers special features to query other wikibase instances, even to combine different instances into one query; forgot the specific term; the wikimedia community can provide details :)
 - Can we trace different versions of OSH with the given metadata? (e.g. crawling URL indicates whether or not OSH is a variant or different version of already existing OSH)
 - In a query, can we get the file format from a file link?
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
