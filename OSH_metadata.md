@@ -110,12 +110,15 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - e.g. CAD model
 - source-2d [URL]
   - e.g. drawing, gerber file (all in the original file format)
-- miscellaneous [URL]
+- source+ [URL]
+  - additional technical documentation
   - as required by TsDC
-  - e.g. manufacturing instructions, post-processing specifications
+  - e.g. manufacturing instructions, post-processing specifications (e.g. as MD files)
 - export-3d [URL]
   - e.g. STEP
 - export-2d [URL]
+  - e.g. PDF files
+- export+ [URL]
   - e.g. PDF files
 
 ### Required Metadata
@@ -138,13 +141,17 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - license
 - readme
 - status
-- certificate (optional)
-- contributing (optional)
-- standard (optional, multiple)
-- functional-metadata (optional, multiple)
+- certificate
+- contributing
+- standard (multiple)
+- functional-metadata (multiple)
 - TsDC (multiple)
-- [links to files required by TsDC]\
-= technology-specific block
+- source-3d
+- source-2d
+- source+
+- export-3d
+- export-2d
+- export+
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
