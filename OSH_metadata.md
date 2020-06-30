@@ -65,10 +65,10 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - [OSH Module](#osh-module)
 - POSH [class]
   - [Piece of Open Source Hardware](#piece-of-osh-posh)
-- POSH+(TsDC-ID) [subclass]
 
 #### Slots/Properties [data type]
 
+- class
 - name [String]
   - working title
 - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
@@ -266,3 +266,5 @@ xxx
 - joining technology
   - by TsDC-ID
 - check references in [sBoM](#simplified-bom-sbom) for ambiguity
+- assign classes to instances
+  - by sBoM `Types` column
