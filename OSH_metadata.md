@@ -80,8 +80,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - function-category [String]
   - preferably use existing DBs like wikidata
   - can be multiple
-- consists-of [URL]
-  - links to metadata files of POSHS and other OSHMs this OSHM consists of
+- sBoM [URL]
+  - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - license [URL]
   - link to LICENSE.md or legal code of the license
 - readme [URL]
@@ -137,7 +137,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - version
 - function
 - function-category
-- consists-of (multiple)
+- sBoM
 - license
 - readme
 - certificate
@@ -166,13 +166,24 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 - name
 - version
+- standard (multiple)
 - TsDC (multiple)
-- source-3d
-- source-2d
-- source+
-- export-3d
-- export-2d
-- export+
+- source-3d (multiple)
+- source-2d (multiple)
+- source+ (multiple)
+- export-3d (multiple)
+- export-2d (multiple)
+- export+ (multiple)
+- for production:
+  - outer dimensions (dimension+shape+measures e.g. mm-ø20x100 for a cylindric thing)
+    - cuboid (mm-100x50x20)
+    - cylinder (mm-50x100)
+    - sphere (mm-15)
+  - smallest tolerance
+    - preferrably use designation according to ISO 286-1:2010
+  - finest surface roughness in µm
+  - material
+  - manufacturing technology (machining, additive, forming, casting,…)
 
 ## Examples
 
@@ -195,12 +206,6 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - source (→ script gets file format)
     - export (PDF)
 - links to additional files (e.g. manufacturing instructions, justification of technical design)
-- for production:
-  - outer dimensions (dimension+shape+measures e.g. mm-ø20x100 for a cylindric thing)
-  - tolerance class (according to ISO XXX)
-  - surface finish (according to ISO XXX)
-  - material
-  - manufacturing technology (machining, additive, forming, casting,…)
 
 ### mechanically joined assembly (POSH-ASM-MEC)
 
@@ -226,4 +231,6 @@ xxx
 - status
   - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
 - version/fork/variant of another OSHM/POSH
-  - version, URL, presence of other _very_ similar OSH in the knowledge base, information from the GitHub/Gitlab API ('fork of' etc.)
+  - version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of'), information from the GitHub/Gitlab API ('fork of' etc.)
+- joining technology
+  - by TsDC-ID
