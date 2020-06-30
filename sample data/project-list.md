@@ -4,7 +4,7 @@
 
 This is an (yet) unsorted list of OSH Modules whose metadata will serve as a testing sample for the OSHI. We'll contact the projects and ask them to help us creating their metadata in compliance with our standard.
 
-We are aiming for ~50 OSH Modules:
+We are aiming for ~20 OSH Modules:
 
 - a lot of simple examples in order to save us time and avoid confusion due to complexity overkill
 - 2…5 complex modules so we can assess the required performance of the system needed for complex projects
@@ -17,6 +17,14 @@ The following list will be clustered by topics or function categories people may
 sources:
 
 - <https://github.com/PubInv/covid19-vent-list#evaluation-of-known-projects>
+- several direct contacts
+- [OHO targets](https://cloud.opensourceecology.de/s/nry4fWE2yCa2D9d)
+
+Wikimedia sample data:
+
+- [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
+- [Corne keyboard](https://github.com/foostan/crkbd)
+- [AmboVent](https://github.com/AmboVent-1690-108/AmboVent)
 
 ### COVID-19-related
 
