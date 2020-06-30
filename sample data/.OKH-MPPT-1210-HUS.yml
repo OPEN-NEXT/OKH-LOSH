@@ -1,5 +1,5 @@
 name: MPPT 1210 HUS
-organisation: LibreSolar
+owner: LibreSolar
 version: v0.7.1
 language: EN
 function: This charge controller is a so-called maximum power point tracker (MPPT), which automatically adapts its input voltage to the connected solar panel to extracts as much power as possible. The MPPT function can only be achieved using a DC/DC converter, which is the core part of the charge controller PCB. It can be recognized by the large inductor and the large electrolytic input and output filter capacitors.
