@@ -76,7 +76,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - language [String]
   - language in which the documentation is written
 - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - = unambiguous reference of the version of the hardware design and the version of the documentation
+  - = unambiguous reference of the version of the hardware design
+    and the version of the documentation
   - e.g. a manually given version number or a commit hash
 - function [String]
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
