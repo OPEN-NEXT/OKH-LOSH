@@ -30,7 +30,7 @@ This first draft:
 The file name:
 
 1. must contain `OKH`
-   1. this is sufficient for our crawler to identify it, 
+   1. this is sufficient for our crawler to identify it,
    2. however you may add whatever you like in this name (e.g. as required in the [OKH Manifest Specification v1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) `OKH-thingname`)
 2. must start with a dot, → so e.g. `.okh.yml`
    - …so files don't get changed unintentionally they will be hidden on Linux-based systems so the local folder looks neater and it's easier for the crawler to identify these files
@@ -50,7 +50,7 @@ To connect your OSH to the OSHI, your metadata must be stored in one of the foll
 Please use the linked templates to enter your data.
 
 Background:\
-The crawler will take this metadata as basic input, add additional information to it (e.g. from the Gitlab API) and build a TTL file with all that information which is then integrated in Wikibase. 
+The crawler will take this metadata as basic input, add additional information to it (e.g. from the Gitlab API) and build a TTL file with all that information which is then integrated in Wikibase.
 You see, it doesn't really matter in which file format you'll save your metadata as long as the crawler is able to interpret it.
 
 ## Details
