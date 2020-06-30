@@ -71,6 +71,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - class
 - name [String]
   - working title
+  - designation for POSH, standard or purchased component
 - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - = unambiguous reference of the version of the hardware design and the version of the documentation
   - e.g. a manually given version number or a commit hash
@@ -130,6 +131,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - e.g. PDF files
 - export+ [URL]
   - e.g. PDF files
+- quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
+- reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - for standard or purchased components
 
 ### Required Metadata
 
