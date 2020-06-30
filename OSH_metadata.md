@@ -96,8 +96,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - link to certificate (OSHWA, DIN SPEC 3105)
 - contributing [URL]
   - link to CONTRIBUTING.md
-- standards [String]
-  - standards used in the _design_ (not DIN SPEC 3105-1)
+- standard [String]
+  - standard used/considered in the _design_ (not DIN SPEC 3105-1)
 - functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
   - dimensions
   - material
@@ -106,18 +106,17 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - …
 - TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
-- [links to files required by TsDC] [URL]\
-= technology-specific block
-
-<!---
-add
-- source [URL]
-  - link to CAD file &/ drawing
-- export
-  - link to STP &/ PDF
-
-↑ replace by TsDC-specific source/export?
---->
+- source-3d [URL]
+  - e.g. CAD model
+- source-2d [URL]
+  - e.g. drawing, gerber file (all in the original file format)
+- miscellaneous [URL]
+  - as required by TsDC
+  - e.g. manufacturing instructions, post-processing specifications
+- export-3d [URL]
+  - e.g. STEP
+- export-2d [URL]
+  - e.g. PDF files
 
 ### Required Metadata
 
@@ -141,7 +140,7 @@ add
 - status
 - certificate (optional)
 - contributing (optional)
-- standards (optional, multiple)
+- standard (optional, multiple)
 - functional-metadata (optional, multiple)
 - TsDC (multiple)
 - [links to files required by TsDC]\
