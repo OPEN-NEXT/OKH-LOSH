@@ -104,7 +104,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - contributing [URL]
   - link to CONTRIBUTING.md
 - standard [String]
-  - standard used/considered in the _design_ (not DIN SPEC 3105-1)
+  - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
 - functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
   - dimensions
   - material
