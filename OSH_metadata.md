@@ -90,6 +90,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - license [URL]
   - link to LICENSE.md or legal code of the license
+  - optional: [SPDX-License-Identifier](https://spdx.org/licenses/)
 - readme [URL]
   - link to README.md or general description
 - status [String]
