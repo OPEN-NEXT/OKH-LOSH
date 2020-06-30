@@ -23,7 +23,7 @@ functional-metadata:
   Overcurrent protection
   PV short circuit protection
   PV reverse polarity protection
-  Battery reverse polarity (destructive, fuse is blown) protection 
+  Battery reverse polarity protection (destructive, fuse is blown) 
 TsDC: TsDC-ASM-PCB
 source-3d:
 source-2d: https://github.com/LibreSolar/mppt-1210-hus/blob/master/kicad/mppt-1210-hus.kicad_pcb
