@@ -123,6 +123,37 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 ### Required Metadata
 
+#### simplified BoM (sBoM)
+
+**Intro:**
+
+- meant to be easy to read, crawl and use
+- references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
+  - column `Reference` includes single entries only which are either
+    - URLs to a [POSH](#piece-of-osh-posh)
+    - unambiguous references to standard or purchased parts (which can be either URLs or designations)
+    - URLs to other [OSH-Modules](#osh-module)
+- subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
+
+**Location and Naming Convention:**
+
+- to be stored as CSV in the same level as the metadata file linking to this sBoM
+- name *must* contain `sBoM`
+
+**EXAMPLE:**
+
+| Pos. | Name         | Units | Type            | Reference                                                                           |
+|------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
+| 1    | casing       | 2     | OSH Component   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
+| 2    | screw        | 4     | standard part   | standard designation                                                                |
+| 3    | gear box     | 1     | OSH Module      | link to [OSH-Module](#osh-module)                                                   |
+| 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)                                            |
+| 5    | holder       | 1     | OSH Subassembly | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
+| 5.1  | bracket      | 2     | OSH Component   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
+| 5.2  | screw        | 2     | standard part   | standard designation                                                                |
+| 5.3  | arm          | 2     | OSH Component   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
+| 6    | controller   | 1     | OSH Module      | link to link to [OSH-Module](#osh-module), similar to [this](#pcb-posh-asm-pcb) one |
+
 #### OSH Module (OSHM)
 
 **Intro:**
@@ -234,3 +265,4 @@ xxx
   - version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of'), information from the GitHub/Gitlab API ('fork of' etc.)
 - joining technology
   - by TsDC-ID
+- check references in [sBoM](#simplified-bom-sbom) for ambiguity
