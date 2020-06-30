@@ -104,6 +104,16 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - weight
   - RPM
   - …
+- production-metadata [String]
+  - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
+    - cuboid (mm-100x50x20)
+    - cylinder (mm-ø50x100)
+    - sphere (mm-ø15)
+  - smallest tolerance
+    - preferrably use designation according to ISO 286-1:2010
+  - finest surface roughness in µm
+  - material
+  - manufacturing technology (machining, additive, forming, casting,…)
 - TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
 - source-3d [URL]
@@ -205,16 +215,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - export-3d (multiple)
 - export-2d (multiple)
 - export+ (multiple)
-- for production:
-  - outer dimensions (dimension+shape+measures e.g. mm-ø20x100 for a cylindric thing)
-    - cuboid (mm-100x50x20)
-    - cylinder (mm-50x100)
-    - sphere (mm-15)
-  - smallest tolerance
-    - preferrably use designation according to ISO 286-1:2010
-  - finest surface roughness in µm
-  - material
-  - manufacturing technology (machining, additive, forming, casting,…)
+- production-metadata
 
 ## Examples
 
