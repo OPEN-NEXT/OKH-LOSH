@@ -74,7 +74,10 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - owner [String]
   - organisation/individual behind the hardware design
 - language [String]
-  - language in which the documentation is written
+  - language in which the documentation is written.
+    using IETF language tags
+    following the BCP 47 standard),
+    such as `en` or `en-GB`
 - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - = unambiguous reference of the version of the hardware design
     and the version of the documentation
