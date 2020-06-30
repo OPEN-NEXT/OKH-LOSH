@@ -226,4 +226,4 @@ xxx
 - status
   - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
 - version/fork/variant of another OSHM/POSH
-  - version, URL, presence of other _very_ similar OSH in the knowledge base
+  - version, URL, presence of other _very_ similar OSH in the knowledge base, information from the GitHub/Gitlab API ('fork of' etc.)
