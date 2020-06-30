@@ -71,8 +71,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - name [String]
   - working title
   - designation for POSH, standard or purchased component
-- organisation [String]
-  - legal entity behind the hardware design
+- owner [String]
+  - organisation/individual behind the hardware design
 - language [String]
   - language in which the documentation is written
 - version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
