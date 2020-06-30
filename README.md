@@ -80,4 +80,4 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
 ## Want to contribute [?]
 
 'til we have a proper conribution guide,
-just send me a quick message via [telegram](https://t.me/moedn) :)
+just join our group on [telegram](https://t.me/joinchat/FiYCVhD-NPfpMr5PnZaiNQ) :)
