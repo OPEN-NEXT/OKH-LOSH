@@ -79,6 +79,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - = unambiguous reference of the version of the hardware design
     and the version of the documentation
   - e.g. a manually given version number or a commit hash
+  - suggestion for the projects: use the [semantic versioning scheme](https://semver.org/)
 - function [String]
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
   - optional: description of input, output and interfaces
