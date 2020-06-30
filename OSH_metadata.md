@@ -92,7 +92,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - prototype
     - certified
     - in production
-- certificate [URL]
+- attestation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - link to certificate (OSHWA, DIN SPEC 3105)
 - contributing [URL]
   - link to CONTRIBUTING.md
@@ -140,7 +140,6 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - consists-of (multiple)
 - license
 - readme
-- status
 - certificate
 - contributing
 - standard (multiple)
@@ -168,8 +167,12 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - name
 - version
 - TsDC (multiple)
-- [links to files required by TsDC]\
-= technology-specific block
+- source-3d
+- source-2d
+- source+
+- export-3d
+- export-2d
+- export+
 
 ## Examples
 
@@ -215,3 +218,10 @@ xxx
   - circuit diagram
   - PCB overlay diagram
   - gerber file
+
+## additional information added by crawler
+
+- file formats
+  - to be parsed from source URLs
+- status
+  - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
