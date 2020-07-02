@@ -92,10 +92,10 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - sBoM [URL]
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - license [URL]
-  - link to LICENSE.md or legal code of the license
-  - optional: [SPDX-License-Identifier](https://spdx.org/licenses/)
+  - link to legal code of the license (LICENSE.md)
+  - preferably [SPDX-License-Identifier](https://spdx.org/licenses/)
 - readme [URL]
-  - link to README.md or general description
+  - link to general project description; may be the project webpage, may be the README.md
 - status [String]
   - development status, preferably use defined designations like:
     - development
@@ -105,7 +105,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - attestation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - link to certificate (OSHWA, DIN SPEC 3105)
 - contributing [URL]
-  - link to CONTRIBUTING.md
+  - link to contribution guide (CONTRIBUTING.md)
 - standard [String]
   - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
 - functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
