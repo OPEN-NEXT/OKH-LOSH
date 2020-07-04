@@ -40,7 +40,17 @@ Wikimedia sample data:
 
 ### tools
 
-- [Hangprinter](https://github.com/tobbelobb/hangprinter)
+- RepRap Family
+  - [Hangprinter](https://github.com/tobbelobb/hangprinter)
+    - 5 major releases
+  - [Prusa](https://en.wikipedia.org/wiki/Prusa_i3#History)
+    - 7 major releases
+  - [RepRap Fisher](https://en.wikipedia.org/wiki/RepRap_Fisher)
+  - [RepRap Snappy](https://en.wikipedia.org/wiki/RepRap_Snappy)
+  - [RepRap Morgan](https://en.wikipedia.org/wiki/RepRap_Morgan)
+    - 4 major releases
+  - [RepRap Ormerod](https://en.wikipedia.org/wiki/RepRap_Ormerod)
+    - 2 major releases
 
 ### lab equipment
 
