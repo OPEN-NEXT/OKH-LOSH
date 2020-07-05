@@ -35,4 +35,4 @@ export-2d: https://github.com/LibreSolar/mppt-1210-hus/blob/master/mppt-1210-hus
 export+:
   user manual
     https://libre.solar/mppt-1210-hus/manual.pdf
-sBoM: https://github.com/OPEN-NEXT/OSHI/blob/master/sample%20data/sBoM-MPPT-1210-HUS.csv
+sBoM: https://github.com/OPEN-NEXT/OSHI/blob/master/sample%20data/MPPT-1210-HUS/sBom.csv
