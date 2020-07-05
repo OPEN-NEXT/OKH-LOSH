@@ -28,10 +28,11 @@ TsDC: TsDC-ASM-PCB
 source-3d:
 source-2d: https://github.com/LibreSolar/mppt-1210-hus/blob/master/kicad/mppt-1210-hus.kicad_pcb
 source+:
-  [manual](https://github.com/LibreSolar/mppt-1210-hus/tree/master/manual)
+  user manual
+    https://github.com/LibreSolar/mppt-1210-hus/tree/master/manual
 export-3d:
-export-2d: [manual](https://github.com/LibreSolar/mppt-1210-hus/blob/master/mppt-1210-hus.pdf)
+export-2d: https://github.com/LibreSolar/mppt-1210-hus/blob/master/mppt-1210-hus.pdf
 export+:
-  https://libre.solar/mppt-1210-hus/
-  https://libre.solar/mppt-1210-hus/manual.pdf
+  user manual
+    https://libre.solar/mppt-1210-hus/manual.pdf
 sBoM: https://github.com/OPEN-NEXT/OSHI/blob/master/sample%20data/sBoM-MPPT-1210-HUS.csv
