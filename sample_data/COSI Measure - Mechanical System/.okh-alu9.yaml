@@ -1,0 +1,12 @@
+name: plate 9
+image: 
+version: 1.0
+standard: 
+TsDC: COM-MAN
+source-3d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/plate9.FCStd
+source-2d: 
+source+: 
+export-3d: 
+export-2d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/Technical%20Drawings/2018-08-02_COSImeasure_mechanical_plate9.pdf
+export+: 
+production-metadata: 
