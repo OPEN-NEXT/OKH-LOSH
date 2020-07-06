@@ -24,7 +24,7 @@ Wikimedia sample data:
 
 - [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
 - [Corne keyboard](https://github.com/foostan/crkbd)
-- [AmboVent](https://github.com/AmboVent-1690-108/AmboVent)
+- [COSI Measure Mechanical System](https://github.com/opensourceimaging/cosi-measure/tree/master/Mechanical%20System)
 
 ### COVID-19-related
 
