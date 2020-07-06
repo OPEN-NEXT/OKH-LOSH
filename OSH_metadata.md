@@ -27,16 +27,21 @@ This first draft:
 
 ### Location and Naming Convention
 
-The file name:
+#### A OSHM file
 
-1. must contain `OKH`
-   1. this is sufficient for our crawler to identify it,
-   2. however you may add whatever you like in this name (e.g. as required in the [OKH Manifest Specification v1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) `OKH-thingname`)
-2. must start with a dot, → so e.g. `.okh.yml`
-   - …so files don't get changed unintentionally they will be hidden on Linux-based systems so the local folder looks neater and it's easier for the crawler to identify these files
+1. is named `.okh`\
+  (note the dot\
+  …so the file won't get changed unintentionally & it will be hidden on Linux-based systems which gives a neater look & it's easier for the crawler to identify these files);
+2. is located in the root directory of the [OSH Module](#osh-module-oshm).
 
-The metadata file describing the whole OSH Module **must be placed in the root directory**; all metadata files for sub-modules or components may be placed in the corresponding folder so that they would be in the root directory if the module would be cloned into a individual repository.\
-However as files are unambiguously referenced in the OSHM file you can place them wherever you like.
+#### A POSH file
+
+1. is named `.okh-<anything>`\
+  while `<anything>` is replaced by any type of identifier (e.g. a short name)\
+  (note the dot);
+2. should be stored in reasonable ways (e.g. in the folder containing the design files)
+  for a intuitive repo structure (e.g. so   people get also the metadata file when they clone just this component).\
+  However as files are unambiguously referenced in the OSHM file you can place them wherever you like.
 
 ### File Formats
 
