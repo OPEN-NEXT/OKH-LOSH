@@ -2,6 +2,7 @@ name: COSI Measure - Mechanical System
 image: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Complete%20System/design_in_png/complete_system_isometric.png
 owner: opensourceimaging
 version: 1.0
+status: prototype
 language: EN
 function: mechanical setup for the COSI Measure
 function-category: positioning system 
