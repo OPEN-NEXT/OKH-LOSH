@@ -68,6 +68,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 #### Slots/Properties [data type]
 
 - class
+- type [Sting]
 - name [String]
   - working title
   - designation for POSH, standard or purchased component
@@ -95,7 +96,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - parent-asm [String]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
-- license [URL]
+- license [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)/URL]
   - link to legal code of the license (LICENSE.md)
   - preferably [SPDX-License-Identifier](https://spdx.org/licenses/)
 - readme [URL]
