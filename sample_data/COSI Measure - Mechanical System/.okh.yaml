@@ -7,7 +7,7 @@ language: EN
 function: mechanical setup for the COSI Measure
 function-category: positioning system 
 license: CERN-OHL-1.2
-readme: 
+readme: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Readme.txt
 certificate: 
 contributing: https://github.com/opensourceimaging/cosi-measure/blob/master/CONTRIB.TXT
 standard: 
@@ -18,7 +18,7 @@ TsDC:
 source-3d:
 source-2d: 
 source+:
-export-3d:
+export-3d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Complete%20System/complete_system.skp
 export-2d: 
-export+:
-sBoM: 
+export+: 
+sBoM: https://github.com/OPEN-NEXT/OSHI/blob/master/sample_data/COSI%20Measure%20-%20Mechanical%20System/sBoM.csv
