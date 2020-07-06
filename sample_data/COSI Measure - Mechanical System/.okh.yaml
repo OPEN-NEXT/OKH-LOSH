@@ -18,7 +18,15 @@ TsDC:
 source-3d:
 source-2d: 
 source+:
+  Assembly Instructions
+    https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/2018-09-03_cosi-measure_v1.0_mechanical_assembly_instructions.odt
+  Bill of Materials
+    https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/2018-08-24_cosi-measure_v1.0_BoM_mechanical.ods
 export-3d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Complete%20System/complete_system.skp
 export-2d: 
 export+: 
+  Assembly Instructions
+    https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/2018-09-03_cosi-measure_v1.0_mechanical_assembly_instructions.pdf
+  Bill of Materials
+    https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/2018-08-24_cosi-measure_v1.0_BoM_mechanical.pdf
 sBoM: https://github.com/OPEN-NEXT/OSHI/blob/master/sample_data/COSI%20Measure%20-%20Mechanical%20System/sBoM.csv
