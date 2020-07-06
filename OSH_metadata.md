@@ -71,6 +71,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - name [String]
   - working title
   - designation for POSH, standard or purchased component
+- image [URL]
+  - URL to a meaningful picture of this module
 - owner [String]
   - organisation/individual behind the hardware design
 - language [String]
@@ -188,6 +190,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 **Metadata:**
 
 - name
+- image
 - organisation
 - language
 - version
@@ -221,6 +224,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 **Metadata:**
 
 - name
+- image
 - version
 - standard (multiple)
 - TsDC (multiple)
