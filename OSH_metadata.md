@@ -68,7 +68,11 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 #### Slots/Properties [data type]
 
 - class
-- type [Sting]
+- type [String]
+  - [OSHM](#osh-module-oshm)
+  - [POSH](#piece-of-osh-posh)
+  - STD – standard component
+  - BUY – purchased component
 - name [String]
   - working title
   - designation for POSH, standard or purchased component
