@@ -7,7 +7,7 @@ language:
   - JP
 function: The Corne, 40% split mechanical USB general purpose keyboard. Two halves with 3x6 column staggered keys and 3 thumb keys. It has full RGB backlighting, and is fully programmable using the pupolar Open Source QMK firmware. The basic design principles are, to have a minimal, ergonomically arranged set of keys that are all reachable by moving at a finger by at most a distance of one key in diagonal.
 function-category: ergonomic split keyboard
-license: https://github.com/foostan/crkbd/blob/master/LICENSE
+license: MIT
 readme: https://github.com/foostan/crkbd/blob/master/README.md
 certificate:
 contributing:
