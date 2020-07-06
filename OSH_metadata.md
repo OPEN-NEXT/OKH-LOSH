@@ -93,6 +93,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - can be multiple
 - sBoM [URL]
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
+- parent-asm [String]
+  - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
 - license [URL]
   - link to legal code of the license (LICENSE.md)
   - preferably [SPDX-License-Identifier](https://spdx.org/licenses/)
