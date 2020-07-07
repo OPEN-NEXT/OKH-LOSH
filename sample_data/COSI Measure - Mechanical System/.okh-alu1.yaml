@@ -12,12 +12,9 @@ export-2d:
   https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/Technical%20Drawings/2018-08-02_COSImeasure_mechanical_plate1_2of2.pdf
 export+: 
 production-metadata: 
-  - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
-  - cuboid (mm-100x50x20)
-  - cylinder (mm-ø50x100)
-  - sphere (mm-ø15)
-  - smallest tolerance
-    - preferrably use designation according to ISO 286-1:2010
-  - finest surface roughness in µm
+  - outer dimensions
+    mm-1085x140x10
+  - manufacturing technology
+    machining
   - material
-  - manufacturing technology (machining, additive, forming, casting,…)
+    EN AW-2017A

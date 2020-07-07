@@ -10,3 +10,9 @@ export-3d:
 export-2d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/Technical%20Drawings/2018-08-02_COSImeasure_mechanical_plate7.pdf
 export+: 
 production-metadata: 
+  - outer dimensions
+    mm-190x75x10
+  - manufacturing technology
+    machining
+  - material
+    EN AW-2017A

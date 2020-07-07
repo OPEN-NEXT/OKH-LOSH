@@ -7,6 +7,12 @@ source-3d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechani
 source-2d: 
 source+: 
 export-3d: 
-export-2d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/Technical%20Drawings/2018-08-02_COSImeasure_mechanical_plate9.pdf
+export-2d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Aluplates/FreeCAD/Technical%20Drawings/2018-10-11_COSImeasure_mechanical_plate9.pdf
 export+: 
 production-metadata: 
+  - outer dimensions
+    mm-190x100x10
+  - manufacturing technology
+    machining
+  - material
+    EN AW-2017A
