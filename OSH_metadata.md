@@ -118,8 +118,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - in production
 - attestation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - link to certificate (OSHWA, DIN SPEC 3105)
-- contributing [URL]
-  - link to contribution guide (CONTRIBUTING.md)
+- repo [URL]
+  - URL to development channel
+  - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
 - standard [String]
   - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
 - functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
