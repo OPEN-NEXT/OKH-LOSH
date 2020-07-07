@@ -106,8 +106,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - parent-asm [String]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
 - license [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)/URL]
-  - link to legal code of the license (LICENSE.md)
-  - preferably [SPDX-License-Identifier](https://spdx.org/licenses/)
+  - [SPDX-License-Identifier](https://spdx.org/licenses/)
+  - if SPDX identifier is not existent → URL to legal code of the license (e.g. LICENSE.md)
 - readme [URL]
   - link to general project description; may be the project webpage, may be the README.md
 - status [String]
