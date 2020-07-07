@@ -9,7 +9,7 @@ function-category: maximum power point tracking
 license: CC-BY-SA-4.0
 readme: https://github.com/LibreSolar/mppt-1210-hus/blob/master/README.md
 certificate:
-contributing:
+repo: https://github.com/LibreSolar/mppt-1210-hus/
 standard:
 functional-metadata:
   12V battery voltage

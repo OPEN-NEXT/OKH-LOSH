@@ -9,7 +9,7 @@ function-category: positioning system
 license: CERN-OHL-1.2
 readme: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Readme.txt
 certificate: 
-contributing: https://github.com/opensourceimaging/cosi-measure/blob/master/CONTRIB.TXT
+repo: https://github.com/opensourceimaging/cosi-measure/tree/master/Mechanical%20System
 standard: 
 functional-metadata:
 TsDC: 

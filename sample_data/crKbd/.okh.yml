@@ -11,7 +11,7 @@ function-category: ergonomic split keyboard
 license: MIT
 readme: https://github.com/foostan/crkbd/blob/master/README.md
 certificate:
-contributing:
+repo: https://github.com/foostan/crkbd/
 standard:
 functional-metadata:
   - 2 * (Arduino) Pro Micro microcontrollers
