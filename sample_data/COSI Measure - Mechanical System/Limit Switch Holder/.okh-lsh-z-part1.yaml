@@ -1,0 +1,13 @@
+name: Limit Switch Holder - z-axis part1
+image: 
+version: 1.0
+standard: 
+TsDC: COM-MAN
+source-3d: https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Limit%20Switch%20Holder/FreeCAD/LimitSwitchHolder_z-axis_1of2.fcstd
+source-2d: 
+source+: 
+export-3d: 
+  https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Limit%20Switch%20Holder/STP/LimitSwitchHolder_z-axis_1of2.step
+  https://github.com/opensourceimaging/cosi-measure/blob/master/Mechanical%20System/Limit%20Switch%20Holder/STL/LimitSwitchHolder_z-axis_part1of2.stlexport-2d: 
+export+: 
+production-metadata: 
