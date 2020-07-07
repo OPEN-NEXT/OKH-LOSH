@@ -213,7 +213,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - license
 - readme
 - certificate
-- contributing
+- repo
 - standard (multiple)
 - functional-metadata (multiple)
 - TsDC (multiple)
