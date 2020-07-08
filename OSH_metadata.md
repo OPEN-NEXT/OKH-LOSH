@@ -105,9 +105,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - parent-asm [String]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
-- license [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)/URL]
-  - [SPDX-License-Identifier](https://spdx.org/licenses/)
-  - if SPDX identifier is not existent → URL to legal code of the license (e.g. LICENSE.md)
+- license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
+- alternative-license [URL]
+  - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
 - readme [URL]
   - link to general project description; may be the project webpage, may be the README.md
 - status [String]
@@ -210,7 +210,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - function
 - function-category
 - sBoM
-- license
+- license / alternative-license
 - readme
 - certificate
 - repo
