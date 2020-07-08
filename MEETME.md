@@ -2,7 +2,7 @@
 
 …of the OSHI working group
 
-## xx-07-2020 – first metadata draft
+## 09-07-2020 – first metadata draft
 
 **Invitees:**
 
