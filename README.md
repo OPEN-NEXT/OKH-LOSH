@@ -49,7 +49,7 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
   - e.g. search for corona-related projects
 - …or fits into _your_ OSH (→ **linking OSH modules, facilitate design reuse**)
 - map of usage, hence compatibility between OSH Modules (_this_ module is also included _that_ assembly and thus seemingly works in this environment)
-  - this is BTW not limited to OSH; proprietary hardware can be linked as well; this may help reduding (electronic) waste or finding appropriate wear parts
+  - this is BTW not limited to OSH; proprietary hardware can be linked as well; this may help reducing (electronic) waste or finding appropriate wear parts
 - provide portable metadata: OSH can be published on various platforms
 - facilitate packaging: standardised metadata shall enable a "download button" for:
   - production files (export only)
