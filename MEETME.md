@@ -15,9 +15,19 @@
 
 **Agenda:**
 
-- decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
+- Hello, arriving, small talk [5 min]
+- decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4)) [5 min]
 - decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
-- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
+- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2)) [15 min]
+- Gathering sample data:
+  - OSH should
+    - be well/completely documented
+    - have an active community behind it
+  - → I'll present these as flagship projects wherever I can
+  - Who should I contact/approach?
+- Someone knows someone from Wikidata who's interested in organising OSH in Wikidata? Would be great to collaborate (also from the OKH side) [5 min]
+  - Who should I contact/approach?
+- Ciao Cacao [5 min]
 
 ## 25-06-2020 – first metadata draft
 
