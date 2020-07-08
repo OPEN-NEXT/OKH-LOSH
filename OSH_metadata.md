@@ -72,12 +72,11 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 #### Slots/Properties [data type]
 
-- class
-- type [String]
+- class [[class](https://www.wikidata.org/wiki/Property:P2308)]
   - [OSHM](#osh-module-oshm)
   - [POSH](#piece-of-osh-posh)
-  - STD – standard component
-  - BUY – purchased component
+  - [STD] – standard component
+  - [BUY] – purchased component
 - name [[name]([P2561](https://www.wikidata.org/wiki/Property:P2561))]\
   **@wikidata** any better idea/more precise property available?
   - working title
@@ -107,14 +106,14 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - can be multiple
 - sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
-- parent-asm [String]
+- parent-asm [[part of](https://www.wikidata.org/wiki/Property:P361)]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
 - license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
 - alternative-license [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
-- readme [URL]
+- readme [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - link to general project description; may be the project webpage, may be the README.md
-- status [String]
+- status [[version type](https://www.wikidata.org/wiki/Property:P548)]
   - development status, preferably use defined designations like:
     - development
     - prototype
@@ -125,15 +124,18 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - URL to development channel
   - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
-- standard [String]
+- standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
   - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
-- functional-metadata **(← _very_ technology-specific! not to be standardised here)** [String]
+  - property hopefully changes to [[open standard](https://www.wikidata.org/wiki/Q681263)] in the future :)
+- functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
+  - _very_ technology-specific, not to be standardised here
   - dimensions
   - material
   - weight
   - RPM
   - …
-- production-metadata [String]
+- production-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
+  - yet to be specified
   - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
     - cuboid (mm-100x50x20)
     - cylinder (mm-ø50x100)
@@ -146,22 +148,27 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
 - source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - e.g. CAD model
+  - URL to the [3d model](https://www.wikidata.org/wiki/Property:P4896) in the original file format
 - source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - e.g. drawing, gerber file (all in the original file format)
+  - URL to the 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file) in the original file format
 - source+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - additional technical documentation
   - as required by TsDC
   - e.g. manufacturing instructions, post-processing specifications (e.g. as MD files)
 - export-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - e.g. STEP
+  - URL to the exported [3d model](https://www.wikidata.org/wiki/Property:P4896)
+  - e.g. STEP, STL
 - export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - URL to the exported 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file)
   - e.g. PDF files
 - export+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - URL to complementary documents (e.g. manufacturing instructions)
   - e.g. PDF files
 - quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
-- reference [String]
-  - for standard or purchased components
+  - quantity of a component in the assembly
+- reference [[referece](https://www.wikidata.org/wiki/Q121769)]
+  - unambiguous reference for standard or purchased components
+  - others shall be able to identify/procure this component only by the given reference(s)
 
 ### Required Metadata
 
