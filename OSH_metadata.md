@@ -78,35 +78,39 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - [POSH](#piece-of-osh-posh)
   - STD – standard component
   - BUY – purchased component
-- name [String]
+- name [[name]([P2561](https://www.wikidata.org/wiki/Property:P2561))]\
+  **@wikidata** any better idea/more precise property available?
   - working title
   - designation for POSH, standard or purchased component
-- image [URL]
+- image [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
   - URL to a meaningful picture of this module
-- owner [String]
+- owner [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
   - organisation/individual behind the hardware design
-- language [String]
-  - language in which the documentation is written.
+- language [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]
+  - tag for the language in which the documentation is available
     using IETF language tags
     following the BCP 47 standard),
     such as `en` or `en-GB`
-- version [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
+  **@wikidata** proposition to change to "project version identifier" as this concept can be (and is) used for non-software projects
   - = unambiguous reference of the version of the hardware design
     and the version of the documentation
   - e.g. a manually given version number or a commit hash
   - suggestion for the projects: use the [semantic versioning scheme](https://semver.org/)
-- function [String]
+- function [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
+  **@wikidata** any better idea/better matching property available?
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
   - optional: description of input, output and interfaces
-- function-category [String]
+- function-category [[object has role](https://www.wikidata.org/wiki/Property:P3831)]\
+  **@wikidata** any better idea/better matching property available?
   - preferably use existing DBs like wikidata
   - can be multiple
-- sBoM [URL]
+- sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - parent-asm [String]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
 - license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
-- alternative-license [URL]
+- alternative-license [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
 - readme [URL]
   - link to general project description; may be the project webpage, may be the README.md
@@ -116,9 +120,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - prototype
     - certified
     - in production
-- attestation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - link to certificate (OSHWA, DIN SPEC 3105)
-- repo [URL]
+- attestation [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
+  - link to certificate (OSHWA, FSF, DIN SPEC 3105)
+- repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - URL to development channel
   - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
 - standard [String]
@@ -141,22 +145,22 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - manufacturing technology (machining, additive, forming, casting,…)
 - TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
-- source-3d [URL]
+- source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - e.g. CAD model
-- source-2d [URL]
+- source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - e.g. drawing, gerber file (all in the original file format)
-- source+ [URL]
+- source+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - additional technical documentation
   - as required by TsDC
   - e.g. manufacturing instructions, post-processing specifications (e.g. as MD files)
-- export-3d [URL]
+- export-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - e.g. STEP
-- export-2d [URL]
+- export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - e.g. PDF files
-- export+ [URL]
+- export+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - e.g. PDF files
 - quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
-- reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- reference [String]
   - for standard or purchased components
 
 ### Required Metadata
