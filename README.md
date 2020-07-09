@@ -80,6 +80,10 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
 
 ## Technical details
 
+**How does the dataflow generally work?**
+
+![dataflow illustration](illustrations/dataflow-principle.svg)
+
 - backend: wikibase
   - version x.x.x
   - used onthology modules
