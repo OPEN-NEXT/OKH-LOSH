@@ -58,7 +58,15 @@ to be shortened:
   "Show me the versions of this OSHM/POSH"
 - Which software is required to modify the technical documetation of this OSH Module/POSH?
 - Has this OSH Module been certfied in any way? Is it using specific standards?
-- What's the development status of a given OSH Module?
+- What's the development status & version of a given OSH Module or its documentation release?
+- What are the requirements for the technical documentation for a specific piece of OSH?
+  - REMARK 1: this may require translating generic DIN SPEC requirements + TsDC into Wikidata-compatible formats
+  - REMARK 2: this may enable automated pre-checking of compliance of documentation releases against the requirements of DIN SPEC 3105-1 (and the corresponding TsDC)
+- Where are the files (source & export) I need to build/modify this OSH?
+- What are production requiremnts to build a certain piece of OSH? (e.g. tolerances, material,…)
+- What's the license?
+- Where can I contribute or find more specific information?
+- In which language is this documentation release available?
 
 ### practical examples
 
