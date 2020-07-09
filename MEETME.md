@@ -2,36 +2,61 @@
 
 …of the OSHI working group
 
-## 09-07-2020 – first metadata draft
+## xx-08-2020 – xxx
 
 **Invitees:**
 
 - Julieta
 - Emilio
-- Erik
+- Robin
 - Sonika
+- Erik
+- Moe (minutes)
+
+**agenda:**
+
+- some placeholder
+
+## 09-07-2020 – first metadata draft
+
+**Attendees:**
+
+- Julieta
+- Emilio
 - Robin
 - Moe (minutes)
 
-**Agenda:**
+**notes:**
 
 - Hello, arriving, small talk
 - Quick repetition of the scope
 - Update: I'll pitch this to OKH this Friday as v2.0 of that standard
 - decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
+  - → use TOML only for starters & keep it simple
 - decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
+  - → approved
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
-- How to deal with packages? Yet no one does that, but it might - and probably should - be a model for the future (as in software).
+  - → formulate scope in a much easier way
+    - who's the end user?
+    - what's problem it solves?
+  - → add information about the version of the metadata standard used
 - Any idea where we can find function (not _usage_) categories? I wouldn't like to create a category tree from scratch. No one needs that.
+  - question for wikidata
+  - search through wikipedia
+  - ask IEEE
 - Gathering sample data:
   - OSH should
     - be well/completely documented
     - have an active community behind it
   - → I'll present these as flagship projects wherever I can
   - Who should I contact/approach?
+    - GOSH forum discussion with docubricks
+    - DIN SPEC mailing list
+    - → upload CSV + open issue linking to this CSV so people know where to add projects
 - Someone knows someone from Wikidata who's interested in organising OSH in Wikidata? Would be great to collaborate (also from the OKH side)
   - Who should I contact/approach?
-- Ciao Cacao
+    - thanks @thessaly ! :) (I won't post the names here for privacy reasons)
+- Ciao Cacao & have a nice Thursday
 
 ## 25-06-2020 – first metadata draft
 
