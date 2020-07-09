@@ -17,6 +17,7 @@
 
 - Hello, arriving, small talk
 - Quick repetition of the scope
+- Update: I'll pitch this to OKH this Friday as v2.0 of that standard
 - decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
 - decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
