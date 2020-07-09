@@ -19,6 +19,7 @@
 - decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4)) [5 min]
 - decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
 - Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2)) [15 min]
+- Any idea where we can find function (not _usage_) categories? I wouldn't like to create a category tree from scratch. No one needs that.
 - Gathering sample data:
   - OSH should
     - be well/completely documented
