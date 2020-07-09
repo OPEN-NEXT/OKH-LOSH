@@ -15,21 +15,21 @@
 
 **Agenda:**
 
-- Hello, arriving, small talk [5 min]
-- Quick repetition of the scope [5 min]
-- decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4)) [3 min]
-- decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5)) [2 min]
-- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2)) [15 min]
-- Any idea where we can find function (not _usage_) categories? I wouldn't like to create a category tree from scratch. No one needs that. [5 min]
+- Hello, arriving, small talk
+- Quick repetition of the scope
+- decision about file formats ([issue 4](https://github.com/OPEN-NEXT/OSHI/issues/4))
+- decision about file name & location convention ([issue 5](https://github.com/OPEN-NEXT/OSHI/issues/5))
+- Looking onto the [scope](Wikibase_Qs.md) and the first [draft](OSH_metadata.md)… does this all make sense? ([issue 2](https://github.com/OPEN-NEXT/OSHI/issues/2))
+- Any idea where we can find function (not _usage_) categories? I wouldn't like to create a category tree from scratch. No one needs that.
 - Gathering sample data:
   - OSH should
     - be well/completely documented
     - have an active community behind it
   - → I'll present these as flagship projects wherever I can
   - Who should I contact/approach?
-- Someone knows someone from Wikidata who's interested in organising OSH in Wikidata? Would be great to collaborate (also from the OKH side) [5 min]
+- Someone knows someone from Wikidata who's interested in organising OSH in Wikidata? Would be great to collaborate (also from the OKH side)
   - Who should I contact/approach?
-- Ciao Cacao [5 min]
+- Ciao Cacao
 
 ## 25-06-2020 – first metadata draft
 
