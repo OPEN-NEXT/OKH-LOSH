@@ -38,7 +38,7 @@ Wikimedia sample data:
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
 
-### tools
+### production tools
 
 - RepRap Family
   - [Hangprinter](https://github.com/tobbelobb/hangprinter)
@@ -53,6 +53,8 @@ Wikimedia sample data:
     - 2 major releases
 
 ### lab equipment
+
+- [OpenFlexure](https://gitlab.com/openflexure)
 
 ### energy
 
