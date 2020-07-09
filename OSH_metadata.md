@@ -77,6 +77,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - [POSH](#piece-of-osh-posh)
   - [STD] – standard component
   - [BUY] – purchased component
+- okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
+  **@wikidata** proposition to change to "project version identifier" as this concept can be (and is) used for non-software projects
+  - = version of the metadata standard used in this file
 - name [[name]([P2561](https://www.wikidata.org/wiki/Property:P2561))]\
   **@wikidata** any better idea/more precise property available?
   - working title
@@ -213,13 +216,14 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 **Metadata:**
 
+- okhv
 - name
-- image
 - organisation
+- image
 - language
 - version
 - function
-- function-category
+- function-category (multiple)
 - sBoM
 - license / alternative-license
 - readme
@@ -247,6 +251,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 **Metadata:**
 
+- okhv
 - name
 - image
 - version
