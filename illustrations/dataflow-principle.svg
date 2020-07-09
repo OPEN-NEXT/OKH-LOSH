@@ -46,10 +46,9 @@
    <glyph unicode="B" horiz-adv-x="1033" d="M 188,0 L 684,0 C 1012,0 1204,154 1204,414 1204,592 1104,727 940,782 1036,838 1098,954 1098,1079 1098,1296 924,1421 621,1421 L 188,1421 188,0 Z M 358,670 L 733,670 C 913,670 1030,555 1030,379 1030,215 932,145 705,145 L 358,145 358,670 Z M 766,811 C 762,811 756,811 752,811 L 358,811 358,1276 600,1276 C 817,1276 924,1196 924,1034 924,934 879,868 766,811 Z"/>
    <glyph unicode="A" horiz-adv-x="1271" d="M 14,0 L 193,0 344,422 936,422 1077,0 1268,0 768,1421 547,1421 14,0 Z M 395,569 L 647,1276 885,569 395,569 Z"/>
    <glyph unicode="1" horiz-adv-x="636" d="M 457,-10 L 619,-10 619,1421 520,1421 14,1159 76,1042 457,1225 457,-10 Z"/>
+   <glyph unicode="/" horiz-adv-x="636" d="M 51,-236 L 203,-236 641,1513 477,1513 51,-236 Z"/>
    <glyph unicode="." horiz-adv-x="292" d="M 262,-20 C 340,-20 393,35 393,111 393,186 340,242 262,242 184,242 131,186 131,111 131,35 184,-20 262,-20 Z"/>
    <glyph unicode="+" horiz-adv-x="980" d="M 516,203 L 672,203 672,608 1075,608 1075,760 672,760 672,1165 516,1165 516,760 113,760 113,608 516,608 516,203 Z"/>
-   <glyph unicode=")" horiz-adv-x="425" d="M 201,-367 C 410,-47 487,217 487,598 487,926 414,1192 207,1534 L 84,1462 C 254,1159 324,918 324,612 324,254 254,2 82,-295 L 201,-367 Z"/>
-   <glyph unicode="(" horiz-adv-x="451" d="M 416,-367 L 535,-295 C 363,2 293,254 293,612 293,918 363,1159 532,1462 L 410,1534 C 203,1192 129,926 129,598 129,217 207,-47 416,-367 Z"/>
    <glyph unicode="&amp;" horiz-adv-x="1165" d="M 573,-25 C 723,-25 870,35 999,143 1059,92 1124,37 1194,-20 L 1298,102 C 1231,158 1169,209 1112,256 1186,342 1251,446 1303,567 L 1178,641 C 1122,526 1063,430 999,352 813,514 686,635 602,735 797,827 1014,907 1014,1135 1014,1317 875,1442 672,1442 446,1442 299,1290 299,1059 299,963 324,870 389,766 254,686 141,578 141,383 141,141 319,-25 573,-25 Z M 891,238 C 795,158 696,117 594,117 424,117 301,233 301,397 301,520 371,600 465,662 557,545 694,410 891,238 Z M 526,838 C 473,924 455,995 455,1073 455,1225 526,1307 653,1307 772,1307 858,1233 858,1133 858,985 696,920 526,838 Z"/>
    <glyph unicode=" " horiz-adv-x="450"/>
   </font>
@@ -120,7 +119,7 @@
       <g class="com.sun.star.drawing.TextShape">
        <g id="id3">
         <rect class="BoundingBox" stroke="none" fill="none" x="2333" y="6000" width="2340" height="1014"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="2583" y="6747"><tspan fill="rgb(0,0,0)" stroke="none">OSHM</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="2583" y="6747"><tspan fill="rgb(0,0,0)" stroke="none">OSHM</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="Graphic">
@@ -132,31 +131,31 @@
       <g class="com.sun.star.drawing.TextShape">
        <g id="id4">
         <rect class="BoundingBox" stroke="none" fill="none" x="10897" y="6000" width="2107" height="1014"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="11147" y="6747"><tspan fill="rgb(0,0,0)" stroke="none">sBoM</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="11147" y="6747"><tspan fill="rgb(0,0,0)" stroke="none">sBoM</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id5">
         <rect class="BoundingBox" stroke="none" fill="none" x="15542" y="4428" width="1608" height="1014"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="700"><tspan class="TextPosition" x="15792" y="5175"><tspan fill="rgb(0,0,0)" stroke="none">[…]</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="700"><tspan class="TextPosition" x="15792" y="5175"><tspan fill="rgb(0,0,0)" stroke="none">[…]</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id6">
         <rect class="BoundingBox" stroke="none" fill="none" x="7170" y="11410" width="2730" height="1014"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="7420" y="12157"><tspan fill="rgb(0,0,0)" stroke="none">Crawler</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="7420" y="12157"><tspan fill="rgb(0,0,0)" stroke="none">Crawler</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id7">
         <rect class="BoundingBox" stroke="none" fill="none" x="10519" y="27983" width="9482" height="718"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="388px" font-weight="400"><tspan class="TextPosition" x="10769" y="28489"><tspan fill="rgb(0,0,0)" stroke="none">find the attributions in attributions.md (same folder)</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="388px" font-weight="400"><tspan class="TextPosition" x="10770" y="28489"><tspan fill="rgb(0,0,0)" stroke="none">find the attributions in illustrations/attributions.md</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id8">
         <rect class="BoundingBox" stroke="none" fill="none" x="15379" y="13007" width="3602" height="2538"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="15629" y="13754"><tspan fill="rgb(0,0,0)" stroke="none">GitHub API</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="15629" y="14516"><tspan fill="rgb(0,0,0)" stroke="none">Gitlab API</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="15629" y="15278"><tspan fill="rgb(0,0,0)" stroke="none">…</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15629" y="13754"><tspan fill="rgb(0,0,0)" stroke="none">GitHub API</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15629" y="14516"><tspan fill="rgb(0,0,0)" stroke="none">Gitlab API</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15629" y="15278"><tspan fill="rgb(0,0,0)" stroke="none">…</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="Graphic">
@@ -229,7 +228,7 @@
        <g id="id15">
         <rect class="BoundingBox" stroke="none" fill="none" x="10484" y="17517" width="1595" height="1014"/>
         <path fill="rgb(0,0,0)" stroke="none" d="M 11281,18530 L 10484,18530 10484,17517 12078,17517 12078,18530 11281,18530 Z"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="700"><tspan class="TextPosition" x="10734" y="18264"><tspan fill="rgb(255,255,255)" stroke="none">TTL</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="700"><tspan class="TextPosition" x="10734" y="18264"><tspan fill="rgb(255,255,255)" stroke="none">TTL</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="Graphic">
@@ -250,7 +249,7 @@
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id17">
         <rect class="BoundingBox" stroke="none" fill="none" x="2228" y="8672" width="16545" height="619"/>
-        <path fill="none" stroke="rgb(0,0,0)" stroke-width="53" stroke-linejoin="round" d="M 2255,8699 C 2255,8840 2402,8981 2550,8981 L 10205,8981 C 10352,8981 10500,9122 10500,9263 10500,9122 10647,8981 10795,8981 L 18450,8981 C 18597,8981 18745,8840 18745,8699"/>
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="53" stroke-linejoin="round" d="M 2255,8699 C 2255,8840 2402,8981 2549,8981 L 10205,8981 C 10352,8981 10500,9122 10500,9263 10500,9122 10647,8981 10795,8981 L 18450,8981 C 18597,8981 18745,8840 18745,8699"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
@@ -270,7 +269,7 @@
       <g class="com.sun.star.drawing.TextShape">
        <g id="id20">
         <rect class="BoundingBox" stroke="none" fill="none" x="10875" y="12081" width="871" height="1014"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="634px" font-weight="400"><tspan class="TextPosition" x="11125" y="12828"><tspan fill="rgb(0,0,0)" stroke="none">+</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Cantarell" font-size="635px" font-weight="400"><tspan class="TextPosition" x="11125" y="12828"><tspan fill="rgb(0,0,0)" stroke="none">+</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
