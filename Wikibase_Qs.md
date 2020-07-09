@@ -2,6 +2,13 @@
 
 ## Hot / shortlist (v1.0)
 
+### the enduser
+
+1. developers\
+  the whole thing here is first and foremost about **design reuse**
+2. manufacturers / service providers\
+  find OSH ready for decentralised (mass) production, maintenance and service provision
+
 ### use cases / features (unsorted)
 
 in short:
@@ -9,7 +16,7 @@ in short:
 - for developers: facilitate re-use of design
 - for users (& developers):
   - increase discoverability of OSH
-  - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github.com/kanzure/skdb> (**apt-get for hardware**) --->
+  - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github .com/kanzure/skdb> (**apt-get for hardware**) --->
     - production files (export only)
     - developer files (sources only)
     - complete clone (export + sources)
@@ -98,6 +105,7 @@ In case I'm not happy with any of the results I may choose to design my own open
 - library of manufacturers
   - enable a 'buy button' for OSH Modules
   - Open Know-Where (part of the Open Know-How network) is working on a metadata standard for manufacturers, tools and stock items (materials etc.)
+- library of legal requirements to produce hardware for a certain ambit (e.g. medical stuff)
 
 ### project/team/contributors
 

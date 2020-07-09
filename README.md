@@ -42,6 +42,20 @@ We are aiming to build the (real) Internet of Things – the Internet of Open Ha
 Now: Open Source Hardware\
 In the future: standard parts, software, manufacturers, tools, funding opportunities,…
 
+**Who's the enduser you have in mind?**
+
+1. developers\
+  the whole thing here is first and foremost about **design reuse**
+2. manufacturers / service providers\
+  find OSH ready for decentralised (mass) production, maintenance and service provision
+
+**What's the problem this thing is solving? Or rather, how does this 'tool' look like?**
+
+1. It's a powerful filter for OSH. Find what you acutally need.
+2. It's a knowledge base capable to
+   1. answer complex questions like "What kind of power contoller is commonly used for this sort of hardware?";
+   2. cross-link information (e.g. ongoing research with OSH designs (e.g. in case of COVID-19)).
+
 **What are use cases of the ontology?**
 
 - find the OSH that solves your problem (→ **linking OSH modules with functional categories**)
