@@ -11,7 +11,7 @@
 - interprets the content
   - parse source & export URLs (see [metadata draft](OSH_metadata.md) for details) for file formats
   - check correctness SPDX license identifier
-  - …
+  - gathers all the information/metadata starting from the OSHM file, which links to the sBoM, which links to POSH files
 - adds information from other platforms (e.g. GitHub/Gitlab API)
   - identify forks, versions/releases
   - get number of contributors
@@ -25,6 +25,7 @@
 
 ## formal requirements
 
+- uses existent FOSS modules wherever possible/feasible
 - licensed under GPLv3 (any objectives?)
 - published on GitHub under the organisation OPEN!NEXT
 - fully documented following best practices of the FOSS community
