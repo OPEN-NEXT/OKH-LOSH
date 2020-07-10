@@ -8,8 +8,13 @@
 - …on known domains…
   - provided in an extra file (e.g. CSV)
   - file location follows a known pattern but may differ among different domains
-- interprets the content (see XXX for details)
+- interprets the content
+  - parse source & export URLs (see [metadata draft](OSH_metadata.md) for details) for file formats
+  - check correctness SPDX license identifier
+  - …
 - adds information from other platforms (e.g. GitHub/Gitlab API)
+  - identify forks, versions/releases
+  - get number of contributors
 - converts this bunch of information into TTL
 - …and uploads it to the wikibase instance
 
