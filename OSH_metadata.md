@@ -49,7 +49,6 @@ To connect your OSH to the OSHI, your metadata must be stored in one of the foll
 
 - YAML
 - TOML
-- JSON
 
 Please use the linked templates to enter your data.
 
