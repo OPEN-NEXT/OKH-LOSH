@@ -51,11 +51,10 @@ Wikimedia sample data:
     - 4 major releases
   - [RepRap Ormerod](https://en.wikipedia.org/wiki/RepRap_Ormerod)
     - 2 major releases
+  - [Mendel90](https://github.com/nophead/Mendel90)
+- [NopSCADlib](https://github.com/nophead/NopSCADlib)\
+  an OpenSCAD library of parts for 3D printers and enclosures for electronics, etc.
 
 ### lab equipment
 
 - [OpenFlexure](https://gitlab.com/openflexure)
-
-### energy
-
-### IoT stuff
