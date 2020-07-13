@@ -33,7 +33,6 @@ Wikimedia sample data:
 - [AXIOM](https://eu.axiom-camera.com/)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
-- [The Writing Automaton](https://wikifactory.com/@yipin/writing-automaton)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
 
 ### developer tools
