@@ -26,9 +26,40 @@ Wikimedia sample data:
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [COSI Measure Mechanical System](https://github.com/opensourceimaging/cosi-measure/tree/master/Mechanical%20System)
 
-### COVID-19-related
+---
 
-#### Ventilators
+### consumer goods
+
+- [AXIOM](https://eu.axiom-camera.com/)
+- [MNT Reform](https://source.mntmn.com/MNT/reform)
+- [OttoDIY](https://www.ottodiy.com/)
+- [The Writing Automaton](https://wikifactory.com/@yipin/writing-automaton)
+- [Volled Board](https://wikifactory.com/@shad0w/volled-board)
+
+### developer tools
+
+- [ULX3S](http://radiona.org/ulx3s/)
+- [EEZ H24005 BENCH POWER SUPPLY](https://www.envox.hr/eez/bench-power-supply/psu-introduction.html)
+
+### energy
+
+#### photovoltaic
+
+- [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
+- [openWB](https://github.com/snaptec/openWB)
+
+### lab equipment
+
+- [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
+- [OpenFlexure](https://gitlab.com/openflexure)
+
+### medical
+
+#### diagnosis
+
+- [Life Sensor](https://www.cadus.org/en/life-sensor)
+
+#### ventilator (COVID-19)
 
 - [AmboVent](https://github.com/AmboVent-1690-108/AmboVent)
 - [ApolloBVM](https://docs.google.com/document/d/1-DRXnVkJOlDCmvTzh-DgWDxeLSrZTiBYyH0ypzv8tNA/edit)
@@ -38,23 +69,48 @@ Wikimedia sample data:
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
 
-### production tools
+### mobility
+
+#### bicycle
+
+- [frachtstück](https://veit-penzenstadler.de/frachtstueck/)
+- [roden](https://www.roden.com.ar/product-category/downloads/)
+
+### production tool
+
+#### additive
 
 - RepRap Family
   - [Hangprinter](https://github.com/tobbelobb/hangprinter)
     - 5 major releases
+  - [Mendel90](https://github.com/nophead/Mendel90)
   - [Prusa](https://en.wikipedia.org/wiki/Prusa_i3#History)
     - 7 major releases
   - [RepRap Fisher](https://en.wikipedia.org/wiki/RepRap_Fisher)
-  - [RepRap Snappy](https://en.wikipedia.org/wiki/RepRap_Snappy)
   - [RepRap Morgan](https://en.wikipedia.org/wiki/RepRap_Morgan)
     - 4 major releases
   - [RepRap Ormerod](https://en.wikipedia.org/wiki/RepRap_Ormerod)
     - 2 major releases
-  - [Mendel90](https://github.com/nophead/Mendel90)
+  - [RepRap Snappy](https://en.wikipedia.org/wiki/RepRap_Snappy)
+  - […and others](https://reprap.org/wiki/Build_A_RepRap)
 - [NopSCADlib](https://github.com/nophead/NopSCADlib)\
   an OpenSCAD library of parts for 3D printers and enclosures for electronics, etc.
 
-### lab equipment
+#### cast
 
-- [OpenFlexure](https://gitlab.com/openflexure)
+- [Extrusion Pro](https://community.preciousplastic.com/academy/build/extrusionpro)
+- [ROTOCASTit](https://projects.fablabs.io/@saverio/rotocastit)
+
+#### cutting
+
+- [Lasersaur](https://www.lasersaur.com/)
+- [Smill](https://projects.fablabs.io/@eb/smill)
+
+#### textile
+
+- [OHLOOM](https://wiki.opensourceecology.de/Open_Hardware-Webstuhl_%E2%80%93_OHLOOM)
+
+### tracing & tracking
+
+- [AudioMoth](https://www.openacousticdevices.info/audiomoth)
+- [bGeigieNanoKit](https://github.com/Safecast/bGeigieNanoKit)
