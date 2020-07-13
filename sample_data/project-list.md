@@ -79,6 +79,8 @@ Wikimedia sample data:
 
 #### additive
 
+- [OSE D3D Pro](https://www.opensourceecology.org/d3d-pro/)
+- [OSE D3D Universal](https://www.opensourceecology.org/d3d-universal-2/)
 - RepRap Family
   - [Hangprinter](https://github.com/tobbelobb/hangprinter)
     - 5 major releases
@@ -103,7 +105,6 @@ Wikimedia sample data:
 #### cutting
 
 - [Lasersaur](https://www.lasersaur.com/)
-- [Smill](https://projects.fablabs.io/@eb/smill)
 
 #### textile
 
@@ -113,3 +114,10 @@ Wikimedia sample data:
 
 - [AudioMoth](https://www.openacousticdevices.info/audiomoth)
 - [bGeigieNanoKit](https://github.com/Safecast/bGeigieNanoKit)
+
+---
+
+to add after misalignments are clarified:
+
+- [Smill](https://projects.fablabs.io/@eb/smill)
+  - license missing
