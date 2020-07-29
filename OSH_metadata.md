@@ -64,18 +64,14 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 #### Classes
 
-- OSHM [class]
-  - [OSH Module](#osh-module)
-- POSH [class]
-  - [Piece of Open Source Hardware](#piece-of-osh-posh)
-
-#### Slots/Properties [data type]
-
 - class [[class](https://www.wikidata.org/wiki/Property:P2308)]
   - [OSHM](#osh-module-oshm)
   - [POSH](#piece-of-osh-posh)
   - STD – standard component
   - BUY – purchased component
+
+#### Slots/Properties [data type]
+
 - okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
   **@wikidata** proposition to change to "project version identifier" as this concept can be (and is) used for non-software projects
   - = version of the metadata standard used in this file
