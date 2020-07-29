@@ -74,8 +74,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - class [[class](https://www.wikidata.org/wiki/Property:P2308)]
   - [OSHM](#osh-module-oshm)
   - [POSH](#piece-of-osh-posh)
-  - [STD] – standard component
-  - [BUY] – purchased component
+  - STD – standard component
+  - BUY – purchased component
 - okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
   **@wikidata** proposition to change to "project version identifier" as this concept can be (and is) used for non-software projects
   - = version of the metadata standard used in this file
@@ -194,12 +194,12 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 | Pos. | Name         | Units | Type            | Reference                                                                           |
 |------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
 | 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 2    | screw        | 4     | standard part   | standard designation                                                                |
+| 2    | screw        | 4     | STD   | standard designation                                                                |
 | 3    | gear box     | 1     | OSHM     | link to [OSH-Module](#osh-module)                                                   |
-| 4    | Raspberry Pi | 1     | purchased part  | unambiguous reference (not standardised)                                            |
+| 4    | Raspberry Pi | 1     | BUY  | unambiguous reference (not standardised)                                            |
 | 5    | holder       | 1     | POSH | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
 | 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 5.2  | screw        | 2     | standard part   | standard designation                                                                |
+| 5.2  | screw        | 2     | STD   | standard designation                                                                |
 | 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
 | 6    | controller   | 1     | OSHM      | link to link to [OSH-Module](#osh-module), similar to [this](#pcb-posh-asm-pcb) one |
 
