@@ -220,7 +220,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - language
 - version
 - function
-- function-category (multiple)
+- IPC-identifier
 - sBoM
 - license / alternative-license
 - readme
