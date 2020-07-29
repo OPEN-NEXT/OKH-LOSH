@@ -102,10 +102,8 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   **@wikidata** any better idea/better matching property available?
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
   - optional: description of input, output and interfaces
-- function-category [[object has role](https://www.wikidata.org/wiki/Property:P3831)]\
-  **@wikidata** any better idea/better matching property available?
-  - preferably use existing DBs like wikidata
-  - can be multiple
+- IPC-identifier [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - international, stable category system for projects in the patent domain (as OSH)
 - sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - parent-asm [[part of](https://www.wikidata.org/wiki/Property:P361)]
