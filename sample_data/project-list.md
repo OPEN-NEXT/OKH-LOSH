@@ -23,6 +23,7 @@ sources:
 open:
 
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
+- <https://glia.org/>
 
 Wikimedia sample data:
 
