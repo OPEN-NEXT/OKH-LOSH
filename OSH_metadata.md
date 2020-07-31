@@ -72,6 +72,10 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 #### Slots/Properties [data type]
 
+<!---
+Todo: arrange properties alphabetically
+--->
+
 - okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
   **@wikidata** proposition to change to "project version identifier" as this concept can be (and is) used for non-software projects
   - = version of the metadata standard used in this file
@@ -162,11 +166,13 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - e.g. PDF files
 - quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
   - quantity of a component in the assembly
-- reference [[referece](https://www.wikidata.org/wiki/Q121769)]
+- reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - unambiguous reference for standard or purchased components
   - others shall be able to identify/procure this component only by the given reference(s)
+- file-format [[file format](https://www.wikidata.org/wiki/Property:P2701)]
+- **[TBD]** version/fork/variant of another OSHM/POSH
 
-### Required Metadata
+### manually entered metadata
 
 #### simplified BoM (sBoM)
 
@@ -258,6 +264,18 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - export+ (multiple)
 - production-metadata
 
+### metadata added by crawler/parser
+
+- file formats
+  - to be parsed from source URLs
+- status
+  - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
+- version/fork/variant of another OSHM/POSH
+  - version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of'), information from the GitHub/Gitlab API ('fork of' etc.)
+- check references in [sBoM](#simplified-bom-sbom) for ambiguity
+- assign classes to instances
+  - by sBoM `Types` column
+
 ## Examples
 
 [**The following section is OUTDATED; but shouldn't be too wrong anyway**]
@@ -296,17 +314,3 @@ xxx
   - circuit diagram
   - PCB overlay diagram
   - gerber file
-
-## additional information added by crawler
-
-- file formats
-  - to be parsed from source URLs
-- status
-  - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
-- version/fork/variant of another OSHM/POSH
-  - version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of'), information from the GitHub/Gitlab API ('fork of' etc.)
-- joining technology
-  - by TsDC-ID
-- check references in [sBoM](#simplified-bom-sbom) for ambiguity
-- assign classes to instances
-  - by sBoM `Types` column
