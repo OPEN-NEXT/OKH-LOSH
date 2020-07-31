@@ -20,6 +20,10 @@ sources:
 - several direct contacts
 - [OHO targets](https://cloud.opensourceecology.de/s/nry4fWE2yCa2D9d)
 
+open:
+
+- <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
+
 Wikimedia sample data:
 
 - [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
