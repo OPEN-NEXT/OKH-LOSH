@@ -25,7 +25,7 @@ open:
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
 - <https://glia.org/>
 
-Wikimedia sample data:
+Wikimedia sample data (copy from list above):
 
 - [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
 - [Corne keyboard](https://github.com/foostan/crkbd)
@@ -37,7 +37,7 @@ Wikimedia sample data:
 
 - [AXIOM](https://eu.axiom-camera.com/)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
-  - including 10…15 submodules
+- [Corne keyboard](https://github.com/foostan/crkbd)
 - [OttoDIY](https://www.ottodiy.com/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
 
