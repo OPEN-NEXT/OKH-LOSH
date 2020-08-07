@@ -24,6 +24,7 @@ open:
 
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
 - <https://glia.org/>
+- <https://www.pubinv.org/projects/>
 
 Wikimedia sample data (copy from list above):
 
