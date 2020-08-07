@@ -195,10 +195,10 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
     - prototype
     - certified
     - in production
-- TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- TsDC-ID [[technical standard](https://www.wikidata.org/wiki/Q317623)]/[[open standard](https://www.wikidata.org/wiki/Q681263)]
   - **@wikidata**, suggestion:
-    - add as new qualifier: TsDC
-  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+    - add as new qualifier: TsDC-ID
+  - state applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
 - version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
   - = unambiguous reference of the version of the hardware design
     and the version of the documentation
@@ -291,7 +291,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - image
 - version
 - standard (multiple)
-- TsDC (multiple)
+- TsDC-ID (multiple)
 - source-3d (multiple)
 - source-2d (multiple)
 - source+ (multiple)
