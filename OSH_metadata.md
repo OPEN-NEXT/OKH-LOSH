@@ -58,7 +58,7 @@ You see, it doesn't really matter in which file format you'll save your metadata
 
 ## Ontology
 
-Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
+Mostly Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
 ### Classes & Slots
 
