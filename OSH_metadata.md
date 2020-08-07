@@ -300,15 +300,15 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - export+ (multiple)
 - production-metadata
 
-### metadata added by crawler/parser
+### metadata added by parser
 
-- file formats
-  - to be parsed from source URLs
+- file-format
+  - to be parsed from source & export URLs (`source-2d`, `source-3d`, `source+`, `export-2d`, `export-3d`, `export+`)
 - status
   - to be assessed judging from version (0.x.x; beta) or source URL (dev branch) or the presence of an attestation URL
-- version/fork/variant of another OSHM/POSH
-  - version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of'), information from the GitHub/Gitlab API ('fork of' etc.)
-- check references in [sBoM](#simplified-bom-sbom) for ambiguity
+- fork-of
+  - information from the GitHub/Gitlab API ('fork of' etc.)
+  - if no API available: assessment based on version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of')
 - assign classes to instances
   - by sBoM `Types` column
 
