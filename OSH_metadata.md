@@ -72,77 +72,43 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 #### Slots/Properties [data type]
 
-<!---
-Todo: arrange properties alphabetically
---->
-
-- okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
-  - = version of the metadata standard used in this file
-  - **@wikidata**, suggestion:
-    - change property title to "project version identifier" as this concept can be (and is) used for non-software projects
-    - add qualifiers: software, hardware, okhv
-- name [[name](https://www.wikidata.org/wiki/Property:P2561)]\
-- **@wikidata** any better idea/more precise property available?
-  - working title
-  - designation for POSH, standard or purchased component
-- image [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
-  - URL to a meaningful picture of this module
-- owner [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
-  - organisation/individual behind the hardware design
-- language [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]
-  - tag for the language in which the documentation is available
-    using IETF language tags
-    following the BCP 47 standard),
-    such as `en` or `en-GB`
-- version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
-  - = unambiguous reference of the version of the hardware design
-    and the version of the documentation
-  - **@wikidata**, suggestion:
-    - change property title to "project version identifier" as this concept can be (and is) used for non-software projects
-    - add qualifiers: software, hardware, okhv
-  - e.g. a manually given version number or a commit hash
-  - suggestion for the projects: use the [semantic versioning scheme](https://semver.org/)
-- function [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
-  - **@wikidata** any better idea/better matching property available?
-  - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-  - optional: description of input, output and interfaces
-- IPC-identifier [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - **@wikidata**, suggestion:
-    - add as new property: IPC-identifier
-  - international, stable category system for projects in the patent domain (as OSH)
-- sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: sBoM
-  - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
-- parent-asm [[part of](https://www.wikidata.org/wiki/Property:P361)]
-  - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
-- license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
 - alternative-license [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - **@wikidata**, suggestion:
     - add as new qualifier: alternative-license
   - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
-- readme [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: readme
-  - link to general project description; may be the project webpage, may be the README.md
-- status [[version type](https://www.wikidata.org/wiki/Property:P548)]
-  - development status, preferably use defined designations like:
-    - development
-    - prototype
-    - certified
-    - in production
 - attestation [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - link to certificate (OSHWA, FSF, DIN SPEC 3105)
   - **@wikidata**, suggestion:
     - add as new qualifiers: certificate, attestation
-- repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - buy-reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - **@wikidata**, suggestion:
-    - add as new qualifier: repository
-  - URL to development channel
-  - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
-- standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
-  - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
-  - property hopefully changes to [[open standard](https://www.wikidata.org/wiki/Q681263)] in the future :)
+    - add as new property: buy-reference
+  - unambiguous reference for non-standard purchased components
+  - others shall be able to identify/procure this component only by the given reference(s)
+- export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - **@wikidata**, suggestion:
+    - add as new qualifier: export-2D
+  - URL to the exported 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file etc.)
+  - e.g. PDF files
+- export-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - **@wikidata**, suggestion:
+    - add as new qualifier: export-3D
+  - URL to the exported [3d model](https://www.wikidata.org/wiki/Property:P4896)
+  - e.g. STEP, STL
+- export+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - **@wikidata**, suggestion:
+    - add as new qualifier: export+
+  - URL to complementary documents (e.g. manufacturing instructions)
+  - e.g. PDF files
+- file-format [[file format](https://www.wikidata.org/wiki/Property:P2701)]
+- fork-of [[fork](https://www.wikidata.org/wiki/Q332903)]
+  - **@wikidata**, suggestion:
+    - open description for non-software project as forks exist also for documents and hardware
+    - specify source project this project has been forked from
+- function [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
+  - **@wikidata** any better idea/better matching property available?
+  - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+  - optional: description of input, output and interfaces
 - functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
   - _very_ technology-specific, not to be standardised here
   - dimensions
@@ -150,6 +116,31 @@ Todo: arrange properties alphabetically
   - weight
   - RPM
   - …
+- image [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
+  - URL to a meaningful picture of this module
+- IPC-identifier [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+  - **@wikidata**, suggestion:
+    - add as new property: IPC-identifier
+  - international, stable category system for projects in the patent domain (as OSH)
+- language [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]
+  - tag for the language in which the documentation is available
+    using IETF language tags
+    following the BCP 47 standard),
+    such as `en` or `en-GB`
+- license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
+- name [[name](https://www.wikidata.org/wiki/Property:P2561)]\
+- **@wikidata** any better idea/more precise property available?
+  - working title
+  - designation for POSH, standard or purchased component
+- okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
+  - = version of the metadata standard used in this file
+  - **@wikidata**, suggestion:
+    - change property title to "project version identifier" as this concept can be (and is) used for non-software projects
+    - add qualifiers: software, hardware, okhv
+- owner [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
+  - organisation/individual behind the hardware design
+- parent-asm [[part of](https://www.wikidata.org/wiki/Property:P361)]
+  - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
 - production-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
   - yet to be specified
   - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
@@ -161,56 +152,61 @@ Todo: arrange properties alphabetically
   - finest surface roughness in µm
   - material
   - manufacturing technology (machining, additive, forming, casting,…)
-- TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
+  - quantity of a component in the `parent-asm`
+- readme [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
-    - add as new qualifier: TsDC
-  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
-- source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+    - add as new qualifier: readme
+  - link to general project description; may be the project webpage, may be the README.md
+- repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
-    - add as new qualifier: source-3D
-  - URL to the [3d model](https://www.wikidata.org/wiki/Property:P4896) in the original file format
+    - add as new qualifier: repository
+  - URL to development channel
+  - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
+- sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - **@wikidata**, suggestion:
+    - add as new qualifier: sBoM
+  - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
 - source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: source-2D
   - URL to the 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file) in the original file format
+- source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+  - **@wikidata**, suggestion:
+    - add as new qualifier: source-3D
+  - URL to the [3d model](https://www.wikidata.org/wiki/Property:P4896) in the original file format
 - source+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: source+
   - additional technical documentation
   - as required by TsDC
   - e.g. manufacturing instructions, post-processing specifications (e.g. as MD files)
-- export-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export-3D
-  - URL to the exported [3d model](https://www.wikidata.org/wiki/Property:P4896)
-  - e.g. STEP, STL
-- export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export-2D
-  - URL to the exported 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file etc.)
-  - e.g. PDF files
-- export+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export+
-  - URL to complementary documents (e.g. manufacturing instructions)
-  - e.g. PDF files
-- quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
-  - quantity of a component in the assembly
+- standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
+  - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
+  - property hopefully changes to [[open standard](https://www.wikidata.org/wiki/Q681263)] in the future :)
 - standard-designation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - **@wikidata**, suggestion:
     - add as new property: standard-designation
   - unambiguous reference for a standard component (preferably naming the latest standard)
   - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
-- buy-reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- status [[version type](https://www.wikidata.org/wiki/Property:P548)]
+  - development status, preferably use defined designations like:
+    - development
+    - prototype
+    - certified
+    - in production
+- TsDC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - **@wikidata**, suggestion:
-    - add as new property: buy-reference
-  - unambiguous reference for non-standard purchased components
-  - others shall be able to identify/procure this component only by the given reference(s)
-- file-format [[file format](https://www.wikidata.org/wiki/Property:P2701)]
-- fork-of [[fork](https://www.wikidata.org/wiki/Q332903)]
+    - add as new qualifier: TsDC
+  - applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
+- version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
+  - = unambiguous reference of the version of the hardware design
+    and the version of the documentation
   - **@wikidata**, suggestion:
-    - open description for non-software project as forks exist also for documents and hardware
-    - specify source project this project has been forked from
+    - change property title to "project version identifier" as this concept can be (and is) used for non-software projects
+    - add qualifiers: software, hardware, okhv
+  - e.g. a manually given version number or a commit hash
+  - suggestion for the projects: use the [semantic versioning scheme](https://semver.org/)
 
 ### manually entered metadata
 
