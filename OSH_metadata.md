@@ -210,38 +210,9 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 ### manually entered metadata
 
-#### simplified BoM (sBoM)
+#### manifest file
 
-**Intro:**
-
-- meant to be easy to read, crawl and use
-- references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
-  - column `Reference` includes single entries only which are either
-    - URLs to a [POSH](#piece-of-osh-posh)
-    - unambiguous references to standard or purchased parts (which can be either URLs or designations)
-    - URLs to other [OSH-Modules](#osh-module)
-- subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
-
-**Location and Naming Convention:**
-
-- to be stored as CSV in the same level as the metadata file linking to this sBoM
-- name *must* contain `sBoM`
-
-**EXAMPLE:**
-
-| Pos. | Name         | Units | Type            | Reference                                                                           |
-|------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
-| 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 2    | screw        | 4     | STD   | standard designation                                                                |
-| 3    | gear box     | 1     | OSHM     | link to [OSH-Module](#osh-module)                                                   |
-| 4    | Raspberry Pi | 1     | BUY  | unambiguous reference (not standardised)                                            |
-| 5    | holder       | 1     | POSH | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 5.2  | screw        | 2     | STD   | standard designation                                                                |
-| 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh), similar to [this](#mechanical-component-posh-mec) one                                      |
-| 6    | controller   | 1     | OSHM      | link to link to [OSH-Module](#osh-module), similar to [this](#pcb-posh-asm-pcb) one |
-
-#### OSH Module (OSHM)
+##### OSH Module (OSHM)
 
 **Intro:**
 
@@ -276,7 +247,7 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
-#### Piece of OSH (POSH)
+##### Piece of OSH (POSH)
 
 **Intro:**
 
@@ -300,6 +271,37 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
 - export+ (multiple)
 - production-metadata
 
+#### simplified BoM (sBoM)
+
+**Intro:**
+
+- meant to be easy to read, crawl and use
+- references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
+  - column `Reference` includes single entries only which are either
+    - URLs to a [POSH](#piece-of-osh-posh)
+    - unambiguous references to standard or purchased parts (which can be either URLs or designations)
+    - URLs to other [OSH-Modules](#osh-module)
+- subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
+
+**Location and Naming Convention:**
+
+- to be stored as CSV in the same level as the metadata file linking to this sBoM
+- name *must* contain `sBoM`
+
+**EXAMPLE:**
+
+| Pos. | Name         | Units | Type            | Reference                                                                           |
+|------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
+| 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
+| 2    | screw        | 4     | STD   | standard designation                                                                |
+| 3    | gear box     | 1     | OSHM     | link to [OSH-Module](#osh-module)                                                   |
+| 4    | Raspberry Pi | 1     | BUY  | unambiguous reference (not standardised)                                            |
+| 5    | holder       | 1     | POSH | link to [POSH file](#piece-of-osh-posh)|
+| 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
+| 5.2  | screw        | 2     | STD   | standard designation                                                                |
+| 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
+| 6    | controller   | 1     | OSHM      | link to link to [OSH-Module](#osh-module)|
+
 ### metadata added by parser
 
 - file-format
@@ -311,42 +313,3 @@ Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-ba
   - if no API available: assessment based on version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of')
 - assign classes to instances
   - by sBoM `Types` column
-
-## Examples
-
-[**The following section is OUTDATED; but shouldn't be too wrong anyway**]
-
-(unaltered metadata are *italic*)
-
-### mechanical component (POSH-MEC)
-
-- *name or working title*
-- *version*
-  - *of hardware design*
-  - *of documentation*
-- *applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))*
-- links to design files
-  - 3D model
-    - source (→ script gets file format)
-    - export (STD)
-  - 2D drawing
-    - source (→ script gets file format)
-    - export (PDF)
-- links to additional files (e.g. manufacturing instructions, justification of technical design)
-
-### mechanically joined assembly (POSH-ASM-MEC)
-
-xxx
-
-### PCB (POSH-ASM-PCB)
-
-- *name or working title*
-- *version*
-  - *of hardware design*
-  - *of documentation*
-- *applying technology-specific documentation criteria ([TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md))*
-- links to design files
-  - [simplified BoM](#simplified-bom)
-  - circuit diagram
-  - PCB overlay diagram
-  - gerber file
