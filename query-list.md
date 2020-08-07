@@ -5,9 +5,17 @@
 
 ## main queries
 
+### function
+
 - search through `functional description` to find OSH modules matching my use case
   - e.g. search for "closing mechanism"
+  - filter by technology category (`IPC-identifier`)
 
-## sub-queries
+### manufacturing
 
 - filter by joining technology judging from `TsDC-ID`
+
+### modification/documentation
+
+- filter by file format
+- filter by docmentation completeness
