@@ -19,11 +19,11 @@ sources:
 - <https://github.com/PubInv/covid19-vent-list#evaluation-of-known-projects>
 - several direct contacts
 - [OHO targets](https://cloud.opensourceecology.de/s/nry4fWE2yCa2D9d)
+- <https://glia.org/>
 
 open:
 
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
-- <https://glia.org/>
 - <https://www.pubinv.org/projects/>
 
 Wikimedia sample data (copy from list above):
@@ -61,9 +61,21 @@ Wikimedia sample data (copy from list above):
 
 ### medical
 
+#### basic equipment
+
+- [GliaX-Tourniquet](https://github.com/GliaX/tourniquet)
+
 #### diagnosis
 
 - [Life Sensor](https://www.cadus.org/en/life-sensor)
+- [GliaX-Otoscope](https://github.com/GliaX/Otoscope)
+- [GliaX-Stethoscope](https://github.com/GliaX/Stethoscope)
+  - was peer-reviewed [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193087)
+
+#### protection (COVID-19)
+
+- [GliaX-Faceshield](https://github.com/GliaX/faceshield)
+- [GliaX-Noninvasive-Vent](https://github.com/GliaX/noninvasive-vent)
 
 #### ventilator (COVID-19)
 
