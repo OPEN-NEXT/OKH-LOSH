@@ -41,6 +41,7 @@ Wikimedia sample data (copy from list above):
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [OttoDIY](https://www.ottodiy.com/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
+- [CircuitMess-Ringo](https://github.com/CircuitMess/CircuitMess-Ringo)
 
 ### developer tools
 
