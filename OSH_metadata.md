@@ -60,6 +60,12 @@ You see, it doesn't really matter in which file format you'll save your metadata
 
 Mostly Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2-rdf-based-semantics/)
 
+We'll use Wikidata's terms:
+
+- xx = classes
+- properties = slots
+- qualifiers = xx
+
 ### Classes & Slots
 
 #### Classes
@@ -108,6 +114,7 @@ Mostly Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2
 - function [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
   - **@wikidata** any better idea/better matching property available?
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+  - so if you whish that someone finds & uses your OSHM specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
   - optional: description of input, output and interfaces
 - functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
   - _very_ technology-specific, not to be standardised here
