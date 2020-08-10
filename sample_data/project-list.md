@@ -31,6 +31,8 @@ open:
 - <https://github.com/orbitalindex/awesome-space#spacecraft-hardware>
 - <https://github.com/Opentrons>
   - Opentrons is a highly commercially successful biology lab automation platform
+- precious plastics machines
+- wikihouse
 
 Wikimedia sample data (copy from list above):
 
@@ -40,15 +42,18 @@ Wikimedia sample data (copy from list above):
 
 ---
 
-### aerospace
+### aerospace & underwater
 
 - [Airpup kite balloon](https://github.com/mathewlippincott/airpup-balloon)
 - [FOSSASAT-1](https://fossa.systems/fossasat-1/)
+- [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
+- [OpenROV](https://github.com/OpenROV)
 
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
 - [Corne keyboard](https://github.com/foostan/crkbd)
+- [Koruza](http://scientific.koruza.net/index.html)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
 - [Ultimate Hacking Keyboard](https://github.com/UltimateHackingKeyboard/)
@@ -104,10 +109,9 @@ Wikimedia sample data (copy from list above):
 
 ### mobility
 
-#### bicycle
-
 - [frachtstück](https://veit-penzenstadler.de/frachtstueck/)
 - [roden](https://www.roden.com.ar/product-category/downloads/)
+- [OpenEVSE](https://github.com/openevse)
 
 ### production tool
 
