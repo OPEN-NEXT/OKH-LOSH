@@ -37,7 +37,6 @@ Wikimedia sample data (copy from list above):
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
-- [CircuitMess-Ringo](https://github.com/CircuitMess/CircuitMess-Ringo)
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
@@ -127,5 +126,7 @@ Wikimedia sample data (copy from list above):
 
 to add after misalignments are clarified:
 
+- [CircuitMess-Ringo](https://github.com/CircuitMess/CircuitMess-Ringo)
+  - not OSH yet ([source](https://wiki.opensourceecology.org/wiki/Ringo_Phone))
 - [Smill](https://projects.fablabs.io/@eb/smill)
   - license missing
