@@ -25,6 +25,12 @@ open:
 
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
 - <https://www.pubinv.org/projects/>
+- <https://github.com/FOSSASystems> (FOSSASAT-1 already included)
+- <https://gitlab.com/librespacefoundation>
+  - An open source hardware satellite
+- <https://github.com/orbitalindex/awesome-space#spacecraft-hardware>
+- <https://github.com/Opentrons>
+  - Opentrons is a highly commercially successful biology lab automation platform
 
 Wikimedia sample data (copy from list above):
 
@@ -34,17 +40,25 @@ Wikimedia sample data (copy from list above):
 
 ---
 
+### aerospace
+
+- [Airpup kite balloon](https://github.com/mathewlippincott/airpup-balloon)
+- [FOSSASAT-1](https://fossa.systems/fossasat-1/)
+
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
+- [Ultimate Hacking Keyboard](https://github.com/UltimateHackingKeyboard/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
 
 ### developer tools
 
 - [EEZ H24005 BENCH POWER SUPPLY](https://www.envox.hr/eez/bench-power-supply/psu-introduction.html)
+- [Pocket Science Lab](https://pslab.io/)
+  - part of OPEN!NEXT
 - [ULX3S](http://radiona.org/ulx3s/)
 
 ### energy
@@ -58,6 +72,7 @@ Wikimedia sample data (copy from list above):
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
 - [OpenFlexure](https://gitlab.com/openflexure)
+- [senseBox](https://sensebox.de/en/)
 
 ### medical
 
