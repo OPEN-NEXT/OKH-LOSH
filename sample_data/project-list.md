@@ -37,16 +37,16 @@ Wikimedia sample data (copy from list above):
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
-- [MNT Reform](https://source.mntmn.com/MNT/reform)
+- [CircuitMess-Ringo](https://github.com/CircuitMess/CircuitMess-Ringo)
 - [Corne keyboard](https://github.com/foostan/crkbd)
+- [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
-- [CircuitMess-Ringo](https://github.com/CircuitMess/CircuitMess-Ringo)
 
 ### developer tools
 
-- [ULX3S](http://radiona.org/ulx3s/)
 - [EEZ H24005 BENCH POWER SUPPLY](https://www.envox.hr/eez/bench-power-supply/psu-introduction.html)
+- [ULX3S](http://radiona.org/ulx3s/)
 
 ### energy
 
