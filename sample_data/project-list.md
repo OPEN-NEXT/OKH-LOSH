@@ -24,12 +24,10 @@ sources:
 open:
 
 - <https://en.oho.wiki/wiki/The_OHO_Project_Directory>
-- <https://www.pubinv.org/projects/>
-- <https://github.com/FOSSASystems> (FOSSASAT-1 already included)
 - <https://gitlab.com/librespacefoundation>
   - An open source hardware satellite
 - <https://github.com/orbitalindex/awesome-space#spacecraft-hardware>
-- <https://github.com/Opentrons>
+- <https://github.com/Opentrons/ot2>  (ot2 already in the list)
   - Opentrons is a highly commercially successful biology lab automation platform
 - precious plastics machines
 - wikihouse
@@ -48,6 +46,8 @@ Wikimedia sample data (copy from list above):
 - [FOSSASAT-1](https://fossa.systems/fossasat-1/)
 - [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
 - [OpenROV](https://github.com/OpenROV)
+- [FOSSASAT-2] (https://github.com/FOSSASystems/FOSSASAT-2)
+- [FOSSASAT-1B](https://github.com/FOSSASystems/FOSSASAT-1B)
 
 ### consumer goods
 
@@ -58,6 +58,7 @@ Wikimedia sample data (copy from list above):
 - [OttoDIY](https://www.ottodiy.com/)
 - [Ultimate Hacking Keyboard](https://github.com/UltimateHackingKeyboard/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
+- [Maths Tablet] (https://github.com/PubInv/math-tablet)
 
 ### developer tools
 
@@ -65,6 +66,10 @@ Wikimedia sample data (copy from list above):
 - [Pocket Science Lab](https://pslab.io/)
   - part of OPEN!NEXT
 - [ULX3S](http://radiona.org/ulx3s/)
+- [GlussCon](https://github.com/PubInv/GlussCon)
+- [Tetrobot](https://pubinv.github.io/tetrobot/)
+- [segmented Helixes] (https://github.com/PubInv/segmented-helixes)
+- [ot2](https://github.com/Opentrons/ot2)
 
 ### energy
 
@@ -91,6 +96,8 @@ Wikimedia sample data (copy from list above):
 - [GliaX-Otoscope](https://github.com/GliaX/Otoscope)
 - [GliaX-Stethoscope](https://github.com/GliaX/Stethoscope)
   - was peer-reviewed [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193087)
+- [Moonrat] (https://github.com/PubInv/moonrat/blob/master/README.md)
+- [Rapid E. coli Detection Project](https://github.com/PubInv/PubInv/blob/master/ideas/Project%20%2341:%20Rapid%20coliform%20presence%20detector.md)
 
 #### protection (COVID-19)
 
@@ -106,6 +113,8 @@ Wikimedia sample data (copy from list above):
 - [Low-Cost Open Source Ventilator or PAPR](https://github.com/jcl5m1/ventilator)
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
+- [Ventmon](https://github.com/PubInv/ventmon-ventilator-inline-test-monitor)
+- [Ventilator Verification Project](https://www.pubinv.org/project/ventilator-verification-project/)
 
 ### mobility
 
