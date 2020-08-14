@@ -99,3 +99,10 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
 
 'til we have a proper conribution guide,
 just join our group on [telegram](https://t.me/joinchat/FiYCVhD-NPfpMr5PnZaiNQ) :)
+
+## Why are we doing this?
+
+I feel this quote gives a neat, compact explanation:
+
+"Human history, closely explored, boils down to the history of invention of better tools."\
+– Ernst Knapp: cultural geographer (1808-1896)
