@@ -236,7 +236,7 @@ We'll use Wikidata's terms:
 - language
 - version
 - function
-- IPC-identifier
+- IPC-identifier (multiple)
 - sBoM
 - license / alternative-license
 - readme
