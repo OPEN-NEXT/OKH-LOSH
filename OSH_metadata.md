@@ -125,7 +125,7 @@ We'll use Wikidata's terms:
   - …
 - image [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
   - URL to a meaningful picture of this module
-- IPC-identifier [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
+- IPC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - **@wikidata**, suggestion:
     - add as new property: IPC-identifier
   - international, stable category system for projects in the patent domain (as OSH)
@@ -236,7 +236,7 @@ We'll use Wikidata's terms:
 - language
 - version
 - function
-- IPC-identifier (multiple)
+- IPC (multiple)
 - sBoM
 - license / alternative-license
 - readme
