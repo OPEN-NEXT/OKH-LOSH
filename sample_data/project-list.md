@@ -106,6 +106,7 @@ Wikimedia sample data (copy from list above):
 - [Low-Cost Open Source Ventilator or PAPR](https://github.com/jcl5m1/ventilator)
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
+- [VentMon](https://www.pubinv.org/project/ventmon/)
 
 ### mobility
 
