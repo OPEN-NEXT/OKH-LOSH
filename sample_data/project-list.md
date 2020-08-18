@@ -33,6 +33,7 @@ open:
   - Opentrons is a highly commercially successful biology lab automation platform
 - precious plastics machines
 - wikihouse
+- <https://www.latelierpaysan.org/Technical-drawings-tutorials>
 
 Wikimedia sample data (copy from list above):
 
