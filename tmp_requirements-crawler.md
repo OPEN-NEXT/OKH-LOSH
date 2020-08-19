@@ -1,15 +1,27 @@
 # requirements for crawler & parser
 
+## general
+
+- crawler fills a DB with data
+- this DB can also include manual entries
+- parser interprets DB data
+- …adds more information to it (e.g. from the GitHub API)
+- …and translates it into TTL/RDF
+- a parser submodule uploads the TTL/RDF to <wikibase.oho.wiki>
+
 ## formal requirements
 
-- uses existent FOSS modules wherever possible/feasible
-- licensed under GPLv3 (any objectives?)
-- published on GitLab or GitHub
+- published under a free/open license
 - fully documented following best practices of the FOSS community
+- uses existent FOSS modules wherever possible/feasible
 - use of existent libraries & modules where possible
   - to integrate ourselves into the local ecosystem
   - to reduce development work
   - to facilitate maintenance
+- as maintenance falls to OSEGeV after the project, software and documentation must integrate well into the organisation's infrastructure
+  - development on <https://gitlab.com/OSEGermany/>
+  - development in compliance with internal guidelines of OSEGeV (usage of docker etc.)
+  - documentation in collaboration with representatives from OSEGeV
 
 ## crawler
 
