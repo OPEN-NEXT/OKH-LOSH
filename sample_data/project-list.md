@@ -34,6 +34,7 @@ open:
 - precious plastics machines
 - wikihouse
 - <https://www.latelierpaysan.org/Technical-drawings-tutorials>
+- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4853539/> (medical devices)
 
 Wikimedia sample data (copy from list above):
 
