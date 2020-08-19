@@ -1,6 +1,19 @@
-# functional description
+# requirements for crawler & parser
 
-## fundamentals
+## formal requirements
+
+- uses existent FOSS modules wherever possible/feasible
+- licensed under GPLv3 (any objectives?)
+- published on GitLab or GitHub
+- fully documented following best practices of the FOSS community
+- use of existent libraries & modules where possible
+  - to integrate ourselves into the local ecosystem
+  - to reduce development work
+  - to facilitate maintenance
+
+## crawler
+
+### crawling fundamentals
 
 - crawls for metadata files…
   - OKH manifest files (v1.0)
@@ -18,18 +31,13 @@
 - converts this bunch of information into TTL
 - …and uploads it to the wikibase instance
 
-## extras
+### crawling extras
 
 - checks whether links are dead
 - does a pre-check of according to DIN SPEC 3105-1 (standard compoents unambiguously referenced? source files available in an original format? export files given? etc.)
 
-## formal requirements
+## parser
 
-- uses existent FOSS modules wherever possible/feasible
-- licensed under GPLv3 (any objectives?)
-- published on GitHub under the organisation OPEN!NEXT
-- fully documented following best practices of the FOSS community
-- use of existent libraries & modules where possible
-  - to integrate ourselves into the local ecosystem
-  - to reduce development work
-  - to facilitate maintenance
+### parsing fundamentals
+
+### parsing extras
