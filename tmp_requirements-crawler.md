@@ -32,7 +32,10 @@
   - metadata files following [the draft in this repo](OSH_metadata.md) (which
     will hopefully migrate to OKH as v2.0)
 - …on known domains…
-  - which are stored in an extra file (e.g. YML, CSV)
+  - which are stored in an extra file (e.g. YML, CSV), specifically
+    - <github.com>
+    - <gitlab.com>
+    - <appropedia.org>
   - manifest file location follows a known pattern but may differ among domains
 - …and copies the metadata files into an open repository
   (abbreviated by "DB" in the following text)
