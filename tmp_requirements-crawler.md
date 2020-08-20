@@ -43,6 +43,9 @@
 - checks whether links _inside_ the manifest files are dead
 - avoids brute force crawling (=reloading the whole DB) e.g. by comparing
   metadata of already crawled with new files
+- submodule actually _creates_ manifest files (of low quality)
+  - by accessing open APIs from platforms like Wikifactory
+  - by scraping information/metadata from platforms without open API
 
 ## parser
 
