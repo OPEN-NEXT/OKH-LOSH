@@ -8,3 +8,5 @@
 |![spreadsheet](sources/noun_spreadsheet_45392.svg)|[spreadsheet](https://thenounproject.com/search/?q=45392&i=45392)|useiconic.com|[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode)|
 |![transporter](sources/noun_transporter_745250.svg)|[transporter](https://thenounproject.com/search/?q=745250&i=745250)|Ralf Schmitzer|[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode)|
 |![Wikibase logo](sources/Wikibase_logo.svg)|[Wikibase logo](https://en.wikipedia.org/wiki/Wikibase#/media/File:Wikibase_logo.svg)|H. Snater|[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)|
+|![database](sources/noun_database_1472004_small.svg)|[database](https://thenounproject.com/search/?q=1472004&i=1472004)|IcoMoon|[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode)|
+|![process](sources/noun_process_876181.svg)|[process](https://thenounproject.com/search/?q=876181&i=876181)|un·delivered|[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode)|
