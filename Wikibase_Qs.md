@@ -94,6 +94,10 @@ In case I'm not happy with any of the results I may choose to design my own open
 - Which modules/components have been used in various modules?
 - Which modules/components are available matching my software requirements? (e.g. specific CAD software)
 - How many parts (self-designed, standard, proprietary, total) are involved in a specific OSH Module?
+- Let's draw a new module into a given assembly:
+  - are licenses compatible? Any new legal consequences for me now?
+  - any new software required for modifications?
+  - What can I expect from this module? How reliable/open is it? (see #14)
 
 ## Question Pool / longlist
 
