@@ -35,6 +35,7 @@ open:
 - wikihouse
 - <https://www.latelierpaysan.org/Technical-drawings-tutorials>
 - <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4853539/> (medical devices)
+- <https://www.open-raman.org/>
 
 Wikimedia sample data (copy from list above):
 
