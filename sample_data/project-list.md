@@ -34,6 +34,13 @@ open:
 - <https://www.latelierpaysan.org/Technical-drawings-tutorials>
 - <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4853539/> (medical devices)
 - <https://www.open-raman.org/>
+- <https://publiclab.org/> e.g. <https://publiclab.org/wiki/desktop-spectrometry-kit-3-0>
+- <https://www.labonthecheap.com/>
+- <https://github.com/biohackacademy>
+- <https://www.openstructures.net/parts>
+  - only individual parts
+- <https://www.olimex.com/Products/OLinuXino/>
+  - electronics only
 
 Wikimedia sample data (copy from list above):
 
@@ -49,7 +56,7 @@ Wikimedia sample data (copy from list above):
 - [FOSSASAT-1](https://fossa.systems/fossasat-1/)
 - [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
 - [OpenROV](https://github.com/OpenROV)
-- [FOSSASAT-2] (https://github.com/FOSSASystems/FOSSASAT-2)
+- [FOSSASAT-2](https://github.com/FOSSASystems/FOSSASAT-2)
 - [FOSSASAT-1B](https://github.com/FOSSASystems/FOSSASAT-1B)
 
 ### consumer goods
@@ -61,7 +68,7 @@ Wikimedia sample data (copy from list above):
 - [OttoDIY](https://www.ottodiy.com/)
 - [Ultimate Hacking Keyboard](https://github.com/UltimateHackingKeyboard/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
-- [Maths Tablet] (https://github.com/PubInv/math-tablet)
+- [Maths Tablet](https://github.com/PubInv/math-tablet)
 
 ### developer tools
 
@@ -71,7 +78,7 @@ Wikimedia sample data (copy from list above):
 - [ULX3S](http://radiona.org/ulx3s/)
 - [GlussCon](https://github.com/PubInv/GlussCon)
 - [Tetrobot](https://pubinv.github.io/tetrobot/)
-- [segmented Helixes] (https://github.com/PubInv/segmented-helixes)
+- [segmented Helixes](https://github.com/PubInv/segmented-helixes)
 - [ot2](https://github.com/Opentrons/ot2)
 
 ### energy
@@ -99,7 +106,7 @@ Wikimedia sample data (copy from list above):
 - [GliaX-Otoscope](https://github.com/GliaX/Otoscope)
 - [GliaX-Stethoscope](https://github.com/GliaX/Stethoscope)
   - was peer-reviewed [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193087)
-- [Moonrat] (https://github.com/PubInv/moonrat/blob/master/README.md)
+- [Moonrat](https://github.com/PubInv/moonrat/blob/master/README.md)
 - [Rapid E. coli Detection Project](https://github.com/PubInv/PubInv/blob/master/ideas/Project%20%2341:%20Rapid%20coliform%20presence%20detector.md)
 
 #### protection (COVID-19)
