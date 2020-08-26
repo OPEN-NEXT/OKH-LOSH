@@ -31,6 +31,16 @@ open:
   - Opentrons is a highly commercially successful biology lab automation platform
 - precious plastics machines
 - wikihouse
+- <https://www.latelierpaysan.org/Technical-drawings-tutorials>
+- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4853539/> (medical devices)
+- <https://www.open-raman.org/>
+- <https://publiclab.org/> e.g. <https://publiclab.org/wiki/desktop-spectrometry-kit-3-0>
+- <https://www.labonthecheap.com/>
+- <https://github.com/biohackacademy>
+- <https://www.openstructures.net/parts>
+  - only individual parts
+- <https://www.olimex.com/Products/OLinuXino/>
+  - electronics only
 
 Wikimedia sample data (copy from list above):
 
@@ -114,7 +124,6 @@ Wikimedia sample data (copy from list above):
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
 - [Ventmon](https://github.com/PubInv/ventmon-ventilator-inline-test-monitor)
-- [Ventilator Verification Project](https://www.pubinv.org/project/ventilator-verification-project/)
 
 ### mobility
 
