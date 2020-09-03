@@ -63,9 +63,11 @@ Mostly Wikidata's ontology, which is based on [OWL 2](https://www.w3.org/TR/owl2
 
 We'll use Wikidata's terms:
 
-- xx = classes
-- properties = slots
-- qualifiers = xx
+| Wikidata term | term in other resources |
+| --- | --- |
+| class | class |
+| property | slot/feature/attribute |
+| qualifier | facet |
 
 ### Classes & Slots
 
