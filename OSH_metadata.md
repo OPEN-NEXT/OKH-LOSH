@@ -47,8 +47,9 @@ This first draft:
 
 To connect your OSH to the OSHI, your metadata must be stored in one of the following formats:
 
-- YAML
-- TOML
+- [JSON-LD](https://json-ld.org/)
+- YAML (for OKHv1 **only**)
+- We may allow more file formats in the future as everything is converted and uploaded to the Wikibase instance anyway.
 
 Please use the linked templates to enter your data.
 
