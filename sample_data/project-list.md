@@ -65,6 +65,8 @@ Wikimedia sample data (copy from list above):
 
 - [AXIOM](https://eu.axiom-camera.com/)
 - [Corne keyboard](https://github.com/foostan/crkbd)
+- [EOMA68 computing devices](https://www.crowdsupply.com/eoma68/micro-desktop)
+  - 100% open source hardare and libre software/firmeware computers
 - [Koruza](http://scientific.koruza.net/index.html)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
