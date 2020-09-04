@@ -27,6 +27,7 @@ open:
 - <https://gitlab.com/librespacefoundation>
   - An open source hardware satellite
 - <https://github.com/orbitalindex/awesome-space#spacecraft-hardware>
+  - List of spacecraft hardware (including ground equipment), some of which are open source hardware
 - <https://github.com/Opentrons/ot2>  (ot2 already in the list)
   - Opentrons is a highly commercially successful biology lab automation platform
 - precious plastics machines
@@ -34,6 +35,7 @@ open:
 - <https://www.latelierpaysan.org/Technical-drawings-tutorials>
 - <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4853539/> (medical devices)
 - <https://www.open-raman.org/>
+  - Unfortunately, OpenRAMAN is *not* open source hardware because its designs are released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) which is not an open source license.
 - <https://publiclab.org/> e.g. <https://publiclab.org/wiki/desktop-spectrometry-kit-3-0>
 - <https://www.labonthecheap.com/>
 - <https://github.com/biohackacademy>
@@ -166,7 +168,7 @@ Wikimedia sample data (copy from list above):
 
 - [OHLOOM](https://wiki.opensourceecology.de/Open_Hardware-Webstuhl_%E2%80%93_OHLOOM)
 
-### tracing & tracking
+### tracing & tracking & remote sensing
 
 - [AudioMoth](https://www.openacousticdevices.info/audiomoth)
 - [bGeigieNanoKit](https://github.com/Safecast/bGeigieNanoKit)
