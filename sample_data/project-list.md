@@ -174,6 +174,8 @@ Wikimedia sample data (copy from list above):
 
 - [AudioMoth](https://www.openacousticdevices.info/audiomoth)
 - [bGeigieNanoKit](https://github.com/Safecast/bGeigieNanoKit)
+- [SenseBox](https://sensebox.de/)
+  - Open source environmental sensor platform with [open educational resources under CC BY-SA 4.0](https://sensebox.de/en/material)
 
 ---
 
