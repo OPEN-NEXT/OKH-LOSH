@@ -2,7 +2,7 @@
 
 …of the OSHI working group
 
-## 09-09-2020 – "Welcome to the Next Steps" – Wikimedia, Wikifactory & Fraunhofer IPK
+## 14-09-2020 – "Welcome to the Next Steps" – Wikimedia, Wikifactory & Fraunhofer IPK
 
 **Invities:**
 
