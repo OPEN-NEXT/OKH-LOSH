@@ -49,9 +49,9 @@
   metadata of already crawled with new files
 - a submodule creates manifest files (of low quality) by scraping information/metadata from platforms without open API
 
-## parser
+## Data Input API (DIA)
 
-### parsing fundamentals
+### DIA fundamentals
 
 - interprets the content
   - gathers all the information/metadata starting from the OSHM file, which links to the sBoM, which links to POSH files
@@ -66,7 +66,7 @@
 - …following the (updatable) ontology of the target wikibase instance (in our case <wikibase.oho.wiki>)
 - …and uploads the content through by calling the wikibase API (in our case <wikibase.oho.wiki>)
 
-### parsing extras
+### DIA extras
 
 - identifies misalignments with standard input format (e.g. typos)
 - helps fixing/interpreting these misalignments
