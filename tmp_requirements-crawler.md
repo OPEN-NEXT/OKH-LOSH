@@ -54,15 +54,17 @@
 ### parsing fundamentals
 
 - interprets the content
-  - parse source & export URLs (see [metadata draft](OSH_metadata.md) for details) for file formats
-  - check correctness SPDX license identifier
   - gathers all the information/metadata starting from the OSHM file, which links to the sBoM, which links to POSH files
+  - parse source & export URLs (see [metadata draft](OSH_metadata.md) for details) for file formats
+  - check correctness
+    - SPDX license identifier
+    - …
 - adds information from other platforms (e.g. GitHub/Gitlab API)
   - identify forks, versions/releases
   - get number of contributors
-- converts this bunch of information into TTL/RDF
+- converts this bunch of information into JSON
 - …following the (updatable) ontology of the target wikibase instance (in our case <wikibase.oho.wiki>)
-- extra submodule: and uploads TTL/RDF to a defined wikibase instance (in our case <wikibase.oho.wiki>)
+- …and uploads the content through by calling the wikibase API (in our case <wikibase.oho.wiki>)
 
 ### parsing extras
 
