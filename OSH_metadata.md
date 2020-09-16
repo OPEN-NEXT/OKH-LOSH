@@ -91,13 +91,9 @@ We'll use Wikidata's terms:
 
 ---
 
-- attestation [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
+- attestation [URL] | [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - link to certificate (OSHWA, FSF, DIN SPEC 3105)
-  - **@wikidata**, suggestion:
-    - add as new qualifiers: certificate, attestation
-  - buy-reference [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - **@wikidata**, suggestion:
-    - add as new property: buy-reference
+- buy-reference
   - unambiguous reference for non-standard purchased components
   - others shall be able to identify/procure this component only by the given reference(s)
 - export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
@@ -132,8 +128,10 @@ We'll use Wikidata's terms:
   - weight
   - RPM
   - …
-- image [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
+- image [URL] | [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
   - URL to a meaningful picture of this module
+  - license must be clear under this URL
+  - to be displayed on the OHO project page when found by a search in Wikibase
 - IPC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
   - **@wikidata**, suggestion:
     - add as new property: IPC-identifier
@@ -173,10 +171,9 @@ We'll use Wikidata's terms:
   - manufacturing technology (machining, additive, forming, casting,…)
 - quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
   - quantity of a component in the `parent-asm`
-- readme [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: readme
+- readme [URL]
   - link to general project description; may be the project webpage, may be the README.md
+  - to be displayed on the OHO project page when found by a search in Wikibase
 - repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: repository
