@@ -54,8 +54,11 @@ To connect your OSH to the OSHI, your metadata must be stored in one of the foll
 Please use the linked templates to enter your data.
 
 Background:\
-The crawler will take this metadata as basic input, add additional information to it (e.g. from the Gitlab API) and build a TTL file with all that information which is then integrated in Wikibase.
-You see, it doesn't really matter in which file format you'll save your metadata as long as the crawler is able to interpret it.
+The crawler will take this metadata as basic input, add additional information
+to it (e.g. from the Gitlab API), build a JSON file with all that information
+and uploads it to Wikibase via a Data Input API (developed by WMDE). It doesn't
+really matter in which file format you'll save your metadata as long as the
+crawler is able to interpret it.
 
 ## Ontology
 
