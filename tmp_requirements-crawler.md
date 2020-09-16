@@ -37,17 +37,17 @@
     - <gitlab.com>
     - <appropedia.org>
   - manifest file location follows a known pattern but may differ among domains
-- …and copies the metadata files into an open repository
-  (abbreviated by "DB" in the following text)
-  - alternative suggestions welcome
-- a submodule actually _creates_ manifest files by accessing open APIs (developed by Wikimedia) from platforms like Wikifactory
+- …and sends the data via JSON the the [Data Input API](#data-input-api-dia)
+- crawler must be able to automatically run on OSEG servers, so please also consider the cron!
+- Reconciliation module:
+  - avoids brute force crawling (=recreating the whole DB) by checking the
+    wikibase instance for existing entries and updates
 
 ### crawling extras
 
 - checks whether links _inside_ the manifest files are dead
-- avoids brute force crawling (=reloading the whole DB) e.g. by comparing
-  metadata of already crawled with new files
-- a submodule creates manifest files (of low quality) by scraping information/metadata from platforms without open API
+- a submodule creates manifest files (of low quality) by scraping
+  information/metadata from platforms without open API
 
 ## Data Input API (DIA)
 
