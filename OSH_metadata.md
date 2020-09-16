@@ -84,10 +84,13 @@ We'll use Wikidata's terms:
 
 #### Slots/Properties [data type]
 
-- alternative-license [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: alternative-license
-  - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
+**Legend:**
+
+- property [data format] | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
+  - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
+
+---
+
 - attestation [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - link to certificate (OSHWA, FSF, DIN SPEC 3105)
   - **@wikidata**, suggestion:
@@ -140,7 +143,10 @@ We'll use Wikidata's terms:
     using IETF language tags
     following the BCP 47 standard),
     such as `en` or `en-GB`
-- license [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
+- license
+  - license-alternative [URL]
+    - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
+  - license-spdx [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
 - name [[name](https://www.wikidata.org/wiki/Property:P2561)]\
 - **@wikidata** any better idea/more precise property available?
   - working title
