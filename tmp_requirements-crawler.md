@@ -39,15 +39,16 @@
   - manifest file location follows a known pattern but may differ among domains
 - …and sends the data via JSON the the [Data Input API](#data-input-api-dia)
 - crawler must be able to automatically run on OSEG servers, so please also consider the cron!
-- Reconciliation module:
-  - avoids brute force crawling (=recreating the whole DB) by checking the
-    wikibase instance for existing entries and updates
 
 ### crawling extras
 
 - checks whether links _inside_ the manifest files are dead
 - a submodule creates manifest files (of low quality) by scraping
   information/metadata from platforms without open API
+- reconciliation module:
+  - = incremental entry adding
+  - avoids brute force crawling (=recreating the whole DB) by checking the
+    wikibase instance for existing entries and updates
 
 ## Data Input API (DIA)
 
