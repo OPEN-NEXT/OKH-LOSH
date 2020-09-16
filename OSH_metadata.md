@@ -86,38 +86,27 @@ We'll use Wikidata's terms:
 
 **Legend:**
 
-- property [data format] | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
+- property [data format] | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]\
+  some description
   - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
 
 ---
 
-- attestation [URL] | [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
+- attestation [URL]
   - link to certificate (OSHWA, FSF, DIN SPEC 3105)
-- export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export-2D
-  - URL to the exported 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file etc.)
-  - e.g. PDF files
-- export-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export-3D
-  - URL to the exported [3d model](https://www.wikidata.org/wiki/Property:P4896)
-  - e.g. STEP, STL
-- export+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: export+
-  - URL to complementary documents (e.g. manufacturing instructions)
-  - e.g. PDF files
-- file-format [[file format](https://www.wikidata.org/wiki/Property:P2701)]
-- fork-of [[fork](https://www.wikidata.org/wiki/Q332903)]
-  - **@wikidata**, suggestion:
-    - open description for non-software project as forks exist also for documents and hardware
-    - specify source project this project has been forked from
-- function [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
-  - **@wikidata** any better idea/better matching property available?
-  - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-  - so if you whish that someone finds & uses your OSHM specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
-  - optional: description of input, output and interfaces
+- export [URL]\
+  URL to exported source files in a data format that is generally accessible to recipients
+  (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521) or [3d model](https://www.wikidata.org/wiki/Property:P4896)), gerber file etc.)\
+  e.g. PDF, STL, STP
+  - file-format | [[file format](https://www.wikidata.org/wiki/Property:P2701)]
+  - same qualifiers as `source`
+- fork-of | [[based on](https://www.wikidata.org/wiki/Property:P144)]\
+  specify source project this project has been forked from
+- function [string] | [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
+  functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.\
+  so if you whish that someone finds & uses your OSHM specifically e.g. for
+  COVID-19-crisis response, include relevant keywords in this field\
+  optional: description of input, output and interfaces
 - functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
   - _very_ technology-specific, not to be standardised here
   - dimensions
@@ -129,34 +118,26 @@ We'll use Wikidata's terms:
   - URL to a meaningful picture of this module
   - license must be clear under this URL
   - to be displayed on the OHO project page when found by a search in Wikibase
-- IPC [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - **@wikidata**, suggestion:
-    - add as new property: IPC-identifier
-  - international, stable category system for projects in the patent domain (as OSH)
-- language [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]
-  - tag for the language in which the documentation is available
-    using IETF language tags
-    following the BCP 47 standard),
-    such as `en` or `en-GB`
-- license
-  - license-alternative [URL]
-    - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
-  - license-spdx [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
-- name [[name](https://www.wikidata.org/wiki/Property:P2561)]\
-- **@wikidata** any better idea/more precise property available?
-  - working title
-  - designation for POSH, standard or purchased component
-- okhv [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
-  - = version of the metadata standard used in this file
-  - **@wikidata**, suggestion:
-    - change property title to "project version identifier" as this concept can be (and is) used for non-software projects
-    - add qualifiers: software, hardware, okhv
-- owner [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
+- IPC\
+  International Patent Classification\
+  international, stable category system for projects in the patent domain (as OSH)
+- language | [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]\
+  tag for the language in which the documentation is available using IETF
+  language tags following the BCP 47 standard), such as `en` or `en-GB`
+- license-alternative [URL] | [[copyright license](https://www.wikidata.org/wiki/Property:P275)] ← but different data type
+  - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
+- license-spdx [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
+- name [string] | [[name](https://www.wikidata.org/wiki/Property:P2561)]\
+  working title\
+  designation for POSH, standard or purchased component
+- okhv\
+  version of the metadata standard used in this file
+- owner | [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
   - organisation/individual behind the hardware design
-- parent-asm [[part of](https://www.wikidata.org/wiki/Property:P361)]
+- parent-asm | [[part of](https://www.wikidata.org/wiki/Property:P361)]
   - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
-- production-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
-  - yet to be specified
+- production-metadata | sort of: [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]\
+  yet to be specified; e.g. (NOT QUALIFIERS ↓)
   - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
     - cuboid (mm-100x50x20)
     - cylinder (mm-ø50x100)
@@ -166,16 +147,15 @@ We'll use Wikidata's terms:
   - finest surface roughness in µm
   - material
   - manufacturing technology (machining, additive, forming, casting,…)
-- quantity [quantity](https://www.wikidata.org/wiki/Property:P1114)
-  - quantity of a component in the `parent-asm`
-- readme [URL]
-  - link to general project description; may be the project webpage, may be the README.md
-  - to be displayed on the OHO project page when found by a search in Wikibase
-- repo [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: repository
-  - URL to development channel
-  - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
+- quantity | [quantity](https://www.wikidata.org/wiki/Property:P1114)\
+  quantity of a component in the `parent-asm`
+- readme [URL]\
+  link to general project description; may be the project webpage, may be the `README.md`\
+  to be displayed on the OHO project page when found by a search in Wikibase
+- repo [[URL]\
+  URL to development channel\
+  people will use this URL to start contribution
+  (reporting issues, giving feedback, joining the development)
 - reference
   - buy-reference [string]
     - unambiguous reference for non-standard purchased components
@@ -229,7 +209,7 @@ We'll use Wikidata's terms:
 
 ##### OSH Module (OSHM)
 
-**assembly of components (and subassemblies) with clear input, output and interfaces that fully complies with DIN SPEC 3105-1 and this metadata standard**
+Which is an **assembly of components (and subassemblies) with clear input, output and interfaces that fully complies with DIN SPEC 3105-1 and this metadata standard**.
 
 - (and thus can be used independently from the rest of the original machine as
   far as required inputs and interfaces are respected);
@@ -264,7 +244,7 @@ We'll use Wikidata's terms:
 
 ##### Piece of OSH (POSH)
 
-**component or assembly that fully complies with DIN SPEC 3105-1 and this metadata standard**
+Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and this metadata standard**.
 
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
@@ -287,14 +267,14 @@ We'll use Wikidata's terms:
 
 ##### Standard Component (STD)
 
-**component or assembly that is officially standardised**
+Which is a **component or assembly that is officially standardised**.
 
 - name
 - standard designation
 
 ##### Purchased Component (BUY)
 
-**component or assembly that is neither officially standardised nor fully compliant with DIN SPEC 3105-1 and hence just bought**
+Which is a **component or assembly that is neither officially standardised nor fully compliant with DIN SPEC 3105-1 and hence just bought**.
 
 **Metadata:**
 
