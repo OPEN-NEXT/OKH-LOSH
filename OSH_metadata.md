@@ -93,9 +93,6 @@ We'll use Wikidata's terms:
 
 - attestation [URL] | [[reference URL](https://www.wikidata.org/wiki/Property:P854)]
   - link to certificate (OSHWA, FSF, DIN SPEC 3105)
-- buy-reference
-  - unambiguous reference for non-standard purchased components
-  - others shall be able to identify/procure this component only by the given reference(s)
 - export-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: export-2D
@@ -179,6 +176,13 @@ We'll use Wikidata's terms:
     - add as new qualifier: repository
   - URL to development channel
   - people will use the URL to contribute in any way (reporting issues, giving feedback, joining the development)
+- reference
+  - buy-reference [string]
+    - unambiguous reference for non-standard purchased components
+    - others shall be able to identify/procure this component only by the given reference(s)
+  - standard-designation [string]
+    - unambiguous reference for a standard component (preferably naming the latest standard)
+    - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
 - sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: sBoM
@@ -200,11 +204,6 @@ We'll use Wikidata's terms:
 - standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
   - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
   - property hopefully changes to [[open standard](https://www.wikidata.org/wiki/Q681263)] in the future :)
-- standard-designation [[External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)]
-  - **@wikidata**, suggestion:
-    - add as new property: standard-designation
-  - unambiguous reference for a standard component (preferably naming the latest standard)
-  - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
 - status [[version type](https://www.wikidata.org/wiki/Property:P548)]
   - development status, preferably use defined designations like:
     - development
@@ -230,10 +229,10 @@ We'll use Wikidata's terms:
 
 ##### OSH Module (OSHM)
 
-**Intro:**
+**assembly of components (and subassemblies) with clear input, output and interfaces that fully complies with DIN SPEC 3105-1 and this metadata standard**
 
-- = assembly of components (and subassemblies) with clear input, output and interfaces
-  - (and thus can be used independently from the rest of the original machine as far as required inputs and interfaces are respected);
+- (and thus can be used independently from the rest of the original machine as
+  far as required inputs and interfaces are respected);
 - metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
 
 **Metadata:**
@@ -265,9 +264,8 @@ We'll use Wikidata's terms:
 
 ##### Piece of OSH (POSH)
 
-**Intro:**
+**component or assembly that fully complies with DIN SPEC 3105-1 and this metadata standard**
 
-- = component or assembly of components
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
 
@@ -286,6 +284,22 @@ We'll use Wikidata's terms:
 - export-2d (multiple)
 - export+ (multiple)
 - production-metadata
+
+##### Standard Component (STD)
+
+**component or assembly that is officially standardised**
+
+- name
+- standard designation
+
+##### Purchased Component (BUY)
+
+**component or assembly that is neither officially standardised nor fully compliant with DIN SPEC 3105-1 and hence just bought**
+
+**Metadata:**
+
+- name
+- buy-reference
 
 #### simplified BoM (sBoM)
 
@@ -329,3 +343,11 @@ We'll use Wikidata's terms:
   - if no API available: assessment based on version, URL, presence of other _very_ similar OSH in the knowledge base (judging e.g. from 'consists of')
 - assign classes to instances
   - by sBoM `Types` column
+
+## data structure
+
+OSHM has
+
+- own metadata
+- POSH, STD, BUY
+  - each with quantities
