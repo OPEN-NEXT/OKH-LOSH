@@ -91,6 +91,7 @@ Wikimedia sample data (copy from list above):
 ### lab equipment
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
+- [Jubilee](https://github.com/machineagency/jubilee)
 - [OpenFlexure](https://gitlab.com/openflexure)
 - [senseBox](https://sensebox.de/en/)
 
