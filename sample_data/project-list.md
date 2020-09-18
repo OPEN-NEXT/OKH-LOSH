@@ -91,7 +91,6 @@ Wikimedia sample data (copy from list above):
 ### lab equipment
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
-- [Jubilee](https://github.com/machineagency/jubilee)
 - [OpenFlexure](https://gitlab.com/openflexure)
 - [senseBox](https://sensebox.de/en/)
 
@@ -132,7 +131,7 @@ Wikimedia sample data (copy from list above):
 - [roden](https://www.roden.com.ar/product-category/downloads/)
 - [OpenEVSE](https://github.com/openevse)
 
-### production tool
+### manufacturing
 
 #### additive
 
@@ -162,6 +161,11 @@ Wikimedia sample data (copy from list above):
 #### cutting
 
 - [Lasersaur](https://www.lasersaur.com/)
+
+#### manupulation
+
+- [Jubilee](https://github.com/machineagency/jubilee)
+- [Skyentific SmallRobotArm](https://github.com/SkyentificGit/SmallRobotArm)
 
 #### textile
 
