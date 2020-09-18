@@ -62,6 +62,7 @@ Wikimedia sample data (copy from list above):
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
+- [Baby MIT Cheetah Robot](https://www.instructables.com/id/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/)
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [Koruza](http://scientific.koruza.net/index.html)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
