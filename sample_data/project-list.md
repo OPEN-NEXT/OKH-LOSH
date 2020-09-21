@@ -73,9 +73,10 @@ Wikimedia sample data (copy from list above):
 
 ### developer tools
 
+- [betrusted hardware](https://github.com/betrusted-io/betrusted-hardware)
 - [EEZ H24005 BENCH POWER SUPPLY](https://www.envox.hr/eez/bench-power-supply/psu-introduction.html)
-- [Pocket Science Lab](https://pslab.io/)
-  - part of OPEN!NEXT
+- [Pocket Science Lab](https://pslab.io/) (part of OPEN!NEXT)
+- [Precursor](https://www.crowdsupply.com/sutajio-kosagi/precursor)
 - [ULX3S](http://radiona.org/ulx3s/)
 - [GlussCon](https://github.com/PubInv/GlussCon)
 - [Tetrobot](https://pubinv.github.io/tetrobot/)
