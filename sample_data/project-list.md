@@ -96,7 +96,6 @@ Wikimedia sample data (copy from list above):
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
 - [OpenFlexure](https://gitlab.com/openflexure)
-- [senseBox](https://sensebox.de/en/)
 
 ### medical
 
