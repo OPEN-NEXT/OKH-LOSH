@@ -27,6 +27,7 @@ open:
 - <https://gitlab.com/librespacefoundation>
   - An open source hardware satellite
 - <https://github.com/orbitalindex/awesome-space#spacecraft-hardware>
+  - List of spacecraft hardware (including ground equipment), some of which are open source hardware
 - <https://github.com/Opentrons/ot2>  (ot2 already in the list)
   - Opentrons is a highly commercially successful biology lab automation platform
 - precious plastics machines
@@ -64,6 +65,8 @@ Wikimedia sample data (copy from list above):
 - [AXIOM](https://eu.axiom-camera.com/)
 - [Baby MIT Cheetah Robot](https://www.instructables.com/id/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/)
 - [Corne keyboard](https://github.com/foostan/crkbd)
+- [EOMA68 computing devices](https://www.crowdsupply.com/eoma68/micro-desktop)
+  - 100% open source hardare and libre software/firmeware computers
 - [Koruza](http://scientific.koruza.net/index.html)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
@@ -94,7 +97,6 @@ Wikimedia sample data (copy from list above):
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
 - [OpenFlexure](https://gitlab.com/openflexure)
-- [senseBox](https://sensebox.de/en/)
 
 ### medical
 
@@ -173,10 +175,12 @@ Wikimedia sample data (copy from list above):
 
 - [OHLOOM](https://wiki.opensourceecology.de/Open_Hardware-Webstuhl_%E2%80%93_OHLOOM)
 
-### tracing & tracking
+### tracing & tracking & remote sensing
 
 - [AudioMoth](https://www.openacousticdevices.info/audiomoth)
 - [bGeigieNanoKit](https://github.com/Safecast/bGeigieNanoKit)
+- [SenseBox](https://sensebox.de/)
+  - Open source environmental sensor platform with [open educational resources under CC BY-SA 4.0](https://sensebox.de/en/material)
 
 ---
 
