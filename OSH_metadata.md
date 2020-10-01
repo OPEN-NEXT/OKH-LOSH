@@ -300,17 +300,17 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 **EXAMPLE:**
 
-| Pos. | Name         | Units | Type            | Reference                                                                           |
-|------|--------------|-------|-----------------|-------------------------------------------------------------------------------------|
-| 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
-| 2    | screw        | 4     | STD   | standard designation                                                                |
-| 3    | gear box     | 1     | OSHM     | link to [OSH-Module](#osh-module)                                                   |
-| 4    | Raspberry Pi | 1     | BUY  | unambiguous reference (not standardised)                                            |
-| 5    | holder       | 1     | POSH | link to [POSH file](#piece-of-osh-posh)|
-| 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
-| 5.2  | screw        | 2     | STD   | standard designation                                                                |
-| 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)|
-| 6    | controller   | 1     | OSHM      | link to link to [OSH-Module](#osh-module)|
+| Pos. | Name         | Units | Type   | Reference                                                           |
+|------|--------------|-------|--------|---------------------------------------------------------------------|
+| 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 2    | screw        | 4     | STD    | standard designation                                                |
+| 3    | gear box     | 1     | OSHM   | link to [OSH-Module](#osh-module)                                   |
+| 4    | Raspberry Pi | 1     | BUY    | unambiguous reference (not standardised)                            |
+| 5    | holder       | 1     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 5.2  | screw        | 2     | STD    | standard designation                                                |
+| 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 6    | controller   | 1     | OSHM   | link to link to [OSH-Module](#osh-module)                           |
 
 ### metadata added by parser
 
