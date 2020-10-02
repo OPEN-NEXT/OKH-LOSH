@@ -27,12 +27,12 @@ This first draft:
 
 ### Location and Naming Convention
 
-#### A OSHM file
+#### A MOSH file
 
 1. is named `.okh`\
   (note the dot\
   …so the file won't get changed unintentionally & it will be hidden on Linux-based systems which gives a neater look & it's easier for the crawler to identify these files);
-2. is located in the root directory of the [OSH Module](#osh-module-oshm).
+2. is located in the root directory of the [OSH Module](#osh-module-MOSH).
 
 #### A POSH file
 
@@ -41,7 +41,7 @@ This first draft:
   (note the dot);
 2. should be stored in reasonable ways (e.g. in the folder containing the design files)
   for a intuitive repo structure (e.g. so   people get also the metadata file when they clone just this component).\
-  However as files are unambiguously referenced in the OSHM file you can place them wherever you like.
+  However as files are unambiguously referenced in the MOSH file you can place them wherever you like.
 
 ### File Formats
 
@@ -77,7 +77,7 @@ We'll use Wikidata's terms:
 #### Classes
 
 - class [[class](https://www.wikidata.org/wiki/Property:P2308)]
-  - [OSHM](#osh-module-oshm)
+  - [MOSH](#osh-module-MOSH)
   - [POSH](#piece-of-osh-posh)
   - STD – standard component
   - BUY – purchased component
@@ -104,7 +104,7 @@ We'll use Wikidata's terms:
   specify source project this project has been forked from
 - function [string] | [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
   functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.\
-  so if you whish that someone finds & uses your OSHM specifically e.g. for
+  so if you whish that someone finds & uses your MOSH specifically e.g. for
   COVID-19-crisis response, include relevant keywords in this field\
   optional: description of input, output and interfaces
 - functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
@@ -135,7 +135,7 @@ We'll use Wikidata's terms:
 - owner | [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
   - organisation/individual behind the hardware design
 - parent-asm | [[part of](https://www.wikidata.org/wiki/Property:P361)]
-  - identifies the subassembly (NOT the [OSHM](#osh-module-oshm)) this component is part of
+  - identifies the subassembly (NOT the [MOSH](#osh-module-MOSH)) this component is part of
 - production-metadata | sort of: [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]\
   yet to be specified; e.g. (NOT QUALIFIERS ↓)
   - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
@@ -166,7 +166,7 @@ We'll use Wikidata's terms:
 - sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: sBoM
-  - links to a CSV containing all POSHS and other OSHMs this OSHM consists of
+  - links to a CSV containing all POSHS and other OSHMs this MOSH consists of
 - source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: source-2D
@@ -207,7 +207,7 @@ We'll use Wikidata's terms:
 
 #### manifest file
 
-##### OSH Module (OSHM)
+##### OSH Module (MOSH)
 
 Which is an **assembly of components (and subassemblies) with clear input, output and interfaces that fully complies with DIN SPEC 3105-1 and this metadata standard**.
 
@@ -304,13 +304,13 @@ Which is a **component or assembly that is neither officially standardised nor f
 |------|--------------|-------|--------|---------------------------------------------------------------------|
 | 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
 | 2    | screw        | 4     | STD    | standard designation                                                |
-| 3    | gear box     | 1     | OSHM   | link to [OSH-Module](#osh-module)                                   |
+| 3    | gear box     | 1     | MOSH   | link to [OSH-Module](#osh-module)                                   |
 | 4    | Raspberry Pi | 1     | BUY    | unambiguous reference (not standardised)                            |
 | 5    | holder       | 1     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
 | 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
 | 5.2  | screw        | 2     | STD    | standard designation                                                |
 | 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
-| 6    | controller   | 1     | OSHM   | link to link to [OSH-Module](#osh-module)                           |
+| 6    | controller   | 1     | MOSH   | link to link to [OSH-Module](#osh-module)                           |
 
 ### metadata added by parser
 
@@ -326,7 +326,7 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 ## data structure
 
-OSHM has
+MOSH has
 
 - own metadata
 - POSH, STD, BUY
