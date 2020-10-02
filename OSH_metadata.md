@@ -90,16 +90,22 @@ We'll use Wikidata's terms:
   some description
   - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
 
+
+- property [rdfs:range data/object → xx] | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]\
+  some description
+  - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
+
 ---
 
-- attestation [URL]
-  - link to certificate (OSHWA, FSF, DIN SPEC 3105)
+- [x] attestation [URL]
+  - link to official confirmation of compliance (OSHWA, FSF, DIN SPEC 3105)
 - export [URL]\
   URL to exported source files in a data format that is generally accessible to recipients
   (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521) or [3d model](https://www.wikidata.org/wiki/Property:P4896)), gerber file etc.)\
   e.g. PDF, STL, STP
-  - file-format | [[file format](https://www.wikidata.org/wiki/Property:P2701)]
-  - same qualifiers as `source`
+  - qualifiers are defined [here](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-explanatory.md)
+- file-format | [[file format](https://www.wikidata.org/wiki/Property:P2701)]
+  - property of `export`, `source` (and all their subproperties)
 - fork-of | [[based on](https://www.wikidata.org/wiki/Property:P144)]\
   specify source project this project has been forked from
 - function [string] | [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
@@ -114,19 +120,19 @@ We'll use Wikidata's terms:
   - weight
   - RPM
   - …
-- image [URL] | [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
+- [x] image [URL] | [[Commons compatible image available at URL](https://www.wikidata.org/wiki/Property:P4765)]
   - URL to a meaningful picture of this module
   - license must be clear under this URL
   - to be displayed on the OHO project page when found by a search in Wikibase
-- IPC\
+- [x] IPC\
   International Patent Classification\
   international, stable category system for projects in the patent domain (as OSH)
-- language | [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]\
+- [x] language | [[IETF language tag](https://www.wikidata.org/wiki/Property:P305)]\
   tag for the language in which the documentation is available using IETF
   language tags following the BCP 47 standard), such as `en` or `en-GB`
-- license-alternative [URL] | [[copyright license](https://www.wikidata.org/wiki/Property:P275)] ← but different data type
+- [x] alternative-license [URL] | [[copyright license](https://www.wikidata.org/wiki/Property:P275)] ← but different data type
   - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
-- license-spdx [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
+- [x] spdx-license [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
 - name [string] | [[name](https://www.wikidata.org/wiki/Property:P2561)]\
   working title\
   designation for POSH, standard or purchased component
@@ -163,14 +169,12 @@ We'll use Wikidata's terms:
   - standard-designation [string]
     - unambiguous reference for a standard component (preferably naming the latest standard)
     - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
-- sBoM [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: sBoM
-  - links to a CSV containing all POSHS and other OSHMs this MOSH consists of
+- sBoM [URL]\
+  simplified Bill of Materials to identify components of this module (MOSH)
+  - links to a CSV containing all POSHs and other MOSHs this MOSH consists of
 - source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: source-2D
   - URL to the 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file) in the original file format
+  - qualifiers are defined [here](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-explanatory.md)
 - source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - **@wikidata**, suggestion:
     - add as new qualifier: source-3D
@@ -233,12 +237,8 @@ Which is an **assembly of components (and subassemblies) with clear input, outpu
 - standard (multiple)
 - functional-metadata (multiple)
 - TsDC (multiple)
-- source-3d
-- source-2d
-- source+
-- export-3d
-- export-2d
-- export+
+- source
+- export
 
 **COMMENT:** manufacturres, funders, standards etc. would be on the same level as `OSH Module`
 
@@ -257,12 +257,8 @@ Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and 
 - version
 - standard (multiple)
 - TsDC-ID (multiple)
-- source-3d (multiple)
-- source-2d (multiple)
-- source+ (multiple)
-- export-3d (multiple)
-- export-2d (multiple)
-- export+ (multiple)
+- source (multiple)
+- export (multiple)
 - production-metadata
 
 ##### Standard Component (STD)

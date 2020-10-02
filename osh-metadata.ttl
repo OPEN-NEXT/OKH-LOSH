@@ -27,6 +27,12 @@
   terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   terms:license "GPL v3" .
 
+okh:Class
+  a owl:Class ;
+  rdfs:subClassOf wdp:P2308 ;
+  .
+
+
 # Classes
 
 # Make commonly used classes inherit their WikiData counterparts,
@@ -36,23 +42,110 @@
 #a owl:ObjectProperty ;
 #a owl:DatatypeProperty ;
 
-okh:Class
-  a owl:Class ;
-  rdfs:subClassOf wdp:P2308 ;
+
+okh:Component
+  a okh:Class ;
+  rdfs:label "Component – either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
+  .
+
+okh:Module
+  a okh:Class ;
+  rdfs:label "Module of Open Source Hardware (MOSH)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:Piece
+  a okh:Class ;
+  rdfs:label "Piece of Open Source Hardware (POSH)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:STD
+  a okh:Class ;
+  rdfs:label "Standard Component (STD)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:BUY
+  a okh:Class ;
+  rdfs:label "Purchased Proprietary Component (BUY)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:WebsiteURL
+  a okh:Class ;
+  rdfs:label "Website URL" ;
+  rdfs:subClassOf XXX ;
+  # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
+  .
+
+okh:FileURL
+  a okh:Class ;
+  rdfs:label "File URL" ;
+  rdfs:subClassOf XXX ;
+  # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
+  .
+
+# --- PROPERTIES following ---
+
+okh:attestation
+  a owl:ObjectProperty ;
+  rdfs:label "attestation" ;
+  rdfs:comment "URL to official confirmation of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
+  rdfs:range okh:FileURL, okh:WebsiteURL ;
+  rdfs:domain okh:Module ;
   .
 
 okh:name
   a owl:DatatypeProperty ;
+  rdfs:label "working title" ;
   rdfs:subClassOf wdp:P2561 ;
-  rdfs:domain okh:Module ;
+  rdfs:domain okh:Component ;
   rdfs:cardinality 1 ;
   .
 
 okh:image
-  a owl:DatatypeProperty ;
+  a owl:ObjectProperty ;
+  rdfs:label "image" ;
   rdfs:subClassOf wdp:P4765 ;
-  rdfs:domain okh:Module ;
+  rdfs:domain okh:Component ;
   .
+
+okh:patentclass
+ a owl:ObjectProperty ;
+ rdfs:label "International Patent Classification (IPC)" ;
+ rdfs:range xxx ;
+# FIXME rdfs:subPropertyOf rdfs:subClassOf ;
+ rdfs:domain okh:Module ;
+ .
+
+okh:language
+ a owl:DatatypeProperty ;
+ rdfs:label "IETF language tag" ;
+ rdfs:comment "BCP 47 standard e.g. en-GB" ;
+ rdfs:subPropertyOf wdp:P305 ;
+ rdfs:domain okh:Component ;
+ .
+
+okh:spdxLicense
+ a owl:ObjectProperty ;
+ rdfs:label "SPDX license identifier" ;
+ rdfs:comment "view complete list under https://spdx.org/licenses/" ;
+ rdfs:subPropertyOf wdp:P2479 ;
+ rdfs:domain okh:Module ;
+ rdfs:cardinality 1 ;
+ .
+
+okh:alternativeLicense
+  a owl:ObjectProperty ;
+  rdfs:label "license without SPDX identifier" ;
+  rdfs:comment "…hence OSHWA-compliance is to be checken manually" ;
+  rdfs:domain okh:Module ;
+  rdfs:range okh:ReferenceUrl ;
+  rdfs:cardinality 1 ;
+  .
+
+#-------------------------------------
 
 okh:url
   a owl:DatatypeProperty ;
@@ -83,16 +176,6 @@ okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:subPropertyOf wdp:P8203 ; # aka supportedMetadata
   rdfs:domain okh:Module ;
-  .
-
-okh:language
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P305 ; # aka IETFLanguageTag
-  .
-
-okh:spdxLicenseIdentifier
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P2479 ;
   .
 
 okh:softwareVersionIdentifier
@@ -155,44 +238,7 @@ okh:projectVersionIdentifier # aka okhv
   rdfs:cardinality 1 ;
   .
 
-okh:alternativeLicense
-  a owl:DatatypeProperty ;
-#  rdfs:subPropertyOf rdfs:subClassOf ;
-  rdfs:domain okh:Module ;
-  rdfs:range okh:ReferenceUrl ;
-  rdfs:cardinality 1 ;
-  rdfs:comment '''
-    URL to legal code of the license (e.g. LICENSE.md),
-    in case no SPDX identifier exists'''@en ;
-  .
 
 
 
-okh:Component
-  a okh:Class ;
-  rdfs:label "Component"@en ;
-  .
-
-okh:Module
-  a okh:Class ;
-  rdfs:label "Module of Open Source Hardware (MOSH)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
-
-okh:Piece
-  a okh:Class ;
-  rdfs:label "Piece of Open Source Hardware (POSH)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
-
-okh:STD
-  a okh:Class ;
-  rdfs:label "Standard Component (STD)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
-
-okh:BUY
-  a okh:Class ;
-  rdfs:label "Purchased Proprietary Componen (BUY)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
+# --- SUBPROPERTIES following ---
