@@ -1,0 +1,190 @@
+@base          <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
+@prefix oshm:  <#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+#@prefix wdt:    <http://www.wikidata.org/prop/direct/> .
+@prefix wdp:   <http://www.wikidata.org/prop/direct/> .
+#@prefix psv:    <http://www.wikidata.org/prop/statement/value/> .
+#@prefix wdtn:   <http://www.wikidata.org/prop/direct-normalized/> .
+#@prefix pq:     <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdq:   <http://www.wikidata.org/prop/qualifier/> .
+@prefix wd:     <http://www.wikidata.org/entity/> .
+#@prefix wde:    <http://www.wikidata.org/entity/> .
+#@prefix wdv:    <http://www.wikidata.org/value/> .
+#@prefix wds:    <http://www.wikidata.org/entity/statement/> .
+
+
+<>
+  a owl:Ontology ;
+  owl:versionInfo "0.1" ;
+  owl:versionIRI <> ;
+  rdfs:label "OSH meta-data"@en ;
+  rdfs:comment   "Open Source Hwardware meta-data - Base Ontology"@en ;
+  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  terms:license "GPL v3" .
+
+# Classes
+
+# Make commonly used classes inherit their WikiData counterparts,
+# so we can use meaningful names,
+# instead of the cryptic WikiData Property numbers.
+
+#a owl:ObjectProperty ;
+#a owl:DatatypeProperty ;
+
+oshm:Class
+  a owl:Class ;
+  rdfs:subClassOf wdp:P2308 ;
+  .
+
+oshm:name
+  a owl:DatatypeProperty ;
+  rdfs:subClassOf wdp:P2561 ;
+  rdfs:domain oshm:Module ;
+  rdfs:cardinality 1 ;
+  .
+
+oshm:image
+  a owl:DatatypeProperty ;
+  rdfs:subClassOf wdp:P4765 ;
+  rdfs:domain oshm:Module ;
+  .
+
+oshm:url
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P2699 ;
+  .
+
+oshm:referenceUrl
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P854 ;
+  .
+
+oshm:fileFormat
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P2701 ;
+  .
+
+oshm:function
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P7535 ; # aka scopeAndContent
+  rdfs:domain oshm:Module ;
+  rdfs:comment '''
+    functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+    so if you whish that someone finds & uses your OSHM specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
+    optional: description of input, output and interfaces'''@en ;
+  .
+
+oshm:functionalMetadata
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P8203 ; # aka supportedMetadata
+  rdfs:domain oshm:Module ;
+  .
+
+oshm:language
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P305 ; # aka IETFLanguageTag
+  .
+
+oshm:spdxLicenseIdentifier
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P2479 ;
+  .
+
+oshm:softwareVersionIdentifier
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P348 ;
+  .
+
+oshm:copyrightHolder
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P3931 ;
+  rdfs:domain oshm:Module ;
+  .
+
+oshm:quantity
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P1114 ;
+  .
+
+oshm:3dModel
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P4896 ;
+  .
+
+oshm:versionType
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf wdp:P548 ;
+  .
+
+oshm:technicalDrawing
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf wdq:Q192521 ;
+  # FIXME This is a Qualifier, not a Property! it is not in the wkdp namespace, therefore wdkq (SO FAR UNDEFINED)
+  .
+
+oshm:technicalStandard
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf wdq:Q317623 ;
+  .
+
+oshm:openStandard
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf wdq:Q681263 ;
+  .
+
+# [External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)
+oshm:externalIdentifier
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf wd:External_identifiers ;
+  .
+
+
+
+
+
+oshm:projectVersionIdentifier # aka okhv
+  a owl:DatatypeProperty ;
+#  rdfs:subPropertyOf rdfs:subClassOf ;
+  rdfs:domain oshm:Module, oshm:Piece ;
+  rdfs:range oshm:ReferenceUrl ;
+  rdfs:cardinality 1 ;
+  .
+
+oshm:alternativeLicense
+  a owl:DatatypeProperty ;
+#  rdfs:subPropertyOf rdfs:subClassOf ;
+  rdfs:domain oshm:Module ;
+  rdfs:range oshm:ReferenceUrl ;
+  rdfs:cardinality 1 ;
+  rdfs:comment '''
+    URL to legal code of the license (e.g. LICENSE.md),
+    in case no SPDX identifier exists'''@en ;
+  .
+
+
+
+oshm:Module
+  a oshm:Class ;
+  rdfs:label "Open Source Hardware Module"@en ;
+  .
+
+oshm:Piece
+  a oshm:Class ;
+  rdfs:label "Piece of Open Source Hardware"@en ;
+  .
+
+oshm:StandardComponent
+  a oshm:Class ;
+  rdfs:label "Standard Component"@en ;
+  .
+
+oshm:PurchasedComponent
+  a oshm:Class ;
+  rdfs:label "Purchased Component"@en ;
+  .
+
