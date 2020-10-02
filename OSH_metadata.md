@@ -104,11 +104,11 @@ We'll use Wikidata's terms:
   (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521) or [3d model](https://www.wikidata.org/wiki/Property:P4896)), gerber file etc.)\
   e.g. PDF, STL, STP
   - qualifiers are defined [here](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-explanatory.md)
-- file-format | [[file format](https://www.wikidata.org/wiki/Property:P2701)]
+- [x] file-format | [[file format](https://www.wikidata.org/wiki/Property:P2701)]
   - property of `export`, `source` (and all their subproperties)
-- fork-of | [[based on](https://www.wikidata.org/wiki/Property:P144)]\
+- [x] fork-of | [[based on](https://www.wikidata.org/wiki/Property:P144)]\
   specify source project this project has been forked from
-- function [string] | [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
+- [x] function [string] | [[scope and content](https://www.wikidata.org/wiki/Property:P7535)]\
   functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.\
   so if you whish that someone finds & uses your MOSH specifically e.g. for
   COVID-19-crisis response, include relevant keywords in this field\
@@ -138,7 +138,7 @@ We'll use Wikidata's terms:
   designation for POSH, standard or purchased component
 - okhv\
   version of the metadata standard used in this file
-- owner | [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
+- [x] owner | [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
   - organisation/individual behind the hardware design
 - parent-asm | [[part of](https://www.wikidata.org/wiki/Property:P361)]
   - identifies the subassembly (NOT the [MOSH](#osh-module-MOSH)) this component is part of
@@ -169,36 +169,30 @@ We'll use Wikidata's terms:
   - standard-designation [string]
     - unambiguous reference for a standard component (preferably naming the latest standard)
     - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
+- reference URL
+  - <https://www.wikidata.org/wiki/Property:P854>
 - sBoM [URL]\
   simplified Bill of Materials to identify components of this module (MOSH)
   - links to a CSV containing all POSHs and other MOSHs this MOSH consists of
-- source-2d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
+- source [[URL](https://www.wikidata.org/wiki/Property:P2699)]
   - URL to the 2D model (e.g [technical drawing](https://www.wikidata.org/wiki/Q192521), gerber file) in the original file format
   - qualifiers are defined [here](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-explanatory.md)
-- source-3d [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: source-3D
   - URL to the [3d model](https://www.wikidata.org/wiki/Property:P4896) in the original file format
-- source+ [[URL](https://www.wikidata.org/wiki/Property:P2699)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: source+
   - additional technical documentation
   - as required by TsDC
   - e.g. manufacturing instructions, post-processing specifications (e.g. as MD files)
-- standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
+- [x] standard [[technical standard](https://www.wikidata.org/wiki/Q317623)]
   - standard used/considered in the _design_ (other then DIN SPEC 3105-1)
   - property hopefully changes to [[open standard](https://www.wikidata.org/wiki/Q681263)] in the future :)
-- status [[version type](https://www.wikidata.org/wiki/Property:P548)]
+- [x] status [[version type](https://www.wikidata.org/wiki/Property:P548)]
   - development status, preferably use defined designations like:
     - development
     - prototype
     - certified
     - in production
-- TsDC-ID [[technical standard](https://www.wikidata.org/wiki/Q317623)]/[[open standard](https://www.wikidata.org/wiki/Q681263)]
-  - **@wikidata**, suggestion:
-    - add as new qualifier: TsDC-ID
+- [x] TsDC-ID [[technical standard](https://www.wikidata.org/wiki/Q317623)]/[[open standard](https://www.wikidata.org/wiki/Q681263)]
   - state applying [TsDC-IDs](https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/TsDC-DB-print.md)
-- version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
+- [x] version [[software version identifier](https://www.wikidata.org/wiki/Property:P348)]\
   - = unambiguous reference of the version of the hardware design
     and the version of the documentation
   - **@wikidata**, suggestion:

@@ -43,9 +43,12 @@ okh:Class
 #a owl:DatatypeProperty ;
 
 
+# ----- CLASSES -----
+
 okh:Component
   a okh:Class ;
   rdfs:label "Component – either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
+  # That's the main class then!
   .
 
 okh:Module
@@ -75,63 +78,60 @@ okh:BUY
 okh:WebsiteURL
   a okh:Class ;
   rdfs:label "Website URL" ;
-  rdfs:subClassOf XXX ;
+  rdfs:subPropertyOf wdp:P2699 ; # aka URL
   # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
 okh:FileURL
   a okh:Class ;
   rdfs:label "File URL" ;
-  rdfs:subClassOf XXX ;
+  rdfs:subClassOf wpd:P2699 ; # aka URL
   # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
-# --- PROPERTIES following ---
+# ----- PROPERTIES -----
+## ----- general -----
+## (brief profile of the OSH and it's metadata)
 
-okh:attestation
-  a owl:ObjectProperty ;
-  rdfs:label "attestation" ;
-  rdfs:comment "URL to official confirmation of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
-  rdfs:range okh:FileURL, okh:WebsiteURL ;
+okh:okhv
+  a owl:DatatypeProperty ;
+  rdfs:label "version of standard (OKH) the metadata is following" ;
+  rdfs:comment "Open Know-How provides a standard for OSH metadata; different versions → different data fields" ;
+  rdfs:subClassOf wdp:P348 ; # aka software version identifier
   rdfs:domain okh:Module ;
+  rdfs:cardinality 1
   .
 
 okh:name
   a owl:DatatypeProperty ;
   rdfs:label "working title" ;
-  rdfs:subClassOf wdp:P2561 ;
+  rdfs:subClassOf wdp:P2561 ; # aka name
   rdfs:domain okh:Component ;
   rdfs:cardinality 1 ;
   .
 
-okh:image
-  a owl:ObjectProperty ;
-  rdfs:label "image" ;
-  rdfs:subClassOf wdp:P4765 ;
+okh:version
+  a owl:DatatypeProperty ;
+  rdfs:label "version of this Component" ;
+  rdfs:subClassOf wdp:P348 ; # aka software version identifier
   rdfs:domain okh:Component ;
+  rdfs:cardinality 1
   .
 
-okh:patentclass
- a owl:ObjectProperty ;
- rdfs:label "International Patent Classification (IPC)" ;
- rdfs:range xxx ;
-# FIXME rdfs:subPropertyOf rdfs:subClassOf ;
- rdfs:domain okh:Module ;
- .
-
-okh:language
- a owl:DatatypeProperty ;
- rdfs:label "IETF language tag" ;
- rdfs:comment "BCP 47 standard e.g. en-GB" ;
- rdfs:subPropertyOf wdp:P305 ;
- rdfs:domain okh:Component ;
- .
+okh:owner
+  a owl:ObjectProperty ;
+  rdfs:label "owner" ;
+  rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
+  rdfs:subClassOf wdp:P3931 ; # aka copyright holder
+  rdfs:domain okh:Module ;
+  rdfs:cardinality 1
+  .
 
 okh:spdxLicense
  a owl:ObjectProperty ;
  rdfs:label "SPDX license identifier" ;
  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- rdfs:subPropertyOf wdp:P2479 ;
+ rdfs:subPropertyOf wdp:P2479 ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
  rdfs:cardinality 1 ;
  .
@@ -141,35 +141,49 @@ okh:alternativeLicense
   rdfs:label "license without SPDX identifier" ;
   rdfs:comment "…hence OSHWA-compliance is to be checken manually" ;
   rdfs:domain okh:Module ;
-  rdfs:range okh:ReferenceUrl ;
+  rdfs:range okh:FileURL ;
   rdfs:cardinality 1 ;
   .
 
-#-------------------------------------
-
-okh:url
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P2699 ;
-  .
-
-okh:referenceUrl
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P854 ;
-  .
-
-okh:fileFormat
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P2701 ;
-  .
+okh:patentClass
+ a owl:ObjectProperty ;
+ rdfs:label "International Patent Classification (IPC)" ;
+# FIXME rdfs:subPropertyOf ;
+ rdfs:domain okh:Module ;
+ .
 
 okh:function
   a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P7535 ; # aka scopeAndContent
+  rdfs:label "functional description" ;
+  rdfs:subPropertyOf wdp:P7535 ; # aka scope and content
   rdfs:domain okh:Module ;
   rdfs:comment '''
     functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     so if you whish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
     optional: description of input, output and interfaces'''@en ;
+  .
+
+okh:status
+  a owl:ObjectProperty ;
+  rdfs:label "status" ;
+  rdfs:comment "project status e.g. development, prototype, certified, in production" ;
+  rdfs:subClassOf wdp:P548 ; #aka version type
+  rdfs:domain okh:Module ;
+  .
+
+okh:attestation
+  a owl:ObjectProperty ;
+  rdfs:label "attestation" ;
+  rdfs:comment "URL to official confirmation of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
+  rdfs:range okh:FileURL, okh:WebsiteURL ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:image
+  a owl:ObjectProperty ;
+  rdfs:label "image" ;
+  rdfs:subClassOf wdp:P4765 ; # aka Commons compatible image available at URL
+  rdfs:domain okh:Component ;
   .
 
 okh:functionalMetadata
@@ -178,67 +192,57 @@ okh:functionalMetadata
   rdfs:domain okh:Module ;
   .
 
-okh:softwareVersionIdentifier
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P348 ;
+## ----- documentation -----
+## (diving into the documentation)
+
+okh:forkOf
+ a owl:ObjectProperty ;
+ rdfs:label "fork of" ;
+ rdfs:subPropertyOf wdp:P144 ; # aka based on
+ rdfs:domain okh:Module, okh:Piece ;
+ .
+
+okh:language
+ a owl:DatatypeProperty ;
+ rdfs:label "IETF language tag" ;
+ rdfs:comment "BCP 47 standard e.g. en-GB" ;
+ rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
+ rdfs:domain okh:Component ;
+ .
+
+okh:fileFormat
+  a owl:ObjectProperty ;
+  rdfs:label "file format" ;
+  rdfs:subPropertyOf wdp:P2701 ; # aka file format
+  rdfs:domain okh:Component ;
   .
 
-okh:copyrightHolder
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P3931 ;
+okh:standard
+  a owl:ObjectProperty ;
+  rdfs:label "official standard used in the _design_ of a Module" ;
+  # FIXME rdfs:subPropertyOf ;
   rdfs:domain okh:Module ;
   .
 
+okh:tsdcID
+  a owl:ObjectProperty ;
+  rdfs:label "TsDC-ID" ;
+  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1" ;
+  # FIXME rdfs:subPropertyOf ;
+  rdfs:domain okh:Component ;
+  .
+
+# source, export
+
+### ----- sBoM-specific data -----
+# standard-designation, reference-buy, reference-POSH
+
 okh:quantity
   a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P1114 ;
+  rdfs:label "quantity" ;
+  rdfs:subPropertyOf wdp:P1114 ; # aka quantity
+  rdfs:domain okh:Component ;
   .
 
-okh:3dModel
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P4896 ;
-  .
-
-okh:versionType
-  a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P548 ;
-  .
-
-okh:technicalDrawing
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf wdq:Q192521 ;
-  # FIXME This is a Qualifier, not a Property! it is not in the wkdp namespace, therefore wdkq (SO FAR UNDEFINED)
-  .
-
-okh:technicalStandard
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf wdq:Q317623 ;
-  .
-
-okh:openStandard
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf wdq:Q681263 ;
-  .
-
-# [External Identifier](https://www.wikidata.org/wiki/Wikidata:External_identifiers)
-okh:externalIdentifier
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf wd:External_identifiers ;
-  .
-
-
-
-
-
-okh:projectVersionIdentifier # aka okhv
-  a owl:DatatypeProperty ;
-#  rdfs:subPropertyOf rdfs:subClassOf ;
-  rdfs:domain okh:Module, okh:Piece ;
-  rdfs:range okh:ReferenceUrl ;
-  rdfs:cardinality 1 ;
-  .
-
-
-
-
-# --- SUBPROPERTIES following ---
+### ----- source/export subproperties -----
+### (from TsDC)
