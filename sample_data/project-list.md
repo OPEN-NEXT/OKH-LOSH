@@ -42,6 +42,8 @@ open:
   - only individual parts
 - <https://www.olimex.com/Products/OLinuXino/>
   - electronics only
+- <http://wiki.ros.org/>
+  - extensive ressource of well documented robots (including sensors, motors and related software)
 
 Wikimedia sample data (copy from list above):
 
