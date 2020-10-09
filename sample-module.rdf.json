@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "mypr": "http://project-url.org/1.0/",
+    "myprp": "http://project-url.org/1.0/people#",
+    "myprt": "http://project-url.org/1.0/things#",
+    "okh": "http://purl.org/2020/10/30/okh#",
+    "abp": "http://airbus.com/1.0/parts#"
+  },
+  "@id": "myprt:EierlegendeWollmilchSau",
+  "@type": "okh:Module",
+  "okh:name": [
+      { "@value": "flying eg laying whool milk pig", "@language": "en" },
+      { "@value": "fliegende Eierlegendewollmilchsau", "@language": "de" }
+    ],
+  "okh:forkOf": "myprt:EierlegendeWollmilchSau",
+  "okh:parts": [
+      "myprt:EierlegendeWollmilchSau",
+      "abp:proppeller",
+      { "@type": "abp:wing", "okh:quantity": "2" }
+    ],
+  "okh:tsdcId": "???",
+  "okh:image": "fliegende-sau.jpg",
+  "okh:version": "http://purl.org/2020/10/30/okh",
+  "okh:spdxLicense": "GPL 3",
+  "okh:standard": "???",
+  "okh:language": "en-GB",
+  "okh:status": "prototype",
+  "okh:owner": {
+    "@id": "myprp:JaneDoe",
+    "@type": "okh:OwnerClass",
+    "name": "Jane Doe",
+    "jobTitle": "Maker",
+    "telephone": "(425) 123-4567",
+    "url": "http://www.janedoe.com"
+  },
+  "okh:okhv": "0.1",
+  "okh:function": "This thing solves all your problems, everywhere, for ever; praise the lord!"
+}
