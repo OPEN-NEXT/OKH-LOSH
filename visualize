@@ -1,0 +1,136 @@
+#!/usr/bin/env bash
+
+set -e
+
+_install_req() {
+	if ! ( which wget > /dev/null && which pip > /dev/null && which javac > /dev/null )
+	then
+		apt-get update
+		apt-get install -y -qq wget python3-pip default-jdk > /dev/null
+	fi
+	wget https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf
+	chmod +x ./visualize-rdf
+	./visualize-rdf --install-requirements
+	wget https://osegermany.gitlab.io/oh-tsdc-tools/tsdc-tools-latest-jar-with-dependencies.jar
+}
+
+
+if [ ! -f ./visualize-rdf ]
+then
+	_install_req
+fi
+
+mkdir -p build
+
+# Create (visual) graphs
+echo
+for ttl_file in *.ttl
+do
+	./visualize-rdf --do-not-open --layout fdp "$ttl_file"
+done
+for file in *.svg *.png
+do
+	mv "$file" "fdp_${file}.RN"
+done
+
+echo
+for ttl_file in *.ttl
+do
+	./visualize-rdf --do-not-open --layout dot "$ttl_file"
+done
+for file in *.svg *.png
+do
+	mv "$file" "dot_${file}.RN"
+done
+for file in *.RN
+do
+	mv "$file" "${file%.RN}"
+done
+
+echo
+for dot_file in *.dot
+do
+	layout_engine=fdp
+	dot_file_clean="build/${dot_file%.dot}-clean.dot"
+	echo "Cleaning '$dot_file' -> '$dot_file_clean' ..."
+	{
+		grep -v 'wikidata' \
+			| grep -v ':base' \
+			| grep -v 'ObjectProperty' \
+			| grep -v 'DatatypeProperty' \
+			| grep -v 'Class' \
+			| grep -v 'Ontology'
+	} < "$dot_file" > "$dot_file_clean"
+	svg_file="${dot_file_clean%.dot}.svg"
+	png_file="${dot_file_clean%.dot}.png"
+	echo "Generating SVG and PNG from '$dot_file_clean' ..."
+	dot -Glayout="$layout_engine" -Grankdir=LR -Tsvg -o "$svg_file" "$dot_file_clean"
+	dot -Glayout="$layout_engine" -Grankdir=LR -Tpng -o "$png_file" "$dot_file_clean"
+done
+
+mv ./*.dot ./*.svg ./*.png build/
+
+# Create structured Markdown
+echo
+for ttl_file in *.ttl
+do
+	java \
+		-classpath tsdc-tools-latest-jar-with-dependencies.jar \
+		de.opensourceecology.tsdc.tools.rdf2md.MainKt \
+		--input "$ttl_file" \
+		--output "build/${ttl_file}.md"
+#		--structure-property "http://purl.org/oseg/din/ontologies/tsdc/0.1/specification#isBelow" \
+done
+
+cd build
+
+{
+	# Create HTML that links to all the files generated above
+	# plus the sources
+	echo "<html>"
+	echo "<head>"
+	echo "<title>Sources & Generated output</title>"
+	echo "</head>"
+	echo "<body>"
+	echo "<h1>Sources & Generated output</h1>"
+
+	echo "<h3>Turtle/RDF sources</h3>"
+	echo "<ul>"
+	for file in *.ttl
+	do
+		echo "<li><a href=\"$file\">$file</a></li>"
+	done
+	echo "</ul>"
+
+	echo "<h3>Markdown files laying out the structure</h3>"
+	echo "<ul>"
+	for file in *.md
+	do
+		echo "<li><a href=\"$file\">$file</a></li>"
+	done
+	echo "</ul>"
+
+	echo "<h3>GraphViz/DOT graps representing the structure</h3>"
+	echo "<ul>"
+	for file in *.dot
+	do
+		echo "<li><a href=\"$file\">$file</a></li>"
+	done
+	echo "</ul>"
+
+	echo "<h3>PNG & SVG renders of the above graphs</h3>"
+	echo "<ul>"
+	for file in *.svg
+	do
+		file_png="${file%.svg}.png"
+		echo "<li>"
+		echo "<a href=\"$file\">$file - <img src=\"$file\" alt=\"$file\" width=\"640\"/></a> - "
+		echo "<a href=\"$file_png\">$file_png - <img src=\"$file_png\" alt=\"$file\" width=\"640\"/></a>"
+		echo "</li>"
+	done
+	echo "</ul>"
+
+	echo "</body>"
+	echo "</html>"
+} > index.html
+
