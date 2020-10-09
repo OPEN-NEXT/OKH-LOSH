@@ -85,7 +85,7 @@ okh:WebsiteURL
 okh:FileURL
   a okh:Class ;
   rdfs:label "File URL" ;
-  rdfs:subClassOf wpd:P2699 ; # aka URL
+  rdfs:subClassOf wdp:P2699 ; # aka URL
   # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
