@@ -90,7 +90,6 @@ We'll use Wikidata's terms:
   some description
   - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
 
-
 - property [rdfs:range data/object → xx] | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]\
   some description
   - qualifyer | [[wikidata equivalent]([wikidata.org](https://www.wikidata.org/wiki/Wikidata:List_of_properties))]
@@ -113,7 +112,7 @@ We'll use Wikidata's terms:
   so if you whish that someone finds & uses your MOSH specifically e.g. for
   COVID-19-crisis response, include relevant keywords in this field\
   optional: description of input, output and interfaces
-- functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
+- [x] functional-metadata [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]
   - _very_ technology-specific, not to be standardised here
   - dimensions
   - material
@@ -133,16 +132,16 @@ We'll use Wikidata's terms:
 - [x] alternative-license [URL] | [[copyright license](https://www.wikidata.org/wiki/Property:P275)] ← but different data type
   - URL to legal code of the license (e.g. LICENSE.md) in case SPDX identifier is not existent
 - [x] spdx-license [string] | [[SPDX license identifier](https://www.wikidata.org/wiki/Property:P2479)]
-- name [string] | [[name](https://www.wikidata.org/wiki/Property:P2561)]\
+- [x] name [string] | [[name](https://www.wikidata.org/wiki/Property:P2561)]\
   working title\
   designation for POSH, standard or purchased component
-- okhv\
+- [x] okhv\
   version of the metadata standard used in this file
 - [x] owner | [[copyright holder](https://www.wikidata.org/wiki/Property:P3931)]
   - organisation/individual behind the hardware design
-- parent-asm | [[part of](https://www.wikidata.org/wiki/Property:P361)]
-  - identifies the subassembly (NOT the [MOSH](#osh-module-MOSH)) this component is part of
-- production-metadata | sort of: [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]\
+- [x] parent-asm | [[part of](https://www.wikidata.org/wiki/Property:P361)]
+  - identifies the assembly/module the component is part of
+- [x] production-metadata | sort of: [[supported metadata](https://www.wikidata.org/wiki/Property:P8203)]\
   yet to be specified; e.g. (NOT QUALIFIERS ↓)
   - outer dimensions (dimension + (measuere type+)measures e.g. mm-ø20x100 for a cylindric thing)
     - cuboid (mm-100x50x20)
@@ -153,25 +152,25 @@ We'll use Wikidata's terms:
   - finest surface roughness in µm
   - material
   - manufacturing technology (machining, additive, forming, casting,…)
-- quantity | [quantity](https://www.wikidata.org/wiki/Property:P1114)\
+- [x] quantity | [quantity](https://www.wikidata.org/wiki/Property:P1114)\
   quantity of a component in the `parent-asm`
-- readme [URL]\
+- [x] readme [URL]\
   link to general project description; may be the project webpage, may be the `README.md`\
   to be displayed on the OHO project page when found by a search in Wikibase
-- repo [[URL]\
+- [x] repo [[URL]\
   URL to development channel\
   people will use this URL to start contribution
   (reporting issues, giving feedback, joining the development)
-- reference
+- [x] reference
   - buy-reference [string]
     - unambiguous reference for non-standard purchased components
     - others shall be able to identify/procure this component only by the given reference(s)
   - standard-designation [string]
     - unambiguous reference for a standard component (preferably naming the latest standard)
     - connection point for the future library of standard components (→ automatic checking for unambiguous referencing)
-- reference URL
-  - <https://www.wikidata.org/wiki/Property:P854>
-- sBoM [URL]\
+  - reference URL
+    - <https://www.wikidata.org/wiki/Property:P854>
+- [x] sBoM [URL]\
   simplified Bill of Materials to identify components of this module (MOSH)
   - links to a CSV containing all POSHs and other MOSHs this MOSH consists of
 - source [[URL](https://www.wikidata.org/wiki/Property:P2699)]

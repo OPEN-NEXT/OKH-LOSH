@@ -75,19 +75,55 @@ okh:BUY
   rdfs:subClassOf okh:Component ;
   .
 
+okh:Reference
+  a okh:Class ;
+  rdfs:label "unambiguous reference" ;
+  # FIXME subClassOf
+  .
+
 okh:WebsiteURL
   a okh:Class ;
   rdfs:label "Website URL" ;
-  rdfs:subPropertyOf wdp:P2699 ; # aka URL
-  # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
+  rdfs:subClassOf okh:Reference ;
+  # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
 okh:FileURL
   a okh:Class ;
   rdfs:label "File URL" ;
-  rdfs:subClassOf wdp:P2699 ; # aka URL
-  # FIXME I assume this has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
+  rdfs:subClassOf okh:Reference ;
+  # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
+
+okh:ComponentReference
+  a okh:Class ;
+  rdfs:label "reference for a component" ;
+  rdfs:subClassOf okh:Reference ;
+  .
+
+okh:BuyReference
+  a okh:Class ;
+  rdfs:label "unambiguous reference for a purchased product" ;
+  rdfs:subClassOf okh:ComponentReference ;
+  .
+
+okh:StdReference
+  a okh:Class ;
+  rdfs:label "standard designation of a standard component" ;
+  rdfs:subClassOf okh:ComponentReference ;
+  .
+
+okh:ModuleReference
+  a okh:Class ;
+  rdfs:label "URL to a MOSH file (metadata for modules)" ;
+  rdfs:subClassOf okh:ComponentReference ;
+  . 
+
+okh:PieceReference
+  a okh:Class ;
+  rdfs:label "URL to a POSH file (metadata for pieces)" ;
+  rdfs:subClassOf okh:ComponentReference ;
+  . 
 
 # ----- PROPERTIES -----
 ## ----- general -----
@@ -168,6 +204,7 @@ okh:status
   rdfs:label "status" ;
   rdfs:comment "project status e.g. development, prototype, certified, in production" ;
   rdfs:subClassOf wdp:P548 ; #aka version type
+  rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -188,7 +225,17 @@ okh:image
 
 okh:functionalMetadata
   a owl:DatatypeProperty ;
-  rdfs:subPropertyOf wdp:P8203 ; # aka supportedMetadata
+  rdfs:label "Metadata addressing functionality" ;
+  rdfs:subPropertyOf wdp:P8203 ; # aka supported Metadata
+  rdfs:domain okh:Module ;
+  .
+
+okh:repository
+  a owl:ObjectProperty ;
+  rdfs:label "URL to the place where development happens (typically the repository)" ;
+  rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
+  rdfs:range okh:WebsiteURL ;
+  rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -199,7 +246,8 @@ okh:forkOf
  a owl:ObjectProperty ;
  rdfs:label "fork of" ;
  rdfs:subPropertyOf wdp:P144 ; # aka based on
- rdfs:domain okh:Module, okh:Piece ;
+ rdfs:cardinality 1 ;
+ rdfs:domain okh:Module , okh:Piece ;
  .
 
 okh:language
@@ -232,16 +280,71 @@ okh:tsdcID
   rdfs:domain okh:Component ;
   .
 
+okh:productionMetadata
+  a owl:ObjectProperty ;
+  rdfs:label "production-relevant metadata" ;
+  rdfs:comment "as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
+  rdfs:subPropertyOf wdp:P8203 ;
+  rdfs:domain okh:Module, okh:Piece ;
+  .
+
+okh:readme
+  a owl:ObjectProperty ;
+  rdfs:label "URL to readme" ;
+  rdfs:range okh:FileURL ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:sBoM
+  a owl:ObjectProperty ;
+  rdfs:label "URL to simplified Bill of Materials" ;
+  rdfs:range okh:FileURL ;
+  rdfs:domain okh:Module
+  .
+
+
 # source, export
 
 ### ----- sBoM-specific data -----
 # standard-designation, reference-buy, reference-POSH
+
+okh:buyReference
+  a okh:ObjectProperty ;
+  rdfs:label "unambiguous reference for a purchased product" ;
+  rdfs:range okh:BuyReference ;
+  .
+
+okh:stdReference
+  a okh:ObjectProperty ;
+  rdfs:label "standard designation of a standard component" ;
+  rdfs:range okh:StdReference ;
+  .
+
+okh:moduleReference
+  a okh:ObjectProperty ;
+  rdfs:label "URL to a MOSH file (metadata for modules)" ;
+  rdfs:range okh:ModuleReference ;
+  . 
+
+okh:pieceReference
+  a okh:ObjectProperty ;
+  rdfs:label "URL to a POSH file (metadata for pieces)" ;
+  rdfs:range okh:PieceReference ;
+  . 
 
 okh:quantity
   a owl:DatatypeProperty ;
   rdfs:label "quantity" ;
   rdfs:subPropertyOf wdp:P1114 ; # aka quantity
   rdfs:domain okh:Component ;
+  .
+
+okh:parentASM
+  a owl:ObjectProperty ;
+  rdfs:label "parent assembly/module the component is part of" ;
+  rdfs:subPropertyOf wdp:P361 ; # aka part of
+  rdfs:domain okh:
   .
 
 ### ----- source/export subproperties -----
