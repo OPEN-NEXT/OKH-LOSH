@@ -95,6 +95,18 @@ okh:FileURL
   # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
+okh:Source
+  a okh:Class ;
+  rfds:label "source file" ;
+  rdfs:subClassOf okh:FileURL ;
+  .
+
+okh:Export
+  a okh:Class ;
+  rfds:label "exported format of a source file" ;
+  rdfs:subClassOf okh:FileURL ;
+  .
+
 okh:ComponentReference
   a okh:Class ;
   rdfs:label "reference for a component" ;
@@ -313,30 +325,39 @@ okh:buyReference
   a okh:ObjectProperty ;
   rdfs:label "unambiguous reference for a purchased product" ;
   rdfs:range okh:BuyReference ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:BUY ;
   .
 
 okh:stdReference
   a okh:ObjectProperty ;
   rdfs:label "standard designation of a standard component" ;
   rdfs:range okh:StdReference ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:STD ;
   .
 
 okh:moduleReference
   a okh:ObjectProperty ;
   rdfs:label "URL to a MOSH file (metadata for modules)" ;
   rdfs:range okh:ModuleReference ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:Module ;
   . 
 
 okh:pieceReference
   a okh:ObjectProperty ;
   rdfs:label "URL to a POSH file (metadata for pieces)" ;
   rdfs:range okh:PieceReference ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:Piece ;
   . 
 
 okh:quantity
   a owl:DatatypeProperty ;
   rdfs:label "quantity" ;
   rdfs:subPropertyOf wdp:P1114 ; # aka quantity
+  rdfs:cardinality 1 ;
   rdfs:domain okh:Component ;
   .
 
@@ -344,8 +365,35 @@ okh:parentASM
   a owl:ObjectProperty ;
   rdfs:label "parent assembly/module the component is part of" ;
   rdfs:subPropertyOf wdp:P361 ; # aka part of
-  rdfs:domain okh:
+  rdfs:domain okh:Component ;
   .
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
+
+okh:rationale
+  a owl:ObjectProperty ;
+  rdfs:label "rationale" ;
+  rdfs:range okh:source , okh:export ;
+  rdfs:domain okh:Component ;
+  .
+
+okh:design
+  a owl:ObjectProperty ;
+  rdfs:label "design file" ;
+  rdfs:range okh:source , okh:export ;
+  rdfs:domain okh:Module , okh:Piece ;
+  .
+
+okh:manufacturingInstruction
+  a owl:ObjectProperty ;
+  rdfs:label "manufacturing instruction" ;
+  rdfs:range okh:source , okh:export ;
+  rdfs:domain okh:Module , okh:Piece ;
+  .
+
+okh:bom
+  rdfs:label "Bill of Materials" ;
+  rdfs:range okh:source , okh:export ;
+  rdfs:domain okh:Module;
+  .
