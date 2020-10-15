@@ -23,6 +23,47 @@ This first draft:
     - [POSHs](#piece-of-osh-posh) design files\
     which link to design files
 
+## Requirements to this draft
+
+## Scope
+
+_This_ draft shall support the following user groups:
+
+1. developers
+   - first and foremost facilitate **design reuse**
+   - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github.com/kanzure/skdb> (**apt-get for hardware**) --->
+     - production files (export only)
+     - developer files (sources only)
+     - complete clone (export + sources)
+     - export BoM (like [sBoM](#simplified-bom-sbom))
+2. manufacturers / service providers\
+  find OSH ready for decentralised (mass) production, maintenance and service provision
+
+### General requirements
+
+- no unnecessary effort for metadata providers (developers etc.)\
+  → use data from APIs or automated interpretation where possible/feasible
+
+### Competency questions / use cases
+
+1. a powerful filter for OSH
+   - find OSH in a specific field of technology
+   - find OSH for a specific use case (including technical standards, certificates)
+   - find versions & variants/forks of a certain component or module
+   - find OSH of a certain development stage
+   - licenses: find OSH that does allow proprietary adoptions
+   - filter for languages
+2. automated assessments by queries
+   - license compatibility
+     - with OSHWA
+     - between 2 given modules
+   - documentation complete according to DIN SPEC 3105-1?
+   - Are source files editable with the software I already have?
+   - How widespread is the use of a specific component or module (in a certain field of technology)?
+3. packaging
+   - get all available information, source & export files of one specific release
+   - find relevant entry points for contribution (e.g. repository)
+
 ## Meta-requirements
 
 ### Location and Naming Convention
