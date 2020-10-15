@@ -97,13 +97,13 @@ okh:FileURL
 
 okh:Source
   a okh:Class ;
-  rfds:label "source file" ;
+  rdfs:label "source file" ;
   rdfs:subClassOf okh:FileURL ;
   .
 
 okh:Export
   a okh:Class ;
-  rfds:label "exported format of a source file" ;
+  rdfs:label "exported format of a source file" ;
   rdfs:subClassOf okh:FileURL ;
   .
 
