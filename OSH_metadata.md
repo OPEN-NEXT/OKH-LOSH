@@ -31,7 +31,7 @@ _This_ draft shall support the following user groups:
 
 1. developers
    - first and foremost facilitate **design reuse**
-   - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github.com/kanzure/skdb> (**apt-get for hardware**) --->
+   - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github.com/kanzure/skdb> (**apt-get for hardware**) -->
      - production files (export only)
      - developer files (sources only)
      - complete clone (export + sources)
@@ -45,6 +45,8 @@ _This_ draft shall support the following user groups:
   → use data from APIs or automated interpretation where possible/feasible
 
 ### Competency questions / use cases
+
+<!--- add: which data fields (& queries) adress this questions -->
 
 1. a powerful filter for OSH
    - find OSH in a specific field of technology
@@ -63,6 +65,11 @@ _This_ draft shall support the following user groups:
 3. packaging
    - get all available information, source & export files of one specific release
    - find relevant entry points for contribution (e.g. repository)
+4. support research on OSH (see wp2-dashboard)
+   - how many contributors?
+   - where are contributors located? (= is there any project closeby?)
+   - what projects contributors contribute to?
+   - dynamics: who contributes, reports/solves issues etc.?
 
 ## Meta-requirements
 
