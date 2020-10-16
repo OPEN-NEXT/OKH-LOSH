@@ -44,6 +44,9 @@ open:
   - electronics only
 - <http://wiki.ros.org/>
   - extensive ressource of well documented robots (including sensors, motors and related software)
+- <labmaker.org>
+  - one can directly buy the stuff there (source code is also linked)
+  - git repos are impressive; we could derive some best practices from there
 
 Wikimedia sample data (copy from list above):
 
