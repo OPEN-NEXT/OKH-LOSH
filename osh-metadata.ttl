@@ -138,8 +138,7 @@ okh:PieceReference
   . 
 
 # ----- PROPERTIES -----
-## ----- general -----
-## (brief profile of the OSH and it's metadata)
+## ----- basic description -----
 
 okh:okhv
   a owl:DatatypeProperty ;
@@ -158,20 +157,29 @@ okh:name
   rdfs:cardinality 1 ;
   .
 
-okh:version
-  a owl:DatatypeProperty ;
-  rdfs:label "version of this Component" ;
-  rdfs:subClassOf wdp:P348 ; # aka software version identifier
-  rdfs:domain okh:Component ;
-  rdfs:cardinality 1
-  .
-
 okh:owner
   a owl:ObjectProperty ;
   rdfs:label "owner" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subClassOf wdp:P3931 ; # aka copyright holder
   rdfs:domain okh:Module ;
+  rdfs:cardinality 1
+  .
+
+okh:repository
+  a owl:ObjectProperty ;
+  rdfs:label "URL to the place where development happens (typically the repository)" ;
+  rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
+  rdfs:range okh:WebsiteURL ;
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:version
+  a owl:DatatypeProperty ;
+  rdfs:label "version of this Component" ;
+  rdfs:subClassOf wdp:P348 ; # aka software version identifier
+  rdfs:domain okh:Component ;
   rdfs:cardinality 1
   .
 
@@ -239,15 +247,6 @@ okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:label "Metadata addressing functionality" ;
   rdfs:subPropertyOf wdp:P8203 ; # aka supported Metadata
-  rdfs:domain okh:Module ;
-  .
-
-okh:repository
-  a owl:ObjectProperty ;
-  rdfs:label "URL to the place where development happens (typically the repository)" ;
-  rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
-  rdfs:range okh:WebsiteURL ;
-  rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
