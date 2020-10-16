@@ -46,30 +46,130 @@ _This_ draft shall support the following user groups:
 
 ### Competency questions / use cases
 
-<!--- add: which data fields (& queries) adress this questions -->
+<!--- add: which queries adress these questions, list related properties in queries -->
 
-1. a powerful filter for OSH
-   - find OSH in a specific field of technology
+**NOTE:** Queries aiming to cover the following use cases are referenced (& linked) in square brackets.
+
+1. a powerful filter for OSH [[F]](#f-filter-queries)
+   - find OSH in a specific field of technology [[f1]](#f01-technology-field)
    - find OSH for a specific use case (including technical standards, certificates)
+     - `function`
    - find versions & variants/forks of a certain component or module
    - find OSH of a certain development stage
    - licenses: find OSH that does allow proprietary adoptions
    - filter for languages
-2. automated assessments by queries
+2. automated assessments [[A]](#a-assessment-queries)
    - license compatibility
      - with OSHWA
      - between 2 given modules
    - documentation complete according to DIN SPEC 3105-1?
    - Are source files editable with the software I already have?
    - How widespread is the use of a specific component or module (in a certain field of technology)?
-3. packaging
-   - get all available information, source & export files of one specific release
-   - find relevant entry points for contribution (e.g. repository)
-4. support research on OSH (see wp2-dashboard)
+3. packaging [[P]](#p-packaging-queries)
+   - full package [[p01]](#p01-full-package)
+   - source package [[p02]](#p03-export-package)
+   - export package [[p03]](#p03-export-package)
+4. support research on OSH (see wp2-dashboard) [[R]](#r-research-queries)
    - how many contributors?
    - where are contributors located? (= is there any project closeby?)
    - what projects contributors contribute to?
    - dynamics: who contributes, reports/solves issues etc.?
+
+### component relations
+
+parsing the `sBoM`:
+
+- `name`
+- `quantity`
+- `parentASM`
+- MOSH
+  - `moduleReference`
+    - pull data from corresponding manifest file (name, version, … , source & export)
+    - again with a `sBoM` etc.
+- POSH
+  - `pieceReference`
+    - pull data from corresponding manifest file (name, version, … , source & export)
+- STD
+  - `stdReference`
+- BUY
+  - `buyReference`
+
+### Standard queries
+
+**NOTE:** As some data fields/properties have multiple uses the following list will obviously contain duplicate mentions of properties.
+
+For details of the properties see descriptions in the [ontology](osh-metadata.ttl).
+
+#### [F] filter queries
+
+##### f01 technology field
+
+find specific `patentClass`
+
+##### f02 use case
+
+search for keywords in `function` (free text)
+
+#### [A] assessment queries
+
+#### [P] packaging queries
+
+#### p01 full package
+
+- general information
+  - get version of metadata standard used
+    - `okhv`
+  - identification
+    - `name`
+    - `repository`
+    - `version`
+    - `forkOf`
+    - `language`
+  - legal
+    - `owner`
+    - `spdxLicense`
+    - `alternativeLicense`
+  - development stage
+    - `status`
+    - `attestation`
+    - `certificate`
+  - basic description
+  - `patentClass`
+  - `standard`
+  - `function`
+  - `readme`
+  - `image`
+  - `functional metadata`
+  - `productionMetadata`
+- design files (=tree with links/references)
+  - `name`
+  - `quantity`
+  - MOSH
+    - `name`
+    - `version`
+    - `source`
+    - `export`
+  - POSH
+    - `name`
+    - `version`
+    - `source`
+    - `export`
+  - STD
+    - `name`
+    - `stdReference`
+  - BUY
+    - `name`
+    - `buyReference`
+
+#### p02 source package
+
+= [p01 full package](#p01-full-package) without `export` fields
+
+#### p03 export package
+
+= [p01 full package](#p01-full-package) without `source` fields
+
+#### [R] research queries
 
 ## Meta-requirements
 
@@ -95,7 +195,7 @@ _This_ draft shall support the following user groups:
 
 To connect your OSH to the OSHI, your metadata must be stored in one of the following formats:
 
-- [JSON-LD](https://json-ld.org/)
+- JSON
 - YAML (for OKHv1 **only**)
 - We may allow more file formats in the future as everything is converted and uploaded to the Wikibase instance anyway.
 
