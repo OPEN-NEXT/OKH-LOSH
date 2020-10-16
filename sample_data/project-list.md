@@ -47,6 +47,8 @@ open:
 - <labmaker.org>
   - one can directly buy the stuff there (source code is also linked)
   - git repos are impressive; we could derive some best practices from there
+- <https://www.careables.org/discover-careables/>
+  - wevolver-based
 
 Wikimedia sample data (copy from list above):
 
@@ -117,6 +119,8 @@ Wikimedia sample data (copy from list above):
   - was peer-reviewed [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193087)
 - [Moonrat](https://github.com/PubInv/moonrat/blob/master/README.md)
 - [Rapid E. coli Detection Project](https://github.com/PubInv/PubInv/blob/master/ideas/Project%20%2341:%20Rapid%20coliform%20presence%20detector.md)
+- [OpenBCI](https://docs.openbci.com/docs/Welcome.html)
+  - lots of versions & modules
 
 #### protection (COVID-19)
 
