@@ -50,26 +50,35 @@ _This_ draft shall support the following user groups:
 
 **NOTE:** Queries aiming to cover the following use cases are referenced (& linked) in square brackets.
 
-1. a powerful filter for OSH [[F]](#f-filter-queries)
-   - find OSH in a specific field of technology [[f1]](#f01-technology-field)
-   - find OSH for a specific use case (including technical standards, certificates)
-     - `function`
-   - find versions & variants/forks of a certain component or module
-   - find OSH of a certain development stage
-   - licenses: find OSH that does allow proprietary adoptions
-   - filter for languages
-2. automated assessments [[A]](#a-assessment-queries)
-   - license compatibility
-     - with OSHWA
-     - between 2 given modules
-   - documentation complete according to DIN SPEC 3105-1?
-   - Are source files editable with the software I already have?
-   - How widespread is the use of a specific component or module (in a certain field of technology)?
-3. packaging [[P]](#p-packaging-queries)
+1. explore this knowledge base [[I]](#i-information-queries)
+   - view all information of a MOSH or POSH available in this knowledge base [[i01]](#i01-available-information)
+   - …
+2. a powerful filter for OSH [[F]](#f-filter-queries)
+   - find OSH in a specific field of technology [[f01]](#f01-technology-field)
+   - find OSH for a specific use case (including technical standards, certificates, development stage) [[f02]](#f02-use-case)
+     - Option 1: filter for specific technology fields
+     - Option 2: find OSH that does allow proprietary adoptions
+   - filter for languages [[f03]](#f03-language)
+   - find versions & variants/forks of a certain component or module [[f04]](#f04-variants)
+3. automated assessments [[A]](#a-assessment-queries)
+   - license compatibility [[a01]](#a01-license-compatibility)
+     - Option 1: with OSHWA
+     - Option 2: between 2 given MOSHs
+   - documentation complete according to DIN SPEC 3105-1? [[a02]](#a02-documentation)
+   - Are source files editable with the software I already have? [[a03]](#a03-file-formats)
+     - Variant 1: list all file formats used for source material
+     - Variant 2: compare a list from Variant 1 with list of supported file formats of selected software calling a sublibrary
+     - Options for both variants:
+       - Option 1: without submodules
+       - Option 2: including all submodules
+   - How widespread is the use of a specific component (MOSH/POSH/STD/BUY) [[a04]](#a04-dissemination)
+     - Option 1: …in a certain field of technology?
+     - Option 2: add a list of all MOSHs using the selected component
+4. packaging [[P]](#p-packaging-queries)
    - full package [[p01]](#p01-full-package)
    - source package [[p02]](#p03-export-package)
    - export package [[p03]](#p03-export-package)
-4. support research on OSH (see wp2-dashboard) [[R]](#r-research-queries)
+5. support research on OSH (see wp2-dashboard) [[R]](#r-research-queries)
    - how many contributors?
    - where are contributors located? (= is there any project closeby?)
    - what projects contributors contribute to?
@@ -99,17 +108,95 @@ parsing the `sBoM`:
 
 For details of the properties see descriptions in the [ontology](osh-metadata.ttl).
 
+#### [I] information queries
+
+##### i01 available information
+
+return all data fields of a specific MOSH or POSH
+
 #### [F] filter queries
 
 ##### f01 technology field
 
-find specific `patentClass`
+- find or exclude MOSHs with specific `patentClass` (multiple)
 
 ##### f02 use case
 
-search for keywords in `function` (free text)
+for MOSHs:
+
+- search for keywords in `function` (free text)
+- filter for specific
+  - `standard`
+  - `status`
+  - `attestation` (boolean: is-empty)
+  - `certificate` (boolean: is-empty)
+- Option 1: filter for specific `patentClass`
+- Option 2: filter for copyleft-categories of licenses by calling a sub-library with `spdxLicense`
+
+##### f03 language
+
+- find or exclude MOSHs with specific IETF language tag (`language`) (multiple)
+
+##### f04 variants
+
+- find forks (`forkOf`) or different versions (`version`) of a MOSH or POSH
 
 #### [A] assessment queries
+
+##### a01 license compatibility
+
+- Option 1: compare `spdxLicense` of a specific MOSH with a list of OSHWA-compliant licenses calling a sub-library
+
+- Option 2: check compatibility of licenses of specific MOSHs by calling a sub-library with `spdxLicense`
+
+##### a02 documentation
+
+- check whether or not [full packaging](#p01-full-package) would include entries for
+  - `okhv`
+  - `name`
+  - `repository`
+  - `version`
+  - `owner`
+  - `spdxLicense`
+    - while checking for [OSHWA-compliance](#a01-license-compatibility)
+  - `function`
+  - design files (hence a `sBoM` is a prerequisiste)
+    - `name`
+    - `quantity`
+    - for MOSHs included
+      - `source`
+      - `export`
+    - for POSHs included
+      - `source`
+      - `export`
+    - for STDs included
+      - `stdReference`
+    - for BUYs included
+      - `buyReference`
+- returns a boolean ("probably complete", "probably uncomplete")
+  - add a report of what's missing in case one ore more of the mentioned data fields are empty
+
+##### a03 file formats
+
+for MOSHs:
+
+- Variant 1:
+  - return list of all `fileFormat` used in `source`
+- Variant 2:
+  - user input is a selection of software
+  - get list of supported file formats of selected software from sub-library
+  - check whether files linked as `source` contain a `fileFormat` that is _not_ part of this list
+  - return boolean
+    - add a list of POSHs/MOSHs including a unsupported `fileFormat` indicating the corresponding file (tree-like list)
+- options for both variants:
+  - Option 1: exclude the `source` of submodules
+  - Option 2: include the `source` of submodules
+
+##### a04 dissemination
+
+- get number of MOSHs that include a seleted component MOSH/POSH/STD/BUY in their `sBoM`
+- Option 1: split number by `patentClass` of the MOSHs using the selected component
+- Option 2: add a list (`name`, `version` and internal wikibase-link to the MOSHs using the selected component)
 
 #### [P] packaging queries
 
@@ -117,7 +204,9 @@ search for keywords in `function` (free text)
 
 A package of a certain MOSH includes the following.
 
-NOTE: The query may give the option to load submodules (other included MOSHs) or just link to them. In case of loading them, naturally the same requirements apply as for any other MOSH.
+NOTE 1: The query may give the option to load submodules (other included MOSHs) or just link to them. In case of loading them, naturally the same requirements apply as for any other MOSH.
+
+NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the resulting package.
 
 - general information
   - get version of metadata standard used
@@ -148,6 +237,8 @@ NOTE: The query may give the option to load submodules (other included MOSHs) or
   - `name`
   - `quantity`
   - MOSH (submodules)
+    - `repository` & `version` when just referencing submodules
+    - full package when loading submodules
   - POSH
     - `okhv`
     - `version`
