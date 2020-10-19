@@ -104,6 +104,8 @@ Wikimedia sample data (copy from list above):
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
 - [OpenFlexure](https://gitlab.com/openflexure)
+- [DStat](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140349)
+- [DropBot](https://microfluidics.utoronto.ca/dropbot/blog/)
 
 ### medical
 
