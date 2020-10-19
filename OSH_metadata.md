@@ -116,6 +116,10 @@ search for keywords in `function` (free text)
 
 #### p01 full package
 
+A package of a certain MOSH includes the following.
+
+NOTE: The query may give the option to load submodules (other included MOSHs) or just link to them. In case of loading them, naturally the same requirements apply as for any other MOSH.
+
 - general information
   - get version of metadata standard used
     - `okhv`
@@ -134,31 +138,28 @@ search for keywords in `function` (free text)
     - `attestation`
     - `certificate`
   - basic description
-  - `patentClass`
-  - `standard`
-  - `function`
-  - `readme`
-  - `image`
-  - `functional metadata`
-  - `productionMetadata`
+    - `patentClass`
+    - `standard`
+    - `function`
+    - `readme`
+    - `image`
+    - `functionalMetadata`
+    - `productionMetadata`
 - design files (=tree with links/references)
   - `name`
   - `quantity`
-  - MOSH
-    - `name`
-    - `version`
-    - `source`
-    - `export`
+  - MOSH (submodules)
   - POSH
-    - `name`
+    - `okhv`
     - `version`
+    - `standard`
+    - `image`
+    - `productionMetadata`
     - `source`
     - `export`
   - STD
-    - `name`
     - `stdReference`
   - BUY
-    - `name`
     - `buyReference`
 
 #### p02 source package

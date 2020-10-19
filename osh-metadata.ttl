@@ -169,7 +169,7 @@ okh:repository
 
 okh:version
   a owl:DatatypeProperty ;
-  rdfs:label "version of this Component" ;
+  rdfs:label "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subClassOf wdp:P348 ; # aka software version identifier
   rdfs:domain okh:Component ;
   rdfs:cardinality 1
