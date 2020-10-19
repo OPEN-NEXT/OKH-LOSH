@@ -161,6 +161,7 @@ okh:name
 okh:repository
   a owl:ObjectProperty ;
   rdfs:label "URL to the place where development happens (typically the repository)" ;
+  rdfs:comment "following this link people shall be able to contribute to the development (reporting issues, suggesting changes, connecting to the team etc.)" ;
   rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
   rdfs:range okh:WebsiteURL ;
   rdfs:cardinality 1 ;
@@ -186,8 +187,9 @@ okh:forkOf
 okh:language
  a owl:DatatypeProperty ;
  rdfs:label "IETF language tag" ;
- rdfs:comment "BCP 47 standard e.g. en-GB" ;
+ rdfs:comment "following the BCP 47 standard e.g. en-GB" ;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
+ rdfs:cardinality 1 ;
  rdfs:domain okh:Component ;
  .
 
@@ -213,7 +215,7 @@ okh:spdxLicense
 
 okh:alternativeLicense
   a owl:ObjectProperty ;
-  rdfs:label "license without SPDX identifier" ;
+  rdfs:label "URL to legal code of a license without SPDX identifier" ;
   rdfs:comment "…hence OSHWA-compliance is to be checken manually" ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
@@ -266,12 +268,13 @@ okh:standard
 okh:function
   a owl:DatatypeProperty ;
   rdfs:label "functional description" ;
-  rdfs:subPropertyOf wdp:P7535 ; # aka scope and content
-  rdfs:domain okh:Module ;
   rdfs:comment '''
     functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-    so if you whish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
+    so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
     optional: description of input, output and interfaces'''@en ;
+  rdfs:subPropertyOf wdp:P7535 ; # aka scope and content
+  rdfs:cardinality 1 ;
+  rdfs:domain okh:Module ;
   .
 
 okh:readme
@@ -285,6 +288,7 @@ okh:readme
 okh:image
   a owl:ObjectProperty ;
   rdfs:label "image" ;
+  rdfs:comment "URL to a meaningful & freely licensed picture of this module or piece" ;
   rdfs:subClassOf wdp:P4765 ; # aka Commons compatible image available at URL
   rdfs:domain okh:Component ;
   .
@@ -292,6 +296,7 @@ okh:image
 okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:label "Metadata addressing functionality" ;
+  rdfs:comment "such as dimensions, material, weight, RPM,… (not standardised)" ;
   rdfs:subPropertyOf wdp:P8203 ; # aka supported Metadata
   rdfs:domain okh:Module ;
   .
@@ -381,7 +386,7 @@ okh:pieceReference
 
 okh:stdReference
   a okh:ObjectProperty ;
-  rdfs:label "standard designation of a standard component" ;
+  rdfs:label "standard designation of a standard component (preferably naming the _latest_ standard)" ;
   rdfs:range okh:StdReference ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:STD ;
@@ -389,7 +394,8 @@ okh:stdReference
   
 okh:buyReference
   a okh:ObjectProperty ;
-  rdfs:label "unambiguous reference for a purchased product" ;
+  rdfs:label "unambiguous reference for a non-standard purchased product" ;
+  rdfs:comment "others shall be able to identify/procure this component only by the given reference(s)" ;
   rdfs:range okh:BuyReference ;
   rdfs:domain okh:BUY ;
   .
