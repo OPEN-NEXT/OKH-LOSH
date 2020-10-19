@@ -266,17 +266,16 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
 To connect your OSH to the OSHI, your metadata must be stored in one of the following formats:
 
 - JSON
-- YAML (for OKHv1 **only**)
-- We may allow more file formats in the future as everything is converted and uploaded to the Wikibase instance anyway.
+- We may allow more file formats in the future.
 
 Please use the linked templates to enter your data.
 
 Background:\
 The crawler will take this metadata as basic input, add additional information
-to it (e.g. from the Gitlab API), build a JSON file with all that information
-and uploads it to Wikibase via a Data Input API (developed by WMDE). It doesn't
-really matter in which file format you'll save your metadata as long as the
-crawler is able to interpret it.
+to it (e.g. from the Gitlab API), build a JSON-LD file with all that information
+and uploads it to Wikibase via an open API. Technically it doesn't really matter
+in which file format you'll save your metadata as long as the crawler is able to
+interpret it.
 
 ## Ontology
 
