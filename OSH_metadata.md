@@ -2,28 +2,7 @@
 
 ## Intro
 
-As documentation is technology-specific, reasonable metadata may be as well.
-
-This first draft:
-
-- assumes that metadata _must_ be technology-specific in order to give a meaningful representation and hence enable meaningful connections between OSH modules;
-- organises metadata in a modular approach;
-- allows different levels of compliance:
-  - **Level 1: Connecting to the [OSHI](README.md)**\
-  …by providing
-  - [OSH-Module](#osh-module)
-    - **Note:** `link to simplified BoM` will be just substituted by a link to the documentation release then.
-  - **Level 2: Enabling decentralised production**\
-  …a piece of hardware is then (in L2 compliance) represented by
-    - [OSH-Module](#osh-module)\
-    which links to
-    - [simplified BoM](#simplified-bom-sbom)\
-    which links to
-    - standard/purchased parts via unambiguous references
-    - [POSHs](#piece-of-osh-posh) design files\
-    which link to design files
-
-## Requirements to this draft
+_new intro needed_
 
 ## Scope
 
@@ -34,17 +13,17 @@ _This_ draft shall support the following user groups:
    - replace manual packaging; metadata shall enable a download button for: <!--- resource to check: <https://github.com/kanzure/skdb> (**apt-get for hardware**) -->
      - production files (export only)
      - developer files (sources only)
-     - complete clone (export + sources)
-     - export BoM (like [sBoM](#simplified-bom-sbom))
-2. manufacturers / service providers\
-  find OSH ready for decentralised (mass) production, maintenance and service provision
+     - full package (export + sources)
+2. manufacturers / service providers
+   - find OSH ready for decentralised (mass) production, maintenance and service provision
+3. researchers
 
 ### General requirements
 
 - no unnecessary effort for metadata providers (developers etc.)\
   → use data from APIs or automated interpretation where possible/feasible
 
-### Competency questions / use cases
+## Competency questions / use cases
 
 <!--- add: which queries adress these questions, list related properties in queries -->
 
