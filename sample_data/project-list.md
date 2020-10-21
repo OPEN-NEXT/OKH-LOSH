@@ -136,6 +136,8 @@ Wikimedia sample data (copy from list above):
 - [DIY-Beatmungsgerät](https://github.com/DIY-Beatmungsgerat/diy-beatmungsgeraet)
   - refers to [OpenLung](https://gitlab.com/open-source-ventilator/ventilator/OpenLung)
 - [Low-Cost Open Source Ventilator or PAPR](https://github.com/jcl5m1/ventilator)
+- [MakAir](https://github.com/makers-for-life/makair)
+- [MIT E-Vent](https://github.com/mit-drl/e-vent)
 - [OxyGEN](https://github.com/ProtofyTeam/OxyGEN)
 - [VentilAid](https://gitlab.com/Urbicum/ventilaid/)
 - [Ventmon](https://github.com/PubInv/ventmon-ventilator-inline-test-monitor)
