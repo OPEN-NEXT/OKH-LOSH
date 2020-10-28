@@ -63,26 +63,6 @@ Which is an **assembly of components (and subassemblies) with clear input, outpu
   far as required inputs and interfaces are respected);
 - metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
 
-**Metadata:**
-
-- okhv
-- name
-- image (multiple)
-- language
-- version
-- forkOf
-- function
-- IPC (multiple)
-- sBoM
-- license / alternative-license
-- readme
-- certificate (multiple)
-- repo
-- standard (multiple)
-- functional-metadata (multiple)
-- source
-- export
-
 **A MOSH file:**
 
 1. is named `.okh`\
@@ -98,17 +78,6 @@ Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and 
 
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
-
-**Metadata:**
-
-- okhv
-- name
-- image
-- version
-- standard (multiple)
-- source (multiple)
-- export (multiple)
-- production-metadata (multiple)
 
 **A POSH file:**
 
@@ -165,6 +134,33 @@ Which is a **component or assembly that is neither officially standardised nor f
 | 5.2  | screw        | 2     | STD    | standard designation                                                |
 | 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
 | 6    | controller   | 1     | MOSH   | link to link to [OSH-Module](#osh-module)                           |
+
+## Required Metadata
+
+Requirements are platform-specific since different entries can be automatically filled via their API - so people don't need to provide manual entries.
+
+### GitHub
+
+|data field|MOSH-manual|MOSH-API||POSH-manual|POSH-API|
+|---|---|---|---|---|---|
+|okhv|x||x||
+|image (multiple)|x||x||
+|language|x||||
+|function|x||||
+|IPC (multiple)|x||||
+|sBoM|x||||
+|certificate (multiple)|x||||
+|standard (multiple)|x||||
+|functional-metadata (multiple)|x||||
+|production-metadata (multiple)|x||x||
+|source|x||x||
+|export|x||x||
+|name||x|x||
+|version||x|x||
+|forkOf||x|||
+|license / alternative-license||x|||
+|readme||x|||
+|repo||x|||
 
 ## Ontology
 
