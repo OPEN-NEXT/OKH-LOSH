@@ -141,8 +141,8 @@ Requirements are platform-specific since different entries can be automatically 
 
 ### GitHub
 
-|data field|MOSH-manual|MOSH-API||POSH-manual|POSH-API|
-|---|---|---|---|---|---|
+|data field|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
+|---|---|---|---|---|
 |okhv|x||x||
 |image (multiple)|x||x||
 |language|x||||
