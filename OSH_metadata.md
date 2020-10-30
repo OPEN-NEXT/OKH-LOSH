@@ -2,7 +2,7 @@
 
 ## Intro
 
-new intro needed
+new intro neededs
 
 ## Scope
 
@@ -260,7 +260,7 @@ for MOSHs:
 - search for keywords in `function` (free text)
 - filter for specific
   - `standard`
-  - `status`
+  - `developmentStage`
   - `attestation` (boolean: is-empty)
   - `certificate` (boolean: is-empty)
 - Option 1: filter for specific `patentClass`
@@ -355,7 +355,7 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
     - `spdxLicense`
     - `alternativeLicense`
   - development stage
-    - `status`
+    - `developmentStage`
     - `attestation`
     - `certificate`
   - basic description

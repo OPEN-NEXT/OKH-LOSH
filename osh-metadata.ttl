@@ -224,10 +224,10 @@ okh:alternativeLicense
 
 ## ----- development stage -----
 
-okh:status
+okh:developmentStage
   a owl:ObjectProperty ;
-  rdfs:label "status" ;
-  rdfs:comment "project status e.g. development, prototype, certified, in production" ;
+  rdfs:label "development stage" ;
+  rdfs:comment "project development stage e.g. in development, prototype, certified, in production" ;
   rdfs:subClassOf wdp:P548 ; #aka version type
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
