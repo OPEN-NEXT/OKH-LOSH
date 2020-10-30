@@ -181,8 +181,6 @@ Find the actual ontology [here](osh-metadata.ttl).
 
 ### Competency questions / use cases
 
-<!--- add: which queries adress these questions, list related properties in queries -->
-
 **NOTE:** Queries aiming to cover the following use cases are referenced (& linked) in square brackets.
 
 1. explore this knowledge base [[I]](#i-information-queries)
