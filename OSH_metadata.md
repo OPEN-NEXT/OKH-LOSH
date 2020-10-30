@@ -226,10 +226,10 @@ parsing the `sBoM`:
 - `parentASM`
 - MOSH
   - `moduleReference`
-    - pull data from corresponding manifest file (name, version, … , source & export), again with a `sBoM` etc.
+    - pull data from corresponding MOSH file (name, version, … , source & export), again with a `sBoM` etc.
 - POSH
   - `pieceReference`
-    - pull data from corresponding manifest file (name, version, … , source & export)
+    - pull data from corresponding POSH file (name, version, … , source & export)
 - STD
   - `stdReference`
 - BUY
