@@ -174,7 +174,7 @@ As a consequence we also use Wikidata's terms:
 | class | class |
 | property | slot/feature/attribute |
 | qualifier | facet |
-| itemt | instance |
+| item | instance |
 
 This document in the following will only describe how the ontology works and why it looks as it does.
 Find the actual ontology [here](osh-metadata.ttl).
