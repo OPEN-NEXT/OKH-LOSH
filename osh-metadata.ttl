@@ -143,7 +143,7 @@ okh:okhv
   a owl:DatatypeProperty ;
   rdfs:label "version of standard (OKH) the metadata is following" ;
   rdfs:comment "Open Know-How provides a standard for OSH metadata; different versions → different data fields" ;
-  rdfs:subClassOf wdp:P348 ; # aka software version identifier
+  rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:domain okh:Module ;
   rdfs:cardinality 1
   .
@@ -153,7 +153,7 @@ okh:okhv
 okh:name
   a owl:DatatypeProperty ;
   rdfs:label "working title of Module or Piece" ;
-  rdfs:subClassOf wdp:P2561 ; # aka name
+  rdfs:subPropertyOf wdp:P2561 ; # aka name
   rdfs:domain okh:Component ;
   rdfs:cardinality 1 ;
   .
@@ -171,7 +171,7 @@ okh:repository
 okh:version
   a owl:DatatypeProperty ;
   rdfs:label "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
-  rdfs:subClassOf wdp:P348 ; # aka software version identifier
+  rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:domain okh:Component ;
   rdfs:cardinality 1
   .
@@ -199,7 +199,7 @@ okh:owner
   a owl:ObjectProperty ;
   rdfs:label "owner" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
-  rdfs:subClassOf wdp:P3931 ; # aka copyright holder
+  rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
   rdfs:domain okh:Module ;
   rdfs:cardinality 1
   .
@@ -228,7 +228,7 @@ okh:developmentStage
   a owl:ObjectProperty ;
   rdfs:label "development stage" ;
   rdfs:comment "project development stage e.g. in development, prototype, certified, in production" ;
-  rdfs:subClassOf wdp:P548 ; #aka version type
+  rdfs:subPropertyOf wdp:P548 ; #aka version type
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
@@ -289,7 +289,7 @@ okh:image
   a owl:ObjectProperty ;
   rdfs:label "image" ;
   rdfs:comment "URL to a meaningful & freely licensed picture of this module or piece" ;
-  rdfs:subClassOf wdp:P4765 ; # aka Commons compatible image available at URL
+  rdfs:subPropertyOf wdp:P4765 ; # aka Commons compatible image available at URL
   rdfs:domain okh:Component ;
   .
 
