@@ -1,6 +1,6 @@
-# OSHI
+# LOSH
 
-**_The Open Source Hardware Internet - technical documentation in an open graph database._**
+**_A Library of Open Source Hardware - technical documentation in an open graph database._**
 
 ## Intro
 
