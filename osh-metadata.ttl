@@ -40,9 +40,6 @@ okh:Class
 # so we can use meaningful names,
 # instead of the cryptic WikiData Property numbers.
 
-#a owl:ObjectProperty ;
-#a owl:DatatypeProperty ;
-
 
 # ----- CLASSES -----
 
