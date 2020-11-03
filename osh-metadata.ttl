@@ -105,13 +105,13 @@ okh:ModuleReference
   a okh:Class ;
   rdfs:label "URL to a MOSH file (metadata for modules)" ;
   rdfs:subClassOf okh:ComponentReference ;
-  . 
+  .
 
 okh:PieceReference
   a okh:Class ;
   rdfs:label "URL to a POSH file (metadata for pieces)" ;
   rdfs:subClassOf okh:ComponentReference ;
-  . 
+  .
 
 okh:SourceFile
   a okh:Class ;
@@ -374,7 +374,7 @@ okh:moduleReference
   rdfs:range okh:ModuleReference ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
-  . 
+  .
 
 okh:pieceReference
   a okh:ObjectProperty ;
@@ -382,7 +382,7 @@ okh:pieceReference
   rdfs:range okh:PieceReference ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Piece ;
-  . 
+  .
 
 okh:stdReference
   a okh:ObjectProperty ;
@@ -391,7 +391,7 @@ okh:stdReference
   rdfs:cardinality 1 ;
   rdfs:domain okh:STD ;
   .
-  
+
 okh:buyReference
   a okh:ObjectProperty ;
   rdfs:label "unambiguous reference for a non-standard purchased product" ;
