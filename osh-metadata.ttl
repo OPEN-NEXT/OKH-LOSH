@@ -4,6 +4,7 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
 @prefix terms: <http://purl.org/dc/terms/> .
 #@prefix wdt:    <http://www.wikidata.org/prop/direct/> .
 @prefix wdp:   <http://www.wikidata.org/prop/direct/> .
@@ -85,6 +86,7 @@ okh:WebsiteURL
   a okh:Class ;
   rdfs:label "Website URL" ;
   rdfs:subClassOf okh:Reference ;
+  rdfs:subClassOf schema:URL ;
   # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
@@ -92,6 +94,7 @@ okh:FileURL
   a okh:Class ;
   rdfs:label "File URL" ;
   rdfs:subClassOf okh:Reference ;
+  rdfs:subClassOf schema:URL ;
   # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
@@ -144,6 +147,7 @@ okh:okhv
   rdfs:label "version of standard (OKH) the metadata is following" ;
   rdfs:comment "Open Know-How provides a standard for OSH metadata; different versions → different data fields" ;
   rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
+  rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Module ;
   rdfs:cardinality 1
   .
@@ -154,6 +158,7 @@ okh:name
   a owl:DatatypeProperty ;
   rdfs:label "working title of Module or Piece" ;
   rdfs:subPropertyOf wdp:P2561 ; # aka name
+  rdfs:subPropertyOf rdfs:label ;
   rdfs:domain okh:Component ;
   rdfs:cardinality 1 ;
   .
@@ -172,6 +177,7 @@ okh:version
   a owl:DatatypeProperty ;
   rdfs:label "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
+  rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Component ;
   rdfs:cardinality 1
   .
@@ -189,6 +195,7 @@ okh:language
  rdfs:label "IETF language tag" ;
  rdfs:comment "following the BCP 47 standard e.g. en-GB" ;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
+ rdfs:subPropertyOf schema:inLanguage ;
  rdfs:cardinality 1 ;
  rdfs:domain okh:Component ;
  .
@@ -200,6 +207,7 @@ okh:owner
   rdfs:label "owner" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
+  rdfs:range schema:Person, schema:Organization ;
   rdfs:domain okh:Module ;
   rdfs:cardinality 1
   .
@@ -209,6 +217,7 @@ okh:spdxLicense
  rdfs:label "SPDX license identifier" ;
  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
  rdfs:subPropertyOf wdp:P2479 ; # aka SPDX license identifier
+ rdfs:subPropertyOf schema:licenseDeclared ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
  rdfs:cardinality 1 ;
  .
@@ -290,6 +299,7 @@ okh:image
   rdfs:label "image" ;
   rdfs:comment "URL to a meaningful & freely licensed picture of this module or piece" ;
   rdfs:subPropertyOf wdp:P4765 ; # aka Commons compatible image available at URL
+  rdfs:subPropertyOf schema:image ;
   rdfs:domain okh:Component ;
   .
 
@@ -323,6 +333,7 @@ okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
   rdfs:subPropertyOf wdp:P2701 ; # aka file format
+  rdfs:subPropertyOf schema:fileFormat ;
   rdfs:domain okh:SourceFile , okh:ExportFile ;
   .
 
@@ -358,6 +369,7 @@ okh:quantity
   rdfs:label "quantity" ;
   rdfs:subPropertyOf wdp:P1114 ; # aka quantity
   rdfs:cardinality 1 ;
+  rdfs:range xsd:int ;
   rdfs:domain okh:Component ;
   .
 
