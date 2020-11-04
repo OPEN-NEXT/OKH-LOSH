@@ -370,11 +370,12 @@ okh:quantity
   rdfs:domain okh:Component ;
   .
 
-okh:parentASM
+okh:hasComponent
   a owl:ObjectProperty ;
-  rdfs:label "parent assembly/module the component is part of" ;
-  rdfs:subPropertyOf wdp:P361 ; # aka part of
-  rdfs:domain okh:Component ;
+  rdfs:label "indicates that a component forms a part of the MOSH" ;
+  rdfs:subPropertyOf schema:hasPart ;
+  rdfs:range okh:Component ;
+  rdfs:domain okh:Module ;
   .
 
 okh:moduleReference
