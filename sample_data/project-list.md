@@ -62,10 +62,10 @@ Wikimedia sample data (copy from list above):
 
 - [Airpup kite balloon](https://github.com/mathewlippincott/airpup-balloon)
 - [FOSSASAT-1](https://fossa.systems/fossasat-1/)
-- [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
-- [OpenROV](https://github.com/OpenROV)
 - [FOSSASAT-2](https://github.com/FOSSASystems/FOSSASAT-2)
 - [FOSSASAT-1B](https://github.com/FOSSASystems/FOSSASAT-1B)
+- [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
+- [OpenROV](https://github.com/OpenROV)
 
 ### consumer goods
 
@@ -74,12 +74,14 @@ Wikimedia sample data (copy from list above):
 - [Corne keyboard](https://github.com/foostan/crkbd)
 - [EOMA68 computing devices](https://www.crowdsupply.com/eoma68/micro-desktop)
   - 100% open source hardare and libre software/firmeware computers
+- [Flipper Zero](https://flipperzero.one/)
+- [Kano](https://kano.me/eu)
 - [Koruza](http://scientific.koruza.net/index.html)
+- [LittleBits](https://www.littlebits.cc/bit-o-pedia)
 - [MNT Reform](https://source.mntmn.com/MNT/reform)
 - [OttoDIY](https://www.ottodiy.com/)
 - [Ultimate Hacking Keyboard](https://github.com/UltimateHackingKeyboard/)
 - [Volled Board](https://wikifactory.com/@shad0w/volled-board)
-- [Maths Tablet](https://github.com/PubInv/math-tablet)
 
 ### developer tools
 
@@ -203,3 +205,25 @@ to add after misalignments are clarified:
   - not OSH yet ([source](https://wiki.opensourceecology.org/wiki/Ringo_Phone))
 - [Smill](https://projects.fablabs.io/@eb/smill)
   - license missing
+
+---
+
+dump for (maybe relevant) software/firmware:
+
+- [Maths Tablet](https://github.com/PubInv/math-tablet)
+
+---
+
+### sublist: educational OSH
+
+- [Airpup kite balloon](https://github.com/mathewlippincott/airpup-balloon)
+- Arduino projects
+  - …related to [Arduino Remote Learning](https://www.arduino.cc/remotelearning)
+  - or from this list <https://create.arduino.cc/projecthub/projects/tags/education>
+- [Baby MIT Cheetah Robot](https://www.instructables.com/id/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/)
+- [Flipper Zero](https://flipperzero.one/)
+- [Kano](https://kano.me/eu)
+- [LittleBits](https://www.littlebits.cc/bit-o-pedia)
+- [OttoDIY](https://www.ottodiy.com/)
+- [Pocket Science Lab](https://pslab.io/) (part of OPEN!NEXT)
+- [Volled Board](https://wikifactory.com/@shad0w/volled-board)
