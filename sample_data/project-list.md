@@ -49,6 +49,7 @@ open:
   - git repos are impressive; we could derive some best practices from there
 - <https://www.careables.org/discover-careables/>
   - wevolver-based
+- <https://en.wikipedia.org/wiki/CERN_Open_Hardware_Licence#Projects_using_the_CERN_OHL>
 
 Wikimedia sample data (copy from list above):
 
