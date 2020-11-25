@@ -51,6 +51,8 @@ open:
   - wevolver-based
 - <https://en.wikipedia.org/wiki/CERN_Open_Hardware_Licence#Projects_using_the_CERN_OHL>
 - <http://www.contraptor.org/>
+- [helpful engineering](https://airtable.com/shrZ8pIj3rV6BAqdq/tblaQ1M283TuaV2Im)
+  - are adopting OKHv1 [here](https://github.com/helpfulengineering/library/tree/main/okh)
 
 Wikimedia sample data (copy from list above):
 
