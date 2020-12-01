@@ -2,6 +2,8 @@
 
 **_A Library of Open Source Hardware - technical documentation in an open graph database._**
 
+available via [wikibase.oho.wiki](https://wikibase.oho.wiki/)
+
 ## Intro
 
 ### tl;dr
@@ -84,13 +86,7 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
 
 ![dataflow illustration](illustrations/dataflow-principle.svg)
 
-- backend: wikibase
-  - version x.x.x
-  - used onthology modules
-    - xxx
-    - xxx
-    - …
-- frontend: The Open Hardware Observatory ([oho.wiki](en.oho.wiki)) (=wikimedia extension)
+- technical details of the wikibase instance: <https://gitlab.opensourceecology.de/verein/koordination/it/tickets/-/issues/43>
 - open standards used:
   - The [DIN SPEC 3105](https://gitlab.com/OSEGermany/OHS) (to be published under CC BY-SA 4.0 in June 2020) and the [OH-TsDC](https://gitlab.com/OSEGermany/oh-tsdc) define clear, enforceable criteria for technical documentation of OSH (+ a community-based assessment procedure in order to prove that)
   - The [Open Know-How Metadata Standard](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) gives a first approach to organise OSH through reasonable metadata.
