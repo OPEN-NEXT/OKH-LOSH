@@ -181,9 +181,9 @@ okh:language
 
 ## ----- legal -----
 
-okh:owner
+okh:licensor
   a owl:ObjectProperty ;
-  rdfs:label "owner" ;
+  rdfs:label "licensor" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
   rdfs:range schema:Person, schema:Organization ;
