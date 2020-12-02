@@ -2,7 +2,7 @@
 
 ## Intro
 
-new intro neededs
+TODO new intro neededs
 
 ## Scope
 
@@ -65,7 +65,7 @@ Which is an **assembly of components (and subassemblies) with clear input, outpu
 
 **A MOSH file:**
 
-1. is named `.okh`\
+1. is named `.okh.json`\
   (note the dot\
    …so the file won't get changed unintentionally & it will be hidden on
    Linux-based systems which gives a neater look & it's easier for the crawler
@@ -81,7 +81,7 @@ Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and 
 
 **A POSH file:**
 
-1. is named `.okh-<anything>`\
+1. is named `.okh-<anything>.json	`\
   while `<anything>` is replaced by any type of identifier (e.g. a short name)\
   (note the dot);
 2. should be stored in reasonable ways (e.g. in the folder containing the design files)
