@@ -162,15 +162,6 @@ okh:okhv
 
 ## ----- identification -----
 
-okh:name
-  a owl:DatatypeProperty ;
-  rdfs:label "name" ;
-  rdfs:comment "working title of Module or Piece" ;
-  rdfs:subPropertyOf wdp:P2561 ; # aka name
-  rdfs:domain okh:Component ;
-  rdfs:cardinality 1 ;
-  .
-
 okh:repository
   a owl:ObjectProperty ;
   rdfs:label "repository" ;
