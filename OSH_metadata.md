@@ -147,7 +147,7 @@ Requirements are platform-specific since different entries can be automatically 
 |image (multiple)|x||x||
 |language|x||||
 |function|x||||
-|IPC (multiple)|x||||
+|patentClass (multiple)|x||||
 |sBoM|x||||
 |certificate (multiple)|x||||
 |standard (multiple)|x||||
