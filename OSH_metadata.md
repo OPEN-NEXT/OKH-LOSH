@@ -25,8 +25,10 @@ _This_ draft shall support the following user groups:
 
 ## Basic structure
 
-- information is provided in manifest files
-- OSH platforms that offer an open API with data fields compatible to this draft can be connected to our crawler. It will pull the API and enter the data directly into the knowledge base.
+- Information is provided via platform APIs. The crawler will call these APIs and collect the data in JSON files.
+  - in case of GitHub/GitLab some information is provided in the API, some shall be provided in manually created [manifest files](#manifest-file), see [GitHub-Table](#github) for details
+  - those manifest files can be searched via the GitHub-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
+- The crawler's JSON files are handed over to a parser, who translates the data into JSON-LD and prepares it for uploading via the Wikibase-API
 - a MOSH is represented by its manifest file, linking to a sBoM
   - the sBoM refrences all components of this MOSH e.g. linking to the manifest files of POSHs
 
