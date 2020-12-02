@@ -45,31 +45,36 @@ okh:Class
 
 okh:Component
   a okh:Class ;
-  rdfs:label "Component – either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
+  rdfs:label "Component"@en ;
+  rdfs:comment "Either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
   # That's the main class then!
   .
 
 okh:Module
   a okh:Class ;
-  rdfs:label "Module of Open Source Hardware (MOSH)"@en ;
+  rdfs:label "MOSH"@en ;
+  rdfs:comment "Module of Open Source Hardware (MOSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:Piece
   a okh:Class ;
-  rdfs:label "Piece of Open Source Hardware (POSH)"@en ;
+  rdfs:label "POSH"@en ;
+  rdfs:comment "Piece of Open Source Hardware (POSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:STD
   a okh:Class ;
-  rdfs:label "Standard Component (STD)"@en ;
+  rdfs:label "Standard Component"@en ;
+  rdfs:comment "Standard Component (STD)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:BUY
   a okh:Class ;
-  rdfs:label "Purchased Proprietary Component (BUY)"@en ;
+  rdfs:label "Purchased Component"@en ;
+  rdfs:comment "Purchased Proprietary Component (BUY)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
@@ -95,24 +100,6 @@ okh:FileURL
   # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
-okh:ComponentReference
-  a okh:Class ;
-  rdfs:label "reference for a component" ;
-  rdfs:subClassOf okh:Reference ;
-  .
-
-okh:ModuleReference
-  a okh:Class ;
-  rdfs:label "URL to a MOSH file (metadata for modules)" ;
-  rdfs:subClassOf okh:ComponentReference ;
-  .
-
-okh:PieceReference
-  a okh:Class ;
-  rdfs:label "URL to a POSH file (metadata for pieces)" ;
-  rdfs:subClassOf okh:ComponentReference ;
-  .
-
 okh:SourceFile
   a okh:Class ;
   rdfs:label "source file" ;
@@ -125,23 +112,23 @@ okh:ExportFile
   rdfs:subClassOf okh:FileURL , okh:Piece ;
   .
 
-okh:StdReference
+okh:ComponentReference
   a okh:Class ;
-  rdfs:label "standard designation of a standard component" ;
-  rdfs:subClassOf okh:ComponentReference ;
-  .
-
-okh:BuyReference
-  a okh:Class ;
-  rdfs:label "unambiguous reference for a purchased product" ;
-  rdfs:subClassOf okh:ComponentReference ;
+  rdfs:subClassOf okh:Reference ;
+  rdfs:label "Component Reference" ;
+  rdfs:comment "reference for a component" ;
+  rdfs:comment "URL to a MOSH file (metadata for modules)" ;
+  rdfs:comment "URL to a POSH file (metadata for pieces)" ;
+  rdfs:comment "standard designation of a standard component" ;
+  rdfs:comment "unambiguous reference for a purchased product" ;
   .
 
 # ----- PROPERTIES -----
 
 okh:okhv
   a owl:DatatypeProperty ;
-  rdfs:label "version of standard (OKH) the metadata is following" ;
+  rdfs:label "OKH version" ;
+  rdfs:comment "version of standard (OKH) the metadata is following" ;
   rdfs:comment "Open Know-How provides a standard for OSH metadata; different versions → different data fields" ;
   rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:subPropertyOf schema:version ;
@@ -151,18 +138,10 @@ okh:okhv
 
 ## ----- identification -----
 
-okh:name
-  a owl:DatatypeProperty ;
-  rdfs:label "working title of Module or Piece" ;
-  rdfs:subPropertyOf wdp:P2561 ; # aka name
-  rdfs:subPropertyOf rdfs:label ;
-  rdfs:domain okh:Component ;
-  rdfs:cardinality 1 ;
-  .
-
 okh:repository
   a owl:ObjectProperty ;
-  rdfs:label "URL to the place where development happens (typically the repository)" ;
+  rdfs:label "repository" ;
+  rdfs:comment "URL to the place where development happens (typically the repository)" ;
   rdfs:comment "following this link people shall be able to contribute to the development (reporting issues, suggesting changes, connecting to the team etc.)" ;
   rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
   rdfs:range okh:WebsiteURL ;
@@ -172,7 +151,8 @@ okh:repository
 
 okh:version
   a owl:DatatypeProperty ;
-  rdfs:label "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
+  rdfs:label "version" ;
+  rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Component ;
@@ -189,19 +169,21 @@ okh:forkOf
 
 okh:language
  a owl:DatatypeProperty ;
- rdfs:label "IETF language tag" ;
+ rdfs:label "language" ;
+ rdfs:comment "IETF language tag" ;
  rdfs:comment "following the BCP 47 standard e.g. en-GB" ;
+ rdfs:comment "denotes the langauge of the documentation for the component subject" ;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
  rdfs:subPropertyOf schema:inLanguage ;
  rdfs:cardinality 1 ;
- rdfs:domain okh:Component ;
+ rdfs:domain okh:Module, okh:Piece ;
  .
 
 ## ----- legal -----
 
-okh:owner
+okh:licensor
   a owl:ObjectProperty ;
-  rdfs:label "owner" ;
+  rdfs:label "licensor" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
   rdfs:range schema:Person, schema:Organization ;
@@ -221,8 +203,8 @@ okh:spdxLicense
 
 okh:alternativeLicense
   a owl:ObjectProperty ;
-  rdfs:label "URL to legal code of a license without SPDX identifier" ;
-  rdfs:comment "…hence OSHWA-compliance is to be checken manually" ;
+  rdfs:label "non-SPDX license" ;
+  rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checken manually" ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
   rdfs:cardinality 1 ;
@@ -249,8 +231,8 @@ okh:attestation
 
 okh:certificate
   a owl:ObjectProperty ;
-  rdfs:label "official certificate" ;
-  rdfs:comment "such as CE mark" ;
+  rdfs:label "certificate" ;
+  rdfs:comment "official certificate, such as CE mark" ;
 # FIXME rdfs:subPropertyOf ;
   rdfs:domain okh:Module ;
   .
@@ -259,14 +241,16 @@ okh:certificate
 
 okh:patentClass
  a owl:ObjectProperty ;
- rdfs:label "International Patent Classification (IPC)" ;
+ rdfs:label "Patent Class" ;
+ rdfs:comment "International Patent Classification (IPC)" ;
 # FIXME rdfs:subPropertyOf ;
  rdfs:domain okh:Module ;
  .
 
 okh:standard
   a owl:ObjectProperty ;
-  rdfs:label "official standard used in the _design_ of a Module" ;
+  rdfs:label "standard" ;
+  rdfs:comment "official standard used in the _design_ of a Module" ;
   # FIXME rdfs:subPropertyOf ;
   rdfs:domain okh:Module ;
   .
@@ -285,7 +269,8 @@ okh:function
 
 okh:readme
   a owl:ObjectProperty ;
-  rdfs:label "URL to readme" ;
+  rdfs:label "readme" ;
+  rdfs:comment "URL to the README" ;
   rdfs:range okh:FileURL ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
@@ -302,16 +287,16 @@ okh:image
 
 okh:functionalMetadata
   a owl:DatatypeProperty ;
-  rdfs:label "Metadata addressing functionality" ;
-  rdfs:comment "such as dimensions, material, weight, RPM,… (not standardised)" ;
+  rdfs:label "functionality metadata" ;
+  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardised)" ;
   rdfs:subPropertyOf wdp:P8203 ; # aka supported Metadata
   rdfs:domain okh:Module ;
   .
 
 okh:productionMetadata
   a owl:ObjectProperty ;
-  rdfs:label "production-relevant metadata" ;
-  rdfs:comment "as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
+  rdfs:label "production metadata" ;
+  rdfs:label "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf wdp:P8203 ;
   rdfs:domain okh:Module , okh:Piece ;
   .
@@ -321,7 +306,8 @@ okh:productionMetadata
 
 okh:sBoM
   a owl:ObjectProperty ;
-  rdfs:label "URL to simplified Bill of Materials" ;
+  rdfs:label "simplified Bill of Materials" ;
+  rdfs:comment "URL to the simplified Bill of Materials" ;
   rdfs:range okh:FileURL ;
   rdfs:domain okh:Module ;
   .
@@ -336,14 +322,16 @@ okh:fileFormat
 
 okh:source
   a owl:ObjectProperty ;
-  rdfs:label "URL to source file" ;
+  rdfs:label "source file" ;
+  rdfs:comment "URL to a source file" ;
   rdfs:range okh:SourceFile ;
   rdfs:domain okh:Module , okh:Piece ;
   .
 
 okh:export
   a owl:ObjectProperty ;
-  rdfs:label "URL to exported source file" ;
+  rdfs:label "exported source file" ;
+  rdfs:comment "URL to an exported source file" ;
   rdfs:range okh:ExportFile ;
   rdfs:domain okh:Module , okh:Piece ;
   .
@@ -372,42 +360,23 @@ okh:quantity
 
 okh:hasComponent
   a owl:ObjectProperty ;
-  rdfs:label "indicates that a component forms a part of the MOSH" ;
+  rdfs:label "has component" ;
+  rdfs:comment "indicates that the predicate component forms a part of the subject MOSH" ;
   rdfs:subPropertyOf schema:hasPart ;
   rdfs:range okh:Component ;
   rdfs:domain okh:Module ;
   .
 
-okh:moduleReference
+okh:componentReference
   a okh:ObjectProperty ;
-  rdfs:label "URL to a MOSH file (metadata for modules)" ;
-  rdfs:range okh:ModuleReference ;
+  rdfs:comment "URL to a MOSH file (metadata for modules)" ;
+  rdfs:comment "URL to a POSH file (metadata for pieces)" ;
+  rdfs:comment "standard designation of a standard component (preferably naming the _latest_ standard)" ;
+  rdfs:comment "unambiguous reference for a non-standard purchased product" ;
+  rdfs:comment "others shall be able to identify/procure this component only by the given reference(s)" ;
+  rdfs:range okh:ComponentReference ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
-  .
-
-okh:pieceReference
-  a okh:ObjectProperty ;
-  rdfs:label "URL to a POSH file (metadata for pieces)" ;
-  rdfs:range okh:PieceReference ;
-  rdfs:cardinality 1 ;
-  rdfs:domain okh:Piece ;
-  .
-
-okh:stdReference
-  a okh:ObjectProperty ;
-  rdfs:label "standard designation of a standard component (preferably naming the _latest_ standard)" ;
-  rdfs:range okh:StdReference ;
-  rdfs:cardinality 1 ;
-  rdfs:domain okh:STD ;
-  .
-
-okh:buyReference
-  a okh:ObjectProperty ;
-  rdfs:label "unambiguous reference for a non-standard purchased product" ;
-  rdfs:comment "others shall be able to identify/procure this component only by the given reference(s)" ;
-  rdfs:range okh:BuyReference ;
-  rdfs:domain okh:BUY ;
   .
 
 ### ----- source/export subproperties -----
