@@ -148,6 +148,7 @@ Requirements are platform-specific since different entries can be automatically 
 |language|x||||
 |function|x||||
 |patentClass (multiple)|x||||
+|tsdcID (multiple)|x||x||
 |sBoM|x||||
 |certificate (multiple)|x||||
 |standard (multiple)|x||||
@@ -263,7 +264,7 @@ for MOSHs:
   - `developmentStage`
   - `attestation` (boolean: is-empty)
   - `certificate` (boolean: is-empty)
-- Option 1: filter for specific `patentClass`
+- Option 1: filter for specific `patentClass` &/ `tsdcID`
 - Option 2: filter for copyleft-categories of licenses by calling a sub-library with `spdxLicense`
 
 ##### f03 language
@@ -293,6 +294,7 @@ for MOSHs:
   - `spdxLicense`
     - while checking for [OSHWA-compliance](#a01-license-compatibility)
   - `function`
+  - `tsdcID`
   - design files (hence a `sBoM` is a prerequisiste)
     - `name`
     - `quantity`
@@ -360,6 +362,7 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
     - `certificate`
   - basic description
     - `patentClass`
+    - `tsdcID`
     - `standard`
     - `function`
     - `readme`

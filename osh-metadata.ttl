@@ -336,13 +336,13 @@ okh:export
   rdfs:domain okh:Module , okh:Piece ;
   .
 
-#okh:tsdcID
-#  a owl:ObjectProperty ;
-#  rdfs:label "TsDC-ID" ;
-#  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1" ;
-#  # FIXME rdfs:subPropertyOf ;
-#  rdfs:domain okh:Component ;
-#  .
+okh:tsdcID
+  a owl:ObjectProperty ;
+  rdfs:label "TsDC-ID" ;
+  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1" ;
+  # FIXME rdfs:subPropertyOf ;
+  rdfs:domain okh:Component ;
+  .
 
 
 # source, export
