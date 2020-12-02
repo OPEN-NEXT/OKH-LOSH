@@ -172,10 +172,11 @@ okh:language
  rdfs:label "language" ;
  rdfs:comment "IETF language tag" ;
  rdfs:comment "following the BCP 47 standard e.g. en-GB" ;
+ rdfs:comment "denotes the langauge of the documentation for the component subject" ;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
  rdfs:subPropertyOf schema:inLanguage ;
  rdfs:cardinality 1 ;
- rdfs:domain okh:Component ;
+ rdfs:domain okh:Module, okh:Piece ;
  .
 
 ## ----- legal -----
