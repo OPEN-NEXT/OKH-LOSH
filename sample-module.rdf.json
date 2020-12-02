@@ -25,7 +25,7 @@
   "okh:standard": "???",
   "okh:language": "en-GB",
   "okh:status": "prototype",
-  "okh:owner": {
+  "okh:licensor": {
     "@id": "myprp:JaneDoe",
     "@type": "okh:OwnerClass",
     "name": "Jane Doe",

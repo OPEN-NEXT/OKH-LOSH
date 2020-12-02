@@ -83,7 +83,7 @@ Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and 
 
 **A POSH file:**
 
-1. is named `.okh-<anything>.json	`\
+1. is named `.okh-<anything>.json`\
   while `<anything>` is replaced by any type of identifier (e.g. a short name)\
   (note the dot);
 2. should be stored in reasonable ways (e.g. in the folder containing the design files)
@@ -292,7 +292,7 @@ for MOSHs:
   - `name`
   - `repository`
   - `version`
-  - `owner`
+  - `licensor`
   - `spdxLicense`
     - while checking for [OSHWA-compliance](#a01-license-compatibility)
   - `function`
@@ -355,7 +355,7 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
     - `forkOf`
     - `language`
   - legal
-    - `owner`
+    - `licensor`
     - `spdxLicense`
     - `alternativeLicense`
   - development stage
