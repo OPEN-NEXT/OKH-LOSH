@@ -1,5 +1,7 @@
 # requirements for crawler & parser
 
+[partly OUTDATED! see [this section](https://github.com/OPEN-NEXT/LOSH/blob/master/OSH_metadata.md#basic-structure) in `OSH_metadata.md` for the new basic mechanism]
+
 ## general
 
 - crawler fills a DB with data
