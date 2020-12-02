@@ -290,7 +290,7 @@ for MOSHs:
   - `name`
   - `repository`
   - `version`
-  - `owner`
+  - `licensor`
   - `spdxLicense`
     - while checking for [OSHWA-compliance](#a01-license-compatibility)
   - `function`
@@ -353,7 +353,7 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
     - `forkOf`
     - `language`
   - legal
-    - `owner`
+    - `licensor`
     - `spdxLicense`
     - `alternativeLicense`
   - development stage
