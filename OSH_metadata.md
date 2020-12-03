@@ -162,7 +162,9 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 ## Required Metadata
 
-Requirements are platform-specific since different entries can be automatically filled via their API - so people don't need to provide manual entries.
+Requirements are platform-specific,
+since different entries can be automatically filled via their API -
+so people don't need to provide manual entries.
 
 ### GitHub
 
@@ -177,7 +179,7 @@ Requirements are platform-specific since different entries can be automatically 
 |sBoM|x||||
 |certificate (multiple)|x||||
 |standard (multiple)|x||||
-|functional-metadata (multiple)|x||||
+|functional-metadata (multiple)|x||||	
 |production-metadata (multiple)|x||x||
 |source|x||x||
 |export|x||x||
@@ -346,7 +348,7 @@ for MOSHs:
   - user input is a selection of software
   - get list of supported file formats of selected software from sub-library
   - check whether files linked as `source` contain a `fileFormat` that is _not_ part of this list
-  - return boolean
+  - return boolean		
     - add a list of POSHs/MOSHs including a unsupported `fileFormat` indicating the corresponding file (tree-like list)
 - options for both variants:
   - Option 1: exclude the `source` of submodules
