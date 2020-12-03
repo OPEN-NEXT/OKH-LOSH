@@ -168,27 +168,27 @@ so people don't need to provide manual entries.
 
 ### GitHub
 
-|JSON key|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
+|JSON key|RDF type|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
 |---|---|---|---|---|---|
-|`okh-version`|x||x||
-|`image` (multiple)|x||x||
-|`language`|x||||
-|`function`|x||||
-|`patent-class` (multiple)|x||||
-|`tsdc-id` (multiple)|x||x||
-|`simplified-bom`|x||||
-|`certificate` (multiple)|x||||
-|`standard` (multiple)|x||||
-|`functional-metadata` (multiple)|x||||
-|`production-metadata` (multiple)|x||x||
-|`source`|x||x||
-|`export`|x||x||
-|`name`||x|x||
-|`version`||x|x||
-|`fork-of`||x|||
-|`license` / `alternative-license`||x||x|
-|`readme`||x||x|
-|`repo`||x||x|
+|`okh-version`|`okh:okhv`|x||x||
+|`image` (multiple)|`okh:image`|x||x||
+|`language`|`okh:language`|x||||
+|`function`|`okh:function`|x||||
+|`patent-class` (multiple)|`okh:patentClass`|x||||
+|`tsdc-id` (multiple)|`okh:tsdcID`|x||x||
+|`simplified-bom`|`okh:sBoM`|x||||
+|`certificate` (multiple)|`okh:certificate`|x||||
+|`standard` (multiple)|`okh:standard`|x||||
+|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||||
+|`production-metadata` (multiple)|`okh:productionMetadata`|x||x||
+|`source`|`okh:source`|x||x||
+|`export`|`okh:export`|x||x||
+|`name`|`okh:name`||x|x||
+|`version`|`okh:version`||x|x||
+|`fork-of`|`okh:forkOf`||x|||
+|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x||x|
+|`readme`|`okh:readme`||x||x|
+|`repo`|`okh:repository`||x||x|
 
 The *JSON key* column in the table above,
 corresponds to the keys in `.okh.json`.
