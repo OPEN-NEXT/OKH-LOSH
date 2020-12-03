@@ -170,13 +170,13 @@ so people don't need to provide manual entries.
 
 |data field|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
 |---|---|---|---|---|
-|okhv|x||x||
+|okh-version|x||x||
 |image (multiple)|x||x||
 |language|x||||
 |function|x||||
-|patentClass (multiple)|x||||
-|tsdcID (multiple)|x||x||
-|sBoM|x||||
+|patent-class (multiple)|x||||
+|tsdc-id (multiple)|x||x||
+|simplified-bom|x||||
 |certificate (multiple)|x||||
 |standard (multiple)|x||||
 |functional-metadata (multiple)|x||||	
@@ -185,10 +185,13 @@ so people don't need to provide manual entries.
 |export|x||x||
 |name||x|x||
 |version||x|x||
-|forkOf||x|||
-|license / alternative-license||x|||
-|readme||x|||
-|repo||x|||
+|fork-of||x|||
+|license / alternative-license||x||x|
+|readme||x||x|
+|repo||x||x|
+
+The *data field* column in the table above,
+corresponds to the keys in `.okh.json`.
 
 ## Ontology
 
