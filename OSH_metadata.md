@@ -168,29 +168,29 @@ so people don't need to provide manual entries.
 
 ### GitHub
 
-|data field|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
-|---|---|---|---|---|
-|okh-version|x||x||
-|image (multiple)|x||x||
-|language|x||||
-|function|x||||
-|patent-class (multiple)|x||||
-|tsdc-id (multiple)|x||x||
-|simplified-bom|x||||
-|certificate (multiple)|x||||
-|standard (multiple)|x||||
-|functional-metadata (multiple)|x||||	
-|production-metadata (multiple)|x||x||
-|source|x||x||
-|export|x||x||
-|name||x|x||
-|version||x|x||
-|fork-of||x|||
-|license / alternative-license||x||x|
-|readme||x||x|
-|repo||x||x|
+|JSON key|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
+|---|---|---|---|---|---|
+|`okh-version`|x||x||
+|`image` (multiple)|x||x||
+|`language`|x||||
+|`function`|x||||
+|`patent-class` (multiple)|x||||
+|`tsdc-id` (multiple)|x||x||
+|`simplified-bom`|x||||
+|`certificate` (multiple)|x||||
+|`standard` (multiple)|x||||
+|`functional-metadata` (multiple)|x||||
+|`production-metadata` (multiple)|x||x||
+|`source`|x||x||
+|`export`|x||x||
+|`name`||x|x||
+|`version`||x|x||
+|`fork-of`||x|||
+|`license` / `alternative-license`||x||x|
+|`readme`||x||x|
+|`repo`||x||x|
 
-The *data field* column in the table above,
+The *JSON key* column in the table above,
 corresponds to the keys in `.okh.json`.
 
 ## Ontology
