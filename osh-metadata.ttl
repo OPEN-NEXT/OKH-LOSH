@@ -204,7 +204,7 @@ okh:spdxLicense
 okh:alternativeLicense
   a owl:ObjectProperty ;
   rdfs:label "non-SPDX license" ;
-  rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checken manually" ;
+  rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
   rdfs:cardinality 1 ;
