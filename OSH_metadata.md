@@ -1,5 +1,28 @@
 # Representative metadata for OSH
 
+<!--
+About *table of contents* (TOC)
+
+NOTE:
+For each in-document command,
+make sure that there is a blank line before and after.
+
+Support in different Markdown software:
+
+* CodiMD, HedgeDoc & other web based Markdown tools
+  support the in-document `[TOC]` command
+* GitLab supports the in-document `[[_TOC_]]` command
+* Kramdoc supports the in-document `{:toc max_level=3 }` command
+* GitHub does not support anything,
+  see https://github.com/isaacs/github/issues/215#issuecomment-561605313
+* pandoc supports the `\-\-toc` command-line flag,
+  which will put a TOC on the start of the document
+-->
+
+[TOC]
+
+[[_TOC_]]
+
 ## Intro
 
 TODO new intro neededs
