@@ -60,7 +60,7 @@ optional:
    1. map version chain & hard forks of MOSHs
    2. filter/remove forks that have the intention to be merged back into the original MOSH
    (can live on different platforms, e.g. original on Wikifactory, fork on GitHub)
-4. reconciliation
+4. data update
    1. incremental entry adding (filter duplicates; avoids recreating the whole DB with each crawling by checking the DB for
     existing entries and updates)
    2. mark MOSHs that couldn't be found anymore as 'lost'\
