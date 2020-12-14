@@ -11,6 +11,12 @@
 
 ### use cases / features (unsorted)
 
+**practical stories**
+
+1. A ventilator consists of 4 submodules, one of them is a motor. It turns out that a specific version of this motor is faulty. Which ventilator versions are affected? (results in a fairly simply query)
+
+---
+
 in short:
 
 - for developers: facilitate re-use of design
