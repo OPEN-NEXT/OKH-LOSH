@@ -116,11 +116,12 @@ okh:ComponentReference
   a okh:Class ;
   rdfs:subClassOf okh:Reference ;
   rdfs:label "Component Reference" ;
-  rdfs:comment "reference for a component" ;
-  rdfs:comment "URL to a MOSH file (metadata for modules)" ;
-  rdfs:comment "URL to a POSH file (metadata for pieces)" ;
-  rdfs:comment "standard designation of a standard component" ;
-  rdfs:comment "unambiguous reference for a purchased product" ;
+  rdfs:comment '''
+    others shall be able to identify/procure this component only by the given reference(s),
+    MOSH → URL to corresponding release
+    POSH → URL to containing folder
+    STD  → standard designation (preferably naming the _latest_ standard)
+    BUY  → unambiguous reference'''@en ;
   .
 
 # ----- PROPERTIES -----
@@ -128,8 +129,7 @@ okh:ComponentReference
 okh:okhv
   a owl:DatatypeProperty ;
   rdfs:label "OKH version" ;
-  rdfs:comment "version of standard (OKH) the metadata is following" ;
-  rdfs:comment "Open Know-How provides a standard for OSH metadata; different versions → different data fields" ;
+  rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
   rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Module ;
@@ -141,8 +141,10 @@ okh:okhv
 okh:repository
   a owl:ObjectProperty ;
   rdfs:label "repository" ;
-  rdfs:comment "URL to the place where development happens (typically the repository)" ;
-  rdfs:comment "following this link people shall be able to contribute to the development (reporting issues, suggesting changes, connecting to the team etc.)" ;
+  rdfs:comment '''
+    URL to the place where development happens (typically the repository)" ;
+    following this link people shall be able to contribute to the development
+    (reporting issues, suggesting changes, connecting to the team etc.)" '''@en;
   rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
   rdfs:range okh:WebsiteURL ;
   rdfs:cardinality 1 ;
@@ -170,9 +172,10 @@ okh:forkOf
 okh:documentationLanguage
  a owl:DatatypeProperty ;
  rdfs:label "documentation language" ;
- rdfs:comment "IETF language tag" ;
- rdfs:comment "following the BCP 47 standard e.g. en-GB" ;
- rdfs:comment "denotes the language of the documentation for the component subject" ;
+ rdfs:comment '''
+  IETF language tag
+  following the BCP 47 standard e.g. en-GB
+  denotes the language of the documentation for the component subject '''@en;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
  rdfs:subPropertyOf schema:inLanguage ;
  rdfs:cardinality 1 ;
@@ -369,11 +372,13 @@ okh:hasComponent
 
 okh:componentReference
   a okh:ObjectProperty ;
-  rdfs:comment "URL to a MOSH file (metadata for modules)" ;
-  rdfs:comment "URL to a POSH file (metadata for pieces)" ;
-  rdfs:comment "standard designation of a standard component (preferably naming the _latest_ standard)" ;
-  rdfs:comment "unambiguous reference for a non-standard purchased product" ;
-  rdfs:comment "others shall be able to identify/procure this component only by the given reference(s)" ;
+  rdfs:label "Component Reference" ;
+  rdfs:comment '''
+    others shall be able to identify/procure this component only by the given reference(s),
+    MOSH → URL to corresponding release
+    POSH → URL to containing folder
+    STD  → standard designation (preferably naming the _latest_ standard)
+    BUY  → unambiguous reference'''@en ;
   rdfs:range okh:ComponentReference ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
