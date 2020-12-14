@@ -194,6 +194,7 @@ so people don't need to provide manual entries.
 |`patent-class` (multiple)|`okh:patentClass`|x||
 |`tsdc-id` (multiple)|`okh:tsdcID`|x||
 |`simplified-bom`|`okh:sBoM`|x||
+|`development-stage`|`okh:developmentStage`|x||
 |`certificate` (multiple)|`okh:certificate`|x||
 |`standard` (multiple)|`okh:standard`|x||
 |`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
