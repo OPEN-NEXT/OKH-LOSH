@@ -1,0 +1,18 @@
+{
+    "okhv": "2.0",
+    "image": "relative-link-to-image.jpg",
+    "documentation-language": "en-GB",
+    "function": "some functional description",
+    "patent-class": "e.g. G05F 1/67",
+    "tscd-id": "e.g. ASM-MEC",
+    "simplified-bom": "relative-link-to-sBoM",
+    "certificate": "link to (e.g. OSHWA) certificate if exitent",
+    "standard": "name used standards (not DIN SPEC 3105) if that's the case",
+    "functional-metadata": "e.g. rpm, voltage,…",
+    "production-metadata": "e.g. 3D printed",
+    "assembly-instruction": "link to resource e.g. drawing &/ guide",
+    "version": "only if git version tag is unavailable or untrue",
+    "license": "only if information is unavailable from GitHub/GitLab API",
+    "readme": "only if information is unavailable from GitHub/GitLab API or untrue",
+    "repo": "only if information is unavailable from GitHub/GitLab API or untrue"
+  }
