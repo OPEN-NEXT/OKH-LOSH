@@ -45,9 +45,9 @@ Following the [data flow illustration](illustrations/dataflow-principle.svg):
 - crawler must be able to automatically run on OSEG servers, so please also consider the cron!
   - always performs a 'complete crawling';
     filtering is done in reconciliation with the Wikibase-API
-  - MOSH identification
-    - map version chain & hard forks of MOSHs
-    - filter/remove forks that have the intention to be merged back into the original MOSH
+- MOSH identification
+  - identify versions and hard forks of a MOSH
+  - filter/remove forks that have the intention to be merged back into the original MOSH\
     (can live on different platforms, e.g. original on Wikifactory, fork on GitHub)
 
 optional:
