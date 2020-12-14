@@ -8,7 +8,7 @@ available via [wikibase.oho.wiki](https://wikibase.oho.wiki/)
 
 ### tl;dr
 
-connecting open source hardware modules in a graph database – the ICT infrastructure for community-based innovation and circular economy
+(semi-)automated structuring of OSH modules: a demonstrator for an ICT infrastructure to facilitate design reuse 
 
 ### long
 
