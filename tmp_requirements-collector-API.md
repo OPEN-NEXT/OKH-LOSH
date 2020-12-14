@@ -42,6 +42,11 @@ Following the [data flow illustration](illustrations/dataflow-principle.svg):
 - crawler must be able to automatically run on OSEG servers, so please also consider the cron!
   - always performs a 'complete crawling';
     filtering is done in reconciliation with the Wikibase-API
+  - MOSH identification
+    - map version chain & hard forks of MOSHs
+    - filter/remove forks that have the intention to be merged back into the original MOSH
+    (can live on different platforms, e.g. original on Wikifactory, fork on GitHub)
+
 
 optional:
 
@@ -51,19 +56,16 @@ optional:
 
 ### Wikibase-API
 
-1. basic, straight forward data submission (import)
-2. data export
-   1. whole DB (in RDF)
-   2. **[Q]** are query results exportable? As RDF and also a human readable format?
-      (as for just saving search results etc.)
-3. MOSH identification
-   1. map version chain & hard forks of MOSHs
-   2. filter/remove forks that have the intention to be merged back into the original MOSH
-   (can live on different platforms, e.g. original on Wikifactory, fork on GitHub)
-4. data update
+1. [x] basic, straight forward data submission (import)
+2. [x] data export
+   1. whole DB (in Wikibase-flavored RDF)
+   2. are query results exportable? As RDF and also a human readable format?
+      (as for just saving search results etc.)\
+      there's a list of supported file formats
+3. [ ] data update
    1. incremental entry adding (filter duplicates; avoids recreating the whole DB with each crawling by checking the DB for
     existing entries and updates)
-   2. mark MOSHs that couldn't be found anymore as 'lost'\
+   2. [Query] mark MOSHs that couldn't be found anymore as 'lost'\
       → do _not_ delete them! deletion can (possibly) happen on Wikibase using queries
-5. Ontology bridge (TTL on GitHub → Wikibase)
-6. optional: Query bridge (queries on GitHub → Wikibase)
+4. Ontology bridge (TTL on GitHub → Wikibase)
+5. optional: Query bridge (queries on GitHub → Wikibase)
