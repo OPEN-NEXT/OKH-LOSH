@@ -1,21 +1,21 @@
-@base          <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
-@prefix okh:  <#> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix schema: <http://schema.org/> .
-@prefix terms: <http://purl.org/dc/terms/> .
-#@prefix wdt:    <http://www.wikidata.org/prop/direct/> .
-@prefix wdp:   <http://www.wikidata.org/prop/direct/> .
-#@prefix psv:    <http://www.wikidata.org/prop/statement/value/> .
-#@prefix wdtn:   <http://www.wikidata.org/prop/direct-normalized/> .
-#@prefix pq:     <http://www.wikidata.org/prop/qualifier/> .
-@prefix wdq:   <http://www.wikidata.org/prop/qualifier/> .
-@prefix wd:     <http://www.wikidata.org/entity/> .
-#@prefix wde:    <http://www.wikidata.org/entity/> .
-#@prefix wdv:    <http://www.wikidata.org/value/> .
-#@prefix wds:    <http://www.wikidata.org/entity/statement/> .
+@base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
+@prefix okh:      <#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix terms:    <http://purl.org/dc/terms/> .
+#@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
+@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
+#@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
+#@prefix wdtn:    <http://www.wikidata.org/prop/direct-normalized/> .
+#@prefix pq:      <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdq:      <http://www.wikidata.org/prop/qualifier/> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+#@prefix wde:     <http://www.wikidata.org/entity/> .
+#@prefix wdv:     <http://www.wikidata.org/value/> .
+#@prefix wds:     <http://www.wikidata.org/entity/statement/> .
 
 
 <>
