@@ -12,8 +12,9 @@
     "functional-metadata": "e.g. rpm, voltage,…",
     "production-metadata": "e.g. 3D printed",
     "assembly-instruction": "link to resource e.g. drawing &/ guide",
+    "export-package": "URL to export package",
     "version": "only if git version tag is unavailable or untrue",
     "spdx-license": "only if information is unavailable from GitHub/GitLab API",
     "readme": "only if information is unavailable from GitHub/GitLab API or untrue",
-    "repo": "only if information is unavailable from GitHub/GitLab API or untrue"
+    "repo": "only if information is unavailable from GitHub/GitLab API or untrue",
   }
