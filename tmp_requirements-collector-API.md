@@ -38,7 +38,10 @@ Following the [data flow illustration](illustrations/dataflow-principle.svg):
   - `sBoM.csv` is to be converted into JSON
   - file formats are obtained from the URLs
   - judging from the file formats, files are automatically sorted into source & export files
-- …and submits it to the [Wikibase-API](#wikibase-api)
+- …and submits it to the (already existent) [Wikibase-API](#wikibase-api)
+  - <https://www.wikidata.org/w/api.php?action=help&modules=wbeditentity>
+  - <https://www.wikidata.org/w/api.php?action=help&modules=wbgetentities>
+  - <https://www.wikidata.org/w/api.php?action=help&modules=wbsearchentities>
 - crawler must be able to automatically run on OSEG servers, so please also consider the cron!
   - always performs a 'complete crawling';
     filtering is done in reconciliation with the Wikibase-API
@@ -46,7 +49,6 @@ Following the [data flow illustration](illustrations/dataflow-principle.svg):
     - map version chain & hard forks of MOSHs
     - filter/remove forks that have the intention to be merged back into the original MOSH
     (can live on different platforms, e.g. original on Wikifactory, fork on GitHub)
-
 
 optional:
 
