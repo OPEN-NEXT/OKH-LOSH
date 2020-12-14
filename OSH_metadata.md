@@ -200,6 +200,7 @@ so people don't need to provide manual entries.
 |`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
 |`production-metadata` (multiple)|`okh:productionMetadata`|x||
 |`assembly-instruction` (multiple)|`okh:assemblyInstruction`|x||
+|`export-package`|`okh:exportPackage`|x||
 |`version`|`okh:version`||x|
 |`fork-of`|`okh:forkOf`||x|
 |`spdx-license` / `alternative-license`|`okh:spdxLicense` / `okh:alternativeLicense`||x|
