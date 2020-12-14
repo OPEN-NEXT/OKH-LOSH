@@ -134,11 +134,29 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 - meant to be easy to read, crawl and use
 - references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
-  - column `Reference` includes single entries only which are either
-    - URLs to a [POSH](#piece-of-osh-posh) (= it's corresponding folder)
-    - unambiguous references to standard or purchased parts (which can be either URLs or designations)
-    - URLs to other [OSH-Modules](#osh-module)
+  - column `Reference` includes single entries only
 - subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
+
+**Referencing:**
+
+MOSH
+
+- URL to used _release_
+  - if release information is not available (e.g. because it's a messy repository), use any kind of permalink instead e.g. linking to the last commit that was made before you used the design files
+
+POSH
+
+- URLs to a [POSH](#piece-of-osh-posh) (= it's corresponding folder)
+
+STD
+
+- standard designation\
+  e.g. "hexagon screw ISO 4017 – M12 × 80 – 8.8"
+
+BUY
+
+- unambiguous reference to purchased part (which can be either URLs or designations)\
+  e.g. "100k, R_0603_1608" for a resistor
 
 **Location and Naming Convention:**
 
@@ -149,15 +167,15 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 | Pos. | Name         | Units | Type   | Reference                                                           |
 |------|--------------|-------|--------|---------------------------------------------------------------------|
-| 1    | casing       | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
+| 1    | casing       | 2     | POSH   | link to [POSH](#piece-of-osh-posh) folder                           |
 | 2    | screw        | 4     | STD    | standard designation                                                |
-| 3    | gear box     | 1     | MOSH   | link to [OSH-Module](#osh-module)                                   |
+| 3    | gear box     | 1     | MOSH   | link to _release_ of this [MOSH](#osh-module-mosh)                  |
 | 4    | Raspberry Pi | 1     | BUY    | unambiguous reference (not standardised)                            |
-| 5    | holder       | 1     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
-| 5.1  | bracket      | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
+| 5    | holder       | 1     | POSH   | link to [POSH](#piece-of-osh-posh) folder                           |
+| 5.1  | bracket      | 2     | POSH   | link to [POSH](#piece-of-osh-posh) folder                           |
 | 5.2  | screw        | 2     | STD    | standard designation                                                |
-| 5.3  | arm          | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
-| 6    | controller   | 1     | MOSH   | link to link to [OSH-Module](#osh-module)                           |
+| 5.3  | arm          | 2     | POSH   | link to [POSH](#piece-of-osh-posh) folder                           |
+| 6    | controller   | 1     | MOSH   | link to _release_ of this [MOSH](#osh-module-mosh)                  |
 
 ## Required Metadata
 
