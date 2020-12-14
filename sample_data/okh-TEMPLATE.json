@@ -12,7 +12,7 @@
     "production-metadata": "e.g. 3D printed",
     "assembly-instruction": "link to resource e.g. drawing &/ guide",
     "version": "only if git version tag is unavailable or untrue",
-    "license": "only if information is unavailable from GitHub/GitLab API",
+    "spdx-license": "only if information is unavailable from GitHub/GitLab API",
     "readme": "only if information is unavailable from GitHub/GitLab API or untrue",
     "repo": "only if information is unavailable from GitHub/GitLab API or untrue"
   }

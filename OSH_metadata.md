@@ -201,7 +201,7 @@ so people don't need to provide manual entries.
 |`assembly-instruction` (multiple)|`okh:assemblyInstruction`|x||
 |`version`|`okh:version`||x|
 |`fork-of`|`okh:forkOf`||x|
-|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
+|`spdx-license` / `alternative-license`|`okh:spdxLicense` / `okh:alternativeLicense`||x|
 |`readme`|`okh:readme`||x|
 |`repo`|`okh:repository`||x|
 
