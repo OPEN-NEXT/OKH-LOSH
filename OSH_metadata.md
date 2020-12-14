@@ -53,7 +53,7 @@ _This_ draft shall support the following user groups:
   - those manifest files can be searched via the GitHub-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
 - The crawler's JSON files are translated into JSON-LD and submits it to the Wikibase-API
 - a MOSH is represented by its manifest file, linking to a sBoM
-  - the sBoM refrences all components of this MOSH e.g. linking to the manifest files of POSHs
+  - the sBoM refrences all components of this MOSH: included POSHs, standard and proprietary components
 
 ### Glossary
 
