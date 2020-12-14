@@ -189,7 +189,7 @@ so people don't need to provide manual entries.
 |---|---|---|---|
 |`okh-version`|`okh:okhv`|x||
 |`image` (multiple)|`okh:image`|x||
-|`language`|`okh:language`|x||
+|`documentation-language`|`okh:documentationLanguage`|x||
 |`function`|`okh:function`|x||
 |`patent-class` (multiple)|`okh:patentClass`|x||
 |`tsdc-id` (multiple)|`okh:tsdcID`|x||
