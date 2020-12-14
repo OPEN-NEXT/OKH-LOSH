@@ -200,7 +200,6 @@ so people don't need to provide manual entries.
 |`production-metadata` (multiple)|`okh:productionMetadata`|x||
 |`source`|`okh:source`|x||
 |`export`|`okh:export`|x||
-|`name`|`okh:name`||x|
 |`version`|`okh:version`||x|
 |`fork-of`|`okh:forkOf`||x|
 |`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
