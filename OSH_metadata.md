@@ -51,13 +51,13 @@ _This_ draft shall support the following user groups:
 - Information is provided via platform APIs. The crawler will call these APIs and collect the data in JSON files.
   - in case of GitHub/GitLab some information is provided in the API, some shall be provided in manually created [manifest files](#manifest-file), see [GitHub-Table](#github) for details
   - those manifest files can be searched via the GitHub-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
-- The crawler's JSON files are handed over to a parser, who translates the data into JSON-LD and prepares it for uploading via the Wikibase-API
+- The crawler's JSON files are translated into JSON-LD and submits it to the Wikibase-API
 - a MOSH is represented by its manifest file, linking to a sBoM
   - the sBoM refrences all components of this MOSH e.g. linking to the manifest files of POSHs
 
 ### Glossary
 
-- manifest file – file in a repository containing metadata for a [MOSH](#osh-module-MOSH) or [POSH](#piece-of-osh-posh)
+- manifest file – file in a repository containing metadata for a [MOSH](#osh-module-MOSH)
 - simplified BoM (sBoM) – CSV giving the references of all components of a MOSH
 - Types of components:
   - [MOSH](#osh-module-MOSH) – module distributed as open source hardware
@@ -65,9 +65,11 @@ _This_ draft shall support the following user groups:
   - STD – standard component
   - BUY – purchased component
 
+### Elements, Locations & Naming
+
 #### manifest file
 
-A manifest file is a file in a repository containing metadata for a [MOSH](#osh-module-MOSH) or [POSH](#piece-of-osh-posh).
+A manifest file is a file in a repository containing metadata for a [MOSH](#osh-module-MOSH).
 
 It shall use the **JSON** file format.
 Please use the linked templates to enter your data.\
@@ -104,14 +106,11 @@ Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and 
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
 
-**A POSH file:**
+**A POSH:**
 
-1. is named `.okh-<anything>.json`\
-  while `<anything>` is replaced by any type of identifier (e.g. a short name)\
-  (note the dot);
-2. should be stored in reasonable ways (e.g. in the folder containing the design files)
-  for a intuitive repo structure (e.g. so   people get also the metadata file when they clone just this component).\
-  However as files are unambiguously referenced in the MOSH file you can place them wherever you like.
+is located in an individual folder that only includes data related to this POSH, specifically source & export files.
+
+This folder is linked in the sBoM.
 
 ##### Standard Component (STD)
 
@@ -136,7 +135,7 @@ Which is a **component or assembly that is neither officially standardised nor f
 - meant to be easy to read, crawl and use
 - references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
   - column `Reference` includes single entries only which are either
-    - URLs to a [POSH](#piece-of-osh-posh)
+    - URLs to a [POSH](#piece-of-osh-posh) (= it's corresponding folder)
     - unambiguous references to standard or purchased parts (which can be either URLs or designations)
     - URLs to other [OSH-Modules](#osh-module)
 - subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
@@ -150,14 +149,14 @@ Which is a **component or assembly that is neither officially standardised nor f
 
 | Pos. | Name         | Units | Type   | Reference                                                           |
 |------|--------------|-------|--------|---------------------------------------------------------------------|
-| 1    | casing       | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 1    | casing       | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
 | 2    | screw        | 4     | STD    | standard designation                                                |
 | 3    | gear box     | 1     | MOSH   | link to [OSH-Module](#osh-module)                                   |
 | 4    | Raspberry Pi | 1     | BUY    | unambiguous reference (not standardised)                            |
-| 5    | holder       | 1     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
-| 5.1  | bracket      | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 5    | holder       | 1     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
+| 5.1  | bracket      | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
 | 5.2  | screw        | 2     | STD    | standard designation                                                |
-| 5.3  | arm          | 2     | POSH   | link to [POSH file](#piece-of-osh-posh)                             |
+| 5.3  | arm          | 2     | POSH   | link to [POSH](#piece-of-osh-posh)                             |
 | 6    | controller   | 1     | MOSH   | link to link to [OSH-Module](#osh-module)                           |
 
 ## Required Metadata
@@ -168,27 +167,27 @@ so people don't need to provide manual entries.
 
 ### GitHub
 
-|JSON key|RDF type|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
-|---|---|---|---|---|---|
-|`okh-version`|`okh:okhv`|x||x||
-|`image` (multiple)|`okh:image`|x||x||
-|`language`|`okh:language`|x||||
-|`function`|`okh:function`|x||||
-|`patent-class` (multiple)|`okh:patentClass`|x||||
-|`tsdc-id` (multiple)|`okh:tsdcID`|x||x||
-|`simplified-bom`|`okh:sBoM`|x||||
-|`certificate` (multiple)|`okh:certificate`|x||||
-|`standard` (multiple)|`okh:standard`|x||||
-|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||||
-|`production-metadata` (multiple)|`okh:productionMetadata`|x||x||
-|`source`|`okh:source`|x||x||
-|`export`|`okh:export`|x||x||
-|`name`|`okh:name`||x|x||
-|`version`|`okh:version`||x|x||
-|`fork-of`|`okh:forkOf`||x|||
-|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x||x|
-|`readme`|`okh:readme`||x||x|
-|`repo`|`okh:repository`||x||x|
+|JSON key|RDF type|MOSH-manual|MOSH-API|
+|---|---|---|---|
+|`okh-version`|`okh:okhv`|x||
+|`image` (multiple)|`okh:image`|x||
+|`language`|`okh:language`|x||
+|`function`|`okh:function`|x||
+|`patent-class` (multiple)|`okh:patentClass`|x||
+|`tsdc-id` (multiple)|`okh:tsdcID`|x||
+|`simplified-bom`|`okh:sBoM`|x||
+|`certificate` (multiple)|`okh:certificate`|x||
+|`standard` (multiple)|`okh:standard`|x||
+|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
+|`production-metadata` (multiple)|`okh:productionMetadata`|x||
+|`source`|`okh:source`|x||
+|`export`|`okh:export`|x||
+|`name`|`okh:name`||x|
+|`version`|`okh:version`||x|
+|`fork-of`|`okh:forkOf`||x|
+|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
+|`readme`|`okh:readme`||x|
+|`repo`|`okh:repository`||x|
 
 The *JSON key* column in the table above,
 corresponds to the keys in `.okh.json`.
@@ -215,7 +214,7 @@ Find the actual ontology [here](osh-metadata.ttl).
 **NOTE:** Queries aiming to cover the following use cases are referenced (& linked) in square brackets.
 
 1. explore this knowledge base [[I]](#i-information-queries)
-   - view all information of a MOSH or POSH available in this knowledge base [[i01]](#i01-available-information)
+   - view all information of a MOSH available in this knowledge base [[i01]](#i01-available-information)
    - …
 2. a powerful filter for OSH [[F]](#f-filter-queries)
    - find OSH in a specific field of technology [[f01]](#f01-technology-field)
@@ -250,6 +249,8 @@ Find the actual ontology [here](osh-metadata.ttl).
 
 ### component relations
 
+<!--- rework references as they have been removed in [#37](https://github.com/OPEN-NEXT/LOSH/issues/37) --->
+
 parsing the `sBoM`:
 
 - `name`
@@ -260,7 +261,7 @@ parsing the `sBoM`:
     - pull data from corresponding MOSH file (name, version, … , source & export), again with a `sBoM` etc.
 - POSH
   - `pieceReference`
-    - pull data from corresponding POSH file (name, version, … , source & export)
+    - pull data from corresponding POSH (name, source & export)
 - STD
   - `stdReference`
 - BUY
@@ -276,7 +277,7 @@ For details of the properties see descriptions in the [ontology](osh-metadata.tt
 
 ##### i01 available information
 
-return all data fields of a specific MOSH or POSH
+return all data fields of a specific MOSH
 
 #### [F] filter queries
 
@@ -303,7 +304,7 @@ for MOSHs:
 
 ##### f04 variants
 
-- find forks (`forkOf`) or different versions (`version`) of a MOSH or POSH
+- find forks (`forkOf`) or different versions (`version`) of a MOSH
 
 #### [A] assessment queries
 
@@ -351,7 +352,7 @@ for MOSHs:
   - user input is a selection of software
   - get list of supported file formats of selected software from sub-library
   - check whether files linked as `source` contain a `fileFormat` that is _not_ part of this list
-  - return boolean		
+  - return boolean
     - add a list of POSHs/MOSHs including a unsupported `fileFormat` indicating the corresponding file (tree-like list)
 - options for both variants:
   - Option 1: exclude the `source` of submodules
@@ -402,21 +403,19 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
 - design files (=tree with links/references)
   - `name`
   - `quantity`
-  - MOSH (submodules)
-    - `repository` & `version` when just referencing submodules
-    - full package when loading submodules
-  - POSH
-    - `okhv`
-    - `version`
-    - `standard`
-    - `image`
-    - `productionMetadata`
-    - `source`
-    - `export`
-  - STD
-    - `stdReference`
-  - BUY
-    - `buyReference`
+  - additionally:
+    - MOSH (submodules)
+      - `repository` & `version` when just referencing submodules
+      - full package when loading submodules
+    - POSH
+      - `source`
+      - `export`
+    - STD
+      - `stdReference`
+    - BUY
+      - `buyReference`
+
+<!--- MOSH should be referenced as a release! not via repository & version -->
 
 #### p02 source package
 
