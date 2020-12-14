@@ -198,8 +198,7 @@ so people don't need to provide manual entries.
 |`standard` (multiple)|`okh:standard`|x||
 |`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
 |`production-metadata` (multiple)|`okh:productionMetadata`|x||
-|`source`|`okh:source`|x||
-|`export`|`okh:export`|x||
+|`assembly-instruction` (multiple)|`okh:assemblyInstruction`|x||
 |`version`|`okh:version`||x|
 |`fork-of`|`okh:forkOf`||x|
 |`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
