@@ -1,0 +1,57 @@
+|`okh-version`|`okh:okhv`|x||
+|`image` (multiple)|`okh:image`|x||
+|`documentation-language`|`okh:documentationLanguage`|x||
+|`function`|`okh:function`|x||
+|`patent-class` (multiple)|`okh:patentClass`|x||
+|`tsdc-id` (multiple)|`okh:tsdcID`|x||
+|`simplified-bom`|`okh:sBoM`|x||
+|`certificate` (multiple)|`okh:certificate`|x||
+|`standard` (multiple)|`okh:standard`|x||
+|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
+|`production-metadata` (multiple)|`okh:productionMetadata`|x||
+|`source`|`okh:source`|x||
+|`export`|`okh:export`|x||
+|`version`|`okh:version`||x|
+|`fork-of`|`okh:forkOf`||x|
+|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
+|`readme`|`okh:readme`||x|
+|`repo`|`okh:repository`||x|
+
+{
+  "@context": {
+    "mypr": "http://project-url.org/1.0/",
+    "myprp": "http://project-url.org/1.0/people#",
+    "myprt": "http://project-url.org/1.0/things#",
+    "okh": "http://purl.org/2020/10/30/okh#",
+    "abp": "http://airbus.com/1.0/parts#"
+  },
+  "@id": "myprt:EierlegendeWollmilchSau",
+  "@type": "okh:Module",
+  "okh:name": [
+      { "@value": "flying eg laying whool milk pig", "@language": "en" },
+      { "@value": "fliegende Eierlegendewollmilchsau", "@language": "de" }
+    ],
+  "okh:forkOf": "myprt:EierlegendeWollmilchSau",
+  "okh:parts": [
+      "myprt:EierlegendeWollmilchSau",
+      "abp:proppeller",
+      { "@type": "abp:wing", "okh:quantity": "2" }
+    ],
+  "okh:tsdcId": "???",
+  "okh:image": "fliegende-sau.jpg",
+  "okh:version": "http://purl.org/2020/10/30/okh",
+  "okh:spdxLicense": "GPL 3",
+  "okh:standard": "???",
+  "okh:language": "en-GB",
+  "okh:status": "prototype",
+  "okh:licensor": {
+    "@id": "myprp:JaneDoe",
+    "@type": "okh:OwnerClass",
+    "name": "Jane Doe",
+    "jobTitle": "Maker",
+    "telephone": "(425) 123-4567",
+    "url": "http://www.janedoe.com"
+  },
+  "okh:okhv": "0.1",
+  "okh:function": "This thing solves all your problems, everywhere, for ever; praise the lord!"
+}
