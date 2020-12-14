@@ -37,7 +37,7 @@ Following the [data flow illustration](illustrations/dataflow-principle.svg):
   data is partly 'interpreted'
   - `sBoM.csv` is to be converted into JSON
   - file formats are obtained from the URLs
-  - that kind of stuff
+  - judging from the file formats, files are automatically sorted into source & export files
 - …and submits it to the [Wikibase-API](#wikibase-api)
 - crawler must be able to automatically run on OSEG servers, so please also consider the cron!
   - always performs a 'complete crawling';
