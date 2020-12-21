@@ -28,11 +28,6 @@
   terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   terms:license "GPL v3" .
 
-okh:Class
-  a owl:Class ;
-  rdfs:subClassOf wdp:P2308 ;
-  .
-
 
 # Classes
 
@@ -44,48 +39,48 @@ okh:Class
 # ----- CLASSES -----
 
 okh:Component
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "Component"@en ;
   rdfs:comment "Either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
   # That's the main class then!
   .
 
 okh:Module
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "MOSH"@en ;
   rdfs:comment "Module of Open Source Hardware (MOSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:Piece
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "POSH"@en ;
   rdfs:comment "Piece of Open Source Hardware (POSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:STD
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "Standard Component"@en ;
   rdfs:comment "Standard Component (STD)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:BUY
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "Purchased Component"@en ;
   rdfs:comment "Purchased Proprietary Component (BUY)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:Reference
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "unambiguous reference" ;
   # FIXME subClassOf
   .
 
 okh:WebsiteURL
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "Website URL" ;
   rdfs:subClassOf okh:Reference ;
   rdfs:subClassOf schema:URL ;
@@ -93,7 +88,7 @@ okh:WebsiteURL
   .
 
 okh:FileURL
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "File URL" ;
   rdfs:subClassOf okh:Reference ;
   rdfs:subClassOf schema:URL ;
@@ -101,19 +96,19 @@ okh:FileURL
   .
 
 okh:SourceFile
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "source file" ;
   rdfs:subClassOf okh:FileURL , okh:Piece ;
   .
 
 okh:ExportFile
-  a okh:Class ;
+  a owl:Class ;
   rdfs:label "exported source file" ;
   rdfs:subClassOf okh:FileURL , okh:Piece ;
   .
 
 okh:ComponentReference
-  a okh:Class ;
+  a owl:Class ;
   rdfs:subClassOf okh:Reference ;
   rdfs:label "Component Reference" ;
   rdfs:comment '''
