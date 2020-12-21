@@ -98,13 +98,13 @@ okh:FileURL
 okh:SourceFile
   a owl:Class ;
   rdfs:label "source file" ;
-  rdfs:subClassOf okh:FileURL , okh:Piece ;
+  rdfs:subClassOf okh:FileURL, okh:Piece ;
   .
 
 okh:ExportFile
   a owl:Class ;
   rdfs:label "exported source file" ;
-  rdfs:subClassOf okh:FileURL , okh:Piece ;
+  rdfs:subClassOf okh:FileURL, okh:Piece ;
   .
 
 okh:ComponentReference
@@ -161,7 +161,7 @@ okh:forkOf
  rdfs:label "fork of" ;
  rdfs:subPropertyOf wdp:P144 ; # aka based on
  rdfs:cardinality 1 ;
- rdfs:domain okh:Module , okh:Piece ;
+ rdfs:domain okh:Module, okh:Piece ;
  .
 
 okh:documentationLanguage
@@ -296,7 +296,7 @@ okh:productionMetadata
   rdfs:label "production metadata" ;
   rdfs:label "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf wdp:P8203 ;
-  rdfs:domain okh:Module , okh:Piece ;
+  rdfs:domain okh:Module, okh:Piece ;
   .
 
 ## ----- design files -----
@@ -331,7 +331,7 @@ okh:fileFormat
   rdfs:label "file format" ;
   rdfs:subPropertyOf wdp:P2701 ; # aka file format
   rdfs:subPropertyOf schema:fileFormat ;
-  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  rdfs:domain okh:SourceFile, okh:ExportFile ;
   .
 
 okh:source
@@ -339,7 +339,7 @@ okh:source
   rdfs:label "source file" ;
   rdfs:comment "URL to a source file" ;
   rdfs:range okh:SourceFile ;
-  rdfs:domain okh:Module , okh:Piece ;
+  rdfs:domain okh:Module, okh:Piece ;
   .
 
 okh:export
@@ -347,7 +347,7 @@ okh:export
   rdfs:label "exported source file" ;
   rdfs:comment "URL to an exported source file" ;
   rdfs:range okh:ExportFile ;
-  rdfs:domain okh:Module , okh:Piece ;
+  rdfs:domain okh:Module, okh:Piece ;
   .
 
 okh:tsdcID
@@ -401,26 +401,26 @@ okh:componentReference
 #okh:rationale
 #  a owl:ObjectProperty ;
 #  rdfs:label "rationale" ;
-#  rdfs:range okh:source , okh:export ;
+#  rdfs:range okh:source, okh:export ;
 #  rdfs:domain okh:Component ;
 #  .
 #
 #okh:design
 #  a owl:ObjectProperty ;
 #  rdfs:label "design file" ;
-#  rdfs:range okh:source , okh:export ;
-#  rdfs:domain okh:Module , okh:Piece ;
+#  rdfs:range okh:source, okh:export ;
+#  rdfs:domain okh:Module, okh:Piece ;
 #  .
 #
 #okh:manufacturingInstruction
 #  a owl:ObjectProperty ;
 #  rdfs:label "manufacturing instruction" ;
-#  rdfs:range okh:source , okh:export ;
-#  rdfs:domain okh:Module , okh:Piece ;
+#  rdfs:range okh:source, okh:export ;
+#  rdfs:domain okh:Module, okh:Piece ;
 #  .
 #
 #okh:bom
 #  rdfs:label "Bill of Materials" ;
-#  rdfs:range okh:source , okh:export ;
+#  rdfs:range okh:source, okh:export ;
 #  rdfs:domain okh:Module;
 #  .
