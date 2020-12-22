@@ -378,7 +378,7 @@ okh:hasComponent
   .
 
 okh:componentReference
-  a okh:ObjectProperty ;
+  a owl:ObjectProperty ;
   rdfs:label "Component Reference" ;
   rdfs:comment '''
     others shall be able to identify/procure this component only by the given reference(s),
