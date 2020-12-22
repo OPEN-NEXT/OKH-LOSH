@@ -84,7 +84,6 @@ okh:WebsiteURL
   rdfs:label "Website URL" ;
   rdfs:subClassOf okh:Reference ;
   rdfs:subClassOf schema:URL ;
-  # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
 okh:FileURL
@@ -92,7 +91,6 @@ okh:FileURL
   rdfs:label "File URL" ;
   rdfs:subClassOf okh:Reference ;
   rdfs:subClassOf schema:URL ;
-  # FIXME ( , wdp:P2699 ; # aka URL) I assume this _class_ has been defined somewhere; e.g. http://obofoundry.org/ontology/bfo.html
   .
 
 okh:SourceFile
@@ -125,7 +123,6 @@ okh:okhv
   a owl:DatatypeProperty ;
   rdfs:label "OKH version" ;
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
-  rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Module ;
   rdfs:cardinality 1
@@ -140,7 +137,7 @@ okh:repository
     URL to the place where development happens (typically the repository)" ;
     following this link people shall be able to contribute to the development
     (reporting issues, suggesting changes, connecting to the team etc.)" '''@en;
-  rdfs:subPropertyOf wdp:P1324 ; # aka source code repository
+  rdfs:subPropertyOf schema:codeRepository ;
   rdfs:range okh:WebsiteURL ;
   rdfs:cardinality 1 ;
   rdfs:domain okh:Module ;
@@ -150,7 +147,6 @@ okh:version
   a owl:DatatypeProperty ;
   rdfs:label "version" ;
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
-  rdfs:subPropertyOf wdp:P348 ; # aka software version identifier
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Component ;
   rdfs:cardinality 1
