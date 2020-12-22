@@ -125,7 +125,7 @@ okh:okhv
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Module ;
-  rdfs:cardinality 1
+  owl:cardinality 1
   .
 
 ## ----- identification -----
@@ -139,7 +139,7 @@ okh:repository
     (reporting issues, suggesting changes, connecting to the team etc.)" '''@en;
   rdfs:subPropertyOf schema:codeRepository ;
   rdfs:range okh:WebsiteURL ;
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -149,14 +149,14 @@ okh:version
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Component ;
-  rdfs:cardinality 1
+  owl:cardinality 1
   .
 
 okh:forkOf
  a owl:ObjectProperty ;
  rdfs:label "fork of" ;
  rdfs:subPropertyOf wdp:P144 ; # aka based on
- rdfs:cardinality 1 ;
+ owl:cardinality 1 ;
  rdfs:domain okh:Module, okh:Piece ;
  .
 
@@ -169,7 +169,7 @@ okh:documentationLanguage
   denotes the language of the documentation for the component subject '''@en;
  rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
  rdfs:subPropertyOf schema:inLanguage ;
- rdfs:cardinality 1 ;
+ owl:cardinality 1 ;
  rdfs:domain okh:Module, okh:Piece ;
  .
 
@@ -182,7 +182,7 @@ okh:licensor
   rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
   rdfs:range schema:Person, schema:Organization ;
   rdfs:domain okh:Module ;
-  rdfs:cardinality 1
+  owl:cardinality 1
   .
 
 okh:spdxLicense
@@ -192,7 +192,7 @@ okh:spdxLicense
  rdfs:subPropertyOf wdp:P2479 ; # aka SPDX license identifier
  rdfs:subPropertyOf schema:licenseDeclared ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
- rdfs:cardinality 1 ;
+ owl:cardinality 1 ;
  .
 
 okh:alternativeLicense
@@ -201,7 +201,7 @@ okh:alternativeLicense
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   .
 
 ## ----- development stage -----
@@ -211,7 +211,7 @@ okh:developmentStage
   rdfs:label "development stage" ;
   rdfs:comment "project development stage: either development, prototype, certified or production" ;
   rdfs:subPropertyOf wdp:P548 ; #aka version type
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -257,7 +257,7 @@ okh:function
     so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
     optional: description of input, output and interfaces'''@en ;
   rdfs:subPropertyOf wdp:P7535 ; # aka scope and content
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -266,7 +266,7 @@ okh:readme
   rdfs:label "readme" ;
   rdfs:comment "URL to the README" ;
   rdfs:range okh:FileURL ;
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
@@ -363,7 +363,7 @@ okh:quantity
   a owl:DatatypeProperty ;
   rdfs:label "quantity" ;
   rdfs:subPropertyOf wdp:P1114 ; # aka quantity
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:range xsd:int ;
   rdfs:domain okh:Component ;
   .
@@ -387,7 +387,7 @@ okh:componentReference
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
   rdfs:range okh:ComponentReference ;
-  rdfs:cardinality 1 ;
+  owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
 
