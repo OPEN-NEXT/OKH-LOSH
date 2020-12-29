@@ -289,7 +289,7 @@ okh:functionalMetadata
 okh:productionMetadata
   a owl:ObjectProperty ;
   rdfs:label "production metadata" ;
-  rdfs:label "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
+  rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;
   rdfs:range schema:StructuredValue ;
   rdfs:domain okh:Module, okh:Piece ;
