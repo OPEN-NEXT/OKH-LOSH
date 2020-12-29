@@ -1,5 +1,6 @@
 @base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
 @prefix okh:      <#> .
+@prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,12 +8,12 @@
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 #@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
-@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
+#@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
 #@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
 #@prefix wdtn:    <http://www.wikidata.org/prop/direct-normalized/> .
 #@prefix pq:      <http://www.wikidata.org/prop/qualifier/> .
-@prefix wdq:      <http://www.wikidata.org/prop/qualifier/> .
-@prefix wd:       <http://www.wikidata.org/entity/> .
+#@prefix wdq:      <http://www.wikidata.org/prop/qualifier/> .
+#@prefix wd:       <http://www.wikidata.org/entity/> .
 #@prefix wde:     <http://www.wikidata.org/entity/> .
 #@prefix wdv:     <http://www.wikidata.org/value/> .
 #@prefix wds:     <http://www.wikidata.org/entity/statement/> .
@@ -155,7 +156,7 @@ okh:version
 okh:forkOf
  a owl:ObjectProperty ;
  rdfs:label "fork of" ;
- rdfs:subPropertyOf wdp:P144 ; # aka based on
+ rdfs:subPropertyOf schema:isBasedOn ;
  owl:cardinality 1 ;
  rdfs:domain okh:Module, okh:Piece ;
  .
@@ -167,7 +168,6 @@ okh:documentationLanguage
   IETF language tag
   following the BCP 47 standard e.g. en-GB
   denotes the language of the documentation for the component subject '''@en;
- rdfs:subPropertyOf wdp:P305 ; # aka IETF language tag
  rdfs:subPropertyOf schema:inLanguage ;
  owl:cardinality 1 ;
  rdfs:domain okh:Module, okh:Piece ;
@@ -179,7 +179,7 @@ okh:licensor
   a owl:ObjectProperty ;
   rdfs:label "licensor" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
-  rdfs:subPropertyOf wdp:P3931 ; # aka copyright holder
+  rdfs:subPropertyOf schema:copyrightHolder ;
   rdfs:range schema:Person, schema:Organization ;
   rdfs:domain okh:Module ;
   owl:cardinality 1
@@ -189,7 +189,6 @@ okh:spdxLicense
  a owl:ObjectProperty ;
  rdfs:label "SPDX license identifier" ;
  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- rdfs:subPropertyOf wdp:P2479 ; # aka SPDX license identifier
  rdfs:subPropertyOf schema:licenseDeclared ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
  owl:cardinality 1 ;
@@ -210,7 +209,7 @@ okh:developmentStage
   a owl:ObjectProperty ;
   rdfs:label "development stage" ;
   rdfs:comment "project development stage: either development, prototype, certified or production" ;
-  rdfs:subPropertyOf wdp:P548 ; #aka version type
+  rdfs:subPropertyOf schema:creativeWorkStatus ;
   owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
@@ -256,7 +255,7 @@ okh:function
     functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
     optional: description of input, output and interfaces'''@en ;
-  rdfs:subPropertyOf wdp:P7535 ; # aka scope and content
+  rdfs:subPropertyOf obo:BFO_0000016 ; # aka function
   owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
@@ -274,7 +273,6 @@ okh:image
   a owl:ObjectProperty ;
   rdfs:label "image" ;
   rdfs:comment "URL to a meaningful & freely licensed picture of this module or piece" ;
-  rdfs:subPropertyOf wdp:P4765 ; # aka Commons compatible image available at URL
   rdfs:subPropertyOf schema:image ;
   rdfs:domain okh:Component ;
   .
@@ -283,7 +281,8 @@ okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:label "functionality metadata" ;
   rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardised)" ;
-  rdfs:subPropertyOf wdp:P8203 ; # aka supported Metadata
+  rdfs:subPropertyOf schema:value ;
+  rdfs:range schema:StructuredValue ;
   rdfs:domain okh:Module ;
   .
 
@@ -291,7 +290,8 @@ okh:productionMetadata
   a owl:ObjectProperty ;
   rdfs:label "production metadata" ;
   rdfs:label "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
-  rdfs:subPropertyOf wdp:P8203 ;
+  rdfs:subPropertyOf schema:value ;
+  rdfs:range schema:StructuredValue ;
   rdfs:domain okh:Module, okh:Piece ;
   .
 
@@ -325,7 +325,6 @@ okh:sBoM
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
-  rdfs:subPropertyOf wdp:P2701 ; # aka file format
   rdfs:subPropertyOf schema:fileFormat ;
   rdfs:domain okh:SourceFile, okh:ExportFile ;
   .
@@ -362,7 +361,7 @@ okh:tsdcID
 okh:quantity
   a owl:DatatypeProperty ;
   rdfs:label "quantity" ;
-  rdfs:subPropertyOf wdp:P1114 ; # aka quantity
+  rdfs:subPropertyOf schema:amount ;
   owl:cardinality 1 ;
   rdfs:range xsd:int ;
   rdfs:domain okh:Component ;
