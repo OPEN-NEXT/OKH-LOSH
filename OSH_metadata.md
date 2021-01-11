@@ -458,3 +458,8 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
 = [p01 full package](#p01-full-package) without `source` fields
 
 #### [R] research queries
+
+## Further resources
+
+- get `patentClass` from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
+
