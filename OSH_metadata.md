@@ -55,6 +55,20 @@ _This_ draft shall support the following user groups:
 - a MOSH is represented by its manifest file, linking to a sBoM
   - the sBoM refrences all components of this MOSH: included POSHs, standard and proprietary components
 
+So a MOSH contains:
+
+- metadata (license, repo-URL,…)
+- URL to sBoM (defining its parts)
+- URL to source & export (e.g. ASM instructions)
+- production metadata
+
+| part type | identified by…                |
+|-----------|-------------------------------|
+| MOSH      | Wikibase-ID / repo-URL + name |
+| POSH      | Wikibase-ID / repo-URL + name |
+| STD       | just a string entry           |
+| BUY       | just a string entry           |
+
 ### Glossary
 
 - manifest file – file in a repository containing metadata for a [MOSH](#osh-module-MOSH)
