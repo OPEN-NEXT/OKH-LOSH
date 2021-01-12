@@ -53,6 +53,7 @@ open:
 - <http://www.contraptor.org/>
 - [helpful engineering](https://airtable.com/shrZ8pIj3rV6BAqdq/tblaQ1M283TuaV2Im)
   - are adopting OKHv1 [here](https://github.com/helpfulengineering/library/tree/main/okh)
+- [open labware](https://open-labware.net/)
 
 Wikimedia sample data (copy from list above):
 
@@ -110,6 +111,9 @@ Wikimedia sample data (copy from list above):
 
 - [COSI Measure](https://github.com/opensourceimaging/cosi-measure/)
 - [OpenFlexure](https://gitlab.com/openflexure)
+- [OpenSpim](https://openspim.org/)
+- [Open Spin Microscopy](https://sites.google.com/site/openspinmicroscopy/)
+- [TIMAHC](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110475#s6)
 - [DStat](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140349)
 - [DropBot](https://microfluidics.utoronto.ca/dropbot/blog/)
 
@@ -129,6 +133,10 @@ Wikimedia sample data (copy from list above):
 - [Rapid E. coli Detection Project](https://github.com/PubInv/PubInv/blob/master/ideas/Project%20%2341:%20Rapid%20coliform%20presence%20detector.md)
 - [OpenBCI](https://docs.openbci.com/docs/Welcome.html)
   - lots of versions & modules
+
+#### prostheses
+
+- [OpenBionics](https://openbionicslabs.com/downloads)
 
 #### protection (COVID-19)
 
