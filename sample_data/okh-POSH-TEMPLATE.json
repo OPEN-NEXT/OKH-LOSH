@@ -1,0 +1,17 @@
+{
+    "okhv": "2.0",
+    "repo": "URL to repository; usually an API input",
+    "name": "repository name = name of the module; usually an API input",
+    "version": "usually an API input",
+    "spdx-license": "usually an API input; if no SPDX identifier available, use 'alternative-license' with the URL to the legal code",
+    "image": "relative-link-to-image.jpg",
+    "documentation-language": "en-GB",
+    "tscd-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
+    "production-metadata": [
+    	"e.g. 3D printed",
+    	"PLA",
+    	"cylinder(h=30, r=56)"
+    	],
+    "source": "relative link to source file (multiple) (multiple)",
+    "export": "relative link to export file (multiple) or release",
+  }
