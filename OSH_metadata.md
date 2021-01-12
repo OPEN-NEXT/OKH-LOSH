@@ -199,27 +199,27 @@ so people don't need to provide manual entries.
 
 ### GitHub
 
-|JSON key|RDF type|MOSH-manual|MOSH-API|
-|---|---|---|---|
-|`okh-version`|`okh:okhv`|x||
-|`image` (multiple)|`okh:image`|x||
-|`documentation-language`|`okh:documentationLanguage`|x||
-|`function`|`okh:function`|x||
-|`patent-class` (multiple)|`okh:patentClass`|x||
-|`tsdc-id` (multiple)|`okh:tsdcID`|x||
-|`simplified-bom`|`okh:sBoM`|x||
-|`development-stage`|`okh:developmentStage`|x||
-|`certificate` (multiple)|`okh:certificate`|x||
-|`standard` (multiple)|`okh:standard`|x||
-|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
-|`production-metadata` (multiple)|`okh:productionMetadata`|x||
-|`assembly-instruction` (multiple)|`okh:assemblyInstruction`|x||
-|`export-package`|`okh:exportPackage`|x||
-|`version`|`okh:version`||x|
-|`fork-of`|`okh:forkOf`||x|
-|`spdx-license` / `alternative-license`|`okh:spdxLicense` / `okh:alternativeLicense`||x|
-|`readme`|`okh:readme`||x|
-|`repo`|`okh:repository`||x|
+|JSON key|RDF type|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
+|---|---|---|---|---|---|
+|`okh-version`|`okh:okhv`|x||x||
+|`image` (multiple)|`okh:image`|x||x||
+|`language`|`okh:language`|x||||
+|`function`|`okh:function`|x||||
+|`patent-class` (multiple)|`okh:patentClass`|x||||
+|`tsdc-id` (multiple)|`okh:tsdcID`|x||x||
+|`simplified-bom`|`okh:sBoM`|x||||
+|`certificate` (multiple)|`okh:certificate`|x||||
+|`standard` (multiple)|`okh:standard`|x||||
+|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||||
+|`production-metadata` (multiple)|`okh:productionMetadata`|x||x||
+|`source`|`okh:source`|x||x||
+|`export`|`okh:export`|x||x||
+|`name`|`okh:name`||x|x||
+|`version`|`okh:version`||x|x||
+|`fork-of`|`okh:forkOf`||x|||
+|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x||x|
+|`readme`|`okh:readme`||x||x|
+|`repo`|`okh:repository`||x||x|
 
 The *JSON key* column in the table above,
 corresponds to the keys in `.okh.json`.
@@ -459,7 +459,17 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
 
 #### [R] research queries
 
-## Further resources
+### Metadata fields
 
-- get `patentClass` from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
+#### production-metadata
+
+recommended fields:
+
+- manufacturing process
+- material
+- dimension (use [OpenSCAD primitive solids](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids) to describe the shape)
+
+#### patent-class
+
+- get it from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
 
