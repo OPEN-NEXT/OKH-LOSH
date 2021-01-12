@@ -195,8 +195,39 @@ BUY
 
 ### Overview
 
-The following table shows all metadata fields and where they would be located
-if there was no API that could substitute manual entries.
+The following table lists all properties that the item types MOSH or POSH can have.
+
+How these data fields are filled is defined in the chapter [Platform specifications](#platform-specifications)
+
+|JSON key					 		| RDF type								|MOSH	|POSH	|
+|----------------------------------|---------------------------------------|-------|-------|
+|`okhv		`					    |`okh:okhv`								|x		|x		|
+|`repo`								|`okh:repository`						|x		|x		|
+|`name`								|`okh:name`								|x		|x		|
+|`version`							|`okh:version`							|x		|x		|
+|`license`/`alternative-license`	|`okh:license`/`okh:alternativeLicense`	|x		|x		|
+|`readme`							|`okh:readme`							|x		|		|
+|`image`							|`okh:image`							|x		|x		|
+|`language`							|`okh:language`							|x		|x		|
+|`development-state`				|`okh:developmentStage`					|x		|		|
+|`fork-of`							|`okh:forkOf`							|x		|		|
+|`function`							|`okh:function`							|x		|		|
+|`patent-class`						|`okh:patentClass`						|x		|		|
+|`tsdc-id`							|`okh:tsdcID`							|x		|x		|
+|`simplified-bom`					|`okh:sBoM`								|x		|		|
+|`attestation`						|`okh:attestation`						|x		|		|
+|`certificate`						|`okh:certificate`						|x		|		|
+|`standard`							|`okh:standard`							|x		|		|
+|`functional-metadata`				|`okh:functionalMetadata`				|x		|		|
+|`production-metadata`				|`okh:productionMetadata`				|x		|x		|
+|`source`							|`okh:source`							|x		|x		|
+|`export`							|`okh:export`							|x		|x		|
+|									|`okh:quantity`							|		|x		|
+|									|`okh:hasComponent`						|x		|		|
+|									|`okh:componentReference`				|		|x		|
+
+The *JSON key* column in the table above,
+corresponds to the keys in `.okh.json`.
 
 ### Details
 
@@ -215,15 +246,27 @@ recommended fields:
 
 ## Platform specifications
 
-Requirements are platform-specific,
-since different entries can be automatically filled via their API -
-so people don't need to provide manual entries.
+The following sections define where data for MOSH & POSH will come from.
+
+Note that `API`\  
+a) refers to the corresponding platform API and\  
+b) can be overwritten by entries in the corresponding manifest file.
 
 ### GitHub
 
+|JSON key					 		|MOSH   		|POSH			|
+|----------------------------------|---------------|---------------|
+|`okhv`							    |MOSH file		|MOSH file		|
+|`repo`								|API			|API			|
+|`name`								|API			|sBoM			|
+|`version`							|API			|POSH file		|
+|`license`/`alternative-license`	|API/MOSH file	|API/MOSH file	|
+
+
+
 |JSON key|RDF type|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
 |---|---|---|---|---|---|
-|`okh-version`|`okh:okhv`|x||x||
+|`okhv`|`okh:okhv`|x||x||
 |`image` (multiple)|`okh:image`|x||x||
 |`language`|`okh:language`|x||||
 |`function`|`okh:function`|x||||
