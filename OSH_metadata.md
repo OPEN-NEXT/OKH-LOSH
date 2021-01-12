@@ -191,7 +191,29 @@ BUY
 | 5.3  | arm          | 2     | POSH   | link to [POSH](#piece-of-osh-posh) folder                           |
 | 6    | controller   | 1     | MOSH   | link to _release_ of this [MOSH](#osh-module-mosh)                  |
 
-## Required Metadata
+## Metadata fields
+
+### Overview
+
+The following table shows all metadata fields and where they would be located
+if there was no API that could substitute manual entries.
+
+### Details
+
+#### production-metadata
+
+recommended fields:
+
+- manufacturing process
+- material
+- dimension (use [OpenSCAD primitive solids](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids) to describe the shape)
+
+#### patent-class
+
+- get it from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
+
+
+## Platform specifications
 
 Requirements are platform-specific,
 since different entries can be automatically filled via their API -
@@ -216,6 +238,7 @@ so people don't need to provide manual entries.
 |`export`|`okh:export`|x||x||
 |`name`|`okh:name`||x|x||
 |`version`|`okh:version`||x|x||
+|`development-state`|`okh:developmentStage`|x||||
 |`fork-of`|`okh:forkOf`||x|||
 |`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x||x|
 |`readme`|`okh:readme`||x||x|
@@ -458,18 +481,4 @@ NOTE 2: Packages may be (most likely) incomplete. Empty fields are gaps in the r
 = [p01 full package](#p01-full-package) without `source` fields
 
 #### [R] research queries
-
-### Metadata fields
-
-#### production-metadata
-
-recommended fields:
-
-- manufacturing process
-- material
-- dimension (use [OpenSCAD primitive solids](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids) to describe the shape)
-
-#### patent-class
-
-- get it from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
 
