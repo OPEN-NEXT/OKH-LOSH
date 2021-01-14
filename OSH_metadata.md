@@ -62,12 +62,12 @@ So a MOSH contains:
 - URL to source & export (e.g. ASM instructions)
 - production metadata
 
-| part type | identified by…                |
-|-----------|-------------------------------|
-| MOSH      | Wikibase-ID / repo-URL + name |
-| POSH      | Wikibase-ID / repo-URL + name |
-| STD       | just a string entry           |
-| BUY       | just a string entry           |
+| part type | identified by…                                      |
+|-----------|-----------------------------------------------------|
+| MOSH      | repo-URL + version                                  |
+| POSH      | repo-URL + version + name (in sBoM)                 |
+| STD       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
+| BUY       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
 
 ### Glossary
 
@@ -351,19 +351,19 @@ Find the actual ontology [here](osh-metadata.ttl).
 
 parsing the `sBoM`:
 
+- `posNumber`
 - `name`
 - `quantity`
-- `parentASM`
 - MOSH
-  - `moduleReference`
+  - `componentReference`
     - pull data from corresponding MOSH file (name, version, … , source & export), again with a `sBoM` etc.
 - POSH
-  - `pieceReference`
+  - `componentReference`
     - pull data from corresponding POSH (name, source & export)
 - STD
-  - `stdReference`
+  - `componentReference`
 - BUY
-  - `buyReference`
+  - `componentReference`
 
 ### Standard queries
 
