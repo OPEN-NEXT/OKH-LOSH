@@ -382,7 +382,7 @@ okh:componentReference
   rdfs:comment '''
     others shall be able to identify/procure this component only by the given reference(s),
     MOSH → URL to corresponding release
-    POSH → URL to containing folder
+    POSH → relative link to its manifest file
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
   rdfs:range okh:ComponentReference ;
