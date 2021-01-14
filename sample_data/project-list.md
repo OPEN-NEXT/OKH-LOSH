@@ -71,6 +71,8 @@ Wikimedia sample data (copy from list above):
 - [FOSSASAT-1B](https://github.com/FOSSASystems/FOSSASAT-1B)
 - [JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover)
 - [OpenROV](https://github.com/OpenROV)
+- [pixhawk](https://github.com/pixhawk/Hardware)
+  - also developed specifications ('standards') around their drone
 
 ### consumer goods
 
