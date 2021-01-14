@@ -358,6 +358,14 @@ okh:tsdcID
 
 ### ----- sBoM-specific data -----
 
+okh:posNumber
+  a owl:ObjectProperty ;
+  rdfs:label "position number" ;
+  owl:cardinality 1 ;
+  rdfs:range schema:StructuredValue ;
+  rdfs:domain okh:Component ;
+  .
+
 okh:quantity
   a owl:DatatypeProperty ;
   rdfs:label "quantity" ;
