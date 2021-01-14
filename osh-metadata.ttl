@@ -332,7 +332,7 @@ okh:fileFormat
 okh:source
   a owl:ObjectProperty ;
   rdfs:label "source file" ;
-  rdfs:comment "URL to a source file" ;
+  rdfs:comment "relative link to a source file" ;
   rdfs:range okh:SourceFile ;
   rdfs:domain okh:Module, okh:Piece ;
   .
@@ -340,7 +340,7 @@ okh:source
 okh:export
   a owl:ObjectProperty ;
   rdfs:label "exported source file" ;
-  rdfs:comment "URL to an exported source file" ;
+  rdfs:comment "URL to a (generated) exported source file" ;
   rdfs:range okh:ExportFile ;
   rdfs:domain okh:Module, okh:Piece ;
   .
