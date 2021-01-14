@@ -387,7 +387,7 @@ okh:componentReference
     BUY  → unambiguous reference'''@en ;
   rdfs:range okh:ComponentReference ;
   owl:cardinality 1 ;
-  rdfs:domain okh:Module ;
+  rdfs:domain okh:Component ;
   .
 
 ### ----- source/export subproperties -----
