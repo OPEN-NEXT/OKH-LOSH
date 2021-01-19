@@ -43,13 +43,15 @@ gitlab_OSEGermany_OHLOOM:ClampRing
   okh:productionMetadata "3D printed", "PLA", "cylinder(h=30, r=56)" ;
   okh:source <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.scad> ;
   okh:export <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.stl>, <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.pdf> ;
-  okh:ComponentReference <https://gitlab.com/OSEGermany/ohloom/3DParts/ClampRing/okh-ClampRing.json> ;
+#  okh:ComponentReference <https://gitlab.com/OSEGermany/ohloom/3DParts/ClampRing/okh-ClampRing.json> ;
+# see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
 gitlab_OSEGermany_OHLOOM:1threadedrodM8
   a okh:STD ;
   rdfs:label "threaded rod M8" ;
-  okh:ComponentReference "DIN 795 M8 x 180" ;
+# okh:ComponentReference "DIN 795 M8 x 180" ;
+# see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
 gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing
