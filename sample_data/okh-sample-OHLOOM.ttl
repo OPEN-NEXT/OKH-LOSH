@@ -1,5 +1,5 @@
 @base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
-@prefix okh:      <#> .
+@prefix okh:      <https://github.com/OPEN-NEXT/LOSH/blob/master/osh-metadata.ttl> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -20,7 +20,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM
   okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/User_Guide/User_Guide.jpg> ;
   okh:documentationLanguage "en-GB" ;
-  okh:developmentStage: "prototype" ;
+  okh:developmentStage "prototype" ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic pieces for the most part. It is simple to make and operate." ;
   okh:patentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
