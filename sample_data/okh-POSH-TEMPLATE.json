@@ -1,9 +1,9 @@
 {
     "okhv": "2.0",
     "repo": "URL to repository; usually an API input",
-    "name": "repository name = name of the module; usually an API input",
     "version": "usually an API input",
     "spdx-license": "usually an API input; if no SPDX identifier available, use 'alternative-license' with the URL to the legal code",
+    "licensor": "person or organisation holding the IP rights",
     "image": "relative-link-to-image.jpg",
     "documentation-language": "en-GB",
     "tscd-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
