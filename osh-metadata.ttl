@@ -97,13 +97,13 @@ okh:FileURL
 okh:SourceFile
   a owl:Class ;
   rdfs:label "source file" ;
-  rdfs:subClassOf okh:FileURL, okh:Piece ;
+  rdfs:subClassOf okh:FileURL ;
   .
 
 okh:ExportFile
   a owl:Class ;
   rdfs:label "exported source file" ;
-  rdfs:subClassOf okh:FileURL, okh:Piece ;
+  rdfs:subClassOf okh:FileURL ;
   .
 
 okh:ComponentReference
@@ -397,6 +397,13 @@ okh:componentReference
   owl:cardinality 1 ;
   rdfs:domain okh:Component ;
   .
+
+
+# okh:sBoMEntry
+
+# okh:refersToComponent
+
+# okh:sBoMPos
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
