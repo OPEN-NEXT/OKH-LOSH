@@ -74,6 +74,12 @@ okh:BUY
   rdfs:subClassOf okh:Component ;
   .
 
+okh:BoMEntry
+  a owl:Class ;
+  rdfs:label "sBoM entry" ;
+  # FIXME subClassOf
+  .
+
 okh:Reference
   a owl:Class ;
   rdfs:label "unambiguous reference" ;
@@ -358,12 +364,19 @@ okh:tsdcID
 
 ### ----- sBoM-specific data -----
 
+okh:refersToComponent
+  a owl:ObjectProperty ;
+  rdfs:label "links from BomEntry to corresponding Component" ;
+# FIXME  rdfs:subPropertyOf 
+  rdfs:domain okh:BomEntry ;
+  .
+
 okh:posNumber
   a owl:ObjectProperty ;
   rdfs:label "position number" ;
   owl:cardinality 1 ;
   rdfs:range schema:StructuredValue ;
-  rdfs:domain okh:Component ;
+  rdfs:domain okh:BomEntry ;
   .
 
 okh:quantity
@@ -372,7 +385,7 @@ okh:quantity
   rdfs:subPropertyOf schema:amount ;
   owl:cardinality 1 ;
   rdfs:range xsd:int ;
-  rdfs:domain okh:Component ;
+  rdfs:domain okh:BomEntry ;
   .
 
 okh:hasComponent
@@ -380,7 +393,6 @@ okh:hasComponent
   rdfs:label "has component" ;
   rdfs:comment "indicates that the predicate component forms a part of the subject MOSH" ;
   rdfs:subPropertyOf schema:hasPart ;
-  rdfs:range okh:Component ;
   rdfs:domain okh:Module ;
   .
 
@@ -397,13 +409,6 @@ okh:componentReference
   owl:cardinality 1 ;
   rdfs:domain okh:Component ;
   .
-
-
-# okh:sBoMEntry
-
-# okh:refersToComponent
-
-# okh:sBoMPos
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
