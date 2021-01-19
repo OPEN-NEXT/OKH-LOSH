@@ -1,1 +1,8 @@
 POS	NAME	UNITS	TYPE	REFERENCE
+1	some module	1	MOSH	URL to release or commit
+2	some part	1	POSH	relative path to okh-posh.json
+3	some subassembly	3	POSH	
+3.1	part 1 of it	1	POSH	relative path to okh-posh.json
+3.2	part 2 of it	1	POSH	relative path to okh-posh.json
+4	some standard part	4	STD	standard designation (e.g. DIN 795 M8 x 180)
+5	some purchased part	1	BUY	any unambiguous designation
