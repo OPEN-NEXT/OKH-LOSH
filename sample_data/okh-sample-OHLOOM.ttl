@@ -10,7 +10,7 @@
 @prefix gitlab_OSEGermany_OHLOOM:   <http://gitlab.org/OSEGermany/OHLOOM> .
 
 gitlab_OSEGermany_OHLOOM:OHLOOM
-  a okh:module ;
+  a okh:Module ;
   rdfs:label "OHLOOM" ;
   okh:okhv "2.0" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
@@ -31,7 +31,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing
-  a okh:piece ;
+  a okh:Piece ;
   rdfs:label "Clamp Ring" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
   okh:version "1.0.0" ;
@@ -53,17 +53,17 @@ gitlab_OSEGermany_OHLOOM:1threadedrodM8
   .
 
 gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing
-  a okh:sBoMEntry ;
+  a okh:BomEntry ;
   rdfs:label "sBoM-Entries for Clamp Ring (pos 10)" ;
   okh:refersToComponent gitlab_OSEGermany_OHLOOM:ClampRing ;
-  okh:sBoMPos "10" ;
+  okh:posNumber "10" ;
   okh:quantity 2 ;
   .
 
 gitlab_OSEGermany_OHLOOM:sBoMEntry_1threadedrodM8
-  a okh:sBoMEntry ;
+  a okh:BoMEntry ;
   rdfs:label "sBoM-Entries for threaded rod M8 (pos 1)" ;
   okh:refersToComponent gitlab_OSEGermany_OHLOOM:1threadedrodM8 ;
-  okh:sBoMPos "1" ;
+  okh:posNumber "1" ;
   okh:quantity 2 ;
   .
