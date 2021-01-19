@@ -1,5 +1,6 @@
-@base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
-@prefix okh:      <https://github.com/OPEN-NEXT/LOSH/blob/master/osh-metadata.ttl> .
+@base             <http://purl.org/oseg/ontologies/ohloom/0.1> .
+@prefix gitlab_OSEGermany_OHLOOM:   <#> .
+@prefix okh:      <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,7 +8,6 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
-@prefix gitlab_OSEGermany_OHLOOM:   <http://gitlab.org/OSEGermany/OHLOOM> .
 
 gitlab_OSEGermany_OHLOOM:OHLOOM
   a okh:Module ;
