@@ -1,22 +1,3 @@
-|`okh-version`|`okh:okhv`|x||
-|`image` (multiple)|`okh:image`|x||
-|`documentation-language`|`okh:documentationLanguage`|x||
-|`function`|`okh:function`|x||
-|`patent-class` (multiple)|`okh:patentClass`|x||
-|`tsdc-id` (multiple)|`okh:tsdcID`|x||
-|`simplified-bom`|`okh:sBoM`|x||
-|`certificate` (multiple)|`okh:certificate`|x||
-|`standard` (multiple)|`okh:standard`|x||
-|`functional-metadata` (multiple)|`okh:functionalMetadata`|x||
-|`production-metadata` (multiple)|`okh:productionMetadata`|x||
-|`source`|`okh:source`|x||
-|`export`|`okh:export`|x||
-|`version`|`okh:version`||x|
-|`fork-of`|`okh:forkOf`||x|
-|`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x|
-|`readme`|`okh:readme`||x|
-|`repo`|`okh:repository`||x|
-
 {
   "@context": {
     "mypr": "http://project-url.org/1.0/",
