@@ -243,7 +243,6 @@ recommended fields:
 
 - get it from here: <https://www.wipo.int/classifications/ipc/ipcpub/?notion=search>
 
-
 ## Platform specifications
 
 The following sections define where data for MOSH & POSH will come from.
