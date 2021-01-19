@@ -6,6 +6,7 @@
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
+@prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 #@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
 #@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
@@ -195,7 +196,7 @@ okh:spdxLicense
  a owl:ObjectProperty ;
  rdfs:label "SPDX license identifier" ;
  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- rdfs:subPropertyOf schema:licenseDeclared ; # aka SPDX license identifier
+ rdfs:subPropertyOf spdxt:licenseDeclared ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
  owl:cardinality 1 ;
  .
