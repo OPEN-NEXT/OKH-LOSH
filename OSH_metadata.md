@@ -65,7 +65,7 @@ So a MOSH contains:
 | part type | identified by…                                      |
 |-----------|-----------------------------------------------------|
 | MOSH      | repo-URL + version                                  |
-| POSH      | repo-URL + version + name (in sBoM)                 |
+| POSH      | repo-URL + version + name (from POSH file)          |
 | STD       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
 | BUY       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
 
