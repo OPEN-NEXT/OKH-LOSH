@@ -9,12 +9,17 @@
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix gitlab_OSEGermany_OHLOOM:   <http://gitlab.org/OSEGermany/OHLOOM> .
 
-gitlab_OSEGermany_OHLOOM:OHLOOM
+gitlab_OSEGermany_OHLOOM:OHLOOM_generic
   a okh:Module ;
-  rdfs:label "OHLOOM" ;
+  rdfs:label "OHLOOM - generic" ;
   okh:okhv "2.0" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
-  okh:version "1.0.0" ;
+.
+
+gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
+  a okh:Module ;
+  rdfs:label "OHLOOM v1.0.0" ;
+  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:OHLOOM ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
@@ -28,12 +33,19 @@ gitlab_OSEGermany_OHLOOM:OHLOOM
   okh:functionalMetadata "400mm fabric width" ;
   okh:productionMetadata "3D printed", "wood" ;
   okh:source <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:hasComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing
   a okh:Piece ;
   rdfs:label "Clamp Ring" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
+  .
+
+gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
+  a okh:Piece ;
+  rdfs:label "Clamp Ring v1.0.0" ;
+  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing ;
   okh:version "1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
@@ -47,25 +59,25 @@ gitlab_OSEGermany_OHLOOM:ClampRing
 # see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
-gitlab_OSEGermany_OHLOOM:1threadedrodM8
+gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1
   a okh:STD ;
   rdfs:label "threaded rod M8" ;
 # okh:ComponentReference "DIN 795 M8 x 180" ;
 # see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
-gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing
+gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing_v_1_0_0
   a okh:BomEntry ;
   rdfs:label "sBoM-Entries for Clamp Ring (pos 10)" ;
-  okh:refersToComponent gitlab_OSEGermany_OHLOOM:ClampRing ;
+  okh:refersToComponent gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
   okh:posNumber "10" ;
   okh:quantity 2 ;
   .
 
-gitlab_OSEGermany_OHLOOM:sBoMEntry_1threadedrodM8
+gitlab_OSEGermany_OHLOOM:sBoMEntry_threadedrodM8_v_1_0_0_pos1
   a okh:BoMEntry ;
   rdfs:label "sBoM-Entries for threaded rod M8 (pos 1)" ;
-  okh:refersToComponent gitlab_OSEGermany_OHLOOM:1threadedrodM8 ;
+  okh:refersToComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 ;
   okh:posNumber "1" ;
   okh:quantity 2 ;
   .
