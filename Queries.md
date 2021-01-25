@@ -1,4 +1,4 @@
-# Standard Queries
+# Description of standard queries
 
 **NOTE:** For details of the properties see descriptions in the [ontology](osh-metadata.ttl).
 
@@ -21,7 +21,7 @@ for MOSHs:
 - search for keywords in `function` (free text)
 - filter for specific
   - `standard`
-  - `developmentStage`
+  - `projectStage`
   - `attestation` (boolean: is-empty)
   - `certificate` (boolean: is-empty)
 - Option 1: filter for specific `patentClass` &/ `tsdcID`
@@ -33,7 +33,7 @@ for MOSHs:
 
 ### f04 variants
 
-- find forks (`forkOf`) or different versions (`version`) of a MOSH
+- return versions and forks of a MOSH
 
 ## [A] assessment queries
 
