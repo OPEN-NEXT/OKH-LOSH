@@ -62,12 +62,12 @@ So a MOSH contains:
 - URL to source & export (e.g. ASM instructions)
 - production metadata
 
-| part type | identified by…                                      |
-|-----------|-----------------------------------------------------|
-| MOSH      | repo-URL + version                                  |
-| POSH      | repo-URL + version + name (from POSH file)          |
-| STD       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
-| BUY       | repo-URL + version + name (in sBoM) + pos (in sBoM) |
+| part type | identified by…                                           |
+|-----------|----------------------------------------------------------|
+| MOSH      | repo-URL + MOSH-version                                  |
+| POSH      | repo-URL + MOSH-version + name (from POSH file)          |
+| STD       | repo-URL + MOSH-version + name (in sBoM) + pos (in sBoM) |
+| BUY       | repo-URL + MOSH-version + name (in sBoM) + pos (in sBoM) |
 
 ### Glossary
 
