@@ -329,6 +329,14 @@ okh:sBoM
   rdfs:domain okh:Module ;
   .
 
+okh:fileURL
+  a owl:ObjectProperty ;
+  rdfs:label "file URL" ;
+  rdfs:subPropertyOf schema:URL ;
+  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  .
+
+
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
