@@ -55,12 +55,6 @@ open:
   - are adopting OKHv1 [here](https://github.com/helpfulengineering/library/tree/main/okh)
 - [open labware](https://open-labware.net/)
 
-Wikimedia sample data (copy from list above):
-
-- [MPPT 1210 HUS](https://github.com/LibreSolar/MPPT-1210-HUS)
-- [Corne keyboard](https://github.com/foostan/crkbd)
-- [COSI Measure Mechanical System](https://github.com/opensourceimaging/cosi-measure/tree/master/Mechanical%20System)
-
 ---
 
 ### aerospace & underwater
