@@ -1,6 +1,4 @@
----
-title: Specification for production metadata
-...
+# Specification for production metadata
 
 for mechanicals:
 
