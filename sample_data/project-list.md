@@ -74,6 +74,10 @@ Wikimedia sample data (copy from list above):
 - [pixhawk](https://github.com/pixhawk/Hardware)
   - also developed specifications ('standards') around their drone
 
+### agriculture
+
+- [FarmBot](https://genesis.farm.bot/v1.5/FarmBot-Genesis-V1.5/intro)
+
 ### consumer goods
 
 - [AXIOM](https://eu.axiom-camera.com/)
@@ -151,6 +155,7 @@ Wikimedia sample data (copy from list above):
 - [ApolloBVM](https://docs.google.com/document/d/1-DRXnVkJOlDCmvTzh-DgWDxeLSrZTiBYyH0ypzv8tNA/edit)
 - [DIY-Beatmungsgerät](https://github.com/DIY-Beatmungsgerat/diy-beatmungsgeraet)
   - refers to [OpenLung](https://gitlab.com/open-source-ventilator/ventilator/OpenLung)
+- [Emergency-Vent](https://emergency-vent.mit.edu/)
 - [Low-Cost Open Source Ventilator or PAPR](https://github.com/jcl5m1/ventilator)
 - [MakAir](https://github.com/makers-for-life/makair)
 - [MIT E-Vent](https://github.com/mit-drl/e-vent)
