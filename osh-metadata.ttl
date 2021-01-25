@@ -329,11 +329,11 @@ okh:sBoM
   rdfs:domain okh:Module ;
   .
 
-okh:sourceFileFormat
+okh:fileFormat
   a owl:ObjectProperty ;
-  rdfs:label "source file format" ;
+  rdfs:label "file format" ;
   rdfs:subPropertyOf schema:fileFormat ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain okh:SourceFile , okh:ExportFile ;
   .
 
 okh:source
