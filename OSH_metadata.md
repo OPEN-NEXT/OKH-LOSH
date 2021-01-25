@@ -51,7 +51,7 @@ _This_ draft shall support the following user groups:
 - Information is provided via platform APIs. The crawler will call these APIs and collect the data in JSON files.
   - in case of GitHub/GitLab some information is provided in the API, some shall be provided in manually created [manifest files](#manifest-file), see [GitHub-Table](#github) for details
   - those manifest files can be searched via the GitHub-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
-- The crawler's JSON files are translated into JSON-LD and submits it to the Wikibase-API
+- The crawler's JSON files are translated into RDF and then into a Wikibase-specific JSON format, which is submitted it to the Wikibase-API. The RDF can be used to load content into other knowledge bases.
 - a MOSH is represented by its manifest file, linking to a sBoM
   - the sBoM refrences all components of this MOSH: included POSHs, standard and proprietary components
 
@@ -88,6 +88,21 @@ A manifest file is a file in a repository containing metadata for a [MOSH](#osh-
 It shall use the **JSON** file format.
 Please use the linked templates to enter your data.\
 We may allow more file formats in the future.
+
+**NOTE 1 to entry:**
+One of the most important fields is the `version`.
+The crawler will _only check for new versions_ when crawling is performed.
+We rely on manual changes in the manifest file to keep our knowledge base clean from 'work on progress'.
+So whenever you make a new release or think those changes in your documentation are worth an update on Wikibase
+→ **update the version in the manifest file.**\
+Otherwise, no changes will be synched.\
+**This applies for both, MOSH _and_ POSH files.**
+
+**NOTE 2 to entry:**
+When the MOSH version is updated, the crawler starts building connections between the MOSH and corresponding POSH files.
+If a POSH file version of e.g. MOSH v1.1.0 is the same as in e.g. MOSH v1.0.0, the crawler will think that this POSH is the same as in the earlier version of this MOSH.
+Hence, it will just connect the old POSH to the newer MOSH version.
+As a result we get sort of a changelog and people will see which parts changed and which remained as they were.
 
 Background:\
 The crawler will take this metadata as basic input, add additional information
@@ -260,8 +275,6 @@ b) can be overwritten by entries in the corresponding manifest file.
 |`name`								|API			|sBoM			|
 |`version`							|API			|POSH file		|
 |`license`/`alternative-license`	|API/MOSH file	|API/MOSH file	|
-
-
 
 |JSON key|RDF type|MOSH-manual|MOSH-API|POSH-manual|POSH-API|
 |---|---|---|---|---|---|
