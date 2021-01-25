@@ -43,7 +43,7 @@
 okh:Component
   a owl:Class ;
   rdfs:label "Component"@en ;
-  rdfs:comment "Either a module (MOSH), piece (POSH), standard or proprietary component"@en ;
+  rdfs:comment "Either a module (MOSH), Part (POSH), standard or proprietary component"@en ;
   # That's the main class then!
   .
 
@@ -54,7 +54,7 @@ okh:Module
   rdfs:subClassOf okh:Component ;
   .
 
-okh:Piece
+okh:Part
   a owl:Class ;
   rdfs:label "POSH"@en ;
   rdfs:comment "Piece of Open Source Hardware (POSH)"@en ;
@@ -165,7 +165,7 @@ okh:forkOf
  rdfs:label "fork of" ;
  rdfs:subPropertyOf schema:isBasedOn ;
  owl:cardinality 1 ;
- rdfs:domain okh:Module, okh:Piece ;
+ rdfs:domain okh:Module, okh:Part ;
  .
 
 okh:documentationLanguage
@@ -177,7 +177,7 @@ okh:documentationLanguage
   denotes the language of the documentation for the component subject '''@en;
  rdfs:subPropertyOf schema:inLanguage ;
  owl:cardinality 1 ;
- rdfs:domain okh:Module, okh:Piece ;
+ rdfs:domain okh:Module, okh:Part ;
  .
 
 ## ----- legal -----
@@ -279,7 +279,7 @@ okh:readme
 okh:image
   a owl:ObjectProperty ;
   rdfs:label "image" ;
-  rdfs:comment "URL to a meaningful & freely licensed picture of this module or piece" ;
+  rdfs:comment "URL to a meaningful & freely licensed picture of this Module or Part" ;
   rdfs:subPropertyOf schema:image ;
   rdfs:domain okh:Component ;
   .
@@ -299,7 +299,7 @@ okh:productionMetadata
   rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;
   rdfs:range schema:StructuredValue ;
-  rdfs:domain okh:Module, okh:Piece ;
+  rdfs:domain okh:Module, okh:Part ;
   .
 
 ## ----- design files -----
@@ -341,7 +341,7 @@ okh:source
   rdfs:label "source file" ;
   rdfs:comment "relative link to a source file" ;
   rdfs:range okh:SourceFile ;
-  rdfs:domain okh:Module, okh:Piece ;
+  rdfs:domain okh:Module, okh:Part ;
   .
 
 okh:export
@@ -349,7 +349,7 @@ okh:export
   rdfs:label "exported source file" ;
   rdfs:comment "URL to a (generated) exported source file" ;
   rdfs:range okh:ExportFile ;
-  rdfs:domain okh:Module, okh:Piece ;
+  rdfs:domain okh:Module, okh:Part ;
   .
 
 okh:tsdcID
@@ -425,14 +425,14 @@ okh:componentReference
 #  a owl:ObjectProperty ;
 #  rdfs:label "design file" ;
 #  rdfs:range okh:source, okh:export ;
-#  rdfs:domain okh:Module, okh:Piece ;
+#  rdfs:domain okh:Module, okh:Part ;
 #  .
 #
 #okh:manufacturingInstruction
 #  a owl:ObjectProperty ;
 #  rdfs:label "manufacturing instruction" ;
 #  rdfs:range okh:source, okh:export ;
-#  rdfs:domain okh:Module, okh:Piece ;
+#  rdfs:domain okh:Module, okh:Part ;
 #  .
 #
 #okh:bom

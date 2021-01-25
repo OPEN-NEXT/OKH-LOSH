@@ -26,7 +26,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/User_Guide/User_Guide.jpg> ;
   okh:documentationLanguage "en-GB" ;
   okh:projectStage "prototype" ;
-  okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic pieces for the most part. It is simple to make and operate." ;
+  okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:patentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
   okh:sBoM <https://gitlab.com/OSEGermany/ohloom/-/blob/master/sBoM.csv> ;
@@ -37,13 +37,13 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing
-  a okh:Piece ;
+  a okh:Part ;
   rdfs:label "Clamp Ring" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
-  a okh:Piece ;
+  a okh:Part ;
   rdfs:label "Clamp Ring v1.0.0" ;
   rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing ;
   okh:version "1.0.0" ;
