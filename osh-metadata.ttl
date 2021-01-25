@@ -335,6 +335,13 @@ okh:fileFormat
   rdfs:domain okh:SourceFile , okh:ExportFile ;
   .
 
+okh:timestamp
+  a owl:ObjectProperty ;
+  rdfs:label "timestamp" ;
+# FixMe  rdfs:subPropertyOf
+  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  .
+
 okh:source
   a owl:ObjectProperty ;
   rdfs:label "source file" ;
