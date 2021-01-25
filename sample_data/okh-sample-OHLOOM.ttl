@@ -59,9 +59,17 @@ gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
 # see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
+gitlab_OSEGermany_OHLOOM:threadedrod_DIN_795
+ a okh:STD;
+ rdfs:label "threaded rod according to DIN 795" ;
+ okh:standard "DIN 795"
+ .
+
 gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1
   a okh:STD ;
+  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:threadedrod_DIN_795 ;
   rdfs:label "threaded rod M8" ;
+  # okh:standardDesignation "DIN 795 M8 x 180" ; 
 # okh:ComponentReference "DIN 795 M8 x 180" ;
 # see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
