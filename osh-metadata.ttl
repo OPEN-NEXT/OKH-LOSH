@@ -212,9 +212,9 @@ okh:alternativeLicense
 
 ## ----- development stage -----
 
-okh:developmentStage
+okh:projectStage
   a owl:ObjectProperty ;
-  rdfs:label "development stage" ;
+  rdfs:label "project development stage" ;
   rdfs:comment "project development stage: either development, prototype, certified or production" ;
   rdfs:subPropertyOf schema:creativeWorkStatus ;
   owl:cardinality 1 ;

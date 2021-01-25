@@ -280,7 +280,7 @@ b) can be overwritten by entries in the corresponding manifest file.
 |`export`|`okh:export`|x||x||
 |`name`|`okh:name`||x|x||
 |`version`|`okh:version`||x|x||
-|`development-state`|`okh:developmentStage`|x||||
+|`project-stage`|`okh:projectStage`|x||||
 |`fork-of`|`okh:forkOf`||x|||
 |`license` / `alternative-license`|`okh:license` / `okh:alternativeLicense`||x||x|
 |`readme`|`okh:readme`||x||x|
