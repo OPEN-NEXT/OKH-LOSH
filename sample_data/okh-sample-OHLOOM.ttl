@@ -66,7 +66,7 @@ gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1
 # see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
   .
 
-gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing_v_1_0_0
+gitlab_OSEGermany_OHLOOM:BoMEntry_ClampRing_v_1_0_0
   a okh:BomEntry ;
   rdfs:label "sBoM-Entries for Clamp Ring (pos 10)" ;
   okh:refersToComponent gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
@@ -74,7 +74,7 @@ gitlab_OSEGermany_OHLOOM:sBoMEntry_ClampRing_v_1_0_0
   okh:quantity 2 ;
   .
 
-gitlab_OSEGermany_OHLOOM:sBoMEntry_threadedrodM8_v_1_0_0_pos1
+gitlab_OSEGermany_OHLOOM:BoMEntry_threadedrodM8_v_1_0_0_pos1
   a okh:BoMEntry ;
   rdfs:label "sBoM-Entries for threaded rod M8 (pos 1)" ;
   okh:refersToComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 ;
