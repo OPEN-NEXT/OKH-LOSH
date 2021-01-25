@@ -45,6 +45,8 @@ for MOSHs:
 
 ### a02 documentation
 
+<!-- ToDO: change to → return available documentation references --->
+
 - check whether or not [full packaging](#p01-full-package) would include entries for
   - `okhv`
   - `name`
