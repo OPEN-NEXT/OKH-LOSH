@@ -55,10 +55,7 @@ gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
   okh:tsdcID "COM-MAN" ;
   okh:productionMetadata "3D printed", "PLA", "cylinder(h=30, r=56)" ;
   okh:source gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_source ;
-   <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.scad> ;
-  okh:export <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.stl>, <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/ClampRing.pdf> ;
-#  okh:ComponentReference <https://gitlab.com/OSEGermany/ohloom/3DParts/ClampRing/okh-ClampRing.json> ;
-# see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
+  okh:export gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export2 ;
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_source
