@@ -313,14 +313,6 @@ okh:productionMetadata
 #   rdfs:domain okh:Module ;
 #   .
 
-okh:exportPackage
-  a owl:ObjectProperty ;
-  rdfs:label "release package of export files" ;
-  rdfs:comment "file package containing all information to build the module; files have been exported from source and can be openned/processed without costly or special software" ;
-  rdfs:range okh:FileURL ;
-  rdfs:domain okh:Module ;
-  .
-
 okh:sBoM
   a owl:ObjectProperty ;
   rdfs:label "simplified Bill of Materials" ;
@@ -335,7 +327,6 @@ okh:fileURL
   rdfs:subPropertyOf schema:URL ;
   rdfs:domain okh:SourceFile , okh:ExportFile ;
   .
-
 
 okh:fileFormat
   a owl:ObjectProperty ;
