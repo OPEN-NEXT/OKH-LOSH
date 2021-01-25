@@ -8,3 +8,7 @@ for mechanicals:
 - material
 - outer dimensions (using openSCAD primitives)
 - smallest tolerance class (according to ISO 286)
+
+for PCBs:
+
+[to be specified]
