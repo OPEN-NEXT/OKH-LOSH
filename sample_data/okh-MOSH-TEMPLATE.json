@@ -18,6 +18,6 @@
     "functional-metadata": "e.g. rpm, voltage,… (multiple)",
     "production-metadata": "e.g. 3D printed (multiple)",
     "source": "relative link to source file (multiple) (multiple)",
-    "export": "relative link to export file (multiple) or release",
+    "export": "relative link to export file (multiple) or release"
   }
 
