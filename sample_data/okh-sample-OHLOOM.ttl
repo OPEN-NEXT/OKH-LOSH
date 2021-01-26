@@ -22,6 +22,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   rdfs:subClassOf gitlab_OSEGermany_OHLOOM:OHLOOM_generic ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
+  okh:contributorCount 4 ;
   okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
   # ↑ replace by commit-specific URL
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/User_Guide/User_Guide.jpg> ;
