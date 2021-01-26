@@ -84,7 +84,6 @@ okh:BoMEntry
 okh:Reference
   a owl:Class ;
   rdfs:label "unambiguous reference" ;
-  # FIXME subClassOf
   .
 
 okh:WebsiteURL
@@ -96,8 +95,8 @@ okh:WebsiteURL
 
 okh:FileURL
   a owl:Class ;
-  rdfs:label "File URL" ;
-  rdfs:subClassOf okh:Reference ;
+  rdfs:label "permanent URL to file" ;
+  rdfs:subClassOf okh:ComponentReference ;
   rdfs:subClassOf schema:URL ;
   .
 
