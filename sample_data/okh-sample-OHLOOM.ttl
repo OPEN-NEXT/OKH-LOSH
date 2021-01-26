@@ -19,7 +19,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_generic
 gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   a okh:Module ;
   rdfs:label "OHLOOM v1.0.0" ;
-  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:OHLOOM ;
+  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:OHLOOM_generic ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
@@ -37,7 +37,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   okh:hasComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
   .
 
-gitlab_OSEGermany_OHLOOM:ClampRing
+gitlab_OSEGermany_OHLOOM:ClampRing_generic
   a okh:Part ;
   rdfs:label "Clamp Ring" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
@@ -46,7 +46,7 @@ gitlab_OSEGermany_OHLOOM:ClampRing
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
   a okh:Part ;
   rdfs:label "Clamp Ring v1.0.0" ;
-  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing ;
+  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing_generic ;
   okh:version "1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
