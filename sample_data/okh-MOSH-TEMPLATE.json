@@ -11,7 +11,7 @@
     "development-stage": "either development, prototype, certified or production",
     "function": "short description of the module and what it does",
     "patent-class": "e.g. G05F 1/67, get it from here: https://www.wipo.int/classifications/ipc/ipcpub/?notion=search",
-    "tscd-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
+    "tsdc-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
     "simplified-bom": "if in root dir. → just sBoM.csv",
     "attestation": "URL to OSH-attestation (DIN SPEC 3105-2 or OSHWA-certificate) ",
     "certificate": "URL to e.g. CE certification if exitent (multiple)",
