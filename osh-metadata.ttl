@@ -224,7 +224,7 @@ okh:projectStage
 okh:attestation
   a owl:ObjectProperty ;
   rdfs:label "attestation" ;
-  rdfs:comment "URL to official confirmation of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
+  rdfs:comment "permanent URL to evidence of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
   rdfs:range okh:FileURL, okh:WebsiteURL ;
   rdfs:domain okh:Module ;
   .
