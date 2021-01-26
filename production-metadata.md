@@ -9,4 +9,4 @@ for mechanicals:
 
 for PCBs:
 
-[to be specified]
+- size
