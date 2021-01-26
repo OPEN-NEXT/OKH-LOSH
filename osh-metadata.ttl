@@ -191,6 +191,14 @@ okh:licensor
   owl:cardinality 1
   .
 
+okh:organisation
+  a owl:ObjectProperty ;
+  rdfs:label "organisation" ;
+  rdfs:comment "organisation representing (most) contributors of this project" ;
+  rdfs:range schema:Organization ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:spdxLicense
  a owl:ObjectProperty ;
  rdfs:label "SPDX license identifier" ;
