@@ -23,13 +23,18 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
+  # ↑ replace by commit-specific URL
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/User_Guide/User_Guide.jpg> ;
+  # ↑ replace by commit-specific URL
   okh:documentationLanguage "en-GB" ;
   okh:projectStage "prototype" ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:patentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
   okh:sBoM <https://gitlab.com/OSEGermany/ohloom/-/blob/master/sBoM.csv> ;
+  # ↑ replace by commit-specific URL
+  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/blob/master/okh.json> ;
+  # ↑ replace by commit-specific URL
   okh:functionalMetadata "400mm fabric width" ;
   okh:productionMetadata "3D printed", "wood" ;
   okh:source <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/Assembly_Guide/AssemblyGuide.md> ;
@@ -51,8 +56,11 @@ gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
+  # ↑ replace by commit-specific URL
   okh:documentationLanguage "en-GB" ;
   okh:tsdcID "COM-MAN" ;
+  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/okh-ClampRing.json> ;
+  # ↑ replace by commit-specific URL
   okh:productionMetadata "3D printed", "PLA", "cylinder(h=30, r=56)" ;
   okh:source gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_source ;
   okh:export gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export2 ;

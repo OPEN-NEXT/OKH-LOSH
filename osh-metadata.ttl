@@ -313,6 +313,14 @@ okh:productionMetadata
 #   rdfs:domain okh:Module ;
 #   .
 
+okh:manifestFile
+  a owl:ObjectProperty ;
+  rdfs:label "manifest file" ;
+  rdfs:comment "URL to the file holding the metadata" ;
+  rdfs:range okh:FileURL ;
+  rdfs:domain okh:Module , okh:Part ;
+  .
+
 okh:sBoM
   a owl:ObjectProperty ;
   rdfs:label "simplified Bill of Materials" ;
