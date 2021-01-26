@@ -14,7 +14,6 @@
     "tsdc-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
     "simplified-bom": "if in root dir. → just sBoM.csv",
     "attestation": "URL to OSH-attestation (DIN SPEC 3105-2 or OSHWA-certificate) ",
-    "certificate": "URL to e.g. CE certification if exitent (multiple)",
     "standard": "name used standards (not DIN SPEC 3105) if applicable (multiple)",
     "functional-metadata": "e.g. rpm, voltage,… (multiple)",
     "production-metadata": "e.g. 3D printed (multiple)",

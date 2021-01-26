@@ -229,13 +229,13 @@ okh:attestation
   rdfs:domain okh:Module ;
   .
 
-okh:certificate
-  a owl:ObjectProperty ;
-  rdfs:label "certificate" ;
-  rdfs:comment "official certificate, such as CE mark" ;
+# okh:certificate
+#   a owl:ObjectProperty ;
+#   rdfs:label "certificate" ;
+#   rdfs:comment "official certificate, such as CE mark" ;
 # FIXME rdfs:subPropertyOf ;
-  rdfs:domain okh:Module ;
-  .
+#   rdfs:domain okh:Module ;
+#   .
 
 ## ----- basic description -----
 
