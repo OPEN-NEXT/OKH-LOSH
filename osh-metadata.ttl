@@ -49,14 +49,14 @@ okh:Component
 
 okh:Module
   a owl:Class ;
-  rdfs:label "MOSH"@en ;
+  rdfs:label "Module"@en ;
   rdfs:comment "Module of Open Source Hardware (MOSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
 
 okh:Part
   a owl:Class ;
-  rdfs:label "POSH"@en ;
+  rdfs:label "Part"@en ;
   rdfs:comment "Piece of Open Source Hardware (POSH)"@en ;
   rdfs:subClassOf okh:Component ;
   .
