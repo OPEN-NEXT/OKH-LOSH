@@ -1,11 +1,9 @@
 {
     "okhv": "2.0",
-    "repo": "URL to repository; usually an API input",
-    "version": "usually an API input",
-    "spdx-license": "usually an API input; if no SPDX identifier available, use 'alternative-license' with the URL to the legal code",
-    "licensor": "person or organisation holding the IP rights",
+    "spdx-license": "only if different from MOSH",
+    "licensor": "only if different from MOSH",
     "image": "relative-link-to-image.jpg",
-    "documentation-language": "en-GB",
+    "documentation-language": "only if different from MOSH",
     "tsdc-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
     "production-metadata": [
     	"e.g. 3D printed",
