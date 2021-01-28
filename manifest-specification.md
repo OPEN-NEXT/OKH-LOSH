@@ -50,7 +50,6 @@ where manifest and other additional files are located in `/3DParts/ClampRing` wh
 
 `source/clampring.scad`
 
-
 ### Absolute Path
 
 An absolute path always starts from the root directory (= repository folder).
@@ -63,6 +62,21 @@ The file reference _always_ starts with an "`/`"
 ### URL
 
 placeholder
+
+## Redundant Data
+
+Redundant data can be omitted.
+The crawler will then take the data from the next higher level.
+
+**EXAMPLE**
+
+A MOSH file states
+
+`spdx-license = "CERN-OHL-S-2.0	"`
+
+If a POSH in the same repository has the same license (which is most likely the case),
+there's no need to state the license _also_ in the manifest file for this POSH.
+The crawler will then assume the MOSH-entry.
 
 # Data Fields
 
