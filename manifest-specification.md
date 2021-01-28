@@ -1,7 +1,7 @@
 ---
 title: Specification on Manifest files
 # These two are supplied their final value from `git describe`
-subtitle: OKHv2.0
+subtitle: OKHv2.0.0
 lang: en-UK
 charset: UTF-8
 papersize: a4
@@ -62,6 +62,11 @@ The file reference _always_ starts with an "`/`"
 ### URL
 
 placeholder
+
+# Downward Compatibility
+
+We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) YAML files.\
+However, we strongly recommend to update to the current manifest specification.
 
 ## Redundant Data
 
