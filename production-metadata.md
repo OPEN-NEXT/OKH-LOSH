@@ -10,3 +10,16 @@ for mechanicals:
 for PCBs:
 
 - size
+  - e.g. "60x80 cm"
+- copper-thickness
+- layer-count
+- trace-width
+- smallest-via
+- component-sides
+  - 1 or 2
+- silkscreen-printing-sides
+  - 0, 1 or 2
+- solder-mask-sides
+  - 0, 1 or 2
+- high-tg
+  - (glass-transition temperature in °C)
