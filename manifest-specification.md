@@ -105,4 +105,6 @@ Unambiguous reference of the listed component.
 By [Type](#type) the following qualify as entries:
 
 - MOSH (from another repository): URL to release or snapshot of the used version (e.g. specific git commit)
-- POSH: relative or absolute link
+- POSH: manifest file for this POSH
+- STD: standard designation
+- BUY: any unambiguous reference for this proprietary component (preferably not just an URL, those links may die)
