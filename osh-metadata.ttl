@@ -8,6 +8,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
+@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 #@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
 #@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
 #@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
@@ -259,7 +260,7 @@ okh:patentClass
  a owl:ObjectProperty ;
  rdfs:label "Patent Class" ;
  rdfs:comment "International Patent Classification (IPC)" ;
-# FIXME rdfs:subPropertyOf ;
+ rdfs:subPropertyOf epo:classificationIPCInventive;
  rdfs:domain okh:Module ;
  .
 
