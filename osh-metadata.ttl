@@ -204,7 +204,7 @@ okh:spdxLicense
  a owl:ObjectProperty ;
  rdfs:label "SPDX license identifier" ;
  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- rdfs:subPropertyOf spdxt:licenseDeclared ; # aka SPDX license identifier
+ rdfs:subPropertyOf spdxt:ListedLicense ; # aka SPDX license identifier
  rdfs:domain okh:Module ;
  owl:cardinality 1 ;
  .
@@ -213,6 +213,7 @@ okh:alternativeLicense
   a owl:ObjectProperty ;
   rdfs:label "non-SPDX license" ;
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
+  rdfs:subPropertyOf spdxt:License ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
   owl:cardinality 1 ;
