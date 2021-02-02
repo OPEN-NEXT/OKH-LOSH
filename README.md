@@ -91,6 +91,15 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
   - The [DIN SPEC 3105](https://gitlab.com/OSEGermany/OHS) (to be published under CC BY-SA 4.0 in June 2020) and the [OH-TsDC](https://gitlab.com/OSEGermany/oh-tsdc) define clear, enforceable criteria for technical documentation of OSH (+ a community-based assessment procedure in order to prove that)
   - The [Open Know-How Metadata Standard](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1) gives a first approach to organise OSH through reasonable metadata.
 
+### Related work
+
+- the importer to push the ontology from any git-based instance to any Wikibase instance\
+  https://github.com/hoijui/LOSH-tools (by hoijui, IPK)
+- the reworked API to improve reconciliation tasks\
+  https://github.com/wmde/WikibaseReconcileEdit (by addshore, WMDE)
+- the crawler that collects all the data\
+  https://github.com/OPEN-NEXT/LOSH-krawler (by ahane, konek.to)
+
 ## Want to contribute [?]
 
 'til we have a proper conribution guide,
