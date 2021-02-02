@@ -132,7 +132,7 @@ okh:okhv
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Module ;
-  owl:cardinality 1 ;
+  owl:cardinality 1
   .
 
 ## ----- identification -----
@@ -156,7 +156,7 @@ okh:version
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:Component ;
-  owl:cardinality 1 ;
+  owl:cardinality 1
   .
 
 okh:forkOf
@@ -188,7 +188,7 @@ okh:licensor
   rdfs:subPropertyOf schema:copyrightHolder ;
   rdfs:range schema:Person, schema:Organization ;
   rdfs:domain okh:Module ;
-  owl:cardinality 1 ;
+  owl:cardinality 1
   .
 
 okh:organisation
@@ -234,6 +234,14 @@ okh:projectStage
   rdfs:comment "project development stage: either development, prototype, certified or production" ;
   rdfs:subPropertyOf schema:creativeWorkStatus ;
   owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:attestation
+  a owl:ObjectProperty ;
+  rdfs:label "attestation" ;
+  rdfs:comment "permanent URL to evidence of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
+  rdfs:range okh:WebsiteURL ;
   rdfs:domain okh:Module ;
   .
 
