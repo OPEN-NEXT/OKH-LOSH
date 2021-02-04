@@ -156,7 +156,7 @@ okh:version
   rdfs:label "version" ;
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf schema:version ;
-  rdfs:domain okh:Component ;
+  rdfs:domain okh:Module ;
   owl:cardinality 1
   .
 
