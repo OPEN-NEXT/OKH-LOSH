@@ -55,7 +55,6 @@ gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
   a okh:Part ;
   rdfs:label "Clamp Ring v1.0.0" ;
   rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing_generic ;
-  okh:version "1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:image <https://gitlab.com/OSEGermany/ohloom/-/raw/master/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
