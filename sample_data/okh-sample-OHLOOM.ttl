@@ -20,6 +20,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   rdfs:label "OHLOOM v1.0.0" ;
   rdfs:subClassOf gitlab_OSEGermany_OHLOOM:OHLOOM_generic ;
   okh:okhv "2.0" ;
+  okh:version "1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:organisation "OSE Germany e.V." ;
