@@ -330,6 +330,41 @@ okh:productionMetadata
   rdfs:domain okh:Module, okh:Part ;
   .
 
+## ----- production metadata -----
+
+okh:manufacturingProcess
+  a owl:ObjectProperty ;
+  rdfs:label "manufacturing process" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Module, okh:Part ;
+  .
+
+okh:material
+  a owl:ObjectProperty ;
+  rdfs:label "material" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Part ;
+  .
+
+okh:outerDimensions
+  a owl:ObjectProperty ;
+  rdfs:label "outer dimensions using openSCAD primitives" ;
+  rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Module, okh:Part ;
+  .
+
+okh:smallestToleranceClass
+  a owl:ObjectProperty ;
+  rdfs:label "smallest tolerance class (following ISO 286)" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Module, okh:Part ;
+  .
+
 ## ----- design files -----
 ## (diving into the documentation)
 
