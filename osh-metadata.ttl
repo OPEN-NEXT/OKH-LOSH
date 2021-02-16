@@ -362,7 +362,7 @@ okh:smallestToleranceClass
   rdfs:label "smallest tolerance class (following ISO 286)" ;
 # fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain okh:Part ;
   .
 
 ## ----- design files -----
