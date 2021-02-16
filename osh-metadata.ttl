@@ -153,7 +153,8 @@ okh:repository
 
 okh:repoSnapshot
   a owl:ObjectProperty ;
-  rdfs:label "respository snapshot (=specific version)" ;
+  rdfs:label "URL respository snapshot (=specific version)" ;
+  rdfs:comment "LOSH-Krawler takes the commit hash from the version tag and creates this permalink" ;
   rdfs:subPropertyOf okh:repository ;
   rdfs:range okh:WebsiteURL ;
   owl:cardinality 1 ;
