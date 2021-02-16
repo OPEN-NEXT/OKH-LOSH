@@ -151,6 +151,15 @@ okh:repository
   rdfs:domain okh:Module ;
   .
 
+okh:repoSnapshot
+  a owl:ObjectProperty ;
+  rdfs:label "respository snapshot (=specific version)" ;
+  rdfs:subPropertyOf okh:repository ;
+  rdfs:range okh:WebsiteURL ;
+  owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:version
   a owl:DatatypeProperty ;
   rdfs:label "version" ;

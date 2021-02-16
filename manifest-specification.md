@@ -16,6 +16,8 @@ description: >
 
 ## MOSH
 
+- version of a MOSH is specified by the version tag in the repository
+
 ## POSH
 
 ## sBoM
@@ -104,7 +106,11 @@ The crawler will then assume the MOSH-entry.
 Unambiguous reference of the listed component.
 By [Type](#type) the following qualify as entries:
 
-- MOSH (from another repository): URL to release or snapshot of the used version (e.g. specific git commit)
+- MOSH (from another repository): 
+  - commit-specific URL to manifest file for this MOSH
+  - URL to release or snapshot of the used version (e.g. specific git commit)
+  - bad but possible: just URL to MOSH repo → will point to versionless representation in the DB (if any)
+  - very bad: just a name
 - POSH: manifest file for this POSH
 - STD: standard designation
 - BUY: any unambiguous reference for this proprietary component (preferably not just an URL, those links may die)
