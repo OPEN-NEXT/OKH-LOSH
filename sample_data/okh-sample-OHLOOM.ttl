@@ -8,6 +8,9 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
+@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
+@prefix otlr:     <http://purl.org/oseg/ontologies/TLR> .
+
 
 gitlab_OSEGermany_OHLOOM:OHLOOM_generic
   a okh:Module ;
