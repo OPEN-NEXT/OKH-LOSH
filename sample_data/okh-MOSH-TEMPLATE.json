@@ -8,7 +8,7 @@
     "readme": "relative link to README; usually an API input",
     "image": "relative-link-to-image.jpg",
     "documentation-language": "en-GB",
-    "development-stage": "either development, prototype, certified or production",
+    "technology-readiness-level": "e.g. OTLR-4 for working prototypes in test environments or OTLR-5 for prototypes in real environments",
     "function": "short description of the module and what it does",
     "patent-class": "e.g. G05F 1/67, get it from here: https://www.wipo.int/classifications/ipc/ipcpub/?notion=search",
     "tsdc-id": "e.g. ASM-MEC (multiple); get it from here: https://gitlab.com/OSEGermany/oh-tsdc",
