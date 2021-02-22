@@ -1,0 +1,134 @@
+@base             <http://purl.org/oseg/ontologies/TLR> .
+@prefix otlr:      <#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+
+<>
+  a owl:Ontology ;
+  owl:versionInfo "1.0" ;
+  owl:versionIRI <> ;
+  rdfs:label "TLR for OSH meta data"@en ;
+  rdfs:comment "Technology Readiness Level can be used to assess the project stage of Open Source Hardware"@en ;
+  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  terms:license "GPL-3.0-or-later" .
+
+# properties & classes: (description from NASA are used under public domain)
+
+otlr:OTLR
+  a owl:class ;
+  rdfs:label "open TLR"@en ;
+  rdfs:comment "Technology Readiness Level for open source hardware; labels are used from EU-H2020 https://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf"@en ;
+  # That's the main class then!
+  .
+
+otlr:hardwareDescription
+  a owl:ObjectProperty ;
+  rdfs:label "hardware description"@en ;
+  rdfs:comment "Hardware-specific description of this OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  rdfs:range schema:Text ;
+  owl:cardinality 1 ;
+  rdfs:domain otlr:OTLR ;
+  .
+
+otlr:softwareDescription
+  a owl:ObjectProperty ;
+  rdfs:label "software description"@en ;
+  rdfs:comment "Software-specific description of this OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  rdfs:range schema:Text ;
+  owl:cardinality 1 ;
+  rdfs:domain otlr:OTLR ;
+  .
+
+otlr:exitCriteria
+  a owl:ObjectProperty ;
+  rdfs:label "Exit criteria"@en ;
+  rdfs:comment "Criteria to exit this OTLR for the next OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  rdfs:range schema:Text ;
+  owl:cardinality 1 ;
+  rdfs:domain otlr:OTLR ;
+  .
+
+# the TLR:
+
+otlr:OTLR-1
+  a otlr:OTLR ;
+  rdfs:label "OTLR-1"@en ;
+  rdfs:comment "Basic principles observed"@en ;
+  otlr:hardwareDescription "Knowledge generated underpinning hardware technology concepts/applications."@en ;
+  otlr:softwareDescription "Knowledge generated underpinning basic properties of software architecture and mathematical formulation."@en ;
+  otlr:exitCriteria "The proposed concept/application is documented in feasible manner and published under a free/open license."@en ;
+  .
+
+otlr:OTLR-2
+  a otlr:OTLR ;
+  rdfs:label "OTLR-2"@en ;
+  rdfs:comment "Technology concept formulated"@en ;
+  otlr:hardwareDescription "Invention begins, practical application is identified but is speculative, no experimental proof (e.g. a physical prototype) or detailed analysis is available yet to support the conjecture."@en ;
+  otlr:softwareDescription "Basic principles coded. Experiments performed with synthetic data. Practical application is identified but is speculative, no experimental proof or detailed analysis is available yet to support the conjecture."@en ;
+  otlr:exitCriteria "A more detailled description of the concept/application that addresses feasibility and benefit is documented in feasible manner and published under a free/open license."@en ;
+  .
+
+otlr:OTLR-3
+  a otlr:OTLR ;
+  rdfs:label "OTLR-3"@en ;
+  rdfs:comment "Experimental proof of concept"@en ;
+  otlr:hardwareDescription "Key functions of the concept tested & proven in a controlled environment (e.g. laboratory)"@en ;
+  otlr:softwareDescription "Development of limited functionality to validate critical properties and predictions using non-integrated software components."@en ;
+  otlr:exitCriteria "Practically applied concept (e.g. conceptional prototype) and validating test results are documented in feasible manner and published under a free/open license."@en ;
+  .
+
+otlr:OTLR-4
+  a otlr:OTLR ;
+  rdfs:label "OTLR-4"@en ;
+  rdfs:comment "Technology validated in lab"@en ;
+  otlr:hardwareDescription "A low fidelity application (prototype) was built and operated in a controlled environment (e.g. laboratory) demonstrating basic functionality and critical test environments; performance predictions are formulated towards the final operating environment."@en ;
+  otlr:softwareDescription "Key functionally and critical software components are integrated, and functionally validated, to establish interoperability and begin architecture development. Relevant Environments defined and performance in this environment predicted."@en ;
+  otlr:exitCriteria "Prototype, validating test results and definition of relevant application environment are documented in feasible manner and published under a free/open license."@en ;
+  .
+
+otlr:OTLR-5
+  a otlr:OTLR ;
+  rdfs:label "OTLR-5"@en ;
+  rdfs:comment "Technology validated in relevant environment"@en ;
+  otlr:hardwareDescription "ToDo"@en ;
+  otlr:softwareDescription "ToDo"@en ;
+  otlr:exitCriteria "ToDo"@en ;
+  .
+
+otlr:OTLR-6
+  a otlr:OTLR ;
+  rdfs:label "OTLR-6"@en ;
+  rdfs:comment "Technology demonstrated in relevant environment"@en ;
+  otlr:hardwareDescription "ToDo"@en ;
+  otlr:softwareDescription "ToDo"@en ;
+  otlr:exitCriteria "ToDo"@en ;
+  .
+
+otlr:OTLR-7
+  a otlr:OTLR ;
+  rdfs:label "OTLR-7"@en ;
+  rdfs:comment "System prototype demonstration in operational environment"@en ;
+  otlr:hardwareDescription "ToDo"@en ;
+  otlr:softwareDescription "ToDo"@en ;
+  otlr:exitCriteria "ToDo"@en ;
+  .
+
+otlr:OTLR-8
+  a otlr:OTLR ;
+  rdfs:label "OTLR-8"@en ;
+  rdfs:comment "System complete and qualified"@en ;
+  otlr:hardwareDescription "ToDo"@en ;
+  otlr:softwareDescription "ToDo"@en ;
+  otlr:exitCriteria "ToDo"@en ;
+  .
+
+otlr:OTLR-9
+  a otlr:OTLR ;
+  rdfs:label "OTLR-9"@en ;
+  rdfs:comment "Actual system proven in operational environment (e.g. production by multiple stakeholders)"@en ;
+  otlr:hardwareDescription "ToDo"@en ;
+  otlr:softwareDescription "ToDo"@en ;
+  otlr:exitCriteria "ToDo"@en ;
+  .
