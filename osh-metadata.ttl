@@ -240,11 +240,11 @@ okh:contributorCount
 
 ## ----- development stage -----
 
-okh:projectStage
+okh:technologyReadinessLevel
   a owl:ObjectProperty ;
-  rdfs:label "project development stage" ;
-  rdfs:comment "project development stage: either development, prototype, certified or production" ;
-  rdfs:subPropertyOf schema:creativeWorkStatus ;
+  rdfs:label "Technology Readiness Level (TLR)" ;
+  rdfs:comment "…using the OTLR definitions" ;
+  rdfs:subPropertyOf otlr:OTLR ;
   owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
