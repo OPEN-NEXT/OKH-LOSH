@@ -1,6 +1,8 @@
 LOSH Entity Relationships
 ===
 
+see rendered version [here](https://pad2.opensourceecology.de/s/cheq933Dd)
+
 ``` mermaid
 erDiagram
     TOSH ||--|{ MOSH : has
