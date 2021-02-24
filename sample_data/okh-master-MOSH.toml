@@ -20,7 +20,7 @@ fabric-width-mm = 400
 
 [MOSH.production-metadata]
 outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [400,300,150]"
+outer-dimension = "cube(size = [400,350,150]"
 
 [POSH1]
 image = "xxx.jpg"
