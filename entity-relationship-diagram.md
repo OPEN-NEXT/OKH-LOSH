@@ -1,21 +1,19 @@
 LOSH Entity Relationships
 ===
 
-see rendered version [here](https://pad2.opensourceecology.de/s/cheq933Dd)
-
 ``` mermaid
 erDiagram
     TOSH ||--|{ MOSH : has
-    MOSH ||--|{ source : has
-    MOSH ||--|{ export : has
+    MOSH ||--|{ sourceFile : has
+    MOSH ||--|{ exportFile : has
     MOSH ||--o{ POSH : has
     MOSH ||--o{ other-MOSH : has
     MOSH ||--o{ functionalMetadata : has
     MOSH ||--o{ productionMetadata : has
     POSH ||--o{ functionalMetadata : has
     POSH ||--o{ productionMetadata : has
-    POSH ||--|{ source : has
-    POSH ||--|{ export : has
+    POSH ||--|{ sourceFile : has
+    POSH ||--|{ exportFile : has
     TOSH {
         URL repo
     }
@@ -38,11 +36,13 @@ erDiagram
         path image
         string tsdc-id
     }
-    source {
-        path source-file
+    sourceFile {
+        string file-path
+        string file-format
     }
-    export {
-        path source-file
+    exportFile {
+        string file-path
+        string file-format
     }
     functionalMetadata {
         string free-keys
