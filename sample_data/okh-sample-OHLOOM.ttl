@@ -1,4 +1,4 @@
-@base             <http://purl.org/oseg/ontologies/ohloom/0.1> .
+@base             <http://purl.org/oseg/ohloom/0.1> .
 @prefix gitlab_OSEGermany_OHLOOM:   <#> .
 @prefix okh:      <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
@@ -28,97 +28,60 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   okh:licensor "Jens Meisner" ;
   okh:organisation "OSE Germany e.V." ;
   okh:contributorCount 4 ;
-  okh:readme <https://gitlab.com/OSEGermany/ohloom/-/blob/master/README.md> ;
-  # ↑ replace by commit-specific URL
-  okh:image <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/User_Guide/User_Guide.jpg> ;
-  # ↑ replace by commit-specific URL
+  okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
+  okh:readme <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+# ↑ note that all URLs point to a) the RAW and b) the same commit when the version info in the manifest file was changed
+  okh:image <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otlr:OTRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
-  okh:patentClass "D03D 35/00" ;
+  okh:cpcPatentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
-  okh:sBoM <https://gitlab.com/OSEGermany/ohloom/-/raw/master/sBoM.csv> ;
-  # ↑ replace by commit-specific URL
-  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/blob/master/okh.json> ;
-  # ↑ replace by commit-specific URL
+  okh:bom <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
+  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
   okh:functionalMetadata "400mm fabric width" ;
   okh:productionMetadata "3D printed", "wood" ;
-  okh:source <https://gitlab.com/OSEGermany/ohloom/-/blob/master/Documentation/Assembly_Guide/AssemblyGuide.md> ;
-  okh:sourceFileFormat "MD";
-  okh:hasComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
-  .
-
-gitlab_OSEGermany_OHLOOM:ClampRing_generic
-  a okh:Part ;
-  rdfs:label "Clamp Ring" ;
-  okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
+  okh:assemblyInstruction <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:hasComponent gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
   .
 
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0
   a okh:Part ;
-  rdfs:label "Clamp Ring v1.0.0" ;
-  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:ClampRing_generic ;
+  rdfs:label "Clamp Ring of OHLOOM v1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
-  okh:image <https://gitlab.com/OSEGermany/ohloom/-/raw/master/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
-  # ↑ replace by commit-specific URL
+  okh:image <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
   okh:documentationLanguage "en-GB" ;
   okh:tsdcID "COM-MAN" ;
-  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/blob/master/3DParts/ClampRing/okh-ClampRing.json> ;
-  # ↑ replace by commit-specific URL
-  okh:productionMetadata "3D printed", "PLA", "cylinder(h=30, r=56)" ;
+  okh:manifestFile <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/okh-ClampRing.json> ;
+  okh:productionMetadata gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_ProductionMetadata ;
   okh:source gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_source ;
   okh:export gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export1 , gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export2 ;
   .
 
+gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_ProductionMetadata
+  a okh:ProductionMetadata ;
+  rdfs:label "Production Metadata of ClampRing of OHLOOM v1.0.0" ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:outerDimensionDim "mm" ;
+  okh:outerDimension "cylinder(h=30, r=28)" ;
+  .
+
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_source
  a okh:SourceFile ;
- okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/blob/d8f18a0b833421cf34dcae6364e9c6579e5ca8f0/3DParts/ClampRing/ClampRing.scad" ;
+ okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.scad" ;
  okh:fileFormat "SCAD" ;
- okh:timestamp "git's-universal-timestamp-format"
  .
 
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export1
  a okh:ExportFile ;
- okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/blob/d8f18a0b833421cf34dcae6364e9c6579e5ca8f0/3DParts/ClampRing/ClampRing.stl" ;
+ okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.stl" ;
  okh:fileFormat "STL" ;
- okh:timestamp "git's-universal-timestamp-format"
  .
 
 gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0_export2
  a okh:ExportFile ;
- okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/blob/d8f18a0b833421cf34dcae6364e9c6579e5ca8f0/3DParts/ClampRing/ClampRing.pdf" ;
+ okh:fileURL "https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf" ;
  okh:fileFormat "PDF" ;
- okh:timestamp "git's-universal-timestamp-format"
  .
-
-gitlab_OSEGermany_OHLOOM:threadedrod_DIN_795
- a okh:STD;
- rdfs:label "threaded rod according to DIN 795" ;
- okh:standard "DIN 795"
- .
-
-gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1
-  a okh:STD ;
-  rdfs:subClassOf gitlab_OSEGermany_OHLOOM:threadedrod_DIN_795 ;
-  rdfs:label "threaded rod M8" ;
-  # okh:standardDesignation "DIN 795 M8 x 180" ; 
-# okh:ComponentReference "DIN 795 M8 x 180" ;
-# see <https://github.com/OPEN-NEXT/LOSH/issues/37#issuecomment-762879770>
-  .
-
-gitlab_OSEGermany_OHLOOM:BoMEntry_ClampRing_v_1_0_0
-  a okh:BomEntry ;
-  rdfs:label "sBoM-Entries for Clamp Ring (pos 10)" ;
-  okh:refersToComponent gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
-  okh:posNumber "10" ;
-  okh:quantity 2 ;
-  .
-
-gitlab_OSEGermany_OHLOOM:BoMEntry_threadedrodM8_v_1_0_0_pos1
-  a okh:BoMEntry ;
-  rdfs:label "sBoM-Entries for threaded rod M8 (pos 1)" ;
-  okh:refersToComponent gitlab_OSEGermany_OHLOOM:threadedrodM8_v_1_0_0_pos1 ;
-  okh:posNumber "1" ;
-  okh:quantity 2 ;
-  .
