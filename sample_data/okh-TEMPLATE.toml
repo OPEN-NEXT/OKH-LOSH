@@ -1,7 +1,6 @@
-[MOSH]
+[your-awesome-OSH]
 okhv = "2.0"
 repo = "https://gitlab.com/xxx"
-name = "xxx"
 version = "1.0.0"
 spdx-license = "CERN-OHL-S-2.0"
 licensor = "xxx"
@@ -13,16 +12,16 @@ function = "xxx"
 cpc-patent-class = "get CPC-ID from here <https://worldwide.espacenet.com/classification> e.g. D03D 35/00"
 tsdc-id = "ASM-MEC"
 bom = "BoM.csv"
-source = "/Documentation/Assembly_Guide/AssemblyGuide.md"
+assembly-instruction = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 
-[MOSH.functional-metadata]
+[your-awesome-OSH.functional-metadata]
 fabric-width-mm = 400
 
-[MOSH.production-metadata]
+[your-awesome-OSH.production-metadata]
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [400,350,150]"
 
-[POSH1]
+[your-awesome-part1]
 image = "xxx.jpg"
 tsdc-id = "COM-MAN"
 source = "xxx.scad"
@@ -31,7 +30,7 @@ export = [
   "xxx.stl"
 ]
 
-[POSH1.production-metadata]
+[your-awesome-part1.production-metadata]
 
 process = "3D printed"
 material = "PLA"
