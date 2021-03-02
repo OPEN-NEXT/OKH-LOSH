@@ -1,4 +1,4 @@
-@base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
+@base             <http://purl.org/oseg/okhv2/> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
