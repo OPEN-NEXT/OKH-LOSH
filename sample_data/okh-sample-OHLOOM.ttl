@@ -1,4 +1,4 @@
-@base             <https://gitlab.com/OSEGermany/ohloom#1.0.0> .
+@base             <https://gitlab.com/OSEGermany/ohloom#1.0.0#> .
 @prefix okh:      <http://purl.org/oseg/okhv2/> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -10,18 +10,13 @@
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otlr:     <http://purl.org/oseg/ontologies/TLR> .
 
-
-:OHLOOM_project
-  a okh:Module ;
-  rdfs:label "OHLOOM - Project" ;
-  okh:repo <https://gitlab.com/OSEGermany/> ;
-.
-
 :OHLOOM
   a okh:Module ;
-  rdfs:label "OHLOOM v1.0.0" ;
-  rdfs:subClassOf :OHLOOM_project ;
+  rdfs:label "OHLOOM" ;
+#  rdfs:subClassOf :OHLOOM_project ;
+# how to link now to the project? or is this automatically achieved via repo URL?
   okh:okhv "2.0" ;
+  okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
   okh:version "1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
