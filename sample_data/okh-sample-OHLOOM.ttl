@@ -42,6 +42,7 @@ gitlab_OSEGermany_OHLOOM:OHLOOM_v_1_0_0
   okh:functionalMetadata "400mm fabric width" ;
   okh:productionMetadata "3D printed", "wood" ;
   okh:assemblyInstruction <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:userManual <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
   okh:hasComponent gitlab_OSEGermany_OHLOOM:ClampRing_v_1_0_0 ;
   .
 

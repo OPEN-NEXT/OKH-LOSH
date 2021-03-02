@@ -13,6 +13,7 @@ cpc-patent-class = "D03D 35/00"
 tsdc-id = "ASM-MEC"
 bom = "sBoM.csv"
 assembly-instruction = "/Documentation/Assembly_Guide/AssemblyGuide.md"
+user-manual = "/Documentation/User_Guide/UserGuide.md"
 
 [OHLOOM.functional-metadata]
 fabric-width-dim = "mm"

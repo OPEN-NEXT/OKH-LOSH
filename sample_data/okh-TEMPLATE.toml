@@ -13,6 +13,7 @@ cpc-patent-class = "get CPC-ID from here <https://worldwide.espacenet.com/classi
 tsdc-id = "ASM-MEC"
 bom = "BoM.csv"
 assembly-instruction = "/Documentation/Assembly_Guide/AssemblyGuide.md"
+user-manual = "/Documentation/User_Guide/UserGuide.md"
 
 [your-awesome-OSH.functional-metadata]
 fabric-width-mm = 400
