@@ -233,7 +233,7 @@ okh:alternativeLicense
 ## ----- informative -----
 
 okh:contributorCount
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "number of conributors participating in the project" ;
   rdfs:domain okh:Module ;
   rdfs:range xsd:int ;
@@ -342,7 +342,7 @@ okh:manufacturingProcess
   .
 
 okh:material
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "material" ;
 # fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
@@ -350,7 +350,7 @@ okh:material
   .
 
 okh:outerDimensions
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "outer dimensions using openSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
 # fixme rdfs:subPropertyOf ;
@@ -385,7 +385,7 @@ okh:manifestFile
   rdfs:domain okh:Module , okh:Part ;
   .
 
-okh:sBoM
+okh:bom
   a owl:ObjectProperty ;
   rdfs:label "simplified Bill of Materials" ;
   rdfs:comment "URL to the simplified Bill of Materials" ;
@@ -411,7 +411,7 @@ okh:timestamp
   a owl:ObjectProperty ;
   rdfs:label "timestamp" ;
 # FixMe  rdfs:subPropertyOf
-  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  rdfs:domain okh:Module ;
   .
 
 okh:source
