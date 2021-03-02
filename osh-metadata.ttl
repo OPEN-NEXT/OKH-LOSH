@@ -77,6 +77,13 @@ okh:BUY
   rdfs:subClassOf okh:Component ;
   .
 
+okh:Software
+  a owl:Class ;
+  rdfs:label "Software"@en ;
+  rdfs:comment "Software (including firmware) needed to run & use the OSH" ;
+  rdfs:subClassOf okh:Component ;
+  .
+
 okh:BoMEntry
   a owl:Class ;
   rdfs:label "sBoM entry" ;
@@ -454,6 +461,26 @@ okh:tsdcID
 
 
 # source, export
+
+okh:hasSoftware
+  a owl:ObjectProperty ;
+  rdfs:label "has Software" ;
+  rdfs:range okh:Software ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:release
+  a owl:DatatypeProperty ;
+  rdfs:label "release" ;
+  rdfs:comment "URL to release" ;
+  rdfs:domain okh:Module , okh:Software ;
+  .
+
+okh:installationGuide
+  a owl:DatatypeProperty ;
+  rdfs:label "Installation Guide" ;
+  rdfs:domain okh:Software ;
+  .
 
 ### ----- sBoM-specific data -----
 
