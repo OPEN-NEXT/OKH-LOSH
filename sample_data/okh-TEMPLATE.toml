@@ -1,5 +1,5 @@
-[your-awesome-OSH]
 okhv = "2.0"
+name = "your-awesome-OSH"
 repo = "https://gitlab.com/xxx"
 version = "1.0.0"
 spdx-license = "CERN-OHL-S-2.0"
@@ -14,15 +14,11 @@ tsdc-id = "ASM-MEC"
 bom = "BoM.csv"
 assembly-instruction = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
-
-[your-awesome-OSH.functional-metadata]
-fabric-width-mm = 400
-
-[your-awesome-OSH.production-metadata]
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [400,350,150]"
 
-[your-awesome-part1]
+[[part]]
+name = "your-awesome-part"
 image = "xxx.jpg"
 tsdc-id = "COM-MAN"
 source = "xxx.scad"
@@ -30,10 +26,11 @@ export = [
   "xxx.pdf",
   "xxx.stl"
 ]
-
-[your-awesome-part1.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [120,100,3]"
+
+[[software]]
+release = "https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2"
+installation-guide = "https://github.com/arduino/ArduinoCore-mbed/blob/a2c06d768f5ebb6821ae6505b2032ee58f4ef70d/README.md"
