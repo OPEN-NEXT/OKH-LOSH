@@ -33,7 +33,6 @@ export = [
 ]
 
 [ClampRing.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -49,7 +48,6 @@ export = [
 ]
 
 [CombModul.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -61,7 +59,6 @@ source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 
 [PoleBase.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -77,7 +74,6 @@ export = [
 ]
 
 [RatchetPawl.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -93,7 +89,6 @@ export = [
 ]
 
 [RatchetWheel.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -109,7 +104,6 @@ export = [
 ]
 
 [ScrewSockets.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -122,7 +116,6 @@ source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
 
 [ScrewSockets4ScrewHead.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -138,7 +131,6 @@ export = [
 ]
 
 [Warpclothbeam_1.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -154,7 +146,6 @@ export = [
 ]
 
 [Warpclothbeam_2.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -170,7 +161,6 @@ export = [
 ]
 
 [Warpclothbeam_3.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -186,7 +176,6 @@ export = [
 ]
 
 [Warpclothbeam_4.production-metadata]
-
 process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
@@ -202,7 +191,6 @@ export = [
 ]
 
 [CombHolder.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -218,7 +206,6 @@ export = [
 ]
 
 [CrossBeam.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -234,7 +221,6 @@ export = [
 ]
 
 [Shuttle.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -250,7 +236,6 @@ export = [
 ]
 
 [SideFrame.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -266,7 +251,6 @@ export = [
 ]
 
 [SlotBeam.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -282,7 +266,6 @@ export = [
 ]
 
 [StringStick.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
@@ -298,7 +281,6 @@ export = [
 ]
 
 [WarpClothBeam.production-metadata]
-
 process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
