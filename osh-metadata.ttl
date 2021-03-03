@@ -444,7 +444,7 @@ okh:userManual
   rdfs:domain okh:Module ;
   .
 
-okh:manufacturingInstruction
+okh:manufacturingInstructions
   a owl:ObjectProperty ;
   rdfs:label "manufacturing instruction" ;
   rdfs:range okh:FileURL ;
