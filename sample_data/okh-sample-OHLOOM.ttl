@@ -35,7 +35,7 @@
   okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
   okh:functionalMetadata "400mm fabric width" ;
   okh:productionMetadata "3D printed", "wood" ;
-  okh:assemblyInstruction <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:manufacturingInstruction <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
   okh:userManual <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
   okh:hasComponent :ClampRing_v_1_0_0 ;
   .
