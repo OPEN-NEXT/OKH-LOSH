@@ -16,32 +16,73 @@ Source for the mapping: token from [here](https://certificationapi.oshwa.org/) (
 
 ## direct matches
 
-"responsibleParty": "Google, LLC",
-"projectName": "Authboard",
-"projectVersion": "1.0",
-"projectDescription": "A board that goes in an Authbox to power a Raspberry Pi and handle the actuators for controlling access to tools based on membership or training.",   
-"documentationUrl": "https://github.com/google/makerspace-auth/tree/master/hardware",
-"hardwareLicense": "Other",
+```
+"projectName" = okh:name
+"projectVersion" = okh:version
+"projectDescription" = okh:function
+"documentationUrl" = okh:repo
+```
+
 
 ##  fields with rules
 
 ### category mapping
 
-category mapping:
- "primaryType": "Electronics",
-    "additionalType": [
-      "Tool"
-    ],
+At the moment we'll process `primaryType` only (with 3 exceptions). See the following table how OSHWA categories are mapped onto the CPC system.
+
+```
+"unmappable-categories":[
+        "Arts" ,
+        "Education" ,
+        "Environmental",
+        "Other" ,
+        "Science",
+        "Tool"
+        ]
+if 
+    "primaryType" in "unmappable-categories"
+            use first entry of "additionalType" instead
+elseif
+    no entry available other than "unmappable-categories"
+        do nothing
+else
+    see table below
+```
+
+| OSHWA           | cpc:Classification |
+|-----------------|--------------------|
+| 3D Printing     | B33Y               |
+| Agriculture     | A01                |
+| Electronics     | H                  |
+| Enclosure       | F16M               |
+| Home Connection | H04W               |
+| IOT             | H04                |
+| Manufacturing   |                    |
+| Robotics        |                    |
+| Sound           |                    |
+| Space           |                    |
+| Wearables       |                    |
+
+### license
+
+```
+if
+    "hardwareLicense" != "other"
+        "hardwareLicense" = okh:spdxLicense
+else
+    do nothing
+```
 
 ## Custom Data Fields
 
 The following data fields are either ignored or the same way included as custom keys.
 
-"country": "United States of America",
-"publicContact": "thatch@google.com",
-"projectWebsite": "https://github.com/google/makerspace-auth/",
-"projectKeywords"
-"softwareLicense": "Apache",
-"documentationLicense": "Other",
-"certificationDate": "2018-01-17T00:00-04:00"
-"oshwaUid": "US000093",
+- `certificationDate`
+- `country`
+- `documentationLicense`
+- `projectKeywords`
+- `projectWebsite`
+- `publicContact`
+- `responsibleParty`
+- `softwareLicense`
+- `oshwaUid`
