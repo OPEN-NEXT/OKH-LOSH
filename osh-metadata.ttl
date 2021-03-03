@@ -186,6 +186,13 @@ okh:forkOf
  rdfs:domain okh:Module, okh:Part ;
  .
 
+okh:versionOf
+  a owl:ObjectProperty ;
+  rdfs:label "version of" ;
+  rdfs:subPropertyOf schema:isVariantOf ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:documentationLanguage
  a owl:DatatypeProperty ;
  rdfs:label "documentation language" ;
