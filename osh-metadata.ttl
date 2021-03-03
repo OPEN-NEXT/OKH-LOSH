@@ -189,7 +189,8 @@ okh:forkOf
 okh:versionOf
   a owl:ObjectProperty ;
   rdfs:label "version of" ;
-  rdfs:subPropertyOf schema:isVariantOf ;
+  rdfs:comment "connects specific versions of Modules with their versionless superclass" ;
+  rdfs:range okh:Module ;
   rdfs:domain okh:Module ;
   .
 
