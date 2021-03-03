@@ -1,4 +1,4 @@
-@base             <https://gitlab.com/OSEGermany/ohloom#1.0.0#> .
+@base             <https://gitlab.com/OSEGermany/ohloom/1.0.0#> .
 @prefix okh:      <http://purl.org/oseg/okhv2/> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -13,8 +13,7 @@
 :OHLOOM
   a okh:Module ;
   rdfs:label "OHLOOM" ;
-#  rdfs:subClassOf :OHLOOM_project ;
-# how to link now to the project? or is this automatically achieved via repo URL?
+  okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
   okh:okhv "2.0" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
   okh:version "0.10.0" ;
@@ -34,11 +33,26 @@
   okh:tsdcID "ASM-MEC" ;
   okh:bom <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
   okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
-  okh:functionalMetadata "400mm fabric width" ;
-  okh:productionMetadata "3D printed", "wood" ;
+  :fabricWidthDim "mm" ;
+  :fabricWidth 400 ;
+  # that's a custom field not defined in the okh ontology; ↑ still possible
+  okh:outerDimensionDim "mm" ;
+  okh:outerDimension "cube(size = [400,350,150]" ;
   okh:manufacturingInstructions <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
   okh:userManual <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
-  okh:hasComponent :ClampRing_v_1_0_0 ;
+  okh:hasComponent :ClampRing ;
+  .
+
+:fabricWidthDim
+  a owl:DatatypeProperty ;
+  rdfs:label "fabric-width-dim" ;
+  rdfs:subPropertyOf okh:functionalMetadata ;
+  .
+
+:fabricWidth
+  a owl:DatatypeProperty ;
+  rdfs:label "fabric-width" ;
+  rdfs:subPropertyOf okh:functionalMetadata ;
   .
 
 :ClampRing
@@ -50,7 +64,6 @@
   okh:documentationLanguage "en-GB" ;
   okh:tsdcID "COM-MAN" ;
   okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/okh-ClampRing.json> ;
-  okh:productionMetadata :ClampRing_v_1_0_0_ProductionMetadata ;
   okh:source :ClampRing_source ;
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
   okh:manufacturingProcess "3D printed" ;
