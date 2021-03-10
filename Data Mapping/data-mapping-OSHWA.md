@@ -35,6 +35,7 @@ At the moment we'll process `primaryType` only (with 3 exceptions). See the foll
         "Arts" ,
         "Education" ,
         "Environmental",
+        "Manufacturing",
         "Other" ,
         "Science",
         "Tool"
@@ -57,11 +58,10 @@ else
 | Enclosure       | F16M               |
 | Home Connection | H04W               |
 | IOT             | H04                |
-| Manufacturing   |                    |
-| Robotics        |                    |
-| Sound           |                    |
-| Space           |                    |
-| Wearables       |                    |
+| Robotics        | B25J9/00           |
+| Sound           | H04R               |
+| Space           | B64G               |
+| Wearables       | H                  |
 
 ### license
 
