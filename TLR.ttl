@@ -92,7 +92,14 @@ otlr:OTLR-5
   a otlr:OTLR ;
   rdfs:label "OTLR-5"@en ;
   rdfs:comment "Technology validated in relevant environment"@en ;
-  otlr:hardwareDescription "ToDo"@en ;
+  otlr:hardwareDescription "A medium fidelity system/component
+brassboard is built and operated to
+demonstrate overall performance in a
+simulated operational environment with
+realistic support elements that
+demonstrates overall performance in
+critical areas. Performance predictions are
+made for subsequent development phases."@en ;
   otlr:softwareDescription "ToDo"@en ;
   otlr:exitCriteria "ToDo"@en ;
   .
@@ -101,7 +108,12 @@ otlr:OTLR-6
   a otlr:OTLR ;
   rdfs:label "OTLR-6"@en ;
   rdfs:comment "Technology demonstrated in relevant environment"@en ;
-  otlr:hardwareDescription "ToDo"@en ;
+  otlr:hardwareDescription "A high fidelity system/component
+prototype that adequately addresses all
+critical scaling issues is built and operated
+in a relevant environment to demonstrate
+operations under critical environmental
+conditions."@en ;
   otlr:softwareDescription "ToDo"@en ;
   otlr:exitCriteria "ToDo"@en ;
   .
@@ -110,7 +122,12 @@ otlr:OTLR-7
   a otlr:OTLR ;
   rdfs:label "OTLR-7"@en ;
   rdfs:comment "System prototype demonstration in operational environment"@en ;
-  otlr:hardwareDescription "ToDo"@en ;
+  otlr:hardwareDescription "A high fidelity engineering unit that
+adequately addresses all critical scaling
+issues is built and operated in a relevant
+environment to demonstrate performance
+in the actual operational environment and
+platform (ground, airborne, or space)."@en ;
   otlr:softwareDescription "ToDo"@en ;
   otlr:exitCriteria "ToDo"@en ;
   .
@@ -119,8 +136,13 @@ otlr:OTLR-8
   a otlr:OTLR ;
   rdfs:label "OTLR-8"@en ;
   rdfs:comment "System complete and qualified"@en ;
-  otlr:hardwareDescription "ToDo"@en ;
-  otlr:softwareDescription "ToDo"@en ;
+  otlr:hardwareDescription "Hardware, in its final version, has been built and operated in the intended operational environment and proven its performance. All documentation has been completed."@en ;
+  otlr:softwareDescription "All software has been thoroughly debugged and fully
+integrated with all operational hardware and software
+systems. All user documentation, training documentation,
+and maintenance documentation completed. All
+functionality successfully demonstrated in simulated
+operational scenarios. Documentatoin."@en ;
   otlr:exitCriteria "ToDo"@en ;
   .
 
@@ -128,7 +150,6 @@ otlr:OTLR-9
   a otlr:OTLR ;
   rdfs:label "OTLR-9"@en ;
   rdfs:comment "Actual system proven in operational environment (e.g. production by multiple stakeholders)"@en ;
-  otlr:hardwareDescription "ToDo"@en ;
-  otlr:softwareDescription "ToDo"@en ;
-  otlr:exitCriteria "ToDo"@en ;
+  otlr:hardwareDescription "Hardware has been _independently_ built and operated in the final operational environment and proven its performance."@en ;
+  otlr:softwareDescription "Software is replicated, integrated and operated _independently_ in the final operational hardware/software systems and proven its performance."@en ;
   .
