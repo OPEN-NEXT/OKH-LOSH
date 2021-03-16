@@ -50,7 +50,7 @@ otlr:exitCriteria
   rdfs:domain otlr:OTLR ;
   .
 
-# the TLR:
+# the technology readiness levels (TLR):
 
 otlr:OTLR-1
   a otlr:OTLR ;
