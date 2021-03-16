@@ -42,7 +42,7 @@ In LOSH you can
     - regarding the hardware
   - "I built this hardware" (maybe a scale ↓)
     - …but didn't succeed, documentation is incomplete/faulty
-    - …with significant lots of helf from the originators
+    - …with lots of help from the originators
     - …(almost) independently, great documentation!
     - → count is saved on wikibase
  
