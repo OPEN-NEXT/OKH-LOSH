@@ -41,6 +41,15 @@ otlr:softwareDescription
   rdfs:domain otlr:OTLR ;
   .
 
+otlr:documentationDescription
+  a owl:ObjectProperty ;
+  rdfs:label "documentation description"@en ;
+  rdfs:comment "required state of the documentation for this OTLR"@en ;
+  rdfs:range schema:Text ;
+  owl:cardinality 1 ;
+  rdfs:domain otlr:OTLR ;
+  .
+
 otlr:exitCriteria
   a owl:ObjectProperty ;
   rdfs:label "Exit criteria"@en ;
