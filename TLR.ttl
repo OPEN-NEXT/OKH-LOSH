@@ -24,7 +24,7 @@ otlr:OTLR
   .
 
 otlr:hardwareDescription
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "hardware description"@en ;
   rdfs:comment "Hardware-specific description of this OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
@@ -33,7 +33,7 @@ otlr:hardwareDescription
   .
 
 otlr:softwareDescription
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "software description"@en ;
   rdfs:comment "Software-specific description of this OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
@@ -42,7 +42,7 @@ otlr:softwareDescription
   .
 
 otlr:documentationDescription
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "documentation description"@en ;
   rdfs:comment "required state of the documentation for this OTLR"@en ;
   rdfs:range schema:Text ;
@@ -51,7 +51,7 @@ otlr:documentationDescription
   .
 
 otlr:exitCriteria
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "Exit criteria"@en ;
   rdfs:comment "Criteria to exit this OTLR for the next OTLR; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
