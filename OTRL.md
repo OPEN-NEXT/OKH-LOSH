@@ -35,6 +35,18 @@ Both will be provided as text and RDF document to ensure equally human and machi
 
 # Concept
 
+||Detail|AKA|
+|---|---|---|
+|OTRL 1|basic principles observed|rough idea|
+|OTRL 2|technology concept formulated|concept ready|
+|OTRL 3|experimental proof of concept|concept is validated in tests|
+|OTRL 4|technology validated in lab|early prototype|
+|OTRL 5|technology validated in relevant environment|mature prototype|
+|OTRL 6|technology demonstrated in relevant environment|ready-to-use product|
+|OTRL 7|system prototype demonstration in operational environment|ready-to-use product (for critical or complex applications)|
+|OTRL 8|system complete and qualified|finished product (could be sold in the EU)|
+|OTRL 9|actual system proven in operational environment|established product|
+
 ## OTRL
 
 ### OTRL 1
@@ -69,7 +81,7 @@ A medium fidelity application (prototype) was built and operated in a (simulated
 
 ### OTRL 6
 
-`technology demonstrated in relevant environment (industrially relevant environment in the case of key enabling technologies)`
+`technology demonstrated in relevant environment`
 
 A high fidelity application (final version) was built and operated in a realistic operational environment demonstrating its performance in the actual operational environment.
 
