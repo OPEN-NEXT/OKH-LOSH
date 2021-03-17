@@ -35,7 +35,7 @@ Both will be provided as text and RDF document to ensure equally human and machi
 
 # Concept
 
-||Detail|AKA|
+|OTRL|Detail|Characteristic|
 |---|---|---|
 |OTRL 1|basic principles observed|rough idea|
 |OTRL 2|technology concept formulated|concept ready|
@@ -46,6 +46,15 @@ Both will be provided as text and RDF document to ensure equally human and machi
 |OTRL 7|system prototype demonstration in operational environment|ready-to-use product (for critical or complex applications)|
 |OTRL 8|system complete and qualified|finished product (could be sold in the EU)|
 |OTRL 9|actual system proven in operational environment|established product|
+
+|ODRL|Detail|Characteristic|
+|---|---|---|
+|ODRL 0|no documentation available|or noncompliant license|
+|ODRL 1|basic information available|know that the OSH is, but not more|
+|ODRL 2|drafty documentation|documentation in progress, yet patchy|
+|ODRL 3|early release|lots of reconciliation required to build & operate the OSH|
+|ODRL 4|relevant realease|few reconciliation required to build & operate the OSH|
+|ODRL 5|mature realease|no reconciliation required to build & operate the OSH|
 
 ## OTRL
 
@@ -143,7 +152,7 @@ target group understands, what the OSH is, but not how it works or how it is ope
 
 `drafty documentation`
 
-documentation in progess – aims to describe how the hardware works and how it is operated, but is partly lacky &/ outdated; yet too less to exercise the 4 rights of open source.
+documentation in progess – aims to describe how the hardware works and how it is operated, but is partly patchy &/ outdated; yet too less to exercise the 4 rights of open source.
 
 ### ODRL 3
 
