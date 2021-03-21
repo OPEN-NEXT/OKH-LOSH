@@ -36,6 +36,7 @@
   okh:outerDimension "cube(size = [300,300,300]" ;
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
+  okh:hasSoftware :Zettlr ;
   .
 
 :ManifestFile
@@ -117,4 +118,11 @@
   rdfs:label "Export File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
   okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.pdf> ;
   okh:fileFormat "PDF" ;
+  .
+
+:Zettlr
+  a okh:Software ;
+  rdfs:label "Zettlr" ;
+  okh:release <https://github.com/Zettlr/Zettlr/releases/tag/v1.8.7> ;
+  okh:installationGuide <https://github.com/Zettlr/Zettlr/blob/0e80c56063884f769349cb21f0712b12e97f9d4b/README.md> ;
   .
