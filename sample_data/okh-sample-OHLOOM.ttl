@@ -37,7 +37,7 @@
   okh:outerDimensionDim "mm" ;
   okh:outerDimension "cube(size = [400,350,150]" ;
   okh:hasManufacturingInstructions :OHLOOM_manufacturingInstructions ;
-  okh:userManual <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
+  okh:hasUserManual :UserManual ;
   okh:hasComponent :ClampRing ;
   .
 
@@ -79,6 +79,13 @@
   a okh:ManufacturingInstructions ;
   rdfs:label "Manufacturing Instructions of OHLOOM v1.0.0" ;
   okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:fileFormat "MD" ;
+  .
+
+:UserManual
+  a okh:UserManual ;
+  rdfs:label "User Manual of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
   okh:fileFormat "MD" ;
   .
 
