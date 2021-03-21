@@ -63,20 +63,6 @@ okh:Part
   rdfs:subClassOf okh:Component ;
   .
 
-okh:STD
-  a owl:Class ;
-  rdfs:label "Standard Component"@en ;
-  rdfs:comment "Standard Component (STD)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
-
-okh:BUY
-  a owl:Class ;
-  rdfs:label "Purchased Component"@en ;
-  rdfs:comment "Purchased Proprietary Component (BUY)"@en ;
-  rdfs:subClassOf okh:Component ;
-  .
-
 okh:Software
   a owl:Class ;
   rdfs:label "Software"@en ;
