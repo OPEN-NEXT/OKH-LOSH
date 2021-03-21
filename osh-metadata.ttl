@@ -137,6 +137,12 @@ okh:ManufacturingInstructions
   rdfs:subClassOf okh:File ;
   .
 
+okh:UserManual
+  a owl:Class ;
+  rdfs:label "User Manual" ;
+  rdfs:subClassOf okh:File ;
+  .
+
 okh:ComponentReference
   a owl:Class ;
   rdfs:subClassOf okh:Reference ;
@@ -460,16 +466,16 @@ okh:export
   rdfs:domain okh:Module, okh:Part ;
   .
 
-okh:userManual
+okh:hasUserManual
   a owl:ObjectProperty ;
-  rdfs:label "manufacturing instruction" ;
-  rdfs:range okh:FileURL ;
+  rdfs:label "has User Manual" ;
+  rdfs:range okh:UserManual ;
   rdfs:domain okh:Module ;
   .
 
 okh:hasManufacturingInstructions
   a owl:ObjectProperty ;
-  rdfs:label "has manufacturing instruction" ;
+  rdfs:label "has Manufacturing Instructions" ;
   rdfs:range okh:ManufacturingInstructions ;
   rdfs:domain okh:Module, okh:Part ;
   .
