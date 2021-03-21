@@ -94,6 +94,12 @@ okh:File
   rdfs:label "File" ;
   .
 
+okh:Readme
+  a owl:Class ;
+  rdfs:label "Readme" ;
+  rdfs:subClassOf okh:File
+  .
+
 okh:BoM
   a owl:Class ;
   rdfs:label "Bill of Materials" ;
@@ -389,6 +395,14 @@ okh:manifestFile
   rdfs:comment "URL to the file holding the metadata" ;
   rdfs:range okh:FileURL ;
   rdfs:domain okh:Module , okh:Part ;
+  .
+
+okh:hasReadme
+  a owl:ObjectProperty ;
+  rdfs:label "has Readme" ;
+  rdfs:comment "links to the corresponding Readme" ;
+  rdfs:range okh:File ;
+  rdfs:domain okh:Module ;
   .
 
 okh:hasBoM
