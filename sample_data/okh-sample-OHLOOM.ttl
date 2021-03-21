@@ -25,7 +25,7 @@
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
 # ↑ note that all URLs point to a) the RAW and b) the same commit when the version info in the manifest file was changed
-  okh:image <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
+  okh:hasImage :OHLOOM_image ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otlr:OTRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
@@ -53,6 +53,13 @@
   a owl:DatatypeProperty ;
   rdfs:label "fabric-width" ;
   rdfs:subPropertyOf okh:functionalMetadata ;
+  .
+
+:OHLOOM_image
+  a okh:Image ;
+  rdfs:label "Image of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
+  okh:fileFormat "JPG" ;
   .
 
 :Readme
