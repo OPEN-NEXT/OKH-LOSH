@@ -31,7 +31,7 @@
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:cpcPatentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
-  okh:bom <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
+  okh:hasBoM :BoM ;
   okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
   :fabricWidthDim "mm" ;
   :fabricWidth 400 ;
@@ -54,6 +54,13 @@
   rdfs:label "fabric-width" ;
   rdfs:subPropertyOf okh:functionalMetadata ;
   .
+
+:BoM
+ a okh:BoM ;
+ rdfs:label "Bill of Materials of OHLOOM v1.0.0" ;
+ okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
+ okh:fileFormat "CSV" ;
+ .
 
 :ClampRing
   a okh:Part ;
