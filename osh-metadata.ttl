@@ -89,6 +89,17 @@ okh:FileURL
   rdfs:subClassOf schema:URL ;
   .
 
+okh:File
+  a owl:Class ;
+  rdfs:label "File" ;
+  .
+
+okh:BoM
+  a owl:Class ;
+  rdfs:label "Bill of Materials" ;
+  rdfs:subClassOf okh:File
+  .
+
 okh:SourceFile
   a owl:Class ;
   rdfs:label "source file" ;
@@ -380,10 +391,10 @@ okh:manifestFile
   rdfs:domain okh:Module , okh:Part ;
   .
 
-okh:bom
+okh:hasBoM
   a owl:ObjectProperty ;
-  rdfs:label "simplified Bill of Materials" ;
-  rdfs:comment "URL to the simplified Bill of Materials" ;
+  rdfs:label "has Bill of Materials" ;
+  rdfs:comment "links to the corresponding Bill of Materials" ;
   rdfs:range okh:FileURL ;
   rdfs:domain okh:Module ;
   .
