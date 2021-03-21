@@ -84,12 +84,6 @@ okh:Software
   rdfs:subClassOf okh:Component ;
   .
 
-okh:BoMEntry
-  a owl:Class ;
-  rdfs:label "sBoM entry" ;
-  # FIXME subClassOf
-  .
-
 okh:Reference
   a owl:Class ;
   rdfs:label "unambiguous reference" ;
@@ -488,54 +482,6 @@ okh:installationGuide
   a owl:DatatypeProperty ;
   rdfs:label "Installation Guide" ;
   rdfs:domain okh:Software ;
-  .
-
-### ----- sBoM-specific data -----
-
-okh:refersToComponent
-  a owl:ObjectProperty ;
-  rdfs:label "links from BomEntry to corresponding Component" ;
-# FIXME  rdfs:subPropertyOf 
-  rdfs:domain okh:BomEntry ;
-  .
-
-okh:posNumber
-  a owl:ObjectProperty ;
-  rdfs:label "position number" ;
-  owl:cardinality 1 ;
-  rdfs:range schema:StructuredValue ;
-  rdfs:domain okh:BomEntry ;
-  .
-
-okh:quantity
-  a owl:DatatypeProperty ;
-  rdfs:label "quantity" ;
-  rdfs:subPropertyOf schema:amount ;
-  owl:cardinality 1 ;
-  rdfs:range xsd:int ;
-  rdfs:domain okh:BomEntry ;
-  .
-
-okh:hasComponent
-  a owl:ObjectProperty ;
-  rdfs:label "has component" ;
-  rdfs:comment "indicates that the predicate component forms a part of the subject MOSH" ;
-  rdfs:subPropertyOf schema:hasPart ;
-  rdfs:domain okh:Module ;
-  .
-
-okh:componentReference
-  a owl:ObjectProperty ;
-  rdfs:label "Component Reference" ;
-  rdfs:comment '''
-    others shall be able to identify/procure this component only by the given reference(s),
-    MOSH → URL to corresponding release
-    POSH → relative link to its manifest file
-    STD  → standard designation (preferably naming the _latest_ standard)
-    BUY  → unambiguous reference'''@en ;
-  rdfs:range okh:ComponentReference ;
-  owl:cardinality 1 ;
-  rdfs:domain okh:Component ;
   .
 
 ### ----- source/export subproperties -----
