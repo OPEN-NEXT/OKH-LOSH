@@ -100,6 +100,12 @@ okh:Readme
   rdfs:subClassOf okh:File
   .
 
+okh:Image
+  a owl:Class ;
+  rdfs:label "Image" ;
+  rdfs:subClassOf okh:File
+  .
+
 okh:BoM
   a owl:Class ;
   rdfs:label "Bill of Materials" ;
@@ -308,20 +314,28 @@ okh:function
   rdfs:domain okh:Module ;
   .
 
-okh:readme
+okh:hasReadme
   a owl:ObjectProperty ;
-  rdfs:label "readme" ;
-  rdfs:comment "URL to the README" ;
-  rdfs:range okh:FileURL ;
-  owl:cardinality 1 ;
+  rdfs:label "has Readme" ;
+  rdfs:comment "links to the corresponding Readme" ;
+  rdfs:range okh:Readme ;
   rdfs:domain okh:Module ;
   .
 
-okh:image
+okh:hasBoM
   a owl:ObjectProperty ;
-  rdfs:label "image" ;
-  rdfs:comment "URL to a meaningful & freely licensed picture of this Module or Part" ;
+  rdfs:label "has Bill of Materials" ;
+  rdfs:comment "links to the corresponding Bill of Materials" ;
+  rdfs:range okh:BoM ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasImage
+  a owl:ObjectProperty ;
+  rdfs:label "has image" ;
+  rdfs:comment "links to the corresponding Image" ;
   rdfs:subPropertyOf schema:image ;
+  rdfs:range okh:Image ;
   rdfs:domain okh:Component ;
   .
 
@@ -395,22 +409,6 @@ okh:manifestFile
   rdfs:comment "URL to the file holding the metadata" ;
   rdfs:range okh:FileURL ;
   rdfs:domain okh:Module , okh:Part ;
-  .
-
-okh:hasReadme
-  a owl:ObjectProperty ;
-  rdfs:label "has Readme" ;
-  rdfs:comment "links to the corresponding Readme" ;
-  rdfs:range okh:File ;
-  rdfs:domain okh:Module ;
-  .
-
-okh:hasBoM
-  a owl:ObjectProperty ;
-  rdfs:label "has Bill of Materials" ;
-  rdfs:comment "links to the corresponding Bill of Materials" ;
-  rdfs:range okh:File ;
-  rdfs:domain okh:Module ;
   .
 
 okh:fileURL
