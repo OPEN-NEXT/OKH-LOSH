@@ -150,7 +150,7 @@ okh:okhv
   rdfs:label "OKH version" ;
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
   rdfs:subPropertyOf schema:version ;
-  rdfs:domain okh:Module ;
+  rdfs:domain okh:ManifestFile ;
   owl:cardinality 1
   .
 
