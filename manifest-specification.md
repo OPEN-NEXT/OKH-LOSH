@@ -79,7 +79,7 @@ The crawler will then take the data from the next higher level.
 
 A MOSH file states
 
-`spdx-license = "CERN-OHL-S-2.0	"`
+`license = "CERN-OHL-S-2.0	"`
 
 If a POSH in the same repository has the same license (which is most likely the case),
 there's no need to state the license _also_ in the manifest file for this POSH.
@@ -88,6 +88,19 @@ The crawler will then assume the MOSH-entry.
 # Data Fields
 
 ## MOSH Fields
+
+### license
+
+- string
+- SPDX-ID of the license
+- short title of the license otherwise (alternative license)
+
+Entry is checked against the current machine readable list of SPDX licenses.
+
+If the entry is 
+
+- found: `license = okh:spdxLicense`
+- not found: `license = okh:alternativeLicense`
 
 ## POSH Fields
 
