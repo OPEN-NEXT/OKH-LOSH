@@ -101,7 +101,7 @@
   rdfs:label "Clamp Ring of OHLOOM v1.0.0" ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
-  okh:image <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
+  okh:image :ClampRing_image ;
   okh:documentationLanguage "en-GB" ;
   okh:tsdcID "COM-MAN" ;
   okh:hasManifestFile :ManifestFile ;
@@ -112,6 +112,14 @@
   okh:outerDimensionDim "mm" ;
   okh:outerDimension "cylinder(h=30, r=28)" ;
   .
+
+:ClampRing_image
+  a okh:Image ;
+  rdfs:label "Image of Clamp Ring of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
+  okh:fileFormat "JPG" ;
+  .
+
 
 :ClampRing_source
   a okh:SourceFile ;
