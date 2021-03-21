@@ -421,14 +421,14 @@ okh:fileURL
   a owl:ObjectProperty ;
   rdfs:label "file URL" ;
 #  rdfs:subPropertyOf schema:URL ; # NOTE This is not valid, because schema:URL is a class, not a property
-  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  rdfs:domain okh:File ;
   .
 
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
   rdfs:subPropertyOf schema:fileFormat ;
-  rdfs:domain okh:SourceFile , okh:ExportFile ;
+  rdfs:domain okh:File ;
   .
 
 okh:timestamp
