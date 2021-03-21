@@ -94,6 +94,13 @@ okh:File
   rdfs:label "File" ;
   .
 
+okh:ManifestFile
+  a owl:Class ;
+  rdfs:label "manifest file" ;
+  rdfs:comment "file holding the metadata" ;
+  rdfs:subClassOf okh:File
+  .
+
 okh:Readme
   a owl:Class ;
   rdfs:label "Readme" ;
@@ -403,11 +410,10 @@ okh:smallestToleranceClass
 #   rdfs:domain okh:Module ;
 #   .
 
-okh:manifestFile
+okh:hasManifestFile
   a owl:ObjectProperty ;
-  rdfs:label "manifest file" ;
-  rdfs:comment "URL to the file holding the metadata" ;
-  rdfs:range okh:FileURL ;
+  rdfs:label "has manifest file" ;
+  rdfs:range okh:ManifestFile ;
   rdfs:domain okh:Module , okh:Part ;
   .
 
