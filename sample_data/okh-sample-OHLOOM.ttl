@@ -23,7 +23,7 @@
   okh:organisation "OSE Germany e.V." ;
   okh:contributorCount 4 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
-  okh:readme <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+  okh:hasReadme :Readme ;
 # ↑ note that all URLs point to a) the RAW and b) the same commit when the version info in the manifest file was changed
   okh:image <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
   okh:documentationLanguage "en-GB" ;
@@ -53,6 +53,13 @@
   a owl:DatatypeProperty ;
   rdfs:label "fabric-width" ;
   rdfs:subPropertyOf okh:functionalMetadata ;
+  .
+
+:Readme
+  a okh:Readme ;
+  rdfs:label "Readme of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+  okh:fileFormat "MD" ;
   .
 
 :BoM
