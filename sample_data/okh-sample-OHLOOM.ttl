@@ -56,11 +56,11 @@
   .
 
 :BoM
- a okh:BoM ;
- rdfs:label "Bill of Materials of OHLOOM v1.0.0" ;
- okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
- okh:fileFormat "CSV" ;
- .
+  a okh:BoM ;
+  rdfs:label "Bill of Materials of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
+  okh:fileFormat "CSV" ;
+  .
 
 :ClampRing
   a okh:Part ;
@@ -80,22 +80,22 @@
   .
 
 :ClampRing_source
- a okh:SourceFile ;
- rdfs:label "Source File of Clamp Ring of OHLOOM v1.0.0" ;
- okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.scad> ;
- okh:fileFormat "SCAD" ;
- .
+  a okh:SourceFile ;
+  rdfs:label "Source File of Clamp Ring of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
 
 :ClampRing_export1
- a okh:ExportFile ;
- rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
- okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.stl> ;
- okh:fileFormat "STL" ;
- .
+  a okh:ExportFile ;
+  rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.stl> ;
+  okh:fileFormat "STL" ;
+  .
 
 :ClampRing_export2
- a okh:ExportFile ;
- rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
- okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf> ;
- okh:fileFormat "PDF" ;
- .
+  a okh:ExportFile ;
+  rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf> ;
+  okh:fileFormat "PDF" ;
+  .
