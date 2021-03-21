@@ -109,13 +109,13 @@ okh:BoM
 okh:SourceFile
   a owl:Class ;
   rdfs:label "source file" ;
-  rdfs:subClassOf okh:FileURL ;
+  rdfs:subClassOf okh:File ;
   .
 
 okh:ExportFile
   a owl:Class ;
   rdfs:label "exported source file" ;
-  rdfs:subClassOf okh:FileURL ;
+  rdfs:subClassOf okh:File ;
   .
 
 okh:ComponentReference
@@ -409,7 +409,7 @@ okh:hasBoM
   a owl:ObjectProperty ;
   rdfs:label "has Bill of Materials" ;
   rdfs:comment "links to the corresponding Bill of Materials" ;
-  rdfs:range okh:FileURL ;
+  rdfs:range okh:File ;
   rdfs:domain okh:Module ;
   .
 
