@@ -14,7 +14,6 @@
   a okh:Module ;
   rdfs:label "OHLOOM" ;
   okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
-  okh:okhv "2.0" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
   okh:version "0.10.0" ;
   okh:release <https://gitlab.com/OSEGermany/ohloom/-/tags/ohloom-0.10.0> ;
@@ -24,7 +23,6 @@
   okh:contributorCount 4 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
-# ↑ note that all URLs point to a) the RAW and b) the same commit when the version info in the manifest file was changed
   okh:hasImage :OHLOOM_image ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otlr:OTRL-5 ;
@@ -32,7 +30,7 @@
   okh:cpcPatentClass "D03D 35/00" ;
   okh:tsdcID "ASM-MEC" ;
   okh:hasBoM :BoM ;
-  okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
+  okh:hasManifestFile :ManifestFile ;
   :fabricWidthDim "mm" ;
   :fabricWidth 400 ;
   # that's a custom field not defined in the okh ontology; ↑ still possible
@@ -53,6 +51,14 @@
   a owl:DatatypeProperty ;
   rdfs:label "fabric-width" ;
   rdfs:subPropertyOf okh:functionalMetadata ;
+  .
+
+:ManifestFile
+  a okh:ManifestFile ;
+  rdfs:label "Manifest File of OHLOOM v1.0.0" ;
+  okh:okhv "2.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
+  okh:fileFormat "TOML" ;
   .
 
 :OHLOOM_image
@@ -84,7 +90,7 @@
   okh:image <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
   okh:documentationLanguage "en-GB" ;
   okh:tsdcID "COM-MAN" ;
-  okh:manifestFile <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/okh-ClampRing.json> ;
+  okh:hasManifestFile :ManifestFile ;
   okh:source :ClampRing_source ;
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
   okh:manufacturingProcess "3D printed" ;
