@@ -68,7 +68,7 @@ else
 ```
 if
     "manifest" isempty
-        "web" = okh:repo
+        "web" = okh:forkOf
 else
     shorten the "manifest" URL to a repo URL and use as okh:repo
 ```
