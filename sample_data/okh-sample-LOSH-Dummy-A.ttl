@@ -37,6 +37,13 @@
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
   okh:hasSoftware :Zettlr ;
+  okh:compliesWith :DIN5008 ;
+  .
+
+:DIN5008
+  a okh:Standard ;
+  rdfs:label "DIN 5008:2020-03" ;
+  okh:standardID "DIN 5008:2020-03" ;
   .
 
 :ManifestFile

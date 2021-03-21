@@ -11,12 +11,12 @@
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otlr:     <http://purl.org/oseg/ontologies/TLR> .
 #@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
-#@prefix wdp:     <http://www.wikidata.org/prop/direct/> .
+@prefix wdp:     <http://www.wikidata.org/prop/direct/> .
 #@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
 #@prefix wdtn:    <http://www.wikidata.org/prop/direct-normalized/> .
 #@prefix pq:      <http://www.wikidata.org/prop/qualifier/> .
 #@prefix wdq:     <http://www.wikidata.org/prop/qualifier/> .
-#@prefix wd:      <http://www.wikidata.org/entity/> .
+@prefix wd:      <http://www.wikidata.org/entity/> .
 #@prefix wde:     <http://www.wikidata.org/entity/> .
 #@prefix wdv:     <http://www.wikidata.org/value/> .
 #@prefix wds:     <http://www.wikidata.org/entity/statement/> .
@@ -73,6 +73,13 @@ okh:Software
 okh:Reference
   a owl:Class ;
   rdfs:label "unambiguous reference" ;
+  .
+
+okh:Standard
+  a owl:Class ;
+  rdfs:label "Technical Standard"@en ;
+  rdfs:comment "official standard used in the _design_ (not e.g. DIN SPEC 3105-1)" ;
+  rdfs:subClassOf wd:Q317623 ;
   .
 
 okh:WebsiteURL
@@ -313,12 +320,19 @@ okh:patentClass
  rdfs:domain okh:Module ;
  .
 
-okh:standard
+okh:compliesWith
   a owl:ObjectProperty ;
-  rdfs:label "standard" ;
-  rdfs:comment "official standard used in the _design_ of a Module" ;
-  # FIXME rdfs:subPropertyOf ;
-  rdfs:domain okh:Module ;
+  rdfs:label "complies with a technical standard" ;
+  rdfs:subPropertyOf wdp:P5009 ;
+  rdfs:domain okh:Component ;
+  .
+
+okh:standardID
+  a owl:DatatypeProperty ;
+  rdfs:label "Document Identifier for the technical Standard" ;
+  rdfs:subPropertyOf wdp:P5046 ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Standard ;
   .
 
 okh:function
