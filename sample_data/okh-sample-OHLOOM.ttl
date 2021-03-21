@@ -16,7 +16,6 @@
   okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
   okh:okhv "2.0" ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
-  
   okh:version "0.10.0" ;
   okh:release <https://gitlab.com/OSEGermany/ohloom/-/tags/ohloom-0.10.0> ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
