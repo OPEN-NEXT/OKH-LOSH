@@ -36,6 +36,7 @@
   okh:outerDimension "cube(size = [300,300,300]" ;
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
+  okh:usesModule <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-B/1.0.0#> ;
   okh:hasSoftware :Zettlr ;
   okh:compliesWith :DIN5008 ;
   .

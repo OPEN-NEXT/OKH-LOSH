@@ -363,6 +363,14 @@ okh:hasBoM
   rdfs:domain okh:Module ;
   .
 
+okh:usesModule
+  a owl:ObjectProperty ;
+  rdfs:label "uses Module" ;
+  rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
+  rdfs:range okh:Module , okh:WebsiteURL ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:hasImage
   a owl:ObjectProperty ;
   rdfs:label "has image" ;
