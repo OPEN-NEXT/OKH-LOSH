@@ -1,5 +1,5 @@
 @base             <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/1.0.0#> .
-@prefix okh:      <http://purl.org/oseg/okhv2/> .
+@prefix okh:      <https://github.com/OPEN-NEXT/LOSH/raw/master/osh-metadata.ttl#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otlr:     <http://purl.org/oseg/ontologies/TLR> .
+@prefix otlr:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
 
 :LOSHdummyMOSHA
   a okh:Module ;
