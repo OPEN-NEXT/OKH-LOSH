@@ -16,6 +16,7 @@
   okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
   okh:version "0.10.0" ;
+  # change tag to 1.0.0 in repo when CAB-review is done
   okh:release <https://gitlab.com/OSEGermany/ohloom/-/tags/ohloom-0.10.0> ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
@@ -33,7 +34,7 @@
   okh:hasManifestFile :ManifestFile ;
   :fabricWidthDim "mm" ;
   :fabricWidth 400 ;
-  # that's a custom field not defined in the okh ontology; ↑ still possible
+  # that's a custom field not defined in the okh ontology
   okh:outerDimensionDim "mm" ;
   okh:outerDimension "cube(size = [400,350,150]" ;
   okh:hasManufacturingInstructions :OHLOOM_manufacturingInstructions ;
@@ -57,42 +58,42 @@
   a okh:ManifestFile ;
   rdfs:label "Manifest File of OHLOOM v1.0.0" ;
   okh:okhv "2.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
   okh:fileFormat "TOML" ;
   .
 
 :OHLOOM_image
   a okh:Image ;
   rdfs:label "Image of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
   okh:fileFormat "JPG" ;
   .
 
 :Readme
   a okh:Readme ;
   rdfs:label "Readme of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
   okh:fileFormat "MD" ;
   .
 
 :OHLOOM_manufacturingInstructions
   a okh:ManufacturingInstructions ;
   rdfs:label "Manufacturing Instructions of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
   okh:fileFormat "MD" ;
   .
 
 :UserManual
   a okh:UserManual ;
   rdfs:label "User Manual of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/UserGuide.md> ;
   okh:fileFormat "MD" ;
   .
 
 :BoM
   a okh:BoM ;
   rdfs:label "Bill of Materials of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
   okh:fileFormat "CSV" ;
   .
 
@@ -116,28 +117,27 @@
 :ClampRing_image
   a okh:Image ;
   rdfs:label "Image of Clamp Ring of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_2.jpg> ;
   okh:fileFormat "JPG" ;
   .
-
 
 :ClampRing_source
   a okh:SourceFile ;
   rdfs:label "Source File of Clamp Ring of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.scad> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.scad> ;
   okh:fileFormat "SCAD" ;
   .
 
 :ClampRing_export1
   a okh:ExportFile ;
   rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.stl> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.stl> ;
   okh:fileFormat "STL" ;
   .
 
 :ClampRing_export2
   a okh:ExportFile ;
   rdfs:label "Export File of Clamp Ring of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany//-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf> ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf> ;
   okh:fileFormat "PDF" ;
   .
