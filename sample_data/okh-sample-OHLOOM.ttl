@@ -25,7 +25,7 @@
   okh:contributorCount 4 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
-  okh:hasImage :OHLOOM_image ;
+  okh:hasImage :Image ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otlr:OTRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
@@ -38,7 +38,7 @@
   # that's a custom field not defined in the okh ontology
   okh:outerDimensionDim "mm" ;
   okh:outerDimension "cube(size = [400,350,150]" ;
-  okh:hasManufacturingInstructions :OHLOOM_manufacturingInstructions ;
+  okh:hasManufacturingInstructions :ManufacturingInstructions ;
   okh:hasUserManual :UserManual ;
   okh:hasComponent :ClampRing ;
   .
