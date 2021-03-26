@@ -63,7 +63,7 @@
   okh:fileFormat "TOML" ;
   .
 
-:OHLOOM_image
+:Image
   a okh:Image ;
   rdfs:label "Image of OHLOOM v1.0.0" ;
   okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/User_Guide/User_Guide.jpg> ;
@@ -73,11 +73,16 @@
 :Readme
   a okh:Readme ;
   rdfs:label "Readme of OHLOOM v1.0.0" ;
-  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+  okh:permaURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/README.md> ;
+  # snap
+  okh:originalURL <https://gitlab.com/OSEGermany/ohloom/-/raw/master/README.md> ;
+  # ↑ default repo URL (as resolved from the TOML)
   okh:fileFormat "MD" ;
+  okh:lastSeen "never" ;
+  # ↑ but usually a timestamp
   .
 
-:OHLOOM_manufacturingInstructions
+:ManufacturingInstructions
   a okh:ManufacturingInstructions ;
   rdfs:label "Manufacturing Instructions of OHLOOM v1.0.0" ;
   okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/AssemblyGuide.md> ;
