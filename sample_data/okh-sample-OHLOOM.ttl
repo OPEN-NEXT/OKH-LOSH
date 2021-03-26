@@ -78,8 +78,8 @@
   okh:originalURL <https://gitlab.com/OSEGermany/ohloom/-/raw/master/README.md> ;
   # ↑ default repo URL (as resolved from the TOML)
   okh:fileFormat "MD" ;
-  okh:lastRequested "Jan 27, 2021 6:06pm GMT+0100"
-  okh:lastSeen "Jan 27, 2021 6:06pm GMT+0100" ;
+  okh:lastRequested "2021-03-26T15:15:46+00:00"
+  okh:lastSeen "2021-03-26T15:15:46+00:00" ;
   # ↑ or omitted when never seen
   .
 
