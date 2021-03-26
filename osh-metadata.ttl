@@ -10,13 +10,14 @@
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otlr:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 #@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
-@prefix wdp:     <http://www.wikidata.org/prop/direct/> .
+@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
 #@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
 #@prefix wdtn:    <http://www.wikidata.org/prop/direct-normalized/> .
 #@prefix pq:      <http://www.wikidata.org/prop/qualifier/> .
 #@prefix wdq:     <http://www.wikidata.org/prop/qualifier/> .
-@prefix wd:      <http://www.wikidata.org/entity/> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
 #@prefix wde:     <http://www.wikidata.org/entity/> .
 #@prefix wdv:     <http://www.wikidata.org/value/> .
 #@prefix wds:     <http://www.wikidata.org/entity/statement/> .
@@ -502,14 +503,14 @@ okh:hasManufacturingInstructions
   rdfs:domain okh:Module, okh:Part ;
   .
 
-okh:tsdcID
+okh:relatedTsDC
   a owl:ObjectProperty ;
-  rdfs:label "TsDC-ID" ;
-  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1" ;
+  rdfs:label "related TsDC" ;
+  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
   # FIXME rdfs:subPropertyOf ;
-  rdfs:domain okh:Component ;
+  rdfs:range tsdc:OHTsDC ;
+  rdfs:domain okh:Component
   .
-
 
 # source, export
 
