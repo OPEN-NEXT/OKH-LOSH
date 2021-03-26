@@ -11,7 +11,7 @@ documentation-language = "en-GB"
 open-technology-readiness-level = "OTLR-5"
 function = "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic pieces for the most part. It is simple to make and operate."
 cpc-patent-class = "D03D 35/00"
-tsdc-id = "ASM-MEC"
+tsdc = "MEC"
 bom = "sBoM.csv"
 manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
@@ -23,13 +23,12 @@ outer-dimension = "cube(size = [400,350,150]"
 [[part]]
 name = "Clamp Ring"
 image = "/Documentation/Assembly_Guide/Parts_Print_2.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/ClampRing/ClampRing.scad"
 export = [
   "/3DParts/ClampRing/ClampRing.pdf",
   "/3DParts/ClampRing/ClampRing.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=30, r=28)"
@@ -37,23 +36,21 @@ outer-dimension = "cylinder(h=30, r=28)"
 [[part]]
 name= "CombModul"
 image = "Documentation/Assembly_Guide/Parts_Print_3.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/CombModul/CombModul.scad"
 export = [
   "/3DParts/CombModul/CombModul.pdf",
   "/3DParts/CombModul/CombModul.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [120,100,3]"
 
 [[part]]
 name = "PoleBase"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [125,110,100]"
@@ -61,13 +58,12 @@ outer-dimension = "cube(size = [125,110,100]"
 [[part]]
 name = "RatchetPawl"
 image = "Documentation/Assembly_Guide/Parts_Print_4.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/RatchetPawl/RatchetPawl.scad"
 export = [
   "/3DParts/RatchetPawl/RatchetPawl.pdf",
   "/3DParts/RatchetPawl/RatchetPawl.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [130,20,20]"
@@ -75,13 +71,12 @@ outer-dimension = "cube(size = [130,20,20]"
 [[part]]
 name = "Ratchet Wheel"
 image = "Documentation/Assembly_Guide/Parts_Print_1.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/RatchetWheel/RatchetWheel.scad"
 export = [
   "/3DParts/RatchetWheel/RatchetWheel.pdf",
   "/3DParts/RatchetWheel/RatchetWheel.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=45, r=45)"
@@ -89,13 +84,12 @@ outer-dimension = "cylinder(h=45, r=45)"
 [[part]]
 name = "ScrewSockets"
 image = "/Documentation/Assembly_Guide/Parts_Print_6.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = [
   "/3DParts/ScrewSockets/ScrewSockets.pdf",
   "/3DParts/ScrewSockets/ScrewSockets.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=12, r=7)"
@@ -103,10 +97,9 @@ outer-dimension = "cylinder(h=12, r=7)"
 [[part]]
 name= "ScrewSockets for ScrewHead"
 image = "/Documentation/Assembly_Guide/Parts_Print_5.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=12, r=7)"
@@ -114,13 +107,12 @@ outer-dimension = "cylinder(h=12, r=7)"
 [[part]]
 name= "Warpclothbeam 1"
 image = "Documentation/Assembly_Guide/Parts_Print_7.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/WarpClothBeam/Warpclothbeam_P1.scad"
 export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_P1.pdf",
   "/3DParts/WarpClothBeam/Warpclothbeam_1.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=162, r=22.5)"
@@ -128,13 +120,12 @@ outer-dimension = "cylinder(h=162, r=22.5)"
 [[part]]
 name= "Warpclothbeam 2"
 image = "Documentation/Assembly_Guide/Parts_Print_7.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/WarpClothBeam/Warpclothbeam_P2.scad"
 export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_P2.pdf",
   "/3DParts/WarpClothBeam/Warpclothbeam_2.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=163, r=22.5)"
@@ -142,13 +133,12 @@ outer-dimension = "cylinder(h=163, r=22.5)"
 [[part]]
 name= "Warpclothbeam 3"
 image = "Documentation/Assembly_Guide/Parts_Print_7.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/WarpClothBeam/Warpclothbeam_P3.scad"
 export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_P3.pdf",
   "/3DParts/WarpClothBeam/Warpclothbeam_3.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=163, r=22.5)"
@@ -156,13 +146,12 @@ outer-dimension = "cylinder(h=163, r=22.5)"
 [[part]]
 name= "Warpclothbeam 4"
 image = "Documentation/Assembly_Guide/Parts_Print_7.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "/3DParts/WarpClothBeam/Warpclothbeam_P4.scad"
 export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_P4.pdf",
   "/3DParts/WarpClothBeam/Warpclothbeam_4.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=162, r=22.5)"
@@ -170,13 +159,15 @@ outer-dimension = "cylinder(h=162, r=22.5)"
 [[part]]
 name = "CombHolder"
 image = "/Documentation/Assembly_Guide/Parts_CNC_1.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/CombHolder/CombHolder.scad"
 export = [
   "/WoodParts/CombHolder/CombHolder.pdf",
   "/WoodParts/CombHolder/CombHolder.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [118,60,18]"
@@ -184,13 +175,15 @@ outer-dimension = "cube(size = [118,60,18]"
 [[part]]
 name = "CrossBeam"
 image = "/Documentation/Assembly_Guide/Parts_CNC_3.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/CrossBeam/CrossBeam.scad"
 export = [
   "/WoodParts/CrossBeam/CrossBeam.pdf",
   "/WoodParts/CrossBeam/CrossBeam.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [572,100,20]"
@@ -198,13 +191,15 @@ outer-dimension = "cube(size = [572,100,20]"
 [[part]]
 name = "Shuttle"
 image = "/Documentation/Assembly_Guide/Parts_CNC_6.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/Shuttle/Shuttle.scad"
 export = [
   "/WoodParts/Shuttle/Shuttle.pdf",
   "/WoodParts/Shuttle/Shuttle.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [497,45,6]"
@@ -212,13 +207,15 @@ outer-dimension = "cube(size = [497,45,6]"
 [[part]]
 name = "SideFrame"
 image = "/Documentation/Assembly_Guide/Parts_CNC_2.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/SideFrame/SideFrame.scad"
 export = [
   "/WoodParts/SideFrame/SideFrame.pdf",
   "/WoodParts/SideFrame/SideFrame.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [580,140,18]"
@@ -226,13 +223,15 @@ outer-dimension = "cube(size = [580,140,18]"
 [[part]]
 name = "SlotBeam"
 image = "/Documentation/Assembly_Guide/Parts_CNC_4.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/SlotBeam/SlotBeam.scad"
 export = [
   "/WoodParts/SlotBeam/SlotBeam.pdf",
   "/WoodParts/SlotBeam/SlotBeam.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [566,24,22]"
@@ -240,13 +239,15 @@ outer-dimension = "cube(size = [566,24,22]"
 [[part]]
 name = "StringStick"
 image = "/Documentation/Assembly_Guide/Parts_CNC_5.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/StringStick/StringStick.scad"
 export = [
   "/WoodParts/StringStick/StringStick.pdf",
   "/WoodParts/StringStick/StringStick.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [560,22,6]"
@@ -254,13 +255,15 @@ outer-dimension = "cube(size = [560,22,6]"
 [[part]]
 name = "WarpClothBeam"
 image = "/Documentation/Assembly_Guide/Parts_Other_1.jpg"
-tsdc-id = "COM-MAN"
+tsdc = [
+  "CNC",
+  "COT"
+]
 source = "/WoodParts/WarpClothBeam_NoCNC/WarpClothBeam_Wood_NoCNC.scad"
 export = [
   "/WoodParts/WarpClothBeam_NoCNC/WarpClothBeam_Shaft.pdf",
   "/WoodParts/WarpClothBeam_NoCNC/WarpClothBeam_Wood_NoCNC.stl"
 ]
-process = "machined"
 material = "wood"
 outer-dimension-dim = "mm"
 outer-dimension = "cylinder(h=710, r=17.5)"

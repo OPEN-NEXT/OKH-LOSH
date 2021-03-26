@@ -9,13 +9,14 @@
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otlr:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 
 :LOSHdummyMOSHA
   a okh:Module ;
   rdfs:label "LOSH Dummy MOSH-A" ;
   okh:versionOf <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/> ;
   okh:repo <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/tree/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/> ;
-  okh:version "1.0.1" ;
+  okh:version "1.0.2" ;
   okh:release <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/releases/tag/v1.0.1> ;
   okh:spdxLicense "CERN-OHL-S-2.0" ;
   okh:licensor "Martin Häuer" ;
@@ -28,7 +29,7 @@
   okh:technologyReadinessLevel otlr:OTRL-5 ;
   okh:function "Doesn't do much, yet." ;
   okh:cpcPatentClass "D03D 35/00" ;
-  okh:tsdcID "ASM-MEC" ;
+  okh:relatedTsDC tsdc:MEC ;
   okh:hasBoM :BoM ;
   okh:hasManifestFile :ManifestFile ;
   :rpm 666 ;
@@ -90,7 +91,7 @@
   okh:licensor "Martin Häuer" ;
   okh:image :ClampRing_image ;
   okh:documentationLanguage "en-GB" ;
-  okh:tsdcID "COM-MAN" ;
+  okh:relatedTsDC tsdc:3DP ;
   okh:hasManifestFile :ManifestFile ;
   okh:source :ClampRing_source ;
   okh:export :ClampRing_export1 , :ClampRing_export2 ;

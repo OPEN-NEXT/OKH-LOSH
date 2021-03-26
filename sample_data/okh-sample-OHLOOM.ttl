@@ -9,6 +9,7 @@
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otlr:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 
 :OHLOOM
   a okh:Module ;
@@ -29,7 +30,7 @@
   okh:technologyReadinessLevel otlr:OTRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:cpcPatentClass "D03D 35/00" ;
-  okh:tsdcID "ASM-MEC" ;
+  okh:relatedTsDC tsdc:MEC ;
   okh:hasBoM :BoM ;
   okh:hasManifestFile :ManifestFile ;
   :fabricWidthDim "mm" ;
@@ -104,7 +105,7 @@
   okh:licensor "Jens Meisner" ;
   okh:image :ClampRing_image ;
   okh:documentationLanguage "en-GB" ;
-  okh:tsdcID "COM-MAN" ;
+  okh:relatedTsDC tsdc:3DP ;
   okh:hasManifestFile :ManifestFile ;
   okh:source :ClampRing_source ;
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
