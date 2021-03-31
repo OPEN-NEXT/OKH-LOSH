@@ -22,13 +22,12 @@ outer-dimension = "cube(size = [400,350,150]"
 [[part]]
 name = "your-awesome-part"
 image = "xxx.jpg"
-tsdc-id = "COM-MAN"
+tsdc = "3DP"
 source = "xxx.scad"
 export = [
   "xxx.pdf",
   "xxx.stl"
 ]
-process = "3D printed"
 material = "PLA"
 outer-dimension-dim = "mm"
 outer-dimension = "cube(size = [120,100,3]"
