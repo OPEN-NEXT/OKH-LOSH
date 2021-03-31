@@ -295,6 +295,15 @@ okh:technologyReadinessLevel
   rdfs:domain okh:Module ;
   .
 
+okh:documentationReadinessLevel
+  a owl:ObjectProperty ;
+  rdfs:label "Documentation Readiness Level (DLR)" ;
+  rdfs:comment "…using the ODLR definitions" ;
+  rdfs:subPropertyOf otlr:ODLR ;
+  owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:attestation
   a owl:ObjectProperty ;
   rdfs:label "attestation" ;
