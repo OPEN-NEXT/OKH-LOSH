@@ -469,6 +469,7 @@ okh:fileFormat
 okh:timestamp
   a owl:ObjectProperty ;
   rdfs:label "timestamp" ;
+  rdfs:comment "following ISO 8601" ;
 # FixMe  rdfs:subPropertyOf
   rdfs:domain okh:Module ;
   .
