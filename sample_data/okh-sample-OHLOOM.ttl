@@ -8,7 +8,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otlr:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
 @prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 
 :OHLOOM
@@ -27,7 +27,7 @@
   okh:hasReadme :Readme ;
   okh:hasImage :Image ;
   okh:documentationLanguage "en-GB" ;
-  okh:technologyReadinessLevel otlr:OTRL-5 ;
+  okh:technologyReadinessLevel otrl:OTRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:cpcPatentClass "D03D 35/00" ;
   okh:relatedTsDC tsdc:MEC ;
