@@ -61,7 +61,8 @@
 # the technology readiness levels (TLR):
 
 :OTRL-1
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
   rdfs:comment "Basic principles observed"@en ;
   :hardwareDescription "Knowledge generated underpinning hardware technology concepts/applications."@en ;
@@ -70,7 +71,8 @@
   .
 
 :OTRL-2
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
   rdfs:comment "Technology concept formulated"@en ;
   :hardwareDescription "Invention begins, practical application is identified but is speculative, no experimental proof (e.g. a physical prototype) or detailed analysis is available yet to support the conjecture."@en ;
@@ -79,7 +81,8 @@
   .
 
 :OTRL-3
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
   rdfs:comment "Experimental proof of concept"@en ;
   :hardwareDescription "Key functions of the concept tested & proven in a controlled environment (e.g. laboratory)"@en ;
@@ -88,7 +91,8 @@
   .
 
 :OTRL-4
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
   rdfs:comment "Technology validated in lab"@en ;
   :hardwareDescription "A low fidelity application (prototype) was built and operated in a controlled environment (e.g. laboratory) demonstrating basic functionality and critical test environments; performance predictions are formulated towards the final operating environment."@en ;
@@ -97,7 +101,8 @@
   .
 
 :OTRL-5
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Technology validated in relevant environment"@en ;
   OTRL:hardwareDescription "A medium fidelity system/component
@@ -113,7 +118,8 @@ made for subsequent development phases."@en ;
   .
 
 :OTRL-6
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Technology demonstrated in relevant environment"@en ;
   :hardwareDescription "A high fidelity system/component
@@ -127,7 +133,8 @@ conditions."@en ;
   .
 
 :OTRL-7
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-7"@en ;
   rdfs:comment "System prototype demonstration in operational environment"@en ;
   OTRL:hardwareDescription "A high fidelity engineering unit that
@@ -141,7 +148,8 @@ platform (ground, airborne, or space)."@en ;
   .
 
 :OTRL-8
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-8"@en ;
   rdfs:comment "System complete and qualified"@en ;
   OTRL:hardwareDescription "Hardware, in its final version, has been built and operated in the intended operational environment and proven its performance. All documentation has been completed."@en ;
@@ -155,7 +163,8 @@ operational scenarios. Documentatoin."@en ;
   .
 
 :OTRL-9
-  a OTRL:OTRL ;
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-9"@en ;
   rdfs:comment "Actual system proven in operational environment (e.g. production by multiple stakeholders)"@en ;
   OTRL:hardwareDescription "Hardware has been _independently_ built and operated in the final operational environment and proven its performance."@en ;
