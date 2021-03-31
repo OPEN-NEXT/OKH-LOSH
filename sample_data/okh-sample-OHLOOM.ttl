@@ -28,6 +28,7 @@
   okh:hasImage :Image ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otrl:OTRL-5 ;
+  okh:documentationReadinessLevel otrl:ODRL-5 ;
   okh:function "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic parts for the most part. It is simple to make and operate." ;
   okh:cpcPatentClass "D03D 35/00" ;
   okh:relatedTsDC tsdc:MEC ;
