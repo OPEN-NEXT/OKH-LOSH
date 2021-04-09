@@ -15,7 +15,10 @@
 
 ## welded assemblies (WEL)
 
-- …[copy from TsDC]
+- welding process (ID from ISO 4063)
+- quality level (according to ISO 10042)
+- working positions involved (according to ISO 6947)
+- filler materials involved (ID from e.g. ISO 544, ISO 2560, ISO 3581)
 
 ## PCBs (PCB)
 
