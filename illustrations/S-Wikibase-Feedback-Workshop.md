@@ -6,7 +6,7 @@ slideOptions:
 slideShow: https://md.opensourceecology.de/p/oc1FnxPaf#/
 ...
 
-These slides for the EU-H2020 Project "OPEN_NEXT" (no. 869984)
+These slides for the EU-H2020 Project "[OPEN_NEXT](https://opennext.eu/)" (no. 869984)
 are published under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 Find the source [here](https://github.com/OPEN-NEXT/LOSH/blob/master/illustrations/S-Wikibase-Feedback-Workshop.md).
@@ -42,12 +42,12 @@ using
 - <span>…from platform APIs<!-- .element: class="fragment" data-fragment-index="2" --></span>
   <span>_GitHub/GitLab, Wikifactory, OSHWA cert. list, Appropedia_<!-- .element: class="fragment" data-fragment-index="2" --></span>
 
-<span>=<!-- .element: class="fragment" data-fragment-index="3" --></span>
+=
 
 - <span>data sovereignty for projects/platforms<!-- .element: class="fragment" data-fragment-index="3" --></span>
 - <span>no actual 'onboarding'<!-- .element: class="fragment" data-fragment-index="4" --></span>
-  <span>just follow the spec and be found<!-- .element: class="fragment" data-fragment-index="5" --></span>
-  <span>(incl. automatic updates)<!-- .element: class="fragment" data-fragment-index="6" --></span>
+  <span>just follow the spec and be found<!-- .element: class="fragment" data-fragment-index="4" --></span>
+  <span>(incl. automatic updates)<!-- .element: class="fragment" data-fragment-index="4" --></span>
 
 ---
 
@@ -55,7 +55,8 @@ using
 
 - no test deployment yet
 - will be accessible on [losh.ose-germany.de](losh.ose-germany.de)
-- see live status on [https://github.com/OPEN-NEXT/LOSH/](https://github.com/OPEN-NEXT/LOSH/)
+- see live status on
+    [github.com/OPEN-NEXT/LOSH/](https://github.com/OPEN-NEXT/LOSH/)
 
 ---
 
