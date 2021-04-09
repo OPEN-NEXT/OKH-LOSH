@@ -1,19 +1,19 @@
 # Specification for production metadata
 
-## mechanical parts (COM-MAN)
+## mechanical parts (PRT)
 
 - manufacturing process (multiple)
 - material (as specific as reasonable)
 - outer dimensions (using openSCAD primitives)
 - smallest tolerance class (according to ISO 286)
 
-## mechanical assemblies (ASM-MEC)
+## mechanical assemblies (MEC)
 
 - outer dimensions (using openSCAD primitives)
 - smallest tolerance class (according to ISO 286)
 - …[copy from TsDC]
 
-## welded assemblies (ASM-WEL)
+## welded assemblies (WEL)
 
 - …[copy from TsDC]
 
