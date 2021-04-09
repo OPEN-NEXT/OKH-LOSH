@@ -15,6 +15,7 @@
 
 ## welded assemblies (WEL)
 
+- outer dimensions (using openSCAD primitives)
 - welding process (ID from ISO 4063)
 - quality level (according to ISO 10042)
 - working positions involved (according to ISO 6947)
