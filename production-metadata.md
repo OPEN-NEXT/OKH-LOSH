@@ -5,17 +5,21 @@
 - manufacturing process (multiple)
 - material (as specific as reasonable)
 - outer dimensions (using openSCAD primitives)
+- mass
 - smallest tolerance class (according to ISO 286)
 
 ## mechanical assemblies (MEC)
 
 - outer dimensions (using openSCAD primitives)
+- mass
 - smallest tolerance class (according to ISO 286)
-- …[copy from TsDC]
+- special tools involved
+- auxiliary material involved
 
 ## welded assemblies (WEL)
 
 - outer dimensions (using openSCAD primitives)
+- mass
 - welding process (ID from ISO 4063)
 - quality level (according to ISO 10042)
 - working positions involved (according to ISO 6947)
