@@ -1,4 +1,4 @@
-@base             <https://github.com/OPEN-NEXT/LOSH/raw/master/osh-metadata.ttl#> .
+@base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -8,20 +8,6 @@
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
-@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
-@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
-#@prefix wdt:     <http://www.wikidata.org/prop/direct/> .
-@prefix wdp:      <http://www.wikidata.org/prop/direct/> .
-#@prefix psv:     <http://www.wikidata.org/prop/statement/value/> .
-#@prefix wdtn:    <http://www.wikidata.org/prop/direct-normalized/> .
-#@prefix pq:      <http://www.wikidata.org/prop/qualifier/> .
-#@prefix wdq:     <http://www.wikidata.org/prop/qualifier/> .
-@prefix wd:       <http://www.wikidata.org/entity/> .
-#@prefix wde:     <http://www.wikidata.org/entity/> .
-#@prefix wdv:     <http://www.wikidata.org/value/> .
-#@prefix wds:     <http://www.wikidata.org/entity/statement/> .
-
 
 <>
   a owl:Ontology ;
