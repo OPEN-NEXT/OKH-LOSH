@@ -88,13 +88,13 @@ okh:function = "description" + "intended-use" + "health-safety-notice"
 ```
 if
     "made-independently" = true
-        okh:technologyReadinessLevel = otlr:OTLR-5
+        okh:technologyReadinessLevel = otrl:OTRL-5
 elseif
     "made" = true
-        okh:technologyReadinessLevel = otlr:OTLR-4
+        okh:technologyReadinessLevel = otrl:OTRL-4
 elseif
     "development-stage" = "prototype"
-        okh:technologyReadinessLevel = otlr:OTLR-4
+        okh:technologyReadinessLevel = otrl:OTRL-4
 ```
 
 These OKHv1 fields can be included as [custom keys](#custom-keys) regardless of how they were processed here.
