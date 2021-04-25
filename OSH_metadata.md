@@ -38,7 +38,8 @@ _This_ draft shall support the following user groups:
      - developer files (sources only)
      - full package (export + sources)
 2. manufacturers / service providers
-   - find OSH ready for decentralised (mass) production, maintenance and service provision
+   - find OSH ready for decentralised (mass) production,
+     maintenance and service provision
 3. researchers
 
 ### General requirements
@@ -48,12 +49,20 @@ _This_ draft shall support the following user groups:
 
 ## Basic structure
 
-- Information is provided via platform APIs. The crawler will call these APIs and collect the data in JSON files.
-  - in case of GitHub/GitLab some information is provided in the API, some shall be provided in manually created [manifest files](#manifest-file), see [GitHub-Table](#github) for details
-  - those manifest files can be searched via the GitHub-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
-- The crawler's JSON files are translated into RDF and then into a Wikibase-specific JSON format, which is submitted it to the Wikibase-API. The RDF can be used to load content into other knowledge bases.
+- Information is provided via platform APIs.
+  The crawler will call these APIs and collect the data in JSON files.
+  - in case of GitHub/GitLab some information is provided in the API,
+    some shall be provided in manually created [manifest files](#manifest-file),
+    see [GitHub-Table](#github) for details
+  - those manifest files can be searched via the GitHub-API
+    (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
+- The crawler's JSON files are translated into RDF
+  and then into a Wikibase-specific JSON format,
+  which is submitted it to the Wikibase-API.
+  The RDF can be used to load content into other knowledge bases.
 - a MOSH is represented by its manifest file, linking to a sBoM
-  - the sBoM refrences all components of this MOSH: included POSHs, standard and proprietary components
+  - the sBoM refrences all components of this MOSH: included POSHs,
+    standard and proprietary components
 
 So a MOSH contains:
 
@@ -92,17 +101,23 @@ We may allow more file formats in the future.
 **NOTE 1 to entry:**
 One of the most important fields is the `version`.
 The crawler will _only check for new versions_ when crawling is performed.
-We rely on manual changes in the manifest file to keep our knowledge base clean from 'work on progress'.
-So whenever you make a new release or think those changes in your documentation are worth an update on Wikibase
+We rely on manual changes in the manifest file to keep our knowledge base clean
+from 'work on progress'.
+So whenever you make a new release
+or think those changes in your documentation are worth an update on Wikibase
 → **update the version in the manifest file.**\
 Otherwise, no changes will be synched.\
 **This applies for both, MOSH _and_ POSH files.**
 
 **NOTE 2 to entry:**
-When the MOSH version is updated, the crawler starts building connections between the MOSH and corresponding POSH files.
-If a POSH file version of e.g. MOSH v1.1.0 is the same as in e.g. MOSH v1.0.0, the crawler will think that this POSH is the same as in the earlier version of this MOSH.
+When the MOSH version is updated,
+the crawler starts building connections between the MOSH and corresponding POSH files.
+If a POSH file version of e.g. MOSH v1.1.0 is the same as in e.g. MOSH v1.0.0,
+the crawler will think that this POSH is the same
+as in the earlier version of this MOSH.
 Hence, it will just connect the old POSH to the newer MOSH version.
-As a result we get sort of a changelog and people will see which parts changed and which remained as they were.
+As a result we get sort of a changelog
+and people will see which parts changed and which remained as they were.
 
 Background:\
 The crawler will take this metadata as basic input, add additional information
@@ -113,11 +128,14 @@ interpret it.
 
 ##### OSH Module (MOSH)
 
-Which is an **assembly of components (and subassemblies) with clear input, output and interfaces that fully complies with DIN SPEC 3105-1 and this metadata standard**.
+Which is an **assembly of components (and subassemblies) with clear input,
+output and interfaces that fully complies with DIN SPEC 3105-1
+and this metadata standard**.
 
 - (and thus can be used independently from the rest of the original machine as
   far as required inputs and interfaces are respected);
-- metadata shall represent functionality and "position inside the OSH ecosystem" (→ BoM = link to other modules)
+- metadata shall represent functionality and "position inside the OSH ecosystem"
+  (→ BoM = link to other modules)
 
 **A MOSH file:**
 
@@ -130,14 +148,16 @@ Which is an **assembly of components (and subassemblies) with clear input, outpu
 
 ##### Piece of OSH (POSH)
 
-Which is a **component or assembly that fully complies with DIN SPEC 3105-1 and this metadata standard**.
+Which is a **component or assembly that fully complies with DIN SPEC 3105-1
+and this metadata standard**.
 
 - metadata shall enable decentralised production, modification, operation and maintenance
 - …and facilitate 'packaging' (=find the files you actually need)
 
 **A POSH:**
 
-is located in an individual folder that only includes data related to this POSH, specifically source & export files.
+is located in an individual folder that only includes data related to this POSH,
+specifically source & export files.
 
 This folder is linked in the sBoM.
 
@@ -150,7 +170,8 @@ Which is a **component or assembly that is officially standardised**.
 
 ##### Purchased Component (BUY)
 
-Which is a **component or assembly that is neither officially standardised nor fully compliant with DIN SPEC 3105-1 and hence just bought**.
+Which is a **component or assembly that is neither officially standardised
+nor fully compliant with DIN SPEC 3105-1 and hence just bought**.
 
 **Metadata:**
 
@@ -162,16 +183,20 @@ Which is a **component or assembly that is neither officially standardised nor f
 **Intro:**
 
 - meant to be easy to read, crawl and use
-- references to all parts and files necessary to build the [OSH-Module](#osh-module) following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
+- references to all parts and files necessary to build the [OSH-Module](#osh-module)
+  following [TsDC](https://gitlab.com/OSEGermany/oh-tsdc/)-requirements
   - column `Reference` includes single entries only
-- subassemblies are _not_ represented as individual modules, but included via structured pos. numbers
+- subassemblies are _not_ represented as individual modules,
+  but included via structured pos. numbers
 
 **Referencing:**
 
 MOSH
 
 - URL to used _release_
-  - if release information is not available (e.g. because it's a messy repository), use any kind of permalink instead e.g. linking to the last commit that was made before you used the design files
+  - if release information is not available (e.g. because it's a messy repository),
+    use any kind of permalink instead e.g. linking to the last commit
+    that was made before you used the design files
 
 POSH
 
@@ -185,7 +210,7 @@ STD
 BUY
 
 - unambiguous reference to purchased part (which can be either URLs or designations)\
-  e.g. "100k, R_0603_1608" for a resistor
+  e.g. "100k, R\_0603\_1608" for a resistor
 
 **Location and Naming Convention:**
 
@@ -252,7 +277,8 @@ recommended fields:
 
 - manufacturing process
 - material
-- dimension (use [OpenSCAD primitive solids](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids) to describe the shape)
+- dimension (use [OpenSCAD primitive solids](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids)
+  to describe the shape)
 
 #### patent-class
 
@@ -262,8 +288,9 @@ recommended fields:
 
 The following sections define where data for MOSH & POSH will come from.
 
-Note that `API`\  
-a) refers to the corresponding platform API and\  
+Note that `API`
+
+a) refers to the corresponding platform API and
 b) can be overwritten by entries in the corresponding manifest file.
 
 ### GitHub
@@ -316,19 +343,22 @@ As a consequence we also use Wikidata's terms:
 | qualifier | facet |
 | item | instance |
 
-This document in the following will only describe how the ontology works and why it looks as it does.
+This document in the following will only describe how the ontology works
+and why it looks as it does.
 Find the actual ontology [here](osh-metadata.ttl).
 
 ### Competency questions / use cases
 
-**NOTE:** Queries aiming to cover the following use cases are referenced (& linked) in square brackets.
+**NOTE:** Queries aiming to cover the following use cases
+are referenced (& linked) in square brackets.
 
 1. explore this knowledge base [[I]](#i-information-queries)
    - view all information of a MOSH available in this knowledge base [[i01]](#i01-available-information)
    - …
 2. a powerful filter for OSH [[F]](#f-filter-queries)
    - find OSH in a specific field of technology [[f01]](#f01-technology-field)
-   - find OSH for a specific use case (including technical standards, certificates, development stage) [[f02]](#f02-use-case)
+   - find OSH for a specific use case (including technical standards,
+     certificates, development stage) [[f02]](#f02-use-case)
      - Option 1: filter for specific technology fields
      - Option 2: find OSH that does allow proprietary adoptions
    - filter for languages [[f03]](#f03-language)
@@ -340,7 +370,8 @@ Find the actual ontology [here](osh-metadata.ttl).
    - documentation complete according to DIN SPEC 3105-1? [[a02]](#a02-documentation)
    - Are source files editable with the software I already have? [[a03]](#a03-file-formats)
      - Variant 1: list all file formats used for source material
-     - Variant 2: compare a list from Variant 1 with list of supported file formats of selected software calling a sublibrary
+     - Variant 2: compare a list from Variant 1 with list of supported file formats
+       of selected software calling a sublibrary
      - Options for both variants:
        - Option 1: without submodules
        - Option 2: including all submodules
@@ -359,7 +390,7 @@ Find the actual ontology [here](osh-metadata.ttl).
 
 ### component relations
 
-<!--- rework references as they have been removed in [#37](https://github.com/OPEN-NEXT/LOSH/issues/37) --->
+<!--- rework references as they have been removed in [#37](https://github.com/OPEN-NEXT/LOSH/issues/37) -->
 
 parsing the `sBoM`:
 
@@ -368,7 +399,8 @@ parsing the `sBoM`:
 - `quantity`
 - MOSH
   - `componentReference`
-    - pull data from corresponding MOSH file (name, version, … , source & export), again with a `sBoM` etc.
+    - pull data from corresponding MOSH file (name, version, … , source & export),
+      again with a `sBoM` etc.
 - POSH
   - `componentReference`
     - pull data from corresponding POSH (name, source & export)

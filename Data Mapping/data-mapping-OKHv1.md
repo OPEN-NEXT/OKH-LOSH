@@ -4,7 +4,9 @@ title: Ontology Mapping | OKHv1 → OKHv2
 
 # Notes
 
-The Open Know-How Manifest Specification Version 1.0 ([OKHv1](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)) gave a first approach to organise open source hardware via representative metadata.
+The Open Know-How Manifest Specification Version 1.0
+([OKHv1](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1))
+gave a first approach to organise open source hardware via representative metadata.
 
 Some OSH projects already follow this specification:
 
@@ -36,7 +38,7 @@ Source for the mapping: [OKHv1 Section 4.5 ff](https://app.standardsrepo.com/Mak
 "bom" = okh:bom
 ```
 
-##  fields with rules
+## fields with rules
 
 ### archive download
 
@@ -63,7 +65,8 @@ else
 
 ### derivative of
 
-`derivative-of`/`variant-of`, see [4.6.15 f. Derivative of](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`derivative-of`/`variant-of`,
+see [4.6.15 f. Derivative of](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
 
 ```
 if
@@ -83,7 +86,9 @@ okh:function = "description" + "intended-use" + "health-safety-notice"
 
 ### development-stage
 
-`development-stage`/`made`/`made-independently`, see [4.6.11-13 Stage of development - Has been made independently](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`development-stage`/`made`/`made-independently`,
+see [4.6.11-13 Stage of development - Has been made independently](
+https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
 
 ```
 if
@@ -97,7 +102,8 @@ elseif
         okh:technologyReadinessLevel = otrl:OTRL-4
 ```
 
-These OKHv1 fields can be included as [custom keys](#custom-keys) regardless of how they were processed here.
+These OKHv1 fields can be included as [custom keys](#custom-keys)
+regardless of how they were processed here.
 
 ### license
 
@@ -121,7 +127,9 @@ elseif
 else
     error: no license
 ```
-remaining fields (`documentation` and `software` or only `software`) may be included as [custom keys](#custom-keys).
+
+remaining fields (`documentation` and `software` or only `software`)
+may be included as [custom keys](#custom-keys).
 
 ### licensor
 
@@ -169,9 +177,11 @@ elseif
     "standard-title" isnotempty
         "standard-title" = okh:standard
 ```
-The OKHv1 fields can be included as [custom keys](#custom-keys) regardless of how they were processed here.
 
-###  Sub-Thing
+The OKHv1 fields can be included as [custom keys](#custom-keys)
+regardless of how they were processed here.
+
+### Sub-Thing
 
 `sub`, see [4.6.17 Sub-thing](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
 
@@ -195,14 +205,15 @@ The following data fields are either ignored or the same way included as custom 
 - `contact`
 - `contributors`
 - `design-files`/ `schematics`/ `manufacturing-files`, see [4.8.3 ff. Design Files](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
-    - sadly their definition/use is too vague/messy to map them directly onto OKHv2, however these are still valuable fields
+  - sadly their definition/use is too vague/messy to map them directly onto OKHv2,
+    however these are still valuable fields
 - `development-stage`/`made`/`made-independently` (see [field rules](#development-stage))
 - `disposal-instructions`
 - `documentation-is-translation`
 - `keywords`
 - `license` (see [field rules](#license))
-    - (`documentation`)
-    - `sofware`
+  - (`documentation`)
+  - `sofware`
 - `maintenance-instructions`
 - `manifest-author`
 - `manifest-is-translation`

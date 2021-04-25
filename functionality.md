@@ -14,7 +14,8 @@ In LOSH you can
 - free text search (function, name)
 - filter for:
   - patent class (function category) → what sort of problem does it solve?
-  - TsDC-ID (production category) → how to 'compile' the documentation into real hardware?
+  - TsDC-ID (production category)
+    → how to 'compile' the documentation into real hardware?
   - OTRL
     - design
     - documentation
@@ -45,8 +46,9 @@ In LOSH you can
     - …with lots of help from the originators
     - …(almost) independently, great documentation!
     - → count is saved on wikibase
- 
+
 ## Templates & Guides
 
 - select supported platform (see up- and downsides per platform)
-- get a guide displayed/linked, how to upload in your hardware + corresponding templates (TOML) if applicable
+- get a guide displayed/linked,
+  how to upload in your hardware + corresponding templates (TOML) if applicable

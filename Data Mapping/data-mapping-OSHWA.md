@@ -4,13 +4,18 @@ title: Ontology Mapping | OSHWA → OKHv2
 
 # Notes
 
-The Open Source Hardware Association created the [definition of Open Source Hardware](https://www.oshwa.org/definition) and launched [the first certification programme for OSH](https://certification.oshwa.org/).
+The Open Source Hardware Association created the [definition of Open Source Hardware](https://www.oshwa.org/definition)
+and launched [the first certification programme for OSH](https://certification.oshwa.org/).
 
 Certified projects are listed here: <https://certification.oshwa.org/list.html>
 
-Since OSHWA released an [API](https://certificationapi.oshwa.org/) making the metadata of certified projects available for the general public (plus you can apply for certification directly via this API).
+Since OSHWA released an [API](https://certificationapi.oshwa.org/)
+making the metadata of certified projects available for the general public
+(plus you can apply for certification directly via this API).
 
-Source for the mapping: token from [here](https://certificationapi.oshwa.org/) (see [issue 9](https://github.com/OPEN-NEXT/LOSH/issues/9#issuecomment-733939646) for details)
+Source for the mapping: token from [here](https://certificationapi.oshwa.org/)
+(see [issue 9](https://github.com/OPEN-NEXT/LOSH/issues/9#issuecomment-733939646)
+for details)
 
 # Data fields
 
@@ -23,12 +28,12 @@ Source for the mapping: token from [here](https://certificationapi.oshwa.org/) (
 "documentationUrl" = okh:repo
 ```
 
-
-##  fields with rules
+## fields with rules
 
 ### category mapping
 
-At the moment we'll process `primaryType` only (with 3 exceptions). See the following table how OSHWA categories are mapped onto the CPC system.
+At the moment we'll process `primaryType` only (with 3 exceptions).
+See the following table how OSHWA categories are mapped onto the CPC system.
 
 ```
 "unmappable-categories":[
@@ -40,7 +45,7 @@ At the moment we'll process `primaryType` only (with 3 exceptions). See the foll
         "Science",
         "Tool"
         ]
-if 
+if
     "primaryType" in "unmappable-categories"
             use first entry of "additionalType" instead
 elseif
