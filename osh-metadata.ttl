@@ -14,13 +14,11 @@
 # Looking at the definitions for the later two properties:
 # * https://www.w3.org/TR/rdf-schema/#ch_domain
 # * https://www.w3.org/TR/rdf-schema/#ch_range
-# And as described in this StackOverflow answer:
+# and as described in this StackOverflow answer:
 # <https://stackoverflow.com/a/23729566/586229>,
-# multiple objects for thee two properties, mean,
+# multiple objects for the two properties mean,
 # that *all of them* apply, simultaneously, not *one of them*.
-# That is almost never what one would want;
-# one usually wants to use the *one of them* approach,
-# and this is also the case wiht us here.
+# We want the *one of them* meaning though.
 # To get that, in RDF/OWL logic,
 # one needs to use the `owl:unionOf` approach.
 
