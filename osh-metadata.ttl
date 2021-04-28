@@ -9,6 +9,21 @@
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 
+# NOTE:
+# Regarding the use of `owl:unionOf` for `rdfs:domain` and `rdfs:range` in this ontology:
+# Looking at the definitions for the later two properties:
+# * https://www.w3.org/TR/rdf-schema/#ch_domain
+# * https://www.w3.org/TR/rdf-schema/#ch_range
+# And as described in this StackOverflow answer:
+# <https://stackoverflow.com/a/23729566/586229>,
+# multiple objects for thee two properties, mean,
+# that *all of them* apply, simultaneously, not *one of them*.
+# That is almost never what one would want;
+# one usually wants to use the *one of them* approach,
+# and this is also the case wiht us here.
+# To get that, in RDF/OWL logic,
+# one needs to use the `owl:unionOf` approach.
+
 <>
   a owl:Ontology ;
   owl:versionInfo "0.1" ;
@@ -199,7 +214,7 @@ okh:forkOf
  rdfs:label "fork of" ;
  rdfs:subPropertyOf schema:isBasedOn ;
  owl:cardinality 1 ;
- rdfs:domain okh:Module, okh:Part ;
+ rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
  .
 
 okh:versionOf
@@ -219,7 +234,7 @@ okh:documentationLanguage
   denotes the language of the documentation for the component subject '''@en;
  rdfs:subPropertyOf schema:inLanguage ;
  owl:cardinality 1 ;
- rdfs:domain okh:Module, okh:Part ;
+ rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
  .
 
 ## ----- legal -----
@@ -229,7 +244,7 @@ okh:licensor
   rdfs:label "licensor" ;
   rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf schema:copyrightHolder ;
-  rdfs:range schema:Person, schema:Organization ;
+  rdfs:range [ owl:unionOf (schema:Person schema:Organization) ] ;
   rdfs:domain okh:Module ;
   owl:cardinality 1
   .
@@ -363,7 +378,7 @@ okh:usesModule
   a owl:ObjectProperty ;
   rdfs:label "uses Module" ;
   rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
-  rdfs:range okh:Module , okh:WebsiteURL ;
+  rdfs:range [ owl:unionOf (okh:Module okh:WebsiteURL) ] ;
   rdfs:domain okh:Module ;
   .
 
@@ -391,7 +406,7 @@ okh:productionMetadata
   rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;
   rdfs:range schema:StructuredValue ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 ## ----- production metadata -----
@@ -401,7 +416,7 @@ okh:manufacturingProcess
   rdfs:label "manufacturing process" ;
 # fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:material
@@ -418,7 +433,7 @@ okh:outerDimensions
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
 # fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:smallestToleranceClass
@@ -444,7 +459,7 @@ okh:hasManifestFile
   a owl:ObjectProperty ;
   rdfs:label "has manifest file" ;
   rdfs:range okh:ManifestFile ;
-  rdfs:domain okh:Module , okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:fileURL
@@ -474,7 +489,7 @@ okh:source
   rdfs:label "source file" ;
   rdfs:comment "relative link to a source file" ;
   rdfs:range okh:SourceFile ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:export
@@ -482,7 +497,7 @@ okh:export
   rdfs:label "exported source file" ;
   rdfs:comment "URL to a (generated) exported source file" ;
   rdfs:range okh:ExportFile ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:hasUserManual
@@ -496,7 +511,7 @@ okh:hasManufacturingInstructions
   a owl:ObjectProperty ;
   rdfs:label "has Manufacturing Instructions" ;
   rdfs:range okh:ManufacturingInstructions ;
-  rdfs:domain okh:Module, okh:Part ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:relatedTsDC
@@ -521,7 +536,7 @@ okh:release
   a owl:DatatypeProperty ;
   rdfs:label "release" ;
   rdfs:comment "URL to release" ;
-  rdfs:domain okh:Module , okh:Software ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Software) ] ;
   .
 
 okh:installationGuide
@@ -536,13 +551,13 @@ okh:installationGuide
 #okh:rationale
 #  a owl:ObjectProperty ;
 #  rdfs:label "rationale" ;
-#  rdfs:range okh:source, okh:export ;
+#  rdfs:range [ owl:unionOf (okh:source okh:export) ] ;
 #  rdfs:domain okh:Component ;
 #  .
 #
 #okh:design
 #  a owl:ObjectProperty ;
 #  rdfs:label "design file" ;
-#  rdfs:range okh:source, okh:export ;
-#  rdfs:domain okh:Module, okh:Part ;
+#  rdfs:range [ owl:unionOf (okh:source okh:export) ] ;
+#  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
 #  .
