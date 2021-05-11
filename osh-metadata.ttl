@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later	
+
 @base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
