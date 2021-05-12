@@ -30,8 +30,9 @@ Every peace of feedback is valuable and will be read :)
 
 ## [sample] some-technology-category
 
-- metadata 1 (e.g. size)
+- data field 1 (e.g. size)
   - (optional) a comment on data 1 (e.g. rationale behind it or whether multiple entries should be possible)
   - (optional) suggested reasonable
-- metadata 2
-- …
+- data field 2
+  - if you feel that data field is irrelevant/redundant, let people know via such a comment
+
