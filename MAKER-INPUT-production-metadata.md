@@ -3,7 +3,7 @@ title: Specification for Production Metadata
 subtitle: Input from WP4/WP5 Partners
 ...
 
-# Intro
+# Intro & Scope
 
 With this document we aim to pin down the metadata that **makers** need to assess whether or not they can (or want) to produce a certain piece of Open Source Hardware with the tools available (e.g. in their makerspace).\
 More specifically _you_ will write this document.
