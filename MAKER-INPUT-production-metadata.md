@@ -27,6 +27,8 @@ The contributor after you will make changes.
 So to ensure a consistent chain of contributions, please make sure that your input can be understood by someone who also has a maker-background, but has never spoken to you and hence doesn't know what's in your mind besides the details noted down.
 Please be as specific as possible; if you're unsure about certain input/feedback you want to give, just mark it accordingly, so others will know.
 
+If you find data fields or maybe even production categories that don't make sense in the maker context from your perspective, please make a corresponding note there – I'll process this accordingly.
+
 After all willing makers gave their input, I'll tidy up this document and send it back to you (and everyone else), so you can take notice of it's final version.
 If there's anything we forgot, got wrong or any other thoughts you want to share when reading the final version → don't hesitate and let us know in a reply on the mail containing this final version.
 Everything will be documented, nothing will be forgotten.
