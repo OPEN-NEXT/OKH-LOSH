@@ -8,13 +8,15 @@ subtitle: Input from WP4/WP5 Partners
 With this document we aim to pin down the metadata that **makers** need to assess whether or not they can (or want) to produce a certain piece of Open Source Hardware with the tools available (e.g. in their makerspace).\
 More specifically _you_ will write this document.
 But don't worry, you're not alone.
-We contacted numerous people that are willing to share their expertise here.
+We contacted numerous people that are willing to share their expertise here. 
 
 **What we need from you now:** Imagine you have been searching for an open source solution on LOSH to solve a specific problem, and found it! (yeah)\
 Now, only focussing on the aspect of manufacturing it:
 
+- Let us know **your production category of interest** (e.g. 3D-printed) by opening a new section [below](#content)
+- …and the **corresponding data fields (metadata)** that you'd need to assess whether or not it makes sense for you to produce the corresponding part/module yourself or order it somewhere else (e.g. material, size)
+
 Following DIN SPEC 3105-1 we believe that parts of the metadata should apply technology-specific.
-Let us know **your category of interest** (e.g. 3D-printed) by opening a new section [below](#content).
 
 **Please consider:** This is a dynamic document.\
 The contributor after you will make changes.
