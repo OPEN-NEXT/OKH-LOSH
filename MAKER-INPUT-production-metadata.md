@@ -18,6 +18,10 @@ Now, only focussing on the aspect of manufacturing it:
 
 Following DIN SPEC 3105-1 we believe that parts of the metadata should apply technology-specific.
 
+**NOTE:** Metadata are not meant to replace the documentation. It should rather provide you with enough data so that you know whether or not it makes sense to take a deeper look into the documentation.
+
+--
+
 **Please consider:** This is a dynamic document.\
 The contributor after you will make changes.
 So to ensure a consistent chain of contributions, please make sure that your input can be understood by someone who also has a maker-background, but has never spoken to you and hence doesn't know what's in your mind besides the details noted down.
