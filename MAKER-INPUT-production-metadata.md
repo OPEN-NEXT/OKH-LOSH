@@ -45,8 +45,6 @@ Every peace of feedback is valuable and will be read :)
   - if you feel that data field is irrelevant/redundant, let people know via such a comment
 
 
----
-
 ## CNC
 
 - material
