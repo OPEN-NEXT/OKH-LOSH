@@ -63,5 +63,31 @@ Every peace of feedback is valuable and will be read :)
   - resolution [mm] (layer thickness)
 
 
+---
+title: O!N Production Metadata | Ali
+...
+## general
+
+- safety and legal criticality?
+- classifaction badges or levels for overall difficulty to build: e.g. DIY (doable with current desktop 3D printers), professional
+- target group (e.g. Arduino project may be made for researchers and students): children, industrial students, professionals
+- variants/alternatives to the solutions specifically described in the documentation
+
+## 3DP
+
+- +1 to all current fields
+
+## CNC
+
+- +1 to all current fields
+
+## WELDING
+
+## PCB
+
+## SOFTWARE
+
+- hardware requirements (specific board; e.g. software only runs on Ardiuno)
+
 
 
