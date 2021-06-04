@@ -182,23 +182,5 @@ boils down to the history of invention of better tools."\
 – Ernst Knapp: cultural geographer (1808-1896)
 
 
----
-
-## CNC
-
-- material
-- outer dimensions
-- mass
-- smallest tolerance class [according to ISO 286]
-
-## 3DP
-
-- material
-- outer dimensions
-- print parameters
-  - infill [%]
-  - rafts [bool]
-  - supports [bool]
-  - resolution [mm] (layer thickness)
 
 
