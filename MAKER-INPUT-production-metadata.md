@@ -44,3 +44,26 @@ Every peace of feedback is valuable and will be read :)
 - data field 2
   - if you feel that data field is irrelevant/redundant, let people know via such a comment
 
+
+---
+
+## CNC
+
+- material
+- outer dimensions
+- mass
+- smallest tolerance class [according to ISO 286]
+
+## 3DP
+
+- material
+- outer dimensions
+- print parameters
+  - infill [%]
+  - rafts [bool]
+  - supports [bool]
+  - resolution [mm] (layer thickness)
+
+
+
+
