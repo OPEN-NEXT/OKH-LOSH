@@ -61,7 +61,7 @@ Every peace of feedback is valuable and will be read :)
   - infill [%]
   - rafts [bool]
   - supports [bool]
-  - resolution [mm] (layer thickness)
+  - resolution [mm] (layer thickness) 
 
 ## WELDING
 
@@ -79,7 +79,21 @@ Every peace of feedback is valuable and will be read :)
   - material thickness [mm]
 - outer dimensions 
 
+## Assembly
+- tools
+- space
+- duration
+
 # free feedback
+- environmental conditions
+  - humidity
+  - temperature
+  - air circulation
+  - dust
+  - fire resistance
+  - explosion protection
+  - corrosion resistance
+
 
 ## general metadata
 
