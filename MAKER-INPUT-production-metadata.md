@@ -102,14 +102,15 @@ Every peace of feedback is valuable and will be read :)
 - duration
 
 # free feedback
-- environmental conditions
-  - humidity
-  - temperature
-  - air circulation
-  - dust
-  - fire resistance
-  - explosion protection
-  - corrosion resistance
+
+## environmental conditions
+- humidity
+- temperature
+- air circulation
+- dust
+- fire resistance
+- explosion protection
+- corrosion resistance
 
 
 ## general metadata
