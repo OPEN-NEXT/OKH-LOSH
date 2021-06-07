@@ -55,13 +55,26 @@ Every peace of feedback is valuable and will be read :)
 ## 3DP
 
 - material
-  - material quantity [g]
+  - material quantity [g]/  filament diameter and length [mm] [mm]
+  - material specific requirements
+    for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
+    heating bed temperature [°]
+    extruder temperature [°]
+    filament brand
 - outer dimensions
+- expected print duration
 - print parameters
   - infill [%]
   - rafts [bool]
   - supports [bool]
-  - resolution [mm] (layer thickness) 
+  - resolution [mm] (layer thickness)
+  - optional print speed [mm/s]
+  - optional outer perimeter speed [mm/s]
+  - optional infill speed [mm/s]
+  - optional printer speed [mm/s]
+  - optional shell thickness [mm]
+  - optional top/bottom thickness [mm]
+- extruder nozzle diameter [mm]
 
 ## WELDING
 
