@@ -85,9 +85,10 @@ Every peace of feedback is valuable and will be read :)
 - hardware requirements (specific board; e.g. software only runs on Ardiuno)
 - compiler
 - pogramming language
-- connection (speical) cable, flashing hardware
+- connection (special) cable, flashing hardware
 
 ## LASER CUTTER
+
 - material
   - material thickness [mm]
   - required laser power [watt]
@@ -97,6 +98,7 @@ Every peace of feedback is valuable and will be read :)
 - cutting speed [mm/s]
 
 ## Assembly
+
 - tools
 - space
 - duration
@@ -104,6 +106,7 @@ Every peace of feedback is valuable and will be read :)
 # free feedback
 
 ## environmental conditions
+
 - humidity
 - temperature
 - air circulation
