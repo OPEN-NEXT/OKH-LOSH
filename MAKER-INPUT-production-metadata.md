@@ -71,6 +71,11 @@ Every peace of feedback is valuable and will be read :)
 
 - hardware requirements (specific board; e.g. software only runs on Ardiuno)
 
+## LASER CUTTER
+- material
+  - material thickness [mm]
+- outer dimensions 
+
 # free feedback
 
 ## general metadata
