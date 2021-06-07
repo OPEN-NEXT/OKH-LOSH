@@ -90,7 +90,11 @@ Every peace of feedback is valuable and will be read :)
 ## LASER CUTTER
 - material
   - material thickness [mm]
+  - required laser power [watt]
 - outer dimensions 
+- expected duration [s]
+  - cutting length [mm]
+- cutting speed [mm/s]
 
 ## Assembly
 - tools
