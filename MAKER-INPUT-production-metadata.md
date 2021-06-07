@@ -55,6 +55,7 @@ Every peace of feedback is valuable and will be read :)
 ## 3DP
 
 - material
+  - material quantity [g]
 - outer dimensions
 - print parameters
   - infill [%]
