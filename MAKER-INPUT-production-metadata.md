@@ -70,6 +70,9 @@ Every peace of feedback is valuable and will be read :)
 ## SOFTWARE
 
 - hardware requirements (specific board; e.g. software only runs on Ardiuno)
+- compiler
+- pogramming language
+- connection (speical) cable, flashing hardware
 
 ## LASER CUTTER
 - material
