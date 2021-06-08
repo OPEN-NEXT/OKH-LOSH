@@ -90,6 +90,8 @@ Every peace of feedback is valuable and will be read :)
 
 # free feedback
 
+- https://www.hubs.com/ is a great source for productionn metadata (accessible by uploading sample files)
+
 ## Assembly
 
 - tools
@@ -153,7 +155,3 @@ title: O!N Production Metadata | Joost
 - engraving? [bool]
 - depth of engraving [mm]
 - resolution of engraving [mm]
-
-# free feedback
-
-- https://www.hubs.com/ is a great source for metadata (by uploading sample files)
