@@ -42,6 +42,10 @@ Every peace of feedback is valuable and will be read :)
 - outer dimensions
 - mass
 - smallest tolerance class [according to ISO 286]
+- smallest inner radius [mm]
+- sharp inner corners [bool]
+- number of axes [int]
+- number of planes of milling [int]
 
 ## 3DP
 
@@ -117,13 +121,6 @@ Every peace of feedback is valuable and will be read :)
 
 title: O!N Production Metadata | Joost
 ...
-
-## CNC
-
-- smallest inner radius
-- sharp inner corners [bool]
-- number of axes
-- number of planes of milling
 
 ## 3DP
 
