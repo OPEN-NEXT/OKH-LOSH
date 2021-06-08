@@ -36,15 +36,6 @@ Every peace of feedback is valuable and will be read :)
 
 # Content
 
-## [sample] some-technology-category
-
-- data field 1 (e.g. size)
-  - (optional) a comment on data 1 (e.g. rationale behind it or whether multiple entries should be possible)
-  - (optional) suggested reasonable
-- data field 2
-  - if you feel that data field is irrelevant/redundant, let people know via such a comment
-
-
 ## CNC
 
 - material
