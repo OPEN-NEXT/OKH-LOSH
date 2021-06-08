@@ -121,3 +121,48 @@ Every peace of feedback is valuable and will be read :)
 - classifaction badges or levels for overall difficulty to build: e.g. DIY (doable with current desktop 3D printers), professional
 - target group (e.g. Arduino project may be made for researchers and students): children, industrial students, professionals
 - variants/alternatives to the solutions specifically described in the documentation
+
+title: O!N Production Metadata | Joost
+...
+
+## CNC
+
+- smallest inner radius
+- sharp inner corners [bool]
+- number of axes
+- number of planes of milling
+
+## 3DP
+
+- shell thickness & top/bottom thickness → requirement
+- all other optional print parameters are not so important
+- rest is fine
+- add: printing method (FDM, SLA,…)
+
+## WELDING
+
+- material (for each part)
+- material thickness (for each part)
+- welding process
+- (welder) certification required
+- post-treatments of the weld
+
+## Post-Processing
+
+- surface finishing (polishing, coating etc.) ← important
+
+## LASER CUTTING
+
+- required laser power → not necessary
+- expected duration [s] → not necessary
+- cutting length [mm] → not necessary
+- cutting speed [mm/s] → not necessary
+
+- material thickness [mm]
+- engraving? [bool]
+- depth of engraving [mm]
+- resolution of engraving [mm]
+
+# free feedback
+
+- https://www.hubs.com/ is a great source for metadata (by uploading sample files)
