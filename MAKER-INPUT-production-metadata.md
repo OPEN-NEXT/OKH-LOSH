@@ -49,8 +49,9 @@ Every peace of feedback is valuable and will be read :)
 
 ## 3DP
 
+- printing method (FDM, SLA, SLS, MJF, DMLS)
 - material
-  - material quantity [g]/  filament diameter and length [mm] [mm]
+  - material quantity [g]/  filament diameter and length [mm]
   - material specific requirements
     for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
     heating bed temperature [°]
@@ -58,18 +59,24 @@ Every peace of feedback is valuable and will be read :)
     filament brand
 - outer dimensions
 - expected print duration
+  - remove request +1
 - print parameters
   - infill [%]
   - rafts [bool]
   - supports [bool]
   - resolution [mm] (layer thickness)
   - optional print speed [mm/s]
+    - remove request +1
   - optional outer perimeter speed [mm/s]
+    - remove request +1
   - optional infill speed [mm/s]
+    - remove request +1 
   - optional printer speed [mm/s]
+    - remove request +1 
   - optional shell thickness [mm]
   - optional top/bottom thickness [mm]
 - extruder nozzle diameter [mm]
+  - remove request +1 
 
 ## WELDING
 
@@ -127,13 +134,6 @@ Every peace of feedback is valuable and will be read :)
 
 title: O!N Production Metadata | Joost
 ...
-
-## 3DP
-
-- shell thickness & top/bottom thickness → requirement
-- all other optional print parameters are not so important
-- rest is fine
-- add: printing method (FDM, SLA,…)
 
 ## Post-Processing
 
