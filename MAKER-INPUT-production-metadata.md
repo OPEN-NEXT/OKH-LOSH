@@ -73,6 +73,12 @@ Every peace of feedback is valuable and will be read :)
 
 ## WELDING
 
+- material (for each part)
+- material thickness (for each part)
+- welding process
+- (welder) certification(s) required
+- post-treatments of the weld
+
 ## PCB
 
 ## SOFTWARE
@@ -128,14 +134,6 @@ title: O!N Production Metadata | Joost
 - all other optional print parameters are not so important
 - rest is fine
 - add: printing method (FDM, SLA,…)
-
-## WELDING
-
-- material (for each part)
-- material thickness (for each part)
-- welding process
-- (welder) certification required
-- post-treatments of the weld
 
 ## Post-Processing
 
