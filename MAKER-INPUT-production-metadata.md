@@ -97,13 +97,13 @@ Every peace of feedback is valuable and will be read :)
   - cutting length [mm]
 - cutting speed [mm/s]
 
+# free feedback
+
 ## Assembly
 
 - tools
 - space
 - duration
-
-# free feedback
 
 ## environmental conditions
 
@@ -114,7 +114,6 @@ Every peace of feedback is valuable and will be read :)
 - fire resistance
 - explosion protection
 - corrosion resistance
-
 
 ## general metadata
 
