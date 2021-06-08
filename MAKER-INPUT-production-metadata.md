@@ -76,7 +76,7 @@ Every peace of feedback is valuable and will be read :)
   - optional shell thickness [mm]
   - optional top/bottom thickness [mm]
 - extruder nozzle diameter [mm]
-  - remove request +1 
+  - remove request +1
 
 ## WELDING
 
@@ -97,13 +97,20 @@ Every peace of feedback is valuable and will be read :)
 
 ## LASER CUTTER
 
+- engraving? [bool]
+- depth of engraving [mm]
+- resolution of engraving [mm]
 - material
   - material thickness [mm]
   - required laser power [watt]
+    - remove request +1
 - outer dimensions 
 - expected duration [s]
+  - remove request +1
   - cutting length [mm]
+    - remove request +1
 - cutting speed [mm/s]
+  - remove request +1
 
 # free feedback
 
@@ -138,15 +145,3 @@ title: O!N Production Metadata | Joost
 ## Post-Processing
 
 - surface finishing (polishing, coating etc.) ← important
-
-## LASER CUTTING
-
-- required laser power → not necessary
-- expected duration [s] → not necessary
-- cutting length [mm] → not necessary
-- cutting speed [mm/s] → not necessary
-
-- material thickness [mm]
-- engraving? [bool]
-- depth of engraving [mm]
-- resolution of engraving [mm]
