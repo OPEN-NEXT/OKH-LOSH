@@ -38,7 +38,7 @@ Every peace of feedback is valuable and will be read :)
 
 ## CNC
 
-- material
+- material [string]
 - outer dimensions
 - mass
 - smallest tolerance class [according to ISO 286]
@@ -50,13 +50,14 @@ Every peace of feedback is valuable and will be read :)
 ## 3DP
 
 - printing method (FDM, SLA, SLS, MJF, DMLS)
-- material
-  - material quantity [g]/  filament diameter and length [mm]
-  - material specific requirements
-    for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
-    heating bed temperature [°]
-    extruder temperature [°]
-    filament brand
+- material [string]
+- material quantity [g]/  filament diameter and length [mm]
+- material specific requirements
+  for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
+  heating bed temperature [°]
+  extruder temperature [°]
+  filament brand 
+  - remove request +1
 - outer dimensions
 - expected print duration
   - remove request +1
@@ -100,17 +101,22 @@ Every peace of feedback is valuable and will be read :)
 - engraving? [bool]
 - depth of engraving [mm]
 - resolution of engraving [mm]
-- material
-  - material thickness [mm]
-  - required laser power [watt]
-    - remove request +1
+- material [string]
+- material thickness [mm]
+- required laser power [watt]
+  - remove request +1
 - outer dimensions 
 - expected duration [s]
   - remove request +1
-  - cutting length [mm]
-    - remove request +1
+- cutting length [mm]
+  - remove request +1
 - cutting speed [mm/s]
   - remove request +1
+
+## Post-Processing
+
+- surface finishing (polishing, coating etc.)
+  - comment: important for welding seam finishing
 
 # free feedback
 
@@ -138,10 +144,3 @@ Every peace of feedback is valuable and will be read :)
 - classifaction badges or levels for overall difficulty to build: e.g. DIY (doable with current desktop 3D printers), professional
 - target group (e.g. Arduino project may be made for researchers and students): children, industrial students, professionals
 - variants/alternatives to the solutions specifically described in the documentation
-
-title: O!N Production Metadata | Joost
-...
-
-## Post-Processing
-
-- surface finishing (polishing, coating etc.) ← important
