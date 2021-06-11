@@ -89,6 +89,17 @@ Every peace of feedback is valuable and will be read :)
 
 ## PCB
 
+- size [mm , mm]
+- board-thickness [mm]
+- copper-thickness [mm]
+- layer-count [int]
+- trace-width [mm]
+- trace-spacing [mm]
+- minimum-via-diameter [mm]
+- component-sides [1 or 2]
+- silkscreen-printing-sides [0, 1 or 2]
+- solder-mask-sides [0, 1 or 2]
+
 ## SOFTWARE
 
 - hardware requirements (specific board; e.g. software only runs on Ardiuno)
