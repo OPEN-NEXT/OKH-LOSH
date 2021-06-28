@@ -89,16 +89,22 @@ Every peace of feedback is valuable and will be read :)
 
 ## PCB
 
-- size [mm , mm]
+- size (2D) [mm , mm]
 - board-thickness [mm]
 - copper-thickness [mm]
-- layer-count [int]
-- trace-width [mm]
-- trace-spacing [mm]
-- minimum-via-diameter [mm]
+- typical-trace-width [mm]
+- smallest-trace-width [mm]
+- typical-space-copper-copper [mm]
+- smallest-space-copper-copper [mm]
+- smallest-via-diameter [mm]
 - component-sides [1 or 2]
 - silkscreen-printing-sides [0, 1 or 2]
 - solder-mask-sides [0, 1 or 2]
+
+For multilayer-pcb:
+- layer-count [int]
+- copper-thickness [array of mm]
+- isolator-thickness [array of mm]
 
 ## SOFTWARE
 
