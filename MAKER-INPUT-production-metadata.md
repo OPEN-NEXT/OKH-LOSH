@@ -108,7 +108,7 @@ For multilayer-pcb:
 
 ## SOFTWARE
 
-- hardware requirements (specific board; e.g. software only runs on Ardiuno)
+- hardware requirements (specific board; e.g. software only runs on Arduino)
 - compiler
 - pogramming language
 - connection (special) cable, flashing hardware
