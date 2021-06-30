@@ -278,12 +278,12 @@ okh:alternativeLicense
 
 ## ----- informative -----
 
-okh:contributorCount
-  a owl:DatatypeProperty ;
-  rdfs:label "number of conributors participating in the project" ;
-  rdfs:domain okh:Module ;
-  rdfs:range xsd:int ;
-  .
+# okh:contributorCount
+#   a owl:DatatypeProperty ;
+#   rdfs:label "number of conributors participating in the project" ;
+#   rdfs:domain okh:Module ;
+#   rdfs:range xsd:int ;
+#   .
 
 ## ----- development stage -----
 
