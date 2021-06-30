@@ -169,9 +169,18 @@ okh:ComponentReference
 okh:okhv
   a owl:DatatypeProperty ;
   rdfs:label "OKH version" ;
-  rdfs:comment "version of OKH specification the metadata is following (different version → different data fields" ;
+  rdfs:comment "version of OKH specification the metadata is following (different version → different data fields)" ;
   rdfs:subPropertyOf schema:version ;
   rdfs:domain okh:ManifestFile ;
+  owl:cardinality 1
+  .
+
+okh:dataSource
+  a owl:DatatypeProperty ;
+  rdfs:label "Data Source" ;
+  rdfs:comment "origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:subClassOf schema:URL ;
+  rdfs:domain okh:Module ;
   owl:cardinality 1
   .
 
