@@ -10,6 +10,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
 
 # NOTE:
 # Regarding the use of `owl:unionOf` for `rdfs:domain` and `rdfs:range` in this ontology:
