@@ -27,67 +27,6 @@ Support in different Markdown software:
   which will put a TOC on the start of the document
 -->
 
-<!---
-## File Path Convention
-
-For file referencing we allow 3 types of paths: relative, absolute and an URL.
-
-### Relative Path
-
-A relative path starts from some directory
-the corresponding manifest file is located in.
-The file reference _never_ starts with a "`/`"
-
-#### EXAMPLE {#relative-path-example}
-
-Given the following folder structure:
-
-`/3DParts/ClampRing`
-
-manifest and source file of the POSH `Clamp Ring` are located in the same folder;
-the file reference would be simply:
-
-`clampring.scad`
-
-Given the alternative folder structure:
-
-`/3DParts/ClampRing/source`
-
-where manifest and other additional files are located in `/3DParts/ClampRing`
-whereby the source lies in in the subfolder `source`,
-the file reference would be:
-
-`source/clampring.scad`
-
-### Absolute Path
-
-An absolute path always starts from the root directory (= repository folder).
-The file reference _always_ starts with an "`/`"
-
-#### EXAMPLE {#absolute-path-example}
-
-`/3DParts/ClampRing/ClampRing.scad`
-
-### URL
-
-placeholder
-
-# Downward Compatibility
-
-We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
-YAML files.\
-However, we strongly recommend to update to the current manifest specification.
-
-## Redundant Data
-
-Redundant data can be omitted.
-The crawler will then take the data from the next higher level.
-
--->
-
-
-
-
 # Intro
 
 This is a fork of the [Open Know-How Specification v1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#75fb9df0-a7b3-427f-993a-b23fe1c81a58).
@@ -125,6 +64,12 @@ Metadata is collected by a crawler using platform APIs;
 - Hence, in most cases no additional manual input of metadata is required from developers, since the platforms (such as Wikifactory or OSHWA) already expose the desired metadata via their API
 - in case of GitLab or GitHub, the API is not OSH-specific; developers shall provide the metadata in form of a [manifest file](#manifest-file); those manifest files are searchable for the crawler via the GitHub/GitLab-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
 
+## Downward Compatibility
+
+We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+YAML files.\
+However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
+
 ### Manifest File
 
 A manifest file is a plain text file in a repository containing metadata for a OSH module.
@@ -132,22 +77,6 @@ A manifest file is a plain text file in a repository containing metadata for a O
 As outlined in the [basic usage of the specification](#basic-usage-of-the-specification),
 the provision of a manifest file is specifically necessary when metadata cannot be accessed via the platform API
 (as in the case of GitLab or GitHub for example). 
-
-#### Location & Naming Convention
-
-- A repository shall contain exactly one manifest file
-- in the root directory of the repository,
-- named `okh.toml`,
-- using the TOML [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0) and
-- follow the requirements of this specification\
-  Please see our linked templates for this; they'll make your life easier..
-
-#### File Path Conventions
-
---
-
-
-We may allow more file formats in the future.
 
 **NOTE 1 to entry:**\
 One of the most important fields is the `version`.
@@ -158,6 +87,56 @@ So whenever you make a new release
 or think those changes in your documentation are worth an update on Wikibase
 → **update the version in the manifest file.**\
 Otherwise, no changes will be synched.
+
+#### Location & Naming Convention
+
+- A repository shall contain exactly one manifest file
+- in the root directory of the repository,
+- named `okh.toml`,
+- using the TOML [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0)\
+  (we may allow more file formats in the future) and
+- and follow the requirements of this specification
+  Please see our linked templates for this; they'll make your life easier.
+
+#### File Path Conventions
+
+For file referencing this specification allows relative and absolute paths.
+
+##### Relative Path
+
+A relative path starts from some directory
+the corresponding manifest file is located in.
+The file reference _never_ starts with a "`/`"
+
+**EXAMPLE**
+
+Given the following folder structure:
+
+`/3DParts/ClampRing`
+
+manifest and source file of the POSH `Clamp Ring` are located in the same folder;
+the file reference would be simply:
+
+`clampring.scad`
+
+Given the alternative folder structure:
+
+`/3DParts/ClampRing/source`
+
+where manifest and other additional files are located in `/3DParts/ClampRing`
+whereby the source lies in in the subfolder `source`,
+the file reference would be:
+
+`source/clampring.scad`
+
+##### Absolute Path
+
+An absolute path always starts from the root directory (= repository folder).
+The file reference _always_ starts with an "`/`"
+
+**EXAMPLE**
+
+`/3DParts/ClampRing/ClampRing.scad`
 
 # metadata fields
 
