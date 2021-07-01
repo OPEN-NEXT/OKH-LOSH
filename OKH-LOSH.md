@@ -123,15 +123,30 @@ Metadata is collected by a crawler using platform APIs;
 
 - find a list of supported platforms [here]().
 - Hence, in most cases no additional manual input of metadata is required from developers, since the platforms (such as Wikifactory or OSHWA) already expose the desired metadata via their API
-- in case of GitHub/GitLab, the API is not OSH-specific; developers shall provide the metadata in form of a [manifest file](#manifest-file); those manifest files are searchable for the crawler via the GitHub/GitLab-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
+- in case of GitLab or GitHub, the API is not OSH-specific; developers shall provide the metadata in form of a [manifest file](#manifest-file); those manifest files are searchable for the crawler via the GitHub/GitLab-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
 
 ### Manifest File
 
-A manifest file is a file in a repository containing metadata for a OSH module.
+A manifest file is a plain text file in a repository containing metadata for a OSH module.
 
-It shall use the [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0).
+As outlined in the [basic usage of the specification](#basic-usage-of-the-specification),
+the provision of a manifest file is specifically necessary when metadata cannot be accessed via the platform API
+(as in the case of GitLab or GitHub for example). 
 
-Please use the linked templates to enter your data.\
+#### Location & Naming Convention
+
+- A repository shall contain exactly one manifest file
+- in the root directory of the repository,
+- named `okh.toml`,
+- using the TOML [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0) and
+- follow the requirements of this specification\
+  Please see our linked templates for this; they'll make your life easier..
+
+#### File Path Conventions
+
+--
+
+
 We may allow more file formats in the future.
 
 **NOTE 1 to entry:**\
