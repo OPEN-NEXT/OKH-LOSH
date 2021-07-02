@@ -145,6 +145,8 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## pre-filled or filled by the crawler
 
+### for OSH modules only
+
 - `okhv` [string]
   - = "okh-losh" for all data coming
   - version of the OKH standard used
@@ -152,6 +154,17 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
   - origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)
   - NOTE: not an actual TOML key since this is set by the crawler directly in RDF
 
+### for parts only
+
+- `file-format` [MIME]
+  - from `file-path`
+- `perma-URL` [URL]
+  - commit-specific URL generated from `file-path`
+- `last-requested` [timestamp]
+  - timestamp of last time the file access was requested under the `perma-URL`
+- `last-seen` [timestamp]
+  - timestamp of last time the file was successfully accessed under the `perma-URL`
+  
 ## metadata fields for OSH modules
 
 - `name` [string]
