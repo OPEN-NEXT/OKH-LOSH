@@ -59,7 +59,7 @@ Functions in the frontend include but are not limited to:
   - number of contributors
   - list & number of self-designed parts
   - URLs to source & export files (including BoM and manuals)
-  - production metadata
+  - production metadata (yet to be processed from [here](MAKER-INPUT-production-metadata.md))
 - data export (download), of e.g.:
   - all design files known from the metadata
   - search results in various formats (e.g. CSV, JSON)
