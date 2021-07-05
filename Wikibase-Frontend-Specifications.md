@@ -41,9 +41,8 @@ Functions in the frontend include but are not limited to:
     - equals a 'production category'
   - OTRL (and representative labels for the same)
     - …to filter for specific readiness levels of the design &/ the documentation
-- input of free-form SPARQL queries to query
+- (link to) input of free-form SPARQL queries to query
   - Wikibase
-  - the RDF knowledge base, published in a git repository
 - 'threading' of versions/variants of the same OSH
 - compare search results by selected data fields
 - detail pages for OSH projects (displayed e.g. after clicking on a search result) containing e.g.:
@@ -63,26 +62,15 @@ Functions in the frontend include but are not limited to:
 - data export (download), of e.g.:
   - all design files known from the metadata
   - search results in various formats (e.g. CSV, JSON)
-- interactive elements, such as:
-  - reporting an issue
-    - regarding the data set (“Report faulty/missing data”)\
-      → goes to LOSH's git repository
-    - regarding the hardware &/ the documentation\
-      → goes to the repository of the OSH
-  - rating (e.g. 1…5 stars) or 'starring' (like on GitHub)
-  - additional features to be defined in reconcilitation with the UX team
-  - Button on detail pages: "I built this hardware" (maybe a scale ↓)
-    - …but didn't succeed, documentation is incomplete/faulty
-    - …with lots of help from the originators
-    - …(almost) independently, great documentation!
-    - → count is saved on wikibase
-  - Suggest for certification / community-based assessment at
+- references to further information and tools
+  - certification / community-based assessment at
     - [OSHWA](https://application.oshwa.org/apply)
     - [OSE Germany – Confirmity Assessment Body according to DIN SPEC 3105-2](https://gitlab.opensourceecology.de/verein/projekte/cab/CAB)
     - [OHO – Confirmity Assessment Body according to DIN SPEC 3105-2](https://en.oho.wiki/)
-- tools & guides to get one's OSH listed on the LOSH:
-  - UI for the generation of metadata files from user entered metadata values to upload on a supported git-based platform (either to own repository or to LOSH's collection point)
-  - embedding Wikifactory's Source&Export tool to upload projects from and to supported platforms
+  - tools & guides to get one's OSH listed on the LOSH:
+    - link to external UI for the generation of metadata files from user entered metadata values to upload on a supported git-based platform (either to own repository or to LOSH's collection point)
+    - documentation of the metadata specification used
+    - embedding Wikifactory's Source&Export tool to upload projects from and to supported platforms
 
 These functions form a preliminary scope for the frontend.
 As in every research project, this scope and lots of corresponding details are to be iteratively refined.\
@@ -111,4 +99,3 @@ Development of the frontend will be carried out as a free/open source software (
   - mediawiki-based platform
   - source code published [here](https://gitlab.opensourceecology.de/verein/projekte/oho/oho-legacy)
   - SQL database in the backend and lots of hardcoded elements (such as the category system)
-
