@@ -263,20 +263,53 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## production metadata
 
-## for modules and parts
+## for modules
 
-- `outer-dimension` [openSCAD-primitive]
-  - openSCAD primitive describing shape and size of the module or part
+- `outer-dimensions` [openSCAD-primitive]
+  - openSCAD primitive describing shape and size of the module
   - e.g. `cube(size = [400,350,150]`
-- `outer-dimension-dim`
-  - dimension of `outer-dimension`
-  - e.g. `mm`
 
 ## for parts only
+
+general:
 
 - `material` [string]
   - reference of material used for this part
   - e.g. `PLA`
+- `outer-dimensions-mm` (or `outer-dimensions-cm` etc.) [openSCAD-primitive]
+  - openSCAD primitive describing shape and size of the module or part
+  - e.g. `cube(size = [400,350,150]`
+- `tsdc` [TsDC-ID] (multiple)
+  - manufacturing process for which this part has been designed (= technology-specific documentation criteria applying for this part)
+
+### 3D printing
+
+`tsdc:3DP`
+
+- `printing-process` [string]
+  - possible values: FDM, SLA, SLS, MJF, DMLS
+- `material` [string]
+  - reference of material used for this part
+- `3DP-weight` [float]
+  - weight of the 3D-printed part in **gramms** so people know how much filament they'll need
+- `outer-dimensions-mm` [openSCAD-primitive]
+  - openSCAD primitive describing shape and size of the module or part
+  - all dimensions in mm
+  - e.g. `cube(size = [400,350,150]`
+- `infill` [float]
+  - print parameter: infill (in %)
+- `rafts` [bool]
+  - 0 = design has no rafts
+  - 1 = design includes raft(s)
+- `supports` [bool]
+  - 0 = design has no supports
+  - 1 = design includes support(s) 
+- `resolution` [float]
+  - print parameter: resolution/layer height in mm
+- `shell-thickness` [float]
+  - shell thickness in mm
+- `top-bottom-thickness` [float]
+  - top/bottom thickness in mm
 
 # Further References
 
