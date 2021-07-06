@@ -1,8 +1,12 @@
-# LOSH
+# OKH-LOSH
 
-**_A Library of Open Source Hardware - technical documentation in an open graph database._**
+LOSH: **_A Library of Open Source Hardware - technical documentation in an open graph database._**
 
 demonstrator will be available at [wikibase.oho.wiki](https://wikibase.oho.wiki/)
+
+The work here is based on the [Open Know-How Specification v1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#75fb9df0-a7b3-427f-993a-b23fe1c81a58), specifically to make the OKHv1 specification applicable to linked open data and rework data fields after latest research results.\
+However, lots of changes have been made so it's hard to still call this a fork.\
+After validation this will be proposed to maintainers of the Open Know-How Specification as a new major version of the specification.
 
 ## Intro
 
