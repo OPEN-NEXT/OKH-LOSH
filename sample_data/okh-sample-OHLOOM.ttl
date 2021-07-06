@@ -37,8 +37,7 @@
   :fabricWidthDim "mm" ;
   :fabricWidth 400 ;
   # that's a custom field not defined in the okh ontology
-  okh:outerDimensionDim "mm" ;
-  okh:outerDimension "cube(size = [400,350,150]" ;
+  okh:outerDimensionsMM "cube(size = [400,350,150]" ;
   okh:hasManufacturingInstructions :ManufacturingInstructions ;
   okh:hasUserManual :UserManual ;
   okh:hasComponent :ClampRing ;
@@ -118,8 +117,7 @@
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionDim "mm" ;
-  okh:outerDimension "cylinder(h=30, r=28)" ;
+  okh:outerDimensionsMM "cylinder(h=30, r=28)" ;
   .
 
 :ClampRing_image

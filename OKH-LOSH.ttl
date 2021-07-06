@@ -437,9 +437,18 @@ okh:material
   rdfs:domain okh:Part ;
   .
 
-okh:outerDimensions
+okh:outerDimensionsMM
   a owl:DatatypeProperty ;
-  rdfs:label "outer dimensions using openSCAD primitives" ;
+  rdfs:label "outer dimensions in MM using openSCAD primitives" ;
+  rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:outerDimensionsCM
+  a owl:DatatypeProperty ;
+  rdfs:label "outer dimensions in CM using openSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
 # fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
