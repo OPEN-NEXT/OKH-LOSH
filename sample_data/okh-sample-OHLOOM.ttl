@@ -1,5 +1,5 @@
 @base             <https://gitlab.com/OSEGermany/ohloom/1.0.0#> .
-@prefix okh:      <https://github.com/OPEN-NEXT/LOSH/raw/master/osh-metadata.ttl#> .
+@prefix okh:      <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
 @prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 
 :OHLOOM

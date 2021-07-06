@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later	
 
-@base             <http://purl.org/oseg/ontologies/osh-metadata/0.1/base> .
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -10,7 +10,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
 
 # NOTE:
 # Regarding the use of `owl:unionOf` for `rdfs:domain` and `rdfs:range` in this ontology:
