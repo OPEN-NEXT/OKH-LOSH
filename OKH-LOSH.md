@@ -263,7 +263,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## production metadata
 
-## for modules
+### for modules
 
 general:
 
@@ -275,7 +275,7 @@ general:
   - openSCAD primitive describing shape and size of the module
   - e.g. `cube(size = [400,350,150]`
 
-### Welding
+#### Welding
 
 - `welding-process` [integer]
   - welding process number according to ISO 4063 (e.g. from [here](https://en.wikipedia.org/wiki/List_of_welding_processes))
@@ -284,13 +284,7 @@ general:
   - designation of the certification/qualification required for the welder according to ISO 9606
   - e.g. `EN ISO 9606-1 135 P FW FM1 S t10 PB ml` for MAG welding of multi-layer fillet welds on sheet metal (≥ 3 mm) in horizontal position and FM1 filler material
 
-### Post-Processing
-
-- `surcace-finishing-process` [string]
-  - designation of the manufacturing process for surface finishing to meet required surface properties
-  - e.g. `polishing`
-
-## for parts only
+### for parts only
 
 general:
 
@@ -303,7 +297,7 @@ general:
 - `tsdc` [TsDC-ID] (multiple)
   - manufacturing process for which this part has been designed (= technology-specific documentation criteria applying for this part)
 
-### 3D printing
+#### 3D printing
 
 `tsdc:3DP`
 
@@ -331,6 +325,12 @@ general:
   - shell thickness in mm
 - `top-bottom-thickness` [float]
   - top/bottom thickness in mm
+
+## Post-Processing
+
+- `surcace-finishing-process` [string]
+  - designation of the manufacturing process for surface finishing to meet required surface properties
+  - e.g. `polishing`
 
 # Further References
 
