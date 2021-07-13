@@ -275,6 +275,56 @@ general:
   - openSCAD primitive describing shape and size of the module
   - e.g. `cube(size = [400,350,150]`
 
+#### PCB
+
+- `2d-size-mm` [float , float]
+  - edge lenghts of the PCB in mm, separated by a comma
+  - e.g. `425 , 425`
+- `board-thickness-mm` [float]
+  - PCB thickness in mm
+  - e.g. `1.57`
+- `copper-thickness-mm` [float]
+  - copper thickness in mm
+  - for the case of multilayer PCB see below `multi-copper-thickness-mm`
+  - e.g. `0.15`
+- `typical-trace-width-mm` [float]
+  - typical trace width in mm used in the PCB design
+  - not to confuse with `smallest-trace-width-mm`
+  - e.g. `0.3`
+- `smallest-trace-width-mm` [float]
+  - smallest trace width in mm
+  - e.g. `0.15`
+- `typical-space-copper-copper-mm` [float]
+  - typical distance between 2 copper areas (e.g. 2 traces) in mm
+  - not to confuse with `smallest-space-copper-copper-mm`
+  - e.g. `0.35`
+- `smallest-space-copper-copper-mm` [float]
+  - smallest distance between 2 copper areas (e.g. 2 traces) in the PCB design
+  - e.g. `0.15`
+- `smallest-via-diameter-mm` [float]
+  - diameter of the smallest via on the PCB in mm
+  - e.g. `0.45`
+- `component-sides` [integer]
+  - number of sides of the PCB with components (1 or 2)
+  - e.g. `1`
+- `silkscreen-sides` [integer]
+  - number of sides of the PCB with silkscreen printing (0, 1 or 2)
+  - e.g. `1`
+- `solder-mask-sides` [integer]
+  - number of sides of the PCB with solder stop mask (0, 1 or 2)
+  - e.g. `1`
+
+In case of multilayer PCB:
+
+- layer-count [integer]
+  - number of layers of the PCB
+  - e.g. `2`
+- `multi-copper-thickness-mm` [array of float entries]
+  - copper thickness of all layers in mm
+  - e.g. `0.15 , 0.15`
+- `multi-isolator-thickness-mm` [array of float entries]
+  - e.g. `0.23 , 0.23`
+
 #### Welding
 
 - `welding-process` [integer]
