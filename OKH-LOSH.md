@@ -269,10 +269,26 @@ general:
 
 - `joining-process` [string]
   - designation of the manufacturing process used to connect the parts to an assembly
+  - e.g. `hard soldering`
   - multiple inputs possible (with one entry each)
 - `outer-dimensions` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module
   - e.g. `cube(size = [400,350,150]`
+
+### Welding
+
+- `welding-process` [integer]
+  - welding process number according to ISO 4063 (e.g. from [here](https://en.wikipedia.org/wiki/List_of_welding_processes))
+  - e.g. `111` for "classic" shielded metal arc welding
+- `welder-certification` [string]
+  - designation of the certification/qualification required for the welder according to ISO 9606
+  - e.g. `EN ISO 9606-1 135 P FW FM1 S t10 PB ml` for MAG welding of multi-layer fillet welds on sheet metal (≥ 3 mm) in horizontal position and FM1 filler material
+
+### Post-Processing
+
+- `surcace-finishing-process` [string]
+  - designation of the manufacturing process for surface finishing to meet required surface properties
+  - e.g. `polishing`
 
 ## for parts only
 
