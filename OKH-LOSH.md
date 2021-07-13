@@ -93,7 +93,7 @@ Otherwise, no changes will be synched.
 - A repository shall contain exactly one manifest file
 - in the root directory of the repository,
 - named `okh.toml`,
-- using the TOML [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0)\
+- using the [TOML file format](https://github.com/toml-lang/toml/releases/tag/1.0.0)\
   (we may allow more file formats in the future) and
 - and follow the requirements of this specification
   Please see our linked templates for this; they'll make your life easier.
@@ -265,6 +265,11 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## for modules
 
+general:
+
+- `joining-process` [string]
+  - designation of the manufacturing process used to connect the parts to an assembly
+  - multiple inputs possible (with one entry each)
 - `outer-dimensions` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module
   - e.g. `cube(size = [400,350,150]`
