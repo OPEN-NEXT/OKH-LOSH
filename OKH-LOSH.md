@@ -277,6 +277,8 @@ general:
 
 #### PCB
 
+`tsdc:PCB`
+
 - `2d-size-mm` [float , float]
   - edge lenghts of the PCB in mm, separated by a comma
   - e.g. `425 , 425`
@@ -327,6 +329,8 @@ In case of multilayer PCB:
 
 #### Welding
 
+`tsdc:WEL`
+
 - `welding-process` [integer]
   - welding process number according to ISO 4063 (e.g. from [here](https://en.wikipedia.org/wiki/List_of_welding_processes))
   - e.g. `111` for "classic" shielded metal arc welding
@@ -355,8 +359,9 @@ general:
   - possible values: FDM, SLA, SLS, MJF, DMLS
 - `material` [string]
   - reference of material used for this part
-- `3DP-weight` [float]
-  - weight of the 3D-printed part in **gramms** so people know how much filament they'll need
+  - e.g. `PLA`
+- `mass-g` [float]
+  - mass of the part in gramms
 - `outer-dimensions-mm` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module or part
   - all dimensions in mm
@@ -376,11 +381,54 @@ general:
 - `top-bottom-thickness` [float]
   - top/bottom thickness in mm
 
+#### CNC milling
+
+`tsdc:CNC`
+
+- `material` [string]
+  - reference of material used for this part
+  - e.g. `1.0715` (EN material number for free machining steel 11SMn30)
+- `mass-kg` [float]
+  - mass of the part in kilogramms
+  - e.g. `12.3`
+- `smallest-tolerance-class` [string]
+  - smallest tolerance class of measures according to ISO 286
+  - e.g. `IT9`
+- `smallest-inner-radius-mm` [float]
+  - smallest inner radius of corners in mm
+  - e.g. `0.5`
+
+#### Laser Cutting
+
+<!---FIXME TsDC-ID-->
+
+- `engraving` [bool]
+  - boolean statement whether or not engraving is included in the process for the part
+  - e.g. `1`
+- `engraving-depth-mm` [float]
+  - depth of engraving in mm in case the part has an engraving
+  - e.g. `0.25`
+- `resolution-dpi` [integer]
+  - resolution of engraving in DPI
+  - e.g. `500`
+- `material` [string]
+  - reference of material used for this part
+  - e.g. `acrylic glass`
+- `thickness-mm` [float]
+  - thickness of the sheet material in mm the laser is supposed to cut through
+  - e.g. `1.5`
+
 ## Post-Processing
+
+<!---FIXME TsDC-ID-->
 
 - `surcace-finishing-process` [string]
   - designation of the manufacturing process for surface finishing to meet required surface properties
   - e.g. `polishing`
+- `outer-dimensions-mm` [openSCAD-primitive]
+  - openSCAD primitive describing shape and size of the module or part
+  - all dimensions in mm
+  - e.g. `cube(size = [400,350,150]`
 
 # Further References
 
