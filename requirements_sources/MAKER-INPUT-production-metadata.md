@@ -1,6 +1,7 @@
 ---
 title: Specification for Production Metadata
 subtitle: Input from WP4/WP5 Partners
+history: https://github.com/OPEN-NEXT/OKH-LOSH/commits/36679600facd5b572f012e74cb359ac84eb2d113/MAKER-INPUT-production-metadata.md
 ...
 
 # Intro & Scope
@@ -45,7 +46,9 @@ Every peace of feedback is valuable and will be read :)
 - smallest inner radius [mm]
 - sharp inner corners [bool]
 - number of axes [int]
+  - comment: machine-specific → out of scope
 - number of planes of milling [int]
+  - comment: setup for production environment → out of scope
 
 ## 3DP
 
