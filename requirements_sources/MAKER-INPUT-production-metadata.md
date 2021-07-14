@@ -85,7 +85,9 @@ Every peace of feedback is valuable and will be read :)
 ## WELDING
 
 - material (for each part)
+  - comment: already defined per part, no extra field needed
 - material thickness (for each part)
+  - comment: already defined per part, no extra field needed
 - welding process
 - (welder) certification(s) required
 - post-treatments of the weld
@@ -109,18 +111,13 @@ For multilayer-pcb:
 - copper-thickness [array of mm]
 - isolator-thickness [array of mm]
 
-## SOFTWARE
-
-- hardware requirements (specific board; e.g. software only runs on Arduino)
-- compiler
-- pogramming language
-- connection (special) cable, flashing hardware
-
 ## LASER CUTTER
 
 - engraving? [bool]
+  - comment: redundant when depth of engraving is given
 - depth of engraving [mm]
 - resolution of engraving [mm]
+  - comment: resolution seems to be given in DPI usually
 - material [string]
 - material thickness [mm]
 - required laser power [watt]
@@ -141,6 +138,13 @@ For multilayer-pcb:
 # free feedback
 
 - https://www.hubs.com/ is a great source for productionn metadata (accessible by uploading sample files)
+
+## SOFTWARE
+
+- hardware requirements (specific board; e.g. software only runs on Arduino)
+- compiler
+- pogramming language
+- connection (special) cable, flashing hardware
 
 ## Assembly
 
