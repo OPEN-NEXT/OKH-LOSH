@@ -402,9 +402,6 @@ general:
 
 <!---FIXME TsDC-ID-->
 
-- `engraving` [bool]
-  - boolean statement whether or not engraving is included in the process for the part
-  - e.g. `1`
 - `engraving-depth-mm` [float]
   - depth of engraving in mm in case the part has an engraving
   - e.g. `0.25`
