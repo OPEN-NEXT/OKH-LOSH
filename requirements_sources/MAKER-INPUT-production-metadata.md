@@ -45,6 +45,7 @@ Every peace of feedback is valuable and will be read :)
 - smallest tolerance class [according to ISO 286]
 - smallest inner radius [mm]
 - sharp inner corners [bool]
+  - comment: redundant; already included in smallest inner radius
 - number of axes [int]
   - comment: machine-specific → out of scope
 - number of planes of milling [int]
