@@ -56,19 +56,67 @@ This draft follows a Linked Open Data approach:
 
 This draft aims to facilitate compliance with DIN SPEC 3105-1.
 
-## Basic Usage of the Specification
-
-Metadata is collected by a crawler using platform APIs;
-
-- find a list of supported platforms [here]().
-- Hence, in most cases no additional manual input of metadata is required from developers, since the platforms (such as Wikifactory or OSHWA) already expose the desired metadata via their API
-- in case of GitLab or GitHub, the API is not OSH-specific; developers shall provide the metadata in form of a [manifest file](#manifest-file); those manifest files are searchable for the crawler via the GitHub/GitLab-API (see [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details)
-
 ## Downward Compatibility
 
 We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
 YAML files.\
 However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
+
+# General Requirements
+
+## Basic Usage of the Specification
+
+All data, the metadata itself and the technical documentation represented by the metadata, shall be:
+
+- released under a free/open license;
+- unambiguously referenceable.
+
+**NOTE to entry:** See requirements for license and release in DIN SPEC 3105-1 [section 3.2](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#32-free-license-open-license) and [section 3.9](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#39-documentation-release).
+
+Yet, provision of metadata is fully based on manual input by contributors of the OSH project. Metadata will be collected by a [crawler](https://github.com/OPEN-NEXT/LOSH-Krawler) using the API of supported platforms (find a [full list of supported platforms below](#supported-platforms)).\
+Hence, when data is published on a supported platform in compliance with this specification, it becomes automatically available on [LOSH](losh.ose-germany.de) and as Linked Open Data in RDF format [here]().
+
+## Supported Platforms
+
+### GitLab
+
+<!--YET TO BE IMPLEMENTED-->
+
+Data submission requires the use of a [Manifest File](#manifest-file).
+
+The Manifest File is directly available for the crawler via the GitLab-API.\
+(See [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details.)
+
+LINK to platform: <https://gitlab.com/>
+
+### GitHub
+
+Data submission requires the use of a [Manifest File](#manifest-file).
+
+The Manifest File is directly available for the crawler via the GitHub-API.\
+(See [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details.)
+
+LINK to platform: <https://github.com/>
+
+### Appropedia
+
+Data shall be provided using the "Infobox device" template ([version from 15:13, 2 June 2021 by Felipe Schenone](https://www.appropedia.org/Template:Infobox_device)).
+
+The [LOSH Appropedia scraper](https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper) will upload metadata in form of [Manifest Files](#manifest-file) to the [LOSH-List repository](https://github.com/OPEN-NEXT/LOSH-list) on [GitHub](#github), where it becomes available for the crawler.
+
+LINK to platform: <http://appropedia.org/>
+
+### Wikifactory
+
+Metadata is embedded by the platform and directly available for the crawler.
+
+LINK to platform: <http://appropedia.org/>
+
+### OSHWA Certified Projects List
+
+<!--YET TO BE IMPLEMENTED-->
+
+LINK to platform: <http://appropedia.org/>
 
 ## Manifest File
 
