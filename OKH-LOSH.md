@@ -70,7 +70,7 @@ We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAl
 YAML files.\
 However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
 
-### Manifest File
+## Manifest File
 
 A manifest file is a plain text file in a repository containing metadata for a OSH module.
 
@@ -88,7 +88,7 @@ or think those changes in your documentation are worth an update on Wikibase
 → **update the version in the manifest file.**\
 Otherwise, no changes will be synched.
 
-#### Location & Naming Convention
+### Location & Naming Convention
 
 - A repository shall contain exactly one manifest file
 - in the root directory of the repository,
@@ -98,11 +98,11 @@ Otherwise, no changes will be synched.
 - and follow the requirements of this specification
   Please see our linked templates for this; they'll make your life easier.
 
-#### File Path Conventions
+### File Path Conventions
 
 For file referencing this specification allows relative and absolute paths.
 
-##### Relative Path
+#### Relative Path
 
 A relative path starts from some directory
 the corresponding manifest file is located in.
@@ -129,7 +129,7 @@ the file reference would be:
 
 `source/clampring.scad`
 
-##### Absolute Path
+#### Absolute Path
 
 An absolute path always starts from the root directory (= repository folder).
 The file reference _always_ starts with an "`/`"
