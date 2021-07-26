@@ -110,13 +110,13 @@ LINK to platform: <http://appropedia.org/>
 
 Metadata is embedded by the platform and directly available for the crawler.
 
-LINK to platform: <http://appropedia.org/>
+LINK to platform: <https://wikifactory.com/>
 
 ### OSHWA Certified Projects List
 
 <!--YET TO BE IMPLEMENTED-->
 
-LINK to platform: <http://appropedia.org/>
+LINK to platform: <https://certification.oshwa.org/list.html>
 
 ## Manifest File
 
