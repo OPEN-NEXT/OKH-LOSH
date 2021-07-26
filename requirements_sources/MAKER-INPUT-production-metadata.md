@@ -56,15 +56,18 @@ Every peace of feedback is valuable and will be read :)
 - printing method (FDM, SLA, SLS, MJF, DMLS)
 - material [string]
 - material quantity [g]/  filament diameter and length [mm]
+  - comment: included as mass since that's easier to export from CAD software
 - material specific requirements
   for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
   heating bed temperature [°]
   extruder temperature [°]
   filament brand 
   - remove request +1
+  - comment: setup for production environment → out of scope
 - outer dimensions
 - expected print duration
   - remove request +1
+  - comment: setup for production environment → out of scope
 - print parameters
   - infill [%]
   - rafts [bool]
@@ -72,16 +75,21 @@ Every peace of feedback is valuable and will be read :)
   - resolution [mm] (layer thickness)
   - optional print speed [mm/s]
     - remove request +1
+    - comment: setup for production environment → out of scope
   - optional outer perimeter speed [mm/s]
     - remove request +1
+    - comment: setup for production environment → out of scope
   - optional infill speed [mm/s]
-    - remove request +1 
+    - remove request +1
+    - comment: setup for production environment → out of scope
   - optional printer speed [mm/s]
-    - remove request +1 
+    - remove request +1
+    - comment: setup for production environment → out of scope
   - optional shell thickness [mm]
   - optional top/bottom thickness [mm]
 - extruder nozzle diameter [mm]
   - remove request +1
+  - comment: setup for production environment → out of scope
 
 ## WELDING
 
