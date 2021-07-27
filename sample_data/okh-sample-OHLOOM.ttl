@@ -22,7 +22,6 @@
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
   okh:organisation "OSE Germany e.V." ;
-  okh:contributorCount 4 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
   okh:hasImage :Image ;
