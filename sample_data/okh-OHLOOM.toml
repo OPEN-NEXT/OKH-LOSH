@@ -19,8 +19,7 @@ manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
 fabric-width-dim = "mm"
 fabric-width = 400
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [400,350,150]"
+outer-dimensions-mm = "cube(size = [400,350,150]"
 
 [[part]]
 name = "Clamp Ring"
@@ -32,8 +31,7 @@ export = [
   "/3DParts/ClampRing/ClampRing.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=30, r=28)"
+outer-dimensions-mms-mm = "cylinder(h=30, r=28)"
 
 [[part]]
 name= "CombModul"
@@ -45,8 +43,7 @@ export = [
   "/3DParts/CombModul/CombModul.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [120,100,3]"
+outer-dimensions-mms-mm = "cube(size = [120,100,3]"
 
 [[part]]
 name = "PoleBase"
@@ -54,8 +51,7 @@ tsdc = "3DP"
 source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [125,110,100]"
+outer-dimensions-mms-mm = "cube(size = [125,110,100]"
 
 [[part]]
 name = "RatchetPawl"
@@ -67,8 +63,7 @@ export = [
   "/3DParts/RatchetPawl/RatchetPawl.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [130,20,20]"
+outer-dimensions-mms-mm = "cube(size = [130,20,20]"
 
 [[part]]
 name = "Ratchet Wheel"
@@ -80,8 +75,7 @@ export = [
   "/3DParts/RatchetWheel/RatchetWheel.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=45, r=45)"
+outer-dimensions-mm = "cylinder(h=45, r=45)"
 
 [[part]]
 name = "ScrewSockets"
@@ -93,8 +87,7 @@ export = [
   "/3DParts/ScrewSockets/ScrewSockets.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=12, r=7)"
+outer-dimensions-mm = "cylinder(h=12, r=7)"
 
 [[part]]
 name= "ScrewSockets for ScrewHead"
@@ -103,8 +96,7 @@ tsdc = "3DP"
 source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=12, r=7)"
+outer-dimensions-mm = "cylinder(h=12, r=7)"
 
 [[part]]
 name= "Warpclothbeam 1"
@@ -116,8 +108,7 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_1.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=162, r=22.5)"
+outer-dimensions-mm = "cylinder(h=162, r=22.5)"
 
 [[part]]
 name= "Warpclothbeam 2"
@@ -129,8 +120,7 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_2.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=163, r=22.5)"
+outer-dimensions-mm = "cylinder(h=163, r=22.5)"
 
 [[part]]
 name= "Warpclothbeam 3"
@@ -142,8 +132,7 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_3.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=163, r=22.5)"
+outer-dimensions-mm = "cylinder(h=163, r=22.5)"
 
 [[part]]
 name= "Warpclothbeam 4"
@@ -155,8 +144,7 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_4.stl"
 ]
 material = "PLA"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=162, r=22.5)"
+outer-dimensions-mm = "cylinder(h=162, r=22.5)"
 
 [[part]]
 name = "CombHolder"
@@ -171,8 +159,7 @@ export = [
   "/WoodParts/CombHolder/CombHolder.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [118,60,18]"
+outer-dimensions-mm = "cube(size = [118,60,18]"
 
 [[part]]
 name = "CrossBeam"
@@ -187,8 +174,7 @@ export = [
   "/WoodParts/CrossBeam/CrossBeam.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [572,100,20]"
+outer-dimensions-mm = "cube(size = [572,100,20]"
 
 [[part]]
 name = "Shuttle"
@@ -203,8 +189,7 @@ export = [
   "/WoodParts/Shuttle/Shuttle.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [497,45,6]"
+outer-dimensions-mm = "cube(size = [497,45,6]"
 
 [[part]]
 name = "SideFrame"
@@ -219,8 +204,7 @@ export = [
   "/WoodParts/SideFrame/SideFrame.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [580,140,18]"
+outer-dimensions-mm = "cube(size = [580,140,18]"
 
 [[part]]
 name = "SlotBeam"
@@ -235,8 +219,7 @@ export = [
   "/WoodParts/SlotBeam/SlotBeam.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [566,24,22]"
+outer-dimensions-mm = "cube(size = [566,24,22]"
 
 [[part]]
 name = "StringStick"
@@ -251,8 +234,7 @@ export = [
   "/WoodParts/StringStick/StringStick.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [560,22,6]"
+outer-dimensions-mm = "cube(size = [560,22,6]"
 
 [[part]]
 name = "WarpClothBeam"
@@ -267,5 +249,4 @@ export = [
   "/WoodParts/WarpClothBeam_NoCNC/WarpClothBeam_Wood_NoCNC.stl"
 ]
 material = "wood"
-outer-dimension-dim = "mm"
-outer-dimension = "cylinder(h=710, r=17.5)"
+outer-dimensions-mm = "cylinder(h=710, r=17.5)"
