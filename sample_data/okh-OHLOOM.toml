@@ -30,8 +30,13 @@ export = [
   "/3DParts/ClampRing/ClampRing.pdf",
   "/3DParts/ClampRing/ClampRing.stl"
 ]
-material = "PLA"
+material = "ABS"
 outer-dimensions-mms-mm = "cylinder(h=30, r=28)"
+3DP_infill[%] = "30"
+3DP_rafts[bool] = "FALSE"
+3DP_brim[bool] = "TRUE"
+3DP_supports[bool] = "FALSE"
+3DP_resolution[mm layer thickness] = "0.2"
 
 [[part]]
 name= "CombModul"
