@@ -422,7 +422,7 @@ general:
 - `supports` [bool]
   - 0 = design has no supports
   - 1 = design includes support(s) 
-- `resolution` [float]
+- `resolution-mm` [float]
   - print parameter: resolution/layer height in mm
 - `shell-thickness` [float]
   - shell thickness in mm
