@@ -1,3 +1,6 @@
+[![DOI](https://www.zenodo.org/badge/259683880.svg)](https://www.zenodo.org/badge/latestdoi/259683880)
+[![GitHub license](https://img.shields.io/github/license/OPEN-NEXT/OKH-LOSH.svg?style=flat)](./LICENSE)
+
 # OKH-LOSH
 
 LOSH: **_A Library of Open Source Hardware - technical documentation in an open graph database._**
