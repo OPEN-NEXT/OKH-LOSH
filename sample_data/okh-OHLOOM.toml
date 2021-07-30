@@ -9,8 +9,8 @@ organisation = "OSE Germany e.V."
 readme = "README.md"
 image = "/Documentation/User_Guide/User_Guide.jpg"
 documentation-language = "en-GB"
-technology-readiness-level = "OTLR-5"
-documentation-readiness-level = "ODLR-5"
+technology-readiness-level = "OTLR5"
+documentation-readiness-level = "ODLR5"
 function = "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic pieces for the most part. It is simple to make and operate."
 cpc-patent-class = "D03D 35/00"
 tsdc = "MEC"
@@ -30,13 +30,16 @@ export = [
   "/3DParts/ClampRing/ClampRing.pdf",
   "/3DParts/ClampRing/ClampRing.stl"
 ]
+printing-process = "FDM"
 material = "ABS"
-outer-dimensions-mms-mm = "cylinder(h=30, r=28)"
-3DP_infill[%] = "30"
-3DP_rafts[bool] = "FALSE"
-3DP_brim[bool] = "TRUE"
-3DP_supports[bool] = "FALSE"
-3DP_resolution[mm layer thickness] = "0.2"
+outer-dimensions-mm = "cylinder(h=30, r=28)"
+mass-g = 30
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.2
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name= "CombModul"
@@ -48,7 +51,7 @@ export = [
   "/3DParts/CombModul/CombModul.stl"
 ]
 material = "PLA"
-outer-dimensions-mms-mm = "cube(size = [120,100,3]"
+outer-dimensions-mm = "cube(size = [120,100,3]"
 
 [[part]]
 name = "PoleBase"
@@ -56,7 +59,7 @@ tsdc = "3DP"
 source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 material = "PLA"
-outer-dimensions-mms-mm = "cube(size = [125,110,100]"
+outer-dimensions-mm = "cube(size = [125,110,100]"
 
 [[part]]
 name = "RatchetPawl"
@@ -68,7 +71,7 @@ export = [
   "/3DParts/RatchetPawl/RatchetPawl.stl"
 ]
 material = "PLA"
-outer-dimensions-mms-mm = "cube(size = [130,20,20]"
+outer-dimensions-mm = "cube(size = [130,20,20]"
 
 [[part]]
 name = "Ratchet Wheel"
