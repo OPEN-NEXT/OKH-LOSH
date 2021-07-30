@@ -416,9 +416,9 @@ general:
   - e.g. `cube(size = [400,350,150]`
 - `infill` [float]
   - print parameter: infill (in %)
-- `rafts` [bool]
-  - 0 = design has no rafts
-  - 1 = design includes raft(s)
+- `raft-brim` [bool]
+  - 0 = design has no raft or brim
+  - 1 = design includes raft or brim
 - `supports` [bool]
   - 0 = design has no supports
   - 1 = design includes support(s) 
