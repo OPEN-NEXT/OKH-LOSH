@@ -180,6 +180,13 @@ operational scenarios. Documentatoin."@en ;
   :softwareDescription "Software is replicated, integrated and operated _independently_ in the final operational hardware/software systems and proven its performance."@en ;
   .
 
+:ODRL-0
+  a owl:class ;
+  rdfs:subClassOf :ODRL ;
+  rdfs:label "ODRL-1"@en ;
+  rdfs:comment "no documentation available"@en ;
+  .
+
 :ODRL-1
   a owl:class ;
   rdfs:subClassOf :ODRL ;
