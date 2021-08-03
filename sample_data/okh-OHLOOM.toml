@@ -17,8 +17,7 @@ tsdc = "MEC"
 bom = "sBoM.csv"
 manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
-fabric-width-dim = "mm"
-fabric-width = 400
+fabric-width-mm = 400
 outer-dimensions-mm = "cube(size = [400,350,150]"
 
 [[part]]

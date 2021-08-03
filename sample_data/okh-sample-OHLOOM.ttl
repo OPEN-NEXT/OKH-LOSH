@@ -33,8 +33,7 @@
   okh:relatedTsDC tsdc:MEC ;
   okh:hasBoM :BoM ;
   okh:hasManifestFile :ManifestFile ;
-  :fabricWidthDim "mm" ;
-  :fabricWidth 400 ;
+  :fabricWidthMM 400 ;
   # that's a custom field not defined in the okh ontology
   okh:outerDimensionsMM "cube(size = [400,350,150]" ;
   okh:hasManufacturingInstructions :ManufacturingInstructions ;
@@ -42,15 +41,9 @@
   okh:hasComponent :ClampRing ;
   .
 
-:fabricWidthDim
+:fabricWidthMM
   a owl:DatatypeProperty ;
-  rdfs:label "fabric-width-dim" ;
-  rdfs:subPropertyOf okh:functionalMetadata ;
-  .
-
-:fabricWidth
-  a owl:DatatypeProperty ;
-  rdfs:label "fabric-width" ;
+  rdfs:label "fabric-width-mm" ;
   rdfs:subPropertyOf okh:functionalMetadata ;
   .
 
