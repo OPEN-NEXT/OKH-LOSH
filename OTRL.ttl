@@ -114,14 +114,7 @@
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Technology validated in relevant environment"@en ;
-  :hardwareDescription "A medium fidelity system/component
-brassboard is built and operated to
-demonstrate overall performance in a
-simulated operational environment with
-realistic support elements that
-demonstrates overall performance in
-critical areas. Performance predictions are
-made for subsequent development phases."@en ;
+  :hardwareDescription "A medium fidelity system/component brassboard is built and operated to demonstrate overall performance in a simulated operational environment with realistic support elements that demonstrates overall performance in critical areas. Performance predictions are made for subsequent development phases."@en ;
   :softwareDescription "ToDo"@en ;
   :exitCriteria "ToDo"@en ;
   .
@@ -131,12 +124,7 @@ made for subsequent development phases."@en ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Technology demonstrated in relevant environment"@en ;
-  :hardwareDescription "A high fidelity system/component
-prototype that adequately addresses all
-critical scaling issues is built and operated
-in a relevant environment to demonstrate
-operations under critical environmental
-conditions."@en ;
+  :hardwareDescription "A high fidelity system/component prototype that adequately addresses all critical scaling issues is built and operated in a relevant environment to demonstrate operations under critical environmental conditions."@en ;
   :softwareDescription "ToDo"@en ;
   :exitCriteria "ToDo"@en ;
   .
@@ -146,12 +134,7 @@ conditions."@en ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-7"@en ;
   rdfs:comment "System prototype demonstration in operational environment"@en ;
-  :hardwareDescription "A high fidelity engineering unit that
-adequately addresses all critical scaling
-issues is built and operated in a relevant
-environment to demonstrate performance
-in the actual operational environment and
-platform (ground, airborne, or space)."@en ;
+  :hardwareDescription "A high fidelity engineering unit that adequately addresses all critical scaling issues is built and operated in a relevant environment to demonstrate performance in the actual operational environment and platform (ground, airborne, or space)."@en ;
   :softwareDescription "ToDo"@en ;
   :exitCriteria "ToDo"@en ;
   .
@@ -162,12 +145,7 @@ platform (ground, airborne, or space)."@en ;
   rdfs:label "OTRL-8"@en ;
   rdfs:comment "System complete and qualified"@en ;
   :hardwareDescription "Hardware, in its final version, has been built and operated in the intended operational environment and proven its performance. All documentation has been completed."@en ;
-  :softwareDescription "All software has been thoroughly debugged and fully
-integrated with all operational hardware and software
-systems. All user documentation, training documentation,
-and maintenance documentation completed. All
-functionality successfully demonstrated in simulated
-operational scenarios. Documentatoin."@en ;
+  :softwareDescription "All software has been thoroughly debugged and fully integrated with all operational hardware and software systems. All user documentation, training documentation, and maintenance documentation completed. All functionality successfully demonstrated in simulated operational scenarios. Documentatoin."@en ;
   :exitCriteria "ToDo"@en ;
   .
 
