@@ -10,6 +10,7 @@
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
+@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
 
 # NOTE:
