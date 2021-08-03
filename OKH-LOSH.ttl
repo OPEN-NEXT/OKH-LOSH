@@ -333,7 +333,7 @@ okh:attestation
 
 ## ----- basic description -----
 
-okh:patentClass
+okh:cpcPatentClass
  a owl:ObjectProperty ;
  rdfs:label "Patent Class" ;
  rdfs:comment "International Patent Classification (IPC)" ;
