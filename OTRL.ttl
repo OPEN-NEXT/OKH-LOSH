@@ -192,7 +192,6 @@ operational scenarios. Documentatoin."@en ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
   rdfs:comment "TBD"@en ;
-  :hardwareDescription "TBD"@en ;
   .
 
 :ODRL-2
@@ -200,7 +199,6 @@ operational scenarios. Documentatoin."@en ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
   rdfs:comment "TBD"@en ;
-  :hardwareDescription "TBD"@en ;
   .
 
 :ODRL-3
@@ -208,7 +206,6 @@ operational scenarios. Documentatoin."@en ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
   rdfs:comment "TBD"@en ;
-  :hardwareDescription "TBD"@en ;
   .
 
 :ODRL-4
@@ -216,7 +213,6 @@ operational scenarios. Documentatoin."@en ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-4"@en ;
   rdfs:comment "TBD"@en ;
-  :hardwareDescription "TBD"@en ;
   .
 
 :ODRL-5
@@ -224,5 +220,4 @@ operational scenarios. Documentatoin."@en ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-5"@en ;
   rdfs:comment "TBD"@en ;
-  :hardwareDescription "TBD"@en ;
   .
