@@ -139,3 +139,171 @@
   okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/ClampRing/ClampRing.pdf> ;
   okh:fileFormat "PDF" ;
   .
+
+:CombModul
+  a okh:Part ;
+  rdfs:label "Comb Modul of OHLOOM v1.0.0" ;
+  okh:spdxLicense "CC-BY-SA-4.0" ;
+  okh:licensor "Jens Meisner" ;
+  okh:image :CombModul_image ;
+  okh:documentationLanguage "en-GB" ;
+  okh:relatedTsDC tsdc:3DP ;
+  okh:hasManifestFile :ManifestFile ;
+  okh:source :CombModul_source ;
+  okh:export :CombModul_export1 , :CombModul_export2 ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:outerDimensionsMM "cube(size = [120,100,3])" ;
+  .
+
+:CombModul_image
+  a okh:Image ;
+  rdfs:label "Image of Comb Modul of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_3.jpg> ;
+  okh:fileFormat "JPG" ;
+  .
+
+:CombModul_source
+  a okh:SourceFile ;
+  rdfs:label "Source File of Comb Modul of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3//3DParts/CombModul/CombModul.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
+
+:CombModul_export1
+  a okh:ExportFile ;
+  rdfs:label "Export File of Comb Modul of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/CombModul/CombModul.stl> ;
+  okh:fileFormat "STL" ;
+  .
+
+:CombModul_export2
+  a okh:ExportFile ;
+  rdfs:label "Export File of Comb Modul of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/CombModul/CombModul.pdf> ;
+  okh:fileFormat "PDF" ;
+  .
+
+:PoleBase
+  a okh:Part ;
+  rdfs:label "Pole Base of OHLOOM v1.0.0" ;
+  okh:spdxLicense "CC-BY-SA-4.0" ;
+  okh:licensor "Jens Meisner" ;
+  okh:documentationLanguage "en-GB" ;
+  okh:relatedTsDC tsdc:3DP ;
+  okh:hasManifestFile :ManifestFile ;
+  okh:source :PoleBase_source ;
+  okh:export :PoleBase_export1 , :PoleBase_export2 ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:outerDimensionsMM "cube(size = [125,110,100])" ;
+  .
+
+:PoleBase_source
+  a okh:SourceFile ;
+  rdfs:label "Source File of Pole Base of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3//3DParts/PoleBase/PoleBase.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
+
+:PoleBase_export1
+  a okh:ExportFile ;
+  rdfs:label "Export File of Pole Base of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/PoleBase/PoleBase.stl> ;
+  okh:fileFormat "STL" ;
+  .
+
+:PoleBase_export2
+  a okh:ExportFile ;
+  rdfs:label "Export File of Pole Base of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/PoleBase/PoleBase.pdf> ;
+  okh:fileFormat "PDF" ;
+  .
+
+:RatchetPawl
+  a okh:Part ;
+  rdfs:label "Ratchet Pawl of OHLOOM v1.0.0" ;
+  okh:spdxLicense "CC-BY-SA-4.0" ;
+  okh:licensor "Jens Meisner" ;
+  okh:image :RatchetPawl_image ;
+  okh:documentationLanguage "en-GB" ;
+  okh:relatedTsDC tsdc:3DP ;
+  okh:hasManifestFile :ManifestFile ;
+  okh:source :RatchetPawl_source ;
+  okh:export :RatchetPawl_export1 , :RatchetPawl_export2 ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:outerDimensionsMM "cube(size = [130,20,20])" ;
+  .
+
+:RatchetPawl_image
+  a okh:Image ;
+  rdfs:label "Image of Ratchet Pawl of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_4.jpg> ;
+  okh:fileFormat "JPG" ;
+  .
+
+:RatchetPawl_source
+  a okh:SourceFile ;
+  rdfs:label "Source File of Ratchet Pawl of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3//3DParts/RatchetPawl/RatchetPawl.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
+
+:RatchetPawl_export1
+  a okh:ExportFile ;
+  rdfs:label "Export File of Ratchet Pawl of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/RatchetPawl/RatchetPawl.stl> ;
+  okh:fileFormat "STL" ;
+  .
+
+:RatchetPawl_export2
+  a okh:ExportFile ;
+  rdfs:label "Export File of Ratchet Pawl of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/CombModul/CombModul.pdf> ;
+  okh:fileFormat "PDF" ;
+  .
+
+:RatchetWheel
+  a okh:Part ;
+  rdfs:label "Ratchet Wheel of OHLOOM v1.0.0" ;
+  okh:spdxLicense "CC-BY-SA-4.0" ;
+  okh:licensor "Jens Meisner" ;
+  okh:image :CombModul_image ;
+  okh:documentationLanguage "en-GB" ;
+  okh:relatedTsDC tsdc:3DP ;
+  okh:hasManifestFile :ManifestFile ;
+  okh:source :RatchetWheel_source ;
+  okh:export :RatchetWheel_export1 , :RatchetWheel_export2 ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:outerDimensionsMM "cylinder(h=45, r=45)" ;
+  .
+
+:RatchetWheel_image
+  a okh:Image ;
+  rdfs:label "Image of Ratchet Wheel of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/Documentation/Assembly_Guide/Parts_Print_1.jpg> ;
+  okh:fileFormat "JPG" ;
+  .
+
+:RatchetWheel_source
+  a okh:SourceFile ;
+  rdfs:label "Source File of Ratchet Wheel of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3//3DParts/RatchetWheel/RatchetWheel.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
+
+:RatchetWheel_export1
+  a okh:ExportFile ;
+  rdfs:label "Export File of Ratchet Wheel of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/RatchetWheel/RatchetWheel.stl> ;
+  okh:fileFormat "STL" ;
+  .
+
+:RatchetWheel_export2
+  a okh:ExportFile ;
+  rdfs:label "Export File of Ratchet Wheel of OHLOOM v1.0.0" ;
+  okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/3DParts/RatchetWheel/RatchetWheel.pdf> ;
+  okh:fileFormat "PDF" ;
+.
