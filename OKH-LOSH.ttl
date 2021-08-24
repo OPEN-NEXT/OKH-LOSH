@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -282,6 +282,7 @@ okh:alternativeLicense
   a owl:ObjectProperty ;
   rdfs:label "non-SPDX license" ;
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
+#  rdfs:subPropertyOf spdxt:License ;
   rdfs:domain okh:Module ;
   rdfs:range okh:FileURL ;
   owl:cardinality 1 ;
