@@ -302,8 +302,8 @@ okh:technologyReadinessLevel
   a owl:ObjectProperty ;
   rdfs:label "Technology Readiness Level (TRL)" ;
   rdfs:comment "…using the OTRL definitions" ;
-  rdfs:subPropertyOf otrl:OTRL ;
   owl:cardinality 1 ;
+  rdfs:range otrl:OTRL ;
   rdfs:domain okh:Module ;
   .
 
@@ -311,8 +311,8 @@ okh:documentationReadinessLevel
   a owl:ObjectProperty ;
   rdfs:label "Documentation Readiness Level (DLR)" ;
   rdfs:comment "…using the ODRL definitions" ;
-  rdfs:subPropertyOf otrl:ODRl ;
   owl:cardinality 1 ;
+  rdfs:range otrl:ODRL ;
   rdfs:domain okh:Module ;
   .
 
