@@ -84,7 +84,7 @@ okh:Standard
   a owl:Class ;
   rdfs:label "Technical Standard"@en ;
   rdfs:comment "official standard used in the _design_ (not e.g. DIN SPEC 3105-1)" ;
-  rdfs:subClassOf wd:Q317623 ;
+#  rdfs:subClassOf wd:Q317623 ;
   .
 
 okh:WebsiteURL
@@ -346,14 +346,14 @@ okh:cpcPatentClass
 okh:compliesWith
   a owl:ObjectProperty ;
   rdfs:label "complies with a technical standard" ;
-  rdfs:subPropertyOf wdp:P5009 ;
+#  rdfs:subPropertyOf wdp:P5009 ;
   rdfs:domain okh:Component ;
   .
 
 okh:standardID
   a owl:DatatypeProperty ;
   rdfs:label "Document Identifier for the technical Standard" ;
-  rdfs:subPropertyOf wdp:P5046 ;
+#  rdfs:subPropertyOf wdp:P5046 ;
   rdfs:range xsd:string ;
   rdfs:domain okh:Standard ;
   .
