@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-3.0-or-later	
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 @base             <http://purl.org/oseg/ontologies/OTRL> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
