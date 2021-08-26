@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/259683880.svg)](https://zenodo.org/badge/latestdoi/259683880)
+[![DOI](https://zenodo.org/badge/25968380.svg)](https://zenodo.org/badge/latestdoi/25968880)
 [![GitHub license](https://img.shields.io/github/license/OPEN-NEXT/OKH-LOSH.svg?style=flat)](./LICENSE)
 
 # OKH-LOSH
