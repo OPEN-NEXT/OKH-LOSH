@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/25968380.svg)](https://zenodo.org/badge/latestdoi/2596880)
+[![DOI](https://zenodo.org/badge/259683880.svg)](https://zenodo.org/badge/latestdoi/259683880)
 [![GitHub license](https://img.shields.io/github/license/OPEN-NEXT/OKH-LOSH.svg?style=flat)](./LICENSE)
 
 # OKH-LOSH
@@ -187,7 +187,3 @@ I feel this quote gives a neat, compact explanation:
 "Human history, closely explored,
 boils down to the history of invention of better tools."\
 – Ernst Knapp: cultural geographer (1808-1896)
-
-
-
-
