@@ -50,7 +50,7 @@
 :ManifestFile
   a okh:ManifestFile ;
   rdfs:label "Manifest File of OHLOOM v1.0.0" ;
-  okh:okhv "2.0" ;
+  okh:okhv "OKH-LOSHv1.0" ;
   okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/okh.toml> ;
   okh:fileFormat "TOML" ;
   .

@@ -51,7 +51,7 @@
 :ManifestFile
   a okh:ManifestFile ;
   rdfs:label "Manifest File of LOSHdummyMOSHA v1.0.1" ;
-  okh:okhv "2.0" ;
+  okh:okhv "OKH-LOSHv1.0" ;
   okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/okh.toml> ;
   okh:fileFormat "TOML" ;
   .
