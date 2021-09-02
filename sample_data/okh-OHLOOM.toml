@@ -49,8 +49,16 @@ export = [
   "/3DParts/CombModul/CombModul.pdf",
   "/3DParts/CombModul/CombModul.stl"
 ]
+printing-process = "FDM"
 material = "PLA"
-outer-dimensions-mm = "cube(size = [120,100,3]"
+outer-dimensions-mm = "cube(size = [120,100,5]"
+mass-g = 30
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.27
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name = "PoleBase"
@@ -58,7 +66,16 @@ tsdc = "3DP"
 source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 material = "PLA"
-outer-dimensions-mm = "cube(size = [125,110,100]"
+printing-process = "FDM"
+material = "PLA"
+outer-dimensions-mm = "cube(size = [130,115,100]"
+mass-g = 85
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 4
 
 [[part]]
 name = "RatchetPawl"
@@ -70,7 +87,15 @@ export = [
   "/3DParts/RatchetPawl/RatchetPawl.stl"
 ]
 material = "PLA"
+printing-process = "FDM"
 outer-dimensions-mm = "cube(size = [130,20,20]"
+mass-g = 30
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name = "Ratchet Wheel"
@@ -82,7 +107,15 @@ export = [
   "/3DParts/RatchetWheel/RatchetWheel.stl"
 ]
 material = "PLA"
+printing-process = "FDM"
 outer-dimensions-mm = "cylinder(h=45, r=45)"
+mass-g = 65
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name = "ScrewSockets"
@@ -94,7 +127,15 @@ export = [
   "/3DParts/ScrewSockets/ScrewSockets.stl"
 ]
 material = "PLA"
+printing-process = "FDM"
 outer-dimensions-mm = "cylinder(h=12, r=7)"
+mass-g = 5
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.1
+shell-thickness = 3
+top-bottom-thickness = 8
 
 [[part]]
 name= "ScrewSockets for ScrewHead"
@@ -103,7 +144,15 @@ tsdc = "3DP"
 source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
 material = "PLA"
+printing-process = "FDM"
 outer-dimensions-mm = "cylinder(h=12, r=7)"
+mass-g = 5
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.1
+shell-thickness = 3
+top-bottom-thickness = 8
 
 [[part]]
 name= "Warpclothbeam 1"
@@ -115,7 +164,15 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_1.stl"
 ]
 material = "PLA"
-outer-dimensions-mm = "cylinder(h=162, r=22.5)"
+printing-process = "FDM"
+outer-dimensions-mm = "cylinder(h=163, r=22.5)"
+mass-g = 65
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name= "Warpclothbeam 2"
@@ -127,7 +184,15 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_2.stl"
 ]
 material = "PLA"
-outer-dimensions-mm = "cylinder(h=163, r=22.5)"
+printing-process = "FDM"
+outer-dimensions-mm = "cylinder(h=162, r=22.5)"
+mass-g = 65
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name= "Warpclothbeam 3"
@@ -139,7 +204,15 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_3.stl"
 ]
 material = "PLA"
+printing-process = "FDM"
 outer-dimensions-mm = "cylinder(h=163, r=22.5)"
+mass-g = 65
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name= "Warpclothbeam 4"
@@ -151,7 +224,15 @@ export = [
   "/3DParts/WarpClothBeam/Warpclothbeam_4.stl"
 ]
 material = "PLA"
-outer-dimensions-mm = "cylinder(h=162, r=22.5)"
+printing-process = "FDM"
+outer-dimensions-mm = "cylinder(h=140, r=22)"
+mass-g = 60
+infill = 30
+raft-brim = true
+supports = false
+resolution-mm = 0.3
+shell-thickness = 3
+top-bottom-thickness = 3
 
 [[part]]
 name = "CombHolder"
