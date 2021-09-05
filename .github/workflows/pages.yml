@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+name: Publish Docker image
+on:
+  push:
+    branches: [ master ]
+  release:
+    types: [published]
+jobs:
+  pages:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+
+      - name: Install our Python requirements
+        uses: BSFishy/pip-action@v1
+        with:
+         packages: |
+           package1
+           package2
+         requirements: requirements.txt
+
+      - name: Install RDF visualization dependnecies
+        run: ./visualize-rdf --install-requirements
+
+      - name: Visualize our RDF
+        run: ./visualize
+
+      - name: Deploy to pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build
+
