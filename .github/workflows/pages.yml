@@ -2,12 +2,14 @@
 #
 # SPDX-License-Identifier: Unlicense
 
-name: Publish Docker image
+name: Generate RDF Visualizations
+
 on:
   push:
     branches: [ master ]
   release:
     types: [published]
+
 jobs:
   pages:
     name: Push Docker image to Docker Hub
