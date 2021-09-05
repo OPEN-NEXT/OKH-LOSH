@@ -2,20 +2,23 @@
 
 set -e
 
+vrf=build/visualize-rdf
+
 _install_req() {
 	if ! ( which wget > /dev/null && which pip > /dev/null && which javac > /dev/null )
 	then
 		apt-get update
 		apt-get install -y -qq wget python3-pip default-jdk > /dev/null
 	fi
-	wget https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf
-	chmod +x ./visualize-rdf
-	./visualize-rdf --install-requirements
+	wget https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf \
+		--output-document="$vrf"
+	chmod +x "$vrf"
+	"$vrf" --install-requirements
 	wget https://osegermany.gitlab.io/oh-tsdc-tools/tsdc-tools-latest-jar-with-dependencies.jar
 }
 
 
-if [ ! -f ./visualize-rdf ]
+if [ ! -f "$vrf" ]
 then
 	_install_req
 fi
@@ -26,7 +29,7 @@ mkdir -p build
 echo
 for ttl_file in *.ttl
 do
-	./visualize-rdf --do-not-open --layout fdp "$ttl_file"
+	"$vrf" --do-not-open --layout fdp "$ttl_file"
 done
 for file in *.svg *.png
 do
@@ -36,7 +39,7 @@ done
 echo
 for ttl_file in *.ttl
 do
-	./visualize-rdf --do-not-open --layout dot "$ttl_file"
+	"$vrf" --do-not-open --layout dot "$ttl_file"
 done
 for file in *.svg *.png
 do
