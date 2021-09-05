@@ -12,9 +12,21 @@ jobs:
   pages:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
+    env:
+      REPOS_DIR: build
+      ONT_VIZ_REPO: $REPOS_DIR/ontology-visualization
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+
+      - name: Create build dir for repo checkout
+        run: mkdir $REPOS_DIR
+
+      - name: Check out the ontology-visualization repo
+        uses: actions/checkout@v2
+        with:
+          repository: https://github.com/usc-isi-i2/ontology-visualization.git
+          path: $ONT_VIZ_REPO
 
       - name: Setup Python 3
         uses: actions/setup-python@v2
@@ -26,9 +38,9 @@ jobs:
         uses: BSFishy/pip-action@v1
         with:
          packages: |
-           package1
-           package2
-         requirements: requirements.txt
+           rdflib
+           requests
+         requirements: $ONT_VIZ_REPO/requirements.txt
 
       - name: Install RDF visualization dependnecies
         run: ./visualize-rdf --install-requirements
