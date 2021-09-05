@@ -1,0 +1,584 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
+@prefix okh:      <#> .
+@prefix obo:      <http://purl.obolibrary.org/obo/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix spdxt:    <http://spdx.org/rdf/terms#> .
+@prefix terms:    <http://purl.org/dc/terms/> .
+@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
+@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
+
+# NOTE:
+# Regarding the use of `owl:unionOf` for `rdfs:domain` and `rdfs:range` in this ontology:
+# Looking at the definitions for the later two properties:
+# * https://www.w3.org/TR/rdf-schema/#ch_domain
+# * https://www.w3.org/TR/rdf-schema/#ch_range
+# and as described in this StackOverflow answer:
+# <https://stackoverflow.com/a/23729566/586229>,
+# multiple objects for the two properties mean,
+# that *all of them* apply, simultaneously, not *one of them*.
+# We want the *one of them* meaning though.
+# To get that, in RDF/OWL logic,
+# one needs to use the `owl:unionOf` approach.
+
+<>
+  a owl:Ontology ;
+  owl:versionInfo "0.1" ;
+  owl:versionIRI <> ;
+  rdfs:label "OSH meta-data"@en ;
+  rdfs:comment "Open Source Hardware metadata - Base Ontology"@en ;
+  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  terms:license "GPL v3" .
+
+
+# Classes
+
+# Make commonly used classes inherit their WikiData counterparts,
+# so we can use meaningful names,
+# instead of the cryptic WikiData Property numbers.
+
+
+# ----- CLASSES -----
+
+okh:Component
+  a owl:Class ;
+  rdfs:label "Component"@en ;
+  rdfs:comment "Either a module (MOSH) or Part (POSH); more component types may be added in the future"@en ;
+  # That's the main class then!
+  .
+
+okh:Module
+  a owl:Class ;
+  rdfs:label "Module"@en ;
+  rdfs:comment "Module of Open Source Hardware (MOSH)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:Part
+  a owl:Class ;
+  rdfs:label "Part"@en ;
+  rdfs:comment "Piece of Open Source Hardware (POSH)"@en ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:Software
+  a owl:Class ;
+  rdfs:label "Software"@en ;
+  rdfs:comment "Software (including firmware) needed to run & use the OSH" ;
+  rdfs:subClassOf okh:Component ;
+  .
+
+okh:Reference
+  a owl:Class ;
+  rdfs:label "unambiguous reference" ;
+  .
+
+okh:Standard
+  a owl:Class ;
+  rdfs:label "Technical Standard"@en ;
+  rdfs:comment "official standard used in the _design_ (not e.g. DIN SPEC 3105-1)" ;
+#  rdfs:subClassOf wd:Q317623 ;
+  .
+
+okh:WebsiteURL
+  a owl:Class ;
+  rdfs:label "Website URL" ;
+  rdfs:subClassOf okh:Reference ;
+  rdfs:subClassOf schema:URL ;
+  .
+
+okh:FileURL
+  a owl:Class ;
+  rdfs:label "permanent URL to file" ;
+  rdfs:subClassOf okh:ComponentReference ;
+  rdfs:subClassOf schema:URL ;
+  .
+
+okh:File
+  a owl:Class ;
+  rdfs:label "File" ;
+  .
+
+okh:ManifestFile
+  a owl:Class ;
+  rdfs:label "manifest file" ;
+  rdfs:comment "file holding the metadata" ;
+  rdfs:subClassOf okh:File
+  .
+
+okh:Readme
+  a owl:Class ;
+  rdfs:label "Readme" ;
+  rdfs:subClassOf okh:File
+  .
+
+okh:Image
+  a owl:Class ;
+  rdfs:label "Image" ;
+  rdfs:subClassOf okh:File
+  .
+
+okh:BoM
+  a owl:Class ;
+  rdfs:label "Bill of Materials" ;
+  rdfs:subClassOf okh:File
+  .
+
+okh:SourceFile
+  a owl:Class ;
+  rdfs:label "source file" ;
+  rdfs:subClassOf okh:File ;
+  .
+
+okh:ExportFile
+  a owl:Class ;
+  rdfs:label "exported source file" ;
+  rdfs:subClassOf okh:File ;
+  .
+
+okh:ManufacturingInstructions
+  a owl:Class ;
+  rdfs:label "Manufacturing Instructions" ;
+  rdfs:subClassOf okh:File ;
+  .
+
+okh:UserManual
+  a owl:Class ;
+  rdfs:label "User Manual" ;
+  rdfs:subClassOf okh:File ;
+  .
+
+okh:ComponentReference
+  a owl:Class ;
+  rdfs:subClassOf okh:Reference ;
+  rdfs:label "Component Reference" ;
+  rdfs:comment '''
+    others shall be able to identify/procure this component only by the given reference(s),
+    MOSH → URL to corresponding release
+    POSH → URL to containing folder
+    STD  → standard designation (preferably naming the _latest_ standard)
+    BUY  → unambiguous reference'''@en ;
+  .
+
+# ----- PROPERTIES -----
+
+okh:okhv
+  a owl:DatatypeProperty ;
+  rdfs:label "OKH version" ;
+  rdfs:comment "version of OKH specification the metadata is following (different version → different data fields)" ;
+  rdfs:subPropertyOf schema:version ;
+  rdfs:domain okh:ManifestFile ;
+  owl:cardinality 1
+  .
+
+okh:dataSource
+  a owl:DatatypeProperty ;
+  rdfs:label "Data Source" ;
+  rdfs:comment "origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:subClassOf schema:URL ;
+  rdfs:domain okh:Module ;
+  owl:cardinality 1
+  .
+
+## ----- identification -----
+
+okh:repository
+  a owl:ObjectProperty ;
+  rdfs:label "repository" ;
+  rdfs:comment '''
+    URL to the place where development happens (typically the repository)" ;
+    following this link people shall be able to contribute to the development
+    (reporting issues, suggesting changes, connecting to the team etc.)" '''@en;
+  rdfs:subPropertyOf schema:codeRepository ;
+  rdfs:range okh:WebsiteURL ;
+  owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:repoSnapshot
+  a owl:ObjectProperty ;
+  rdfs:label "URL respository snapshot (=specific version)" ;
+  rdfs:comment "LOSH-Krawler takes the commit hash from the version tag and creates this permalink" ;
+  rdfs:subPropertyOf okh:repository ;
+  rdfs:range okh:WebsiteURL ;
+  owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:version
+  a owl:DatatypeProperty ;
+  rdfs:label "version" ;
+  rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
+  rdfs:subPropertyOf schema:version ;
+  rdfs:domain okh:Module ;
+  owl:cardinality 1
+  .
+
+okh:forkOf
+ a owl:ObjectProperty ;
+ rdfs:label "fork of" ;
+ rdfs:subPropertyOf schema:isBasedOn ;
+ owl:cardinality 1 ;
+ rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+ .
+
+okh:versionOf
+  a owl:ObjectProperty ;
+  rdfs:label "version of" ;
+  rdfs:comment "connects specific versions of Modules with their versionless superclass" ;
+  rdfs:range okh:Module ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:documentationLanguage
+ a owl:DatatypeProperty ;
+ rdfs:label "documentation language" ;
+ rdfs:comment '''
+  IETF language tag
+  following the BCP 47 standard e.g. en-GB
+  denotes the language of the documentation for the component subject '''@en;
+ rdfs:subPropertyOf schema:inLanguage ;
+ owl:cardinality 1 ;
+ rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+ .
+
+## ----- legal -----
+
+okh:licensor
+  a owl:ObjectProperty ;
+  rdfs:label "licensor" ;
+  rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
+  rdfs:subPropertyOf schema:copyrightHolder ;
+  rdfs:range [ owl:unionOf (schema:Person schema:Organization) ] ;
+  rdfs:domain okh:Module ;
+  owl:cardinality 1
+  .
+
+okh:organisation
+  a owl:ObjectProperty ;
+  rdfs:label "organisation" ;
+  rdfs:comment "organisation representing (most) contributors of this project" ;
+  rdfs:range schema:Organization ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:spdxLicense
+ a owl:ObjectProperty ;
+ rdfs:label "SPDX license identifier" ;
+ rdfs:comment "view complete list under https://spdx.org/licenses/" ;
+ rdfs:domain okh:Module ;
+ rdfs:range spdxt:ListedLicense ; # aka SPDX license identifier for a single, atomar license
+ owl:cardinality 1 ;
+ .
+
+okh:alternativeLicense
+  a owl:ObjectProperty ;
+  rdfs:label "non-SPDX license" ;
+  rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
+#  rdfs:subPropertyOf spdxt:License ;
+  rdfs:domain okh:Module ;
+  rdfs:range okh:FileURL ;
+  owl:cardinality 1 ;
+  .
+
+## ----- informative -----
+
+# okh:contributorCount
+#   a owl:DatatypeProperty ;
+#   rdfs:label "number of conributors participating in the project" ;
+#   rdfs:domain okh:Module ;
+#   rdfs:range xsd:int ;
+#   .
+
+## ----- development stage -----
+
+okh:technologyReadinessLevel
+  a owl:ObjectProperty ;
+  rdfs:label "Technology Readiness Level (TRL)" ;
+  rdfs:comment "…using the OTRL definitions" ;
+  owl:cardinality 1 ;
+  rdfs:range otrl:OTRL ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:documentationReadinessLevel
+  a owl:ObjectProperty ;
+  rdfs:label "Documentation Readiness Level (DLR)" ;
+  rdfs:comment "…using the ODRL definitions" ;
+  owl:cardinality 1 ;
+  rdfs:range otrl:ODRL ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:attestation
+  a owl:ObjectProperty ;
+  rdfs:label "attestation" ;
+  rdfs:comment "permanent URL to evidence of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
+  rdfs:range okh:WebsiteURL ;
+  rdfs:domain okh:Module ;
+  .
+
+# okh:certificate
+#   a owl:ObjectProperty ;
+#   rdfs:label "certificate" ;
+#   rdfs:comment "official certificate, such as CE mark" ;
+# FIXME rdfs:subPropertyOf ;
+#   rdfs:domain okh:Module ;
+#   .
+
+## ----- basic description -----
+
+okh:cpcPatentClass
+ a owl:ObjectProperty ;
+ rdfs:label "Patent Class" ;
+ rdfs:comment "International Patent Classification (IPC)" ;
+ rdfs:subPropertyOf epo:classificationIPCInventive;
+ rdfs:domain okh:Module ;
+ .
+
+okh:compliesWith
+  a owl:ObjectProperty ;
+  rdfs:label "complies with a technical standard" ;
+#  rdfs:subPropertyOf wdp:P5009 ;
+  rdfs:domain okh:Component ;
+  .
+
+okh:standardID
+  a owl:DatatypeProperty ;
+  rdfs:label "Document Identifier for the technical Standard" ;
+#  rdfs:subPropertyOf wdp:P5046 ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Standard ;
+  .
+
+okh:function
+  a owl:DatatypeProperty ;
+  rdfs:label "functional description" ;
+  rdfs:comment '''
+    functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
+    so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field
+    optional: description of input, output and interfaces'''@en ;
+  rdfs:subPropertyOf obo:BFO_0000016 ; # aka function
+  owl:cardinality 1 ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasReadme
+  a owl:ObjectProperty ;
+  rdfs:label "has Readme" ;
+  rdfs:comment "links to the corresponding Readme" ;
+  rdfs:range okh:Readme ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasBoM
+  a owl:ObjectProperty ;
+  rdfs:label "has Bill of Materials" ;
+  rdfs:comment "links to the corresponding Bill of Materials" ;
+  rdfs:range okh:BoM ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:usesModule
+  a owl:ObjectProperty ;
+  rdfs:label "uses Module" ;
+  rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
+  rdfs:range [ owl:unionOf (okh:Module okh:WebsiteURL) ] ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasImage
+  a owl:ObjectProperty ;
+  rdfs:label "has image" ;
+  rdfs:comment "links to the corresponding Image" ;
+  rdfs:subPropertyOf schema:image ;
+  rdfs:range okh:Image ;
+  rdfs:domain okh:Component ;
+  .
+
+okh:functionalMetadata
+  a owl:DatatypeProperty ;
+  rdfs:label "functionality metadata" ;
+  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardised)" ;
+  rdfs:subPropertyOf schema:value ;
+  rdfs:range schema:StructuredValue ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:productionMetadata
+  a owl:ObjectProperty ;
+  rdfs:label "production metadata" ;
+  rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
+  rdfs:subPropertyOf schema:value ;
+  rdfs:range schema:StructuredValue ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+## ----- production metadata -----
+
+okh:manufacturingProcess
+  a owl:ObjectProperty ;
+  rdfs:label "manufacturing process" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:material
+  a owl:DatatypeProperty ;
+  rdfs:label "material" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Part ;
+  .
+
+okh:outerDimensionsMM
+  a owl:DatatypeProperty ;
+  rdfs:label "outer dimensions in MM using openSCAD primitives" ;
+  rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:outerDimensionsCM
+  a owl:DatatypeProperty ;
+  rdfs:label "outer dimensions in CM using openSCAD primitives" ;
+  rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:smallestToleranceClass
+  a owl:ObjectProperty ;
+  rdfs:label "smallest tolerance class (following ISO 286)" ;
+# fixme rdfs:subPropertyOf ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:Part ;
+  .
+
+## ----- design files -----
+## (diving into the documentation)
+
+# okh:assemblyInstruction
+#   a owl:ObjectProperty ;
+#   rdfs:label "assembly instruction" ;
+#   rdfs:comment "can be a technical drawing, instruction etc." ;
+#   rdfs:range okh:FileURL ;
+#   rdfs:domain okh:Module ;
+#   .
+
+okh:hasManifestFile
+  a owl:ObjectProperty ;
+  rdfs:label "has manifest file" ;
+  rdfs:range okh:ManifestFile ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:fileURL
+  a owl:ObjectProperty ;
+  rdfs:label "file URL" ;
+#  rdfs:subPropertyOf schema:URL ; # NOTE This is not valid, because schema:URL is a class, not a property
+  rdfs:domain okh:File ;
+  .
+
+okh:fileFormat
+  a owl:ObjectProperty ;
+  rdfs:label "file format" ;
+  rdfs:subPropertyOf schema:fileFormat ;
+  rdfs:domain okh:File ;
+  .
+
+okh:timestamp
+  a owl:ObjectProperty ;
+  rdfs:label "timestamp" ;
+  rdfs:comment "following ISO 8601" ;
+# FixMe  rdfs:subPropertyOf
+  rdfs:domain okh:Module ;
+  .
+
+okh:source
+  a owl:ObjectProperty ;
+  rdfs:label "source file" ;
+  rdfs:comment "relative link to a source file" ;
+  rdfs:range okh:SourceFile ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:export
+  a owl:ObjectProperty ;
+  rdfs:label "exported source file" ;
+  rdfs:comment "URL to a (generated) exported source file" ;
+  rdfs:range okh:ExportFile ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:hasUserManual
+  a owl:ObjectProperty ;
+  rdfs:label "has User Manual" ;
+  rdfs:range okh:UserManual ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasManufacturingInstructions
+  a owl:ObjectProperty ;
+  rdfs:label "has Manufacturing Instructions" ;
+  rdfs:range okh:ManufacturingInstructions ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:relatedTsDC
+  a owl:ObjectProperty ;
+  rdfs:label "related TsDC" ;
+  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
+  # FIXME rdfs:subPropertyOf ;
+  rdfs:range tsdc:OHTsDC ;
+  rdfs:domain okh:Component
+  .
+
+# source, export
+
+okh:hasSoftware
+  a owl:ObjectProperty ;
+  rdfs:label "has Software" ;
+  rdfs:range okh:Software ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:release
+  a owl:DatatypeProperty ;
+  rdfs:label "release" ;
+  rdfs:comment "URL to release" ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Software) ] ;
+  .
+
+okh:installationGuide
+  a owl:DatatypeProperty ;
+  rdfs:label "Installation Guide" ;
+  rdfs:domain okh:Software ;
+  .
+
+### ----- source/export subproperties -----
+### (from TsDC)
+#
+#okh:rationale
+#  a owl:ObjectProperty ;
+#  rdfs:label "rationale" ;
+#  rdfs:range [ owl:unionOf (okh:source okh:export) ] ;
+#  rdfs:domain okh:Component ;
+#  .
+#
+#okh:design
+#  a owl:ObjectProperty ;
+#  rdfs:label "design file" ;
+#  rdfs:range [ owl:unionOf (okh:source okh:export) ] ;
+#  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+#  .
