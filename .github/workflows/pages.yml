@@ -42,9 +42,6 @@ jobs:
            requests
          requirements: $ONT_VIZ_REPO/requirements.txt
 
-      - name: Install RDF visualization dependnecies
-        run: ./visualize-rdf --install-requirements
-
       - name: Visualize our RDF
         run: ./visualize
 
