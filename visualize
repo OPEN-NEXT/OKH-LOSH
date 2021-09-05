@@ -77,6 +77,7 @@ mv ./*.dot ./*.svg ./*.png build/
 echo
 for ttl_file in *.ttl
 do
+	cp "$ttl_file" build/
 	java \
 		-classpath tsdc-tools-latest-jar-with-dependencies.jar \
 		de.opensourceecology.tsdc.tools.rdf2md.MainKt \
