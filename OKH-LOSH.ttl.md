@@ -93,44 +93,50 @@
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Bill of Materials"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.2. ExportFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ExportFile)
+## [4.2. ContributionGuide](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ContributionGuide)
+
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Contribution Guide"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [4.3. ExportFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ExportFile)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "exported source file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.3. Image](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Image)
+## [4.4. Image](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Image)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Image"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.4. ManifestFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ManifestFile)
+## [4.5. ManifestFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ManifestFile)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "file holding the metadata"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "manifest file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.5. ManufacturingInstructions](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ManufacturingInstructions)
+## [4.6. ManufacturingInstructions](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ManufacturingInstructions)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Manufacturing Instructions"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.6. Readme](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Readme)
+## [4.7. Readme](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Readme)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Readme"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.7. SourceFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#SourceFile)
+## [4.8. SourceFile](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#SourceFile)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "source file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [4.8. UserManual](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#UserManual)
+## [4.9. UserManual](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#UserManual)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "User Manual"
