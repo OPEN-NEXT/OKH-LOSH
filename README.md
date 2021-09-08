@@ -166,6 +166,18 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
   - The [Open Know-How Metadata Standard](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
     gives a first approach to organise OSH through reasonable metadata.
 
+**Can I see the ontology structure somewhere?**
+
+Our CI automatically generates exports from the TTL source. You can find:
+
+- Markdown files laying out the structure,
+- GraphViz/DOT graps representing the structure,
+- PNG & SVG renders of the graphs
+
+here: <https://open-next.github.io/OKH-LOSH/>
+
+Note that when invalid TTL files are pushed, the CI will give back an error and no exports will be available.
+
 ### Related work
 
 - the importer to push the ontology from any git-based instance to any Wikibase instance\
