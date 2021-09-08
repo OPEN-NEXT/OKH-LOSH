@@ -248,7 +248,7 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.16"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cube(size = [118,60,18]"
 
@@ -266,7 +266,7 @@ export = [
 ]
 material = "wood"
 mass-kg = 0.55
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 outer-dimensions-mm = "cube(size = [572,100,20]"
 
 [[part]]
@@ -283,7 +283,7 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.065"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cube(size = [497,45,6]"
 
@@ -301,7 +301,7 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.70"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cube(size = [580,140,18]"
 
@@ -319,7 +319,7 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.15"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cube(size = [566,24,22]"
 
@@ -337,7 +337,7 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.035"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cube(size = [560,22,6]"
 
@@ -355,6 +355,6 @@ export = [
 ]
 material = "wood"
 mass-kg = "0.33"
-smallest-tolerance-class = IT11
+smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 outer-dimensions-mm = "cylinder(h=710, r=17.5)"
