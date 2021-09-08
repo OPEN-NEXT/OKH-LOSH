@@ -119,6 +119,12 @@ okh:Readme
   rdfs:subClassOf okh:File
   .
 
+okh:ContributionGuide
+  a owl:Class ;
+  rdfs:label "Contribution Guide" ;
+  rdfs:subClassOf okh:File
+  .
+
 okh:Image
   a owl:Class ;
   rdfs:label "Image" ;
@@ -375,6 +381,14 @@ okh:hasReadme
   rdfs:label "has Readme" ;
   rdfs:comment "links to the corresponding Readme" ;
   rdfs:range okh:Readme ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hasContributionGuide
+  a owl:ObjectProperty ;
+  rdfs:label "has Contribution Guide" ;
+  rdfs:comment "links to the corresponding Contribution Guide" ;
+  rdfs:range okh:ContributionGuide ;
   rdfs:domain okh:Module ;
   .
 

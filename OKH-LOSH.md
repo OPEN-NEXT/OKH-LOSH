@@ -235,6 +235,9 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 - `readme` [file-path]
   - relative or absolute path to the readme file
   - e.g. `README.md`
+- `contribution-guide` [file-path]
+  - relative or absolute path to the contribution guide
+  - e.g. `CONTRIBUTING.md`
 - `image` [file-path]
   - relative or absolute path to one (!) representative image of the OSH module
 - `documentation-language` [string]
