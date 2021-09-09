@@ -20,6 +20,8 @@ title: Technology Readiness Levels for Open Source Hardware
 
 # Principle
 
+<!--- NASA's TRL are too complicated -->
+
 "\[NASA's\] TRLs \[…\] provide useful insights into two key contributors to readiness:
 
 1. degree of functionality provided
@@ -49,28 +51,34 @@ to ensure equally human and machine readability.
 
 # Concept
 
-|OTRL|Detail|Characteristic|
-|---|---|---|
-|OTRL 1|basic principles observed|rough idea|
-|OTRL 2|technology concept formulated|concept ready|
-|OTRL 3|experimental proof of concept|concept is validated in tests|
-|OTRL 4|technology validated in lab|early prototype|
-|OTRL 5|technology validated in relevant environment|mature prototype|
-|OTRL 6|technology demonstrated in relevant environment|ready-to-use product|
-|OTRL 7|system prototype demonstration in operational environment|ready-to-use product (for critical or complex applications)|
-|OTRL 8|system complete and qualified|finished product (could be sold in the EU)|
-|OTRL 9|actual system proven in operational environment|established product|
-
-|ODRL|Detail|Characteristic|
-|---|---|---|
-|ODRL 0|no documentation available|or noncompliant license|
-|ODRL 1|basic information available|know that the OSH is, but not more|
-|ODRL 2|drafty documentation|documentation in progress, yet patchy|
-|ODRL 3|early release|lots of reconciliation required to build & operate the OSH|
-|ODRL 4|relevant realease|few reconciliation required to build & operate the OSH|
-|ODRL 5|mature realease|no reconciliation required to build & operate the OSH|
-
 ## OTRL
+
+### General
+
+Resources:
+
+- https://motius.de/phasen-der-produktentwicklung/#produktentwicklung-phase-4-das-minimum-viable-product-mvp
+- https://de.wikipedia.org/wiki/Produktentwicklung#Ablauf
+- https://doi.org/10.1007/978-3-662-57303-7
+- VDI 2220
+
+|OTRL|Stage|Goal|
+|---|---|---|
+|OTRL 1|ideation|product specifications/requirements|
+|OTRL 2|conception|proof of concept|
+|OTRL 3|technical design|early prototype|
+|OTRL 4|product design|minimum viable product|
+|OTRL 5|safe product|CE certification|
+
+<!--- ToDo:
+
+1. getting requirements ready
+2. finding a solution concept
+3. translate solution conecpt into a physical hardware solution
+4. design a product that a) reliably covers core features and b) can be built, modified and operated by non-contrbutors
+5. finish all relevant tests for CE certification
+
+-->
 
 ### OTRL 1
 
@@ -177,6 +185,16 @@ EXAMPLE: Product is sold in the EU.
 ## ODRL
 
 ### General
+
+|ODRL|Stage|Goal|
+|---|---|---|
+|ODRL 1|documentation started|any documentation available under a free/open license|
+|ODRL 2|all source files available|only relevant source files are available and are available in their native (hence editable) file format, but no further explanations, manuals etc.|
+|ODRL 3|technical documentation useable|product can be reproduced and documentation edited by non-contributors, but this still includes reconciliation, guesswork or reengineering|
+|ODRL 4|technical documentation finished|full compliance with DIN SPEC 3105-1|
+|ODRL 5|decentralised production enabled|documents related to CE certification published|
+
+<!--- ToDo: -->
 
 For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
 meaning that it must be published under a free/open license and publicly accessible.
