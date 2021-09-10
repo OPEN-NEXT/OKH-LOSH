@@ -199,7 +199,7 @@ EXAMPLE: Product is sold in the EU.
 1. anything accessible according to DIN SPEC 3105-1
 2. essential files accessible according to DIN SPEC 3105-1
 3. unambiguous reference (e.g. via consistent versioning or release) is a prerequisite
-4. can be proven via community-based assessment according to DIN SPEC 3105-2
+4. can be proven via community-based assessment according to DIN SPEC 3105-2 (or equivalent proofs of conformity assessment as e.g. OSHWA certification or RYF certification)
 5. xxx
 
 -->
