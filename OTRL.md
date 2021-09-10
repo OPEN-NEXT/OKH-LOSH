@@ -188,13 +188,21 @@ EXAMPLE: Product is sold in the EU.
 
 |ODRL|Stage|Goal|
 |---|---|---|
-|ODRL 1|right to distribute granted|any documentation available under a free/open license, all legal information available|
-|ODRL 2|right to study, make, modify granted |all relevant source files are available and are available in their native (hence editable) file format; further explanations, assembly instructions, operation manuals etc. still missing|
+|ODRL 1|right to study, make, modify and distribute granted|any documentation available under a free/open license, all legal information available|
+|ODRL 2|right to study, make, modify and distribute executable on essential information|all relevant source files are available and are available in their native (hence editable) file format; further explanations, assembly instructions, operation manuals etc. still missing|
 |ODRL 3|technical documentation useable for non-contributors|product can be reproduced and documentation edited by non-contributors, but this still includes reconciliation, guesswork or reengineering|
 |ODRL 4|standalone technical documentation finished|full compliance with DIN SPEC 3105-1|
 |ODRL 5|decentralised production enabled|documents related to CE certification published|
 
-<!--- ToDo: -->
+<!--- ToDo: 
+
+1. anything accessible according to DIN SPEC 3105-1
+2. essential files accessible according to DIN SPEC 3105-1
+3. unambiguous reference (e.g. via consistent versioning or release) is a prerequisite
+4. can be proven via community-based assessment according to DIN SPEC 3105-2
+5. xxx
+
+-->
 
 For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
 meaning that it must be published under a free/open license and publicly accessible.
