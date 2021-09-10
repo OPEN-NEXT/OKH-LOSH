@@ -188,10 +188,10 @@ EXAMPLE: Product is sold in the EU.
 
 |ODRL|Stage|Goal|
 |---|---|---|
-|ODRL 1|documentation started|any documentation available under a free/open license|
-|ODRL 2|all source files available|only relevant source files are available and are available in their native (hence editable) file format, but no further explanations, manuals etc.|
-|ODRL 3|technical documentation useable|product can be reproduced and documentation edited by non-contributors, but this still includes reconciliation, guesswork or reengineering|
-|ODRL 4|technical documentation finished|full compliance with DIN SPEC 3105-1|
+|ODRL 1|right to distribute granted|any documentation available under a free/open license, all legal information available|
+|ODRL 2|right to study, make, modify granted |all relevant source files are available and are available in their native (hence editable) file format; further explanations, assembly instructions, operation manuals etc. still missing|
+|ODRL 3|technical documentation useable for non-contributors|product can be reproduced and documentation edited by non-contributors, but this still includes reconciliation, guesswork or reengineering|
+|ODRL 4|standalone technical documentation finished|full compliance with DIN SPEC 3105-1|
 |ODRL 5|decentralised production enabled|documents related to CE certification published|
 
 <!--- ToDo: -->
