@@ -192,6 +192,10 @@ Note that when invalid TTL files are pushed, the CI will give back an error and 
 'til we have a proper conribution guide,
 just join our group on [telegram](https://t.me/joinchat/FiYCVhD-NPfpMr5PnZaiNQ) :)
 
+In any case, collaboration in this project must follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
 ## Why are we doing this?
 
 I feel this quote gives a neat, compact explanation:
