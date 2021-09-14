@@ -122,6 +122,12 @@ The future could bring e.g.:
 
 ![dataflow illustration](illustrations/dataflow-principle.svg)
 
+## Modules used
+
+### OKH-LOSH
+
+Developed and published in this repository here :)
+
 - technical details of the wikibase instance: <https://gitlab.opensourceecology.de/verein/koordination/it/tickets/-/issues/43>
 - open standards used:
   - The [DIN SPEC 3105](https://gitlab.com/OSEGermany/OHS)
@@ -144,14 +150,25 @@ here: <https://open-next.github.io/OKH-LOSH/>
 
 Note that when invalid TTL files are pushed, the CI will give back an error and no exports will be available.
 
-### Related work
+### Crawler
 
-- the importer to push the ontology from any git-based instance to any Wikibase instance\
-  <https://github.com/hoijui/LOSH-tools> (by hoijui, IPK)
-- the reworked API to improve reconciliation tasks\
-  <https://github.com/wmde/WikibaseReconcileEdit> (by addshore, WMDE)
 - the crawler that collects all the data\
   <https://github.com/OPEN-NEXT/LOSH-krawler> (by ahane, konek.to)
+
+### WikibaseReconcileEdit
+
+- the reworked API to improve reconciliation tasks\
+  <https://github.com/wmde/WikibaseReconcileEdit> (by addshore, WMDE)
+
+### Frontend
+
+- the frontend of the LOSH system helps you dicovering the data on our Wikibase instance\
+  <https://github.com/wmde/LOSH-Frontend/>
+
+### RDF2WB
+
+- the importer to push the ontology from any git-based instance to any Wikibase instance; necessary to set up the LOSH system\
+  <https://github.com/hoijui/LOSH-tools> (by hoijui, IPK)
 
 ## Want to contribute \[?\]
 
