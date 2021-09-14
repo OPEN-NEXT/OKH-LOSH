@@ -153,7 +153,8 @@ Note that when invalid TTL files are pushed, the CI will give back an error and 
 ### Crawler
 
 - the crawler that collects all the data\
-  <https://github.com/OPEN-NEXT/LOSH-krawler> (by ahane, konek.to)
+  <https://github.com/ahane/LOSH-krawler> (by ahane, konek.to)
+  will move to: <https://github.com/OPEN-NEXT/LOSH-krawler>
 
 ### WikibaseReconcileEdit
 
