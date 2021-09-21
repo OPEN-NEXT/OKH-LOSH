@@ -191,18 +191,21 @@ The file reference _always_ starts with an "`/`"
 In the following, data fields will be referenced by their TOML key (manifest files are written in TOML).
 Their corresponding TURTLE key (the ontology is written in TURTLE) is named explicitly.
 
+Mandatory entries are bold.
+
 ## pre-filled or filled by the crawler
 
 ### for OSH modules only
 
-- `okhv` [string]
-  - = "okh-losh" for all data coming
+- **`okhv`** [string]
   - version of the OKH standard used
-- `data-source` [string]
+  - = "OKH-LOSHv1.0" for all manifest files following this specification
+  - = "OKHv1.0" for all manifest files following [OKHv1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+- **`data-source`** [string]
   - origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)
   - NOTE: not an actual TOML key since this is set by the crawler directly in RDF
 
-### for parts only
+### for files only
 
 - `file-format` [MIME]
   - from `file-path`
@@ -215,20 +218,20 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
   
 ## metadata fields for OSH modules
 
-- `name` [string]
+- **`name`** [string]
   - working title of the OSH module
-- `repo` [URL]
+- **`repo`** [URL]
   - reference to repository in which the technical documentation is developed
-- `version` [string]
+-** `version`** [string]
   - version of the module
   - following the [semantic versioning scheme v2.0.0](https://semver.org/#semantic-versioning-200)
 - `release` [URL]
   - reference to release package of this version of the OSH module
-- `license` [string]
+- **`license`** [string]
   - [SPDX ID](https://spdx.org/licenses/) of the license used
   - if no SPDX key is available yet, use URL to legal code of the license instead
   - NOTE: When no SPDX key is found by the crawler, metadata won't be uploaded to LOSH until the alternative license has been whitelisted by maintainers. At LOSH we need to make sure that all results are actually open source.
-- `licensor` [string]
+- **`licensor`** [string]
   - licensor (mostly the originator) of the OSH module 
 - `organisation` [string]
   - organisation of the licensor
@@ -254,7 +257,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
     - [Open Hardware Observatory](https://en.oho.wiki/wiki/Request_certification_for_your_project)
     - [Open Source Ecology Germany](https://gitlab.opensourceecology.de/verein/projekte/cab/CAB)
   - [OSHWA certification programme](https://certification.oshwa.org/)
-- `function` [string]
+- **`function`** [string]
   - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
     so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field\
     optional: description of input, output and interfaces
@@ -284,7 +287,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## metadata fields for parts
 
-- `name` [string]
+- **`name`** [string]
   - working title of the part
 - `image` [file-path]
   - relative or absolute path to one (!) representative image of the OSH module
@@ -293,7 +296,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
   - get it from here: <https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/oh-tsdc.ttl>
   - e.g. `3DP`
   - multiple inputs possible (with one entry each)
-- `source` [file-path]
+- **`source`** [file-path]
   - relative or absolute path to source file (e.g. native CAD file)
   - e.g. `/3D-parts/part1.scad`
   - multiple inputs possible (with one entry each)
@@ -304,7 +307,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 ## software
 
-- `release` [URL]
+- **`release`** [URL]
   - unambiguous refrence to the software release used for this version of the OSH module
   - e.g. `https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2`
 - `installation-guide` [URL]
