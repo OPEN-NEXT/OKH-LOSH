@@ -191,7 +191,13 @@ The file reference _always_ starts with an "`/`"
 In the following, data fields will be referenced by their TOML key (manifest files are written in TOML).
 Their corresponding TURTLE key (the ontology is written in TURTLE) is named explicitly.
 
-Mandatory entries are bold.
+Mandatory entries are bold.\
+To summarise: an OSH module must bear reference of:
+- the complete legal information (name, license, licensor);
+- an unambiguous reference to its repository, where source files are available;
+- its specific version;
+- the language in which the documentation is written;
+- its functional description.
 
 ## pre-filled or filled by the crawler
 
