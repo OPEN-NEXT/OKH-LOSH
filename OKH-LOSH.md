@@ -243,7 +243,7 @@ Mandatory entries are bold.
   - e.g. `CONTRIBUTING.md`
 - `image` [file-path]
   - relative or absolute path to one (!) representative image of the OSH module
-- `documentation-language` [string]
+- **`documentation-language`** [string]
   - IETF language tag for the language in which the documentation is written
 - `technology-readiness-level` [string]
   - OTRL-ID representing the development stage of the OSH module
