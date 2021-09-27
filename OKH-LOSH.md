@@ -92,7 +92,7 @@ Data submission requires the use of a [Manifest File](#manifest-file).
 The Manifest File is directly available for the crawler via the GitLab-API.\
 (See [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details.)
 
-LINK to platform: <https://gitlab.com/>
+URL to platform: <https://gitlab.com/>
 
 ### GitHub
 
@@ -101,7 +101,7 @@ Data submission requires the use of a [Manifest File](#manifest-file).
 The Manifest File is directly available for the crawler via the GitHub-API.\
 (See [#24](https://github.com/OPEN-NEXT/LOSH/issues/24) for details.)
 
-LINK to platform: <https://github.com/>
+URL to platform: <https://github.com/>
 
 ### Appropedia
 
@@ -109,19 +109,25 @@ Data shall be provided using the "Infobox device" template ([version from 15:13,
 
 The [LOSH Appropedia scraper](https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper) will upload metadata in form of [Manifest Files](#manifest-file) to the [LOSH-List repository](https://github.com/OPEN-NEXT/LOSH-list) on [GitHub](#github), where it becomes available for the crawler.
 
-LINK to platform: <http://appropedia.org/>
+URL to platform: <http://appropedia.org/>
+
+Data mapping specification: see [/Data Mapping/data-mapping-Appropedia.md](Data%20Mapping/data-mapping-Appropedia.md)
 
 ### Wikifactory
 
 Metadata is embedded by the platform and directly available for the crawler.
 
-LINK to platform: <https://wikifactory.com/>
+URL to the platform: <https://wikifactory.com/>
+
+Data mapping specification: see [/Data Mapping/data-mapping-Wikifactory.md](Data%20Mapping/data-mapping-Wikifactory.md)
 
 ### OSHWA Certified Projects List
 
 <!--YET TO BE IMPLEMENTED-->
 
-LINK to platform: <https://certification.oshwa.org/list.html>
+URL to platform: <https://certification.oshwa.org/list.html>
+
+Data mapping specification: see [/Data Mapping/data-mapping-OSHWA.md](Data%20Mapping/data-mapping-OSHWA.md)
 
 ## Manifest File
 
