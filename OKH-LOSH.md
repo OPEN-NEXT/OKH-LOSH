@@ -198,6 +198,7 @@ Their corresponding TURTLE key (the ontology is written in TURTLE) is named expl
 
 Mandatory entries are bold.\
 To summarise: an OSH module must bear reference of:
+
 - the complete legal information (name, license, licensor);
 - an unambiguous reference to its repository, where source files are available;
 - its specific version;
