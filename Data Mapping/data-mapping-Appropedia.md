@@ -12,6 +12,6 @@ https://www.appropedia.org/w/index.php?title=Special:WhatLinksHere/Template:Info
 We have [a script that scrapes the projects meta-data on the appropedia.org Wiki,
 and converts it to OKH meta-data files](
 https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper).
-The details for hwo the mapping works,
+The details for how the mapping works,
 can be found in the `apppropedia2okh` function in [the main script](
 https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper/blob/main/scraper.py#L111).
