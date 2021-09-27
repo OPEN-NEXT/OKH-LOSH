@@ -1,5 +1,5 @@
 ---
-title: Ontology Mapping | appropedia.org → OKHv2
+title: Ontology Mapping | appropedia.org → OKH-LOSHv1
 ---
 
 # Notes
