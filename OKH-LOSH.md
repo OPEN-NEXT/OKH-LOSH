@@ -42,7 +42,12 @@ However, there are exceptions, as a standalone 3D-printed part in a git reposito
 
 ## Scope
 
-This draft for representative metadata for open source hardware (OSH) shall support the following user groups:
+OKH-LOSH features the specification for representative metadata of open source hardware (OSH) modules.
+An OSH module can be any tangible object for which relevant technical documentation has been published under a license complying with terms stated by the OSHWA definition; in most cases that will be an assembly of parts fulfilling a defined functions, whereby documentation is published on an online platform of choice (e.g. GitLab).
+Scope, content and limits of such OSH modules are defined by their developers.
+For OKH-LOSHv1 we identify an OSH module by its repository – each module is developed (and version controlled) in one specific repository.
+
+This draft shall support the following user groups:
 
 1. developers (specifically to facilitate **design reuse** and to improve discoverability of hardware)
 2. makers & manufacturers (find production-ready OSH)
