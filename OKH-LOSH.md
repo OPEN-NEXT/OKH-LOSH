@@ -67,6 +67,8 @@ We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAl
 YAML files.\
 However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
 
+Data mapping specification: see [/Data Mapping/data-mapping-OSHWA.md](Data%20Mapping/data-mapping-OKHv1.md)
+
 # General Requirements
 
 ## Basic Usage of the Specification
