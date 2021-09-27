@@ -191,7 +191,7 @@ The file reference _always_ starts with an "`/`"
 
 `/3DParts/ClampRing/ClampRing.scad`
 
-# metadata fields
+# Metadata Fields
 
 In the following, data fields will be referenced by their TOML key (manifest files are written in TOML).
 Their corresponding TURTLE key (the ontology is written in TURTLE) is named explicitly.
