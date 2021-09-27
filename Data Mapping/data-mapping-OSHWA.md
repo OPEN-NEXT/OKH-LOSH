@@ -1,5 +1,5 @@
 ---
-title: Ontology Mapping | OSHWA → OKHv2
+title: Ontology Mapping | OSHWA → OKH-LOSHv1
 ---
 
 # Notes
