@@ -121,7 +121,7 @@ Metadata is embedded by the platform and directly available for the crawler.
 
 URL to the platform: <https://wikifactory.com/>
 
-Data mapping specification: see [/Data Mapping/data-mapping-Wikifactory.md](Data%20Mapping/data-mapping-Wikifactory.md)
+Data mapping specification: see crawler code [here](https://github.com/OPEN-NEXT/LOSH-krawler/blob/main/krawl/krawl/wfconvert.py)
 
 ### OSHWA Certified Projects List
 
