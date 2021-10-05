@@ -16,6 +16,8 @@
   rdfs:label "OHLOOM" ;
   okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
   okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
+  okh:dataSource "GitHub";
+  okh:repoHost "GitLab";
   okh:version "0.10.0" ;
   # change tag to 1.0.0 in repo when CAB-review is done
   okh:release <https://gitlab.com/OSEGermany/ohloom/-/tags/ohloom-0.10.0> ;
