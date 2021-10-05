@@ -186,8 +186,17 @@ okh:okhv
 
 okh:dataSource
   a owl:DatatypeProperty ;
-  rdfs:label "Data Source" ;
-  rdfs:comment "origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:label "Metadata Source" ;
+  rdfs:comment "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:subClassOf schema:URL ;
+  rdfs:domain okh:Module ;
+  owl:cardinality 1
+  .
+
+okh:repoHost
+  a owl:DatatypeProperty ;
+  rdfs:label "Repo Host" ;
+  rdfs:comment "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
   rdfs:subClassOf schema:URL ;
   rdfs:domain okh:Module ;
   owl:cardinality 1
