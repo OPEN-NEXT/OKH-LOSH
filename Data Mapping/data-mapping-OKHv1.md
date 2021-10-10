@@ -45,7 +45,7 @@ Source for the mapping: [OKHv1 Section 4.5 ff](https://app.standardsrepo.com/Mak
 `archive-download`, see [4.8.2 Documentation archive](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
 
 ```
-"path" = okh:release
+"archive-download" = okh:release
 ```
 
 ### date
