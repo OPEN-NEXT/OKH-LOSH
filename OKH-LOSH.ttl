@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
