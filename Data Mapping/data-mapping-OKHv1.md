@@ -23,7 +23,7 @@ Source for the mapping: [OKHv1 Section 4.5 ff](https://app.standardsrepo.com/Mak
 |---|---|---|
 | manifest file format | YAML v1.2 | TOML |
 | manifest file name | anything containing "okh" | anything containing "okh", but preferably just `okh.toml` |
-| declaration | via `%Open Know-How Manifest 1.0` in line 1 and 3 dashes in line 2 | specification of the version used in the data field `okhv` |
+| declaration | via `%Open Know-How Manifest 1.0` in line 1, and 3 dashes in line 2 | specification of the version used in the data field `okhv` |
 
 # Data fields
 
@@ -78,7 +78,7 @@ else
 
 ### description
 
-`description`/`indended-use`/`health-safety-notice`
+`description`/`intended-use`/`health-safety-notice`
 
 ```
 okh:function = "description" + "intended-use" + "health-safety-notice"
@@ -200,7 +200,7 @@ else
 
 ## Custom Data Fields
 
-The following data fields are either ignored or the same way included as custom keys.
+The following data fields are either ignored or directly included as custom keys.
 
 - `contact`
 - `contributors`
