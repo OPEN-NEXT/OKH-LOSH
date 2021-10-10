@@ -11,7 +11,7 @@
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix terms:    <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
+@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl#> .
 @prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
 
 # NOTE:
@@ -186,8 +186,17 @@ okh:okhv
 
 okh:dataSource
   a owl:DatatypeProperty ;
-  rdfs:label "Data Source" ;
-  rdfs:comment "origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:label "Metadata Source" ;
+  rdfs:comment "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"@en ;
+  rdfs:subClassOf schema:URL ;
+  rdfs:domain okh:Module ;
+  owl:cardinality 1
+  .
+
+okh:repoHost
+  a owl:DatatypeProperty ;
+  rdfs:label "Repo Host" ;
+  rdfs:comment "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
   rdfs:subClassOf schema:URL ;
   rdfs:domain okh:Module ;
   owl:cardinality 1

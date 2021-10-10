@@ -51,8 +51,17 @@
 * [**cardinality**](http://www.w3.org/2002/07/owl#cardinality) 1
 * [**domain**](http://www.w3.org/2000/01/rdf-schema#domain) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
-* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)"
-* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Data Source"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Metadata Source"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty)
+
+## [2.4. repoHost](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#repoHost)
+
+* [**cardinality**](http://www.w3.org/2002/07/owl#cardinality) 1
+* [**domain**](http://www.w3.org/2000/01/rdf-schema#domain) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Repo Host"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty)
 
 # [3. Component](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Component)
