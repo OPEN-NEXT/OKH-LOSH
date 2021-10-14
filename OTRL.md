@@ -186,25 +186,26 @@ EXAMPLE: Product is sold in the EU.
 
 ### General
 
-|ODRL|Stage|Goal|
+It is the complete technical documentation,
+published under a free/open license,
+that differentiates open source hardware from proprietary hardware.
+
+This "completeness" has been divided into the following 5 levels as shown in table @tbl:odrl-overview.
+A detailled description of these levels can be found in the following chapters.
+
+|ODRL|Name|Goal|
 |---|---|---|
-|ODRL 1|right to study, make, modify and distribute granted|any documentation available under a free/open license, all legal information available|
-|ODRL 2|right to study, make, modify and distribute executable on essential information|all relevant source files are available and are available in their native (hence editable) file format; further explanations, assembly instructions, operation manuals etc. still missing|
-|ODRL 3|technical documentation useable for non-contributors|product can be reproduced and documentation edited by non-contributors, but this still includes reconciliation, guesswork or reengineering|
-|ODRL 4|standalone technical documentation finished|full compliance with DIN SPEC 3105-1|
-|ODRL 5|decentralised production enabled|documents related to CE certification published|
+|ODRL 1|documentation started & accessible|making information available as free/open source material|
+|ODRL 2|minimal documentation|enabling usability of the documentation by the provision of essential files and information|
+|ODRL 3|full documentation|full exploitability of the documentation|
+|ODRL 4|audited documentation|attested compliance with DIN SPEC 3105-1|
+|ODRL 5|audited documentation including CE certification documents|enabling decentralised commercial distribution|
 
-<!--- ToDo: 
+: Overview on ODRLs {#tbl:odrl-overview}
 
-1. anything accessible according to DIN SPEC 3105-1
-2. essential files accessible according to DIN SPEC 3105-1
-3. unambiguous reference (e.g. via consistent versioning or release) is a prerequisite
-4. can be proven via community-based assessment according to DIN SPEC 3105-2 (or equivalent proofs of conformity assessment as e.g. OSHWA certification or RYF certification)
-5. xxx
+<!--- ToDo: read & check --->
 
--->
-
-For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
+<!-- For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
 meaning that it must be published under a free/open license and publicly accessible.
 
 By default, experts skilled in the corresponding field of technology
@@ -216,16 +217,24 @@ e.g. by adding layers of abstraction to the documentation ([ref to chapter](TODO
 It's the technical documentation
 enabling the target group to exercise the 4 rights of open source:
 to study, to modify, to make and to distribute the documentation or hardware
-based on that documentation ([ref to chapter](TODO)).
-
-### ODRL 0
-
-`no documentation available`
-
-Documentation is not existent, not publicly accessible
-or its license is not compliant with terms stated by the OSHWA Definition 1.0 ([ref](TODO)).
+based on that documentation ([ref to chapter](TODO)). -->
 
 ### ODRL 1
+
+`documentation started & accessible`
+
+**IN SHORT:** By OSHWA-compliant licensing terms, free rights of any use are granted to the general public,\
+**BUT** not executable due to missing files and information;
+
+**ENABLING** the (legal) use of published information as free/open source material.
+
+**THIS INCLUDES:**
+
+- a free/open license compliant to the OSHWA definition;
+- that all legal information (author(s), title, legal code of the license) is available and
+- distributed with an unambiguous reference to the specific published documentation (e.g. by the use of git tags for releases).
+
+<!---
 
 `basic information available`
 
@@ -238,33 +247,79 @@ Target group understands, what the OSH is,
 but not how it works or how it is operated
 and hence cannot yet exercise the 4 rights of open source
 
+-->
+
 ### ODRL 2
 
-`drafty documentation`
+`minimal documentation`
+
+**IN SHORT:** All essential source files are published in appropriate formats,\
+**BUT** what "essential" means or "appropriate formats" is subject to the decision of maintainers only – documentation is not finished yet;
+
+**ENABLING** the _practical execution_ of free rights of any use;
+
+**THIS INCLUDES:**
+
+- that information shall be provided in such a way that allows for 1) lossless information distribution (compared to the original development) for modification, 2) without raising the need of proprietary software to study the information;
+  - specifically for 3D modelling this means in practice that a CAD file shall be distributed 1) in its native file format 2) alongside with an exported copy in an exchange format (e.g. STEP).
+
+<!-- `drafty documentation`
 
 documentation in progess – aims to describe how the hardware works
 and how it is operated, but is partly patchy and/or outdated;
-yet too less to exercise the 4 rights of open source
+yet too less to exercise the 4 rights of open source -->
 
 ### ODRL 3
 
-`early release`
+`full documentation`
+
+**IN SHORT:** Documentation has been completed and deemed fully compliant with DIN SPEC 3105-1,\
+**BUT** only by self-assessment by maintainers of the project.
+
+**ENABLING** the full exploitation of the piece of open source hardware, theoretically.
+
+**THIS INCLUDES:**
+
+- xxx.
+
+<!-- `early release`
 
 Target group struggles; execution of the 4 rights of open source is possible,
 but only with lots of reconciliation with originators
-since the documentation yet lacks fundamental information
+since the documentation yet lacks fundamental information -->
 
 ### ODRL 4
 
-`relevant release`
+`audited documentation`
+
+**IN SHORT:** Documentation has been attested to be fully compliant with DIN SPEC 3105-1 in a community-based process according to DIN SPEC 3105-2,\
+**BUT** yet documentation relevant for CE certification is missing;
+
+**ENABLING** a trustworthy full exploitation of the piece of open source hardware.
+
+**THIS INCLUDES:**
+
+- an attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity as e.g. through an OSHWA certification or a RYF certification).
+
+<!-- `relevant release`
 
 target group understands; execution of the 4 rights of open source is possible,
 but still requires few reconciliation with originators
-since the documentation yet lacks minor information
+since the documentation yet lacks minor information -->
 
 ### ODRL 5
 
-`mature release`
+`audited documentation including CE certification documents`
+
+**IN SHORT:** Documentation has been attested following DIN SPEC 3105-2 and includes all documentation relevant for CE certification
+
+**ENABLING** decentralised commercial distribution of the piece of open source hardware.
+
+**THIS INCLUDES:**
+
+- xxx.
+
+<!-- `mature release`
 
 target group acts autonomously;
-independent entity made the hardware with no reconciliation with originators
+independent entity made the hardware with no reconciliation with originators -->
