@@ -70,17 +70,15 @@ Resources:
 |OTRL 4|product design|minimum viable product|
 |OTRL 5|safe product|CE certification|
 
-<!--- ToDo:
+basically:
 
-1. getting requirements ready
-2. finding a solution concept
+1. defining requirements
+2. conceptionalise the solution
 3. translate solution conecpt into a physical hardware solution
 4. design a product that a) reliably covers core features and b) can be built, modified and operated by non-contrbutors
 5. finish all relevant tests for CE certification
 
--->
-
-### OTRL 1
+<!-- ### OTRL 1
 
 `basic principles observed`
 
@@ -180,7 +178,7 @@ It is (theoretically) ready to be sold as a commercial product in the EU.
 The hardware is successfully applied by independent entities
 in the operational environment.
 
-EXAMPLE: Product is sold in the EU.
+EXAMPLE: Product is sold in the EU. -->
 
 ## ODRL
 
