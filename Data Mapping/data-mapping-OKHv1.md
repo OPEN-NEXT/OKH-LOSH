@@ -86,13 +86,14 @@ https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d
 ```
 if
     "made-independently" = true
-        okh:technologyReadinessLevel = otrl:OTRL-5
+        okh:technologyReadinessLevel = otrl:OTRL-3
+        okh:documentationReadinessLevel = otrl:ODRL-3
 elseif
     "made" = true
-        okh:technologyReadinessLevel = otrl:OTRL-4
+        okh:technologyReadinessLevel = otrl:OTRL-3
 elseif
     "development-stage" = "prototype"
-        okh:technologyReadinessLevel = otrl:OTRL-4
+        okh:technologyReadinessLevel = otrl:OTRL-3
 ```
 
 These OKHv1 fields can be included as [custom keys](#custom-keys)
