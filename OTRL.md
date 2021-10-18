@@ -286,7 +286,7 @@ yet too less to exercise the 4 rights of open source -->
 
 **THIS INCLUDES:**
 
-- xxx.
+- a release of the final documentation that is deemed stable.
 
 <!-- `early release`
 
