@@ -70,6 +70,14 @@ Resources:
 |OTRL 4|product design|minimum viable product|
 |OTRL 5|safe product|CE certification|
 
+<!--- ADD EXAMPLES!
+
+OTRL 3 → ZAC+
+OTRL 3 → OHLOOM
+OTRL 3 → MNT Reform
+
+-->
+
 basically:
 
 1. defining requirements
