@@ -19,7 +19,7 @@ Source for the mapping: [OKHv1 Section 4.5 ff](https://app.standardsrepo.com/Mak
 
 ## Specification Diff
 
-| specification | [OKHv1 Section 4](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#e5a867ac-034f-4e91-aa20-32bb75143b47) | OKHv2 |
+| specification | [OKHv1 Section 4](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#e5a867ac-034f-4e91-aa20-32bb75143b47) | OKH-LOSHv1 |
 |---|---|---|
 | manifest file format | YAML v1.2 | TOML |
 | manifest file name | anything containing "okh" | anything containing "okh", but preferably just `okh.toml` |
