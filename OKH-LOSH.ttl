@@ -149,6 +149,12 @@ okh:ExportFile
   rdfs:subClassOf okh:File ;
   .
 
+okh:AuxiliaryFile
+  a owl:Class ;
+  rdfs:label "auxiliary file (neither source nor export)" ;
+  rdfs:subClassOf okh:File ;
+  .
+
 okh:ManufacturingInstructions
   a owl:Class ;
   rdfs:label "Manufacturing Instructions" ;
@@ -532,6 +538,14 @@ okh:export
   rdfs:label "exported source file" ;
   rdfs:comment "URL to a (generated) exported source file" ;
   rdfs:range okh:ExportFile ;
+  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  .
+
+okh:auxiliary
+  a owl:ObjectProperty ;
+  rdfs:label "has auxiliary file" ;
+  rdfs:comment "reference to an auxiliary file" ;
+  rdfs:range okh:AuxiliaryFile ;
   rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
