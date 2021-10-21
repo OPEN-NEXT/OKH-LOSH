@@ -304,6 +304,18 @@ To summarise: an OSH module must bear reference of:
 `user-manual` = "/Documentation/User_Guide/UserGuide.md"
 - `user-manual` [file-path]
   - relative or absolute path to user manual
+- `source` [file-path]
+  - relative or absolute path to source file (e.g. native CAD file)
+  - e.g. `/3D-parts/assembly.asm`
+  - multiple inputs possible (with one entry each)
+- `export` [file-path]
+  - relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing)
+  - e.g. `/3D-parts/assembly.STP`
+  - multiple inputs possible (with one entry each)
+- `auxiliary` [file-path]
+  - relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files)
+  - e.g. `/lib/lib1.lib`
+  - multiple inputs possible (with one entry each)
 
 ## metadata fields for parts
 
@@ -323,6 +335,10 @@ To summarise: an OSH module must bear reference of:
 - `export` [file-path]
   - relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing)
   - e.g. `/3D-parts/part1.STP`
+  - multiple inputs possible (with one entry each)
+- `auxiliary` [file-path]
+  - relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files)
+  - e.g. `/lib/lib1.lib`
   - multiple inputs possible (with one entry each)
 
 ## software

@@ -49,44 +49,8 @@ at the Fraunhofer Institute for Production Systems and Design Technology](https:
 
 ### tl;dr
 
-(semi-)automated structuring of OSH modules:
-a demonstrator for an ICT infrastructure to facilitate design reuse
-
-### long
-
-Some very special advantages of open source technologies only come to effect
-when we start to connect them.
-Especially hardware.
-
-Through open source hardware (OSH) we can share design files,
-assembly instructions, operation and maintenance guides,
-recycling guidelines, structural analyses, calculations & simulations etc. –
-and attached to OSH modules they become as modular as the hardware itself.
-
-Just as developer can re-use design files to avoid reinventing the wheel,
-they can re-use documentation of any kind.
-Applied to calculations, developer could access the cumulated experience
-of countless OSH modules that have been realised and tested in practise
-and hence assess e.g. boundary conditions
-or the dimension of certain components much faster
-and on a much more reliable basis.
-What once was the undisclosed know-how of large,
-specialised enterprises can become a public pool of knowledge.
-
-**We want to organise open source hardware in a graph database.**
-
-There's a [longlist](Wikibase_Qs.md) of interesting information
-that could be derived from such a database
-(also regarding compatibility between OSH modules).
-
-For version 1.0 we will focus on hardware only.
-Ideas for later, compatible databases are:
-
-- standard parts
-- calculation tables & machine-readable standards (e.g. regarding welding parameters)
-- manufacturers (to match e.g. design requirements
-  with suitable manufacturing lines nearby)
-- funding opportunities (to match e.g. funding requirements with OSH projects)
+a distributed database for OSH modules:
+a demonstrator for a piece of ICT infrastructure to support design reuse
 
 Standards are the backbone for this approach.
 
@@ -100,22 +64,22 @@ We are aiming to build the (real) Internet of Things – the Internet of Open Ha
 
 **What is the domain that the ontology will cover?**
 
-Now: Open Source Hardware\
-In the future: standard parts, software, manufacturers, tools, funding opportunities,…
+Open source hardware modules.\
+A "module" is defined here as an assembly with a defined purpose. The scope/size of a module is defined by every project individually. On git-based systems, every repository represents exactly one module (except otherwise noted).
 
 **Who's the enduser you have in mind?**
 
 1. developers\
   the whole thing here is first and foremost about **design reuse**
 2. manufacturers / service providers\
-  find OSH ready for decentralised (mass) production, maintenance and service provision
+  find OSH published under a free/open license (we perform quality checks) so that you can modify, replicate and exploit OSH products however you like e.g. for cases of decentralised (mass) production, maintenance and service provision – or just for yourself.
 
 **What's the problem this thing is solving? Or rather, how does this 'tool' look like?**
 
 1. It's a powerful filter for OSH. Find what you acutally need.
 2. It's a knowledge base capable to
   1. answer complex questions like
-    "What kind of power contoller is commonly used for this sort of hardware?";
+    "What development platforms are mainly used among OSH projects that got certified by OSHWA or attested according to DIN SPEC 3105-2?";
   2. cross-link information
     (e.g. ongoing research with OSH designs (e.g. in case of COVID-19)).
 
@@ -126,35 +90,43 @@ In the future: standard parts, software, manufacturers, tools, funding opportuni
   - filter for license, certificate, functional categories,
     file formats…
   - e.g. search for corona-related projects
-- …or fits into _your_ OSH
-  (→ **linking OSH modules, facilitate design reuse**)
-- map of usage, hence compatibility between OSH Modules
-  (_this_ module is also included _that_ assembly
-  and thus seemingly works in this environment)
-  - this is BTW not limited to OSH;
-    proprietary hardware can be linked as well;
-    this may help reducing (electronic) waste or finding appropriate wear parts
 - provide portable metadata: OSH can be published on various platforms
-- facilitate packaging: standardised metadata shall enable a "download button" for:
-  - production files (export only)
-  - developer files (sources only)
-  - complete clone (export + sources)
-- custom/future use cases are enabled by linking to other data/knowledge bases
-  such as
-  - Wikidata
-  - Journal of Open Hardware
+- facilitate packaging: essential files can be directly linked in the metadata so:
+  - we can run periodic tests to see whether files are still online,
+  - you can download those files directly from the LOSH frontend
+- RDF & Wikibase enable custom use cases (e.g. for researchers or other OSH platforms) e.g. by writing custom queries or by linking to other data/knowledge bases such as Wikidata
 
 **Who will use and maintain the ontology?**
 
-1. all the awesome communities that provide the ontology modules we are using;
-  namingly everything that Wikidata uses
-2. us; the few things built on top of the ontologies in 1. are to be maintained by us
+1. all the awesome communities that provide the ontology modules we are using e.g. SPDX
+2. first and foremost: **us**
+3. this ontology is yet to be presented to the Open KnowHow Community; they may choose to endorse this approach as Version 2.0.0 of their specification.
+
+### Outlook
+
+**We want to organise open source hardware in a graph database.**
+
+There's a [longlist](Wikibase_Qs.md) of cool use cases of such a knowledge base.
+Lots of information (including the technical documentation itself) could be stored as linked open data or simply linked together.
+
+The future could bring e.g.:
+
+- automated quality & completeness checks for the technical documentation
+- unambiguous reference of all parts (e.g. to a library of standard components or to other OSH)
+- automated matchmaking to manufacturers based on production metadata
+- automated matchmaking with suitable finding oppurtunities
 
 ## Technical details
 
 **How does the dataflow generally work?**
 
 ![dataflow illustration](illustrations/dataflow-principle.svg)
+
+## Modules used
+
+### OKH-LOSH
+
+Developed and published in this repository here :)
 
 - technical details of the wikibase instance: <https://gitlab.opensourceecology.de/verein/koordination/it/tickets/-/issues/43>
 - open standards used:
@@ -178,14 +150,26 @@ here: <https://open-next.github.io/OKH-LOSH/>
 
 Note that when invalid TTL files are pushed, the CI will give back an error and no exports will be available.
 
-### Related work
+### Crawler
 
-- the importer to push the ontology from any git-based instance to any Wikibase instance\
-  <https://github.com/hoijui/LOSH-tools> (by hoijui, IPK)
+- the crawler that collects all the data\
+  <https://github.com/ahane/LOSH-krawler> (by ahane, konek.to)
+  will move to: <https://github.com/OPEN-NEXT/LOSH-krawler>
+
+### WikibaseReconcileEdit
+
 - the reworked API to improve reconciliation tasks\
   <https://github.com/wmde/WikibaseReconcileEdit> (by addshore, WMDE)
-- the crawler that collects all the data\
-  <https://github.com/OPEN-NEXT/LOSH-krawler> (by ahane, konek.to)
+
+### Frontend
+
+- the frontend of the LOSH system helps you dicovering the data on our Wikibase instance\
+  <https://github.com/wmde/LOSH-Frontend/>
+
+### RDF2WB
+
+- the importer to push the ontology from any git-based instance to any Wikibase instance; necessary to set up the LOSH system\
+  <https://github.com/hoijui/LOSH-tools> (by hoijui, IPK)
 
 ## Want to contribute \[?\]
 
@@ -197,8 +181,6 @@ In any case, collaboration in this project must follow our [Code of Conduct](COD
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 ## Why are we doing this?
-
-I feel this quote gives a neat, compact explanation:
 
 "Human history, closely explored,
 boils down to the history of invention of better tools."\
