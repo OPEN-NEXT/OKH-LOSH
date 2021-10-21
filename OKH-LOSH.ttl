@@ -415,6 +415,14 @@ okh:hasBoM
   rdfs:domain okh:Module ;
   .
 
+okh:hasComponent
+  a owl:ObjectProperty ;
+  rdfs:label "has Component" ;
+  rdfs:comment "links to parts of the module" ;
+  rdfs:range okh:Part ;
+  rdfs:domain okh:Module ;
+  .
+
 okh:usesModule
   a owl:ObjectProperty ;
   rdfs:label "uses Module" ;
