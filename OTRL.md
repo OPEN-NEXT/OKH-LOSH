@@ -70,6 +70,14 @@ Resources:
 |OTRL 4|product design|minimum viable product|
 |OTRL 5|safe product|CE certification|
 
+<!--- ADD EXAMPLES!
+
+OTRL 3 → ZAC+
+OTRL 3 → OHLOOM
+OTRL 3 → MNT Reform
+
+-->
+
 basically:
 
 1. defining requirements
@@ -278,7 +286,7 @@ yet too less to exercise the 4 rights of open source -->
 
 **THIS INCLUDES:**
 
-- xxx.
+- a release of the final documentation that is deemed stable.
 
 <!-- `early release`
 
