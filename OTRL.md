@@ -72,9 +72,11 @@ Resources:
 
 <!--- ADD EXAMPLES!
 
-OTRL 3 → ZAC+
+OTRL 1 → 
+OTRL 2 → ZAC+
 OTRL 3 → OHLOOM
-OTRL 3 → MNT Reform
+OTRL 4 → MNT Reform
+OTRL 5 → Prusa i3
 
 -->
 
