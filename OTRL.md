@@ -307,7 +307,7 @@ since the documentation yet lacks fundamental information -->
 
 **THIS INCLUDES:**
 
-- an attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity as e.g. through an OSHWA certification or a RYF certification).
+- an attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity as e.g. through an OSHWA certification, a RYF certification or a scientific publication including the technical documentation).
 
 <!-- `relevant release`
 
