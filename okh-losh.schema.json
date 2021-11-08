@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/OPEN-NEXT/OKH-LOSH/master/okh-losh.schema.json",
+  "title": "Manifest",
+  "description": "This is a JSON schema, which can validate a 'okh.toml' file, which holds a projects Open Know-How (Open Source Hardware) meta-data.",
+  "$comment": "NOTE: The properies 'ui-hidden' and 'ui-recommended' used in this schema, are non-standardised, and currently unused. They could be used to create a form, and are here for consistency with <https://git.iostud.io/makernet/iop-cdb/-/blob/dev/server/assets/okh.okhdf>.",
+  "type": "object",
+  "properties": {
+    "okhv": {
+      "description": "The version of the standard this manifest follows",
+      "type": "string",
+      "const": "OKH-LOSHv1.0",
+      "ui-hidden": true
+    },
+    "name": {
+      "description": "Name of the thing",
+      "type": "string"
+    },
+    "repo": {
+      "$ref": "#/$defs/webUrl"
+    },
+    "version": {
+      "type": ["string", "number"],
+      "examples": [
+        "2.3.4",
+        "0.0.1-24-g6a8a3a7",
+        "v0.3.1",
+        "6a8a3a7",
+        61
+      ]
+    },
+    "release": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "license": {
+      "$ref": "#/$defs/spdxLicenseExpression",
+      "examples": [
+        "GPL-3.0-or-later",
+        "AGPL-3.0-or-later",
+        "GPL-3.0",
+        "AGPL-3.0",
+        "GPL-3.0-or-later",
+        "0BSD",
+        "CC0-1.0",
+        "CC-BY-SA-4.0",
+        "CC-BY-4.0",
+        "Unlicense"
+      ]
+    },
+    "licensor": {
+      "type": "string",
+      "examples": [
+        "John Doe <john.doe@email.com> - FSF",
+        "Jane Doe <jane.doe@email.com> - FSF",
+        "Michael Mueller <mm@email.com> - OSI",
+        "Jinz Jixxer <jj@email.com> - OSI",
+        "Pru Ner <abc@email.com> - GNU"
+      ]
+    },
+    "organisation": {
+      "type": "string",
+      "examples": [
+        "Free Software Foundation",
+        "Open Source Initiative",
+        "Open Source Hardware Association",
+        "Open Source Ecology",
+        "Open Source Ecology Germany"
+      ]
+    },
+    "readme": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "image": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "documentation-language": {
+      "description": "Language the documentation is written in, as a BCP 47 language tag",
+      "$ref": "#/$defs/language"
+    },
+    "technology-readiness-level": {
+      "enum": [
+        "OTRL-1",
+        "OTRL-2",
+        "OTRL-3",
+        "OTRL-4",
+        "OTRL-5"
+      ],
+      "default": "OTRL-1"
+    },
+    "documentation-readiness-level": {
+      "enum": [
+        "ODRL-1",
+        "ODRL-2",
+        "ODRL-3",
+        "ODRL-4",
+        "ODRL-5"
+      ],
+      "default": "ODRL-1"
+    },
+    "function": {
+      "type": "string",
+      "examples": [
+        "TODO",
+        "TODO"
+      ]
+    },
+    "cpc-patent-class": {
+      "$ref": "#/$defs/cpcId"
+    },
+    "tsdc": {
+      "description": "TODO",
+      "type": [ "array", "string" ],
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        "TODO",
+        "TODO"
+      ]
+    },
+    "bom": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "manufacturing-instructions": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "user-manual": {
+      "$ref": "#/$defs/relPathOrWebUrl"
+    },
+    "part": {
+      "type": "array",
+      "items": {
+        "type": "object",
+         "properties": {
+           "name": {
+             "type": "string"
+           },
+           "image": {
+             "$ref": "#/$defs/relPathOrWebUrl"
+           },
+           "tsdc": {
+             "type": ["array", "string"],
+             "items": {
+               "type": "string"
+             }
+           },
+           "source": {
+             "$ref": "#/$defs/relPathOrWebUrl"
+           },
+           "export": {
+             "oneOf": [
+               { "$ref": "#/$defs/relPathOrWebUrl" },
+               {
+                 "type": "array",
+                 "items": {
+                   "$ref": "#/$defs/relPathOrWebUrl"
+                 }
+               }
+             ]
+           }
+         },
+      "required": [ "name" ]
+      }
+    }
+  },
+  "$defs": {
+    "webUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "relPathOrWebUrl": {
+      "type": "string",
+      "anyOf": [
+        {
+          "$comment": "A full, absolute web URL",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        {
+          "$comment": "Not a URL, but a relative file-path to a dir or file below the root - as much as one can check for that with a regex",
+          "not": {
+            "anyOf": [
+              {
+                "$comment": "no protocol",
+                "pattern": "^[a-z]*:"
+              },
+              {
+                "$comment": "no URL-absolute path without protocol",
+                "pattern": "^//"
+              },
+              {
+                "$comment": "no parent-dir-references",
+                "pattern": "(?:.*/)?\\.\\.(?:/.*)?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cpcId": {
+      "$comment": "Get a CPC-ID from here <https://worldwide.espacenet.com/classification>",
+      "type": "string",
+      "pattern": "^[A-HY][0-9]{2}[A-Z] ?[0-9]{1,2}[/][0-9]{2,4}$",
+      "examples": [
+        "D03D 35/00",
+        "A01B33/00",
+        "D03D 5/00",
+        "F16M11/2078",
+        "F16M 11/2078"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "examples": [
+        "jane.doe@email.com",
+        "john.doe@email.com",
+        "ester.something@good.org"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "examples": [
+        "2000-04-06",
+        "0001-0-0",
+        "1984-10-1"
+      ]
+    },
+    "language": {
+      "description": "Language as a BCP 47 language tag",
+      "type": "string",
+      "pattern": "^((?<grandfathered>(en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang))|((?<language>([A-Za-z]{2,3}(-(?<extlang>[A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-(?<script>[A-Za-z]{4}))?(-(?<region>[A-Za-z]{2}|[0-9]{3}))?(-(?<variant>[A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-(?<extension>[0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(?<privateUse>x(-[A-Za-z0-9]{1,8})+))?)|(?<privateUse>x(-[A-Za-z0-9]{1,8})+))$",
+      "examples": [
+        "en",
+        "de",
+        "es",
+        "zh"
+      ]
+    },
+    "spdxLicenseExpression": {
+      "description": "A valid SPDX license expression",
+      "$comment": "TODO We would have to define this in an extra schema, generated -> do it in the SPDX-Identifiers-generater repo! -> NOPE -> already exists! see https://github.com/spdx/spdx-spec/issues/484#issuecomment-720817111    .. sounds like it needs to be improved, though -> .. ahh nope, it does not solve our issue, but checks SPDX documents for validity",
+      "type": "string"
+    }
+  },
+  "required": [ "okhv", "name", "repo", "version", "license", "licensor" ]
+}
