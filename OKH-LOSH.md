@@ -67,7 +67,7 @@ We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAl
 YAML files.\
 However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
 
-Data mapping specification: see [/Data Mapping/data-mapping-OSHWA.md](Data%20Mapping/data-mapping-OKHv1.md)
+Data mapping specification: see [`data_mapping/data-mapping-OSHWA.md`](<data_mapping/data-mapping-OKHv1.md)
 
 # General Requirements
 
@@ -113,7 +113,7 @@ The [LOSH Appropedia scraper](https://github.com/OPEN-NEXT/LOSH-Appropedia-Scrap
 
 URL to platform: <http://appropedia.org/>
 
-Data mapping specification: see [/Data Mapping/data-mapping-Appropedia.md](Data%20Mapping/data-mapping-Appropedia.md)
+Data mapping specification: see [`data_mapping/data-mapping-Appropedia.md`](data_mapping/data-mapping-Appropedia.md)
 
 ### Wikifactory
 
@@ -129,7 +129,7 @@ Data mapping specification: see crawler code [here](https://github.com/OPEN-NEXT
 
 URL to platform: <https://certification.oshwa.org/list.html>
 
-Data mapping specification: see [/Data Mapping/data-mapping-OSHWA.md](Data%20Mapping/data-mapping-OSHWA.md)
+Data mapping specification: see [`data_mapping/data-mapping-OSHWA.md`](data_mapping/data-mapping-OSHWA.md)
 
 ## Manifest File
 
