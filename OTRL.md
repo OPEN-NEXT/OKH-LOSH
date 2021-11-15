@@ -242,6 +242,10 @@ based on that documentation ([ref to chapter](TODO)). -->
 - that all legal information (author(s), title, legal code of the license) is available and
 - distributed with an unambiguous reference to the specific published documentation (e.g. by the use of git tags for releases).
 
+**EXIT CRITERIUM:**
+
+- design files published in editable file format (e.g. STEP (or better: native CAD files) instead of PDF drawings)
+
 <!---
 
 `basic information available`
@@ -271,6 +275,10 @@ and hence cannot yet exercise the 4 rights of open source
 - that information shall be provided in such a way that allows for 1) lossless information distribution (compared to the original development) for modification, 2) without raising the need of proprietary software to study the information;
   - specifically for 3D modelling this means in practice that a CAD file shall be distributed 1) in its native file format 2) alongside with an exported copy in an exchange format (e.g. STEP).
 
+**EXIT CRITERIUM:**
+
+- stable documentation release published
+
 <!-- `drafty documentation`
 
 documentation in progess – aims to describe how the hardware works
@@ -290,6 +298,10 @@ yet too less to exercise the 4 rights of open source -->
 
 - a release of the final documentation that is deemed stable.
 
+**EXIT CRITERIUM:**
+
+- attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity)
+
 <!-- `early release`
 
 Target group struggles; execution of the 4 rights of open source is possible,
@@ -308,6 +320,10 @@ since the documentation yet lacks fundamental information -->
 **THIS INCLUDES:**
 
 - an attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity as e.g. through an OSHWA certification, a RYF certification or a scientific publication including the technical documentation).
+
+**EXIT CRITERIUM:**
+
+- CE documentation published
 
 <!-- `relevant release`
 
