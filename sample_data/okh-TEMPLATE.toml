@@ -1,6 +1,6 @@
 okhv = "OKH-LOSHv1.0" # NOT to be changed
 name = "your-awesome-OSH"
-repo = "https://gitlab.com/xxx"
+repo = "https://gitlab.com/YOU/your-awesome-project/"
 version = "1.0.0" # when you change this field, the crawler will recognise this as a new version and upload it to LOSH; otherwise not
 release = "https://gitlab.com/YOU/your-awesome-project/-/releases/vX.X.X"
 license = "the-SPDX-ID" # get from here: <https://spdx.org/licenses/>, e.g. CERN-OHL-S-2.0
