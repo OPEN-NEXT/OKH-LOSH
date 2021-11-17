@@ -1,41 +1,46 @@
+# SPDX-FileCopyrightText: 2021 onwards Martin Häuer
+# SPDX-License-Identifier: CC0-1.0
+#
+# find a HowTo Guide here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/sample_data/okh-TEMPLATE-HOWTO.md>
+#
 okhv = "OKH-LOSHv1.0" # NOT to be changed
 name = "your-awesome-OSH"
 repo = "https://gitlab.com/YOU/your-awesome-project/"
-version = "1.0.0" # when you change this field, the crawler will recognise this as a new version and upload it to LOSH; otherwise not
+version = "1.0.0"
 release = "https://gitlab.com/YOU/your-awesome-project/-/releases/vX.X.X"
-license = "the-SPDX-ID" # get from here: <https://spdx.org/licenses/>, e.g. CERN-OHL-S-2.0
+license = "the-SPDX-ID"
 licensor = "xxx"
 organisation = "xxx"
-readme = "README.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-contribution-guide = "CONTRIBUTING.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-image = "xxx.jpg" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
+readme = "README.md"
+contribution-guide = "CONTRIBUTING.md"
+image = "xxx.jpg"
 documentation-language = "en-GB"
-technology-readiness-level = "OTRL-3" # choose OTRL level from here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OTRL.md#otrl>
-documentation-readiness-level = "ODRL-3" # choose OTRL level from here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OTRL.md#odrl>
-attestation = "https://certification.oshwa.org/cl000001.html" # URL to a public proof that the module has been certified as open source hardware
-publication = "https://doi.org/10.1371/journal.pone.0193087" # Permalink (e.g.) DOI to a _scientific_ (that is: peer reviewed) publication that _contains_ the design files
-function = "xxx" # = a short description of what the hardware is & does / what problem it solves
-standard-compliance = "DIN EN 1335" # if applicable
-cpc-patent-class = "D03D 35/00" # get CPC-ID from here <https://worldwide.espacenet.com/classification>
-tsdc = "MEC" # defines the manufacturing processes involved for this project; multiple entries possible; get from here: https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/oh-tsdc.ttl#L97
-bom = "BoM.csv" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-user-manual = "/Documentation/User_Guide/UserGuide.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-outer-dimension-dim = "mm" # dimension of `outer-dimension` below (e.g. millimeter)
-outer-dimension = "cube(size = [400,350,150])" # OpenSCAD primitive describing the outer shape; cylinders and spheres also possible
+technology-readiness-level = "OTRL-3"
+documentation-readiness-level = "ODRL-3"
+attestation = "https://certification.oshwa.org/cl000001.html"
+publication = "https://doi.org/10.1371/journal.pone.0193087"
+function = "xxx"
+standard-compliance = "DIN EN 1335"
+cpc-patent-class = "D03D 35/00"
+tsdc = "MEC"
+bom = "BoM.csv"
+manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
+user-manual = "/Documentation/User_Guide/UserGuide.md"
+outer-dimension-dim = "mm"
+outer-dimension = "cube(size = [400,350,150])"
 
-[[part]] # section to link essential files for each self-designed component of this project
+[[part]]
 name = "your-awesome-part"
-image = "xxx.jpg" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
+image = "xxx.jpg"
 tsdc = "3DP"
-source = "xxx.scad" # multiple entries possible; relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
-export = [ # multiple entries possible; relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
+source = "xxx.scad"
+export = [
   "xxx.pdf",
   "xxx.stl"
 ]
-material = "PLA" # multiple entries possible
-outer-dimension-dim = "mm" # dimension of `outer-dimension` below (e.g. millimeter)
-outer-dimension = "cube(size = [120,100,3])" # OpenSCAD primitive describing the outer shape; cylinders and spheres also possible
+material = "PLA"
+outer-dimension-dim = "mm"
+outer-dimension = "cube(size = [120,100,3])"
 
 [[software]]
 release = "https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2"
