@@ -204,7 +204,7 @@ A detailled description of these levels can be found in the following chapters.
 |ODRL|Name|Goal|
 |---|---|---|
 |ODRL 1|documentation started & accessible|making information available as free/open source material|
-|ODRL 2|minimal documentation|enabling usability of the documentation by the provision of essential files and information|
+|ODRL 2|documentation under collaborative development|enabling collaborative development of the documentation by the provision of files and information in editable formats|
 |ODRL 3|full documentation|full exploitability of the documentation|
 |ODRL 4|audited documentation|attested compliance with DIN SPEC 3105-1|
 |ODRL 5|audited documentation including CE certification documents|enabling decentralised commercial distribution|
@@ -263,16 +263,16 @@ and hence cannot yet exercise the 4 rights of open source
 
 ### ODRL 2
 
-`minimal documentation`
+`documentation under collaborative development`
 
-**IN SHORT:** All essential source files are published in appropriate formats,\
-**BUT** what "essential" means or "appropriate formats" is subject to the decision of maintainers only – documentation is not finished yet;
+**IN SHORT:** Source files are published in editable formats,\
+**BUT** documentation is yet under development and non-native file formats may be chosen;
 
-**ENABLING** the _practical execution_ of free rights of any use;
+**ENABLING** the _practical execution_ of free rights of any use and by that a collaborative development of the documentation.
 
-**THIS INCLUDES:**
+**COMMENT:**
 
-- that information shall be provided in such a way that allows for 1) lossless information distribution (compared to the original development) for modification, 2) without raising the need of proprietary software to study the information;
+- It is recommended, that information shall be provided in such a way that allows for 1) lossless information distribution (compared to the original development) for modification, 2) without raising the need of proprietary software to study the information;
   - specifically for 3D modelling this means in practice that a CAD file shall be distributed 1) in its native file format 2) alongside with an exported copy in an exchange format (e.g. STEP).
 
 **EXIT CRITERIUM:**
