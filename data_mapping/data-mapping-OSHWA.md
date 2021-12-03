@@ -26,6 +26,7 @@ for details)
 "projectVersion" = okh:version
 "projectDescription" = okh:function
 "documentationUrl" = okh:repo
+"responsibleParty" = okh:licensor
 ```
 
 ## fields with rules
@@ -70,12 +71,13 @@ else
 
 ### license
 
+- get `hardwareLicense` only
+
 ```
 if
-    "hardwareLicense" != "other"
-        "hardwareLicense" = okh:spdxLicense
+    "hardwareLicense" = "other" → entry = `alternativeLicense`
 else
-    do nothing
+    "hardwareLicense" = okh:spdxLicense
 ```
 
 ## Custom Data Fields
