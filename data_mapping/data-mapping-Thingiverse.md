@@ -27,6 +27,6 @@ get only projects with:
 What about:
 
 - short description?
-  - unavailable → construct from "tags":"name"
+  - if unavailable → construct from "tags":"name"
 - version?
 - any sort of category?
