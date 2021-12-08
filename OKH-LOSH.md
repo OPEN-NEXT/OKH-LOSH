@@ -137,7 +137,7 @@ A manifest file is a plain text file in a repository containing metadata for a O
 
 As outlined in the [basic usage of the specification](#basic-usage-of-the-specification),
 the provision of a manifest file is specifically necessary when metadata cannot be accessed via the platform API
-(as in the case of GitLab or GitHub for example). 
+(as in the case of GitLab or GitHub for example).
 
 **NOTE 1 to entry:**\
 One of the most important fields is the `version`.
@@ -235,7 +235,7 @@ To summarise: an OSH module must bear reference of:
   - timestamp of last time the file access was requested under the `perma-URL`
 - `last-seen` [timestamp]
   - timestamp of last time the file was successfully accessed under the `perma-URL`
-  
+
 ## metadata fields for OSH modules
 
 - **`name`** [string]
@@ -252,7 +252,7 @@ To summarise: an OSH module must bear reference of:
   - if no SPDX key is available yet, use URL to legal code of the license instead
   - NOTE: When no SPDX key is found by the crawler, metadata won't be uploaded to LOSH until the alternative license has been whitelisted by maintainers. At LOSH we need to make sure that all results are actually open source.
 - **`licensor`** [string]
-  - licensor (mostly the originator) of the OSH module 
+  - licensor (mostly the originator) of the OSH module
 - `organisation` [string]
   - organisation of the licensor
 - `readme` [file-path]
@@ -463,7 +463,7 @@ general:
   - 1 = design includes raft or brim
 - `supports` [bool]
   - 0 = design has no supports
-  - 1 = design includes support(s) 
+  - 1 = design includes support(s)
 - `resolution-mm` [float]
   - print parameter: resolution/layer height in mm
 - `shell-thickness` [float]

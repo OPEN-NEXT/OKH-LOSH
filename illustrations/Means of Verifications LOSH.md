@@ -38,7 +38,7 @@ using
 ## Goals of LOSH
 
 - <span>find, filter, compare OSH f. specific problems<!-- .element: class="fragment" data-fragment-index="1" --></span>
-  <span>→<!-- .element: class="fragment" data-fragment-index="1" --></span> <span>_find what you actually need_<!-- .element: class="fragment" data-fragment-index="1" --></span> 
+  <span>→<!-- .element: class="fragment" data-fragment-index="1" --></span> <span>_find what you actually need_<!-- .element: class="fragment" data-fragment-index="1" --></span>
 - <span>connect data from different OSH platforms<!-- .element: class="fragment" data-fragment-index="2" --></span>
   <span>→<!-- .element: class="fragment" data-fragment-index="2" --></span> <span>_find & be found from any platform_<!-- .element: class="fragment" data-fragment-index="2" --></span>
 

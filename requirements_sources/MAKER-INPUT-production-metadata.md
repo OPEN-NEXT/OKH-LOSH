@@ -9,7 +9,7 @@ history: https://github.com/OPEN-NEXT/OKH-LOSH/commits/36679600facd5b572f012e74c
 With this document we aim to pin down the metadata that **makers** need to assess whether or not they can (or want) to produce a certain piece of Open Source Hardware with the tools available (e.g. in their makerspace).\
 More specifically _you_ will write this document.
 But don't worry, you're not alone.
-We contacted numerous people that are willing to share their expertise here. 
+We contacted numerous people that are willing to share their expertise here.
 
 **What we need from you now:** Imagine you have been searching for an open source solution on LOSH to solve a specific problem, and found it! (yeah)\
 Now, only focussing on the aspect of manufacturing it:
@@ -61,7 +61,7 @@ Every peace of feedback is valuable and will be read :)
   for ABS: enclosure, warm constant room temperature, air circulation, bed temperature
   heating bed temperature [°]
   extruder temperature [°]
-  filament brand 
+  filament brand
   - remove request +1
   - comment: setup for production environment → out of scope
 - outer dimensions
@@ -131,7 +131,7 @@ For multilayer-pcb:
 - material thickness [mm]
 - required laser power [watt]
   - remove request +1
-- outer dimensions 
+- outer dimensions
 - expected duration [s]
   - remove request +1
 - cutting length [mm]
