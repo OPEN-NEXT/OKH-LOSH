@@ -282,7 +282,7 @@ To summarise: an OSH module must bear reference of:
     so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field\
     optional: description of input, output and interfaces
 - `standard-compliance` [string]
-  - document number of the official standard the OSH module complies
+  - document-number of the official standard the OSH module complies
   - e.g. `DIN EN 1335`
   - multiple inputs possible (with one entry each)
 - `cpc-patent-class` [CPC-ID]
