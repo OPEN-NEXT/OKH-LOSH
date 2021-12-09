@@ -73,8 +73,11 @@ This draft follows a Linked Open Data approach:
   LOSH only collects, connects and displays the data
 - data processing is based on RDF (data from manifest files (TOML)
   and platform APIs (JSON) is translated into RDF by the crawler)
-- everything is published under free/open licenses;
-  find the RDF [here](TODO), the crawler [here](TODO), LOSH website [here](TODO) and the specification (that you are reading) [here](TODO).
+- everything is published under free/open licenses:
+  - [generated RDF](TODO)
+  - [crawler](TODO)
+  - [LOSH website](TODO)
+  - [the specification](TODO) (which you are reading)
 
 This draft aims to facilitate compliance with DIN SPEC 3105-1.
 
@@ -108,7 +111,9 @@ by contributors of the OSH project.
 Metadata will be collected by a [crawler](https://github.com/OPEN-NEXT/LOSH-Krawler)
 using the API of supported platforms
 (find a [full list of supported platforms below](#supported-platforms)).\
-Hence, when data is published on a supported platform in compliance with this specification, it becomes automatically available on [LOSH](losh.ose-germany.de) and as Linked Open Data in RDF format [here]().
+Hence, when data is published on a supported platform in compliance with this specification,
+it becomes automatically available on [LOSH](losh.ose-germany.de)
+and as Linked Open Data in RDF format [here](TODO).
 
 ## Supported Platforms
 
