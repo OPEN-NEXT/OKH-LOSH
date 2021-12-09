@@ -276,7 +276,7 @@ To summarise: an OSH module must bear reference of:
   - working title of the OSH module
 - **`repo`** [URL]
   - reference to repository in which the technical documentation is developed
--** `version`** [string]
+- **`version`** [string]
   - version of the module
   - following the [semantic versioning scheme v2.0.0](https://semver.org/#semantic-versioning-200)
 - `release` [URL]
