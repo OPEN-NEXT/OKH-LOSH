@@ -264,7 +264,7 @@ To summarise: an OSH module must bear reference of:
 - `image` [file-path]
   - relative or absolute path to one (!) representative image of the OSH module
 - **`documentation-language`** [string]
-  - IETF language tag for the language in which the documentation is written
+  - IETF BCP 47 language tag for the language in which the documentation is written
 - `technology-readiness-level` [string]
   - OTRL-ID representing the development stage of the OSH module
   - get it from here: <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl>
