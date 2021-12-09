@@ -29,35 +29,52 @@ Support in different Markdown software:
 
 # Intro
 
-The work here is based on the [Open Know-How Specification v1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#75fb9df0-a7b3-427f-993a-b23fe1c81a58), specifically to make the OKHv1 specification applicable to linked open data and rework data fields after latest research results.\
+The work here is based on the [Open Know-How Specification v1.0.0](
+https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#75fb9df0-a7b3-427f-993a-b23fe1c81a58),
+specifically to make the OKHv1 specification applicable to linked open data
+and rework data fields after latest research results.\
 However, lots of changes have been made so it's hard to still call this a fork.\
-After validation this will be proposed to maintainers of the Open Know-How Specification as a new major version of the specification.
+After validation this will be proposed to maintainers of the Open Know-How Specificatio
+ as a new major version of the specification.
 
 **NOTE:** When we talk about "OSH module" we mean the content of a repository.
 Open source hardware (OSH) aims to be modular.
 Hence it makes a lot of sense to publish each module in an individual repository
 (instead of the whole machine in one large repository).
 A module is an assembly of various parts that fulfils a certain purpose.
-However, there are exceptions, as a standalone 3D-printed part in a git repository could also fulfil a purpose and qualify as a module.
+However, there are exceptions,
+as a standalone 3D-printed part in a git repository
+could also fulfil a purpose and qualify as a module.
 
 ## Scope
 
-OKH-LOSH features the specification for representative metadata of open source hardware (OSH) modules.
-An OSH module can be any tangible object for which relevant technical documentation has been published under a license complying with terms stated by the [OSHWA definition](https://oshwa.org/definition); in most cases that will be an assembly of parts fulfilling a defined functions, whereby documentation is published on an online platform of choice (e.g. [GitLab.org](https://gitlab.org/)).
+OKH-LOSH features the specification for representative metadata
+of open source hardware (OSH) modules.
+An OSH module can be any tangible object
+for which relevant technical documentation has been published
+under a license complying with terms stated by the [OSHWA definition](https://oshwa.org/definition);
+in most cases that will be an assembly of parts fulfilling a defined functions,
+whereby documentation is published on an online platform of choice (e.g. [GitLab.org](https://gitlab.org/)).
 Scope, content and limits of such OSH modules are defined by their developers.
-For OKH-LOSHv1 we identify an OSH module by its repository – each module is developed (and version controlled) in one specific repository.
+For OKH-LOSHv1 we identify an OSH module by its repository –
+each module is developed (and version controlled) in one specific repository.
 
 This draft shall support the following user groups:
 
-1. developers (specifically to facilitate **design reuse** and to improve discoverability of hardware)
+1. developers (specifically to facilitate **design reuse**
+   and to improve discoverability of hardware)
 2. makers & manufacturers (find production-ready OSH)
 3. researchers (get a quick overview of the current state of OSH developments)
 
 This draft follows a Linked Open Data approach:
 
-- it's a distributed database; projects and platforms hold their own data; LOSH only collects, connects and displays the data
-- data processing is based on RDF (data from manifest files (TOML) and platform APIs (JSON) is translated into RDF by the crawler)
-- everything is published under free/open licenses; find the RDF [here](), the crawler [here](), LOSH website [here] and the specification (that you are reading) [here]().
+- it is a distributed database;
+  projects and platforms hold their own data;
+  LOSH only collects, connects and displays the data
+- data processing is based on RDF (data from manifest files (TOML)
+  and platform APIs (JSON) is translated into RDF by the crawler)
+- everything is published under free/open licenses;
+  find the RDF [here](TODO), the crawler [here](TODO), LOSH website [here](TODO) and the specification (that you are reading) [here](TODO).
 
 This draft aims to facilitate compliance with DIN SPEC 3105-1.
 
@@ -65,7 +82,8 @@ This draft aims to facilitate compliance with DIN SPEC 3105-1.
 
 We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
 YAML files.\
-However, we strongly recommend the usage of `OKH-LOSH` if you want to have your project included on LOSH.
+However, we strongly recommend the usage of `OKH-LOSH`,
+if you want to have your project included on LOSH.
 
 Data mapping specification: see [`data_mapping/data-mapping-OSHWA.md`](<data_mapping/data-mapping-OKHv1.md)
 
@@ -73,14 +91,23 @@ Data mapping specification: see [`data_mapping/data-mapping-OSHWA.md`](<data_map
 
 ## Basic Usage of the Specification
 
-All data, the metadata itself and the technical documentation represented by the metadata, shall be:
+All data, the metadata itself
+and the technical documentation represented by the metadata,
+shall be:
 
 - released under a free/open license;
 - unambiguously referenceable.
 
-**NOTE to entry:** See requirements for license and release in DIN SPEC 3105-1 [section 3.2](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#32-free-license-open-license) and [section 3.9](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#39-documentation-release).
+**NOTE to entry:**
+See requirements for license and release
+in DIN SPEC 3105-1 [section 3.2](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#32-free-license-open-license)
+and [section 3.9](https://gitlab.com/OSEGermany/OHS-3105/-/blob/ohs/DIN_SPEC_3105-1.md#39-documentation-release).
 
-Yet, provision of metadata is fully based on manual input by contributors of the OSH project. Metadata will be collected by a [crawler](https://github.com/OPEN-NEXT/LOSH-Krawler) using the API of supported platforms (find a [full list of supported platforms below](#supported-platforms)).\
+Yet, provision of metadata is fully based on manual input
+by contributors of the OSH project.
+Metadata will be collected by a [crawler](https://github.com/OPEN-NEXT/LOSH-Krawler)
+using the API of supported platforms
+(find a [full list of supported platforms below](#supported-platforms)).\
 Hence, when data is published on a supported platform in compliance with this specification, it becomes automatically available on [LOSH](losh.ose-germany.de) and as Linked Open Data in RDF format [here]().
 
 ## Supported Platforms
@@ -107,9 +134,13 @@ URL to platform: <https://github.com/>
 
 ### Appropedia
 
-Data shall be provided using the "Infobox device" template ([version from 15:13, 2 June 2021 by Felipe Schenone](https://www.appropedia.org/Template:Infobox_device)).
+Data shall be provided using the "Infobox device" template
+([version from 15:13, 2 June 2021 by Felipe Schenone](https://www.appropedia.org/Template:Infobox_device)).
 
-The [LOSH Appropedia scraper](https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper) will upload metadata in form of [Manifest Files](#manifest-file) to the [LOSH-List repository](https://github.com/OPEN-NEXT/LOSH-list) on [GitHub](#github), where it becomes available for the crawler.
+The [LOSH Appropedia scraper](https://github.com/OPEN-NEXT/LOSH-Appropedia-Scraper)
+will upload metadata in form of [Manifest Files](#manifest-file)
+to the [LOSH-List repository](https://github.com/OPEN-NEXT/LOSH-list)
+on [GitHub](#github), where it becomes available for the crawler.
 
 URL to platform: <http://appropedia.org/>
 
@@ -133,10 +164,12 @@ Data mapping specification: see [`data_mapping/data-mapping-OSHWA.md`](data_mapp
 
 ## Manifest File
 
-A manifest file is a plain text file in a repository containing metadata for a OSH module.
+A manifest file is a plain text file in a repository,
+containing metadata for a OSH module.
 
 As outlined in the [basic usage of the specification](#basic-usage-of-the-specification),
-the provision of a manifest file is specifically necessary when metadata cannot be accessed via the platform API
+the provision of a manifest file is specifically necessary
+when metadata cannot be accessed via the platform API
 (as in the case of GitLab or GitHub for example).
 
 **NOTE 1 to entry:**\
@@ -201,7 +234,8 @@ The file reference _always_ starts with an "`/`"
 
 # Metadata Fields
 
-In the following, data fields will be referenced by their TOML key (manifest files are written in TOML).
+In the following, data fields will be referenced by their TOML key
+(manifest files are written in TOML).
 Their corresponding TURTLE key (the ontology is written in TURTLE) is named explicitly.
 
 Mandatory entries are bold.\
@@ -250,7 +284,10 @@ To summarise: an OSH module must bear reference of:
 - **`license`** [string]
   - [SPDX ID](https://spdx.org/licenses/) of the license used
   - if no SPDX key is available yet, use URL to legal code of the license instead
-  - NOTE: When no SPDX key is found by the crawler, metadata won't be uploaded to LOSH until the alternative license has been whitelisted by maintainers. At LOSH we need to make sure that all results are actually open source.
+  - NOTE: When no SPDX key is found by the crawler,
+    metadata won't be uploaded to LOSH
+    until the alternative license has been whitelisted by maintainers.
+    At LOSH we need to make sure that all results are actually open source.
 - **`licensor`** [string]
   - licensor (mostly the originator) of the OSH module
 - `organisation` [string]
@@ -272,25 +309,30 @@ To summarise: an OSH module must bear reference of:
   - ODRL-ID representing the development stage of the documentation
   - get it from here: <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl>
 - `attestation` [URL]
-  - reference to a valid attestation that the documentation is complete and fully qualifies as open source hardware
+  - reference to a valid attestation that the documentation is complete
+    and fully qualifies as open source hardware
   - issuing conformity assessment bodies according to DIN SPEC 3105-2:
     - [Open Hardware Observatory](https://en.oho.wiki/wiki/Request_certification_for_your_project)
     - [Open Source Ecology Germany](https://gitlab.opensourceecology.de/verein/projekte/cab/CAB)
   - [OSHWA certification programme](https://certification.oshwa.org/)
 - **`function`** [string]
-  - functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.
-    so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field\
+  - functional description, e.g. what it actually does,
+    what problem it solves, for whom, under which conditions etc.
+    so if you wish that someone finds & uses your okh specifically,
+    e.g. for COVID-19-crisis response, include relevant keywords in this field\
     optional: description of input, output and interfaces
 - `standard-compliance` [string]
   - document-number of the official standard the OSH module complies
   - e.g. `DIN EN 1335`
   - multiple inputs possible (with one entry each)
 - `cpc-patent-class` [CPC-ID]
-  - patent class identifier of the Cooperative Patent Classification that describes best the field of technology of the OSH module
+  - patent class identifier of the Cooperative Patent Classification
+    that describes best the field of technology of the OSH module
   - get it from here: <https://worldwide.espacenet.com/classification>
   - e.g. `D03D 35/00`
 - `tsdc` [TsDC-ID]
-  - identifier of the applying Technology-specific Documentation Criteria (TsDC) according to DIN SPEC 3105-1
+  - identifier of the applying Technology-specific Documentation Criteria (TsDC)
+    according to DIN SPEC 3105-1
   - get it from here: <https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/oh-tsdc.ttl>
   - e.g. `MEC`
   - multiple inputs possible (with one entry each)
@@ -309,11 +351,13 @@ To summarise: an OSH module must bear reference of:
   - e.g. `/3D-parts/assembly.asm`
   - multiple inputs possible (with one entry each)
 - `export` [file-path]
-  - relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing)
+  - relative or absolute path to export file
+    (e.g. STEP export of 3D model or PDF export of drawing)
   - e.g. `/3D-parts/assembly.STP`
   - multiple inputs possible (with one entry each)
 - `auxiliary` [file-path]
-  - relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files)
+  - relative or absolute path to files that are neither source files
+    nor their exports, but still useful in the repository (e.g. KiCAD library files)
   - e.g. `/lib/lib1.lib`
   - multiple inputs possible (with one entry each)
 
@@ -324,7 +368,8 @@ To summarise: an OSH module must bear reference of:
 - `image` [file-path]
   - relative or absolute path to one (!) representative image of the OSH module
 - `tsdc` [TsDC-ID]
-  - identifier of the applying Technology-specific Documentation Criteria (TsDC) according to DIN SPEC 3105-1
+  - identifier of the applying Technology-specific Documentation Criteria (TsDC)
+    according to DIN SPEC 3105-1
   - get it from here: <https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/oh-tsdc.ttl>
   - e.g. `3DP`
   - multiple inputs possible (with one entry each)
@@ -333,23 +378,27 @@ To summarise: an OSH module must bear reference of:
   - e.g. `/3D-parts/part1.scad`
   - multiple inputs possible (with one entry each)
 - `export` [file-path]
-  - relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing)
+  - relative or absolute path to export file
+    (e.g. STEP export of 3D model or PDF export of drawing)
   - e.g. `/3D-parts/part1.STP`
   - multiple inputs possible (with one entry each)
 - `auxiliary` [file-path]
-  - relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files)
+  - relative or absolute path to files that are neither source files
+    nor their exports, but still useful in the repository
+    (e.g. KiCAD library files)
   - e.g. `/lib/lib1.lib`
   - multiple inputs possible (with one entry each)
 
 ## software
 
 - **`release`** [URL]
-  - unambiguous refrence to the software release used for this version of the OSH module
+  - unambiguous refrence to the software release used for this version
+    of the OSH module
   - e.g. `https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2`
 - `installation-guide` [URL]
-  - unambiguous refrence to the installation guide for the corresponding software release
+  - unambiguous refrence to the installation guide
+    for the corresponding software release
   - e.g. `https://github.com/arduino/ArduinoCore-mbed/blob/a2c06d768f5ebb6821ae6505b2032ee58f4ef70d/README.md`
-
 
 ## production metadata
 
@@ -425,8 +474,11 @@ In case of multilayer PCB:
   - welding process number according to ISO 4063 (e.g. from [here](https://en.wikipedia.org/wiki/List_of_welding_processes))
   - e.g. `111` for "classic" shielded metal arc welding
 - `welder-certification` [string]
-  - designation of the certification/qualification required for the welder according to ISO 9606
-  - e.g. `EN ISO 9606-1 135 P FW FM1 S t10 PB ml` for MAG welding of multi-layer fillet welds on sheet metal (≥ 3 mm) in horizontal position and FM1 filler material
+  - designation of the certification/qualification required for the welder
+    according to ISO 9606
+  - e.g. `EN ISO 9606-1 135 P FW FM1 S t10 PB ml`
+    for MAG welding of multi-layer fillet welds on sheet metal (≥ 3 mm)
+    in horizontal position and FM1 filler material
 
 ### for parts only
 
@@ -439,7 +491,8 @@ general:
   - openSCAD primitive describing shape and size of the module or part
   - e.g. `cube(size = [400,350,150]`
 - `tsdc` [TsDC-ID] (multiple)
-  - manufacturing process for which this part has been designed (= technology-specific documentation criteria applying for this part)
+  - manufacturing process for which this part has been designed
+    (= technology-specific documentation criteria applying for this part)
 
 #### 3D printing
 
@@ -510,7 +563,8 @@ general:
 <!---FIXME TsDC-ID-->
 
 - `surcace-finishing-process` [string]
-  - designation of the manufacturing process for surface finishing to meet required surface properties
+  - designation of the manufacturing process for surface finishing
+    to meet required surface properties
   - e.g. `polishing`
 - `outer-dimensions-mm` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module or part
