@@ -301,9 +301,9 @@ To summarise: an OSH module must bear reference of:
   - relative or absolute path to manufacturing instructions
   - e.g. `/Documentation/Assembly_Guide/AssemblyGuide.md`
   - multiple inputs possible (with one entry each)
-`user-manual` = "/Documentation/User_Guide/UserGuide.md"
 - `user-manual` [file-path]
   - relative or absolute path to user manual
+  - e.g. `/Documentation/User_Guide/UserGuide.md`
 - `source` [file-path]
   - relative or absolute path to source file (e.g. native CAD file)
   - e.g. `/3D-parts/assembly.asm`
