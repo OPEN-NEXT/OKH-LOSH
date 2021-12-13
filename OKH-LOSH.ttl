@@ -538,8 +538,8 @@ okh:hasManifestFile
 
 okh:doi
   a owl:DatatypeProperty ;
-  rdfs:label "DOI" @en;
-  rdfs:comment "this publication has a digital object identifier (DOI)" @en;
+  rdfs:label "DOI"@en ;
+  rdfs:comment "this publication has a digital object identifier (DOI)"@en ;
   rdfs:domain okh:Publication ;
   rdfs:subPropertyOf npg:doi ;
   rdfs:range rdfs:Literal ;

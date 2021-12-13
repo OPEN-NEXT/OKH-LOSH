@@ -55,5 +55,5 @@ erDiagram
     other-MOSH {
     URL release-reference
     }
-    
+
 ```

@@ -72,7 +72,7 @@ Resources:
 
 <!--- ADD EXAMPLES!
 
-OTRL 1 → 
+OTRL 1 →
 OTRL 2 → ZAC+
 OTRL 3 → OHLOOM
 OTRL 4 → MNT Reform
