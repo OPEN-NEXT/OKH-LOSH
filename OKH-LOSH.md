@@ -418,7 +418,7 @@ general:
   - multiple inputs possible (with one entry each)
 - `outer-dimensions` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module
-  - e.g. `cube(size = [400,350,150]`
+  - e.g. `cube(size = [400,350,150])`
 
 #### PCB
 
@@ -495,7 +495,7 @@ general:
   - e.g. `PLA`
 - `outer-dimensions-mm` (or `outer-dimensions-cm` etc.) [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module or part
-  - e.g. `cube(size = [400,350,150]`
+  - e.g. `cube(size = [400,350,150])`
 - `tsdc` [TsDC-ID] (multiple)
   - manufacturing process for which this part has been designed
     (= technology-specific documentation criteria applying for this part)
@@ -514,7 +514,7 @@ general:
 - `outer-dimensions-mm` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module or part
   - all dimensions in mm
-  - e.g. `cube(size = [400,350,150]`
+  - e.g. `cube(size = [400,350,150])`
 - `infill` [float]
   - print parameter: infill (in %)
 - `raft-brim` [bool]
@@ -575,7 +575,7 @@ general:
 - `outer-dimensions-mm` [openSCAD-primitive]
   - openSCAD primitive describing shape and size of the module or part
   - all dimensions in mm
-  - e.g. `cube(size = [400,350,150]`
+  - e.g. `cube(size = [400,350,150])`
 
 # Further References
 
