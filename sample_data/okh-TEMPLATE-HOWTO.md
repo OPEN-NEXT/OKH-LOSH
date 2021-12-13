@@ -41,7 +41,7 @@ technology-readiness-level = "OTRL-3" # choose OTRL level from here: <https://gi
 documentation-readiness-level = "ODRL-3" # choose OTRL level from here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OTRL.md#odrl>
 attestation = "https://certification.oshwa.org/cl000001.html" # URL to a public proof that the module has been certified as open source hardware
 publication = "https://doi.org/10.1371/journal.pone.0193087" # Permalink (e.g.) DOI to a _scientific_ (that is: peer reviewed) publication that _contains_ the design files
-function = "xxx" # = a short description of what the hardware is & does / what problem it solves
+**function** = "xxx" # = a short description of what the hardware is & does / what problem it solves
 standard-compliance = "DIN EN 1335" # if applicable
 cpc-patent-class = "D03D 35/00" # get CPC-ID from here <https://worldwide.espacenet.com/classification>
 tsdc = "MEC" # defines the manufacturing processes involved for this project; multiple entries possible; get from here: https://gitlab.com/OSEGermany/oh-tsdc/-/blob/master/oh-tsdc.ttl#L97
