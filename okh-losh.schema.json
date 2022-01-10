@@ -99,8 +99,8 @@
     "function": {
       "type": "string",
       "examples": [
-        "TODO",
-        "TODO"
+        "The Open Hardware Loom is a simple, hand-operated weaving loom made of wood, screws and 3D printed plastic pieces for the most part. It is simple to make and operate.",
+        "High current, USB 2.0 hub for USB bus-powered development boards and peripherals."
       ]
     },
     "cpc-patent-class": {
