@@ -126,6 +126,9 @@
     "user-manual": {
       "$ref": "#/$defs/relPathOrWebUrl"
     },
+    "outer-dimensions": {
+      "$ref": "#/$defs/outerDimensions"
+    },
     "part": {
       "type": "array",
       "items": {
@@ -156,7 +159,10 @@
                  }
                }
              ]
-           }
+           },
+          "outer-dimensions": {
+            "$ref": "#/$defs/outerDimensions"
+          }
          },
       "required": [ "name" ]
       }
@@ -242,6 +248,13 @@
       "description": "A valid SPDX license expression",
       "$comment": "TODO We would have to define this in an extra schema, generated -> do it in the SPDX-Identifiers-generater repo! -> NOPE -> already exists! see https://github.com/spdx/spdx-spec/issues/484#issuecomment-720817111    .. sounds like it needs to be improved, though -> .. ahh nope, it does not solve our issue, but checks SPDX documents for validity",
       "type": "string"
+    },
+    "outerDimensions": {
+      "type": "object",
+      "properties": {
+        "openSCAD": { "type": "string" },
+        "unit": { "enum" : ["mm", "m", "cm" ]}
+      }
     }
   },
   "required": [ "okhv", "name", "repo", "version", "license", "licensor" ]
