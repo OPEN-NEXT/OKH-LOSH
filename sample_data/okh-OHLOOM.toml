@@ -18,7 +18,10 @@ bom = "sBoM.csv"
 manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
 fabric-width-mm = 400
-outer-dimensions-mm = "cube(size = [400,350,150])"
+
+[[outer-dimensions]]
+openSCAD = "cube(size = [400,350,150])"
+unit = "mm"
 
 [[part]]
 name = "Clamp Ring"
@@ -31,7 +34,6 @@ export = [
 ]
 printing-process = "FDM"
 material = "ABS"
-outer-dimensions-mm = "cylinder(h=30, r=28)"
 mass-g = 30
 infill = 30
 raft-brim = true
@@ -39,6 +41,10 @@ supports = false
 resolution-mm = 0.2
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=30, r=28)"
+unit = "mm"
 
 [[part]]
 name= "CombModul"
@@ -51,7 +57,6 @@ export = [
 ]
 printing-process = "FDM"
 material = "PLA"
-outer-dimensions-mm = "cube(size = [120,100,5]"
 mass-g = 30
 infill = 30
 raft-brim = true
@@ -60,6 +65,10 @@ resolution-mm = 0.27
 shell-thickness = 3
 top-bottom-thickness = 3
 
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [120,100,5]"
+unit = "mm"
+
 [[part]]
 name = "PoleBase"
 tsdc = "3DP"
@@ -67,7 +76,6 @@ source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 printing-process = "FDM"
 material = "PLA"
-outer-dimensions-mm = "cube(size = [130,115,100]"
 mass-g = 85
 infill = 30
 raft-brim = true
@@ -75,6 +83,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 4
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [130,115,100]"
+unit = "mm"
 
 [[part]]
 name = "RatchetPawl"
@@ -87,7 +99,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cube(size = [130,20,20]"
 mass-g = 30
 infill = 30
 raft-brim = true
@@ -95,6 +106,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [130,20,20]"
+unit = "mm"
 
 [[part]]
 name = "Ratchet Wheel"
@@ -107,7 +122,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=45, r=45)"
 mass-g = 65
 infill = 30
 raft-brim = true
@@ -115,6 +129,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=45, r=45)"
+unit = "mm"
 
 [[part]]
 name = "ScrewSockets"
@@ -127,7 +145,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=12, r=7)"
 mass-g = 5
 infill = 30
 raft-brim = true
@@ -135,6 +152,10 @@ supports = false
 resolution-mm = 0.1
 shell-thickness = 3
 top-bottom-thickness = 8
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=12, r=7)"
+unit = "mm"
 
 [[part]]
 name= "ScrewSockets for ScrewHead"
@@ -144,7 +165,6 @@ source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=12, r=7)"
 mass-g = 5
 infill = 30
 raft-brim = true
@@ -152,6 +172,9 @@ supports = false
 resolution-mm = 0.1
 shell-thickness = 3
 top-bottom-thickness = 8
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=12, r=7)"
+unit = "mm"
 
 [[part]]
 name= "Warpclothbeam 1"
@@ -164,7 +187,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=163, r=22.5)"
 mass-g = 65
 infill = 30
 raft-brim = true
@@ -172,6 +194,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=163, r=22.5)"
+unit = "mm"
 
 [[part]]
 name= "Warpclothbeam 2"
@@ -184,7 +210,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=162, r=22.5)"
 mass-g = 65
 infill = 30
 raft-brim = true
@@ -192,6 +217,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=162, r=22.5)"
+unit = "mm"
 
 [[part]]
 name= "Warpclothbeam 3"
@@ -204,7 +233,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=163, r=22.5)"
 mass-g = 65
 infill = 30
 raft-brim = true
@@ -212,6 +240,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=163, r=22.5)"
+unit = "mm"
 
 [[part]]
 name= "Warpclothbeam 4"
@@ -224,7 +256,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-outer-dimensions-mm = "cylinder(h=140, r=22)"
 mass-g = 60
 infill = 30
 raft-brim = true
@@ -232,6 +263,10 @@ supports = false
 resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=140, r=22)"
+unit = "mm"
 
 [[part]]
 name = "CombHolder"
@@ -249,7 +284,10 @@ material = "wood"
 mass-kg = "0.16"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cube(size = [118,60,18]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [118,60,18]"
+unit = "mm"
 
 [[part]]
 name = "CrossBeam"
@@ -266,7 +304,10 @@ export = [
 material = "wood"
 mass-kg = 0.55
 smallest-tolerance-class = "IT11"
-outer-dimensions-mm = "cube(size = [572,100,20]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [572,100,20]"
+unit = "mm"
 
 [[part]]
 name = "Shuttle"
@@ -284,7 +325,10 @@ material = "wood"
 mass-kg = "0.065"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cube(size = [497,45,6]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [497,45,6]"
+unit = "mm"
 
 [[part]]
 name = "SideFrame"
@@ -302,7 +346,10 @@ material = "wood"
 mass-kg = "0.70"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cube(size = [580,140,18]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [580,140,18]"
+unit = "mm"
 
 [[part]]
 name = "SlotBeam"
@@ -320,7 +367,10 @@ material = "wood"
 mass-kg = "0.15"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cube(size = [566,24,22]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [566,24,22]"
+unit = "mm"
 
 [[part]]
 name = "StringStick"
@@ -338,7 +388,10 @@ material = "wood"
 mass-kg = "0.035"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cube(size = [560,22,6]"
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [560,22,6]"
+unit = "mm"
 
 [[part]]
 name = "WarpClothBeam"
@@ -356,4 +409,7 @@ material = "wood"
 mass-kg = "0.33"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
-outer-dimensions-mm = "cylinder(h=710, r=17.5)"
+
+[[part.outer-dimensions]]
+openSCAD = "cylinder(h=710, r=17.5)"
+unit = "mm"
