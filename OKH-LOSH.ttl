@@ -178,7 +178,13 @@ okh:UserManual
 okh:OuterDimensions
   a owl:Class ;
   rdfs:label "outer dimensions"@en ;
-  rdfs:comment "…of a module or a part"
+  rdfs:comment "…of a module or a part"@en
+  .
+
+okh:Mass
+  a owl:Class ;
+  rdfs:label "mass"@en ;
+  rdfs:comment "…of a module or a part"@en
   .
 
 okh:ComponentReference
@@ -500,6 +506,12 @@ okh:hasOuterDimensions
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
   .
 
+okh:hasMass
+  a owl:ObjectProperty ;
+  rdfs:label "mass of the component" ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  .
+
 okh:openScad
   a owl:DatatypeProperty ;
   rdfs:label "material" ;
@@ -510,18 +522,16 @@ okh:openScad
 okh:unit
   a owl:DatatypeProperty ;
   rdfs:label "unit" ;
-  rdfs:comment "mm, cm, m" ;
+  rdfs:comment "mm, cm, m, g, kg" ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain okh:OuterDimensions ;
+  rdfs:domain [ owl:unionOf (okh:OuterDimensions okh:Mass) ] ;
   .
 
-okh:outerDimensionsCM
+okh:value
   a owl:DatatypeProperty ;
-  rdfs:label "outer dimensions in CM using openSCAD primitives" ;
-  rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
-# fixme rdfs:subPropertyOf ;
+  rdfs:label "value" ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  rdfs:domain okh:Mass ;
   .
 
 okh:smallestToleranceClass
