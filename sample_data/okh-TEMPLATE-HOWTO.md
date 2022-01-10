@@ -30,8 +30,8 @@ If some data fields are not applicable in your case, please remove them from the
   - SPDX-ID of the license you chose; get from here: <https://spdx.org/licenses/>; e.g. CERN-OHL-S-2.0
 - **[licensor](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - the official licensor of your hardware project; in most cases this will be the originator (may be you)
-- [organisation]
-  - the organisation behind the development of this hardware project
+- [organization]
+  - the organization behind the development of this hardware project
 - [readme](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)
   - file path to the README file
 contribution-guide = "CONTRIBUTING.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise

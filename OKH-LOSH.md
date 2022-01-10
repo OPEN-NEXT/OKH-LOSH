@@ -296,8 +296,8 @@ To summarise: an OSH module must bear reference of:
     At LOSH we need to make sure that all results are actually open source.
 - **`licensor`** [string]
   - licensor (mostly the originator) of the OSH module
-- `organisation` [string]
-  - organisation of the licensor
+- `organization` [string]
+  - organization of the licensor
 - `readme` [file-path]
   - relative or absolute path to the readme file
   - e.g. `README.md`

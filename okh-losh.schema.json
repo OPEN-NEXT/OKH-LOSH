@@ -56,7 +56,7 @@
         "Pru Ner <abc@email.com> - GNU"
       ]
     },
-    "organisation": {
+    "organization": {
       "type": "string",
       "examples": [
         "Free Software Foundation",

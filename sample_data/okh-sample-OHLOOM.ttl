@@ -24,7 +24,7 @@
   okh:release <https://gitlab.com/OSEGermany/ohloom/-/tags/ohloom-0.10.0> ;
   okh:spdxLicense "CC-BY-SA-4.0" ;
   okh:licensor "Jens Meisner" ;
-  okh:organisation "OSE Germany e.V." ;
+  okh:organization "OSE Germany e.V." ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
   okh:hasImage :Image ;

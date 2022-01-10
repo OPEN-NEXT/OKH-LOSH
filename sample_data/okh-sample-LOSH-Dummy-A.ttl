@@ -21,7 +21,7 @@
   okh:release <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/releases/tag/v1.0.1> ;
   okh:spdxLicense "CERN-OHL-S-2.0" ;
   okh:licensor "Martin Häuer" ;
-  okh:organisation "Fraunhofer IPK" ;
+  okh:organization "Fraunhofer IPK" ;
   okh:contributorCount 1 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
