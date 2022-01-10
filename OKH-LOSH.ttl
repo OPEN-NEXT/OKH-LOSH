@@ -289,17 +289,17 @@ okh:documentationLanguage
 okh:licensor
   a owl:ObjectProperty ;
   rdfs:label "licensor" ;
-  rdfs:comment "organisation/individual behind the hardware design (holder of intellectual property)" ;
+  rdfs:comment "organization/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf schema:copyrightHolder ;
   rdfs:range [ owl:unionOf (schema:Person schema:Organization) ] ;
   rdfs:domain okh:Module ;
   owl:cardinality 1
   .
 
-okh:organisation
+okh:organization
   a owl:ObjectProperty ;
-  rdfs:label "organisation" ;
-  rdfs:comment "organisation representing (most) contributors of this project" ;
+  rdfs:label "organization" ;
+  rdfs:comment "organization representing (most) contributors of this project" ;
   rdfs:range schema:Organization ;
   rdfs:domain okh:Module ;
   .
