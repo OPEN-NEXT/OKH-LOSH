@@ -35,13 +35,20 @@
   okh:hasBoM :BoM ;
   okh:hasManifestFile :ManifestFile ;
   :rpm 666 ;
-  okh:outerDimensionsMM "cube(size = [300,300,300]" ;
+  okh:hasOuterDimensions :OuterDimensionsLOSHdummyMOSHA ;
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
   okh:usesModule <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-B/1.0.0#> ;
   okh:hasSoftware :Zettlr ;
   okh:compliesWith :DIN5008 ;
   okh:hasPublication :PubStethoscope ;
+  .
+
+:OuterDimensionsLOSHdummyMOSHA
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of LOSH Dummy MOSH-A" ; # use rdfs:label of :LOSHdummyMOSHA
+  okh:openScad "cube(size = [300,300,300]" ;
+  okh:unit "mm"
   .
 
 :PubStethoscope
@@ -104,7 +111,14 @@
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cylinder(h=30, r=28)" ;
+  okh:hasOuterDimensions :OuterDimensionsClampRing
+  .
+
+:OuterDimensionsClampRing
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Clamp Ring" ;
+  okh:openScad "cylinder(h=30, r=28)" ;
+  okh:unit "mm"
   .
 
 :ClampRing_image

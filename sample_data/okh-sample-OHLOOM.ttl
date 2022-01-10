@@ -38,10 +38,17 @@
   okh:hasManifestFile :ManifestFile ;
   :fabricWidthMM 400 ;
   # that's a custom field not defined in the okh ontology
-  okh:outerDimensionsMM "cube(size = [400,350,150]" ;
+  okh:hasOuterDimensions :OuterDimensionsOHLOOM ;
   okh:hasManufacturingInstructions :ManufacturingInstructions ;
   okh:hasUserManual :UserManual ;
   okh:hasComponent :ClampRing ;
+  .
+
+:OuterDimensionsOHLOOM
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of OHLOOM" ;
+  okh:openScad "cube(size = [400,350,150])" ;
+  okh:unit "mm" ;
   .
 
 :fabricWidthMM
@@ -96,7 +103,7 @@
   a okh:BoM ;
   rdfs:label "Bill of Materials of OHLOOM v1.0.0" ;
   okh:fileURL <https://gitlab.com/OSEGermany/ohloom/-/raw/834222370f34ad2a07d0e41d09eb54378573b8c3/sBoM.csv> ;
-  okh:fileFormat "CSV" ;
+  okh:fileFormat "CSV"
   .
 
 :ClampRing
@@ -112,7 +119,14 @@
   okh:export :ClampRing_export1 , :ClampRing_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cylinder(h=30, r=28)" ;
+  okh:hasOuterDimensions :OuterDimensionsClampRing
+  .
+
+:OuterDimensionsClampRing
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Clamp Ring" ;
+  okh:openScad "cylinder(h=30, r=28)" ;
+  okh:unit "mm"
   .
 
 :ClampRing_image
@@ -156,7 +170,14 @@
   okh:export :CombModul_export1 , :CombModul_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cube(size = [120,100,3])" ;
+  okh:hasOuterDimensions :OuterDimensionsCombModul
+  .
+
+:OuterDimensionsCombModul
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Comb Modul" ;
+  okh:openScad "cube(size = [120,100,3])" ;
+  okh:unit "mm"
   .
 
 :CombModul_image
@@ -199,7 +220,14 @@
   okh:export :PoleBase_export1 , :PoleBase_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cube(size = [125,110,100])" ;
+  okh:hasOuterDimensions :OuterDimensionsPoleBase
+  .
+
+:OuterDimensionsPoleBase
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Pole Base" ;
+  okh:openScad "cube(size = [125,110,100])" ;
+  okh:unit "mm"
   .
 
 :PoleBase_source
@@ -236,7 +264,14 @@
   okh:export :RatchetPawl_export1 , :RatchetPawl_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cube(size = [130,20,20])" ;
+  okh:hasOuterDimensions :OuterDimensionsRatchetPawl
+  .
+
+:OuterDimensionsRatchetPawl
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Ratchet Pawl" ;
+  okh:openScad "cube(size = [130,20,20])" ;
+  okh:unit "mm"
   .
 
 :RatchetPawl_image
@@ -280,7 +315,14 @@
   okh:export :RatchetWheel_export1 , :RatchetWheel_export2 ;
   okh:manufacturingProcess "3D printed" ;
   okh:material "PLA" ;
-  okh:outerDimensionsMM "cylinder(h=45, r=45)" ;
+  okh:hasOuterDimensions :OuterDimensionsRatchetWheel
+  .
+
+:OuterDimensionsRatchetWheel
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Ratchet Wheel" ;
+  okh:openScad "cylinder(h=45, r=45)" ;
+  okh:unit "mm"
   .
 
 :RatchetWheel_image
