@@ -37,9 +37,8 @@
       "examples": [
         "GPL-3.0-or-later",
         "AGPL-3.0-or-later",
-        "GPL-3.0",
-        "AGPL-3.0",
-        "GPL-3.0-or-later",
+        "GPL-3.0-only",
+        "AGPL-3.0-only",
         "0BSD",
         "CC0-1.0",
         "CC-BY-SA-4.0",
