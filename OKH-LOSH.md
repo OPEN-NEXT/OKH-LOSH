@@ -416,9 +416,12 @@ general:
   - designation of the manufacturing process used to connect the parts to an assembly
   - e.g. `hard soldering`
   - multiple inputs possible (with one entry each)
-- `outer-dimensions` [openSCAD-primitive]
-  - openSCAD primitive describing shape and size of the module
-  - e.g. `cube(size = [400,350,150])`
+- `outer-dimensions` [class]
+  - `openSCAD` [openSCAD primitive]
+    - openSCAD primitive describing shape and size of the module
+    - e.g. `cube(size = [400,350,150])`
+  - `unit` [string]
+    - e.g. `mm`
 
 #### PCB
 
@@ -493,9 +496,12 @@ general:
 - `material` [string]
   - reference of material used for this part
   - e.g. `PLA`
-- `outer-dimensions-mm` (or `outer-dimensions-cm` etc.) [openSCAD-primitive]
-  - openSCAD primitive describing shape and size of the module or part
-  - e.g. `cube(size = [400,350,150])`
+- `outer-dimensions` [class]
+  - `openSCAD` [openSCAD primitive]
+    - openSCAD primitive describing shape and size of the module
+    - e.g. `cube(size = [400,350,150])`
+  - `unit` [string]
+    - e.g. `mm`
 - `tsdc` [TsDC-ID] (multiple)
   - manufacturing process for which this part has been designed
     (= technology-specific documentation criteria applying for this part)

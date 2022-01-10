@@ -61,8 +61,10 @@ export = [ # multiple entries possible; relative path from the root directory IF
   "xxx.stl"
 ]
 material = "PLA" # multiple entries possible
-outer-dimension-dim = "mm" # dimension of `outer-dimension` below (e.g. millimeter)
-outer-dimension = "cube(size = [120,100,3])" # OpenSCAD primitive describing the outer shape; cylinders and spheres also possible
+
+[[part.outer-dimensions]]
+openSCAD = "cube(size = [120,100,3])" # OpenSCAD primitive describing the outer shape; cylinders and spheres also possible
+unit = "mm"
 
 [[software]]
 release = "https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2"
