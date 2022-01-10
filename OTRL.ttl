@@ -27,7 +27,7 @@
   # That's a main class then!
   .
 
-:ODRL
+:Odrl
   a owl:class ;
   rdfs:label "open DLR"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
@@ -40,7 +40,7 @@
   rdfs:comment "Goal or purpose of this OTRL/ODRL"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:OTRL :ODRL) ] ;
+  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
   .
 
 :exitCriteria
@@ -49,12 +49,12 @@
   rdfs:comment "Criteria to exit this OTRL for the next OTRL; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:OTRL :ODRL) ] ;
+  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
   .
 
 # the open technology readiness levels (OTLR):
 
-:OTRL1
+:Otrl1
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
@@ -63,7 +63,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:OTRL2
+:Otrl2
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
@@ -72,7 +72,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:OTRL3
+:Otrl3
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
@@ -81,7 +81,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:OTRL4
+:Otrl4
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
@@ -90,7 +90,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:OTRL5
+:Otrl5
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
@@ -100,7 +100,7 @@
 
 # the open documentation readiness levels (OTLR):
 
-:ODRL1
+:Odrl1
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
@@ -109,7 +109,7 @@
   :exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
-:ODRL2
+:Odrl2
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
@@ -118,7 +118,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:ODRL3
+:Odrl3
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
@@ -127,7 +127,7 @@
   :exitCriteria "stable release"@en ;
   .
 
-:ODRL3Star
+:Odrl3Star
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
@@ -136,7 +136,7 @@
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
-:ODRL4
+:Odrl4
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-5"@en ;
