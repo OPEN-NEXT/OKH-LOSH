@@ -175,6 +175,12 @@ okh:UserManual
   rdfs:subClassOf okh:File ;
   .
 
+okh:OuterDimensions
+  a owl:Class ;
+  rdfs:label "outer dimensions"@en ;
+  rdfs:comment "…of a module or a part"
+  .
+
 okh:ComponentReference
   a owl:Class ;
   rdfs:subClassOf okh:Reference ;
@@ -477,28 +483,36 @@ okh:productionMetadata
 ## ----- production metadata -----
 
 okh:manufacturingProcess
-  a owl:ObjectProperty ;
+  a owl:DatatypeProperty ;
   rdfs:label "manufacturing process" ;
-# fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
   .
 
 okh:material
   a owl:DatatypeProperty ;
   rdfs:label "material" ;
-# fixme rdfs:subPropertyOf ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain okh:Part ;
   .
 
-okh:outerDimensionsMM
-  a owl:DatatypeProperty ;
-  rdfs:label "outer dimensions in MM using openSCAD primitives" ;
+okh:hasOuterDimensions
+  a owl:ObjectProperty ;
+  rdfs:label "outer dimensions using openSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
-# fixme rdfs:subPropertyOf ;
+  .
+
+okh:openScad
+  a owl:DatatypeProperty ;
+  rdfs:label "material" ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  rdfs:domain [ owl:unionOf (okh:Module okh:Part) ] ;
+  rdfs:domain okh:OuterDimensions ;
+  .
+
+okh:unit
+  a owl:DatatypeProperty ;
+  rdfs:label "unit" ;
+  rdfs:comment "mm, cm, m" ;
+  rdfs:subPropertyOf okh:productionMetadata ;
+  rdfs:domain okh:OuterDimensions ;
   .
 
 okh:outerDimensionsCM
