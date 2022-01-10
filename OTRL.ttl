@@ -127,7 +127,7 @@
   :exitCriteria "stable release"@en ;
   .
 
-:ODRL-4
+:ODRL-3+
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-4"@en ;
@@ -136,7 +136,7 @@
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
-:ODRL-5
+:ODRL-4
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-5"@en ;
