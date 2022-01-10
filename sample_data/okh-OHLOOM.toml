@@ -34,7 +34,6 @@ export = [
 ]
 printing-process = "FDM"
 material = "ABS"
-mass-g = 30
 infill = 30
 raft-brim = true
 supports = false
@@ -45,6 +44,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=30, r=28)"
 unit = "mm"
+
+[[part.mass]]
+value = 30
+unit = "g"
 
 [[part]]
 name= "CombModul"
@@ -57,7 +60,6 @@ export = [
 ]
 printing-process = "FDM"
 material = "PLA"
-mass-g = 30
 infill = 30
 raft-brim = true
 supports = false
@@ -69,6 +71,10 @@ top-bottom-thickness = 3
 openSCAD = "cube(size = [120,100,5]"
 unit = "mm"
 
+[[part.mass]]
+value = 30
+unit = "g"
+
 [[part]]
 name = "PoleBase"
 tsdc = "3DP"
@@ -76,7 +82,6 @@ source = "/3DParts/PoleBase/PoleBase.scad"
 export = "/3DParts/PoleBase/PoleBase.stl"
 printing-process = "FDM"
 material = "PLA"
-mass-g = 85
 infill = 30
 raft-brim = true
 supports = false
@@ -87,6 +92,10 @@ top-bottom-thickness = 4
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [130,115,100]"
 unit = "mm"
+
+[[part.mass]]
+value = 85
+unit = "g"
 
 [[part]]
 name = "RatchetPawl"
@@ -99,7 +108,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 30
 infill = 30
 raft-brim = true
 supports = false
@@ -110,6 +118,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [130,20,20]"
 unit = "mm"
+
+[[part.mass]]
+value = 30
+unit = "g"
 
 [[part]]
 name = "Ratchet Wheel"
@@ -122,7 +134,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 65
 infill = 30
 raft-brim = true
 supports = false
@@ -133,6 +144,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=45, r=45)"
 unit = "mm"
+
+[[part.mass]]
+value = 65
+unit = "g"
 
 [[part]]
 name = "ScrewSockets"
@@ -145,7 +160,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 5
 infill = 30
 raft-brim = true
 supports = false
@@ -156,6 +170,10 @@ top-bottom-thickness = 8
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=12, r=7)"
 unit = "mm"
+
+[[part.mass]]
+value = 5
+unit = "g"
 
 [[part]]
 name= "ScrewSockets for ScrewHead"
@@ -165,16 +183,20 @@ source = "/3DParts/ScrewSockets/ScrewSockets.scad"
 export = "/3DParts/ScrewSockets/ScrewSocket4ScrewHead.stl"
 material = "PLA"
 printing-process = "FDM"
-mass-g = 5
 infill = 30
 raft-brim = true
 supports = false
 resolution-mm = 0.1
 shell-thickness = 3
 top-bottom-thickness = 8
+
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=12, r=7)"
 unit = "mm"
+
+[[part.mass]]
+value = 5
+unit = "g"
 
 [[part]]
 name= "Warpclothbeam 1"
@@ -187,7 +209,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 65
 infill = 30
 raft-brim = true
 supports = false
@@ -198,6 +219,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=163, r=22.5)"
 unit = "mm"
+
+[[part.mass]]
+value = 65
+unit = "g"
 
 [[part]]
 name= "Warpclothbeam 2"
@@ -210,7 +235,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 65
 infill = 30
 raft-brim = true
 supports = false
@@ -221,6 +245,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=162, r=22.5)"
 unit = "mm"
+
+[[part.mass]]
+value = 65
+unit = "g"
 
 [[part]]
 name= "Warpclothbeam 3"
@@ -233,7 +261,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 65
 infill = 30
 raft-brim = true
 supports = false
@@ -244,6 +271,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=163, r=22.5)"
 unit = "mm"
+
+[[part.mass]]
+value = 65
+unit = "g"
 
 [[part]]
 name= "Warpclothbeam 4"
@@ -256,7 +287,6 @@ export = [
 ]
 material = "PLA"
 printing-process = "FDM"
-mass-g = 60
 infill = 30
 raft-brim = true
 supports = false
@@ -267,6 +297,10 @@ top-bottom-thickness = 3
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=140, r=22)"
 unit = "mm"
+
+[[part.mass]]
+value = 60
+unit = "g"
 
 [[part]]
 name = "CombHolder"
@@ -281,13 +315,16 @@ export = [
   "/WoodParts/CombHolder/CombHolder.stl"
 ]
 material = "wood"
-mass-kg = "0.16"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [118,60,18]"
 unit = "mm"
+
+[[part.mass]]
+value = 160
+unit = "g"
 
 [[part]]
 name = "CrossBeam"
@@ -302,12 +339,15 @@ export = [
   "/WoodParts/CrossBeam/CrossBeam.stl"
 ]
 material = "wood"
-mass-kg = 0.55
 smallest-tolerance-class = "IT11"
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [572,100,20]"
 unit = "mm"
+
+[[part.mass]]
+value = 550
+unit = "g"
 
 [[part]]
 name = "Shuttle"
@@ -322,13 +362,16 @@ export = [
   "/WoodParts/Shuttle/Shuttle.stl"
 ]
 material = "wood"
-mass-kg = "0.065"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [497,45,6]"
 unit = "mm"
+
+[[part.mass]]
+value = 65
+unit = "g"
 
 [[part]]
 name = "SideFrame"
@@ -343,13 +386,16 @@ export = [
   "/WoodParts/SideFrame/SideFrame.stl"
 ]
 material = "wood"
-mass-kg = "0.70"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [580,140,18]"
 unit = "mm"
+
+[[part.mass]]
+value = 700
+unit = "g"
 
 [[part]]
 name = "SlotBeam"
@@ -364,13 +410,16 @@ export = [
   "/WoodParts/SlotBeam/SlotBeam.stl"
 ]
 material = "wood"
-mass-kg = "0.15"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [566,24,22]"
 unit = "mm"
+
+[[part.mass]]
+value = 15
+unit = "g"
 
 [[part]]
 name = "StringStick"
@@ -385,13 +434,16 @@ export = [
   "/WoodParts/StringStick/StringStick.stl"
 ]
 material = "wood"
-mass-kg = "0.035"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cube(size = [560,22,6]"
 unit = "mm"
+
+[[part.mass]]
+value = 35
+unit = "g"
 
 [[part]]
 name = "WarpClothBeam"
@@ -406,10 +458,13 @@ export = [
   "/WoodParts/WarpClothBeam_NoCNC/WarpClothBeam_Wood_NoCNC.stl"
 ]
 material = "wood"
-mass-kg = "0.33"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
 [[part.outer-dimensions]]
 openSCAD = "cylinder(h=710, r=17.5)"
 unit = "mm"
+
+[[part.mass]]
+value = 330
+unit = "g"

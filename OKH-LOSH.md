@@ -495,16 +495,24 @@ general:
 
 - `material` [string]
   - reference of material used for this part
-  - e.g. `PLA`
+  - e.g. `PLA`, `1.0715` (EN material number for free machining steel 11SMn30)
 - `outer-dimensions` [class]
   - `openSCAD` [openSCAD primitive]
     - openSCAD primitive describing shape and size of the module
     - e.g. `cube(size = [400,350,150])`
   - `unit` [string]
     - e.g. `mm`
+- `mass` [class]
+  - `value` [float]
+    - mass of the part
+    - e.g. `120.5`
+  - `unit` [string]
+    - e.g. `g`
 - `tsdc` [TsDC-ID] (multiple)
   - manufacturing process for which this part has been designed
     (= technology-specific documentation criteria applying for this part)
+
+additionally (according to TsDC):
 
 #### 3D printing
 
@@ -515,12 +523,6 @@ general:
 - `material` [string]
   - reference of material used for this part
   - e.g. `PLA`
-- `mass-g` [float]
-  - mass of the part in gramms
-- `outer-dimensions-mm` [openSCAD-primitive]
-  - openSCAD primitive describing shape and size of the module or part
-  - all dimensions in mm
-  - e.g. `cube(size = [400,350,150])`
 - `infill` [float]
   - print parameter: infill (in %)
 - `raft-brim` [bool]
@@ -540,12 +542,6 @@ general:
 
 `tsdc:CNC`
 
-- `material` [string]
-  - reference of material used for this part
-  - e.g. `1.0715` (EN material number for free machining steel 11SMn30)
-- `mass-kg` [float]
-  - mass of the part in kilogramms
-  - e.g. `12.3`
 - `smallest-tolerance-class` [string]
   - smallest tolerance class of measures according to ISO 286
   - e.g. `IT9`
@@ -555,7 +551,7 @@ general:
 
 #### Laser Cutting
 
-<!---FIXME TsDC-ID-->
+<!---FIXME TsDC-ID LAC?-->
 
 - `engraving-depth-mm` [float]
   - depth of engraving in mm in case the part has an engraving
@@ -578,10 +574,6 @@ general:
   - designation of the manufacturing process for surface finishing
     to meet required surface properties
   - e.g. `polishing`
-- `outer-dimensions-mm` [openSCAD-primitive]
-  - openSCAD primitive describing shape and size of the module or part
-  - all dimensions in mm
-  - e.g. `cube(size = [400,350,150])`
 
 # Further References
 
