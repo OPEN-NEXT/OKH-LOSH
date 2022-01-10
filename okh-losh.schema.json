@@ -107,14 +107,14 @@
       "$ref": "#/$defs/cpcId"
     },
     "tsdc": {
-      "description": "TODO",
+      "description": "Technology-specific Documentation Criteria according to DIN SPEC 3105-1; gives a reference of which manufacturing technologies are used for this thing",
       "type": [ "array", "string" ],
       "items": {
         "type": "string"
       },
       "examples": [
-        "TODO",
-        "TODO"
+        "MEC",
+        "PCB"
       ]
     },
     "bom": {
