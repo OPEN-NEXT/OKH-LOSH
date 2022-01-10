@@ -129,6 +129,9 @@
     "outer-dimensions": {
       "$ref": "#/$defs/outerDimensions"
     },
+    "mass": {
+      "$ref": "#/$defs/mass"
+    },
     "part": {
       "type": "array",
       "items": {
@@ -162,6 +165,9 @@
            },
           "outer-dimensions": {
             "$ref": "#/$defs/outerDimensions"
+          },
+          "mass": {
+            "$ref": "#/$defs/mass"
           }
          },
       "required": [ "name" ]
@@ -253,7 +259,14 @@
       "type": "object",
       "properties": {
         "openSCAD": { "type": "string" },
-        "unit": { "enum" : ["mm", "m", "cm" ]}
+        "unit": { "enum" : [ "mm", "m", "cm" ]}
+      }
+    },
+    "mass": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "float" },
+        "unit": { "enum" : [ "g", "kg" ]}
       }
     }
   },
