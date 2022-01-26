@@ -67,7 +67,7 @@
       ]
     },
     "readme": {
-      "$ref": "#/$defs/relPathOrWebUrl"
+      "$ref": "#/$defs/relPath"
     },
     "image": {
       "$ref": "#/$defs/relPathOrWebUrl"
