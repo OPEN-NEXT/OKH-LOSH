@@ -551,7 +551,7 @@ additionally (according to TsDC):
 
 #### Laser Cutting
 
-<!---FIXME TsDC-ID LAC?-->
+`tsdc:LAS`
 
 - `engraving-depth-mm` [float]
   - depth of engraving in mm in case the part has an engraving
