@@ -115,8 +115,8 @@
         {"const": "ODRL-1", "description": "documentation started & accessible"},
         {"const": "ODRL-2", "description": "minimal documentation"},
         {"const": "ODRL-3", "description": "full documentation"},
-        {"const": "ODRL-3*", "description": "audited documentation"},
-        {"const": "ODRL-4", "description": "audited documentation including CE certification documents"}
+        {"const": "ODRL-3*", "description": "full documentation, audited"},
+        {"const": "ODRL-4", "description": "full documentation including CE certification documents"}
       ],
       "default": "ODRL-1"
     },
