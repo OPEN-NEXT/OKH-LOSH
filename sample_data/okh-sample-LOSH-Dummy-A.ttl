@@ -28,7 +28,7 @@
   okh:hasImage :LOSHdummyMOSHA_image ;
   okh:documentationLanguage "en-GB" ;
   okh:technologyReadinessLevel otrl:OTRL5 ;
-  okh:documentationReadinessLevel otrl:ODRL5 ;
+  okh:documentationReadinessLevel otrl:ODRL4 ;
   okh:function "Doesn't do much, yet." ;
   okh:cpcPatentClass "D03D 35/00" ;
   okh:relatedTsDC tsdc:MEC ;
