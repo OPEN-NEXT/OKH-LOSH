@@ -100,23 +100,23 @@
     },
     "technology-readiness-level": {
       "description": "OTRL-ID representing the development stage of the OSH module; get it from here: <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl>",
-      "enum": [
-        "OTRL-1",
-        "OTRL-2",
-        "OTRL-3",
-        "OTRL-4",
-        "OTRL-5"
+      "oneOf": [
+        {"const": "OTRL-1", "description": "product specifications/requirements"},
+        {"const": "OTRL-2", "description": "proof of concept"},
+        {"const": "OTRL-3", "description": "early prototype"},
+        {"const": "OTRL-4", "description": "minimum viable product"},
+        {"const": "OTRL-5", "description": "safe product"}
       ],
       "default": "OTRL-1"
     },
     "documentation-readiness-level": {
       "description": "ODRL-ID representing the development stage of the documentation; get it from here: <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl>",
-      "enum": [
-        "ODRL-1",
-        "ODRL-2",
-        "ODRL-3",
-        "ODRL-4",
-        "ODRL-5"
+      "oneOf": [
+        {"const": "ODRL-1", "description": "documentation started & accessible"},
+        {"const": "ODRL-2", "description": "minimal documentation"},
+        {"const": "ODRL-3", "description": "full documentation"},
+        {"const": "ODRL-3*", "description": "audited documentation"},
+        {"const": "ODRL-4", "description": "audited documentation including CE certification documents"}
       ],
       "default": "ODRL-1"
     },
@@ -129,20 +129,20 @@
       "type": "string",
       "examples": [
         "A fully programmable, impeccably built, open source, split mechanical keyboard designed for extreme productivity and ergonomics.",
-        "A Handibot tool is a new kind of portable, digitally-controlled power tool for cutting, drilling, carving, and many other machining operations– the first Universal Digital Power Tool (UDPT) – or just, a Smart Tool. If you're familiar with industrial CNC (computer numerically controlled) equipment, think of the Handibot tool as a portable version of CNC. ",
+        "A Handibot tool is a new kind of portable, digitally-controlled power tool for cutting, drilling, carving, and many other machining operations - the first Universal Digital Power Tool (UDPT) - or just, a Smart Tool. If you're familiar with industrial CNC (computer numerically controlled) equipment, think of the Handibot tool as a portable version of CNC. ",
         "A tandem bicycle, with practically the same size, weight, and cost of a standard bicycle.",
         "CARLA is a resistant bicycle trailer, which can be coupled with any regular bike and can transport easily 150 kg load. CARLA distinguishes itself for the outstanding agility and a very small turning circle. CARLA bicycle trailer is very well in tune with e-bikes for example, with a mid-motor.",
         "FarmBot Genesis is top-of-the-line FarmBot model designed with the most features and flexibility. It is suitable for growing food with the highest level of precision, running complex experiments, and capable of being easily modified and extended to do more.",
         "Flipper Zero is a multi tool device for geeks with a curious personality of a cyber-dolphin who really loves to hack. It can interact with digital systems in real life and grow while you are hacking. The idea of Flipper Zero is to combine all the phreaking hardware tools you'd need for hacking on the go.",
         "GEK Gasifier comes as an assemble-yourself kit that provides stand-alone wood gas for a variety of end uses.",
-        " Inkplate 6 is a powerful, Wi-Fi enabled ESP32 based six-inch e-paper display – recycled from a Kindle e-reader.",
+        "Inkplate 6 is a powerful, Wi-Fi enabled ESP32 based six-inch e-paper display - recycled from a Kindle e-reader.",
         "KORUZA innovates the design of a free-space optical communication system reusing mass produced Small Form-factor Pluggable (SFP) electro-optical transceivers, combining the latest advances in low-cost 3D printing using the Fused Deposition Modelling (F DM) method with bare-minimum custom electronics design.",
         "LittleRP is an Open Source Resin 3D Printer ",
         "mechanical setup for the COSI Measure",
         "MNT Reform is the radical, ultimate open hardware laptop, designed and assembled in Berlin.",
         "OpenEVSE supplies open source charging station hardware and software solutions to manufactures and individuals. ",
         "OpenROV is a DIY telerobotics community centered around underwater exploration & adventure.",
-        "Opentrons makes robots for biologists. The robots automate experiments that would otherwise be done by hand, allowing our users to spend more time pursuing answers to the 21st century’s most important questions, and less time pipetting.",
+        "Opentrons makes robots for biologists. The robots automate experiments that would otherwise be done by hand, allowing our users to spend more time pursuing answers to the 21st century's most important questions, and less time pipetting.",
         "The AXIOM Beta is an open source, open hardware, professional-grade digital film camera made by apertus°. It is designed to be modular e.g. interchangeable sensor front end etc. and supports recording at 4K resolution.",
         "The Corne is a 40% split mechanical USB general purpose keyboard. It is made up of two halves with 3x6 column staggered keys and 3 thumb keys. It has full RGB backlighting, and is fully programmable using the popular Open Source QMK firmware. The basic design principles are, to have a minimal, ergonomically arranged set of keys that are all reachable by moving a finger by at most a distance of one key in diagonal.",
         "The Corne keyboard is a split keyboard with 3x6 column staggered keys and 3 thumb keys, based on Helix. Crkbd stands for Corne Keyboard.",
@@ -292,32 +292,36 @@
       "format": "uri",
       "pattern": "^https?://"
     },
+    "relPath": {
+      "type": "string",
+      "$comment": "A relative file-path to a dir or file below the root - as much as one can check for that with a regex",
+      "not": {
+        "anyOf": [
+          {
+            "$comment": "no protocol",
+            "pattern": "^[a-z]*:"
+          },
+          {
+            "$comment": "no URL-absolute path without protocol",
+            "pattern": "^//"
+          },
+          {
+            "$comment": "no parent-dir-references",
+            "pattern": "(?:.*/)?\\.\\.(?:/.*)?"
+          }
+        ]
+      }
+    },
     "relPathOrWebUrl": {
       "type": "string",
       "anyOf": [
         {
-          "$comment": "A full, absolute web URL",
+          "$comment": "A full web URL",
           "format": "uri",
           "pattern": "^https?://"
         },
         {
-          "$comment": "Not a URL, but a relative file-path to a dir or file below the root - as much as one can check for that with a regex",
-          "not": {
-            "anyOf": [
-              {
-                "$comment": "no protocol",
-                "pattern": "^[a-z]*:"
-              },
-              {
-                "$comment": "no URL-absolute path without protocol",
-                "pattern": "^//"
-              },
-              {
-                "$comment": "no parent-dir-references",
-                "pattern": "(?:.*/)?\\.\\.(?:/.*)?"
-              }
-            ]
-          }
+          "$ref": "#/$defs/relPath"
         }
       ]
     },
@@ -421,7 +425,7 @@
     },
     "source": {
       "description": "relative or absolute path to source file (e.g. native CAD file); multiple inputs possible (with one entry each)",
-      "type": "array",
+      "type": [ "array", "string" ],
       "items": {
         "type": "string",
         "$comment": "TODO type should rather be ~ $ref:relPath"
@@ -435,7 +439,7 @@
     },
     "export": {
       "description": "relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing); multiple inputs possible (with one entry each)",
-      "type": "array",
+      "type": [ "array", "string" ],
       "items": {
         "$ref": "#/$defs/relPathOrWebUrl"
       },
@@ -461,14 +465,16 @@
       "properties": {
         "openSCAD": { "type": "string" },
         "unit": { "enum" : [ "mm", "m", "cm" ]}
-      }
+      },
+      "required": [ "openSCAD", "unit" ]
     },
     "mass": {
       "type": "object",
       "properties": {
-        "value": { "type": "float" },
+        "value": { "type": "number" },
         "unit": { "enum" : [ "g", "kg" ]}
-      }
+      },
+      "required": [ "value", "unit" ]
     }
   },
   "required": [ "okhv", "name", "repo", "version", "license", "licensor", "function" ]
