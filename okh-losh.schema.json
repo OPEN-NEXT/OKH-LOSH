@@ -394,7 +394,7 @@
       "type": "string"
     },
     "image": {
-      "description": "relative or absolute path to one (!) representative image of the OSH mod",
+      "description": "relative or absolute path to one (!) representative image of the OSH module",
       "anyOf": [
         {
           "$ref": "#/$defs/relPathOrWebUrl"
