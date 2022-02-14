@@ -121,11 +121,11 @@
       "default": "ODRL-1"
     },
     "attestation": {
-      "description": "reference to a valid attestation that the documentation is complete and fully qualifies as open source hardware; issuing conformity assessment bodies according to DIN SPEC 3105-2: - [Open Hardware Observatory](https://en.oho.wiki/wiki/Request_certification_for_your_project) - [Open Source Ecology Germany](https://gitlab.opensourceecology.de/verein/projekte/cab/CAB) - [OSHWA certification programme](https://certification.oshwa.org/)",
+      "description": "reference to a valid attestation that the documentation is complete and fully qualifies as open source hardware;\\\nissuing conformity assessment bodies according to DIN SPEC 3105-2:\\\n- [Open Hardware Observatory](https://en.oho.wiki/wiki/Request_certification_for_your_project)\\\n- [Open Source Ecology Germany](https://gitlab.opensourceecology.de/verein/projekte/cab/CAB)\\\n- [OSHWA certification programme](https://certification.oshwa.org/)",
       "$ref": "#/$defs/relPathOrWebUrl"
     },
     "function": {
-      "description": "functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc. - so if you wish that someone finds & uses your okh specifically e.g. for COVID-19-crisis response, include relevant keywords in this field\\ optional: description of input, output and interfaces",
+      "description": "functional description, e.g. what it actually does, what problem it solves, for whom, under which conditions etc.\\\nSo if you wish that someone finds & uses your OSH specifically e.g. for COVID-19-crisis response, include relevant keywords in this field",
       "type": "string",
       "examples": [
         "A fully programmable, impeccably built, open source, split mechanical keyboard designed for extreme productivity and ergonomics.",
@@ -154,7 +154,7 @@
       ]
     },
     "standard-compliance": {
-      "description": "document-number of the official standard the OSH module complies; multiple inputs possible (with one entry each)",
+      "description": "document-number of the official standard the OSH module complies;\\\nmultiple inputs possible (with one entry each)",
       "type": "array",
       "items": {
         "type": "string"
@@ -165,7 +165,7 @@
       ]
     },
     "cpc-patent-class": {
-      "description": "patent class identifier of the Cooperative Patent Classification that describes best the field of technology of the OSH module - get it from here: <https://worldwide.espacenet.com/classification>",
+      "description": "patent class identifier of the Cooperative Patent Classification that describes best the field of technology of the OSH module.\\\nGet it from here: <https://worldwide.espacenet.com/classification>",
       "$ref": "#/$defs/cpcId"
     },
     "tsdc": {
@@ -415,7 +415,6 @@
       },
       "examples": [
 	"3DP",
-        "A63C",
         "ASM",
         "CNC",
         "MEC",
@@ -424,7 +423,7 @@
       ]
     },
     "source": {
-      "description": "relative or absolute path to source file (e.g. native CAD file); multiple inputs possible (with one entry each)",
+      "description": "relative or absolute path to source file (e.g. native CAD file);\\\nmultiple inputs possible (with one entry each)",
       "type": [ "array", "string" ],
       "items": {
         "type": "string",
@@ -438,7 +437,7 @@
       ]
     },
     "export": {
-      "description": "relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing); multiple inputs possible (with one entry each)",
+      "description": "relative or absolute path to export file (e.g. STEP export of 3D model or PDF export of drawing);\\\nmultiple inputs possible (with one entry each)",
       "type": [ "array", "string" ],
       "items": {
         "$ref": "#/$defs/relPathOrWebUrl"
@@ -449,7 +448,7 @@
       ]
     },
     "auxiliary": {
-      "description": "relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files); multiple inputs possible (with one entry each)",
+      "description": "relative or absolute path to files that are neither source files nor their exports, but still useful in the repository (e.g. KiCAD library files);\\\nmultiple inputs possible (with one entry each)",
       "type": "array",
       "items": {
         "$ref": "#/$defs/relPathOrWebUrl"
@@ -460,7 +459,7 @@
       ]
     },
     "outerDimensions": {
-      "description": "openSCAD primitive describing shape and size of the module or part; the property extension (e.g. `-mm`) defines the dimension of measures. See the openSCAD documentation here for syntax <https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids>",
+      "description": "openSCAD primitive describing shape and size of the module or part.\\\nSee the openSCAD documentation here for syntax <https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids>",
       "type": "object",
       "properties": {
         "openSCAD": { "type": "string" },
