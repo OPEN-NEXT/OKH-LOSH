@@ -19,7 +19,7 @@ manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
 fabric-width-mm = 400
 
-[[outer-dimensions]]
+[outer-dimensions]
 openSCAD = "cube(size = [400,350,150])"
 unit = "mm"
 
@@ -41,11 +41,11 @@ resolution-mm = 0.2
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=30, r=28)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 30
 unit = "g"
 
@@ -67,11 +67,11 @@ resolution-mm = 0.27
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [120,100,5]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 30
 unit = "g"
 
@@ -89,11 +89,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [130,115,100]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 85
 unit = "g"
 
@@ -115,11 +115,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [130,20,20]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 30
 unit = "g"
 
@@ -141,11 +141,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=45, r=45)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 65
 unit = "g"
 
@@ -167,11 +167,11 @@ resolution-mm = 0.1
 shell-thickness = 3
 top-bottom-thickness = 8
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=12, r=7)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 5
 unit = "g"
 
@@ -190,11 +190,11 @@ resolution-mm = 0.1
 shell-thickness = 3
 top-bottom-thickness = 8
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=12, r=7)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 5
 unit = "g"
 
@@ -216,11 +216,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=163, r=22.5)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 65
 unit = "g"
 
@@ -242,11 +242,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=162, r=22.5)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 65
 unit = "g"
 
@@ -268,11 +268,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=163, r=22.5)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 65
 unit = "g"
 
@@ -294,11 +294,11 @@ resolution-mm = 0.3
 shell-thickness = 3
 top-bottom-thickness = 3
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=140, r=22)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 60
 unit = "g"
 
@@ -318,11 +318,11 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [118,60,18]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 160
 unit = "g"
 
@@ -341,11 +341,11 @@ export = [
 material = "wood"
 smallest-tolerance-class = "IT11"
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [572,100,20]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 550
 unit = "g"
 
@@ -365,11 +365,11 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [497,45,6]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 65
 unit = "g"
 
@@ -389,11 +389,11 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [580,140,18]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 700
 unit = "g"
 
@@ -413,11 +413,11 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [566,24,22]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 15
 unit = "g"
 
@@ -437,11 +437,11 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [560,22,6]"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 35
 unit = "g"
 
@@ -461,10 +461,10 @@ material = "wood"
 smallest-tolerance-class = "IT11"
 smallest-inner-radius-mm = 4
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cylinder(h=710, r=17.5)"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 330
 unit = "g"

@@ -27,11 +27,11 @@ bom = "BoM.csv"
 manufacturing-instructions = "/Documentation/Assembly_Guide/AssemblyGuide.md"
 user-manual = "/Documentation/User_Guide/UserGuide.md"
 
-[[outer-dimensions]]
+[outer-dimensions]
 openSCAD = "cube(size = [400,350,150])"
 unit = "mm"
 
-[[mass]]
+[mass]
 value = 50.33
 unit = "kg"
 
@@ -45,11 +45,11 @@ export = [
   "xxx.stl"
 ]
 
-[[part.outer-dimensions]]
+[part.outer-dimensions]
 openSCAD = "cube(size = [120,100,3])"
 unit = "mm"
 
-[[part.mass]]
+[part.mass]
 value = 330
 unit = "g"
 
