@@ -206,8 +206,8 @@ A detailled description of these levels can be found in the following chapters.
 |ODRL 1|documentation started & accessible|making information available as free/open source material|
 |ODRL 2|documentation under collaborative development|enabling collaborative development of the documentation by the provision of files and information in editable formats|
 |ODRL 3|full documentation|full exploitability of the documentation|
-|ODRL 4|audited documentation|attested compliance with DIN SPEC 3105-1|
-|ODRL 5|audited documentation including CE certification documents|enabling decentralised commercial distribution|
+|ODRL 3\*|audited documentation|attested compliance with DIN SPEC 3105-1|
+|ODRL 4|audited documentation including CE certification documents|enabling decentralised commercial distribution|
 
 : Overview on ODRLs {#tbl:odrl-overview}
 
@@ -308,7 +308,7 @@ Target group struggles; execution of the 4 rights of open source is possible,
 but only with lots of reconciliation with originators
 since the documentation yet lacks fundamental information -->
 
-### ODRL 4
+### ODRL 3\*
 
 `audited documentation`
 
@@ -331,7 +331,7 @@ target group understands; execution of the 4 rights of open source is possible,
 but still requires few reconciliation with originators
 since the documentation yet lacks minor information -->
 
-### ODRL 5
+### ODRL 4
 
 `audited documentation including CE certification documents`
 
