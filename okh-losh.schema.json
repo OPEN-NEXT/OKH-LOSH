@@ -96,7 +96,15 @@
     },
     "documentation-language": {
       "description": "IETF BCP 47 language tag for the language in which the documentation is written",
-      "$ref": "#/$defs/language"
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+           "$ref": "#/$defs/language"
+          }
+        },
+        { "$ref": "#/$defs/language" }
+      ]
     },
     "technology-readiness-level": {
       "description": "OTRL-ID representing the development stage of the OSH module; get it from here: <https://github.com/OPEN-NEXT/LOSH/raw/master/OTRL.ttl>",
