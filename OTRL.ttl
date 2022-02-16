@@ -140,7 +140,7 @@
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
   rdfs:comment "Full documentation published & audited"@en ;
-  :goal "public evidence of documentation maturity"@en ;
+  :goal "Public evidence of documentation maturity"@en ;
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
@@ -152,4 +152,4 @@
   :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
 
-# ToDo other *star variants for ODRL (can   apply for all levels)
+# TODO Add other *star variants for ODRL (can apply for all levels)

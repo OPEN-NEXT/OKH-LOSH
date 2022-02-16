@@ -89,7 +89,7 @@
 ## [2.4. Odrl3Star](http://purl.org/oseg/ontologies/OTRL#Odrl3Star)
 
 * [**exitCriteria**](http://purl.org/oseg/ontologies/OTRL#exitCriteria) "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"
-* [**goal**](http://purl.org/oseg/ontologies/OTRL#goal) "public evidence of documentation maturity"
+* [**goal**](http://purl.org/oseg/ontologies/OTRL#goal) "Public evidence of documentation maturity"
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Full documentation published & audited"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-3*"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](http://purl.org/oseg/ontologies/OTRL#ODRL)
