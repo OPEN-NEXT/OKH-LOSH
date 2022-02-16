@@ -58,8 +58,8 @@
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
-  rdfs:comment "ideation"@en ;
-  :goal "product specifications/requirements"@en ;
+  rdfs:comment "Ideation / needs identification"@en ;
+  :goal "Product idea, needs and initial specifications are defined."@en ;
   :exitCriteria "ToDo."@en ;
   .
 
@@ -67,8 +67,8 @@
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
-  rdfs:comment "conception"@en ;
-  :goal "proof of concept"@en ;
+  rdfs:comment "Conception"@en ;
+  :goal "Mature product concept has been formulated"@en ;
   :exitCriteria "ToDo."@en ;
   .
 
@@ -76,8 +76,8 @@
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
-  rdfs:comment "technical design"@en ;
-  :goal "early prototype"@en ;
+  rdfs:comment "Development"@en ;
+  :goal "Product model is developed"@en ;
   :exitCriteria "ToDo."@en ;
   .
 
@@ -85,8 +85,8 @@
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
-  rdfs:comment "product design"@en ;
-  :goal "minimum viable product"@en ;
+  rdfs:comment "Prototyping and testing"@en ;
+  :goal "Full functional prototype is built and tested"@en ;
   :exitCriteria "ToDo."@en ;
   .
 
@@ -94,8 +94,16 @@
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
-  rdfs:comment "safe product"@en ;
-  :goal "CE certification"@en ;
+  rdfs:comment "Manufacturing development"@en ;
+  :goal "Fairly reliable processes identified and characterised"@en ;
+  .
+
+:Otrl6
+  a owl:class ;
+  rdfs:subClassOf :OTRL ;
+  rdfs:label "OTRL-6"@en ;
+  rdfs:comment "Product qualification"@en ;
+  :goal "Certificate marking conformity assessment or comparable"@en ;
   .
 
 # the open documentation readiness levels (OTLR):
@@ -104,8 +112,8 @@
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
-  rdfs:comment "documentation started & accessible"@en ;
-  :goal "making information available as free/open source material"@en ;
+  rdfs:comment "Documentation process commenced"@en ;
+  :goal "Published information under free open source licence"@en ;
   :exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
@@ -113,8 +121,8 @@
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
-  rdfs:comment "minimal documentation"@en ;
-  :goal "enabling usability of the documentation by the provision of essential files and information"@en ;
+  rdfs:comment "Collaborative documentation in progress"@en ;
+  :goal "Provision of documentation files and in editable formats enabling collaboration development"@en ;
   :exitCriteria "ToDo."@en ;
   .
 
@@ -122,8 +130,8 @@
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
-  rdfs:comment "full documentation"@en ;
-  :goal "full exploitability of the documentation"@en ;
+  rdfs:comment "Full documentation published"@en ;
+  :goal "Complete documentation as per DIN SPEC 3105-1"@en ;
   :exitCriteria "stable release"@en ;
   .
 
@@ -131,7 +139,7 @@
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
-  rdfs:comment "audited documentation"@en ;
+  rdfs:comment "Full documentation published & audited"@en ;
   :goal "public evidence of documentation maturity"@en ;
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
@@ -140,6 +148,8 @@
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-5"@en ;
-  rdfs:comment "audited documentation including CE certification documents"@en ;
-  :goal "enabling decentralised commercial distribution"@en ;
+  rdfs:comment "Full documentation for product qualification"@en ;
+  :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
+
+# ToDo other *star variants for ODRL (can   apply for all levels)
