@@ -660,21 +660,79 @@ okh:release
   a owl:DatatypeProperty ;
   rdfs:label "release" ;
   rdfs:comment "URL to release" ;
+#  rdfs:subClassOf schema:URL ;
   rdfs:domain [ owl:unionOf (okh:Module okh:Software) ] ;
   .
 
 okh:installationGuide
   a owl:DatatypeProperty ;
   rdfs:label "Installation Guide" ;
+#  rdfs:subClassOf schema:URL ;
   rdfs:domain okh:Software ;
   .
 
 # ----- platform-specific fields -----
 ## ----- OSHWA -----
 
+okh:primaryType
+  a owl:DatatypeProperty ;
+  rdfs:label "primary OSHWA category"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:additionalType
+  a owl:DatatypeProperty ;
+  rdfs:label "additional OSHWA category"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:hardwareLicense
+  a owl:DatatypeProperty ;
+  rdfs:label "hardware license"@en ;
+  rdfs:comment "…as stated at OSHWA"@en ;
+  rdfs:subPropertyOf okh:spdxLicense ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:softwareLicense
+  a owl:DatatypeProperty ;
+  rdfs:label "software license"@en ;
+  rdfs:comment "…as stated at OSHWA"@en ;
+  rdfs:subPropertyOf okh:spdxLicense ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:documentationLicense
+  a owl:DatatypeProperty ;
+  rdfs:label "documenation license"@en ;
+  rdfs:comment "…as stated at OSHWA"@en ;
+  rdfs:subPropertyOf okh:spdxLicense ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:country
+  a owl:DatatypeProperty ;
+  rdfs:label "origin (country)"@en ;
+  rdfs:comment "…as stated at OSHWA"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Module ;
+  .
+
+okh:certificationDate
+  a owl:DatatypeProperty ;
+  rdfs:label "OSHWA certification date"@en ;
+  rdfs:domain okh:Module ;
+  .
+
 ## ----- Wikifactory -----
 
+# see https://github.com/OPEN-NEXT/LOSH-Reporter/issues/8
+
 ## ----- Thingiverse -----
+
+# nothing so far, since this would slow down fetching enormously
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
