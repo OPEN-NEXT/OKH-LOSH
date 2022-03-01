@@ -228,6 +228,15 @@ okh:repoHost
   owl:cardinality 1
   .
 
+okh:uploadMethod
+  a owl:DatatypeProperty ;
+  rdfs:label "Upload Method" ;
+  rdfs:comment "e.g. auto (fully integrated platforms) or manifest file (for connected platforms)"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain okh:Component ;
+  owl:cardinality 1
+  .
+
 ## ----- identification -----
 
 okh:repository
@@ -659,6 +668,13 @@ okh:installationGuide
   rdfs:label "Installation Guide" ;
   rdfs:domain okh:Software ;
   .
+
+# ----- platform-specific fields -----
+## ----- OSHWA -----
+
+## ----- Wikifactory -----
+
+## ----- Thingiverse -----
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
