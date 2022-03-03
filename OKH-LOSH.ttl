@@ -677,6 +677,7 @@ okh:installationGuide
 okh:primaryType
   a owl:DatatypeProperty ;
   rdfs:label "primary OSHWA category"@en ;
+  rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
   rdfs:range xsd:string ;
   rdfs:domain okh:Module ;
   .
@@ -684,6 +685,7 @@ okh:primaryType
 okh:additionalType
   a owl:DatatypeProperty ;
   rdfs:label "additional OSHWA category"@en ;
+  rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
   rdfs:range xsd:string ;
   rdfs:domain okh:Module ;
   .
