@@ -2,6 +2,7 @@
 
 @base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
+@prefix okshwa:   </oshwa-#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -674,7 +675,7 @@ okh:installationGuide
 # ----- platform-specific fields -----
 ## ----- OSHWA -----
 
-okh:primaryType
+okshwa:primaryType
   a owl:DatatypeProperty ;
   rdfs:label "primary category"@en ;
   rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
@@ -682,7 +683,7 @@ okh:primaryType
   rdfs:domain okh:Module ;
   .
 
-okh:additionalType
+okshwa:additionalType
   a owl:DatatypeProperty ;
   rdfs:label "additional category"@en ;
   rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
@@ -690,7 +691,7 @@ okh:additionalType
   rdfs:domain okh:Module ;
   .
 
-okh:hardwareLicense
+okshwa:hardwareLicense
   a owl:DatatypeProperty ;
   rdfs:label "hardware license"@en ;
   rdfs:comment "…as stated at OSHWA"@en ;
@@ -698,7 +699,7 @@ okh:hardwareLicense
   rdfs:domain okh:Module ;
   .
 
-okh:softwareLicense
+okshwa:softwareLicense
   a owl:DatatypeProperty ;
   rdfs:label "software license"@en ;
   rdfs:comment "…as stated at OSHWA"@en ;
@@ -706,7 +707,7 @@ okh:softwareLicense
   rdfs:domain okh:Module ;
   .
 
-okh:documentationLicense
+okshwa:documentationLicense
   a owl:DatatypeProperty ;
   rdfs:label "documenation license"@en ;
   rdfs:comment "…as stated at OSHWA"@en ;
@@ -714,7 +715,7 @@ okh:documentationLicense
   rdfs:domain okh:Module ;
   .
 
-okh:country
+okshwa:country
   a owl:DatatypeProperty ;
   rdfs:label "origin (country)"@en ;
   rdfs:comment "…as stated at OSHWA"@en ;
@@ -722,7 +723,7 @@ okh:country
   rdfs:domain okh:Module ;
   .
 
-okh:certificationDate
+okshwa:certificationDate
   a owl:DatatypeProperty ;
   rdfs:label "certification date"@en ;
   rdfs:comment "…as stated at OSHWA"@en ;
