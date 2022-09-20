@@ -27,7 +27,7 @@ jobs:
       - name: Check out the ontology-visualization repo
         uses: actions/checkout@v2
         with:
-          repository: usc-isi-i2/ontology-visualization
+          repository: hoijui/ontology-visualization
           path: $ONT_VIZ_REPO
 
       - name: Setup Python 3
