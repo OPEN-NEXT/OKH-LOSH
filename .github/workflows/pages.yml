@@ -47,6 +47,12 @@ jobs:
       - name: Visualize our RDF
         run: ./visualize
 
+      - name: GitHub bug workaround
+        # Without this, GitHub thinks this is supposed to be a submodule,
+        # but because it is not in .gitmodules,
+        # GH errors-out :/
+        run: rm -Rf "${{ env.ONT_VIZ_REPO }}"
+
       - name: Deploy to pages
         uses: peaceiris/actions-gh-pages@v3
         with:
