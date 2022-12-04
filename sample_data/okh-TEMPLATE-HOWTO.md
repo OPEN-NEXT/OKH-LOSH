@@ -5,35 +5,50 @@ version: v0.1
 author: Martin Häuer
 ...
 
-This guide is here to help you when creating a manifest file using the `okh-TEMPLATE.toml`.
-A manifest file is a plain text [TOML](https://toml.io/en/) file that makes relevant metadata about your open source hardware project publicly available in a more machine-readable manner (e.g. the "Krawler" which collects those files to import corresponding projects to [LOSH](losh.opennext.eu)).
-It follows the [OKH-LOSHv1 specification]().
-So, all you need to do is filling out the template and publish it on GitHub (e.g. in your project repository or via <https://github.com/OPEN-NEXT/LOSH-list/>).
+This guide is here to help you when creating a manifest file
+using [okh-TEMPLATE.toml](okh-TEMPLATE.toml).
+A manifest file is a plain text [TOML](https://toml.io/en/) file
+that makes relevant metadata about your open source hardware project publicly available
+in a more machine-readable manner
+(e.g. the "Krawler" which collects those files
+to import corresponding projects to [LOSH](losh.opennext.eu)).
+It follows the [OKH-LOSHv1 specification](TODO).
+So, all you need to do is to fill out the template
+and publish it on GitHub
+(e.g. in your project repository
+or via <https://github.com/OPEN-NEXT/LOSH-list/>).
 
 # Data fields
 
-All fields are linked to their more detailled specification.
+All fields are linked to their more detailed specification.
 Mandatory fields are bold.
-If some data fields are not applicable in your case, please remove them from the manifest file.
+If some data fields are not applicable in your case,
+please remove them from the manifest file.
 
 - [okhv](../OKH-LOSH.md#for-osh-modules-only)
   - automatically filled; NOT to be changed by you
 - **[name](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - name or working title of your hardware project
 - **[repo](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
-  - link to the repository of your hardware project (= wthere the documentation is developed)
+  - link to the repository of your hardware project
+    (= wthere the documentation is developed)
 - **[version](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
-  - version of your hardware project; when you change this field, the crawler will recognise this as a new version and upload it to LOSH; **otherwise not**
+  - version of your hardware project;
+    when you change this field,
+    the crawler will recognise this as a new version
+    and upload it to LOSH; **otherwise not**
 - [release](../OKH-LOSH.md#metadata-fields-for-osh-modules)
   - URL to the release package of this version of your hardware project
 - **[license](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
-  - SPDX-ID of the license you chose; get from here: <https://spdx.org/licenses/>; e.g. CERN-OHL-S-2.0
+  - SPDX-ID of the license you chose;
+    get from here: <https://spdx.org/licenses/>; e.g. CERN-OHL-S-2.0
 - **[licensor](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
-  - the official licensor of your hardware project; in most cases this will be the originator (may be you)
+  - the official licensor of your hardware project;
+    in most cases this will be the originator (may be you)
 - [organization]
   - the organization behind the development of this hardware project
 - [readme](../OKH-LOSH.md#metadata-fields-for-osh-modules)
-  - file path to the README file
+  - file path to the README
 contribution-guide = "CONTRIBUTING.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
 image = "xxx.jpg" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
 documentation-language = "en-GB"
@@ -73,10 +88,13 @@ installation-guide = "https://github.com/arduino/ArduinoCore-mbed/blob/a2c06d768
 # General
 
 - [manifest file name & location](../OKH-LOSH.md#location--naming-convention)
-  - name it `okh-PROJECTNAME.toml` (replacing `PROJECTNAME` with the name of your project) or simply `okh.toml`; it is important that `okh` remains part of of the file name and that you use the `TOML` format
-  - place it directly into the root directory of the project, NOT in a subfolder or so
+  - name it `okh.toml`
+  - place it directly into the root directory of the project,
+    NOT in a subfolder or so
 - [file paths](../OKH-LOSH.md#file-path-conventions)
-  - use a relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
+  - use a relative path from the root directory
+    IF the manifest file is _in_ the project's repositoy;
+    use an URL otherwise
 - multiple entries in TOML files
   - this applies for all TOML files, just do:
 
