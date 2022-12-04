@@ -16,29 +16,29 @@ All fields are linked to their more detailled specification.
 Mandatory fields are bold.
 If some data fields are not applicable in your case, please remove them from the manifest file.
 
-- [okhv](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#for-osh-modules-only)
+- [okhv](../OKH-LOSH.md#for-osh-modules-only)
   - automatically filled; NOT to be changed by you
-- **[name](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
+- **[name](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - name or working title of your hardware project
-- **[repo](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
+- **[repo](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - link to the repository of your hardware project (= wthere the documentation is developed)
-- **[version](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
+- **[version](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - version of your hardware project; when you change this field, the crawler will recognise this as a new version and upload it to LOSH; **otherwise not**
-- [release](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)
+- [release](../OKH-LOSH.md#metadata-fields-for-osh-modules)
   - URL to the release package of this version of your hardware project
-- **[license](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
+- **[license](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - SPDX-ID of the license you chose; get from here: <https://spdx.org/licenses/>; e.g. CERN-OHL-S-2.0
-- **[licensor](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)**
+- **[licensor](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - the official licensor of your hardware project; in most cases this will be the originator (may be you)
 - [organization]
   - the organization behind the development of this hardware project
-- [readme](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#metadata-fields-for-osh-modules)
+- [readme](../OKH-LOSH.md#metadata-fields-for-osh-modules)
   - file path to the README file
 contribution-guide = "CONTRIBUTING.md" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
 image = "xxx.jpg" # relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
 documentation-language = "en-GB"
-technology-readiness-level = "OTRL-3" # choose OTRL level from here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OTRL.md#otrl>
-documentation-readiness-level = "ODRL-3" # choose OTRL level from here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OTRL.md#odrl>
+technology-readiness-level = "OTRL-3" # choose OTRL level from here: <../OTRL.md#otrl>
+documentation-readiness-level = "ODRL-3" # choose OTRL level from here: <../OTRL.md#odrl>
 attestation = "https://certification.oshwa.org/cl000001.html" # URL to a public proof that the module has been certified as open source hardware
 publication = "https://doi.org/10.1371/journal.pone.0193087" # Permalink (e.g.) DOI to a _scientific_ (that is: peer reviewed) publication that _contains_ the design files
 **function** = "xxx" # = a short description of what the hardware is & does / what problem it solves
@@ -72,10 +72,10 @@ installation-guide = "https://github.com/arduino/ArduinoCore-mbed/blob/a2c06d768
 
 # General
 
-- [manifest file name & location](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#location--naming-convention)
+- [manifest file name & location](../OKH-LOSH.md#location--naming-convention)
   - name it `okh-PROJECTNAME.toml` (replacing `PROJECTNAME` with the name of your project) or simply `okh.toml`; it is important that `okh` remains part of of the file name and that you use the `TOML` format
   - place it directly into the root directory of the project, NOT in a subfolder or so
-- [file paths](https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/OKH-LOSH.md#file-path-conventions)
+- [file paths](../OKH-LOSH.md#file-path-conventions)
   - use a relative path from the root directory IF the manifest file is _in_ the project's repositoy; use an URL otherwise
 - multiple entries in TOML files
   - this applies for all TOML files, just do:
