@@ -39,14 +39,6 @@
   terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   terms:license "GPL v3" .
 
-
-# Classes
-
-# Make commonly used classes inherit their WikiData counterparts,
-# so we can use meaningful names,
-# instead of the cryptic WikiData Property numbers.
-
-
 # ----- CLASSES -----
 
 okh:Component

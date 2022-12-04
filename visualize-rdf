@@ -25,14 +25,12 @@ ontology_viz=true
 open=true
 open_svg=true
 filter_doc=true
+#ont_viz_repo="https://github.com/usc-isi-i2/ontology-visualization.git"
+ont_viz_repo="https://github.com/hoijui/ontology-visualization.git"
 ont_viz_repo="${ONT_VIZ_REPO:-$HOME/src/ontology-visualization}"
 sudo=$(which sudo && echo "sudo" || echo "")
 
 function install_requirements() {
-	if ! python -c "import rdflib;import requests" 2> /dev/null
-	then
-		$sudo pip3 install rdflib requests
-	fi
 	if ! which dot > /dev/null
 	then
 		$sudo apt-get install -y -qq graphviz
@@ -40,8 +38,8 @@ function install_requirements() {
 	if [ ! -e "$ont_viz_repo" ]
 	then
 		mkdir -p "$(dirname "$ont_viz_repo")"
-		git clone "https://github.com/usc-isi-i2/ontology-visualization.git" "$ont_viz_repo"
-		$sudo pip3 install -r "${ont_viz_repo}/requirements.txt"
+		git clone "$ont_viz_repo" "$ont_viz_repo"
+		$sudo pip3 install -r "$ont_viz_repo/requirements.txt"
 	fi
 }
 
