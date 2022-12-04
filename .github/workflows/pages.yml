@@ -16,19 +16,19 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REPOS_DIR: build
-      ONT_VIZ_REPO: $REPOS_DIR/ontology-visualization
+      ONT_VIZ_REPO: build/ontology-visualization
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
 
       - name: Create build dir for repo checkout
-        run: mkdir $REPOS_DIR
+        run: mkdir ${{ env.REPOS_DIR }}
 
       - name: Check out the ontology-visualization repo
         uses: actions/checkout@v3
         with:
           repository: hoijui/ontology-visualization
-          path: $ONT_VIZ_REPO
+          path: ${{ env.ONT_VIZ_REPO }}
 
       - name: Setup Python 3
         uses: actions/setup-python@v4
@@ -37,7 +37,12 @@ jobs:
           cache: 'pip'
 
       - name: Install our Python requirements
-        run: pip install -r "$ONT_VIZ_REPO/requirements.txt"
+        run: |
+          pwd
+          ls
+          ls ${{ env.REPOS_DIR }}
+          ls ${{ env.ONT_VIZ_REPO }}
+          pip install -r "${{ env.ONT_VIZ_REPO }}/requirements.txt"
 
       - name: Visualize our RDF
         run: ./visualize
