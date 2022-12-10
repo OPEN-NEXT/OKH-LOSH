@@ -124,7 +124,7 @@ Or rather, how does this 'tool' look like?**
 - facilitate packaging: essential files can be directly linked in the metadata so:
   - we can run periodic tests to see whether files are still online,
   - you can download those files directly from the LOSH front-end
-- RDF & Wikibase enable custom use cases
+- RDF enables custom use cases
   (e.g. for researchers or other OSH platforms)
   e.g. by writing custom queries or by linking to other data/knowledge bases,
   such as Wikidata
@@ -195,11 +195,6 @@ the CI will give back an error and no exports will be available.
   <https://github.com/ahane/LOSH-krawler> (by ahane, konek.to)
   will move to: <https://github.com/OPEN-NEXT/LOSH-krawler>
 
-### WikibaseReconcileEdit
-
-- the reworked API to improve reconciliation tasks \
-  <https://github.com/wmde/WikibaseReconcileEdit> (by addshore, WMDE)
-
 ### Frontend
 
 - the front-end of the LOSH system helps you to search the data
@@ -208,8 +203,8 @@ the CI will give back an error and no exports will be available.
 
 ### RDF2WB
 
-- the importer to push the ontology from any git-based instance
-  to any Wikibase instance; necessary to set up the LOSH system \
+- the importer to push the ontology from any git-based project
+  to RDF; necessary to set up the LOSH system: \
   <https://github.com/hoijui/LOSH-tools> (by hoijui, IPK)
 
 ## Want to contribute?
