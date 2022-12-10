@@ -32,13 +32,12 @@ in short:
 to be shortened:
 
 - Linked Open Hardware
-  - portable metadata → OSH can be published on various platforms (and is synced via wikibase)
+  - portable metadata → OSH can be published on various platforms (and is synced to a (multi-)central RDF store)
   - map of usage, hence compatibility between OSH Modules (this module is also included here and there)
   - don't reinvent the wheel, see what others have used in a similar case
   - reduce (electronic) waste; circular economy
     - represent OSH & proprietary HW by reasonable metadata; see connections, assess compatibility
 - link to other DBs
-  - wikidata
   - Journal of Open Hardware
   - …
 - Find OSH in a specific field
@@ -73,7 +72,7 @@ to be shortened:
 - Has this OSH Module been certfied in any way? Is it using specific standards?
 - What's the development status & version of a given OSH Module or its documentation release?
 - What are the requirements for the technical documentation for a specific piece of OSH?
-  - REMARK 1: this may require translating generic DIN SPEC requirements + TsDC into Wikidata-compatible formats
+  - REMARK 1: this may require translating generic DIN SPEC requirements + TsDC into RDF
   - REMARK 2: this may enable automated pre-checking of compliance of documentation releases against
     - the general requirements of DIN SPEC 3105-1
     - the corresponding TsDC
@@ -95,7 +94,10 @@ I am a manufacturer and want to build ventilators for the local hospital. So I'm
 - have a CE certification
 - don't create too much subsequent costs (e.g. for software when modifying the design).
 
-In case I'm not happy with any of the results I may choose to design my own open source ventilator, recycling some of the designs, I found, I'll ask myself/the Wikibase instance:
+In case I'm not happy with any of the results,
+I may choose to design my own open source ventilator,
+recycling some of the designs I found,
+I'll ask myself/the RDF store:
 
 - Which modules/components have been used in various modules?
 - Which modules/components are available matching my software requirements? (e.g. specific CAD software)
@@ -105,7 +107,7 @@ In case I'm not happy with any of the results I may choose to design my own open
   - any new software required for modifications?
   - What can I expect from this module? How reliable/open is it? (see #14)
 
-## Question Pool / longlist
+## Question Pool / long-list
 
 ### future scopes
 

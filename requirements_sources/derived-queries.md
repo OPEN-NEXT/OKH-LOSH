@@ -1,6 +1,7 @@
 # Description of standard queries
 
-**NOTE:** For details of the properties see descriptions in the [ontology](osh-metadata.ttl).
+**NOTE:** For details of the properties,
+see descriptions in the [ontology](../OKH-LOSH.ttl).
 
 ## \[I\] information queries
 
@@ -104,7 +105,7 @@ for MOSHs:
   in their `sBoM`
 - Option 1: split number by `patentClass` of the MOSHs using the selected component
 - Option 2: add a list
-  (`name`, `version` and internal wikibase-link to the MOSHs using the selected component)
+  (`name`, `version` and internal link to the crawled MOSHs turtle file, using the selected component)
 
 ## \[P\] packaging queries
 
@@ -113,7 +114,7 @@ for MOSHs:
 A package of a certain MOSH includes the following.
 
 NOTE 1:
-The query may give the option to load submodules (other included MOSHs)
+The query may give the option to load sub-modules (other included MOSHs)
 or just link to them.
 In case of loading them, naturally the same requirements apply as for any other MOSH.
 
