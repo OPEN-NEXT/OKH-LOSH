@@ -183,7 +183,7 @@ The crawler will _only check for new versions_ when crawling is performed.
 We rely on manual changes in the manifest file to keep our knowledge base clean
 from 'work on progress'.
 So whenever you make a new release
-or think those changes in your documentation are worth an update on Wikibase
+or think those changes in your documentation are worth to be known by others
 → **update the version in the manifest file.**\
 Otherwise, no changes will be synched.
 
