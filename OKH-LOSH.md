@@ -329,7 +329,7 @@ To summarise: an OSH module must bear reference of:
 - **`function`** [string]
   - functional description, e.g. what it actually does,
     what problem it solves, for whom, under which conditions etc.
-    so if you wish that someone finds & uses your okh specifically,
+    so if you wish that someone finds & uses your OKH specifically,
     e.g. for COVID-19-crisis response, include relevant keywords in this field\
     optional: description of input, output and interfaces
 - `standard-compliance` [string]
@@ -403,11 +403,11 @@ To summarise: an OSH module must bear reference of:
 ## software
 
 - **`release`** [URL]
-  - unambiguous refrence to the software release used for this version
+  - unambiguous reference to the software release used for this version
     of the OSH module
   - e.g. `https://github.com/arduino/ArduinoCore-mbed/releases/tag/1.3.2`
 - `installation-guide` [URL]
-  - unambiguous refrence to the installation guide
+  - unambiguous reference to the installation guide
     for the corresponding software release
   - e.g. `https://github.com/arduino/ArduinoCore-mbed/blob/a2c06d768f5ebb6821ae6505b2032ee58f4ef70d/README.md`
 
@@ -575,7 +575,7 @@ additionally (according to TsDC):
 
 <!---FIXME TsDC-ID-->
 
-- `surcace-finishing-process` [string]
+- `surface-finishing-process` [string]
   - designation of the manufacturing process for surface finishing
     to meet required surface properties
   - e.g. `polishing`
