@@ -87,7 +87,7 @@ okh:Standard
 #  rdfs:subClassOf wd:Q317623 ;
   .
 
-okh:WebsiteURL
+okh:WebsiteUrl
   a owl:Class ;
   rdfs:label "Website URL" ;
   rdfs:subClassOf okh:Reference ;
@@ -239,7 +239,7 @@ okh:repository
     following this link people shall be able to contribute to the development
     (reporting issues, suggesting changes, connecting to the team etc.)" '''@en;
   rdfs:subPropertyOf schema:codeRepository ;
-  rdfs:range okh:WebsiteURL ;
+  rdfs:range okh:WebsiteUrl ;
   owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
@@ -249,7 +249,7 @@ okh:repoSnapshot
   rdfs:label "URL respository snapshot (=specific version)" ;
   rdfs:comment "LOSH-Krawler takes the commit hash from the version tag and creates this permalink" ;
   rdfs:subPropertyOf okh:repository ;
-  rdfs:range okh:WebsiteURL ;
+  rdfs:range okh:WebsiteUrl ;
   owl:cardinality 1 ;
   rdfs:domain okh:Module ;
   .
@@ -363,7 +363,7 @@ okh:attestation
   a owl:ObjectProperty ;
   rdfs:label "attestation" ;
   rdfs:comment "permanent URL to evidence of compliance (OSHWA, FSF, DIN SPEC 3105)" ;
-  rdfs:range okh:WebsiteURL ;
+  rdfs:range okh:WebsiteUrl ;
   rdfs:domain okh:Module ;
   .
 
@@ -456,7 +456,7 @@ okh:usesModule
   a owl:ObjectProperty ;
   rdfs:label "uses Module" ;
   rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
-  rdfs:range [ owl:unionOf (okh:Module okh:WebsiteURL) ] ;
+  rdfs:range [ owl:unionOf (okh:Module okh:WebsiteUrl) ] ;
   rdfs:domain okh:Module ;
   .
 
