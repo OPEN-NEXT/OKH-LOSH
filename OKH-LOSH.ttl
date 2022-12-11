@@ -570,7 +570,7 @@ okh:doi
   rdfs:range rdfs:Literal ;
   .
 
-okh:fileURL
+okh:fileUrl
   a owl:ObjectProperty ;
   rdfs:label "file URL" ;
   rdfs:subPropertyOf schema:url ;

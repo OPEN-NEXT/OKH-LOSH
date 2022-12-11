@@ -66,35 +66,35 @@
   a okh:ManifestFile ;
   rdfs:label "Manifest File of LOSHdummyMOSHA v1.0.1" ;
   okh:okhv "OKH-LOSHv1.0" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/okh.toml> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/okh.toml> ;
   okh:fileFormat "TOML" ;
   .
 
 :OHLOOM_image
   a okh:Image ;
   rdfs:label "Image of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/ASM-image.png> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/ASM-image.png> ;
   okh:fileFormat "JPG" ;
   .
 
 :Readme
   a okh:Readme ;
   rdfs:label "Readme of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/README.md> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/README.md> ;
   okh:fileFormat "MD" ;
   .
 
 :OHLOOM_manufacturingInstructions
   a okh:ManufacturingInstructions ;
   rdfs:label "Manufacturing Instructions of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/AssemblyGuide.md> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/AssemblyGuide.md> ;
   okh:fileFormat "MD" ;
   .
 
 :BoM
   a okh:BoM ;
   rdfs:label "Bill of Materials of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/sBoM.csv> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/sBoM.csv> ;
   okh:fileFormat "CSV" ;
   .
 
@@ -124,28 +124,28 @@
 :ClampRing_image
   a okh:Image ;
   rdfs:label "Image of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/part-pictures/Parts_Print_2.jpg> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/part-pictures/Parts_Print_2.jpg> ;
   okh:fileFormat "JPG" ;
   .
 
 :ClampRing_source
   a okh:SourceFile ;
   rdfs:label "Source File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.scad> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.scad> ;
   okh:fileFormat "SCAD" ;
   .
 
 :ClampRing_export1
   a okh:ExportFile ;
   rdfs:label "Export File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.stl> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.stl> ;
   okh:fileFormat "STL" ;
   .
 
 :ClampRing_export2
   a okh:ExportFile ;
   rdfs:label "Export File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
-  okh:fileURL <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.pdf> ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.pdf> ;
   okh:fileFormat "PDF" ;
   .
 
