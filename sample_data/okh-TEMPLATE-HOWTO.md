@@ -31,7 +31,7 @@ please remove them from the manifest file.
   - name or working title of your hardware project
 - **[repo](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - link to the repository of your hardware project
-    (= wthere the documentation is developed)
+    (= where the documentation is developed)
 - **[version](../OKH-LOSH.md#metadata-fields-for-osh-modules)**
   - version of your hardware project;
     when you change this field,
