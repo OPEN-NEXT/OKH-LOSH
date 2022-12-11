@@ -5,7 +5,7 @@ title: Ontology Mapping | OKHv1 → OKH-LOSHv1
 # Notes
 
 The Open Know-How Manifest Specification Version 1.0
-([OKHv1](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1))
+([OKHv1](https://standards.internetofproduction.org/pub/okh/release/1))
 gave a first approach to organise open source hardware via representative metadata.
 
 Some OSH projects already follow this specification:
@@ -15,11 +15,11 @@ Some OSH projects already follow this specification:
 - find a full list of projects here:\
     <https://github.com/OpenKnowHow/okh-search/blob/master/projects_okhs.csv>
 
-Source for the mapping: [OKHv1 Section 4.5 ff](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+Source for the mapping: [OKHv1 Section 4.5 ff](https://standards.internetofproduction.org/pub/okh#manifest-metadata)
 
 ## Specification Diff
 
-| specification | [OKHv1 Section 4](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#e5a867ac-034f-4e91-aa20-32bb75143b47) | OKH-LOSHv1 |
+| specification | [OKHv1 Section 4](https://standards.internetofproduction.org/pub/okh#specification-for-open-know-how-level-1-discoverable-know-how) | OKH-LOSHv1 |
 |---|---|---|
 | manifest file format | YAML v1.2 | TOML |
 | manifest file name | anything containing "okh" | anything containing "okh", but preferably just `okh.toml` |
@@ -59,7 +59,7 @@ else
 ### derivative of
 
 `derivative-of`/`variant-of`,
-see [4.6.15 f. Derivative of](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+see [4.6.15 f. Derivative of](https://standards.internetofproduction.org/pub/okh#derivative-of)
 
 ```
 if
@@ -81,7 +81,7 @@ okh:function = "description" + "intended-use" + "health-safety-notice"
 
 `development-stage`/`made`/`made-independently`,
 see [4.6.11-13 Stage of development - Has been made independently](
-https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+https://standards.internetofproduction.org/pub/okh#stage-of-development)
 
 ```
 if
@@ -101,7 +101,7 @@ regardless of how they were processed here.
 
 ### license
 
-`license`, see [4.7.1 License](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`license`, see [4.7.1 License](https://standards.internetofproduction.org/pub/okh#license)
 
 ```
 if
@@ -127,7 +127,7 @@ may be included as [custom keys](#custom-keys).
 
 ### licensor
 
-`licensor`, see [4.7.2 Licensor](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`licensor`, see [4.7.2 Licensor](https://standards.internetofproduction.org/pub/okh#licensor)
 
 ```
 "name" = okh:licensor
@@ -135,7 +135,7 @@ may be included as [custom keys](#custom-keys).
 
 ### making instructions
 
-`making-instructions`, see [4.8.7 Assembly Instructions](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`making-instructions`, see [4.8.7 Assembly Instructions](https://standards.internetofproduction.org/pub/okh#assembly-instructions)
 
 ```
 "path" = okh:manufacturingInstructions
@@ -143,7 +143,7 @@ may be included as [custom keys](#custom-keys).
 
 ### operating instructions
 
-`operating-instructions`, see [4.8.12 Operating Instructions](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`operating-instructions`, see [4.8.12 Operating Instructions](https://standards.internetofproduction.org/pub/okh#operating-instructions)
 
 ```
 "path" = okh:userManual
@@ -151,7 +151,7 @@ may be included as [custom keys](#custom-keys).
 
 ### software
 
-`software`, see [4.8.15 software](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`software`, see [4.8.15 software](https://standards.internetofproduction.org/pub/okh#software)
 
 ```
 create okh:software
@@ -161,7 +161,7 @@ create okh:software
 
 ### standards-used
 
-`standards-used`, see [4.6.14 Standards used](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`standards-used`, see [4.6.14 Standards used](https://standards.internetofproduction.org/pub/okh#standards-used)
 
 ```
 if
@@ -177,7 +177,7 @@ regardless of how they were processed here.
 
 ### Sub-Thing
 
-`sub`, see [4.6.17 Sub-thing](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+`sub`, see [4.6.17 Sub-thing](https://standards.internetofproduction.org/pub/okh#sub-thing)
 
 indicates another MOSH (subassembly) used in this MOSH
 
@@ -198,7 +198,7 @@ The following data fields are either ignored or directly included as custom keys
 
 - `contact`
 - `contributors`
-- `design-files`/ `schematics`/ `manufacturing-files`, see [4.8.3 ff. Design Files](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#d1e6bbfa-c5a8-4570-aba1-051898e1acf6)
+- `design-files`/ `schematics`/ `manufacturing-files`, see [4.8.3 ff. Design Files](https://standards.internetofproduction.org/pub/okh#design-files)
   - sadly their definition/use is too vague/messy to map them directly onto OKHv2,
     however these are still valuable fields
 - `development-stage`/`made`/`made-independently` (see [field rules](#development-stage))
