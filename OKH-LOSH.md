@@ -582,5 +582,5 @@ additionally (according to TsDC):
 
 # Further References
 
-Find a template for manifest files in the GitHub repository here:\
-<https://github.com/OPEN-NEXT/LOSH/blob/master/sample_data/okh-TEMPLATE.toml>
+Find a template for manifest files in the GitHub repository here: \
+[sample_data/okh-TEMPLATE.toml](sample_data/okh-TEMPLATE.toml)
