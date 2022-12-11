@@ -22,7 +22,6 @@
   okh:spdxLicense "CERN-OHL-S-2.0" ;
   okh:licensor "Martin Häuer" ;
   okh:organization "Fraunhofer IPK" ;
-  okh:contributorCount 1 ;
   okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
   okh:hasReadme :Readme ;
   okh:hasImage :LOSHdummyMOSHA_image ;
