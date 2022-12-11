@@ -29,13 +29,18 @@ Support in different Markdown software:
 
 # Intro
 
-The work here is based on the [Open Know-How Specification v1.0.0](
-https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1#75fb9df0-a7b3-427f-993a-b23fe1c81a58),
-specifically to make the OKHv1 specification applicable to linked open data
-and rework data fields after latest research results.\
-However, lots of changes have been made so it's hard to still call this a fork.\
-After validation this will be proposed to maintainers of the Open Know-How Specificatio
- as a new major version of the specification.
+The work here is based on the [Open Know-How Specification v1.0](
+https://standards.internetofproduction.org/pub/okh/release/1),
+as released in 2019.
+The goal of the adaptations in this repo,
+is to change the OKHv1 specification to make it applicable to
+[Linked](https://en.wikipedia.org/wiki/Linked_data)
+[Open](https://en.wikipedia.org/wiki/Open_data) data,
+and rework data fields after latest research results.
+This fork [was proposed](
+https://community.internetofproduction.org/t/proposal-loshv1-as-the-base-for-merging-the-different-standards/129/7)
+to the maintainers of the Open Know-How Specification
+as a new major version of the specification.
 
 **NOTE:** When we talk about "OSH module" we mean the content of a repository.
 Open source hardware (OSH) aims to be modular.
