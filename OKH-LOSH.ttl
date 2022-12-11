@@ -2,7 +2,6 @@
 
 @base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
-@prefix okshwa:   </oshwa-#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -663,72 +662,6 @@ okh:installationGuide
 #  rdfs:subClassOf schema:URL ;
   rdfs:domain okh:Software ;
   .
-
-# ----- platform-specific fields -----
-## ----- OSHWA -----
-
-okshwa:primaryType
-  a owl:DatatypeProperty ;
-  rdfs:label "primary category"@en ;
-  rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:additionalType
-  a owl:DatatypeProperty ;
-  rdfs:label "additional category"@en ;
-  rdfs:comment "…as stated at OSHWA - possilbe values: 3D Printing, Agriculture, Arts, Education, Electronics, Enclosure, Environmental, Home Connection, IOT, Manufacturing, Other, Robotics, Science, Sound, Space, Tool, Wearables"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:hardwareLicense
-  a owl:DatatypeProperty ;
-  rdfs:label "hardware license"@en ;
-  rdfs:comment "…as stated at OSHWA"@en ;
-  rdfs:subPropertyOf okh:spdxLicense ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:softwareLicense
-  a owl:DatatypeProperty ;
-  rdfs:label "software license"@en ;
-  rdfs:comment "…as stated at OSHWA"@en ;
-  rdfs:subPropertyOf okh:spdxLicense ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:documentationLicense
-  a owl:DatatypeProperty ;
-  rdfs:label "documenation license"@en ;
-  rdfs:comment "…as stated at OSHWA"@en ;
-  rdfs:subPropertyOf okh:spdxLicense ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:country
-  a owl:DatatypeProperty ;
-  rdfs:label "origin (country)"@en ;
-  rdfs:comment "…as stated at OSHWA"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain okh:Module ;
-  .
-
-okshwa:certificationDate
-  a owl:DatatypeProperty ;
-  rdfs:label "certification date"@en ;
-  rdfs:comment "…as stated at OSHWA"@en ;
-  rdfs:domain okh:Module ;
-  .
-
-## ----- Wikifactory -----
-
-# see https://github.com/OPEN-NEXT/LOSH-Reporter/issues/8
-
-## ----- Thingiverse -----
-
-# nothing so far, since this would slow down fetching enormously
 
 ### ----- source/export subproperties -----
 ### (from TsDC)
