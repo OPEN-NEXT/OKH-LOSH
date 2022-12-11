@@ -94,7 +94,7 @@ okh:WebsiteURL
   rdfs:subClassOf schema:URL ;
   .
 
-okh:FileURL
+okh:FileUrl
   a owl:Class ;
   rdfs:label "permanent URL to file" ;
   rdfs:subClassOf okh:ComponentReference ;
@@ -326,7 +326,7 @@ okh:alternativeLicense
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
 #  rdfs:subPropertyOf spdxt:License ;
   rdfs:domain okh:Module ;
-  rdfs:range okh:FileURL ;
+  rdfs:range okh:FileUrl ;
   owl:cardinality 1 ;
   .
 
@@ -550,7 +550,7 @@ okh:smallestToleranceClass
 #   a owl:ObjectProperty ;
 #   rdfs:label "assembly instruction" ;
 #   rdfs:comment "can be a technical drawing, instruction etc." ;
-#   rdfs:range okh:FileURL ;
+#   rdfs:range okh:FileUrl ;
 #   rdfs:domain okh:Module ;
 #   .
 
