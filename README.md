@@ -15,7 +15,6 @@ technical documentation in an open graph database._**
 - <https://manifest.opennext.eu> -
   web-UI to create meta-data for a project
 
-
 The work here is based on the [Open Know-How Specification v1.0.0](
 https://standards.internetofproduction.org/pub/okh/release/1),
 as released in 2019.
@@ -173,7 +172,7 @@ Developed and published in this repository here :)
     and the [OH-TsDC](https://gitlab.com/OSEGermany/oh-tsdc) define clear,
     enforceable criteria for technical documentation of OSH
     (+ a community-based assessment procedure in order to prove that)
-  - The [Open Know-How Metadata Standard](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+  - The [Open Know-How Metadata Standard](https://standards.internetofproduction.org/pub/okh/release/1)
     gives a first approach to organise OSH through reasonable metadata.
 
 **Can I see the ontology structure somewhere?**

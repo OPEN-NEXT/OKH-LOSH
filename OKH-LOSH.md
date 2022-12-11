@@ -88,7 +88,7 @@ This draft aims to facilitate compliance with DIN SPEC 3105-1.
 
 ## Downward Compatibility
 
-We will continue to support [OKHv1.0.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+We will continue to support [OKHv1.0](https://standards.internetofproduction.org/pub/okh/release/1)
 YAML files.\
 However, we strongly recommend the usage of `OKH-LOSH`,
 if you want to have your project included on LOSH.
@@ -264,7 +264,7 @@ To summarise: an OSH module must bear reference of:
 - **`okhv`** [string]
   - version of the OKH standard used
   - = "OKH-LOSHv1.0" for all manifest files following this specification
-  - = "OKHv1.0" for all manifest files following [OKHv1.0](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+  - = "OKHv1.0" for all manifest files following [OKHv1.0](https://standards.internetofproduction.org/pub/okh/release/1)
 - **`data-source`** [string]
   - origin of metadata collected by the crawler (e.g. GitHub, Wikifactory)
   - NOTE: not an actual TOML key since this is set by the crawler directly in RDF
