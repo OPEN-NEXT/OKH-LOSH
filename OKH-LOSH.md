@@ -304,13 +304,13 @@ To summarise: an OSH module must bear reference of:
 - `organization` [string]
   - organization of the licensor
 - `readme` [file-path]
-  - relative or absolute path to the readme file
+  - repo-relative path or URL to the README file
   - e.g. `README.md`
 - `contribution-guide` [file-path]
-  - relative or absolute path to the contribution guide
+  - repo-relative path or URL to the contribution guide
   - e.g. `CONTRIBUTING.md`
 - `image` [file-path]
-  - relative or absolute path to one (!) representative image of the OSH module
+  - repo-relative path or URL to one (!) representative image of the OSH module
 - **`documentation-language`** [string]
   - IETF BCP 47 language tag for the language in which the documentation is written
 - `technology-readiness-level` [string]
@@ -348,26 +348,26 @@ To summarise: an OSH module must bear reference of:
   - e.g. `MEC`
   - multiple inputs possible (with one entry each)
 - `bom` [file-path]
-  - relative or absolute path to the bill of materials
+  - repo-relative path or URL to the bill of materials
   - e.g. `bom.csv`
 - `manufacturing-instructions` [file-path]
-  - relative or absolute path to manufacturing instructions
+  - repo-relative path or URL to manufacturing instructions
   - e.g. `/Documentation/Assembly_Guide/AssemblyGuide.md`
   - multiple inputs possible (with one entry each)
 - `user-manual` [file-path]
-  - relative or absolute path to user manual
+  - repo-relative path or URL to user manual
   - e.g. `/Documentation/User_Guide/UserGuide.md`
 - `source` [file-path]
-  - relative or absolute path to source file (e.g. native CAD file)
+  - repo-relative path or URL to source file (e.g. native CAD file)
   - e.g. `/3D-parts/assembly.asm`
   - multiple inputs possible (with one entry each)
 - `export` [file-path]
-  - relative or absolute path to export file
+  - repo-relative path or URL to export file
     (e.g. STEP export of 3D model or PDF export of drawing)
   - e.g. `/3D-parts/assembly.STP`
   - multiple inputs possible (with one entry each)
 - `auxiliary` [file-path]
-  - relative or absolute path to files that are neither source files
+  - repo-relative path or URL to files that are neither source files
     nor their exports, but still useful in the repository (e.g. KiCAD library files)
   - e.g. `/lib/lib1.lib`
   - multiple inputs possible (with one entry each)
@@ -377,7 +377,7 @@ To summarise: an OSH module must bear reference of:
 - **`name`** [string]
   - working title of the part
 - `image` [file-path]
-  - relative or absolute path to one (!) representative image of the OSH module
+  - repo-relative path or URL to one (!) representative image of the OSH module
 - `tsdc` [TsDC-ID]
   - identifier of the applying Technology-specific Documentation Criteria (TsDC)
     according to DIN SPEC 3105-1
@@ -385,16 +385,16 @@ To summarise: an OSH module must bear reference of:
   - e.g. `3DP`
   - multiple inputs possible (with one entry each)
 - **`source`** [file-path]
-  - relative or absolute path to source file (e.g. native CAD file)
+  - repo-relative path or URL to source file (e.g. native CAD file)
   - e.g. `/3D-parts/part1.scad`
   - multiple inputs possible (with one entry each)
 - `export` [file-path]
-  - relative or absolute path to export file
+  - repo-relative path or URL to export file
     (e.g. STEP export of 3D model or PDF export of drawing)
   - e.g. `/3D-parts/part1.STP`
   - multiple inputs possible (with one entry each)
 - `auxiliary` [file-path]
-  - relative or absolute path to files that are neither source files
+  - repo-relative path or URL to files that are neither source files
     nor their exports, but still useful in the repository
     (e.g. KiCAD library files)
   - e.g. `/lib/lib1.lib`
