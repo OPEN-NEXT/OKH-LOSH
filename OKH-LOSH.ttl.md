@@ -15,51 +15,37 @@
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Reference)
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-### [1.1.1. FileURL](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileURL)
+### [1.1.1. FileUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileUrl)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ComponentReference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-## [1.2. WebsiteURL](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#WebsiteURL)
+## [1.2. WebsiteUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#WebsiteUrl)
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Reference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Website URL"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
-# [2. http://schema.org/URL](http://schema.org/URL)
+# [2. http://schema.org/url](http://schema.org/url)
 
 
-## [2.1. FileURL](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileURL)
-
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ComponentReference)
-* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
-* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
-
-## [2.2. WebsiteURL](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#WebsiteURL)
-
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Reference)
-* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Website URL"
-* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
-
-## [2.3. dataSource](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#dataSource)
+## [2.1. dataSource](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#dataSource)
 
 * [**cardinality**](http://www.w3.org/2002/07/owl#cardinality) 1
-* [**domain**](http://www.w3.org/2000/01/rdf-schema#domain) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
+* [**domainIncludes**](http://schema.org/domainIncludes) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [url](http://schema.org/url)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Metadata Source"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty)
 
-## [2.4. repoHost](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#repoHost)
+## [2.2. repoHost](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#repoHost)
 
 * [**cardinality**](http://www.w3.org/2002/07/owl#cardinality) 1
-* [**domain**](http://www.w3.org/2000/01/rdf-schema#domain) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
-* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
+* [**domainIncludes**](http://schema.org/domainIncludes) [Module](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Module)
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [url](http://schema.org/url)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Repo Host"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty)
@@ -165,5 +151,22 @@
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "User Manual"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+# [6. http://schema.org/URL](http://schema.org/URL)
+
+
+## [6.1. FileUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileUrl)
+
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ComponentReference)
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [6.2. WebsiteUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#WebsiteUrl)
+
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#Reference)
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Website URL"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
