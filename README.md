@@ -182,8 +182,8 @@ https://open-next.github.io/OKH-LOSH/).
 You can find:
 
 - Markdown files laying out the structure,
-- GraphViz/DOT graps representing the structure,
-- PNG & SVG renders of the graphs
+- GraphViz/DOT graps/diagrams representing the structure,
+- PNG & SVG renders of the graphs/diagrams
 
 Note that when invalid TTL files are pushed,
 the CI will give back an error and no exports will be available.
