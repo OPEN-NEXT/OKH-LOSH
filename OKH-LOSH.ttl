@@ -271,7 +271,9 @@ okh:forkOf
  rdfs:label "fork of" ;
  rdfs:subPropertyOf schema:isBasedOn ;
  owl:cardinality 1 ;
- schema:domainIncludes okh:Module, okh:Part ;
+ schema:domainIncludes
+   okh:Module,
+   okh:Part ;
  .
 
 okh:versionOf
@@ -291,7 +293,9 @@ okh:documentationLanguage
   denotes the language of the documentation for the component subject '''@en;
  rdfs:subPropertyOf schema:inLanguage ;
  owl:cardinality 1 ;
- schema:domainIncludes okh:Module, okh:Part ;
+ schema:domainIncludes
+   okh:Module,
+   okh:Part ;
  .
 
 ## ----- legal -----
@@ -301,7 +305,9 @@ okh:licensor
   rdfs:label "licensor" ;
   rdfs:comment "organization/individual behind the hardware design (holder of intellectual property)" ;
   rdfs:subPropertyOf schema:copyrightHolder ;
-  schema:rangeIncludes schema:Person, schema:Organization ;
+  schema:rangeIncludes
+    schema:Organization,
+    schema:Person ;
   schema:domainIncludes okh:Module ;
   owl:cardinality 1
   .
@@ -459,7 +465,9 @@ okh:usesModule
   a owl:ObjectProperty ;
   rdfs:label "uses Module" ;
   rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
-  schema:rangeIncludes okh:Module, okh:WebsiteUrl ;
+  schema:rangeIncludes
+    okh:Module,
+    okh:WebsiteUrl ;
   schema:domainIncludes okh:Module ;
   .
 
@@ -487,7 +495,9 @@ okh:productionMetadata
   rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;
   schema:rangeIncludes schema:StructuredValue ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 ## ----- production metadata -----
@@ -528,7 +538,9 @@ okh:unit
   rdfs:label "unit" ;
   rdfs:comment "mm, cm, m, g, kg" ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  schema:domainIncludes okh:OuterDimensions, okh:Mass ;
+  schema:domainIncludes
+    okh:Mass,
+    okh:OuterDimensions ;
   .
 
 okh:value
@@ -561,7 +573,9 @@ okh:hasManifestFile
   a owl:ObjectProperty ;
   rdfs:label "has manifest file" ;
   schema:rangeIncludes okh:ManifestFile ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 okh:doi
@@ -600,7 +614,9 @@ okh:source
   rdfs:label "source file" ;
   rdfs:comment "relative link to a source file" ;
   schema:rangeIncludes okh:SourceFile ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 okh:export
@@ -608,7 +624,9 @@ okh:export
   rdfs:label "exported source file" ;
   rdfs:comment "URL to a (generated) exported source file" ;
   schema:rangeIncludes okh:ExportFile ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 okh:auxiliary
@@ -616,7 +634,9 @@ okh:auxiliary
   rdfs:label "has auxiliary file" ;
   rdfs:comment "reference to an auxiliary file" ;
   schema:rangeIncludes okh:AuxiliaryFile ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 okh:hasUserManual
@@ -630,7 +650,9 @@ okh:hasManufacturingInstructions
   a owl:ObjectProperty ;
   rdfs:label "has Manufacturing Instructions" ;
   schema:rangeIncludes okh:ManufacturingInstructions ;
-  schema:domainIncludes okh:Module, okh:Part ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
   .
 
 okh:relatedTsDC
@@ -656,7 +678,9 @@ okh:release
   rdfs:label "release" ;
   rdfs:comment "URL to release" ;
 #  rdfs:subClassOf schema:url ;
-  schema:domainIncludes okh:Module, okh:Software ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Software ;
   .
 
 okh:installationGuide
@@ -672,13 +696,19 @@ okh:installationGuide
 #okh:rationale
 #  a owl:ObjectProperty ;
 #  rdfs:label "rationale" ;
-#  schema:rangeIncludes okh:source, okh:export ;
+#  schema:rangeIncludes
+#    okh:export,
+#    okh:source ;
 #  schema:domainIncludes okh:Component ;
 #  .
 #
 #okh:design
 #  a owl:ObjectProperty ;
 #  rdfs:label "design file" ;
-#  schema:rangeIncludes okh:source, okh:export ;
-#  schema:domainIncludes okh:Module, okh:Part ;
+#  schema:rangeIncludes
+#    okh:export,
+#    okh:source ;
+#  schema:domainIncludes
+#    okh:Module,
+#    okh:Part ;
 #  .
