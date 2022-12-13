@@ -652,14 +652,14 @@ okh:release
   a owl:DatatypeProperty ;
   rdfs:label "release" ;
   rdfs:comment "URL to release" ;
-#  rdfs:subClassOf schema:URL ;
+#  rdfs:subClassOf schema:url ;
   rdfs:domain [ owl:unionOf (okh:Module okh:Software) ] ;
   .
 
 okh:installationGuide
   a owl:DatatypeProperty ;
   rdfs:label "Installation Guide" ;
-#  rdfs:subClassOf schema:URL ;
+#  rdfs:subClassOf schema:url ;
   rdfs:domain okh:Software ;
   .
 
