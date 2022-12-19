@@ -40,6 +40,7 @@
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  .
 
 # ----- CLASSES -----
 
