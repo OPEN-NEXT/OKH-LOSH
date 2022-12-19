@@ -81,7 +81,7 @@ okh:Publication
   a owl:Class ;
   rdfs:label "Scientific Publication" ;
   rdfs:comment "_scientific_ (that is: peer reviewed) publication that _contains_ the design files";
-  rdfs:subClassOf npg:Publication;
+  rdfs:subClassOf npg:Publication ;
   .
 
 okh:Standard
@@ -114,31 +114,31 @@ okh:ManifestFile
   a owl:Class ;
   rdfs:label "manifest file" ;
   rdfs:comment "file holding the metadata" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:Readme
   a owl:Class ;
   rdfs:label "Readme" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:ContributionGuide
   a owl:Class ;
   rdfs:label "Contribution Guide" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:Image
   a owl:Class ;
   rdfs:label "Image" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:BoM
   a owl:Class ;
   rdfs:label "Bill of Materials" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:SourceFile
@@ -174,13 +174,13 @@ okh:UserManual
 okh:OuterDimensions
   a owl:Class ;
   rdfs:label "outer dimensions"@en ;
-  rdfs:comment "…of a module or a part"@en
+  rdfs:comment "…of a module or a part"@en ;
   .
 
 okh:Mass
   a owl:Class ;
   rdfs:label "mass"@en ;
-  rdfs:comment "…of a module or a part"@en
+  rdfs:comment "…of a module or a part"@en ;
   .
 
 okh:ComponentReference
@@ -203,7 +203,7 @@ okh:okhv
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields)" ;
   rdfs:subPropertyOf schema:version ;
   schema:domainIncludes okh:ManifestFile ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:dataSource
@@ -212,7 +212,7 @@ okh:dataSource
   rdfs:comment "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"@en ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:repoHost
@@ -221,7 +221,7 @@ okh:repoHost
   rdfs:comment "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:uploadMethod
@@ -230,7 +230,7 @@ okh:uploadMethod
   rdfs:comment "e.g. auto (fully integrated platforms) or manifest file (for connected platforms)"@en ;
   schema:rangeIncludes xsd:string ;
   schema:domainIncludes okh:Component ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 ## ----- identification -----
@@ -264,7 +264,7 @@ okh:version
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf schema:version ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:forkOf
@@ -310,7 +310,7 @@ okh:licensor
     schema:Organization,
     schema:Person ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:organization
@@ -665,7 +665,7 @@ okh:relatedTsDC
   rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
   # FIXME rdfs:subPropertyOf ;
   schema:rangeIncludes tsdc:OHTsDC ;
-  schema:domainIncludes okh:Component
+  schema:domainIncludes okh:Component ;
   .
 
 # source, export
