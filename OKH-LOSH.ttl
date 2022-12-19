@@ -9,7 +9,7 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
-@prefix terms:    <http://purl.org/dc/terms/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl#> .
@@ -37,9 +37,9 @@
   owl:versionIRI <> ;
   rdfs:label "OSH meta-data"@en ;
   rdfs:comment "Open Source Hardware metadata - Base Ontology"@en ;
-  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
-  terms:license "GPL v3" .
+  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
 
 # ----- CLASSES -----
 
