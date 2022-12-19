@@ -531,7 +531,7 @@ okh:hasMass
 
 okh:openScad
   a owl:DatatypeProperty ;
-  rdfs:label "material" ;
+  rdfs:label "OpenSCAD code defining a shape" ;
   rdfs:subPropertyOf okh:productionMetadata ;
   schema:domainIncludes okh:OuterDimensions ;
   .
