@@ -48,7 +48,6 @@ okh:Component
   a owl:Class ;
   rdfs:label "Component"@en ;
   rdfs:comment "Either a module (MOSH) or Part (POSH); more component types may be added in the future"@en ;
-  # That's the main class then!
   .
 
 okh:Module
