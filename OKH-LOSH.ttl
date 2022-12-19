@@ -412,7 +412,7 @@ okh:compliesWith
 
 okh:standardID
   a owl:DatatypeProperty ;
-  rdfs:label "Document Identifier for the technical Standard" ;
+  rdfs:label "Document identifier for the technical standard" ;
 #  rdfs:subPropertyOf wdp:P5046 ;
   schema:rangeIncludes xsd:string ;
   schema:domainIncludes okh:Standard ;
