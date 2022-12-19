@@ -407,6 +407,7 @@ okh:compliesWith
   rdfs:label "complies with a technical standard" ;
 #  rdfs:subPropertyOf wdp:P5009 ;
   schema:domainIncludes okh:Component ;
+  schema:rangeIncludes okh:Standard ;
   .
 
 okh:standardID
@@ -518,12 +519,14 @@ okh:hasOuterDimensions
   a owl:ObjectProperty ;
   rdfs:label "outer dimensions using openSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+  schema:rangeIncludes okh:OuterDimensions ;
   .
 
 okh:hasMass
   a owl:ObjectProperty ;
   rdfs:label "mass of the component" ;
   rdfs:subPropertyOf okh:productionMetadata ;
+  schema:domainIncludes okh:Mass ;
   .
 
 okh:openScad
