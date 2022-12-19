@@ -526,7 +526,7 @@ okh:hasMass
   a owl:ObjectProperty ;
   rdfs:label "mass of the component" ;
   rdfs:subPropertyOf okh:productionMetadata ;
-  schema:domainIncludes okh:Mass ;
+  schema:rangeIncludes okh:Mass ;
   .
 
 okh:openScad
