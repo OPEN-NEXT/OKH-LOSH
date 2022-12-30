@@ -91,7 +91,6 @@ okh:Standard
   a owl:Class ;
   rdfs:label "Technical Standard"@en ;
   rdfs:comment "official standard used in the _design_ (not e.g. DIN SPEC 3105-1)" ;
-#  rdfs:subClassOf wd:Q317623 ;
   .
 
 okh:WebsiteUrl
