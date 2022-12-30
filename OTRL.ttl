@@ -153,7 +153,7 @@
 :ODRL4
   a owl:class ;
   rdfs:subClassOf :ODRL ;
-  rdfs:label "ODRL-5"@en ;
+  rdfs:label "ODRL-4"@en ;
   rdfs:comment "Full documentation for product qualification"@en ;
   :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
