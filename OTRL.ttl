@@ -62,8 +62,6 @@
     :Odrl ;
   .
 
-# the open technology readiness levels (OTLR):
-
 :Otrl1
   a owl:class ;
   rdfs:subClassOf :OTRL ;
@@ -116,8 +114,6 @@
   :goal "Certificate marking conformity assessment or comparable"@en ;
   .
 
-# the open documentation readiness levels (OTLR):
-
 :Odrl1
   a owl:class ;
   rdfs:subClassOf :ODRL ;
@@ -162,4 +158,3 @@
   :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
 
-# TODO Add other *star variants for ODRL (can apply for all levels)
