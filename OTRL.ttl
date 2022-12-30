@@ -46,7 +46,9 @@
   rdfs:comment "Goal or purpose of this OTRL/ODRL"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
+  schema:domainIncludes
+    :Otrl
+    :Odrl ;
   .
 
 :exitCriteria
@@ -55,7 +57,9 @@
   rdfs:comment "Criteria to exit this OTRL for the next OTRL; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
+  schema:domainIncludes
+    :Otrl
+    :Odrl ;
   .
 
 # the open technology readiness levels (OTLR):
