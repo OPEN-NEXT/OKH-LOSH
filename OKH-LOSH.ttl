@@ -396,12 +396,12 @@ okh:hasPublication
 ## ----- basic description -----
 
 okh:cpcPatentClass
- a owl:ObjectProperty ;
- rdfs:label "Patent Class" ;
- rdfs:comment "International Patent Classification (IPC)" ;
- rdfs:subPropertyOf epo:classificationIPCInventive;
- schema:domainIncludes okh:Module ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "Patent Class" ;
+  rdfs:comment "International Patent Classification (IPC)" ;
+  rdfs:subPropertyOf epo:classificationIPCInventive;
+  schema:domainIncludes okh:Module ;
+  .
 
 okh:compliesWith
   a owl:ObjectProperty ;
