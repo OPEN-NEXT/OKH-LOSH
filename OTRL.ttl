@@ -30,13 +30,13 @@
   .
 
 :OTRL
-  a owl:class ;
+  a owl:Class ;
   rdfs:label "Open Technology Readiness Level"@en ;
   rdfs:comment "Technology Readiness Level for open source hardware"@en ;
   .
 
 :ODRL
-  a owl:class ;
+  a owl:Class ;
   rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
   .
@@ -64,7 +64,7 @@
   .
 
 :OTRL1
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
   rdfs:comment "Ideation / needs identification"@en ;
@@ -73,7 +73,7 @@
   .
 
 :OTRL2
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
   rdfs:comment "Conception"@en ;
@@ -82,7 +82,7 @@
   .
 
 :OTRL3
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
   rdfs:comment "Development"@en ;
@@ -91,7 +91,7 @@
   .
 
 :OTRL4
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
   rdfs:comment "Prototyping and testing"@en ;
@@ -100,7 +100,7 @@
   .
 
 :OTRL5
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Manufacturing development"@en ;
@@ -108,7 +108,7 @@
   .
 
 :OTRL6
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Product qualification"@en ;
@@ -116,7 +116,7 @@
   .
 
 :ODRL1
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
   rdfs:comment "Documentation process commenced"@en ;
@@ -125,7 +125,7 @@
   .
 
 :ODRL2
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
   rdfs:comment "Collaborative documentation in progress"@en ;
@@ -134,7 +134,7 @@
   .
 
 :ODRL3
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
   rdfs:comment "Full documentation published"@en ;
@@ -143,7 +143,7 @@
   .
 
 :ODRL3Star
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
   rdfs:comment "Full documentation published & audited"@en ;
@@ -152,7 +152,7 @@
   .
 
 :ODRL4
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-4"@en ;
   rdfs:comment "Full documentation for product qualification"@en ;
