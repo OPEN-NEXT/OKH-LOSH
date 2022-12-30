@@ -52,8 +52,8 @@
 
 :exitCriteria
   a owl:DatatypeProperty ;
-  rdfs:label "Exit criteria"@en ;
-  rdfs:comment "Criteria to exit this OTRL for the next OTRL; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  rdfs:label "exit criteria"@en ;
+  rdfs:comment "Criteria to exit this OTRL/ODRL for the next higher one; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
