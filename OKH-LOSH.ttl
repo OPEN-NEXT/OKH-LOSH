@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 @base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
@@ -14,6 +12,8 @@
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl#> .
 @prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
+
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 # NOTE:
 # Regarding the use of `schema:domainIncludes`
