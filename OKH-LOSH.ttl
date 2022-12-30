@@ -48,8 +48,6 @@
   spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
 
-# ----- CLASSES -----
-
 okh:Component
   a owl:Class ;
   rdfs:label "Component"@en ;
@@ -199,8 +197,6 @@ okh:ComponentReference
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
   .
-
-# ----- PROPERTIES -----
 
 okh:okhv
   a owl:DatatypeProperty ;
