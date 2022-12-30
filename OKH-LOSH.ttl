@@ -7,6 +7,7 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
@@ -43,6 +44,8 @@
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
 
 # ----- CLASSES -----

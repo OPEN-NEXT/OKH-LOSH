@@ -4,6 +4,8 @@
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema:   <http://schema.org/> .
+@prefix spdxt:    <http://spdx.org/rdf/terms#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 
 # SPDX-FileCopyrightText: 2020-2021 Martin Häuer <martin.haeuer@ose-germany.de>
@@ -20,6 +22,8 @@
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
 
 # properties & classes: (description from NASA are used under public domain)
