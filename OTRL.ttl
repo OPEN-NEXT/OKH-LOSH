@@ -19,14 +19,13 @@
   owl:versionIRI <> ;
   rdfs:label "TLR & DRL for OSH meta data"@en ;
   rdfs:comment "Technology Readiness Level can be used to assess the project stage of Open Source Hardware"@en ;
+  rdfs:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
-
-# properties & classes: (description from NASA are used under public domain)
 
 :OTRL
   a owl:class ;
