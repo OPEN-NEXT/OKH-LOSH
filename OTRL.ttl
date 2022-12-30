@@ -30,13 +30,13 @@
 
 :OTRL
   a owl:class ;
-  rdfs:label "open TLR"@en ;
+  rdfs:label "Open Technology Readiness Level"@en ;
   rdfs:comment "Technology Readiness Level for open source hardware"@en ;
   .
 
 :Odrl
   a owl:class ;
-  rdfs:label "open DLR"@en ;
+  rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
   .
 
