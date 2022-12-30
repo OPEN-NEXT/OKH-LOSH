@@ -3,6 +3,7 @@
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix cc:       <http://creativecommons.org/ns#> .
@@ -33,7 +34,7 @@
   rdfs:comment "Technology Readiness Level for open source hardware"@en ;
   .
 
-:Odrl
+:ODRL
   a owl:class ;
   rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
@@ -46,8 +47,8 @@
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :Otrl
-    :Odrl ;
+    :OTRL
+    :ODRL ;
   .
 
 :exitCriteria
@@ -57,11 +58,11 @@
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :Otrl
-    :Odrl ;
+    :OTRL
+    :ODRL ;
   .
 
-:Otrl1
+:OTRL1
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
@@ -70,7 +71,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl2
+:OTRL2
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
@@ -79,7 +80,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl3
+:OTRL3
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
@@ -88,7 +89,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl4
+:OTRL4
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
@@ -97,7 +98,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl5
+:OTRL5
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
@@ -105,7 +106,7 @@
   :goal "Fairly reliable processes identified and characterised"@en ;
   .
 
-:Otrl6
+:OTRL6
   a owl:class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-6"@en ;
@@ -113,7 +114,7 @@
   :goal "Certificate marking conformity assessment or comparable"@en ;
   .
 
-:Odrl1
+:ODRL1
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
@@ -122,7 +123,7 @@
   :exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
-:Odrl2
+:ODRL2
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
@@ -131,7 +132,7 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Odrl3
+:ODRL3
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
@@ -140,7 +141,7 @@
   :exitCriteria "stable release"@en ;
   .
 
-:Odrl3Star
+:ODRL3Star
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
@@ -149,7 +150,7 @@
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
-:Odrl4
+:ODRL4
   a owl:class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-5"@en ;
@@ -157,3 +158,100 @@
   :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
 
+:Otrl
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL ;
+  owl:sameAs :OTRL ;
+  .
+
+:Odrl
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL ;
+  owl:sameAs :ODRL ;
+  .
+
+:Otrl1
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL1 ;
+  owl:sameAs :OTRL1 ;
+  .
+
+:Otrl2
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL2 ;
+  owl:sameAs :OTRL2 ;
+  .
+
+:Otrl3
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL3 ;
+  owl:sameAs :OTRL3 ;
+  .
+
+:Otrl4
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL4 ;
+  owl:sameAs :OTRL4 ;
+  .
+
+:Otrl5
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL5 ;
+  owl:sameAs :OTRL5 ;
+  .
+
+:Otrl6
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL6 ;
+  owl:sameAs :OTRL6 ;
+  .
+
+:Odrl1
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL1 ;
+  owl:sameAs :ODRL1 ;
+  .
+
+:Odrl2
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL2 ;
+  owl:sameAs :ODRL2 ;
+  .
+
+:Odrl3
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL3 ;
+  owl:sameAs :ODRL3 ;
+  .
+
+:Odrl3Star
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL3Star ;
+  owl:sameAs :ODRL3Star ;
+  .
+
+:Odrl4
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL4 ;
+  owl:sameAs :ODRL4 ;
+  .
+
+:Odrl5
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL5 ;
+  owl:sameAs :ODRL5 ;
+  .
