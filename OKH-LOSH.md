@@ -46,10 +46,10 @@ as a new major version of the specification.
 Open source hardware (OSH) aims to be modular.
 Hence it makes a lot of sense to publish each module in an individual repository
 (instead of the whole machine in one large repository).
-A module is an assembly of various parts that fulfils a certain purpose.
+A module is an assembly of various parts that fulfills a certain purpose.
 However, there are exceptions,
 as a standalone 3D-printed part in a git repository
-could also fulfil a purpose and qualify as a module.
+could also fulfill a purpose and qualify as a module.
 
 ## Scope
 
@@ -190,7 +190,7 @@ from 'work on progress'.
 So whenever you make a new release
 or think those changes in your documentation are worth to be known by others
 → **update the version in the manifest file.**\
-Otherwise, no changes will be synched.
+Otherwise, no changes will be synced.
 
 ### Location & Naming Convention
 
@@ -249,7 +249,7 @@ In the following, data fields will be referenced by their TOML key
 Their corresponding TURTLE key (the ontology is written in TURTLE) is named explicitly.
 
 Mandatory entries are bold.\
-To summarise: an OSH module must bear reference of:
+To summarize: an OSH module must bear reference of:
 
 - the complete legal information (name, license, licensor);
 - an unambiguous reference to its repository, where source files are available;
