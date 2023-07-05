@@ -64,11 +64,12 @@ Resources:
 
 |OTRL|Stage|Goal|
 |---|---|---|
-|OTRL 1|ideation|product specifications/requirements|
-|OTRL 2|conception|proof of concept|
-|OTRL 3|technical design|early prototype|
-|OTRL 4|product design|minimum viable product|
-|OTRL 5|safe product|CE certification|
+|OTRL 1|Ideation|Product idea, needs and initial specifications are defined|
+|OTRL 2|Conception|Mature product concept has been formulated|
+|OTRL 3|Development|Product model is developed|
+|OTRL 4|Prototyping and testing|Full functional prototype is built and tested|
+|OTRL 5|Manufacturing development|Fairly reliable processes identified and characterised|
+|OTRL 6|Product qualification|Certificate marking conformity assessment or comparable|
 
 <!--
 
@@ -209,11 +210,11 @@ A detailled description of these levels can be found in the following chapters.
 
 |ODRL|Name|Goal|
 |---|---|---|
-|ODRL 1|documentation started & accessible|making information available as free/open source material|
-|ODRL 2|documentation under collaborative development|enabling collaborative development of the documentation by the provision of files and information in editable formats|
-|ODRL 3|full documentation|full exploitability of the documentation|
-|ODRL 3\*|audited documentation|attested compliance with DIN SPEC 3105-1|
-|ODRL 4|audited documentation including CE certification documents|enabling decentralised commercial distribution|
+|ODRL 1|Documentation process commenced|Published information under free open source licence|
+|ODRL 2|Collaborative documentation in progress|Provision of documentation files and in editable formats enabling collaboration development|
+|ODRL 3|Full documentation published|Complete documentation as per DIN SPEC 3105-1|
+|ODRL 3\*|Full documentation published & audited|Public evidence of documentation maturity|
+|ODRL 4|Full documentation for product qualification|Product qualification documents published enabling decentralised commercial distribution|
 
 : Overview on ODRLs {#tbl:odrl-overview}
 
