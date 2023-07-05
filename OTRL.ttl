@@ -252,7 +252,7 @@
 
 :Odrl5
   owl:deprecated "true"^^xsd:boolean ;
-  cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL5 ;
-  owl:sameAs :ODRL5 ;
+  cc:deprecatedOn "2022-01-10"^^xsd:date ;
+  schema:supersededBy :Odrl4 ;
+  owl:sameAs :Odrl4 ;
   .
