@@ -67,8 +67,8 @@
   a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
-  rdfs:comment "Ideation / needs identification"@en ;
-  :goal "Product idea, needs and initial specifications are defined."@en ;
+  rdfs:comment "Ideation"@en ;
+  :goal "Product idea; needs are identified and initial specifications are defined."@en ;
   :exitCriteria "ToDo."@en ;
   .
 
