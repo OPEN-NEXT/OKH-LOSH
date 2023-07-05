@@ -20,7 +20,7 @@ title: Technology Readiness Levels for Open Source Hardware
 
 # Principle
 
-<!--- NASA's TRL are too complicated -->
+<!-- NASA's TRL are too complicated -->
 
 "\[NASA's\] TRLs \[…\] provide useful insights into two key contributors to readiness:
 
@@ -70,7 +70,9 @@ Resources:
 |OTRL 4|product design|minimum viable product|
 |OTRL 5|safe product|CE certification|
 
-<!--- ADD EXAMPLES!
+<!--
+
+ADD EXAMPLES!
 
 OTRL 1 →
 OTRL 2 → ZAC+
@@ -88,7 +90,9 @@ basically:
 4. design a product that a) reliably covers core features and b) can be built, modified and operated by non-contrbutors
 5. finish all relevant tests for CE certification
 
-<!-- ### OTRL 1
+<!--
+
+### OTRL 1
 
 `basic principles observed`
 
@@ -188,7 +192,9 @@ It is (theoretically) ready to be sold as a commercial product in the EU.
 The hardware is successfully applied by independent entities
 in the operational environment.
 
-EXAMPLE: Product is sold in the EU. -->
+EXAMPLE: Product is sold in the EU.
+
+-->
 
 ## ODRL
 
@@ -211,9 +217,11 @@ A detailled description of these levels can be found in the following chapters.
 
 : Overview on ODRLs {#tbl:odrl-overview}
 
-<!--- ToDo: read & check --->
+<!-- ToDo: read & check -->
 
-<!-- For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
+<!--
+
+For ODRL documentation requirements after DIN SPEC 3105-1 apply ([ref to chapter](TODO)),
 meaning that it must be published under a free/open license and publicly accessible.
 
 By default, experts skilled in the corresponding field of technology
@@ -225,7 +233,9 @@ e.g. by adding layers of abstraction to the documentation ([ref to chapter](TODO
 It's the technical documentation
 enabling the target group to exercise the 4 rights of open source:
 to study, to modify, to make and to distribute the documentation or hardware
-based on that documentation ([ref to chapter](TODO)). -->
+based on that documentation ([ref to chapter](TODO)).
+
+-->
 
 ### ODRL 1
 
@@ -246,7 +256,7 @@ based on that documentation ([ref to chapter](TODO)). -->
 
 - design files published in editable file format (e.g. STEP (or better: native CAD files) instead of PDF drawings)
 
-<!---
+<!--
 
 `basic information available`
 
@@ -279,11 +289,15 @@ and hence cannot yet exercise the 4 rights of open source
 
 - stable documentation release published
 
-<!-- `drafty documentation`
+<!--
+
+`drafty documentation`
 
 documentation in progess – aims to describe how the hardware works
 and how it is operated, but is partly patchy and/or outdated;
-yet too less to exercise the 4 rights of open source -->
+yet too less to exercise the 4 rights of open source
+
+-->
 
 ### ODRL 3
 
@@ -302,11 +316,15 @@ yet too less to exercise the 4 rights of open source -->
 
 - attestation from a confirmity assessment body according to DIN SPEC 3105-2 (or equivalent proofs of conformity)
 
-<!-- `early release`
+<!--
+
+`early release`
 
 Target group struggles; execution of the 4 rights of open source is possible,
 but only with lots of reconciliation with originators
-since the documentation yet lacks fundamental information -->
+since the documentation yet lacks fundamental information
+
+-->
 
 ### ODRL 3\*
 
@@ -325,11 +343,15 @@ since the documentation yet lacks fundamental information -->
 
 - CE documentation published
 
-<!-- `relevant release`
+<!--
+
+`relevant release`
 
 target group understands; execution of the 4 rights of open source is possible,
 but still requires few reconciliation with originators
-since the documentation yet lacks minor information -->
+since the documentation yet lacks minor information
+
+-->
 
 ### ODRL 4
 
@@ -343,7 +365,11 @@ since the documentation yet lacks minor information -->
 
 - xxx.
 
-<!-- `mature release`
+<!--
+
+`mature release`
 
 target group acts autonomously;
-independent entity made the hardware with no reconciliation with originators -->
+independent entity made the hardware with no reconciliation with originators
+
+-->
