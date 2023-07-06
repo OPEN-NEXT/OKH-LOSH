@@ -422,8 +422,8 @@ general:
   - e.g. `hard soldering`
   - multiple inputs possible (with one entry each)
 - `outer-dimensions` [class]
-  - `openSCAD` [openSCAD primitive]
-    - openSCAD primitive describing shape and size of the module
+  - `openSCAD` [OpenSCAD primitive]
+    - OpenSCAD primitive describing shape and size of the module
     - e.g. `cube(size = [400,350,150])`
   - `unit` [string]
     - e.g. `mm`
@@ -502,8 +502,8 @@ general:
   - reference of material used for this part
   - e.g. `PLA`, `1.0715` (EN material number for free machining steel 11SMn30)
 - `outer-dimensions` [class]
-  - `openSCAD` [openSCAD primitive]
-    - openSCAD primitive describing shape and size of the module
+  - `openSCAD` [OpenSCAD primitive]
+    - OpenSCAD primitive describing shape and size of the module
     - e.g. `cube(size = [400,350,150])`
   - `unit` [string]
     - e.g. `mm`

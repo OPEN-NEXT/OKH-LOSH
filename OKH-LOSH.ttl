@@ -515,7 +515,7 @@ okh:material
 
 okh:hasOuterDimensions
   a owl:ObjectProperty ;
-  rdfs:label "outer dimensions using openSCAD primitives" ;
+  rdfs:label "outer dimensions using OpenSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
   schema:rangeIncludes okh:OuterDimensions ;
   rdfs:subPropertyOf okh:productionMetadata ;
@@ -528,10 +528,18 @@ okh:hasMass
   schema:rangeIncludes okh:Mass ;
   .
 
-okh:openScad
+okh:openSCAD
   a owl:DatatypeProperty ;
   rdfs:label "OpenSCAD code defining a shape" ;
   schema:domainIncludes okh:OuterDimensions ;
+  schema:rangeIncludes xsd:string ;
+  .
+
+okh:openScad
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-06"^^xsd:date ;
+  schema:supersededBy okh:openSCAD ;
+  owl:sameAs okh:openSCAD ;
   .
 
 okh:unit

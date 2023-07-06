@@ -46,7 +46,7 @@
 :OuterDimensionsLOSHdummyMOSHA
   a okh:OuterDimensions ;
   rdfs:label "outer dimensions of LOSH Dummy MOSH-A" ; # use rdfs:label of :LOSHdummyMOSHA
-  okh:openScad "cube(size = [300,300,300]" ;
+  okh:openSCAD "cube(size = [300,300,300]" ;
   okh:unit "mm"
   .
 
@@ -116,7 +116,7 @@
 :OuterDimensionsClampRing
   a okh:OuterDimensions ;
   rdfs:label "outer dimensions of Clamp Ring" ;
-  okh:openScad "cylinder(h=30, r=28)" ;
+  okh:openSCAD "cylinder(h=30, r=28)" ;
   okh:unit "mm"
   .
 
