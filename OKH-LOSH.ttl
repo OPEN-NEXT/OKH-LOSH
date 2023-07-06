@@ -557,9 +557,6 @@ okh:smallestToleranceClass
   schema:domainIncludes okh:Part ;
   .
 
-## ----- design files -----
-## (diving into the documentation)
-
 # okh:assemblyInstruction
 #   a owl:ObjectProperty ;
 #   rdfs:label "assembly instruction" ;
