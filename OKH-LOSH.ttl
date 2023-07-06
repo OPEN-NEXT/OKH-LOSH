@@ -668,6 +668,13 @@ okh:relatedTsDC
   schema:domainIncludes okh:Component ;
   .
 
+okh:tsdc
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-06"^^xsd:date ;
+  schema:supersededBy okh:relatedTsDC ;
+  owl:sameAs okh:relatedTsDC ;
+  .
+
 # source, export
 
 okh:hasSoftware
