@@ -48,7 +48,7 @@
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :OTRL
+    :OTRL,
     :ODRL ;
   .
 
@@ -59,7 +59,7 @@
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :OTRL
+    :OTRL,
     :ODRL ;
   .
 
