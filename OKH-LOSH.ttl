@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 @base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
@@ -9,11 +7,17 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
-@prefix terms:    <http://purl.org/dc/terms/> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl#> .
 @prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
+
+# SPDX-FileCopyrightText: 2020-2021 Martin Häuer <martin.haeuer@ose-germany.de>
+# SPDX-FileCopyrightText: 2020-2022 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 # NOTE:
 # Regarding the use of `schema:domainIncludes`
@@ -35,19 +39,19 @@
   a owl:Ontology ;
   owl:versionInfo "0.1" ;
   owl:versionIRI <> ;
-  rdfs:label "OSH meta-data"@en ;
-  rdfs:comment "Open Source Hardware metadata - Base Ontology"@en ;
-  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
-  terms:license "GPL v3" .
-
-# ----- CLASSES -----
+  rdfs:label "OSH ontology"@en ;
+  rdfs:comment "An Open Source Hardware ontology"@en ;
+  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  spdxt:ListedLicense "GPL-3.0-or-later" ;
+  .
 
 okh:Component
   a owl:Class ;
   rdfs:label "Component"@en ;
   rdfs:comment "Either a module (MOSH) or Part (POSH); more component types may be added in the future"@en ;
-  # That's the main class then!
   .
 
 okh:Module
@@ -80,14 +84,13 @@ okh:Publication
   a owl:Class ;
   rdfs:label "Scientific Publication" ;
   rdfs:comment "_scientific_ (that is: peer reviewed) publication that _contains_ the design files";
-  rdfs:subClassOf npg:Publication;
+  rdfs:subClassOf npg:Publication ;
   .
 
 okh:Standard
   a owl:Class ;
   rdfs:label "Technical Standard"@en ;
   rdfs:comment "official standard used in the _design_ (not e.g. DIN SPEC 3105-1)" ;
-#  rdfs:subClassOf wd:Q317623 ;
   .
 
 okh:WebsiteUrl
@@ -113,31 +116,31 @@ okh:ManifestFile
   a owl:Class ;
   rdfs:label "manifest file" ;
   rdfs:comment "file holding the metadata" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:Readme
   a owl:Class ;
   rdfs:label "Readme" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:ContributionGuide
   a owl:Class ;
   rdfs:label "Contribution Guide" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:Image
   a owl:Class ;
   rdfs:label "Image" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:BoM
   a owl:Class ;
   rdfs:label "Bill of Materials" ;
-  rdfs:subClassOf okh:File
+  rdfs:subClassOf okh:File ;
   .
 
 okh:SourceFile
@@ -173,13 +176,13 @@ okh:UserManual
 okh:OuterDimensions
   a owl:Class ;
   rdfs:label "outer dimensions"@en ;
-  rdfs:comment "…of a module or a part"@en
+  rdfs:comment "…of a module or a part"@en ;
   .
 
 okh:Mass
   a owl:Class ;
   rdfs:label "mass"@en ;
-  rdfs:comment "…of a module or a part"@en
+  rdfs:comment "…of a module or a part"@en ;
   .
 
 okh:ComponentReference
@@ -194,33 +197,31 @@ okh:ComponentReference
     BUY  → unambiguous reference'''@en ;
   .
 
-# ----- PROPERTIES -----
-
 okh:okhv
   a owl:DatatypeProperty ;
   rdfs:label "OKH version" ;
   rdfs:comment "version of OKH specification the metadata is following (different version → different data fields)" ;
   rdfs:subPropertyOf schema:version ;
   schema:domainIncludes okh:ManifestFile ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:dataSource
   a owl:DatatypeProperty ;
   rdfs:label "Metadata Source" ;
   rdfs:comment "platform, where the crawler found the metadata (e.g. GitHub, Wikifactory)"@en ;
-  rdfs:subClassOf schema:url ;
+  rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:repoHost
   a owl:DatatypeProperty ;
   rdfs:label "Repo Host" ;
   rdfs:comment "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
-  rdfs:subClassOf schema:url ;
+  rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:uploadMethod
@@ -229,7 +230,7 @@ okh:uploadMethod
   rdfs:comment "e.g. auto (fully integrated platforms) or manifest file (for connected platforms)"@en ;
   schema:rangeIncludes xsd:string ;
   schema:domainIncludes okh:Component ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 ## ----- identification -----
@@ -263,7 +264,7 @@ okh:version
   rdfs:comment "version of this Component, preferably in the semantic versioning scheme (semver.org)" ;
   rdfs:subPropertyOf schema:version ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:forkOf
@@ -309,7 +310,7 @@ okh:licensor
     schema:Organization,
     schema:Person ;
   schema:domainIncludes okh:Module ;
-  owl:cardinality 1
+  owl:cardinality 1 ;
   .
 
 okh:organization
@@ -395,23 +396,24 @@ okh:hasPublication
 ## ----- basic description -----
 
 okh:cpcPatentClass
- a owl:ObjectProperty ;
- rdfs:label "Patent Class" ;
- rdfs:comment "International Patent Classification (IPC)" ;
- rdfs:subPropertyOf epo:classificationIPCInventive;
- schema:domainIncludes okh:Module ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "Patent Class" ;
+  rdfs:comment "International Patent Classification (IPC)" ;
+  rdfs:subPropertyOf epo:classificationIPCInventive;
+  schema:domainIncludes okh:Module ;
+  .
 
 okh:compliesWith
   a owl:ObjectProperty ;
   rdfs:label "complies with a technical standard" ;
 #  rdfs:subPropertyOf wdp:P5009 ;
   schema:domainIncludes okh:Component ;
+  schema:rangeIncludes okh:Standard ;
   .
 
 okh:standardID
   a owl:DatatypeProperty ;
-  rdfs:label "Document Identifier for the technical Standard" ;
+  rdfs:label "Document identifier for the technical standard" ;
 #  rdfs:subPropertyOf wdp:P5046 ;
   schema:rangeIncludes xsd:string ;
   schema:domainIncludes okh:Standard ;
@@ -490,17 +492,14 @@ okh:functionalMetadata
   .
 
 okh:productionMetadata
-  a owl:ObjectProperty ;
+  a owl:Property ;
   rdfs:label "production metadata" ;
   rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;
-  schema:rangeIncludes schema:StructuredValue ;
   schema:domainIncludes
     okh:Module,
     okh:Part ;
   .
-
-## ----- production metadata -----
 
 okh:manufacturingProcess
   a owl:DatatypeProperty ;
@@ -516,28 +515,37 @@ okh:material
 
 okh:hasOuterDimensions
   a owl:ObjectProperty ;
-  rdfs:label "outer dimensions using openSCAD primitives" ;
+  rdfs:label "outer dimensions using OpenSCAD primitives" ;
   rdfs:comment "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids" ;
+  schema:rangeIncludes okh:OuterDimensions ;
+  rdfs:subPropertyOf okh:productionMetadata ;
   .
 
 okh:hasMass
   a owl:ObjectProperty ;
   rdfs:label "mass of the component" ;
   rdfs:subPropertyOf okh:productionMetadata ;
+  schema:rangeIncludes okh:Mass ;
+  .
+
+okh:openSCAD
+  a owl:DatatypeProperty ;
+  rdfs:label "OpenSCAD code defining a shape" ;
+  schema:domainIncludes okh:OuterDimensions ;
+  schema:rangeIncludes xsd:string ;
   .
 
 okh:openScad
-  a owl:DatatypeProperty ;
-  rdfs:label "material" ;
-  rdfs:subPropertyOf okh:productionMetadata ;
-  schema:domainIncludes okh:OuterDimensions ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-06"^^xsd:date ;
+  schema:supersededBy okh:openSCAD ;
+  owl:sameAs okh:openSCAD ;
   .
 
 okh:unit
   a owl:DatatypeProperty ;
   rdfs:label "unit" ;
   rdfs:comment "mm, cm, m, g, kg" ;
-  rdfs:subPropertyOf okh:productionMetadata ;
   schema:domainIncludes
     okh:Mass,
     okh:OuterDimensions ;
@@ -546,7 +554,6 @@ okh:unit
 okh:value
   a owl:DatatypeProperty ;
   rdfs:label "value" ;
-  rdfs:subPropertyOf okh:productionMetadata ;
   schema:domainIncludes okh:Mass ;
   .
 
@@ -557,9 +564,6 @@ okh:smallestToleranceClass
   rdfs:subPropertyOf okh:productionMetadata ;
   schema:domainIncludes okh:Part ;
   .
-
-## ----- design files -----
-## (diving into the documentation)
 
 # okh:assemblyInstruction
 #   a owl:ObjectProperty ;
@@ -661,7 +665,14 @@ okh:relatedTsDC
   rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
   # FIXME rdfs:subPropertyOf ;
   schema:rangeIncludes tsdc:OHTsDC ;
-  schema:domainIncludes okh:Component
+  schema:domainIncludes okh:Component ;
+  .
+
+okh:tsdc
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-06"^^xsd:date ;
+  schema:supersededBy okh:relatedTsDC ;
+  owl:sameAs okh:relatedTsDC ;
   .
 
 # source, export
@@ -677,7 +688,7 @@ okh:release
   a owl:DatatypeProperty ;
   rdfs:label "release" ;
   rdfs:comment "URL to release" ;
-#  rdfs:subClassOf schema:url ;
+#  rdfs:subPropertyOf schema:url ;
   schema:domainIncludes
     okh:Module,
     okh:Software ;
@@ -686,7 +697,7 @@ okh:release
 okh:installationGuide
   a owl:DatatypeProperty ;
   rdfs:label "Installation Guide" ;
-#  rdfs:subClassOf schema:url ;
+#  rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Software ;
   .
 

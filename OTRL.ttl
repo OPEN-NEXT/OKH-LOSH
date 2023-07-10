@@ -1,37 +1,44 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 @base             <http://purl.org/oseg/ontologies/OTRL> .
 @prefix :         <#> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
-@prefix terms:    <http://purl.org/dc/terms/> .
+@prefix spdxt:    <http://spdx.org/rdf/terms#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+
+# SPDX-FileCopyrightText: 2020-2021 Martin Häuer <martin.haeuer@ose-germany.de>
+# SPDX-FileCopyrightText: 2020-2022 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 <>
   a owl:Ontology ;
   owl:versionInfo "1.0" ;
   owl:versionIRI <> ;
-  rdfs:label "TLR & DRL for OSH meta data"@en ;
-  rdfs:comment "Technology Readiness Level can be used to assess the project stage of Open Source Hardware"@en ;
-  terms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  terms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
-  terms:license "GPL-3.0-or-later" .
-
-# properties & classes: (description from NASA are used under public domain)
-
-:OTRL
-  a owl:class ;
-  rdfs:label "open TLR"@en ;
-  rdfs:comment "Technology Readiness Level for open source hardware"@en ;
-  # That's a main class then!
+  rdfs:label "OTRL Ontology"@en ;
+  rdfs:comment "Open Technology & Documentation Readiness Level ontology"@en ;
+  rdfs:comment "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
+  schema:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;
+  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
+  spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
 
-:Odrl
-  a owl:class ;
-  rdfs:label "open DLR"@en ;
+:OTRL
+  a owl:Class ;
+  rdfs:label "Open Technology Readiness Level"@en ;
+  rdfs:comment "Technology Readiness Level for open source hardware"@en ;
+  .
+
+:ODRL
+  a owl:Class ;
+  rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
-  # That's a main class then!
   .
 
 :goal
@@ -40,31 +47,33 @@
   rdfs:comment "Goal or purpose of this OTRL/ODRL"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
+  schema:domainIncludes
+    :OTRL,
+    :ODRL ;
   .
 
 :exitCriteria
   a owl:DatatypeProperty ;
-  rdfs:label "Exit criteria"@en ;
-  rdfs:comment "Criteria to exit this OTRL for the next OTRL; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  rdfs:label "exit criteria"@en ;
+  rdfs:comment "Criteria to exit this OTRL/ODRL for the next higher one; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
-  rdfs:domain [ owl:unionOf (:Otrl :Odrl) ] ;
+  schema:domainIncludes
+    :OTRL,
+    :ODRL ;
   .
 
-# the open technology readiness levels (OTLR):
-
-:Otrl1
-  a owl:class ;
+:OTRL1
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-1"@en ;
-  rdfs:comment "Ideation / needs identification"@en ;
-  :goal "Product idea, needs and initial specifications are defined."@en ;
+  rdfs:comment "Ideation"@en ;
+  :goal "Product idea; needs are identified and initial specifications are defined."@en ;
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl2
-  a owl:class ;
+:OTRL2
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-2"@en ;
   rdfs:comment "Conception"@en ;
@@ -72,8 +81,8 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl3
-  a owl:class ;
+:OTRL3
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-3"@en ;
   rdfs:comment "Development"@en ;
@@ -81,8 +90,8 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl4
-  a owl:class ;
+:OTRL4
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-4"@en ;
   rdfs:comment "Prototyping and testing"@en ;
@@ -90,26 +99,24 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Otrl5
-  a owl:class ;
+:OTRL5
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Manufacturing development"@en ;
   :goal "Fairly reliable processes identified and characterised"@en ;
   .
 
-:Otrl6
-  a owl:class ;
+:OTRL6
+  a owl:Class ;
   rdfs:subClassOf :OTRL ;
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Product qualification"@en ;
   :goal "Certificate marking conformity assessment or comparable"@en ;
   .
 
-# the open documentation readiness levels (OTLR):
-
-:Odrl1
-  a owl:class ;
+:ODRL1
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-1"@en ;
   rdfs:comment "Documentation process commenced"@en ;
@@ -117,8 +124,8 @@
   :exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
-:Odrl2
-  a owl:class ;
+:ODRL2
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-2"@en ;
   rdfs:comment "Collaborative documentation in progress"@en ;
@@ -126,8 +133,8 @@
   :exitCriteria "ToDo."@en ;
   .
 
-:Odrl3
-  a owl:class ;
+:ODRL3
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3"@en ;
   rdfs:comment "Full documentation published"@en ;
@@ -135,8 +142,8 @@
   :exitCriteria "stable release"@en ;
   .
 
-:Odrl3Star
-  a owl:class ;
+:ODRL3Star
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
   rdfs:label "ODRL-3*"@en ;
   rdfs:comment "Full documentation published & audited"@en ;
@@ -144,12 +151,108 @@
   :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
-:Odrl4
-  a owl:class ;
+:ODRL4
+  a owl:Class ;
   rdfs:subClassOf :ODRL ;
-  rdfs:label "ODRL-5"@en ;
+  rdfs:label "ODRL-4"@en ;
   rdfs:comment "Full documentation for product qualification"@en ;
   :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
 
-# TODO Add other *star variants for ODRL (can apply for all levels)
+:Otrl
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL ;
+  owl:sameAs :OTRL ;
+  .
+
+:Odrl
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL ;
+  owl:sameAs :ODRL ;
+  .
+
+:Otrl1
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL1 ;
+  owl:sameAs :OTRL1 ;
+  .
+
+:Otrl2
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL2 ;
+  owl:sameAs :OTRL2 ;
+  .
+
+:Otrl3
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL3 ;
+  owl:sameAs :OTRL3 ;
+  .
+
+:Otrl4
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL4 ;
+  owl:sameAs :OTRL4 ;
+  .
+
+:Otrl5
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL5 ;
+  owl:sameAs :OTRL5 ;
+  .
+
+:Otrl6
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :OTRL6 ;
+  owl:sameAs :OTRL6 ;
+  .
+
+:Odrl1
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL1 ;
+  owl:sameAs :ODRL1 ;
+  .
+
+:Odrl2
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL2 ;
+  owl:sameAs :ODRL2 ;
+  .
+
+:Odrl3
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL3 ;
+  owl:sameAs :ODRL3 ;
+  .
+
+:Odrl3Star
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL3Star ;
+  owl:sameAs :ODRL3Star ;
+  .
+
+:Odrl4
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-12-30"^^xsd:date ;
+  schema:supersededBy :ODRL4 ;
+  owl:sameAs :ODRL4 ;
+  .
+
+:Odrl5
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2022-01-10"^^xsd:date ;
+  schema:supersededBy :Odrl4 ;
+  owl:sameAs :Odrl4 ;
+  .

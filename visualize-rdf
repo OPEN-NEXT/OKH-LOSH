@@ -39,7 +39,8 @@ function install_requirements() {
 	then
 		mkdir -p "$(dirname "$ont_viz_repo")"
 		git clone "$ont_viz_repo" "$ont_viz_repo"
-		$sudo pip3 install -r "$ont_viz_repo/requirements.txt"
+		#$sudo pip3 install -r "$ont_viz_repo/requirements.txt"
+		$sudo apt-get install -y -qq python3-rdflib-jsonld python3-rdflib python3-graphviz
 	fi
 }
 
