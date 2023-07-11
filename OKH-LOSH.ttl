@@ -429,6 +429,7 @@ okh:function
   rdfs:subPropertyOf obo:BFO_0000016 ; # aka function
   owl:cardinality 1 ;
   schema:domainIncludes okh:Module ;
+  schema:rangeIncludes xsd:string ;
   .
 
 okh:hasReadme
