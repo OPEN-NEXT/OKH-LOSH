@@ -10,6 +10,7 @@ _install_req() {
 		apt-get update
 		apt-get install -y -qq wget python3-pip default-jdk > /dev/null
 	fi
+	mkdir -p "$(dirname "$vrf")"
 	wget https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf \
 		--output-document="$vrf"
 	chmod +x "$vrf"
