@@ -110,6 +110,7 @@ okh:FileUrl
 okh:File
   a owl:Class ;
   rdfs:label "File" ;
+  rdfs:comment "A URL or a repo-/project-relative path to a file." ;
   .
 
 okh:ManifestFile
