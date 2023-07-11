@@ -659,20 +659,19 @@ okh:hasManufacturingInstructions
     okh:Part ;
   .
 
-okh:relatedTsDC
+okh:tsdc
   a owl:ObjectProperty ;
-  rdfs:label "related TsDC" ;
-  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
-  # FIXME rdfs:subPropertyOf ;
+  rdfs:label "TsDC" ;
+  rdfs:comment "Applicable Technology-specific Documentation Criteria, according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
   schema:rangeIncludes tsdc:OHTsDC ;
   schema:domainIncludes okh:Component ;
   .
 
-okh:tsdc
+okh:relatedTsdc
   owl:deprecated "true"^^xsd:boolean ;
-  cc:deprecatedOn "2023-07-06"^^xsd:date ;
-  schema:supersededBy okh:relatedTsDC ;
-  owl:sameAs okh:relatedTsDC ;
+  cc:deprecatedOn "2023-07-10"^^xsd:date ;
+  schema:supersededBy okh:tsdc ;
+  owl:sameAs okh:tsdc ;
   .
 
 # source, export
