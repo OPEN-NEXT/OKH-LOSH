@@ -588,11 +588,21 @@ okh:doi
   schema:rangeIncludes rdfs:Literal ;
   .
 
+okh:url
+  a owl:ObjectProperty ;
+  rdfs:label "file URL" ;
+  rdfs:subPropertyOf schema:url ;
+  schema:domainIncludes okh:File ;
+  .
+
 okh:fileUrl
   a owl:ObjectProperty ;
   rdfs:label "file URL" ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:File ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
+  schema:supersededBy okh:url ;
   .
 
 okh:permaURL
