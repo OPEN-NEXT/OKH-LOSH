@@ -570,14 +570,6 @@ okh:smallestToleranceClass
   schema:domainIncludes okh:Part ;
   .
 
-# okh:assemblyInstruction
-#   a owl:ObjectProperty ;
-#   rdfs:label "assembly instruction" ;
-#   rdfs:comment "can be a technical drawing, instruction etc." ;
-#   schema:rangeIncludes okh:FileUrl ;
-#   schema:domainIncludes okh:Module ;
-#   .
-
 okh:hasManifestFile
   a owl:ObjectProperty ;
   rdfs:label "has manifest file" ;
