@@ -595,6 +595,14 @@ okh:fileUrl
   schema:domainIncludes okh:File ;
   .
 
+okh:permaURL
+  a owl:ObjectProperty ;
+  rdfs:label "Permanent file URL - It was not 'permanent', but rather 'frozen in time', and it was alsoThis was used in the karwler, but badly. Things simply should not be done that way, but rather with a separate manifest file, where either everything is frozen, or nothing is, and the manifest file (internally) itsself being marked accordingly." ;
+  schema:domainIncludes okh:File ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
+  .
+
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
