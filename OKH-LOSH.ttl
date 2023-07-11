@@ -105,6 +105,9 @@ okh:FileUrl
   rdfs:label "permanent URL to file" ;
   rdfs:subClassOf okh:ComponentReference ;
   rdfs:subClassOf schema:URL ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
+  schema:supersededBy okh:File ;
   .
 
 okh:File
@@ -337,7 +340,7 @@ okh:alternativeLicense
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
 #  rdfs:subPropertyOf spdxt:License ;
   schema:domainIncludes okh:Module ;
-  schema:rangeIncludes okh:FileUrl ;
+  schema:rangeIncludes okh:File ;
   owl:cardinality 1 ;
   .
 
