@@ -623,7 +623,6 @@ okh:fileFormat
 okh:timestamp
   a owl:ObjectProperty ;
   rdfs:label "timestamp" ;
-# FixMe  rdfs:subPropertyOf
   rdfs:comment "following ISO 8601; see: <https://www.w3.org/TR/xmlschema11-2/#dateTimeStamp>" ;
   schema:domainIncludes okh:Module ;
   schema:rangeIncludes xsd:dateTimeStamp ;
