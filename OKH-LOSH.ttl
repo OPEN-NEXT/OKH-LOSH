@@ -598,7 +598,7 @@ okh:fileUrl
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
-  rdfs:subPropertyOf schema:fileFormat ;
+  rdfs:subPropertyOf schema:encodingFormat ;
   schema:domainIncludes okh:File ;
   .
 
