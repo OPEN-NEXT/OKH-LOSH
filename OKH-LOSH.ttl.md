@@ -17,6 +17,9 @@
 
 ### [1.1.1. FileUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileUrl)
 
+* [**supersededBy**](http://schema.org/supersededBy) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
+* [**deprecatedOn**](http://creativecommons.org/ns#deprecatedOn) 2023-07-11
+* [**deprecated**](http://www.w3.org/2002/07/owl#deprecated) true
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ComponentReference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
@@ -34,6 +37,9 @@
 
 ## [2.1. FileUrl](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#FileUrl)
 
+* [**supersededBy**](http://schema.org/supersededBy) [File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
+* [**deprecatedOn**](http://creativecommons.org/ns#deprecatedOn) 2023-07-11
+* [**deprecated**](http://www.w3.org/2002/07/owl#deprecated) true
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#ComponentReference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
@@ -85,6 +91,7 @@
 
 # [5. File](https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#File)
 
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "A file that forms part of the project, specified/located either by a URL (okh:url) or a repo-/project-relative path (okh:relativePath)."
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "File"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 

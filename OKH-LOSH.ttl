@@ -105,11 +105,15 @@ okh:FileUrl
   rdfs:label "permanent URL to file" ;
   rdfs:subClassOf okh:ComponentReference ;
   rdfs:subClassOf schema:URL ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
+  schema:supersededBy okh:File ;
   .
 
 okh:File
   a owl:Class ;
   rdfs:label "File" ;
+  rdfs:comment "A file that forms part of the project, specified/located either by a URL (okh:url) or a repo-/project-relative path (okh:relativePath)." ;
   .
 
 okh:ManifestFile
@@ -336,7 +340,7 @@ okh:alternativeLicense
   rdfs:comment "URL to legal code of a license without SPDX identifier, hence OSHWA-compliance is to be checked manually" ;
 #  rdfs:subPropertyOf spdxt:License ;
   schema:domainIncludes okh:Module ;
-  schema:rangeIncludes okh:FileUrl ;
+  schema:rangeIncludes okh:File ;
   owl:cardinality 1 ;
   .
 
@@ -429,6 +433,7 @@ okh:function
   rdfs:subPropertyOf obo:BFO_0000016 ; # aka function
   owl:cardinality 1 ;
   schema:domainIncludes okh:Module ;
+  schema:rangeIncludes xsd:string ;
   .
 
 okh:hasReadme
@@ -565,14 +570,6 @@ okh:smallestToleranceClass
   schema:domainIncludes okh:Part ;
   .
 
-# okh:assemblyInstruction
-#   a owl:ObjectProperty ;
-#   rdfs:label "assembly instruction" ;
-#   rdfs:comment "can be a technical drawing, instruction etc." ;
-#   schema:rangeIncludes okh:FileUrl ;
-#   schema:domainIncludes okh:Module ;
-#   .
-
 okh:hasManifestFile
   a owl:ObjectProperty ;
   rdfs:label "has manifest file" ;
@@ -588,7 +585,27 @@ okh:doi
   rdfs:comment "this publication has a digital object identifier (DOI)"@en ;
   schema:domainIncludes okh:Publication ;
   rdfs:subPropertyOf npg:doi ;
-  schema:rangeIncludes rdfs:Literal ;
+  .
+
+okh:relativePath
+  a owl:ObjectProperty ;
+  rdfs:label "Project-/Repo-relative file path, directly starting with the first path element, *NOT* with '/' or './'" ;
+  rdfs:subPropertyOf schema:url ;
+  schema:domainIncludes okh:File ;
+  # NOTE Looked for HOURS to find a file-path, file-location, ... anything like that in tthe RDF world, suitable for relative paths, and there seems to be none!
+  #      Closest thing was this: <https://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#fileUrl>,
+  #      which links to this: <https://commons.apache.org/proper/commons-vfs/filesystems.html#Local_Files>,
+  #      which does not allow for relative paths, only for absolute ones.
+  #      (Searched with <https://lov.linkeddata.es/dataset/lov/terms>)
+  schema:rangeIncludes xsd:string ;
+  .
+
+okh:url
+  a owl:ObjectProperty ;
+  rdfs:label "file URL"@en ;
+  rdfs:comment "Global file locator, using either the HTTP or the HTTPS protocol."@en ;
+  rdfs:subPropertyOf schema:url ;
+  schema:domainIncludes okh:File ;
   .
 
 okh:fileUrl
@@ -596,21 +613,32 @@ okh:fileUrl
   rdfs:label "file URL" ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:File ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
+  schema:supersededBy okh:url ;
+  .
+
+okh:permaURL
+  a owl:ObjectProperty ;
+  rdfs:label "Permanent file URL - It was not 'permanent', but rather 'frozen in time', and it was alsoThis was used in the karwler, but badly. Things simply should not be done that way, but rather with a separate manifest file, where either everything is frozen, or nothing is, and the manifest file (internally) itsself being marked accordingly." ;
+  schema:domainIncludes okh:File ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-07-11"^^xsd:date ;
   .
 
 okh:fileFormat
   a owl:ObjectProperty ;
   rdfs:label "file format" ;
-  rdfs:subPropertyOf schema:fileFormat ;
+  rdfs:subPropertyOf schema:encodingFormat ;
   schema:domainIncludes okh:File ;
   .
 
 okh:timestamp
   a owl:ObjectProperty ;
   rdfs:label "timestamp" ;
-  rdfs:comment "following ISO 8601" ;
-# FixMe  rdfs:subPropertyOf
+  rdfs:comment "following ISO 8601; see: <https://www.w3.org/TR/xmlschema11-2/#dateTimeStamp>" ;
   schema:domainIncludes okh:Module ;
+  schema:rangeIncludes xsd:dateTimeStamp ;
   .
 
 okh:source
@@ -659,20 +687,19 @@ okh:hasManufacturingInstructions
     okh:Part ;
   .
 
-okh:relatedTsDC
+okh:tsdc
   a owl:ObjectProperty ;
-  rdfs:label "related TsDC" ;
-  rdfs:comment "Identifier for the applying Technology-specific Documentation Criteria according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
-  # FIXME rdfs:subPropertyOf ;
+  rdfs:label "TsDC" ;
+  rdfs:comment "Applicable Technology-specific Documentation Criteria, according to DIN SPEC 3105-1, e.g. `tsdc:3DP`" ;
   schema:rangeIncludes tsdc:OHTsDC ;
   schema:domainIncludes okh:Component ;
   .
 
-okh:tsdc
+okh:relatedTsdc
   owl:deprecated "true"^^xsd:boolean ;
-  cc:deprecatedOn "2023-07-06"^^xsd:date ;
-  schema:supersededBy okh:relatedTsDC ;
-  owl:sameAs okh:relatedTsDC ;
+  cc:deprecatedOn "2023-07-10"^^xsd:date ;
+  schema:supersededBy okh:tsdc ;
+  owl:sameAs okh:tsdc ;
   .
 
 # source, export
