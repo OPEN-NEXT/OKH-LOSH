@@ -590,7 +590,8 @@ okh:doi
 
 okh:url
   a owl:ObjectProperty ;
-  rdfs:label "file URL" ;
+  rdfs:label "file URL"@en ;
+  rdfs:comment "Global file locator, using either the HTTP or the HTTPS protocol."@en ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:File ;
   .
