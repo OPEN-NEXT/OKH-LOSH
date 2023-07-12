@@ -587,6 +587,19 @@ okh:doi
   rdfs:subPropertyOf npg:doi ;
   .
 
+okh:relativePath
+  a owl:ObjectProperty ;
+  rdfs:label "Project-/Repo-relative file path, directly starting with the first path element, *NOT* with '/' or './'" ;
+  rdfs:subPropertyOf schema:url ;
+  schema:domainIncludes okh:File ;
+  # NOTE Looked for HOURS to find a file-path, file-location, ... anything like that in tthe RDF world, suitable for relative paths, and there seems to be none!
+  #      Closest thing was this: <https://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#fileUrl>,
+  #      which links to this: <https://commons.apache.org/proper/commons-vfs/filesystems.html#Local_Files>,
+  #      which does not allow for relative paths, only for absolute ones.
+  #      (Searched with <https://lov.linkeddata.es/dataset/lov/terms>)
+  schema:rangeIncludes xsd:string ;
+  .
+
 okh:url
   a owl:ObjectProperty ;
   rdfs:label "file URL"@en ;
