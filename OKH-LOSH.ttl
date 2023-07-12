@@ -585,7 +585,6 @@ okh:doi
   rdfs:comment "this publication has a digital object identifier (DOI)"@en ;
   schema:domainIncludes okh:Publication ;
   rdfs:subPropertyOf npg:doi ;
-  schema:rangeIncludes rdfs:Literal ;
   .
 
 okh:url
