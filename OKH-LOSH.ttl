@@ -221,8 +221,8 @@ okh:dataSource
 
 okh:repoHost
   a owl:DatatypeProperty ;
-  rdfs:label "Repo Host" ;
-  rdfs:comment "platform, where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
+  rdfs:label "Repository Host" ;
+  rdfs:comment "platform where the OSH documentation is located (e.g. GitLab, Wikifactory or any self-hosted website or wiki)"@en ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:Module ;
   owl:cardinality 1 ;
