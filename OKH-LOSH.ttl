@@ -239,7 +239,7 @@ okh:uploadMethod
 
 ## ----- identification -----
 
-okh:repository
+okh:repo
   a owl:ObjectProperty ;
   rdfs:label "repository" ;
   rdfs:comment '''
