@@ -55,9 +55,9 @@ to ensure equally human and machine readability.
 
 Resources:
 
-- https://motius.de/phasen-der-produktentwicklung/#produktentwicklung-phase-4-das-minimum-viable-product-mvp
-- https://de.wikipedia.org/wiki/Produktentwicklung#Ablauf
-- https://doi.org/10.1007/978-3-662-57303-7
+- <https://motius.de/phasen-der-produktentwicklung/#produktentwicklung-phase-4-das-minimum-viable-product-mvp>
+- <https://de.wikipedia.org/wiki/Produktentwicklung#Ablauf>
+- <https://doi.org/10.1007/978-3-662-57303-7>
 - VDI 2220
 
 |OTRL|Stage|Goal|
