@@ -22,7 +22,7 @@ title: Technology Readiness Levels for Open Source Hardware
 
 <!-- NASA's TRL are too complicated -->
 
-"\[NASA's\] TRLs \[…\] provide useful insights into two key contributors to readiness:
+\[NASA's\] TRLs \[…\] provide useful insights into two key contributors to readiness:
 
 1. degree of functionality provided
 2. fidelity of the environment (to the intended operational environment)
