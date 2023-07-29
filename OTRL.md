@@ -218,7 +218,7 @@ A detailled description of these levels can be found in the following chapters.
 
 : Overview on ODRLs {#tbl:odrl-overview}
 
-<!-- ToDo: read & check -->
+<!-- TODO: read & check -->
 
 <!--
 
