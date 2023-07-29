@@ -30,7 +30,7 @@ title: Technology Readiness Levels for Open Source Hardware
 
 ([ref](https://apps.dtic.mil/dtic/tr/fulltext/u2/a443149.pdf))
 
-Besides criticism,
+Regardless of the criticism,
 the TRL approach is chosen as it is well tested and simpler,
 thus easier to use.
 That stated, the authors found TRL more suitable for a stable,
