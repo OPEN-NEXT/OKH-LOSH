@@ -20,6 +20,14 @@ title: Technology Readiness Levels for Open Source Hardware
 
 # Principle
 
+Based on a known and widely used concept:
+
+> Technology readiness levels (TRLs) are a method
+> for estimating the maturity of technologies ...
+
+from [Wikipedia - Technology Readiness Level](
+https://en.wikipedia.org/wiki/Technology_readiness_level)
+
 <!-- NASA's TRL are too complicated -->
 
 \[NASA's\] TRLs \[…\] provide useful insights into two key contributors to readiness:
