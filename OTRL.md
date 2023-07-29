@@ -53,8 +53,6 @@ to ensure equally human and machine readability.
 
 ## OTRL
 
-### General
-
 Resources:
 
 - https://motius.de/phasen-der-produktentwicklung/#produktentwicklung-phase-4-das-minimum-viable-product-mvp
@@ -198,8 +196,6 @@ EXAMPLE: Product is sold in the EU.
 -->
 
 ## ODRL
-
-### General
 
 It is the complete technical documentation,
 published under a free/open license,
