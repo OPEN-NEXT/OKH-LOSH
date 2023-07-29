@@ -30,7 +30,8 @@ title: Technology Readiness Levels for Open Source Hardware
 
 ([ref](https://apps.dtic.mil/dtic/tr/fulltext/u2/a443149.pdf))
 
-Besides criticism, the TRL approach is chosen as it is well tested and simpler,
+Besides criticism,
+the TRL approach is chosen as it is well tested and simpler,
 thus easier to use.
 That stated, the authors found TRL more suitable for a stable,
 decentralised application in an open source environment than proposed alternatives
@@ -86,7 +87,8 @@ basically:
 1. defining requirements
 2. conceptionalise the solution
 3. translate solution conecpt into a physical hardware solution
-4. design a product that a) reliably covers core features and b) can be built, modified and operated by non-contrbutors
+4. design a product that a) reliably covers core features and b)
+    can be built, modified and operated by non-contrbutors
 5. finish all relevant tests for CE certification
 
 <!--
