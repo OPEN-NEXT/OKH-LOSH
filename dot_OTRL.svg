@@ -9,555 +9,555 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1025.53)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-1025.53 2281.26,-1025.53 2281.26,4 -4,4"/>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
+<!-- http://www.w3.org/2002/07/owl#Ontology -->
 <g id="node1" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-734.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-730.56" font-family="Times,serif" font-size="14.00">OTRL4</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="node5" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-643.26" rx="39.7" ry="16.03"/>
-<text text-anchor="middle" x="2154.22" y="-639.56" font-family="Times,serif" font-size="14.00">OTRL</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge21" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1641.62,-731.24C1718.12,-725.49 1879.43,-711.01 2013.18,-683.26 2047.36,-676.17 2085.4,-665.1 2113.2,-656.4"/>
-<polygon fill="black" stroke="black" points="2114.47,-659.67 2122.95,-653.31 2112.36,-652.99 2114.47,-659.67"/>
-</g>
-<!-- http://www.w3.org/2002/07/owl#DatatypeProperty -->
-<g id="node2" class="node">
-<title>http://www.w3.org/2002/07/owl#DatatypeProperty</title>
-<ellipse fill="none" stroke="#1f77b4" cx="2154.22" cy="-441.26" rx="123.07" ry="16.03"/>
-<text text-anchor="middle" x="2154.22" y="-437.56" font-family="Times,serif" font-size="14.00">owl:DatatypeProperty</text>
+<title>http://www.w3.org/2002/07/owl#Ontology</title>
+<ellipse fill="none" stroke="#1f77b4" cx="917.96" cy="-79.26" rx="77.56" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-75.56" font-family="Times,serif" font-size="14.00">owl:Ontology</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#OTRL2 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#OTRL2</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-683.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-679.56" font-family="Times,serif" font-size="14.00">OTRL2</text>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-848.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-844.56" font-family="Times,serif" font-size="14.00">OTRL2</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="node9" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-757.26" rx="39.7" ry="16.03"/>
+<text text-anchor="middle" x="2154.22" y="-753.56" font-family="Times,serif" font-size="14.00">OTRL</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#OTRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge16" class="edge">
+<g id="edge32" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#OTRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1642.23,-682.24C1718.64,-680.21 1878.54,-674.77 2013.18,-662.26 2044.59,-659.35 2079.78,-654.57 2107.02,-650.53"/>
-<polygon fill="black" stroke="black" points="2107.68,-653.97 2117.05,-649.03 2106.64,-647.05 2107.68,-653.97"/>
+<path fill="none" stroke="black" d="M1641.29,-844.87C1717.62,-838.51 1879.13,-822.87 2013.18,-795.26 2046.92,-788.32 2084.56,-777.95 2112.31,-769.8"/>
+<polygon fill="black" stroke="black" points="2113.47,-773.11 2122.06,-766.91 2111.48,-766.4 2113.47,-773.11"/>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
+<g id="node3" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-797.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-793.56" font-family="Times,serif" font-size="14.00">OTRL1</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge46" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1642.22,-795.99C1718.62,-793.58 1878.5,-787.46 2013.18,-775.26 2044.46,-772.43 2079.51,-767.92 2106.72,-764.13"/>
+<polygon fill="black" stroke="black" points="2107.33,-767.58 2116.74,-762.71 2106.35,-760.65 2107.33,-767.58"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3Star -->
 <g id="node4" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-581.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-577.56" font-family="Times,serif" font-size="14.00">OTRL3</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge22" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1642.05,-582.74C1718.53,-585.7 1878.96,-593.81 2013.18,-613.26 2045.91,-618.01 2082.43,-625.92 2109.97,-632.43"/>
-<polygon fill="black" stroke="black" points="2109.52,-635.92 2120.06,-634.84 2111.15,-629.11 2109.52,-635.92"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL1 -->
-<g id="node6" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL1</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-301.26" rx="48.17" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-297.56" font-family="Times,serif" font-size="14.00">ODRL1</text>
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL3Star</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-415.26" rx="69.09" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-411.56" font-family="Times,serif" font-size="14.00">ODRL3Star</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="node10" class="node">
+<g id="node7" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-187.26" rx="41.94" ry="16.03"/>
-<text text-anchor="middle" x="2154.22" y="-183.56" font-family="Times,serif" font-size="14.00">ODRL</text>
+<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-301.26" rx="41.94" ry="16.03"/>
+<text text-anchor="middle" x="2154.22" y="-297.56" font-family="Times,serif" font-size="14.00">ODRL</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge6" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1663.95,-411.43C1710.02,-407.02 1771.96,-397.56 1823.18,-377.26 1832.12,-373.72 1832.24,-368.78 1841.18,-365.26 1913.26,-336.92 1937.38,-353.14 2013.18,-337.26 2046.01,-330.39 2082.71,-320.88 2110.3,-313.37"/>
+<polygon fill="black" stroke="black" points="2111.31,-316.72 2120.03,-310.7 2109.46,-309.97 2111.31,-316.72"/>
+</g>
+<!-- http://www.w3.org/2002/07/owl#DatatypeProperty -->
+<g id="node5" class="node">
+<title>http://www.w3.org/2002/07/owl#DatatypeProperty</title>
+<ellipse fill="none" stroke="#1f77b4" cx="2154.22" cy="-555.26" rx="123.07" ry="16.03"/>
+<text text-anchor="middle" x="2154.22" y="-551.56" font-family="Times,serif" font-size="14.00">owl:DatatypeProperty</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
+<g id="node6" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-352.26" rx="48.17" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-348.56" font-family="Times,serif" font-size="14.00">ODRL3</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge45" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1642.7,-348.09C1745.74,-338.64 1996.24,-315.66 2103.33,-305.84"/>
+<polygon fill="black" stroke="black" points="2103.9,-309.3 2113.54,-304.9 2103.26,-302.33 2103.9,-309.3"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
+<g id="node8" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-301.26" rx="48.17" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-297.56" font-family="Times,serif" font-size="14.00">ODRL4</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge12" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1644.61,-301.26C1748.43,-301.26 1995.16,-301.26 2102.2,-301.26"/>
+<polygon fill="black" stroke="black" points="2102.42,-304.76 2112.42,-301.26 2102.42,-297.76 2102.42,-304.76"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
+<g id="node10" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-199.26" rx="48.17" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-195.56" font-family="Times,serif" font-size="14.00">ODRL2</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge24" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1643.77,-196.86C1721.77,-194.12 1883.08,-194 2013.18,-230.26 2053.52,-241.51 2095.88,-264.83 2123.3,-281.68"/>
+<polygon fill="black" stroke="black" points="2121.67,-284.79 2132.01,-287.12 2125.38,-278.85 2121.67,-284.79"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL5 -->
+<g id="node11" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL5</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-695.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-691.56" font-family="Times,serif" font-size="14.00">OTRL5</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge25" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1642.07,-696.5C1718.57,-699.07 1879.02,-706.52 2013.18,-726.26 2046.2,-731.12 2083.04,-739.39 2110.64,-746.17"/>
+<polygon fill="black" stroke="black" points="2109.82,-749.57 2120.36,-748.59 2111.51,-742.78 2109.82,-749.57"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
+<g id="node12" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-644.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-640.56" font-family="Times,serif" font-size="14.00">OTRL4</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge35" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1641.69,-646.8C1718.63,-652.01 1881.02,-666.69 2013.18,-703.26 2049.58,-713.34 2089.64,-729.31 2117.56,-741.27"/>
+<polygon fill="black" stroke="black" points="2116.33,-744.56 2126.9,-745.32 2119.12,-738.13 2116.33,-744.56"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
+<g id="node13" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-986.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-982.56" font-family="Times,serif" font-size="14.00">OTRL6</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge31" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1638.43,-979.72C1715.8,-966.19 1886.39,-930.37 2013.18,-860.26 2056.27,-836.44 2101.3,-801.16 2128.31,-778.69"/>
+<polygon fill="black" stroke="black" points="2130.69,-781.27 2136.09,-772.16 2126.18,-775.91 2130.69,-781.27"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
+<g id="node14" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-910.26" rx="45.92" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-906.56" font-family="Times,serif" font-size="14.00">OTRL3</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#OTRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge37" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#OTRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1640.23,-905.38C1716.99,-895.77 1881.79,-871.06 2013.18,-823.26 2051.08,-809.48 2092.66,-789.18 2120.58,-774.74"/>
+<polygon fill="black" stroke="black" points="2122.26,-777.81 2129.51,-770.08 2119.02,-771.61 2122.26,-777.81"/>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#ODRL1 -->
+<g id="node15" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#ODRL1</title>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-148.26" rx="48.17" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-144.56" font-family="Times,serif" font-size="14.00">ODRL1</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#ODRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
 <g id="edge20" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#ODRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1644.18,-299.1C1690.99,-295.64 1764.19,-286.64 1823.18,-263.26 1832.12,-259.72 1832.24,-254.78 1841.18,-251.26 1913.26,-222.92 1937.38,-239.14 2013.18,-223.26 2046.01,-216.39 2082.71,-206.88 2110.3,-199.37"/>
-<polygon fill="black" stroke="black" points="2111.31,-202.72 2120.03,-196.7 2109.46,-195.97 2111.31,-202.72"/>
-</g>
-<!-- http://www.w3.org/2002/07/owl#Ontology -->
-<g id="node7" class="node">
-<title>http://www.w3.org/2002/07/owl#Ontology</title>
-<ellipse fill="none" stroke="#1f77b4" cx="917.96" cy="-1005.26" rx="77.56" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-1001.56" font-family="Times,serif" font-size="14.00">owl:Ontology</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3Star -->
-<g id="node8" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL3Star</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-238.26" rx="69.09" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-234.56" font-family="Times,serif" font-size="14.00">ODRL3Star</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge32" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1660.99,-232.41C1772.84,-222.15 2002.08,-201.13 2103.3,-191.84"/>
-<polygon fill="black" stroke="black" points="2103.92,-195.3 2113.55,-190.9 2103.28,-188.33 2103.92,-195.3"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
-<g id="node9" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-187.26" rx="48.17" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-183.56" font-family="Times,serif" font-size="14.00">ODRL4</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge44" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1644.61,-187.26C1748.43,-187.26 1995.16,-187.26 2102.2,-187.26"/>
-<polygon fill="black" stroke="black" points="2102.42,-190.76 2112.42,-187.26 2102.42,-183.76 2102.42,-190.76"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
-<g id="node11" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-530.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-526.56" font-family="Times,serif" font-size="14.00">OTRL1</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge9" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1641.66,-533.17C1718.56,-539 1880.89,-554.81 2013.18,-591.26 2049.19,-601.18 2089.01,-616.4 2116.95,-627.81"/>
-<polygon fill="black" stroke="black" points="2115.73,-631.1 2126.31,-631.68 2118.4,-624.63 2115.73,-631.1"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
-<g id="node12" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-872.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-868.56" font-family="Times,serif" font-size="14.00">OTRL6</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge41" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1638.78,-866.11C1716.37,-853.34 1886.81,-819.14 2013.18,-749.26 2057.2,-724.93 2102.63,-687.95 2129.38,-664.72"/>
-<polygon fill="black" stroke="black" points="2131.85,-667.21 2137.06,-657.98 2127.23,-661.95 2131.85,-667.21"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL5 -->
-<g id="node13" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL5</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-796.26" rx="45.92" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-792.56" font-family="Times,serif" font-size="14.00">OTRL5</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#OTRL5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge51" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#OTRL5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1640.57,-791.69C1717.51,-782.64 1882.13,-759.06 2013.18,-711.26 2051.51,-697.28 2093.32,-676.15 2121.19,-661.16"/>
-<polygon fill="black" stroke="black" points="2122.96,-664.18 2130.08,-656.33 2119.62,-658.03 2122.96,-664.18"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
-<g id="node14" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-85.26" rx="48.17" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-81.56" font-family="Times,serif" font-size="14.00">ODRL3</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge11" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1643.77,-82.86C1721.77,-80.12 1883.08,-80 2013.18,-116.26 2053.52,-127.51 2095.88,-150.83 2123.3,-167.68"/>
-<polygon fill="black" stroke="black" points="2121.67,-170.79 2132.01,-173.12 2125.38,-164.85 2121.67,-170.79"/>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
-<g id="node15" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-34.26" rx="48.17" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-30.56" font-family="Times,serif" font-size="14.00">ODRL2</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#ODRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge35" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#ODRL2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1644.04,-32.21C1723.13,-30.39 1886.86,-33.82 2013.18,-84.26 2059.67,-102.82 2104.69,-140.56 2130.64,-164.84"/>
-<polygon fill="black" stroke="black" points="2128.41,-167.55 2138.07,-171.91 2133.24,-162.48 2128.41,-167.55"/>
-</g>
-<!-- http://schema.org/Text -->
-<g id="node16" class="node">
-<title>http://schema.org/Text</title>
-<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-349.26" rx="74.91" ry="16.03"/>
-<text text-anchor="middle" x="2154.22" y="-345.56" font-family="Times,serif" font-size="14.00">schema:Text</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
-<g id="node17" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
-<ellipse fill="none" stroke="#e377c2" cx="917.96" cy="-175.26" rx="40.11" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-171.56" font-family="Times,serif" font-size="14.00">Odrl4</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
-<g id="edge12" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
-<path fill="none" stroke="black" d="M958.24,-175.96C1072.25,-177.98 1403.63,-183.86 1537.8,-186.24"/>
-<polygon fill="black" stroke="black" points="1537.81,-189.75 1547.88,-186.42 1537.94,-182.75 1537.81,-189.75"/>
-<text text-anchor="middle" x="1271.22" y="-187.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
-<g id="edge36" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
-<path fill="none" stroke="black" d="M957.43,-171.81C1032.97,-165.53 1205.95,-153.54 1351.22,-161.26 1416.75,-164.75 1491.76,-173.45 1541.11,-179.83"/>
-<polygon fill="black" stroke="black" points="1540.87,-183.33 1551.24,-181.16 1541.78,-176.39 1540.87,-183.33"/>
-<text text-anchor="middle" x="1271.22" y="-165.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<path fill="none" stroke="black" d="M1644.04,-146.21C1723.13,-144.39 1886.86,-147.82 2013.18,-198.26 2059.67,-216.82 2104.69,-254.56 2130.64,-278.84"/>
+<polygon fill="black" stroke="black" points="2128.41,-281.55 2138.07,-285.91 2133.24,-276.48 2128.41,-281.55"/>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL -->
-<g id="node18" class="node">
+<g id="node16" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL</title>
-<ellipse fill="none" stroke="#e377c2" cx="233.35" cy="-967.26" rx="60.62" ry="16.03"/>
-<text text-anchor="middle" x="233.35" y="-963.56" font-family="Times,serif" font-size="14.00">ns1:OTRL</text>
+<ellipse fill="none" stroke="#e377c2" cx="233.35" cy="-41.26" rx="60.62" ry="16.03"/>
+<text text-anchor="middle" x="233.35" y="-37.56" font-family="Times,serif" font-size="14.00">ns1:OTRL</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL&#45;&gt;http://www.w3.org/2002/07/owl#Ontology -->
-<g id="edge38" class="edge">
+<g id="edge11" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL&#45;&gt;http://www.w3.org/2002/07/owl#Ontology</title>
-<path fill="none" stroke="black" d="M293.14,-970.54C414.21,-977.28 691.76,-992.73 832.22,-1000.55"/>
-<polygon fill="black" stroke="black" points="832.32,-1004.06 842.5,-1001.12 832.71,-997.07 832.32,-1004.06"/>
-<text text-anchor="middle" x="564.69" y="-993.06" font-family="Times,serif" font-size="14.00">a</text>
+<path fill="none" stroke="black" d="M293.14,-44.54C414.21,-51.28 691.76,-66.73 832.22,-74.55"/>
+<polygon fill="black" stroke="black" points="832.32,-78.06 842.5,-75.12 832.71,-71.07 832.32,-78.06"/>
+<text text-anchor="middle" x="564.69" y="-68.06" font-family="Times,serif" font-size="14.00">a</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL&#45;&gt;http://purl.org/oseg/ontologies/OTRL -->
-<g id="edge25" class="edge">
+<g id="edge1" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL&#45;&gt;http://purl.org/oseg/ontologies/OTRL</title>
-<path fill="none" stroke="black" d="M185.99,-977.79C156.33,-988.94 172.11,-1001.53 233.35,-1001.53 286.44,-1001.53 305.37,-992.06 290.12,-982.28"/>
-<polygon fill="black" stroke="black" points="291.24,-978.93 280.7,-977.79 288.22,-985.25 291.24,-978.93"/>
-<text text-anchor="middle" x="233.35" y="-1005.33" font-family="Times,serif" font-size="14.00">owl:versionIRI</text>
+<path fill="none" stroke="black" d="M185.99,-51.79C156.33,-62.94 172.11,-75.53 233.35,-75.53 286.44,-75.53 305.37,-66.06 290.12,-56.28"/>
+<polygon fill="black" stroke="black" points="291.24,-52.93 280.7,-51.79 288.22,-59.25 291.24,-52.93"/>
+<text text-anchor="middle" x="233.35" y="-79.33" font-family="Times,serif" font-size="14.00">owl:versionIRI</text>
 </g>
 <!-- https://www.gnu.org/licenses/gpl&#45;3.0.txt -->
-<g id="node20" class="node">
+<g id="node18" class="node">
 <title>https://www.gnu.org/licenses/gpl&#45;3.0.txt</title>
-<ellipse fill="none" stroke="#e377c2" cx="917.96" cy="-942.26" rx="85.62" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-938.56" font-family="Times,serif" font-size="14.00">ns2:gpl&#45;3.0.txt</text>
+<ellipse fill="none" stroke="#e377c2" cx="917.96" cy="-16.26" rx="85.62" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-12.56" font-family="Times,serif" font-size="14.00">ns2:gpl&#45;3.0.txt</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL&#45;&gt;https://www.gnu.org/licenses/gpl&#45;3.0.txt -->
-<g id="edge31" class="edge">
+<g id="edge5" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL&#45;&gt;https://www.gnu.org/licenses/gpl&#45;3.0.txt</title>
-<path fill="none" stroke="black" d="M293.73,-965.09C412.67,-960.73 680.93,-950.91 823.6,-945.68"/>
-<polygon fill="black" stroke="black" points="823.79,-949.18 833.66,-945.31 823.53,-942.18 823.79,-949.18"/>
-<text text-anchor="middle" x="564.69" y="-962.06" font-family="Times,serif" font-size="14.00">cc:license</text>
+<path fill="none" stroke="black" d="M293.73,-39.09C412.67,-34.73 680.93,-24.91 823.6,-19.68"/>
+<polygon fill="black" stroke="black" points="823.79,-23.18 833.66,-19.31 823.53,-16.18 823.79,-23.18"/>
+<text text-anchor="middle" x="564.69" y="-36.06" font-family="Times,serif" font-size="14.00">dcterms:license</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL&#45;&gt;https://www.gnu.org/licenses/gpl&#45;3.0.txt -->
-<g id="edge39" class="edge">
+<g id="edge19" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL&#45;&gt;https://www.gnu.org/licenses/gpl&#45;3.0.txt</title>
-<path fill="none" stroke="black" d="M284.98,-958.61C335.41,-950.45 415.14,-938.83 484.69,-934.26 602.84,-926.51 739.53,-931.35 827.03,-936.21"/>
-<polygon fill="black" stroke="black" points="827.01,-939.71 837.19,-936.78 827.41,-932.72 827.01,-939.71"/>
-<text text-anchor="middle" x="564.69" y="-938.06" font-family="Times,serif" font-size="14.00">dcterms:license</text>
+<path fill="none" stroke="black" d="M284.98,-32.61C335.41,-24.45 415.14,-12.83 484.69,-8.26 602.84,-0.51 739.53,-5.35 827.03,-10.21"/>
+<polygon fill="black" stroke="black" points="827.01,-13.71 837.19,-10.78 827.41,-6.72 827.01,-13.71"/>
+<text text-anchor="middle" x="564.69" y="-12.06" font-family="Times,serif" font-size="14.00">cc:license</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria -->
-<g id="node19" class="node">
+<g id="node17" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#exitCriteria</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-461.26" rx="70.01" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-457.56" font-family="Times,serif" font-size="14.00">exitCriteria</text>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-575.26" rx="70.01" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-571.56" font-family="Times,serif" font-size="14.00">exitCriteria</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://www.w3.org/2002/07/owl#DatatypeProperty -->
-<g id="edge30" class="edge">
+<g id="edge3" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://www.w3.org/2002/07/owl#DatatypeProperty</title>
-<path fill="none" stroke="black" d="M1657.05,-469.34C1738.09,-478.92 1887.13,-491.78 2013.18,-476.26 2040.74,-472.87 2070.67,-465.86 2095.77,-459"/>
-<polygon fill="black" stroke="black" points="2096.8,-462.34 2105.49,-456.28 2094.91,-455.6 2096.8,-462.34"/>
-<text text-anchor="middle" x="1927.18" y="-488.06" font-family="Times,serif" font-size="14.00">a</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge46" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1653.17,-470.78C1762.82,-489.53 1996.76,-530.04 2013.18,-537.26 2059.73,-557.73 2105.05,-596.51 2131,-621.06"/>
-<polygon fill="black" stroke="black" points="2128.77,-623.78 2138.41,-628.19 2133.63,-618.73 2128.77,-623.78"/>
-<text text-anchor="middle" x="1927.18" y="-541.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+<path fill="none" stroke="black" d="M1657.05,-583.34C1738.09,-592.92 1887.13,-605.78 2013.18,-590.26 2040.74,-586.87 2070.67,-579.86 2095.77,-573"/>
+<polygon fill="black" stroke="black" points="2096.8,-576.34 2105.49,-570.28 2094.91,-569.6 2096.8,-576.34"/>
+<text text-anchor="middle" x="1927.18" y="-602.06" font-family="Times,serif" font-size="14.00">a</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge49" class="edge">
+<g id="edge10" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1663.53,-456.77C1713.17,-450.09 1779.74,-433.63 1823.18,-393.26 1839.57,-378.04 1823.6,-360.09 1841.18,-346.26 1901.78,-298.64 1943.82,-357.84 2013.18,-324.26 2066.91,-298.26 2112.79,-243.52 2136.33,-211.67"/>
-<polygon fill="black" stroke="black" points="2139.33,-213.49 2142.36,-203.33 2133.66,-209.38 2139.33,-213.49"/>
-<text text-anchor="middle" x="1927.18" y="-350.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+<path fill="none" stroke="black" d="M1663.53,-570.77C1713.17,-564.09 1779.74,-547.63 1823.18,-507.26 1839.57,-492.04 1823.6,-474.09 1841.18,-460.26 1901.78,-412.64 1943.82,-471.84 2013.18,-438.26 2066.91,-412.26 2112.79,-357.52 2136.33,-325.67"/>
+<polygon fill="black" stroke="black" points="2139.33,-327.49 2142.36,-317.33 2133.66,-323.38 2139.33,-327.49"/>
+<text text-anchor="middle" x="1927.18" y="-464.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge9" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1653.26,-584.88C1764.88,-604.08 2004.96,-645.62 2013.18,-649.26 2060.26,-670.09 2105.74,-709.96 2131.52,-735"/>
+<polygon fill="black" stroke="black" points="2129.29,-737.72 2138.87,-742.25 2134.21,-732.74 2129.29,-737.72"/>
+<text text-anchor="middle" x="1927.18" y="-653.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+</g>
+<!-- http://schema.org/Text -->
+<g id="node19" class="node">
+<title>http://schema.org/Text</title>
+<ellipse fill="none" stroke="#e377c2" cx="2154.22" cy="-463.26" rx="74.91" ry="16.03"/>
+<text text-anchor="middle" x="2154.22" y="-459.56" font-family="Times,serif" font-size="14.00">schema:Text</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://schema.org/Text -->
-<g id="edge7" class="edge">
+<g id="edge17" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#exitCriteria&#45;&gt;http://schema.org/Text</title>
-<path fill="none" stroke="black" d="M1654.33,-452.01C1703.75,-444.09 1777.12,-432.53 1841.18,-423.26 1917.51,-412.22 1938.29,-418.68 2013.18,-400.26 2046.56,-392.06 2083,-378.64 2110.35,-367.62"/>
-<polygon fill="black" stroke="black" points="2111.68,-370.86 2119.62,-363.84 2109.04,-364.37 2111.68,-370.86"/>
-<text text-anchor="middle" x="1927.18" y="-427.06" font-family="Times,serif" font-size="14.00">range</text>
+<path fill="none" stroke="black" d="M1654.33,-566.01C1703.75,-558.09 1777.12,-546.53 1841.18,-537.26 1917.51,-526.22 1938.29,-532.68 2013.18,-514.26 2046.56,-506.06 2083,-492.64 2110.35,-481.62"/>
+<polygon fill="black" stroke="black" points="2111.68,-484.86 2119.62,-477.84 2109.04,-478.37 2111.68,-484.86"/>
+<text text-anchor="middle" x="1927.18" y="-541.06" font-family="Times,serif" font-size="14.00">range</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
+<g id="node20" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
+<ellipse fill="none" stroke="#e377c2" cx="917.96" cy="-272.26" rx="40.11" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-268.56" font-family="Times,serif" font-size="14.00">Odrl4</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
+<g id="edge16" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
+<path fill="none" stroke="black" d="M958.24,-273.95C1072.39,-278.84 1404.43,-293.08 1538.28,-298.82"/>
+<polygon fill="black" stroke="black" points="1538.19,-302.32 1548.33,-299.25 1538.49,-295.33 1538.19,-302.32"/>
+<text text-anchor="middle" x="1271.22" y="-294.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4 -->
+<g id="edge34" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL4</title>
+<path fill="none" stroke="black" d="M954.73,-265.36C1029.72,-252.25 1208.27,-228.22 1351.22,-265.26 1360.08,-267.56 1360.51,-272.46 1369.22,-275.26 1424.63,-293.06 1491.12,-298.98 1537.58,-300.81"/>
+<polygon fill="black" stroke="black" points="1537.65,-304.31 1547.77,-301.15 1537.89,-297.31 1537.65,-304.31"/>
+<text text-anchor="middle" x="1271.22" y="-269.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#goal -->
 <g id="node21" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#goal</title>
-<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-368.26" rx="33.47" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-364.56" font-family="Times,serif" font-size="14.00">goal</text>
+<ellipse fill="none" stroke="#e377c2" cx="1596.2" cy="-482.26" rx="33.47" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-478.56" font-family="Times,serif" font-size="14.00">goal</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://www.w3.org/2002/07/owl#DatatypeProperty -->
-<g id="edge37" class="edge">
+<g id="edge50" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://www.w3.org/2002/07/owl#DatatypeProperty</title>
-<path fill="none" stroke="black" d="M1629.23,-365.93C1699.62,-361.58 1872.7,-355.23 2013.18,-385.26 2048.23,-392.76 2085.83,-408.24 2113.23,-421.04"/>
-<polygon fill="black" stroke="black" points="2111.95,-424.3 2122.48,-425.43 2114.95,-417.98 2111.95,-424.3"/>
-<text text-anchor="middle" x="1927.18" y="-389.06" font-family="Times,serif" font-size="14.00">a</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge13" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1623.92,-377.55C1668.41,-392.64 1760.77,-422.4 1841.18,-438.26 1916.64,-453.14 1946.35,-419.2 2013.18,-457.26 2078.7,-494.58 2123.09,-576.28 2142.36,-617.86"/>
-<polygon fill="black" stroke="black" points="2139.2,-619.37 2146.51,-627.04 2145.58,-616.49 2139.2,-619.37"/>
-<text text-anchor="middle" x="1927.18" y="-461.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+<path fill="none" stroke="black" d="M1629.23,-479.93C1699.62,-475.58 1872.7,-469.23 2013.18,-499.26 2048.23,-506.76 2085.83,-522.24 2113.23,-535.04"/>
+<polygon fill="black" stroke="black" points="2111.95,-538.3 2122.48,-539.43 2114.95,-531.98 2111.95,-538.3"/>
+<text text-anchor="middle" x="1927.18" y="-503.06" font-family="Times,serif" font-size="14.00">a</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge18" class="edge">
+<g id="edge33" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1629.1,-371.6C1677.06,-374.78 1767.99,-373.47 1823.18,-326.26 1841.45,-310.64 1822.7,-290.63 1841.18,-275.26 1900.69,-225.79 1938.89,-269.89 2013.18,-248.26 2050.76,-237.32 2091.56,-218.72 2119.37,-204.93"/>
-<polygon fill="black" stroke="black" points="2121.28,-207.89 2128.64,-200.27 2118.13,-201.63 2121.28,-207.89"/>
-<text text-anchor="middle" x="1927.18" y="-279.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+<path fill="none" stroke="black" d="M1629.1,-485.6C1677.06,-488.78 1767.99,-487.47 1823.18,-440.26 1841.45,-424.64 1822.7,-404.63 1841.18,-389.26 1900.69,-339.79 1938.89,-383.89 2013.18,-362.26 2050.76,-351.32 2091.56,-332.72 2119.37,-318.93"/>
+<polygon fill="black" stroke="black" points="2121.28,-321.89 2128.64,-314.27 2118.13,-315.63 2121.28,-321.89"/>
+<text text-anchor="middle" x="1927.18" y="-393.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge29" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1623.92,-491.55C1668.41,-506.64 1760.77,-536.4 1841.18,-552.26 1916.64,-567.14 1946.35,-533.2 2013.18,-571.26 2078.7,-608.58 2123.09,-690.28 2142.36,-731.86"/>
+<polygon fill="black" stroke="black" points="2139.2,-733.37 2146.51,-741.04 2145.58,-730.49 2139.2,-733.37"/>
+<text text-anchor="middle" x="1927.18" y="-575.06" font-family="Times,serif" font-size="14.00">schema:domainIncludes</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://schema.org/Text -->
-<g id="edge29" class="edge">
+<g id="edge41" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#goal&#45;&gt;http://schema.org/Text</title>
-<path fill="none" stroke="black" d="M1629.72,-367.91C1675.35,-366.18 1759.87,-358.45 1823.18,-326.26 1832.99,-321.28 1830.96,-313.33 1841.18,-309.26 1912.22,-281.02 1937.48,-298.66 2013.18,-309.26 2044.63,-313.67 2078.92,-323.37 2105.7,-332.12"/>
-<polygon fill="black" stroke="black" points="2104.61,-335.45 2115.21,-335.29 2106.83,-328.81 2104.61,-335.45"/>
-<text text-anchor="middle" x="1927.18" y="-313.06" font-family="Times,serif" font-size="14.00">range</text>
+<path fill="none" stroke="black" d="M1629.72,-481.91C1675.35,-480.18 1759.87,-472.45 1823.18,-440.26 1832.99,-435.28 1830.96,-427.33 1841.18,-423.26 1912.22,-395.02 1937.48,-412.66 2013.18,-423.26 2044.63,-427.67 2078.92,-437.37 2105.7,-446.12"/>
+<polygon fill="black" stroke="black" points="2104.61,-449.45 2115.21,-449.29 2106.83,-442.81 2104.61,-449.45"/>
+<text text-anchor="middle" x="1927.18" y="-427.06" font-family="Times,serif" font-size="14.00">range</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3 -->
+<g id="node22" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl3</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-358.26" rx="233.19" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-354.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl3</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
+<g id="edge2" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
+<path fill="none" stroke="black" d="M1150.58,-356.88C1215.5,-356.44 1286.12,-355.89 1351.22,-355.26 1415.09,-354.65 1488.36,-353.72 1537.8,-353.06"/>
+<polygon fill="black" stroke="black" points="1538.02,-356.55 1547.98,-352.92 1537.93,-349.55 1538.02,-356.55"/>
+<text text-anchor="middle" x="1271.22" y="-361.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
+<g id="edge21" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
+<path fill="none" stroke="black" d="M1055.24,-345.08C1098.66,-341.47 1146.92,-338.05 1191.22,-336.26 1262.27,-333.4 1280.15,-333.94 1351.22,-336.26 1415.78,-338.38 1489.8,-343.63 1539.22,-347.55"/>
+<polygon fill="black" stroke="black" points="1539.13,-351.05 1549.38,-348.36 1539.69,-344.07 1539.13,-351.05"/>
+<text text-anchor="middle" x="1271.22" y="-340.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2 -->
+<g id="node23" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl2</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-215.26" rx="233.19" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-211.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl2</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
+<g id="edge4" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
+<path fill="none" stroke="black" d="M1139.45,-210.05C1279.64,-206.73 1450.64,-202.68 1537.94,-200.62"/>
+<polygon fill="black" stroke="black" points="1538.25,-204.11 1548.16,-200.38 1538.08,-197.11 1538.25,-204.11"/>
+<text text-anchor="middle" x="1271.22" y="-213.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
+<g id="edge36" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
+<path fill="none" stroke="black" d="M1031.68,-201.05C1080.63,-195.56 1138.66,-189.96 1191.22,-187.26 1262.24,-183.62 1280.13,-185.52 1351.22,-187.26 1415.54,-188.84 1489.31,-192.77 1538.74,-195.7"/>
+<polygon fill="black" stroke="black" points="1538.72,-199.2 1548.91,-196.31 1539.14,-192.22 1538.72,-199.2"/>
+<text text-anchor="middle" x="1271.22" y="-191.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Otrl1 -->
-<g id="node22" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl1</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-511.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-507.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl1</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
-<g id="edge1" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
-<path fill="none" stroke="black" d="M1132.92,-517.28C1275.48,-521.28 1452.23,-526.25 1540.16,-528.72"/>
-<polygon fill="black" stroke="black" points="1540.08,-532.22 1550.18,-529 1540.28,-525.22 1540.08,-532.22"/>
-<text text-anchor="middle" x="1271.22" y="-527.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
-<g id="edge26" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
-<path fill="none" stroke="black" d="M1087.67,-500.2C1167.61,-496.7 1264.4,-494.95 1351.22,-500.26 1418.03,-504.36 1494.56,-514.69 1543.82,-522.09"/>
-<polygon fill="black" stroke="black" points="1543.49,-525.58 1553.9,-523.62 1544.54,-518.66 1543.49,-525.58"/>
-<text text-anchor="middle" x="1271.22" y="-504.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2 -->
-<g id="node23" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl2</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-663.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-659.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl2</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2 -->
-<g id="edge2" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2</title>
-<path fill="none" stroke="black" d="M1131.53,-669.55C1274.39,-673.78 1452.09,-679.03 1540.26,-681.64"/>
-<polygon fill="black" stroke="black" points="1540.21,-685.14 1550.31,-681.94 1540.42,-678.14 1540.21,-685.14"/>
-<text text-anchor="middle" x="1271.22" y="-680.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2 -->
-<g id="edge3" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2</title>
-<path fill="none" stroke="black" d="M1061.98,-650.49C1146.38,-645.31 1255.15,-642.72 1351.22,-653.26 1359.37,-654.16 1361.14,-655.9 1369.22,-657.26 1427.7,-667.1 1495.31,-674.34 1541.23,-678.65"/>
-<polygon fill="black" stroke="black" points="1540.99,-682.14 1551.27,-679.57 1541.63,-675.17 1540.99,-682.14"/>
-<text text-anchor="middle" x="1271.22" y="-657.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6 -->
 <g id="node24" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl6</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-891.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-887.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl6</text>
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl1</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-777.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-773.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl1</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
-<g id="edge4" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
-<path fill="none" stroke="black" d="M1148.95,-892.17C1214.33,-891.74 1285.6,-890.64 1351.22,-888.26 1416.57,-885.9 1491.61,-880.58 1541.02,-876.73"/>
-<polygon fill="black" stroke="black" points="1541.47,-880.2 1551.17,-875.93 1540.92,-873.23 1541.47,-880.2"/>
-<text text-anchor="middle" x="1271.22" y="-896.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
+<g id="edge7" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
+<path fill="none" stroke="black" d="M1131.53,-783.55C1274.39,-787.78 1452.09,-793.03 1540.26,-795.64"/>
+<polygon fill="black" stroke="black" points="1540.21,-799.14 1550.31,-795.94 1540.42,-792.14 1540.21,-799.14"/>
+<text text-anchor="middle" x="1271.22" y="-793.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
-<g id="edge42" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
-<path fill="none" stroke="black" d="M1054.89,-878.11C1098.4,-874.49 1146.8,-871.06 1191.22,-869.26 1262.27,-866.4 1280.11,-868.83 1351.22,-869.26 1416.08,-869.66 1490.63,-870.66 1540.08,-871.39"/>
-<polygon fill="black" stroke="black" points="1540.19,-874.89 1550.24,-871.55 1540.29,-867.9 1540.19,-874.89"/>
-<text text-anchor="middle" x="1271.22" y="-873.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1 -->
+<g id="edge23" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL1</title>
+<path fill="none" stroke="black" d="M1043.45,-763.56C1130.13,-756.59 1248.2,-752.22 1351.22,-766.26 1359.45,-767.38 1361.07,-769.67 1369.22,-771.26 1427.24,-782.59 1494.67,-789.56 1540.66,-793.39"/>
+<polygon fill="black" stroke="black" points="1540.47,-796.89 1550.72,-794.21 1541.04,-789.91 1540.47,-796.89"/>
+<text text-anchor="middle" x="1271.22" y="-770.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Odrl3Star -->
 <g id="node25" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#Odrl3Star</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-238.26" rx="255.03" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-234.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl3Star</text>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-434.26" rx="255.03" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-430.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl3Star</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Odrl3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3Star -->
-<g id="edge5" class="edge">
+<g id="edge8" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#Odrl3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3Star</title>
-<path fill="none" stroke="black" d="M1169.31,-241.13C1176.7,-241.18 1184.01,-241.22 1191.22,-241.26 1262.33,-241.66 1280.11,-241.7 1351.22,-241.26 1406.47,-240.92 1468.76,-240.15 1516.56,-239.48"/>
-<polygon fill="black" stroke="black" points="1516.9,-242.97 1526.85,-239.33 1516.8,-235.97 1516.9,-242.97"/>
-<text text-anchor="middle" x="1271.22" y="-246.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<path fill="none" stroke="black" d="M1173.01,-434.98C1231.56,-434.46 1293.57,-433.35 1351.22,-431.26 1408.05,-429.2 1472.22,-424.92 1520.48,-421.3"/>
+<polygon fill="black" stroke="black" points="1520.82,-424.78 1530.53,-420.54 1520.29,-417.8 1520.82,-424.78"/>
+<text text-anchor="middle" x="1271.22" y="-439.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Odrl3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3Star -->
+<g id="edge38" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3Star</title>
+<path fill="none" stroke="black" d="M1059.78,-420.71C1102.01,-417.23 1148.46,-413.99 1191.22,-412.26 1262.27,-409.4 1280.11,-411.83 1351.22,-412.26 1406.47,-412.6 1468.76,-413.38 1516.56,-414.05"/>
+<polygon fill="black" stroke="black" points="1516.8,-417.55 1526.85,-414.2 1516.9,-410.56 1516.8,-417.55"/>
+<text text-anchor="middle" x="1271.22" y="-416.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl -->
+<g id="node26" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl</title>
+<ellipse fill="none" stroke="black" cx="1596.2" cy="-250.26" rx="226.96" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-246.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge13" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1766.41,-261.04C1842.01,-266.44 1932.15,-273.66 2013.18,-282.26 2043.8,-285.51 2078.04,-290.14 2105,-294.02"/>
+<polygon fill="black" stroke="black" points="2104.56,-297.49 2114.96,-295.46 2105.56,-290.56 2104.56,-297.49"/>
+<text text-anchor="middle" x="1927.18" y="-286.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
+<g id="edge43" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
+<path fill="none" stroke="black" d="M1730.85,-237.15C1812.97,-232.17 1919.94,-231.21 2013.18,-248.26 2050.58,-255.1 2090.96,-271.43 2118.7,-284.17"/>
+<polygon fill="black" stroke="black" points="2117.42,-287.43 2127.96,-288.5 2120.39,-281.09 2117.42,-287.43"/>
+<text text-anchor="middle" x="1927.18" y="-252.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6 -->
+<g id="node27" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl6</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-1005.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-1001.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl6</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
 <g id="edge14" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl3Star&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3Star</title>
-<path fill="none" stroke="black" d="M1093.91,-226.46C1126.25,-224.71 1159.75,-223.19 1191.22,-222.26 1262.3,-220.18 1280.15,-219.94 1351.22,-222.26 1408.16,-224.13 1472.45,-228.44 1520.74,-232.11"/>
-<polygon fill="black" stroke="black" points="1520.55,-235.61 1530.79,-232.88 1521.09,-228.63 1520.55,-235.61"/>
-<text text-anchor="middle" x="1271.22" y="-226.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
+<path fill="none" stroke="black" d="M1148.95,-1006.17C1214.33,-1005.74 1285.6,-1004.64 1351.22,-1002.26 1416.57,-999.9 1491.61,-994.58 1541.02,-990.73"/>
+<polygon fill="black" stroke="black" points="1541.47,-994.2 1551.17,-989.93 1540.92,-987.23 1541.47,-994.2"/>
+<text text-anchor="middle" x="1271.22" y="-1009.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6 -->
+<g id="edge44" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl6&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL6</title>
+<path fill="none" stroke="black" d="M1054.89,-992.11C1098.4,-988.49 1146.8,-985.06 1191.22,-983.26 1262.27,-980.4 1280.11,-982.83 1351.22,-983.26 1416.08,-983.66 1490.63,-984.66 1540.08,-985.39"/>
+<polygon fill="black" stroke="black" points="1540.19,-988.89 1550.24,-985.55 1540.29,-981.9 1540.19,-988.89"/>
+<text text-anchor="middle" x="1271.22" y="-987.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2 -->
+<g id="node28" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl2</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-859.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-855.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl2</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2 -->
+<g id="edge15" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2</title>
+<path fill="none" stroke="black" d="M1143.67,-855.61C1284.2,-853.32 1454.29,-850.56 1540.05,-849.16"/>
+<polygon fill="black" stroke="black" points="1540.15,-852.66 1550.09,-849 1540.03,-845.66 1540.15,-852.66"/>
+<text text-anchor="middle" x="1271.22" y="-858.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2 -->
+<g id="edge39" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL2</title>
+<path fill="none" stroke="black" d="M1038.39,-845.38C1085.89,-840.5 1141.06,-835.65 1191.22,-833.26 1262.25,-829.88 1280.14,-831.08 1351.22,-833.26 1416.56,-835.27 1491.61,-840.29 1541.02,-843.98"/>
+<polygon fill="black" stroke="black" points="1540.93,-847.48 1551.16,-844.74 1541.46,-840.5 1540.93,-847.48"/>
+<text text-anchor="middle" x="1271.22" y="-837.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5 -->
+<g id="node29" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl5</title>
+<ellipse fill="none" stroke="black" cx="233.35" cy="-272.26" rx="233.19" ry="16.03"/>
+<text text-anchor="middle" x="233.35" y="-268.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl5</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
+<g id="edge18" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
+<path fill="none" stroke="black" d="M466.88,-272.26C611.01,-272.26 784.04,-272.26 867.35,-272.26"/>
+<polygon fill="black" stroke="black" points="867.53,-275.76 877.53,-272.26 867.53,-268.76 867.53,-275.76"/>
+<text text-anchor="middle" x="564.69" y="-276.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
+<g id="edge42" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
+<path fill="none" stroke="black" d="M377.88,-259.49C412.8,-256.91 450.06,-254.58 484.69,-253.26 555.75,-250.57 573.62,-250.79 644.69,-253.26 722.99,-255.99 813.72,-263.12 868.16,-267.83"/>
+<polygon fill="black" stroke="black" points="867.96,-271.32 878.23,-268.71 868.57,-264.35 867.96,-271.32"/>
+<text text-anchor="middle" x="564.69" y="-257.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3 -->
+<g id="node30" class="node">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl3</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-922.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-918.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl3</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
+<g id="edge22" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
+<path fill="none" stroke="black" d="M1135.3,-927.83C1204.32,-928.65 1280.99,-928.56 1351.22,-926.26 1416.58,-924.12 1491.62,-918.77 1541.03,-914.84"/>
+<polygon fill="black" stroke="black" points="1541.48,-918.31 1551.17,-914.02 1540.92,-911.33 1541.48,-918.31"/>
+<text text-anchor="middle" x="1271.22" y="-932.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
+<g id="edge47" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
+<path fill="none" stroke="black" d="M1090.28,-911.38C1123.74,-909.67 1158.57,-908.16 1191.22,-907.26 1262.31,-905.31 1280.11,-906.83 1351.22,-907.26 1416.08,-907.66 1490.63,-908.66 1540.08,-909.39"/>
+<polygon fill="black" stroke="black" points="1540.19,-912.89 1550.24,-909.55 1540.29,-905.9 1540.19,-912.89"/>
+<text text-anchor="middle" x="1271.22" y="-911.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Otrl5 -->
-<g id="node26" class="node">
+<g id="node31" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#Otrl5</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-808.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-804.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl5</text>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-701.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-697.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl5</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Otrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL5 -->
-<g id="edge6" class="edge">
+<g id="edge26" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#Otrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL5</title>
-<path fill="none" stroke="black" d="M1135.3,-813.83C1204.32,-814.65 1280.99,-814.56 1351.22,-812.26 1416.58,-810.12 1491.62,-804.77 1541.03,-800.84"/>
-<polygon fill="black" stroke="black" points="1541.48,-804.31 1551.17,-800.02 1540.92,-797.33 1541.48,-804.31"/>
-<text text-anchor="middle" x="1271.22" y="-819.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<path fill="none" stroke="black" d="M1148.62,-699.9C1214.08,-699.45 1285.46,-698.9 1351.22,-698.26 1416.08,-697.64 1490.63,-696.69 1540.08,-696.03"/>
+<polygon fill="black" stroke="black" points="1540.28,-699.52 1550.24,-695.89 1540.19,-692.52 1540.28,-699.52"/>
+<text text-anchor="middle" x="1271.22" y="-703.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Otrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL5 -->
-<g id="edge19" class="edge">
+<g id="edge49" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#Otrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL5</title>
-<path fill="none" stroke="black" d="M1090.28,-797.38C1123.74,-795.67 1158.57,-794.16 1191.22,-793.26 1262.31,-791.31 1280.11,-792.83 1351.22,-793.26 1416.08,-793.66 1490.63,-794.66 1540.08,-795.39"/>
-<polygon fill="black" stroke="black" points="1540.19,-798.89 1550.24,-795.55 1540.29,-791.9 1540.19,-798.89"/>
-<text text-anchor="middle" x="1271.22" y="-797.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl -->
-<g id="node27" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl</title>
-<ellipse fill="none" stroke="black" cx="1596.2" cy="-632.26" rx="224.72" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-628.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge8" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1799.56,-639.26C1813.64,-639.64 1827.63,-639.98 1841.18,-640.26 1934.11,-642.23 2042.64,-642.91 2104.11,-643.14"/>
-<polygon fill="black" stroke="black" points="2104.29,-646.64 2114.3,-643.18 2104.31,-639.64 2104.29,-646.64"/>
-<text text-anchor="middle" x="1927.18" y="-647.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
-<g id="edge45" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
-<path fill="none" stroke="black" d="M1751.98,-620.51C1830.35,-616.5 1926.93,-614.53 2013.18,-621.26 2045.17,-623.76 2080.88,-629.42 2108.24,-634.37"/>
-<polygon fill="black" stroke="black" points="2107.82,-637.85 2118.29,-636.23 2109.1,-630.97 2107.82,-637.85"/>
-<text text-anchor="middle" x="1927.18" y="-625.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4 -->
-<g id="node28" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl4</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-745.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-741.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl4</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
-<g id="edge10" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
-<path fill="none" stroke="black" d="M1143.67,-741.61C1284.2,-739.32 1454.29,-736.56 1540.05,-735.16"/>
-<polygon fill="black" stroke="black" points="1540.15,-738.66 1550.09,-735 1540.03,-731.66 1540.15,-738.66"/>
-<text text-anchor="middle" x="1271.22" y="-745.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
-<g id="edge50" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
-<path fill="none" stroke="black" d="M1042.47,-731.51C1089.03,-726.96 1142.5,-722.5 1191.22,-720.26 1262.26,-717.01 1280.14,-718.23 1351.22,-720.26 1416.55,-722.14 1491.6,-726.82 1541.02,-730.26"/>
-<polygon fill="black" stroke="black" points="1540.94,-733.76 1551.16,-730.97 1541.43,-726.78 1540.94,-733.76"/>
-<text text-anchor="middle" x="1271.22" y="-724.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3 -->
-<g id="node29" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl3</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-99.26" rx="233.19" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-95.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl3</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
-<g id="edge15" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
-<path fill="none" stroke="black" d="M1141.79,-94.65C1281.58,-91.76 1451.23,-88.24 1538.01,-86.45"/>
-<polygon fill="black" stroke="black" points="1538.25,-89.94 1548.18,-86.24 1538.11,-82.94 1538.25,-89.94"/>
-<text text-anchor="middle" x="1271.22" y="-98.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3 -->
-<g id="edge43" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL3</title>
-<path fill="none" stroke="black" d="M1035.36,-85.17C1083.52,-80 1139.98,-74.8 1191.22,-72.26 1262.25,-68.75 1280.14,-70.37 1351.22,-72.26 1415.55,-73.98 1489.32,-78.22 1538.75,-81.4"/>
-<polygon fill="black" stroke="black" points="1538.71,-84.91 1548.91,-82.06 1539.16,-77.92 1538.71,-84.91"/>
-<text text-anchor="middle" x="1271.22" y="-76.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<path fill="none" stroke="black" d="M1054.89,-688.11C1098.4,-684.49 1146.8,-681.06 1191.22,-679.26 1262.27,-676.4 1280.15,-676.94 1351.22,-679.26 1416.58,-681.4 1491.62,-686.76 1541.03,-690.69"/>
+<polygon fill="black" stroke="black" points="1540.92,-694.19 1551.17,-691.5 1541.48,-687.22 1540.92,-694.19"/>
+<text text-anchor="middle" x="1271.22" y="-683.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Odrl1 -->
-<g id="node30" class="node">
+<g id="node32" class="node">
 <title>http://purl.org/oseg/ontologies/OTRL#Odrl1</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-320.26" rx="233.19" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-316.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl1</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1 -->
-<g id="edge17" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1</title>
-<path fill="none" stroke="black" d="M1151.2,-321.15C1215.96,-320.72 1286.35,-319.61 1351.22,-317.26 1415.78,-314.92 1489.8,-309.71 1539.22,-305.87"/>
-<polygon fill="black" stroke="black" points="1539.68,-309.34 1549.38,-305.07 1539.13,-302.37 1539.68,-309.34"/>
-<text text-anchor="middle" x="1271.22" y="-325.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-130.26" rx="233.19" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-126.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl1</text>
 </g>
 <!-- http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1 -->
 <g id="edge27" class="edge">
 <title>http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1</title>
-<path fill="none" stroke="black" d="M1055.24,-307.08C1098.66,-303.47 1146.92,-300.05 1191.22,-298.26 1262.27,-295.4 1280.11,-297.83 1351.22,-298.26 1415.09,-298.66 1488.36,-299.63 1537.8,-300.36"/>
-<polygon fill="black" stroke="black" points="1537.92,-303.86 1547.98,-300.51 1538.03,-296.86 1537.92,-303.86"/>
-<text text-anchor="middle" x="1271.22" y="-302.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<path fill="none" stroke="black" d="M1136.18,-136.05C1276.98,-139.79 1450,-144.4 1537.96,-146.74"/>
+<polygon fill="black" stroke="black" points="1537.92,-150.24 1548,-147.01 1538.1,-143.24 1537.92,-150.24"/>
+<text text-anchor="middle" x="1271.22" y="-146.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl -->
-<g id="node31" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl</title>
-<ellipse fill="none" stroke="black" cx="1596.2" cy="-136.26" rx="226.96" ry="16.03"/>
-<text text-anchor="middle" x="1596.2" y="-132.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1 -->
+<g id="edge51" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Odrl1&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL1</title>
+<path fill="none" stroke="black" d="M1089.99,-119.26C1169.48,-115.85 1265.23,-114.17 1351.22,-119.26 1417.21,-123.17 1492.72,-132.98 1542.04,-140.11"/>
+<polygon fill="black" stroke="black" points="1541.75,-143.6 1552.15,-141.58 1542.76,-136.67 1541.75,-143.6"/>
+<text text-anchor="middle" x="1271.22" y="-123.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge23" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1766.41,-147.04C1842.01,-152.44 1932.15,-159.66 2013.18,-168.26 2043.8,-171.51 2078.04,-176.14 2105,-180.02"/>
-<polygon fill="black" stroke="black" points="2104.56,-183.49 2114.96,-181.46 2105.56,-176.56 2104.56,-183.49"/>
-<text text-anchor="middle" x="1927.18" y="-172.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL -->
-<g id="edge48" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL</title>
-<path fill="none" stroke="black" d="M1730.85,-123.15C1812.97,-118.17 1919.94,-117.21 2013.18,-134.26 2050.58,-141.1 2090.96,-157.43 2118.7,-170.17"/>
-<polygon fill="black" stroke="black" points="2117.42,-173.43 2127.96,-174.5 2120.39,-167.09 2117.42,-173.43"/>
-<text text-anchor="middle" x="1927.18" y="-138.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5 -->
-<g id="node32" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl5</title>
-<ellipse fill="none" stroke="black" cx="233.35" cy="-175.26" rx="233.19" ry="16.03"/>
-<text text-anchor="middle" x="233.35" y="-171.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl5</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
-<g id="edge24" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
-<path fill="none" stroke="black" d="M466.88,-175.26C611.01,-175.26 784.04,-175.26 867.35,-175.26"/>
-<polygon fill="black" stroke="black" points="867.53,-178.76 877.53,-175.26 867.53,-171.76 867.53,-178.76"/>
-<text text-anchor="middle" x="564.69" y="-179.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4 -->
-<g id="edge34" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl5&#45;&gt;http://purl.org/oseg/ontologies/OTRL#Odrl4</title>
-<path fill="none" stroke="black" d="M377.88,-162.49C412.8,-159.91 450.06,-157.58 484.69,-156.26 555.75,-153.57 573.62,-153.79 644.69,-156.26 722.99,-158.99 813.72,-166.12 868.16,-170.83"/>
-<polygon fill="black" stroke="black" points="867.96,-174.32 878.23,-171.71 868.57,-167.35 867.96,-174.32"/>
-<text text-anchor="middle" x="564.69" y="-160.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
-</g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3 -->
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl -->
 <g id="node33" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl3</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-587.26" rx="231.45" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-583.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl3</text>
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl</title>
+<ellipse fill="none" stroke="black" cx="1596.2" cy="-746.26" rx="224.72" ry="16.03"/>
+<text text-anchor="middle" x="1596.2" y="-742.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
 <g id="edge28" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
-<path fill="none" stroke="black" d="M1148.62,-585.9C1214.08,-585.45 1285.46,-584.9 1351.22,-584.26 1416.08,-583.64 1490.63,-582.69 1540.08,-582.03"/>
-<polygon fill="black" stroke="black" points="1540.28,-585.52 1550.24,-581.89 1540.19,-578.52 1540.28,-585.52"/>
-<text text-anchor="middle" x="1271.22" y="-590.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1799.56,-753.26C1813.64,-753.64 1827.63,-753.98 1841.18,-754.26 1934.11,-756.23 2042.64,-756.91 2104.11,-757.14"/>
+<polygon fill="black" stroke="black" points="2104.29,-760.64 2114.3,-757.18 2104.31,-753.64 2104.29,-760.64"/>
+<text text-anchor="middle" x="1927.18" y="-760.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3 -->
-<g id="edge40" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Otrl3&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL3</title>
-<path fill="none" stroke="black" d="M1054.89,-574.11C1098.4,-570.49 1146.8,-567.06 1191.22,-565.26 1262.27,-562.4 1280.15,-562.94 1351.22,-565.26 1416.58,-567.4 1491.62,-572.76 1541.03,-576.69"/>
-<polygon fill="black" stroke="black" points="1540.92,-580.19 1551.17,-577.5 1541.48,-573.22 1540.92,-580.19"/>
-<text text-anchor="middle" x="1271.22" y="-569.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL -->
+<g id="edge48" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL</title>
+<path fill="none" stroke="black" d="M1751.98,-734.51C1830.35,-730.5 1926.93,-728.53 2013.18,-735.26 2045.17,-737.76 2080.88,-743.42 2108.24,-748.37"/>
+<polygon fill="black" stroke="black" points="2107.82,-751.85 2118.29,-750.23 2109.1,-744.97 2107.82,-751.85"/>
+<text text-anchor="middle" x="1927.18" y="-739.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2 -->
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4 -->
 <g id="node34" class="node">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl2</title>
-<ellipse fill="none" stroke="black" cx="917.96" cy="-16.26" rx="233.19" ry="16.03"/>
-<text text-anchor="middle" x="917.96" y="-12.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Odrl2</text>
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl4</title>
+<ellipse fill="none" stroke="black" cx="917.96" cy="-625.26" rx="231.45" ry="16.03"/>
+<text text-anchor="middle" x="917.96" y="-621.56" font-family="Times,serif" font-size="14.00">http://purl.org/oseg/ontologies/OTRL#Otrl4</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
-<g id="edge33" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
-<path fill="none" stroke="black" d="M1136.18,-22.05C1276.98,-25.79 1450,-30.4 1537.96,-32.74"/>
-<polygon fill="black" stroke="black" points="1537.92,-36.24 1548,-33.01 1538.1,-29.24 1537.92,-36.24"/>
-<text text-anchor="middle" x="1271.22" y="-32.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
+<g id="edge30" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
+<path fill="none" stroke="black" d="M1132.92,-631.28C1275.48,-635.28 1452.23,-640.25 1540.16,-642.72"/>
+<polygon fill="black" stroke="black" points="1540.08,-646.22 1550.18,-643 1540.28,-639.22 1540.08,-646.22"/>
+<text text-anchor="middle" x="1271.22" y="-640.06" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
 </g>
-<!-- http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2 -->
-<g id="edge47" class="edge">
-<title>http://purl.org/oseg/ontologies/OTRL#Odrl2&#45;&gt;http://purl.org/oseg/ontologies/OTRL#ODRL2</title>
-<path fill="none" stroke="black" d="M1089.99,-5.26C1169.48,-1.85 1265.23,-0.17 1351.22,-5.26 1417.21,-9.17 1492.72,-18.98 1542.04,-26.11"/>
-<polygon fill="black" stroke="black" points="1541.75,-29.6 1552.15,-27.58 1542.76,-22.67 1541.75,-29.6"/>
-<text text-anchor="middle" x="1271.22" y="-9.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
+<!-- http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4 -->
+<g id="edge40" class="edge">
+<title>http://purl.org/oseg/ontologies/OTRL#Otrl4&#45;&gt;http://purl.org/oseg/ontologies/OTRL#OTRL4</title>
+<path fill="none" stroke="black" d="M1087.67,-614.2C1167.61,-610.7 1264.4,-608.95 1351.22,-614.26 1418.03,-618.36 1494.56,-628.69 1543.82,-636.09"/>
+<polygon fill="black" stroke="black" points="1543.49,-639.58 1553.9,-637.62 1544.54,-632.66 1543.49,-639.58"/>
+<text text-anchor="middle" x="1271.22" y="-618.06" font-family="Times,serif" font-size="14.00">schema:supersededBy</text>
 </g>
 </g>
 </svg>
