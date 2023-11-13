@@ -36,7 +36,7 @@
   okh:hasOuterDimensions :OuterDimensionsLOSHdummyMOSHA ;
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
-  okh:usesModule <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-B/1.0.0#> ;
+  okh:hasComponent <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-B/1.0.0#> ;
   okh:hasSoftware :Zettlr ;
   okh:compliesWith :DIN5008 ;
   okh:hasPublication :PubStethoscope ;

@@ -466,16 +466,9 @@ okh:hasBoM
 okh:hasComponent
   a owl:ObjectProperty ;
   rdfs:label "has Component" ;
-  rdfs:comment "links to parts of the module" ;
-  schema:rangeIncludes okh:Part ;
-  schema:domainIncludes okh:Module ;
-  .
-
-okh:usesModule
-  a owl:ObjectProperty ;
-  rdfs:label "uses Module" ;
-  rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
+  rdfs:comment "Links to sub-components of the Module. In the case of that sub-component being an external Module, it has to refer to a snapshot of the RDF object representing that OKH Module. Each sub-component should also appear in the BoM." ;
   schema:rangeIncludes
+    okh:Part,
     okh:Module,
     okh:WebsiteUrl ;
   schema:domainIncludes okh:Module ;
