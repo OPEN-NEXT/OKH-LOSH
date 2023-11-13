@@ -73,7 +73,7 @@ using
 
 Detail 1
 
-# Dataflow
+# Dataflow & Collection
 ---
 
 ++aim:++ effortless & stable data collection
