@@ -6,6 +6,9 @@
 [![License](
     https://img.shields.io/github/license/OPEN-NEXT/OKH-LOSH.svg?style=flat)](
     LICENSE)
+[![REUSE status](
+    https://api.reuse.software/badge/github.com/OPEN-NEXT/OKH-LOSH)](
+    https://api.reuse.software/info/github.com/OPEN-NEXT/OKH-LOSH)
 
 LOSH: **_A Library of Open Source Hardware -
 technical documentation in an open graph database._**
