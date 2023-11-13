@@ -1,5 +1,12 @@
 # OKH-LOSH
 
+<!--
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2021 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 [![DOI](
     https://zenodo.org/badge/259683880.svg)](
     https://zenodo.org/badge/latestdoi/259683880)
