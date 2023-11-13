@@ -199,6 +199,8 @@ okh:ComponentReference
     POSH → URL to containing folder
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-08-19"^^xsd:date ;
   .
 
 okh:okhv
