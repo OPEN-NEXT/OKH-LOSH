@@ -14,8 +14,8 @@
 :OHLOOM
   a okh:Module ;
   rdfs:label "OHLOOM" ;
-  okh:versionOf <https://gitlab.com/OSEGermany/ohloom> ;
-  okh:repo <https://gitlab.com/OSEGermany/ohloom/> ;
+  okh:versionOf <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/sample_data/okh-sample-OHLOOM.ttl> ;
+  okh:repo <https://gitlab.com/OSEGermany/ohloom> ;
   okh:dataSource "GitHub";
   okh:repoHost "GitLab";
   okh:version "0.10.0" ;

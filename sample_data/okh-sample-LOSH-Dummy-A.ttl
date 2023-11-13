@@ -14,10 +14,10 @@
 :LOSHdummyMOSHA
   a okh:Module ;
   rdfs:label "LOSH Dummy MOSH-A" ;
-  okh:versionOf <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/> ;
-  okh:repo <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/tree/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/> ;
+  okh:versionOf <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A#LOSHdummyMOSHA> ;
+  okh:repo <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A> ;
   okh:version "1.0.2" ;
-  okh:release <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/releases/tag/v1.0.1> ;
+  okh:release <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/releases/tag/1.0.1> ;
   okh:spdxLicense "CERN-OHL-S-2.0" ;
   okh:licensor "Martin Häuer" ;
   okh:organization "Fraunhofer IPK" ;
@@ -36,7 +36,7 @@
   okh:hasOuterDimensions :OuterDimensionsLOSHdummyMOSHA ;
   okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
   okh:hasComponent :ClampRing ;
-  okh:hasComponent <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-B/1.0.0#> ;
+  okh:hasComponent <https://github.com/OPEN-NEXT/1.0.0/LOSH-dummy-MOSH-B#LOSHdummyMOSHA> ;
   okh:hasSoftware :Zettlr ;
   okh:compliesWith :DIN5008 ;
   okh:hasPublication :PubStethoscope ;
@@ -51,7 +51,7 @@
 
 :PubStethoscope
   a okh:Publication ;
-  okh:doi "https://doi.org/10.1371/journal.pone.0193087";
+  okh:doi <https://doi.org/10.1371/journal.pone.0193087>;
   .
 
 :DIN5008
