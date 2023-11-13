@@ -10,6 +10,10 @@
     https://api.reuse.software/badge/github.com/OPEN-NEXT/OKH-LOSH)](
     https://api.reuse.software/info/github.com/OPEN-NEXT/OKH-LOSH)
 
+[![In cooperation with Open Source Ecology Germany](
+    https://custom-icon-badges.demolab.com/badge/-OSEG-555555.svg?logo=oseg_logo)](
+    https://opensourceecology.de)
+
 LOSH: **_A Library of Open Source Hardware -
 technical documentation in an open graph database._**
 
