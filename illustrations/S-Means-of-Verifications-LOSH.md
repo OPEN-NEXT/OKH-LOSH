@@ -119,7 +119,7 @@ Detail 4
 
 --
 
-- Used: [T3.1 User Stories](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/user-stories-t3-1.csv), [OKHv1 field usage](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/okhv1_data-field-usage), [input from GOSH workshop](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/Wikibase_Qs.md)
+- Used: [T3.1 User Stories](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/user-stories-t3-1.csv), [OKHv1 field usage](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/okhv1_data-field-usage.csv), [input from GOSH workshop](https://github.com/OPEN-NEXT/LOSH/blob/master/requirements_sources/Wikibase_Qs.md)
 - Coming: Production Metadata relevant to Makers (Workshop)
 - Validation in workshops
 
