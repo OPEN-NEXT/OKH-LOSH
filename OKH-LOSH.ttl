@@ -405,6 +405,7 @@ okh:cpcPatentClass
   rdfs:comment "International Patent Classification (IPC)" ;
   rdfs:subPropertyOf epo:classificationIPCInventive;
   schema:domainIncludes okh:Module ;
+  schema:rangeIncludes xsd:string ;
   .
 
 okh:compliesWith
