@@ -1,4 +1,4 @@
-@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl> .
+@base             <https://w3id.org/oseg/ont/osh/okh> .
 @prefix okh:      <#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
@@ -11,8 +11,8 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl#> .
-@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
+@prefix otrl:     <https://w3id.org/oseg/ont/osh/otrl#> .
+@prefix tsdc:     <https://w3id.org/oseg/ont/osh/tsdc/core#> .
 
 # SPDX-FileCopyrightText: 2020-2021 Martin Häuer <martin.haeuer@ose-germany.de>
 # SPDX-FileCopyrightText: 2020-2022 Robin Vobruba <hoijui.quaero@gmail.com>
@@ -199,6 +199,8 @@ okh:ComponentReference
     POSH → URL to containing folder
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
+  owl:deprecated "true"^^xsd:boolean ;
+  cc:deprecatedOn "2023-08-19"^^xsd:date ;
   .
 
 okh:okhv
@@ -254,9 +256,9 @@ okh:repo
 
 okh:repoSnapshot
   a owl:ObjectProperty ;
-  rdfs:label "URL respository snapshot (=specific version)" ;
-  rdfs:comment "LOSH-Krawler takes the commit hash from the version tag and creates this permalink" ;
-  rdfs:subPropertyOf okh:repository ;
+  rdfs:label "respository snapshot" ;
+  rdfs:comment "Repoistory snapshot (=specific version) URL" ;
+  rdfs:subPropertyOf okh:repo ;
   schema:rangeIncludes okh:WebsiteUrl ;
   owl:cardinality 1 ;
   schema:domainIncludes okh:Module ;
@@ -272,14 +274,14 @@ okh:version
   .
 
 okh:forkOf
- a owl:ObjectProperty ;
- rdfs:label "fork of" ;
- rdfs:subPropertyOf schema:isBasedOn ;
- owl:cardinality 1 ;
- schema:domainIncludes
-   okh:Module,
-   okh:Part ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "fork of" ;
+  rdfs:subPropertyOf schema:isBasedOn ;
+  owl:cardinality 1 ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
+  .
 
 okh:versionOf
   a owl:ObjectProperty ;
@@ -290,18 +292,18 @@ okh:versionOf
   .
 
 okh:documentationLanguage
- a owl:DatatypeProperty ;
- rdfs:label "documentation language" ;
- rdfs:comment '''
-  IETF language tag
-  following the BCP 47 standard e.g. en-GB
-  denotes the language of the documentation for the component subject '''@en;
- rdfs:subPropertyOf schema:inLanguage ;
- owl:cardinality 1 ;
- schema:domainIncludes
-   okh:Module,
-   okh:Part ;
- .
+  a owl:DatatypeProperty ;
+  rdfs:label "documentation language" ;
+  rdfs:comment '''
+   IETF language tag
+   following the BCP 47 standard e.g. en-GB
+   denotes the language of the documentation for the component subject '''@en;
+  rdfs:subPropertyOf schema:inLanguage ;
+  owl:cardinality 1 ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
+  .
 
 ## ----- legal -----
 
@@ -326,13 +328,13 @@ okh:organization
   .
 
 okh:spdxLicense
- a owl:ObjectProperty ;
- rdfs:label "SPDX license identifier" ;
- rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- schema:domainIncludes okh:Module ;
- schema:rangeIncludes spdxt:ListedLicense ; # aka SPDX license identifier for a single, atomar license
- owl:cardinality 1 ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "SPDX license identifier" ;
+  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
+  schema:domainIncludes okh:Module ;
+  schema:rangeIncludes spdxt:ListedLicense ; # aka SPDX license identifier for a single, atomar license
+  owl:cardinality 1 ;
+  .
 
 okh:alternativeLicense
   a owl:ObjectProperty ;
@@ -405,6 +407,7 @@ okh:cpcPatentClass
   rdfs:comment "International Patent Classification (IPC)" ;
   rdfs:subPropertyOf epo:classificationIPCInventive;
   schema:domainIncludes okh:Module ;
+  schema:rangeIncludes xsd:string ;
   .
 
 okh:compliesWith
@@ -463,16 +466,9 @@ okh:hasBoM
 okh:hasComponent
   a owl:ObjectProperty ;
   rdfs:label "has Component" ;
-  rdfs:comment "links to parts of the module" ;
-  schema:rangeIncludes okh:Part ;
-  schema:domainIncludes okh:Module ;
-  .
-
-okh:usesModule
-  a owl:ObjectProperty ;
-  rdfs:label "uses Module" ;
-  rdfs:comment "refers to a *release*/snapshot of an (external) OSH Module used in this design (should also appear in the BoM)" ;
+  rdfs:comment "Links to sub-components of the Module. In the case of that sub-component being an external Module, it has to refer to a snapshot of the RDF object representing that OKH Module. Each sub-component should also appear in the BoM." ;
   schema:rangeIncludes
+    okh:Part,
     okh:Module,
     okh:WebsiteUrl ;
   schema:domainIncludes okh:Module ;
@@ -497,7 +493,7 @@ okh:functionalMetadata
   .
 
 okh:productionMetadata
-  a owl:Property ;
+  a rdf:Property ;
   rdfs:label "production metadata" ;
   rdfs:comment "production-relevant metadata, such as material, manufacturing technology, outer dimensions, smallest tolerance, finest surface roughness" ;
   rdfs:subPropertyOf schema:value ;

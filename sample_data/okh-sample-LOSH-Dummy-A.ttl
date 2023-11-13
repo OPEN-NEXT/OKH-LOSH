@@ -1,0 +1,155 @@
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/sample_data/okh-sample-LOSH-Dummy-A.ttl> .
+@prefix :         <#> .
+@prefix okh:      <https://w3id.org/oseg/ont/osh/okh#> .
+@prefix obo:      <http://purl.obolibrary.org/obo/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
+@prefix otrl:     <https://w3id.org/oseg/ont/osh/otrl#> .
+@prefix tsdc:     <https://w3id.org/oseg/ont/osh/tsdc/core#> .
+
+:LOSHdummyMOSHA
+  a okh:Module ;
+  rdfs:label "LOSH Dummy MOSH-A" ;
+  okh:versionOf <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A#LOSHdummyMOSHA> ;
+  okh:repo <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A> ;
+  okh:version "1.0.2" ;
+  okh:release <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/releases/tag/1.0.1> ;
+  okh:spdxLicense "CERN-OHL-S-2.0" ;
+  okh:licensor "Martin Häuer" ;
+  okh:organization "Fraunhofer IPK" ;
+  okh:timestamp "Jan 27, 2021 6:06pm GMT+0100" ;
+  okh:hasReadme :Readme ;
+  okh:hasImage :LOSHdummyMOSHA_image ;
+  okh:documentationLanguage "en-GB" ;
+  okh:technologyReadinessLevel otrl:OTRL5 ;
+  okh:documentationReadinessLevel otrl:ODRL4 ;
+  okh:function "Doesn't do much, yet." ;
+  okh:cpcPatentClass "D03D 35/00" ;
+  okh:relatedTsDC tsdc:MEC ;
+  okh:hasBoM :BoM ;
+  okh:hasManifestFile :ManifestFile ;
+  :rpm 666 ;
+  okh:hasOuterDimensions :OuterDimensionsLOSHdummyMOSHA ;
+  okh:hasManufacturingInstructions :LOSHdummyMOSHA_manufacturingInstructions ;
+  okh:hasComponent :ClampRing ;
+  okh:hasComponent <https://github.com/OPEN-NEXT/1.0.0/LOSH-dummy-MOSH-B#LOSHdummyMOSHA> ;
+  okh:hasSoftware :Zettlr ;
+  okh:compliesWith :DIN5008 ;
+  okh:hasPublication :PubStethoscope ;
+  .
+
+:OuterDimensionsLOSHdummyMOSHA
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of LOSH Dummy MOSH-A" ; # use rdfs:label of :LOSHdummyMOSHA
+  okh:openSCAD "cube(size = [300,300,300]" ;
+  okh:unit "mm"
+  .
+
+:PubStethoscope
+  a okh:Publication ;
+  okh:doi <https://doi.org/10.1371/journal.pone.0193087>;
+  .
+
+:DIN5008
+  a okh:Standard ;
+  rdfs:label "DIN 5008:2020-03" ;
+  okh:standardID "DIN 5008:2020-03" ;
+  .
+
+:ManifestFile
+  a okh:ManifestFile ;
+  rdfs:label "Manifest File of LOSHdummyMOSHA v1.0.1" ;
+  okh:okhv "OKH-LOSHv1.0" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/okh.toml> ;
+  okh:fileFormat "TOML" ;
+  .
+
+:OHLOOM_image
+  a okh:Image ;
+  rdfs:label "Image of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/ASM-image.png> ;
+  okh:fileFormat "JPG" ;
+  .
+
+:Readme
+  a okh:Readme ;
+  rdfs:label "Readme of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/README.md> ;
+  okh:fileFormat "MD" ;
+  .
+
+:OHLOOM_manufacturingInstructions
+  a okh:ManufacturingInstructions ;
+  rdfs:label "Manufacturing Instructions of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/AssemblyGuide.md> ;
+  okh:fileFormat "MD" ;
+  .
+
+:BoM
+  a okh:BoM ;
+  rdfs:label "Bill of Materials of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/sBoM.csv> ;
+  okh:fileFormat "CSV" ;
+  .
+
+:ClampRing
+  a okh:Part ;
+  rdfs:label "Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
+  okh:spdxLicense "CERN-OHL-S-2.0" ;
+  okh:licensor "Martin Häuer" ;
+  okh:image :ClampRing_image ;
+  okh:documentationLanguage "en-GB" ;
+  okh:relatedTsDC tsdc:3DP ;
+  okh:hasManifestFile :ManifestFile ;
+  okh:source :ClampRing_source ;
+  okh:export :ClampRing_export1 , :ClampRing_export2 ;
+  okh:manufacturingProcess "3D printed" ;
+  okh:material "PLA" ;
+  okh:hasOuterDimensions :OuterDimensionsClampRing
+  .
+
+:OuterDimensionsClampRing
+  a okh:OuterDimensions ;
+  rdfs:label "outer dimensions of Clamp Ring" ;
+  okh:openSCAD "cylinder(h=30, r=28)" ;
+  okh:unit "mm"
+  .
+
+:ClampRing_image
+  a okh:Image ;
+  rdfs:label "Image of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/Documentation/part-pictures/Parts_Print_2.jpg> ;
+  okh:fileFormat "JPG" ;
+  .
+
+:ClampRing_source
+  a okh:SourceFile ;
+  rdfs:label "Source File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.scad> ;
+  okh:fileFormat "SCAD" ;
+  .
+
+:ClampRing_export1
+  a okh:ExportFile ;
+  rdfs:label "Export File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.stl> ;
+  okh:fileFormat "STL" ;
+  .
+
+:ClampRing_export2
+  a okh:ExportFile ;
+  rdfs:label "Export File of Clamp Ring of LOSHdummyMOSHA v1.0.1" ;
+  okh:fileUrl <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/blob/ae7f9c3cb4dade6f70e2a513bb5b4739ed1a9a5c/3DParts/ClampRing/ClampRing.pdf> ;
+  okh:fileFormat "PDF" ;
+  .
+
+:Zettlr
+  a okh:Software ;
+  rdfs:label "Zettlr" ;
+  okh:release <https://github.com/Zettlr/Zettlr/releases/tag/v1.8.7> ;
+  okh:installationGuide <https://github.com/Zettlr/Zettlr/blob/0e80c56063884f769349cb21f0712b12e97f9d4b/README.md> ;
+  .

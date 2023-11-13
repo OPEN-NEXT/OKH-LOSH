@@ -1,0 +1,108 @@
+# [1. ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Documentation Readiness Level for open source hardware"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Open Documentation Readiness Level"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [1.1. ODRL1](https://w3id.org/oseg/ont/osh/otrl#ODRL1)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "(OSHWA-compliant) free/open license applied on published material"
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Published information under free open source licence"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Documentation process commenced"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-1"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [1.2. ODRL2](https://w3id.org/oseg/ont/osh/otrl#ODRL2)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "ToDo."
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Provision of documentation files and in editable formats enabling collaboration development"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Collaborative documentation in progress"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-2"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [1.3. ODRL3](https://w3id.org/oseg/ont/osh/otrl#ODRL3)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "stable release"
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Complete documentation as per DIN SPEC 3105-1"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Full documentation published"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-3"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [1.4. ODRL3Star](https://w3id.org/oseg/ont/osh/otrl#ODRL3Star)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Public evidence of documentation maturity"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Full documentation published & audited"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-3*"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [1.5. ODRL4](https://w3id.org/oseg/ont/osh/otrl#ODRL4)
+
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Product qualification documents published enabling decentralised commercial distribution"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Full documentation for product qualification"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "ODRL-4"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ODRL](https://w3id.org/oseg/ont/osh/otrl#ODRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+# [2. OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Technology Readiness Level for open source hardware"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Open Technology Readiness Level"
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.1. OTRL1](https://w3id.org/oseg/ont/osh/otrl#OTRL1)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "ToDo."
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Product idea; needs are identified and initial specifications are defined."
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Ideation"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-1"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.2. OTRL2](https://w3id.org/oseg/ont/osh/otrl#OTRL2)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "ToDo."
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Mature product concept has been formulated"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Conception"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-2"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.3. OTRL3](https://w3id.org/oseg/ont/osh/otrl#OTRL3)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "ToDo."
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Product model is developed"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Development"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-3"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.4. OTRL4](https://w3id.org/oseg/ont/osh/otrl#OTRL4)
+
+* [**exitCriteria**](https://w3id.org/oseg/ont/osh/otrl#exitCriteria) "ToDo."
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Full functional prototype is built and tested"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Prototyping and testing"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-4"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.5. OTRL5](https://w3id.org/oseg/ont/osh/otrl#OTRL5)
+
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Fairly reliable processes identified and characterised"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Manufacturing development"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-5"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+
+## [2.6. OTRL6](https://w3id.org/oseg/ont/osh/otrl#OTRL6)
+
+* [**goal**](https://w3id.org/oseg/ont/osh/otrl#goal) "Certificate marking conformity assessment or comparable"
+* [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Product qualification"
+* [**label**](http://www.w3.org/2000/01/rdf-schema#label) "OTRL-6"
+* [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [OTRL](https://w3id.org/oseg/ont/osh/otrl#OTRL)
+* [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
+

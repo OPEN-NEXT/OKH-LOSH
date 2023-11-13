@@ -1,5 +1,5 @@
-@base             <http://purl.org/oseg/ontologies/OTRL> .
-@prefix :         <#> .
+@base             <https://w3id.org/oseg/ont/osh/otrl> .
+@prefix otrl:     <#> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,8 +9,8 @@
 @prefix cc:       <http://creativecommons.org/ns#> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 
-# SPDX-FileCopyrightText: 2020-2021 Martin Häuer <martin.haeuer@ose-germany.de>
-# SPDX-FileCopyrightText: 2020-2022 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+# SPDX-FileCopyrightText: 2020 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -29,230 +29,230 @@
   spdxt:ListedLicense "GPL-3.0-or-later" ;
   .
 
-:OTRL
+otrl:OTRL
   a owl:Class ;
   rdfs:label "Open Technology Readiness Level"@en ;
   rdfs:comment "Technology Readiness Level for open source hardware"@en ;
   .
 
-:ODRL
+otrl:ODRL
   a owl:Class ;
   rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
   .
 
-:goal
+otrl:goal
   a owl:DatatypeProperty ;
   rdfs:label "goal"@en ;
   rdfs:comment "Goal or purpose of this OTRL/ODRL"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :OTRL,
-    :ODRL ;
+    otrl:OTRL,
+    otrl:ODRL ;
   .
 
-:exitCriteria
+otrl:exitCriteria
   a owl:DatatypeProperty ;
   rdfs:label "exit criteria"@en ;
   rdfs:comment "Criteria to exit this OTRL/ODRL for the next higher one; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
-    :OTRL,
-    :ODRL ;
+    otrl:OTRL,
+    otrl:ODRL ;
   .
 
-:OTRL1
+otrl:OTRL1
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-1"@en ;
   rdfs:comment "Ideation"@en ;
-  :goal "Product idea; needs are identified and initial specifications are defined."@en ;
-  :exitCriteria "ToDo."@en ;
+  otrl:goal "Product idea; needs are identified and initial specifications are defined."@en ;
+  otrl:exitCriteria "ToDo."@en ;
   .
 
-:OTRL2
+otrl:OTRL2
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-2"@en ;
   rdfs:comment "Conception"@en ;
-  :goal "Mature product concept has been formulated"@en ;
-  :exitCriteria "ToDo."@en ;
+  otrl:goal "Mature product concept has been formulated"@en ;
+  otrl:exitCriteria "ToDo."@en ;
   .
 
-:OTRL3
+otrl:OTRL3
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-3"@en ;
   rdfs:comment "Development"@en ;
-  :goal "Product model is developed"@en ;
-  :exitCriteria "ToDo."@en ;
+  otrl:goal "Product model is developed"@en ;
+  otrl:exitCriteria "ToDo."@en ;
   .
 
-:OTRL4
+otrl:OTRL4
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-4"@en ;
   rdfs:comment "Prototyping and testing"@en ;
-  :goal "Full functional prototype is built and tested"@en ;
-  :exitCriteria "ToDo."@en ;
+  otrl:goal "Full functional prototype is built and tested"@en ;
+  otrl:exitCriteria "ToDo."@en ;
   .
 
-:OTRL5
+otrl:OTRL5
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Manufacturing development"@en ;
-  :goal "Fairly reliable processes identified and characterised"@en ;
+  otrl:goal "Fairly reliable processes identified and characterised"@en ;
   .
 
-:OTRL6
+otrl:OTRL6
   a owl:Class ;
-  rdfs:subClassOf :OTRL ;
+  rdfs:subClassOf otrl:OTRL ;
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Product qualification"@en ;
-  :goal "Certificate marking conformity assessment or comparable"@en ;
+  otrl:goal "Certificate marking conformity assessment or comparable"@en ;
   .
 
-:ODRL1
+otrl:ODRL1
   a owl:Class ;
-  rdfs:subClassOf :ODRL ;
+  rdfs:subClassOf otrl:ODRL ;
   rdfs:label "ODRL-1"@en ;
   rdfs:comment "Documentation process commenced"@en ;
-  :goal "Published information under free open source licence"@en ;
-  :exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
+  otrl:goal "Published information under free open source licence"@en ;
+  otrl:exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
-:ODRL2
+otrl:ODRL2
   a owl:Class ;
-  rdfs:subClassOf :ODRL ;
+  rdfs:subClassOf otrl:ODRL ;
   rdfs:label "ODRL-2"@en ;
   rdfs:comment "Collaborative documentation in progress"@en ;
-  :goal "Provision of documentation files and in editable formats enabling collaboration development"@en ;
-  :exitCriteria "ToDo."@en ;
+  otrl:goal "Provision of documentation files and in editable formats enabling collaboration development"@en ;
+  otrl:exitCriteria "ToDo."@en ;
   .
 
-:ODRL3
+otrl:ODRL3
   a owl:Class ;
-  rdfs:subClassOf :ODRL ;
+  rdfs:subClassOf otrl:ODRL ;
   rdfs:label "ODRL-3"@en ;
   rdfs:comment "Full documentation published"@en ;
-  :goal "Complete documentation as per DIN SPEC 3105-1"@en ;
-  :exitCriteria "stable release"@en ;
+  otrl:goal "Complete documentation as per DIN SPEC 3105-1"@en ;
+  otrl:exitCriteria "stable release"@en ;
   .
 
-:ODRL3Star
+otrl:ODRL3Star
   a owl:Class ;
-  rdfs:subClassOf :ODRL ;
+  rdfs:subClassOf otrl:ODRL ;
   rdfs:label "ODRL-3*"@en ;
   rdfs:comment "Full documentation published & audited"@en ;
-  :goal "Public evidence of documentation maturity"@en ;
-  :exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
+  otrl:goal "Public evidence of documentation maturity"@en ;
+  otrl:exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
-:ODRL4
+otrl:ODRL4
   a owl:Class ;
-  rdfs:subClassOf :ODRL ;
+  rdfs:subClassOf otrl:ODRL ;
   rdfs:label "ODRL-4"@en ;
   rdfs:comment "Full documentation for product qualification"@en ;
-  :goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
+  otrl:goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
   .
 
-:Otrl
+otrl:Otrl
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL ;
-  owl:sameAs :OTRL ;
+  schema:supersededBy otrl:OTRL ;
+  owl:sameAs otrl:OTRL ;
   .
 
-:Odrl
+otrl:Odrl
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL ;
-  owl:sameAs :ODRL ;
+  schema:supersededBy otrl:ODRL ;
+  owl:sameAs otrl:ODRL ;
   .
 
-:Otrl1
+otrl:Otrl1
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL1 ;
-  owl:sameAs :OTRL1 ;
+  schema:supersededBy otrl:OTRL1 ;
+  owl:sameAs otrl:OTRL1 ;
   .
 
-:Otrl2
+otrl:Otrl2
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL2 ;
-  owl:sameAs :OTRL2 ;
+  schema:supersededBy otrl:OTRL2 ;
+  owl:sameAs otrl:OTRL2 ;
   .
 
-:Otrl3
+otrl:Otrl3
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL3 ;
-  owl:sameAs :OTRL3 ;
+  schema:supersededBy otrl:OTRL3 ;
+  owl:sameAs otrl:OTRL3 ;
   .
 
-:Otrl4
+otrl:Otrl4
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL4 ;
-  owl:sameAs :OTRL4 ;
+  schema:supersededBy otrl:OTRL4 ;
+  owl:sameAs otrl:OTRL4 ;
   .
 
-:Otrl5
+otrl:Otrl5
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL5 ;
-  owl:sameAs :OTRL5 ;
+  schema:supersededBy otrl:OTRL5 ;
+  owl:sameAs otrl:OTRL5 ;
   .
 
-:Otrl6
+otrl:Otrl6
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :OTRL6 ;
-  owl:sameAs :OTRL6 ;
+  schema:supersededBy otrl:OTRL6 ;
+  owl:sameAs otrl:OTRL6 ;
   .
 
-:Odrl1
+otrl:Odrl1
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL1 ;
-  owl:sameAs :ODRL1 ;
+  schema:supersededBy otrl:ODRL1 ;
+  owl:sameAs otrl:ODRL1 ;
   .
 
-:Odrl2
+otrl:Odrl2
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL2 ;
-  owl:sameAs :ODRL2 ;
+  schema:supersededBy otrl:ODRL2 ;
+  owl:sameAs otrl:ODRL2 ;
   .
 
-:Odrl3
+otrl:Odrl3
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL3 ;
-  owl:sameAs :ODRL3 ;
+  schema:supersededBy otrl:ODRL3 ;
+  owl:sameAs otrl:ODRL3 ;
   .
 
-:Odrl3Star
+otrl:Odrl3Star
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL3Star ;
-  owl:sameAs :ODRL3Star ;
+  schema:supersededBy otrl:ODRL3Star ;
+  owl:sameAs otrl:ODRL3Star ;
   .
 
-:Odrl4
+otrl:Odrl4
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
-  schema:supersededBy :ODRL4 ;
-  owl:sameAs :ODRL4 ;
+  schema:supersededBy otrl:ODRL4 ;
+  owl:sameAs otrl:ODRL4 ;
   .
 
-:Odrl5
+otrl:Odrl5
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-01-10"^^xsd:date ;
-  schema:supersededBy :Odrl4 ;
-  owl:sameAs :Odrl4 ;
+  schema:supersededBy otrl:Odrl4 ;
+  owl:sameAs otrl:Odrl4 ;
   .
