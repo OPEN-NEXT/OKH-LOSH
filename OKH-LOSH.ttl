@@ -272,14 +272,14 @@ okh:version
   .
 
 okh:forkOf
- a owl:ObjectProperty ;
- rdfs:label "fork of" ;
- rdfs:subPropertyOf schema:isBasedOn ;
- owl:cardinality 1 ;
- schema:domainIncludes
-   okh:Module,
-   okh:Part ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "fork of" ;
+  rdfs:subPropertyOf schema:isBasedOn ;
+  owl:cardinality 1 ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
+  .
 
 okh:versionOf
   a owl:ObjectProperty ;
@@ -290,18 +290,18 @@ okh:versionOf
   .
 
 okh:documentationLanguage
- a owl:DatatypeProperty ;
- rdfs:label "documentation language" ;
- rdfs:comment '''
-  IETF language tag
-  following the BCP 47 standard e.g. en-GB
-  denotes the language of the documentation for the component subject '''@en;
- rdfs:subPropertyOf schema:inLanguage ;
- owl:cardinality 1 ;
- schema:domainIncludes
-   okh:Module,
-   okh:Part ;
- .
+  a owl:DatatypeProperty ;
+  rdfs:label "documentation language" ;
+  rdfs:comment '''
+   IETF language tag
+   following the BCP 47 standard e.g. en-GB
+   denotes the language of the documentation for the component subject '''@en;
+  rdfs:subPropertyOf schema:inLanguage ;
+  owl:cardinality 1 ;
+  schema:domainIncludes
+    okh:Module,
+    okh:Part ;
+  .
 
 ## ----- legal -----
 
@@ -326,13 +326,13 @@ okh:organization
   .
 
 okh:spdxLicense
- a owl:ObjectProperty ;
- rdfs:label "SPDX license identifier" ;
- rdfs:comment "view complete list under https://spdx.org/licenses/" ;
- schema:domainIncludes okh:Module ;
- schema:rangeIncludes spdxt:ListedLicense ; # aka SPDX license identifier for a single, atomar license
- owl:cardinality 1 ;
- .
+  a owl:ObjectProperty ;
+  rdfs:label "SPDX license identifier" ;
+  rdfs:comment "view complete list under https://spdx.org/licenses/" ;
+  schema:domainIncludes okh:Module ;
+  schema:rangeIncludes spdxt:ListedLicense ; # aka SPDX license identifier for a single, atomar license
+  owl:cardinality 1 ;
+  .
 
 okh:alternativeLicense
   a owl:ObjectProperty ;
