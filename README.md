@@ -18,7 +18,7 @@ SPDX-License-Identifier: CC0-1.0
     https://api.reuse.software/info/github.com/OPEN-NEXT/OKH-LOSH)
 
 [![In cooperation with Open Source Ecology Germany](
-    https://custom-icon-badges.demolab.com/badge/-OSEG-555555.svg?logo=oseg_logo)](
+    https://raw.githubusercontent.com/osegermany/tiny-files/master/res/media/img/badge-oseg.svg)](
     https://opensourceecology.de)
 
 LOSH: **_A Library of Open Source Hardware -
