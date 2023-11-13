@@ -1,61 +1,111 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
+# SPDX-FileCopyrightText: 2020 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-License-Identifier: Unlicense
 
-set -e
+# Exit immediately on each error and unset variable;
+# see: https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+#set -Eeuo pipefail
+set -eu
 
-vrf=build/visualize-rdf
+script_path="$(readlink -f "$0")"
+script_dir="$(dirname "$script_path")"
+script_name="$(basename "$script_path")"
 
-_install_req() {
+root_dir="$script_dir"
+build_dir="$root_dir/build"
+publish_dir="$root_dir/public"
+tsdc_tools_dl_url="https://osegermany.gitlab.io/oh-tsdc-tools/tsdc-tools-latest-jar-with-dependencies.jar"
+tsdc_tools="$build_dir/tsdc-tools.jar"
+vrdf_dl_url="https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf"
+vrdf="$build_dir/visualize-rdf"
+force=false
+
+_install_requirements() {
+	mkdir -p "$build_dir"
+
+	# Installs wget, JDK, Python
 	if ! ( which wget > /dev/null && which pip > /dev/null && which javac > /dev/null )
 	then
 		apt-get update
 		apt-get install -y -qq wget python3-pip default-jdk > /dev/null
 	fi
-	mkdir -p "$(dirname "$vrf")"
-	wget https://gitlab.com/OSEGermany/rdf-visualizer/raw/master/visualize-rdf \
-		--output-document="$vrf"
-	chmod +x "$vrf"
-	"$vrf" --install-requirements
-	wget https://osegermany.gitlab.io/oh-tsdc-tools/tsdc-tools-latest-jar-with-dependencies.jar
+
+	# Installs `visualize-rdf`
+	mkdir -p "$(dirname "$vrdf")"
+	wget "$vrdf_dl_url" \
+		--output-document="$vrdf"
+	chmod +x "$vrdf"
+	"$vrdf" --install-requirements
+
+	# Installs TsDC tools
+	mkdir -p "$(dirname "$tsdc_tools")"
+	wget "$tsdc_tools_dl_url" \
+		--output-document="$tsdc_tools"
 }
 
+_print_help() {
 
-if [ ! -f "$vrf" ]
+	echo "Create differently layouted visual (graph-style) representations"
+	echo "of all the RDF files from CWD, recursively."
+	echo "This generates multiple SVG, PNG and a single DOT file"
+	echo "for each TTL file."
+	echo "It also creates a structures Markdown file with the RDFs content."
+	echo "In the end, it also creates an index.html file"
+	echo "that links to all the generated files."
+	echo
+	echo "Usage:"
+	echo "  $script_name [OPTIONS]"
+	echo "Options:"
+	echo "  -h, --help"
+	echo "     Show this help message and exit"
+	echo "  -s, --install-requirements"
+	echo "     Installs all the requirements for this script to run successfully and exit"
+	echo "  -f, --force"
+	echo "     Overwrite index.html if it already exists."
+	echo "     NOTE: All the other generated files are overwritten"
+	echo "           even without this flag."
+	echo "Examples:"
+	echo "  $script_name"
+	echo "  $script_name --help"
+}
+
+# read command-line args
+i=1
+while [ "$i" -lt "$#" ]
+do
+	arg="$(eval "echo \$$i")"
+
+	case "$arg" in
+		-h|--help)
+			shift "$i"
+			_print_help
+			exit 0
+			;;
+		-s|--install-requirements)
+			shift "$i"
+			_install_requirements
+			exit 0
+			;;
+		-f|--force)
+			shift "$i"
+			force=true
+			;;
+		*) # non-/unknown option
+			i=$((i + 1))
+			;;
+	esac
+done
+
+if [ ! -f "$vrdf" ]
 then
-	_install_req
+	_install_requirements
 fi
 
-mkdir -p build
+_clean_dot_file() {
+	dot_file="$1"
 
-# Create (visual) graphs
-echo
-for ttl_file in *.ttl
-do
-	"$vrf" --do-not-open --layout fdp "$ttl_file"
-done
-for file in *.svg *.png
-do
-	mv "$file" "fdp_${file}.RN"
-done
-
-echo
-for ttl_file in *.ttl
-do
-	"$vrf" --do-not-open --layout dot "$ttl_file"
-done
-for file in *.svg *.png
-do
-	mv "$file" "dot_${file}.RN"
-done
-for file in *.RN
-do
-	mv "$file" "${file%.RN}"
-done
-
-echo
-for dot_file in *.dot
-do
 	layout_engine=fdp
-	dot_file_clean="build/${dot_file%.dot}-clean.dot"
+	dot_file_clean="${dot_file%.*}-clean.dot"
 	echo "Cleaning '$dot_file' -> '$dot_file_clean' ..."
 	{
 		grep -v 'wikidata' \
@@ -70,26 +120,56 @@ do
 	echo "Generating SVG and PNG from '$dot_file_clean' ..."
 	dot -Glayout="$layout_engine" -Grankdir=LR -Tsvg -o "$svg_file" "$dot_file_clean"
 	dot -Glayout="$layout_engine" -Grankdir=LR -Tpng -o "$png_file" "$dot_file_clean"
-done
+}
 
-mv ./*.dot ./*.svg ./*.png build/
+mkdir -p "$publish_dir"
 
-# Create structured Markdown
 echo
-for ttl_file in *.ttl
+find . -name "*.ttl" \
+	| grep -v "^\./$(basename "$build_dir")/" \
+	| grep -v "^\./$(basename "$publish_dir")/" \
+	| while read -r ttl_file
 do
-	cp "$ttl_file" build/
+	printf "\n\nProcessing input file '%s' ...\n" "$ttl_file"
+
+	base_output_dir="$publish_dir/$(dirname "$ttl_file")"
+	mkdir -p "$base_output_dir"
+	base_name="$(basename "${ttl_file%.*}")"
+
+	cp "$ttl_file" "$base_output_dir/"
+
+	# Create graphs
+	for layout in fdp dot
+	do
+		base_output_file="$base_output_dir/${layout}_$base_name"
+
+		# Generates PNG, SVG & DOT files
+		"$vrdf" \
+			--do-not-open \
+			--layout "$layout" \
+			"$ttl_file" \
+			"$base_output_file"
+
+		# Generates a cleaned-up DOT file and SVG and PNG from it
+		dot_file="${base_output_file}.dot"
+		_clean_dot_file "$dot_file"
+	done
+
+	# Create structured Markdown
 	java \
-		-classpath tsdc-tools-latest-jar-with-dependencies.jar \
+		-classpath "$tsdc_tools" \
 		de.opensourceecology.tsdc.tools.rdf2md.MainKt \
 		--input "$ttl_file" \
-		--output "build/${ttl_file}.md"
+		--output "${base_output_file}.md"
 #		--structure-property "http://purl.org/oseg/din/ontologies/tsdc/0.1/specification#isBelow" \
 done
 
-cd build
-
+index_file="$publish_dir/index.html"
+if ! [ -e "$index_file" ] || $force
+then
 {
+	cd "$publish_dir"
+
 	# Create HTML that links to all the files generated above
 	# plus the sources
 	echo "<html>"
@@ -137,5 +217,7 @@ cd build
 
 	echo "</body>"
 	echo "</html>"
-} > index.html
-
+} > "$index_file"
+else
+	>&2 echo "WARNING: Index file not written, because it already exists, and --force is not given."
+fi
