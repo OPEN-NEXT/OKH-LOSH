@@ -1,4 +1,4 @@
-@base             <https://github.com/OPEN-NEXT/LOSH-dummy-MOSH-A/1.0.0> .
+@base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/sample_data/okh-sample-LOSH-Dummy-A.ttl> .
 @prefix :         <#> .
 @prefix okh:      <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
