@@ -1,6 +1,6 @@
 @base             <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/sample_data/okh-sample-LOSH-Dummy-A.ttl> .
 @prefix :         <#> .
-@prefix okh:      <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OKH-LOSH.ttl#> .
+@prefix okh:      <https://w3id.org/oseg/ont/osh/okh#> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,8 +8,8 @@
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
-@prefix otrl:     <https://github.com/OPEN-NEXT/OKH-LOSH/raw/master/OTRL.ttl> .
-@prefix tsdc:     <https://gitlab.com/OSEGermany/oh-tsdc/-/raw/master/oh-tsdc.ttl#> .
+@prefix otrl:     <https://w3id.org/oseg/ont/osh/otrl#> .
+@prefix tsdc:     <https://w3id.org/oseg/ont/osh/tsdc/core#> .
 
 :LOSHdummyMOSHA
   a okh:Module ;
