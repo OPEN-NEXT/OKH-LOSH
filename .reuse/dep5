@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Open Know-How - Library of Open Source Hardware version)
+Upstream-Contact:
+    Martin Häuer (Open Source Ecology Germany e.V.) <martin.haeuer@ose-germany.de>
+    Robin Vobruba (Open Source Ecology Germany e.V.) <hoijui.quaero@gmail.com>
+Source: https://github.com/OPEN-NEXT/OKH-LOSH
+
+Files: illustrations/*.svg
+Copyright:
+    2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+    2022 Robin Vobruba <hoijui.quaero@gmail.com>
+License: GPL-3.0-or-later

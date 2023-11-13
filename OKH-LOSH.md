@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2021 - 2022 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2021 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+-->
+
 ---
 title: Open Know-How Specification for the Library of Open Source Hardware
 subtitle: OKH-LOSH

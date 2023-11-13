@@ -1,8 +1,7 @@
 # SPDX-FileCopyrightText: 2021 onwards Martin Häuer
+#
 # SPDX-License-Identifier: CC0-1.0
-#
-# find a HowTo Guide here: <https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/sample_data/okh-TEMPLATE-HOWTO.md>
-#
+
 okhv = "OKH-LOSHv1.0" # NOT to be changed
 name = "your-awesome-OSH"
 repo = "https://gitlab.com/YOU/your-awesome-project/"

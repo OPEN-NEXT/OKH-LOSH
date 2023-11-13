@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2020 Martin Häuer <martin.haeuer@ose-germany.de>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # requirements for Collector and Wikibase-API
 
 ## general

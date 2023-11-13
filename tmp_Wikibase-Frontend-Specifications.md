@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 title: Wikibase Frontend Specifications
 subtitle: for the Library of Open Source Hardware (LOSH)

@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2020 - 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2020 Martin Häuer <martin.haeuer@ose-germany.de>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Scope of the ontology
 
 ## Hot / shortlist (v1.0)

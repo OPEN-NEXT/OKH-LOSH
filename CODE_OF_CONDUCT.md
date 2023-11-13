@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Code of Conduct
 
 Please note that this project is released with a Contributor Code of Conduct.

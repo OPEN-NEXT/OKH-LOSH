@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2021 - 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Description of standard queries
 
 **NOTE:** For details of the properties,

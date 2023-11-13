@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 title: Wikibase Feedback Workshop | Fablab Berlin, OpnTec
 type: slide

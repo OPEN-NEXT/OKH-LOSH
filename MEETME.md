@@ -1,3 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2020 - 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2020 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2020 juli arancio <jarancio@protonmail.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Squashed Meeting Minutes
 
 …of the OSHI working group

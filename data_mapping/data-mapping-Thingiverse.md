@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 title: Ontology Mapping | Thingiverse → OKH-LOSHv1
 ...

@@ -1,3 +1,16 @@
+<!--
+SPDX-FileCopyrightText: 2021 Case06 <case06@web.de>
+SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
+SPDX-FileCopyrightText: 2021 Martin Jäger <17674105+martinjaeger@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2021 T. Mulzer <tasso.mulzer@beuth-hochschule.de>
+SPDX-FileCopyrightText: 2021 alinaweedmalik <85348009+alinaweedmalik@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 joostbuiter <85554268+joostbuiter@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 legba7 <legba7@hellokitty.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 title: Specification for Production Metadata
 subtitle: Input from WP4/WP5 Partners
