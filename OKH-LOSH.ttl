@@ -258,7 +258,7 @@ okh:repoSnapshot
   a owl:ObjectProperty ;
   rdfs:label "respository snapshot" ;
   rdfs:comment "Repoistory snapshot (=specific version) URL" ;
-  rdfs:subPropertyOf okh:repository ;
+  rdfs:subPropertyOf okh:repo ;
   schema:rangeIncludes okh:WebsiteUrl ;
   owl:cardinality 1 ;
   schema:domainIncludes okh:Module ;
