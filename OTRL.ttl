@@ -14,6 +14,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+# Fixes, changes or suggestions to this file
+# can be issued at its source location:
+# <https://github.com/OPEN-NEXT/OKH-LOSH/master/OTRL.ttl>
+
 <>
   a owl:Ontology ;
   owl:versionInfo "1.0" ;
