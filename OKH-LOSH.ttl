@@ -19,6 +19,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+# Fixes, changes or suggestions to this file
+# can be issued at its source location:
+# <https://github.com/OPEN-NEXT/OKH-LOSH/master/OKH-LOSH.ttl>
+
 # NOTE:
 # Regarding the use of `schema:domainIncludes`
 # and `schema:rangeIncludes` in this ontology:
