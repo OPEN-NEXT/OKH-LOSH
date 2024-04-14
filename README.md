@@ -62,7 +62,7 @@ These essential freedoms are based on those of [open source software](
 https://opensource.org/osd),
 which is itself derived from [free software](
 https://www.gnu.org/philosophy/free-sw.en.html)
-where the word free refers to freedom, *not* free-of-charge.
+where the word free refers to freedom, _not_ free-of-charge.
 When put in practice,
 these freedoms could potentially not only reduce proprietary vendor lock-in,
 planned obsolescence, or waste but also stimulate novel –
