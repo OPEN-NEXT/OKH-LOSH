@@ -23,9 +23,8 @@
   a owl:Ontology ;
   owl:versionInfo "1.0" ;
   owl:versionIRI <> ;
-  rdfs:label "OTRL Ontology"@en ;
-  rdfs:comment "Open Technology & Documentation Readiness Level ontology"@en ;
-  rdfs:comment "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
+  dcterms:title "Open Technology & Documentation Readiness Level (OTRL) ontology"@en ;
+  dcterms:description "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
   schema:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;

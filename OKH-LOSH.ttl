@@ -44,8 +44,8 @@
   a owl:Ontology ;
   owl:versionInfo "0.1" ;
   owl:versionIRI <> ;
-  rdfs:label "OSH ontology"@en ;
-  rdfs:comment "An Open Source Hardware ontology"@en ;
+  dcterms:title "OSH ontology"@en ;
+  dcterms:description "An Open Source Hardware ontology"@en ;
   dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
