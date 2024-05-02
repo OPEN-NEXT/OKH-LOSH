@@ -49,8 +49,8 @@
   owl:versionIRI <> ;
   dcterms:title "OSH ontology"@en ;
   dcterms:description "An Open Source Hardware ontology"@en ;
-  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
