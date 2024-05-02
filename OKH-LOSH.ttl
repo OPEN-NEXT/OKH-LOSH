@@ -13,6 +13,7 @@
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix otrl:     <https://w3id.org/oseg/ont/otrl#> .
 @prefix tsdc:     <https://w3id.org/oseg/ont/tsdc/core#> .
+@prefix vann:     <http://purl.org/vocab/vann/> .
 @prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
 # SPDX-FileCopyrightText: 2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
@@ -42,6 +43,8 @@
 
 <>
   a owl:Ontology ;
+  vann:preferredNamespacePrefix "okh" ;
+  vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
   owl:versionInfo "0.1" ;
   owl:versionIRI <> ;
   dcterms:title "OSH ontology"@en ;
