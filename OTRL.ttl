@@ -24,8 +24,8 @@
   a owl:Ontology ;
   vann:preferredNamespacePrefix "otrl" ;
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/otrl#" ;
-  owl:versionInfo "1.0" ;
-  owl:versionIRI <> ;
+  owl:versionInfo "1.1" ;
+  owl:versionIRI <> ; # TODO FIXME
   dcterms:title "Open Technology & Documentation Readiness Level (OTRL) ontology"@en ;
   dcterms:description "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
   schema:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;

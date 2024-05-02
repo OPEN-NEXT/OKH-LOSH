@@ -45,8 +45,8 @@
   a owl:Ontology ;
   vann:preferredNamespacePrefix "okh" ;
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
-  owl:versionInfo "0.1" ;
-  owl:versionIRI <> ;
+  owl:versionInfo "1.1" ;
+  owl:versionIRI <> ; # TODO FIXME
   dcterms:title "OSH ontology"@en ;
   dcterms:description "An Open Source Hardware ontology"@en ;
   dcterms:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
