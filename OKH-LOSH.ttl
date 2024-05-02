@@ -496,7 +496,7 @@ okh:hasImage
 okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:label "functionality metadata" ;
-  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardised)" ;
+  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardized)" ;
   rdfs:subPropertyOf schema:value ;
   schema:rangeIncludes schema:StructuredValue ;
   schema:domainIncludes okh:Module ;
