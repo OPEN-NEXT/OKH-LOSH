@@ -8,9 +8,11 @@
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
 @prefix cc:       <http://creativecommons.org/ns#> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann:     <http://purl.org/vocab/vann/> .
+@prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
 # SPDX-FileCopyrightText: 2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
-# SPDX-FileCopyrightText: 2020 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2020 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -18,16 +20,33 @@
 # can be issued at its source location:
 # <https://github.com/OPEN-NEXT/OKH-LOSH/master/OTRL.ttl>
 
+# NOTE:
+# Regarding the use of `schema:domainIncludes`
+# and `schema:rangeIncludes` in this ontology:
+# Looking at the definitions for the RDFS version
+# of the two, `rdfs:domain` and `rdfs:range`:
+# * https://www.w3.org/TR/rdf-schema/#ch_domain
+# * https://www.w3.org/TR/rdf-schema/#ch_range
+# and as described in this StackOverflow answer:
+# <https://stackoverflow.com/a/74782257/586229>,
+# multiple objects for the two RDFS properties mean,
+# that *all of them* apply, simultaneously,
+# not *one of them*.
+# You may think of this as an `AND` coupling.
+# We want the *one of them* meaning though (`OR`).
+# The `schema:*` properties give us just that.
+
 <>
   a owl:Ontology ;
-  owl:versionInfo "1.0" ;
-  owl:versionIRI <> ;
-  rdfs:label "OTRL Ontology"@en ;
-  rdfs:comment "Open Technology & Documentation Readiness Level ontology"@en ;
-  rdfs:comment "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
+  vann:preferredNamespacePrefix "otrl" ;
+  vann:preferredNamespaceUri "https://w3id.org/oseg/ont/otrl#" ;
+  owl:versionInfo "1.1" ;
+  owl:versionIRI <> ; # TODO FIXME
+  dcterms:title "Open Technology & Documentation Readiness Level (OTRL) ontology"@en ;
+  dcterms:description "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
   schema:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;
-  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
@@ -164,6 +183,7 @@ otrl:ODRL4
   .
 
 otrl:Otrl
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL ;
@@ -171,6 +191,7 @@ otrl:Otrl
   .
 
 otrl:Odrl
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL ;
@@ -178,6 +199,7 @@ otrl:Odrl
   .
 
 otrl:Otrl1
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL1 ;
@@ -185,6 +207,7 @@ otrl:Otrl1
   .
 
 otrl:Otrl2
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL2 ;
@@ -192,6 +215,7 @@ otrl:Otrl2
   .
 
 otrl:Otrl3
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL3 ;
@@ -199,6 +223,7 @@ otrl:Otrl3
   .
 
 otrl:Otrl4
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL4 ;
@@ -206,6 +231,7 @@ otrl:Otrl4
   .
 
 otrl:Otrl5
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL5 ;
@@ -213,6 +239,7 @@ otrl:Otrl5
   .
 
 otrl:Otrl6
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:OTRL6 ;
@@ -220,6 +247,7 @@ otrl:Otrl6
   .
 
 otrl:Odrl1
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL1 ;
@@ -227,6 +255,7 @@ otrl:Odrl1
   .
 
 otrl:Odrl2
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL2 ;
@@ -234,6 +263,7 @@ otrl:Odrl2
   .
 
 otrl:Odrl3
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL3 ;
@@ -241,6 +271,7 @@ otrl:Odrl3
   .
 
 otrl:Odrl3Star
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL3Star ;
@@ -248,6 +279,7 @@ otrl:Odrl3Star
   .
 
 otrl:Odrl4
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-12-30"^^xsd:date ;
   schema:supersededBy otrl:ODRL4 ;
@@ -255,6 +287,7 @@ otrl:Odrl4
   .
 
 otrl:Odrl5
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2022-01-10"^^xsd:date ;
   schema:supersededBy otrl:Odrl4 ;

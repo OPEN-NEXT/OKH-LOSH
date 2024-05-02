@@ -101,6 +101,7 @@
 
 * [**deprecatedOn**](http://creativecommons.org/ns#deprecatedOn) 2023-08-19
 * [**deprecated**](http://www.w3.org/2002/07/owl#deprecated) true
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "deprecated"
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "
     others shall be able to identify/procure this component only by the given reference(s),
     MOSH → URL to corresponding release
@@ -116,6 +117,7 @@
 * [**supersededBy**](http://schema.org/supersededBy) [File](https://w3id.org/oseg/ont/okh#File)
 * [**deprecatedOn**](http://creativecommons.org/ns#deprecatedOn) 2023-07-11
 * [**deprecated**](http://www.w3.org/2002/07/owl#deprecated) true
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "deprecated"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://w3id.org/oseg/ont/okh#ComponentReference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"
@@ -136,6 +138,7 @@
 * [**supersededBy**](http://schema.org/supersededBy) [File](https://w3id.org/oseg/ont/okh#File)
 * [**deprecatedOn**](http://creativecommons.org/ns#deprecatedOn) 2023-07-11
 * [**deprecated**](http://www.w3.org/2002/07/owl#deprecated) true
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "deprecated"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [ComponentReference](https://w3id.org/oseg/ont/okh#ComponentReference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "permanent URL to file"

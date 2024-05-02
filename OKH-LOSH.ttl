@@ -13,9 +13,11 @@
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix otrl:     <https://w3id.org/oseg/ont/otrl#> .
 @prefix tsdc:     <https://w3id.org/oseg/ont/tsdc/core#> .
+@prefix vann:     <http://purl.org/vocab/vann/> .
+@prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
 # SPDX-FileCopyrightText: 2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
-# SPDX-FileCopyrightText: 2020 - 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2020 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -41,12 +43,14 @@
 
 <>
   a owl:Ontology ;
-  owl:versionInfo "0.1" ;
-  owl:versionIRI <> ;
-  rdfs:label "OSH ontology"@en ;
-  rdfs:comment "An Open Source Hardware ontology"@en ;
-  dcterms:contributor "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  dcterms:contributor "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  vann:preferredNamespacePrefix "okh" ;
+  vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
+  owl:versionInfo "1.1" ;
+  owl:versionIRI <> ; # TODO FIXME
+  dcterms:title "OSH ontology"@en ;
+  dcterms:description "An Open Source Hardware ontology"@en ;
+  dcterms:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
@@ -109,6 +113,7 @@ okh:FileUrl
   rdfs:label "permanent URL to file" ;
   rdfs:subClassOf okh:ComponentReference ;
   rdfs:subClassOf schema:URL ;
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-07-11"^^xsd:date ;
   schema:supersededBy okh:File ;
@@ -203,6 +208,7 @@ okh:ComponentReference
     POSH → URL to containing folder
     STD  → standard designation (preferably naming the _latest_ standard)
     BUY  → unambiguous reference'''@en ;
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-08-19"^^xsd:date ;
   .
@@ -490,7 +496,7 @@ okh:hasImage
 okh:functionalMetadata
   a owl:DatatypeProperty ;
   rdfs:label "functionality metadata" ;
-  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardised)" ;
+  rdfs:comment "Metadata addressing functionality, such as dimensions, material, weight, RPM,… (not standardized)" ;
   rdfs:subPropertyOf schema:value ;
   schema:rangeIncludes schema:StructuredValue ;
   schema:domainIncludes okh:Module ;
@@ -541,6 +547,7 @@ okh:openSCAD
   .
 
 okh:openScad
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-07-06"^^xsd:date ;
   schema:supersededBy okh:openSCAD ;
@@ -613,6 +620,7 @@ okh:fileUrl
   rdfs:label "file URL" ;
   rdfs:subPropertyOf schema:url ;
   schema:domainIncludes okh:File ;
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-07-11"^^xsd:date ;
   schema:supersededBy okh:url ;
@@ -622,6 +630,7 @@ okh:permaURL
   a owl:ObjectProperty ;
   rdfs:label "Permanent file URL - It was not 'permanent', but rather 'frozen in time', and it was alsoThis was used in the karwler, but badly. Things simply should not be done that way, but rather with a separate manifest file, where either everything is frozen, or nothing is, and the manifest file (internally) itsself being marked accordingly." ;
   schema:domainIncludes okh:File ;
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-07-11"^^xsd:date ;
   .
@@ -696,6 +705,7 @@ okh:tsdc
   .
 
 okh:relatedTsdc
+  vs:term_status "deprecated" ;
   owl:deprecated "true"^^xsd:boolean ;
   cc:deprecatedOn "2023-07-10"^^xsd:date ;
   schema:supersededBy okh:tsdc ;
