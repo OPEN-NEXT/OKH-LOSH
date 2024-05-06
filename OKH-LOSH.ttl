@@ -27,7 +27,7 @@
   vann:preferredNamespacePrefix "okh" ;
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
   owl:versionInfo "1.1.0" ;
-  owl:versionIRI <https://w3id.org/oseg/ont/1.1.0/okh#> ;
+  owl:versionIRI <https://w3id.org/oseg/ont/1.1.0/okh> ;
   dcterms:title "OSH ontology"@en ;
   dcterms:description "An Open Source Hardware ontology"@en ;
   schema:comment """Regarding the use of `schema:domainIncludes`
