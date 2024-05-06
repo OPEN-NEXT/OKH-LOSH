@@ -1,7 +1,7 @@
 @base             <https://w3id.org/oseg/ont/okh> .
 @prefix okh:      <#> .
 @prefix cc:       <http://creativecommons.org/ns#> .
-@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix dce:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
@@ -49,7 +49,7 @@ The `schema:*` properties give us just that."""@en ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
-  dc:source <https://github.com/OPEN-NEXT/OKH-LOSH/master/OKH-LOSH.ttl> ;
+  dce:source "https://github.com/OPEN-NEXT/OKH-LOSH/master/OKH-LOSH.ttl" ;
   .
 
 okh:Component
