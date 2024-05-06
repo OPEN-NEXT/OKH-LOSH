@@ -1,55 +1,54 @@
 @base             <https://w3id.org/oseg/ont/otrl> .
 @prefix otrl:     <#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix dce:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix orcid:    <https://orcid.org/> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:   <http://schema.org/> .
 @prefix spdxt:    <http://spdx.org/rdf/terms#> .
-@prefix cc:       <http://creativecommons.org/ns#> .
-@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix vann:     <http://purl.org/vocab/vann/> .
 @prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 
 # SPDX-FileCopyrightText: 2020 - 2021 Martin Häuer <martin.haeuer@ose-germany.de>
 # SPDX-FileCopyrightText: 2020 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Fixes, changes or suggestions to this file
-# can be issued at its source location:
-# <https://github.com/OPEN-NEXT/OKH-LOSH/master/OTRL.ttl>
-
-# NOTE:
-# Regarding the use of `schema:domainIncludes`
-# and `schema:rangeIncludes` in this ontology:
-# Looking at the definitions for the RDFS version
-# of the two, `rdfs:domain` and `rdfs:range`:
-# * https://www.w3.org/TR/rdf-schema/#ch_domain
-# * https://www.w3.org/TR/rdf-schema/#ch_range
-# and as described in this StackOverflow answer:
-# <https://stackoverflow.com/a/74782257/586229>,
-# multiple objects for the two RDFS properties mean,
-# that *all of them* apply, simultaneously,
-# not *one of them*.
-# You may think of this as an `AND` coupling.
-# We want the *one of them* meaning though (`OR`).
-# The `schema:*` properties give us just that.
-
 <>
   a owl:Ontology ;
   vann:preferredNamespacePrefix "otrl" ;
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/otrl#" ;
-  owl:versionInfo "1.1" ;
-  owl:versionIRI <> ; # TODO FIXME
+  owl:versionInfo "1.1.0" ;
+  owl:versionIRI <https://w3id.org/oseg/ont/1.1.0/otrl> ;
   dcterms:title "Open Technology & Documentation Readiness Level (OTRL) ontology"@en ;
   dcterms:description "This can be used to assess an Open Source Hardware projects stage of technical development and its documentation."@en ;
   schema:comment "Descriptions (`rdfs:comment`) from NASA are used under public domain"@en ;
-  dcterms:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
-  dcterms:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  schema:comment """Regarding the use of `schema:domainIncludes`
+and `schema:rangeIncludes` in this ontology:
+Looking at the definitions for the RDFS version
+of the two, `rdfs:domain` and `rdfs:range`:
+* https://www.w3.org/TR/rdf-schema/#ch_domain
+* https://www.w3.org/TR/rdf-schema/#ch_range
+and as described in this StackOverflow answer:
+<https://stackoverflow.com/a/74782257/586229>,
+multiple objects for the two RDFS properties mean,
+that *all of them* apply, simultaneously,
+not *one of them*.
+You may think of this as an `AND` coupling.
+We want the *one of them* meaning though (`OR`).
+The `schema:*` properties give us just that."""@en ;
+  dce:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
+  dcterms:creator orcid:0000-0002-1611-7129 ;
+  dce:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
+  dcterms:creator orcid:0009-0004-3559-6542 ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
+  dce:source "https://github.com/OPEN-NEXT/OKH-LOSH/master/OTRL.ttl" ;
   .
 
 otrl:OTRL
