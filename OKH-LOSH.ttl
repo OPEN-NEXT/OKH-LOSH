@@ -3,12 +3,12 @@
 @prefix cc:       <http://creativecommons.org/ns#> .
 @prefix dce:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
-@prefix epo:      <http://data.epo.org/linked-data/def/patent/> .
 @prefix npg:      <http://ns.nature.com/terms/> .
 @prefix obo:      <http://purl.obolibrary.org/obo/> .
 @prefix orcid:    <https://orcid.org/> .
 @prefix otrl:     <https://w3id.org/oseg/ont/otrl#> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix patent:   <http://data.epo.org/linked-data/def/patent/> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema:   <http://schema.org/> .
@@ -29,8 +29,8 @@
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
   owl:versionInfo "1.1.0" ;
   owl:versionIRI <https://w3id.org/oseg/ont/1.1.0/okh> ;
-  dcterms:title "OSH ontology"@en ;
-  dcterms:description "An Open Source Hardware ontology"@en ;
+  dcterms:title "Open Know How (OKH) ontology"@en ;
+  dcterms:description "Used for indexing, searching and comparing Open Source Hardware projects"@en ;
   schema:comment """Regarding the use of `schema:domainIncludes`
 and `schema:rangeIncludes` in this ontology:
 Looking at the definitions for the RDFS version
@@ -45,10 +45,14 @@ not *one of them*.
 You may think of this as an `AND` coupling.
 We want the *one of them* meaning though (`OR`).
 The `schema:*` properties give us just that."""@en ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dce:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:creator orcid:0000-0002-1611-7129 ;
   dce:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:creator orcid:0009-0004-3559-6542 ;
+  dce:publisher "Robin Vobruba (Open Source Ecology Germany e.V.) <hoijui.quaero@gmail.com>" ;
+  dce:issued "2021-08-24 16:32:33" ;
+  dce:modified "2022-02-22 12:01:28" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
@@ -414,7 +418,7 @@ okh:cpcPatentClass
   a owl:ObjectProperty ;
   rdfs:label "Patent Class" ;
   rdfs:comment "International Patent Classification (IPC)" ;
-  rdfs:subPropertyOf epo:classificationIPCInventive;
+  rdfs:subPropertyOf patent:classificationIPCInventive;
   schema:domainIncludes okh:Module ;
   schema:rangeIncludes xsd:string ;
   .
