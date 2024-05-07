@@ -29,8 +29,8 @@
   vann:preferredNamespaceUri "https://w3id.org/oseg/ont/okh#" ;
   owl:versionInfo "1.1.0" ;
   owl:versionIRI <https://w3id.org/oseg/ont/1.1.0/okh> ;
-  dcterms:title "OSH ontology"@en ;
-  dcterms:description "An Open Source Hardware ontology"@en ;
+  dcterms:title "Open Know How (OKH) ontology"@en ;
+  dcterms:description "Used for indexing, searching and comparing Open Source Hardware projects"@en ;
   schema:comment """Regarding the use of `schema:domainIncludes`
 and `schema:rangeIncludes` in this ontology:
 Looking at the definitions for the RDFS version
