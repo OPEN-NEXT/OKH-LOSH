@@ -46,6 +46,8 @@ The `schema:*` properties give us just that."""@en ;
   dcterms:creator orcid:0000-0002-1611-7129 ;
   dce:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
   dcterms:creator orcid:0009-0004-3559-6542 ;
+  dce:issued "2021-08-24 16:32:33" ;
+  dce:modified "2022-02-22 12:01:28" ;
   dcterms:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   cc:license <https://www.gnu.org/licenses/gpl-3.0.txt> ;
   spdxt:ListedLicense "GPL-3.0-or-later" ;
