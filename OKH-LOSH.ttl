@@ -45,6 +45,7 @@ not *one of them*.
 You may think of this as an `AND` coupling.
 We want the *one of them* meaning though (`OR`).
 The `schema:*` properties give us just that."""@en ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dce:creator "Martin Häuer <martin.haeuer@ose-germany.de>" ;
   dcterms:creator orcid:0000-0002-1611-7129 ;
   dce:creator "Robin Vobruba <hoijui.quaero@gmail.com>" ;
