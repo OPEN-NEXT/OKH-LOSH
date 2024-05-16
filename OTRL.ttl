@@ -59,18 +59,21 @@ otrl:OTRL
   a owl:Class ;
   rdfs:label "Open Technology Readiness Level"@en ;
   rdfs:comment "Technology Readiness Level for open source hardware"@en ;
+  vs:term_status "unstable" ;
   .
 
 otrl:ODRL
   a owl:Class ;
   rdfs:label "Open Documentation Readiness Level"@en ;
   rdfs:comment "Documentation Readiness Level for open source hardware"@en ;
+  vs:term_status "unstable" ;
   .
 
 otrl:goal
   a owl:DatatypeProperty ;
   rdfs:label "goal"@en ;
   rdfs:comment "Goal or purpose of this OTRL/ODRL"@en ;
+  vs:term_status "unstable" ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
@@ -82,6 +85,7 @@ otrl:exitCriteria
   a owl:DatatypeProperty ;
   rdfs:label "exit criteria"@en ;
   rdfs:comment "Criteria to exit this OTRL/ODRL for the next higher one; inspired by: https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf"@en ;
+  vs:term_status "unstable" ;
   rdfs:range schema:Text ;
   owl:cardinality 1 ;
   schema:domainIncludes
@@ -95,6 +99,7 @@ otrl:OTRL1
   rdfs:label "OTRL-1"@en ;
   rdfs:comment "Ideation"@en ;
   otrl:goal "Product idea; needs are identified and initial specifications are defined."@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "ToDo."@en ;
   .
 
@@ -104,6 +109,7 @@ otrl:OTRL2
   rdfs:label "OTRL-2"@en ;
   rdfs:comment "Conception"@en ;
   otrl:goal "Mature product concept has been formulated"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "ToDo."@en ;
   .
 
@@ -113,6 +119,7 @@ otrl:OTRL3
   rdfs:label "OTRL-3"@en ;
   rdfs:comment "Development"@en ;
   otrl:goal "Product model is developed"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "ToDo."@en ;
   .
 
@@ -122,6 +129,7 @@ otrl:OTRL4
   rdfs:label "OTRL-4"@en ;
   rdfs:comment "Prototyping and testing"@en ;
   otrl:goal "Full functional prototype is built and tested"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "ToDo."@en ;
   .
 
@@ -131,6 +139,7 @@ otrl:OTRL5
   rdfs:label "OTRL-5"@en ;
   rdfs:comment "Manufacturing development"@en ;
   otrl:goal "Fairly reliable processes identified and characterised"@en ;
+  vs:term_status "unstable" ;
   .
 
 otrl:OTRL6
@@ -139,6 +148,7 @@ otrl:OTRL6
   rdfs:label "OTRL-6"@en ;
   rdfs:comment "Product qualification"@en ;
   otrl:goal "Certificate marking conformity assessment or comparable"@en ;
+  vs:term_status "unstable" ;
   .
 
 otrl:ODRL1
@@ -147,6 +157,7 @@ otrl:ODRL1
   rdfs:label "ODRL-1"@en ;
   rdfs:comment "Documentation process commenced"@en ;
   otrl:goal "Published information under free open source licence"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "(OSHWA-compliant) free/open license applied on published material"@en ;
   .
 
@@ -156,6 +167,7 @@ otrl:ODRL2
   rdfs:label "ODRL-2"@en ;
   rdfs:comment "Collaborative documentation in progress"@en ;
   otrl:goal "Provision of documentation files and in editable formats enabling collaboration development"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "ToDo."@en ;
   .
 
@@ -165,6 +177,7 @@ otrl:ODRL3
   rdfs:label "ODRL-3"@en ;
   rdfs:comment "Full documentation published"@en ;
   otrl:goal "Complete documentation as per DIN SPEC 3105-1"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "stable release"@en ;
   .
 
@@ -174,6 +187,7 @@ otrl:ODRL3Star
   rdfs:label "ODRL-3*"@en ;
   rdfs:comment "Full documentation published & audited"@en ;
   otrl:goal "Public evidence of documentation maturity"@en ;
+  vs:term_status "unstable" ;
   otrl:exitCriteria "proof of compliance after DIN SPEC 3105-2 or equivalent (such as a scientific publication, OSHWA certification, RYF certification)"@en ;
   .
 
@@ -183,6 +197,7 @@ otrl:ODRL4
   rdfs:label "ODRL-4"@en ;
   rdfs:comment "Full documentation for product qualification"@en ;
   otrl:goal "Product qualification documents published enabling decentralised commercial distribution"@en ;
+  vs:term_status "unstable" ;
   .
 
 otrl:Otrl

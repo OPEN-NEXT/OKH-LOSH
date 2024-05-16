@@ -2,28 +2,33 @@
 
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "A file that forms part of the project, specified/located either by a URL (okh:url) or a repo-/project-relative path (okh:relativePath)."
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "File"
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.1. AuxiliaryFile](https://w3id.org/oseg/ont/okh#AuxiliaryFile)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "auxiliary file (neither source nor export)"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.2. BoM](https://w3id.org/oseg/ont/okh#BoM)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Bill of Materials"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.3. ContributionGuide](https://w3id.org/oseg/ont/okh#ContributionGuide)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Contribution Guide"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.4. ExportFile](https://w3id.org/oseg/ont/okh#ExportFile)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "exported source file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
@@ -32,10 +37,12 @@
 
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Image"
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.6. ManifestFile](https://w3id.org/oseg/ont/okh#ManifestFile)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "file holding the metadata"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "manifest file"
@@ -43,36 +50,42 @@
 
 ## [1.7. ManufacturingInstructions](https://w3id.org/oseg/ont/okh#ManufacturingInstructions)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Manufacturing Instructions"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.8. Readme](https://w3id.org/oseg/ont/okh#Readme)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Readme"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.9. SourceFile](https://w3id.org/oseg/ont/okh#SourceFile)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "source file"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [1.10. UserManual](https://w3id.org/oseg/ont/okh#UserManual)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [File](https://w3id.org/oseg/ont/okh#File)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "User Manual"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 # [2. Component](https://w3id.org/oseg/ont/okh#Component)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Either a module (MOSH) or Part (POSH); more component types may be added in the future"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Component"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
 ## [2.1. Module](https://w3id.org/oseg/ont/okh#Module)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Component](https://w3id.org/oseg/ont/okh#Component)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Module of Open Source Hardware (MOSH)"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Module"
@@ -80,6 +93,7 @@
 
 ## [2.2. Part](https://w3id.org/oseg/ont/okh#Part)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Component](https://w3id.org/oseg/ont/okh#Component)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Piece of Open Source Hardware (POSH)"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Part"
@@ -87,6 +101,7 @@
 
 ## [2.3. Software](https://w3id.org/oseg/ont/okh#Software)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Component](https://w3id.org/oseg/ont/okh#Component)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "Software (including firmware) needed to run & use the OSH"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Software"
@@ -94,6 +109,7 @@
 
 # [3. Reference](https://w3id.org/oseg/ont/okh#Reference)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "unambiguous reference"
 * [**type**](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) [Class](http://www.w3.org/2002/07/owl#Class)
 
@@ -125,6 +141,7 @@
 
 ## [3.2. WebsiteUrl](https://w3id.org/oseg/ont/okh#WebsiteUrl)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://w3id.org/oseg/ont/okh#Reference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Website URL"
@@ -146,6 +163,7 @@
 
 ## [4.2. WebsiteUrl](https://w3id.org/oseg/ont/okh#WebsiteUrl)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [URL](http://schema.org/URL)
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Reference](https://w3id.org/oseg/ont/okh#Reference)
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Website URL"
@@ -156,6 +174,7 @@
 
 ## [5.1. Publication](https://w3id.org/oseg/ont/okh#Publication)
 
+* [**term_status**](http://www.w3.org/2003/06/sw-vocab-status/ns#term_status) "unstable"
 * [**subClassOf**](http://www.w3.org/2000/01/rdf-schema#subClassOf) [Publication](http://ns.nature.com/terms/Publication)
 * [**comment**](http://www.w3.org/2000/01/rdf-schema#comment) "_scientific_ (that is: peer reviewed) publication that _contains_ the design files"
 * [**label**](http://www.w3.org/2000/01/rdf-schema#label) "Scientific Publication"
