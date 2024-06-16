@@ -1,11 +1,20 @@
 # OKH-LOSH
 
 <!--
-SPDX-FileCopyrightText: 2021 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2021 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 SPDX-FileCopyrightText: 2021 Martin Häuer <martin.haeuer@ose-germany.de>
 
 SPDX-License-Identifier: CC0-1.0
 -->
+
+---
+
+**DEPRECATION WARNING -
+This repo is now in read-only mode.
+Please switch over to the new repo:
+<https://github.com/iop-alliance/OpenKnowHow>**
+
+---
 
 [![DOI](
     https://zenodo.org/badge/259683880.svg)](
